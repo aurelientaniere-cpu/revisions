@@ -29,4 +29,5 @@ En ligne : https://aurelientaniere-cpu.github.io/revisions/ (dépôt `aurelienta
 - `js/speech.js` + `audio/` : phrases pré-enregistrées (nom = empreinte FNV-1a du texte), repli sur la voix de l'iPad ; `phrases.json` = phrases fixes de l'app.
 - `js/activities.js` : qcm, vf, schema, placer (tri / frise / relie / phrase).
 - `js/rewards.js` : dragon en 5 stades (étoiles), cartes à collectionner.
+- Illustrations : `tools/images.py` (Draw Things, style `tools/style.txt` = aquarelle/crayon, validé). Prompts et graines dans le champ `images` de la leçon ; clé = id de notion (illustration « Nouveau mot » + vignette), `schema-<nom>` pour un schéma, `dragon0`…`dragon4` pour le compagnon, `image` sur chaque carte. Toujours vérifier les images (fausses signatures, objet mal représenté) et refaire avec une autre graine. Zones du schéma : polygones dans `lessons/assets/chateau.svg`, vérifier avec `?zones=1`.
 - `js/parent.js` : espace parent (appui long sur ⚙️ en haut à droite + une multiplication).

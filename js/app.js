@@ -5,7 +5,7 @@ import { P, loadPhrases } from './phrases.js';
 import { loadLessons } from './lessons.js';
 import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson } from './srs.js';
 import { renderStep, schemaView } from './activities.js';
-import { companionSVG, stageOf, nextStage, STAGES, starsForSession, addStars, recordDay, checkCards } from './rewards.js';
+import { companionHTML, stageOf, nextStage, STAGES, starsForSession, addStars, recordDay, checkCards } from './rewards.js';
 import { parentGate } from './parent.js';
 
 const app = document.getElementById('app');
@@ -25,6 +25,12 @@ function screen(...kids) {
 
 function backBtn(label = '🏠 Accueil', to = home) {
   return h('button', { class: 'ghost', onclick: to }, label);
+}
+
+// Illustration du compagnon au stade actuel (cherchée dans les leçons).
+function companionArt(stars) {
+  const key = `dragon${stageOf(stars)}`;
+  return companionHTML(stars, lessons.map((L) => L.img(key)).find(Boolean));
 }
 
 function companionName() {
@@ -64,7 +70,7 @@ function home() {
   screen(
     gear,
     h('div', { class: 'home-top' },
-      h('div', { class: 'companion', onclick: () => say([P.stages[stageOf(stars)], P.companionMore]), html: companionSVG(stars) }),
+      h('div', { class: 'companion', onclick: () => say([P.stages[stageOf(stars)], P.companionMore]), html: companionArt(stars) }),
       h('div', { style: { display: 'flex', flexDirection: 'column', gap: '12px' } },
         h('div', { class: 'row' },
           h('span', { class: 'companion-name' }, companionName()),
@@ -117,7 +123,7 @@ function start(L) {
   async function discover(n) {
     const tag = h('div', { class: 'discover-tag' }, '✨ Nouveau mot');
     const card = h('div', { class: 'panel discover' },
-      h('div', { class: 'big-emoji' }, n.emoji || '📘'),
+      L.img(n.id) ? h('img', { class: 'discover-img', src: L.img(n.id), alt: '' }) : h('div', { class: 'big-emoji' }, n.emoji || '📘'),
       h('div', { style: { display: 'flex', flexDirection: 'column', gap: '8px' } },
         tag,
         h('div', { class: 'term' }, cap(n.term)),
@@ -167,9 +173,9 @@ function start(L) {
       h('div', { class: 'center' },
         h('h1', {}, pick(['Séance terminée !', 'Mission accomplie !', 'Bien joué !'])),
         h('div', { class: 'stars' }, h('b', {}, '★ '), `+${earned} étoiles`),
-        h('div', { class: 'companion', style: { width: '220px' }, html: companionSVG(stars) }),
+        h('div', { class: 'companion', style: { width: '220px' }, html: companionArt(stars) }),
         grew ? h('h2', {}, `${companionName()} a grandi !`) : null,
-        cards.length ? h('div', { class: 'new-cards' }, cards.map((c) => cardEl(c, true))) : null,
+        cards.length ? h('div', { class: 'new-cards' }, cards.map((c) => cardEl(c, true, L))) : null,
         h('p', { class: 'muted' }, '🌿 Fais une petite pause : bois un verre d’eau, étire-toi.'),
         h('button', { class: 'primary big', onclick: home }, '🏠 Retour')));
     say(lines);
@@ -195,9 +201,14 @@ function listen(L) {
 }
 
 /* ---------- Album de cartes ---------- */
-function cardEl(c, owned) {
+function cardArt(c, L) {
+  const url = L && L.img(c.image);
+  return url ? h('img', { class: 'art-img', src: url, alt: '' }) : h('div', { class: 'art' }, c.emoji);
+}
+
+function cardEl(c, owned, L) {
   return h('div', { class: `pcard ${owned ? '' : 'locked'} ${c.legend ? 'legend' : ''}`, style: { background: c.color } },
-    h('div', { class: 'art' }, owned ? c.emoji : '❓'),
+    owned ? cardArt(c, L) : h('div', { class: 'art' }, '❓'),
     h('div', {}, owned ? c.name : '???'));
 }
 
@@ -211,9 +222,9 @@ function album() {
       h('h2', {}, `${L.emoji} ${L.title}`),
       h('div', { class: 'album' }, (L.cards || []).map((c) => {
         const has = state.cards.includes(c.id);
-        const el = cardEl(c, has);
+        const el = cardEl(c, has, L);
         el.addEventListener('click', () => {
-          if (has) return zoom(c);
+          if (has) return zoom(c, L);
           say(c.notions === 'all' ? P.cardLockedAll : [P.cardLocked, ...c.notions.map((id) => cap(L.notionById[id].term))]);
         });
         return el;
@@ -222,11 +233,11 @@ function album() {
   say(P.album);
 }
 
-function zoom(c) {
+function zoom(c, L) {
   const ov = h('div', { class: 'overlay', onclick: () => { stop(); ov.remove(); } },
     h('div', { class: 'center' },
       h('div', { class: `pcard big ${c.legend ? 'legend' : ''}`, style: { background: c.color } },
-        h('div', { class: 'art' }, c.emoji), h('div', {}, c.name)),
+        cardArt(c, L), h('div', {}, c.name)),
       h('div', { class: 'panel' }, c.desc)));
   document.body.append(ov);
   say([c.name, c.desc]);

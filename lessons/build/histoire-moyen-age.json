@@ -156,7 +156,6 @@
    "nom": "la chapelle",
    "def": "la petite église du château, pour prier",
    "group": "chateau",
-   "zone": "chapelle",
    "emoji": "⛪",
    "indice": "Le seigneur et sa famille viennent y prier sans sortir du château."
   },
@@ -280,7 +279,8 @@
     "chateau",
     "fonctions"
    ],
-   "desc": "Il protège les habitants, c'est la maison du seigneur, et il montre sa puissance."
+   "desc": "Il protège les habitants, c'est la maison du seigneur, et il montre sa puissance.",
+   "image": "chateau"
   },
   {
    "id": "mda-donjon",
@@ -293,7 +293,8 @@
     "remparts",
     "chemin-de-ronde"
    ],
-   "desc": "La plus grande tour, au centre du château. Le seigneur y vit."
+   "desc": "La plus grande tour, au centre du château. Le seigneur y vit.",
+   "image": "donjon"
   },
   {
    "id": "mda-pont",
@@ -306,7 +307,8 @@
     "douves",
     "entree"
    ],
-   "desc": "On le relève et on baisse la herse : personne ne peut entrer !"
+   "desc": "On le relève et on baisse la herse : personne ne peut entrer !",
+   "image": "pont-levis"
   },
   {
    "id": "mda-seigneur",
@@ -317,7 +319,8 @@
     "seigneur",
     "seigneurie"
    ],
-   "desc": "Un homme puissant qui dirige la seigneurie et commande ses habitants."
+   "desc": "Un homme puissant qui dirige la seigneurie et commande ses habitants.",
+   "image": "seigneur"
   },
   {
    "id": "mda-paysans",
@@ -328,7 +331,8 @@
     "paysan",
     "corvee"
    ],
-   "desc": "Ils cultivent la terre, paient des redevances et font des corvées."
+   "desc": "Ils cultivent la terre, paient des redevances et font des corvées.",
+   "image": "paysan"
   },
   {
    "id": "mda-eglise",
@@ -342,7 +346,8 @@
     "dime",
     "chapelle"
    ],
-   "desc": "Elle rythme la vie de tous, de la naissance à la mort."
+   "desc": "Elle rythme la vie de tous, de la naissance à la mort.",
+   "image": "eglise"
   },
   {
    "id": "mda-abbaye",
@@ -352,7 +357,8 @@
    "notions": [
     "abbaye"
    ],
-   "desc": "En Bourgogne, une abbaye célèbre où vivent les moines."
+   "desc": "En Bourgogne, une abbaye célèbre où vivent les moines.",
+   "image": "abbaye"
   },
   {
    "id": "mda-cathedrale",
@@ -364,7 +370,8 @@
     "roman",
     "gothique"
    ],
-   "desc": "Une cathédrale gothique : haute, lumineuse, avec de grands vitraux."
+   "desc": "Une cathédrale gothique : haute, lumineuse, avec de grands vitraux.",
+   "image": "gothique"
   },
   {
    "id": "mda-ville",
@@ -374,7 +381,8 @@
    "notions": [
     "ville"
    ],
-   "desc": "Au XIIIe siècle, les villes grandissent grâce aux marchés et aux foires."
+   "desc": "Au XIIIe siècle, les villes grandissent grâce aux marchés et aux foires.",
+   "image": "ville"
   },
   {
    "id": "mda-frise",
@@ -385,7 +393,8 @@
     "dates",
     "periode"
    ],
-   "desc": "Le Moyen Âge : de 476 à 1492. Mille ans d'histoire !"
+   "desc": "Le Moyen Âge : de 476 à 1492. Mille ans d'histoire !",
+   "image": "dates"
   },
   {
    "id": "mda-legende",
@@ -395,7 +404,8 @@
    "notions": "all",
    "level": 3,
    "legend": true,
-   "desc": "Carte légendaire : tu connais toute la leçon sur le bout des doigts !"
+   "desc": "Carte légendaire : tu connais toute la leçon sur le bout des doigts !",
+   "image": "dragon4"
   }
  ],
  "items": [
@@ -2748,17 +2758,6 @@
    "id": "histoire-moyen-age#104"
   },
   {
-   "type": "schema",
-   "diff": 2,
-   "notions": [
-    "chapelle"
-   ],
-   "target": "chapelle",
-   "q": "Touche la chapelle sur le château.",
-   "explain": "La chapelle : la petite église du château, pour prier.",
-   "id": "histoire-moyen-age#105"
-  },
-  {
    "type": "qcm",
    "diff": 2,
    "notions": [
@@ -2778,7 +2777,7 @@
     "Entrée"
    ],
    "explain": "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
-   "id": "histoire-moyen-age#106"
+   "id": "histoire-moyen-age#105"
   },
   {
    "type": "qcm",
@@ -2801,7 +2800,7 @@
     "La porte fortifiée du château, très bien protégée"
    ],
    "explain": "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
-   "id": "histoire-moyen-age#107"
+   "id": "histoire-moyen-age#106"
   },
   {
    "type": "schema",
@@ -2812,7 +2811,7 @@
    "target": "chemin-de-ronde",
    "q": "Touche le chemin de ronde sur le château.",
    "explain": "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
-   "id": "histoire-moyen-age#108"
+   "id": "histoire-moyen-age#107"
   },
   {
    "type": "qcm",
@@ -2834,7 +2833,7 @@
     "Entrée"
    ],
    "explain": "La cour : le grand espace à l'intérieur des remparts.",
-   "id": "histoire-moyen-age#109"
+   "id": "histoire-moyen-age#108"
   },
   {
    "type": "qcm",
@@ -2857,7 +2856,7 @@
     "La porte fortifiée du château, très bien protégée"
    ],
    "explain": "La cour : le grand espace à l'intérieur des remparts.",
-   "id": "histoire-moyen-age#110"
+   "id": "histoire-moyen-age#109"
   },
   {
    "type": "schema",
@@ -2868,7 +2867,7 @@
    "target": "cour",
    "q": "Touche la cour sur le château.",
    "explain": "La cour : le grand espace à l'intérieur des remparts.",
-   "id": "histoire-moyen-age#111"
+   "id": "histoire-moyen-age#110"
   },
   {
    "type": "qcm",
@@ -2890,7 +2889,7 @@
     "Cour"
    ],
    "explain": "L'entrée : la porte fortifiée du château, très bien protégée.",
-   "id": "histoire-moyen-age#112"
+   "id": "histoire-moyen-age#111"
   },
   {
    "type": "qcm",
@@ -2913,7 +2912,7 @@
     "Le grand espace à l'intérieur des remparts"
    ],
    "explain": "L'entrée : la porte fortifiée du château, très bien protégée.",
-   "id": "histoire-moyen-age#113"
+   "id": "histoire-moyen-age#112"
   },
   {
    "type": "schema",
@@ -2924,7 +2923,7 @@
    "target": "entree",
    "q": "Touche l'entrée sur le château.",
    "explain": "L'entrée : la porte fortifiée du château, très bien protégée.",
-   "id": "histoire-moyen-age#114"
+   "id": "histoire-moyen-age#113"
   },
   {
    "type": "placer",
@@ -2965,7 +2964,7 @@
      "target": "pont-levis"
     }
    ],
-   "id": "histoire-moyen-age#115"
+   "id": "histoire-moyen-age#114"
   },
   {
    "type": "placer",
@@ -3006,7 +3005,7 @@
      "target": "herse"
     }
    ],
-   "id": "histoire-moyen-age#116"
+   "id": "histoire-moyen-age#115"
   },
   {
    "type": "placer",
@@ -3047,9 +3046,242 @@
      "target": "cour"
     }
    ],
-   "id": "histoire-moyen-age#117"
+   "id": "histoire-moyen-age#116"
   }
  ],
+ "images": {
+  "chateau": {
+   "prompt": "a medieval stone castle on a green hill with flags and round towers, a small village of thatched houses below it",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "seigneur": {
+   "prompt": "a medieval lord in a blue cloak with a sword and a shield with a lily, standing proudly in front of his castle",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "seigneurie": {
+   "prompt": "a medieval countryside seen from above: a castle on a hill, a village of thatched houses, wheat fields, a forest, a river and a mill",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "donjon": {
+   "prompt": "the tall square keep tower in the middle of a medieval castle courtyard, the lord looking out of its top window",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "remparts": {
+   "prompt": "thick high stone walls with battlements surrounding a medieval castle, seen from outside in a meadow",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "pont-levis": {
+   "prompt": "side view of a medieval castle gate over a water moat: the wooden drawbridge is being pulled up by two big iron chains attached to the top of the gate, the bridge is half raised and tilted in the air above the water, a guard pulls the chains",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 7
+  },
+  "paysan": {
+   "prompt": "a medieval peasant man plowing a field with an ox, simple brown tunic, a village and a castle far in the background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "douves": {
+   "prompt": "the wide water-filled moat around a medieval castle, ducks swimming, the stone walls rising straight from the water",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "corvee": {
+   "prompt": "medieval peasants working together repairing a dirt road, carrying stones in a wheelbarrow, a guard watching them",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 7
+  },
+  "tour": {
+   "prompt": "a round medieval stone tower with a pointed roof at the corner of castle walls, a lookout guard watching from its top",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "herse": {
+   "prompt": "a medieval castle gate with a heavy iron portcullis grid half lowered in the stone arch, pointed spikes at its bottom",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dime": {
+   "prompt": "a medieval peasant giving a basket full of wheat to a smiling priest in front of a small village church",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "chapelle": {
+   "prompt": "a small stone chapel with a cross on its roof inside a castle courtyard, the lord's family walking in to pray",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "chemin-de-ronde": {
+   "prompt": "two guards with spears walking along the walkway on top of castle battlements, looking at the countryside",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "eglise": {
+   "prompt": "a crowd of medieval villagers, monks, a priest and a bishop gathered together in front of a church",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "paroisse": {
+   "prompt": "a medieval village gathered around its stone church with a bell tower, families walking to the church",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "cour": {
+   "prompt": "the inner courtyard of a medieval castle with a well, chickens, a horse, servants carrying baskets",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 7
+  },
+  "clerge": {
+   "prompt": "three medieval clergymen side by side: a village priest, a monk in a brown robe and a bishop with a tall mitre and a crosier",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "entree": {
+   "prompt": "the fortified gatehouse of a medieval castle with two small towers and a big wooden door, two guards at the gate",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "abbaye": {
+   "prompt": "a medieval abbey with a cloister garden, monks in brown robes gardening, reading and copying books",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "cathedrale": {
+   "prompt": "a huge gothic cathedral with two towers in a medieval town, a bishop at the entrance, townspeople around",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "roman": {
+   "prompt": "a small romanesque stone church with thick walls, small round-arched windows and a round apse, in the countryside",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "gothique": {
+   "prompt": "inside a very tall gothic cathedral with pointed arches and huge colorful stained glass windows, colored light streaming in",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "ville": {
+   "prompt": "a busy medieval town fair with market stalls, merchants selling cloth and bread, craftsmen at work, colorful banners",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dates": {
+   "prompt": "an old hourglass on a parchment map, surrounded by a tiny castle, a tiny cathedral and a tiny knight",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "periode": {
+   "prompt": "medieval workers building a cathedral with wooden scaffolding and a crane wheel, a castle on a hill in the background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "fonctions": {
+   "prompt": "villagers taking shelter inside the walls of a medieval castle, guards standing on the walls, the lord watching from the keep",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dragon0": {
+   "prompt": "a single cream colored egg with purple spots in a small straw nest, cute, centered, plain cream background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dragon1": {
+   "prompt": "a cream colored egg with purple spots cracking open, two big cute eyes of a baby dragon peeking through the crack, centered, plain cream background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dragon2": {
+   "prompt": "a tiny cute round purple baby dragon with big shiny eyes and a cream belly, sitting, centered, plain cream background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dragon3": {
+   "prompt": "a young cute purple dragon with small wings, two little horns and a cream belly, smiling, centered, plain cream background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "dragon4": {
+   "prompt": "a proud cute purple dragon with big wings, a small golden crown, a cream belly, sparkles around, smiling, centered, plain cream background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "schema-chateau": {
+   "w": 1216,
+   "h": 832,
+   "out_w": 1400,
+   "seed": 909,
+   "prompt": "bird's-eye view from high above and in front of a square medieval stone castle, so we can see inside its walls. The castle stands on a green island completely surrounded by a wide ring of blue water moat. At the bottom center, a lowered wooden drawbridge with two chains crosses the moat to the gatehouse in the front wall; in the gate arch hangs a dark iron portcullis grid, half raised. Four thick high walls with battlements and a wall walk on top where two guards walk. A round tower with a pointed roof at each of the four corners. Inside the walls, a large open sunny courtyard of beige earth with a well, chickens and a horse, and on the left side of the courtyard a small stone chapel with a red roof and a big golden cross on top of the roof. At the back center, a tall square keep tower, the highest building, with a red flag. Symmetrical composition, the whole castle visible"
+  }
+ },
  "speech": [
   "1492",
   "476",
@@ -3415,7 +3647,6 @@
   "Reconstruis la phrase.",
   "Regarde les fenêtres.",
   "Regarde, l'entrée est ici.",
-  "Regarde, la chapelle est ici.",
   "Regarde, la cour est ici.",
   "Regarde, la herse est ici.",
   "Regarde, le chemin de ronde est ici.",
@@ -3445,7 +3676,6 @@
   "Territoire dirigé par un seigneur",
   "Territoire religieux autour d'une église",
   "Touche l'entrée sur le château.",
-  "Touche la chapelle sur le château.",
   "Touche la cour sur le château.",
   "Touche la herse sur le château.",
   "Touche le chemin de ronde sur le château.",
@@ -3541,7 +3771,6 @@
   "À la foire, en ville",
   "À quels siècles trouve-t-on les châteaux forts ?",
   "Ça, c'est l'entrée.",
-  "Ça, c'est la chapelle.",
   "Ça, c'est la cour.",
   "Ça, c'est la herse.",
   "Ça, c'est le chemin de ronde.",

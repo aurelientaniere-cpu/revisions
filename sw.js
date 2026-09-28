@@ -1,6 +1,6 @@
 // Hors-ligne : on essaie le réseau (pour avoir les nouvelles leçons), sinon on sert la copie en cache.
 // À l'installation, on met aussi en cache tous les enregistrements audio listés dans audio/manifest.json.
-const CACHE = 'revisions-v2';
+const CACHE = 'revisions-v3';
 const SHELL = [
   './', 'index.html', 'style.css', 'manifest.json', 'phrases.json', 'icons/icon.svg', 'icons/icon-180.png',
   'js/app.js', 'js/util.js', 'js/store.js', 'js/speech.js', 'js/srs.js', 'js/lessons.js', 'js/phrases.js',

@@ -17,8 +17,10 @@ function ear(text, cls = 'ear') {
 }
 
 // Zone commune : consigne lue + zone de réponse + bandeau de retour.
-function frame(root, text, speech = text) {
+function frame(root, text, thumb) {
+  const speech = text;
   const prompt = h('div', { class: 'prompt' },
+    thumb ? h('img', { class: 'thumb', src: thumb, alt: '' }) : null,
     h('div', { class: 'text' }, text),
     h('button', { class: 'icon speak', 'aria-label': 'Écouter', onclick: () => say(speech) }, '🔊'));
   const body = h('div', { class: 'col' });
@@ -54,9 +56,12 @@ export function renderStep(item, ctx) {
 }
 
 /* ---------- QCM ---------- */
-function qcm(item, { root, done }) {
+// Petite illustration à côté de la question, si elle ne porte que sur une notion.
+const thumbOf = (item, lesson) => (item.notions.length === 1 ? lesson.img(item.notions[0]) : null);
+
+function qcm(item, { root, lesson, done }) {
   const text = item.sentence ? `${P.completePrefix} ${item.sentence}…` : item.q;
-  const { body, fb } = frame(root, text);
+  const { body, fb } = frame(root, text, thumbOf(item, lesson));
   const finish = finisher(fb, done);
   const choices = shuffle([
     { t: item.choices[0], ok: true },
@@ -98,9 +103,9 @@ function qcm(item, { root, done }) {
 }
 
 /* ---------- Vrai / Faux ---------- */
-function vf(item, { root, done }) {
+function vf(item, { root, lesson, done }) {
   const text = `${P.vfPrefix} ${item.q}`;
-  const { body, fb } = frame(root, text);
+  const { body, fb } = frame(root, text, thumbOf(item, lesson));
   const finish = finisher(fb, done);
   let over = false;
   const key = String(item.answer);

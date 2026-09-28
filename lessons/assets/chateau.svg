@@ -1,100 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-label="Schéma d'un château fort">
-  <defs>
-    <pattern id="merlons" width="30" height="16" patternUnits="userSpaceOnUse">
-      <rect x="0" y="0" width="18" height="16" fill="#c9c1b4" stroke="#6b5f52" stroke-width="2"/>
-    </pattern>
-  </defs>
-  <g stroke-linejoin="round">
-    <!-- douves -->
-    <g data-zone="douves" class="zone">
-      <ellipse cx="400" cy="345" rx="385" ry="185" fill="#6fb1e0" stroke="#3d7fae" stroke-width="3"/>
-    </g>
-    <!-- île (décor) -->
-    <ellipse cx="400" cy="335" rx="318" ry="138" fill="#9cc56b" stroke="#6e9a45" stroke-width="3"/>
-
-    <!-- tours du fond -->
-    <g data-zone="tour" class="zone">
-      <rect x="125" y="115" width="60" height="140" fill="#bdb4a6" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M118 115 L155 55 L192 115 Z" fill="#8d5b8a" stroke="#6b5f52" stroke-width="2"/>
-      <rect x="615" y="115" width="60" height="140" fill="#bdb4a6" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M608 115 L645 55 L682 115 Z" fill="#8d5b8a" stroke="#6b5f52" stroke-width="2"/>
-    </g>
-
-    <!-- remparts : mur du fond et murs de côté -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 958" role="img" aria-label="Château fort">
+  <image href="lessons/img/histoire-moyen-age/schema-chateau.jpg" width="1400" height="958"/>
+  <!-- Zones à toucher, invisibles (?zones=1 pour les voir). Ordre = du fond vers le devant. -->
+  <g fill="transparent" stroke="transparent">
+    <g data-zone="douves" class="zone"><ellipse cx="700" cy="520" rx="695" ry="435"/></g>
+    <!-- île et pied du château : pas une zone -->
+    <polygon points="130,420 220,300 380,170 1000,170 1200,250 1265,470 1250,760 1060,800 800,780 600,780 330,770 200,690 165,560"/>
+    <g data-zone="cour" class="zone"><polygon points="385,285 1050,270 1062,462 830,470 830,440 575,440 575,465 365,450"/></g>
     <g data-zone="remparts" class="zone">
-      <rect x="185" y="150" width="430" height="90" fill="#c9c1b4" stroke="#6b5f52" stroke-width="2"/>
-      <rect x="185" y="136" width="430" height="14" fill="url(#merlons)"/>
-      <path d="M150 250 L180 250 L160 392 L128 392 Z" fill="#b3aa9b" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M620 250 L650 250 L672 392 L640 392 Z" fill="#b3aa9b" stroke="#6b5f52" stroke-width="2"/>
+      <polygon points="380,185 1000,180 1005,275 385,290"/>
+      <polygon points="300,240 385,215 380,460 330,600 300,560"/>
+      <polygon points="1000,215 1080,245 1075,470 1060,470"/>
+      <polygon points="330,470 578,470 578,610 330,610"/>
+      <polygon points="832,485 1060,485 1060,600 832,600"/>
     </g>
-
-    <!-- cour -->
-    <g data-zone="cour" class="zone">
-      <path d="M182 240 L618 240 L645 385 L155 385 Z" fill="#e8d9b0" stroke="#b9a473" stroke-width="2"/>
-    </g>
-
-    <!-- donjon -->
-    <g data-zone="donjon" class="zone">
-      <rect x="345" y="72" width="110" height="205" fill="#d4ccbf" stroke="#6b5f52" stroke-width="2"/>
-      <rect x="345" y="56" width="110" height="16" fill="url(#merlons)"/>
-      <path d="M373 120 v-14 a9 9 0 0 1 18 0 v14 Z M409 120 v-14 a9 9 0 0 1 18 0 v14 Z M391 190 v-18 a9 9 0 0 1 18 0 v18 Z" fill="#3a2f28"/>
-      <path d="M400 56 L400 14" stroke="#6b5f52" stroke-width="3"/>
-      <path d="M400 14 L436 24 L400 34 Z" fill="#e84a5f" stroke="#6b5f52" stroke-width="2"/>
-    </g>
-
-    <!-- chapelle -->
-    <g data-zone="chapelle" class="zone">
-      <rect x="200" y="258" width="85" height="60" fill="#efe6d6" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M194 258 L242 222 L291 258 Z" fill="#a0503c" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M242 222 L242 192 M231 202 L253 202" stroke="#6b5f52" stroke-width="4"/>
-      <path d="M234 318 v-24 a8 8 0 0 1 16 0 v24 Z" fill="#6b4a2e"/>
-    </g>
-
-    <!-- bâtiment (décor) -->
-    <rect x="515" y="265" width="90" height="48" fill="#efe6d6" stroke="#6b5f52" stroke-width="2"/>
-    <path d="M509 265 L560 240 L611 265 Z" fill="#a0503c" stroke="#6b5f52" stroke-width="2"/>
-
-    <!-- remparts : mur de devant -->
-    <g data-zone="remparts" class="zone">
-      <rect x="140" y="382" width="520" height="76" fill="#c9c1b4" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M170 400 h40 M240 420 h50 M190 438 h40 M520 400 h40 M560 430 h50 M480 440 h30" stroke="#a89d8c" stroke-width="3"/>
-    </g>
-
-    <!-- chemin de ronde (en haut du mur de devant) -->
     <g data-zone="chemin-de-ronde" class="zone">
-      <rect x="140" y="362" width="520" height="20" fill="#a99f8f" stroke="#6b5f52" stroke-width="2"/>
-      <rect x="140" y="344" width="520" height="18" fill="url(#merlons)"/>
-      <circle cx="560" cy="354" r="8" fill="#e8a33c" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M560 362 v14" stroke="#6b5f52" stroke-width="5"/>
+      <polygon points="330,432 578,432 578,470 330,470"/>
+      <polygon points="832,452 1060,452 1060,485 832,485"/>
+      <polygon points="1080,300 1180,300 1180,455 1110,455"/>
     </g>
-
-    <!-- tours de devant -->
+    <g data-zone="donjon" class="zone"><polygon points="630,70 765,70 765,345 630,345"/></g>
     <g data-zone="tour" class="zone">
-      <rect x="95" y="318" width="80" height="152" fill="#bdb4a6" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M86 318 L135 240 L184 318 Z" fill="#8d5b8a" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M130 370 v-16 a5 5 0 0 1 10 0 v16 Z" fill="#3a2f28"/>
-      <rect x="625" y="318" width="80" height="152" fill="#bdb4a6" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M616 318 L665 240 L714 318 Z" fill="#8d5b8a" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M660 370 v-16 a5 5 0 0 1 10 0 v16 Z" fill="#3a2f28"/>
+      <ellipse cx="295" cy="535" rx="80" ry="160"/>
+      <ellipse cx="1145" cy="605" rx="105" ry="170"/>
+      <ellipse cx="398" cy="258" rx="52" ry="92"/>
+      <ellipse cx="1135" cy="300" rx="58" ry="45"/>
     </g>
-
-    <!-- entrée (la porte fortifiée) -->
-    <g data-zone="entree" class="zone">
-      <rect x="350" y="330" width="100" height="128" fill="#d4ccbf" stroke="#6b5f52" stroke-width="2"/>
-      <rect x="350" y="314" width="100" height="16" fill="url(#merlons)"/>
-    </g>
-
-    <!-- herse (la grille dans l'ouverture) -->
-    <g data-zone="herse" class="zone">
-      <path d="M372 458 L372 398 Q400 366 428 398 L428 458 Z" fill="#3a2f28" stroke="#6b5f52" stroke-width="2"/>
-      <path d="M382 386 V452 M393 377 V452 M404 375 V452 M415 379 V452 M424 390 V452 M374 405 H426 M374 425 H426 M374 445 H426" stroke="#b08a4a" stroke-width="4" fill="none"/>
-    </g>
-
-    <!-- pont-levis -->
-    <g data-zone="pont-levis" class="zone">
-      <path d="M370 458 L430 458 L446 522 L354 522 Z" fill="#a0703c" stroke="#6b4a2e" stroke-width="2"/>
-      <path d="M366 474 H434 M362 490 H438 M358 506 H442" stroke="#6b4a2e" stroke-width="2"/>
-      <path d="M356 340 L356 518 M444 340 L444 518" stroke="#4a4a4a" stroke-width="3" stroke-dasharray="6 4"/>
-    </g>
+    <g data-zone="entree" class="zone"><polygon points="578,440 835,440 835,605 760,605 760,470 655,470 655,605 578,605"/></g>
+    <g data-zone="herse" class="zone"><rect x="655" y="470" width="105" height="125"/></g>
+    <g data-zone="pont-levis" class="zone"><polygon points="648,595 762,595 772,935 606,935"/></g>
   </g>
 </svg>

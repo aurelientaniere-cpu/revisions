@@ -112,6 +112,12 @@ function egg(cracked) {
     ${eyes(80).replace(/r="12"/g, 'r="9"')}` : ''}`;
 }
 
+// Illustration du compagnon (peinte), sinon le dessin vectoriel de secours.
+export function companionHTML(stars, url) {
+  if (url) return `<img src="${url}" alt="${STAGES[stageOf(stars)].name}">`;
+  return companionSVG(stars);
+}
+
 export function companionSVG(stars) {
   const s = stageOf(stars);
   const inner = s === 0 ? egg(false) : s === 1 ? egg(true) : dragon(s);

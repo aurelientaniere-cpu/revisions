@@ -146,14 +146,12 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 
 /* schéma */
 .schema-wrap { background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); padding: 8px; }
-.schema-wrap svg { width: 100%; height: auto; max-height: 56vh; display: block; }
+.schema-wrap svg { width: 100%; height: auto; max-height: 58vh; display: block; }
 .schema-wrap [data-zone] { cursor: pointer; }
-.schema-wrap .zone.hl > * { stroke: #ff9f1c; stroke-width: 6; }
-.schema-wrap.focus .zone:not(.hl) { filter: saturate(.25) brightness(1.1); }
-.schema-wrap .zone.dimz { opacity: .3; }
-.schema-wrap .zone.flash { animation: flash .6s ease-in-out 2; }
-@keyframes flash { 50% { opacity: .3; } }
-.schema-wrap.show-zones [data-zone] > * { stroke: #e0474c; stroke-width: 3; stroke-dasharray: 8 4; fill-opacity: .25; }
+.schema-wrap .zone.hl > * { fill: rgba(255, 159, 28, .35); stroke: #ff9f1c; stroke-width: 6; }
+.schema-wrap .zone.flash > * { animation: flash .6s ease-in-out 2; }
+@keyframes flash { 50% { fill: rgba(108, 92, 231, .35); } }
+.schema-wrap.show-zones [data-zone] > * { stroke: #e0474c; stroke-width: 3; stroke-dasharray: 8 4; fill: rgba(224, 71, 76, .12); }
 
 /* découverte */
 .discover { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }
@@ -199,3 +197,11 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
   .discover { grid-template-columns: 1fr; text-align: center; }
   .prompt .text { font-size: 24px; }
 }
+
+/* illustrations */
+.thumb { width: 120px; height: 120px; object-fit: cover; border-radius: 18px; flex: none; }
+.discover-img { width: 260px; max-width: 40vw; border-radius: 22px; }
+.companion img { width: 100%; height: auto; display: block; mix-blend-mode: multiply; border-radius: 24px; }
+.pcard .art-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; }
+.pcard { justify-content: flex-start; }
+@media (max-width: 760px) { .thumb { width: 80px; height: 80px; } .discover-img { max-width: 70vw; } }
