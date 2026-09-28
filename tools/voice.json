@@ -1,15 +1,33 @@
 {
-  "voice": "fr_FR-siwis-medium",
-  "speaker_id": null,
+  "voice": "fr_FR-upmc-medium",
+  "speaker_id": 0,
   "length_scale": 1.1,
   "noise_scale": 0.667,
   "noise_w_scale": 0.8,
   "candidates": [
-    ["fr_FR-siwis-medium", null],
-    ["fr_FR-tom-medium", null],
-    ["fr_FR-upmc-medium", 0],
-    ["fr_FR-upmc-medium", 1],
-    ["fr_FR-mls-medium", 0],
-    ["fr_FR-mls-medium", 3]
+    [
+      "fr_FR-siwis-medium",
+      null
+    ],
+    [
+      "fr_FR-tom-medium",
+      null
+    ],
+    [
+      "fr_FR-upmc-medium",
+      0
+    ],
+    [
+      "fr_FR-upmc-medium",
+      1
+    ],
+    [
+      "fr_FR-mls-medium",
+      0
+    ],
+    [
+      "fr_FR-mls-medium",
+      3
+    ]
   ]
 }
