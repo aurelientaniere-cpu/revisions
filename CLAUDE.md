@@ -7,7 +7,7 @@ En ligne : https://aurelientaniere-cpu.github.io/revisions/ (dépôt `aurelienta
 ## Ajouter une leçon (demande habituelle : « voici la photo de la fiche »)
 1. Lire la fiche, écrire `lessons/<matiere>-<sujet>.json` selon `lessons/FORMAT.md` (modèle : `histoire-moyen-age.json`) ; l'ajouter à `lessons/index.json` et `lessons/build/<fichier>` à la liste `SHELL` de `sw.js`, puis incrémenter `CACHE`.
 2. `python3 tools/build.py` (exercices + liste des phrases), puis `~/.revisions-cm1/venv/bin/python tools/voice.py` (enregistre les phrases manquantes avec Piper), puis les illustrations (`tools/images.py`, Draw Things ouvert avec son API locale).
-3. Tester en local (`python3 -m http.server 8765`) : séance complète, console sans « segment sans audio » ; puis `git commit` + `git push` : l'iPad se met à jour tout seul.
+3. Tester en local (`python3 -m http.server 8765 --bind 127.0.0.1`, jamais sans `--bind` : sinon tout le Wi-Fi voit le dossier, `CLAUDE.local.md` compris ; arrêter le serveur à la fin) : séance complète, console sans « segment sans audio » ; puis `git commit` + `git push` : l'iPad se met à jour tout seul.
 
 ## Outillage (hors du dépôt, dans `~/.revisions-cm1/`)
 - `venv/` : Python 3.12 (Homebrew) + Piper, installé **uniquement** depuis `tools/requirements.txt` (`--require-hashes --only-binary=:all:`). Ne jamais ajouter de paquet sans figer version + empreinte vérifiée sur PyPI et passage dans OSV.
