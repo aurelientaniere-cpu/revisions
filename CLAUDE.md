@@ -5,21 +5,28 @@ Web app de révision pour le CM1, conçue pour être accessible aux enfants dys 
 En ligne : https://aurelientaniere-cpu.github.io/revisions/ (dépôt `aurelientaniere-cpu/revisions`, branche `main`, Pages déployé à chaque push, ~1 min).
 
 ## Ajouter une leçon (demande habituelle : « voici la photo de la fiche »)
-1. Lire la fiche, écrire `lessons/<matiere>-<sujet>.json` selon `lessons/FORMAT.md` (modèle : `histoire-moyen-age.json`).
-2. L'ajouter à `lessons/index.json` et à la liste `SHELL` de `sw.js`, puis incrémenter `CACHE` dans `sw.js`.
-3. Tester en local (`python3 -m http.server 8765`), faire une séance complète, puis `git commit` + `git push` : l'iPad se met à jour tout seul.
+1. Lire la fiche, écrire `lessons/<matiere>-<sujet>.json` selon `lessons/FORMAT.md` (modèle : `histoire-moyen-age.json`) ; l'ajouter à `lessons/index.json` et `lessons/build/<fichier>` à la liste `SHELL` de `sw.js`, puis incrémenter `CACHE`.
+2. `python3 tools/build.py` (exercices + liste des phrases), puis `~/.revisions-cm1/venv/bin/python tools/voice.py` (enregistre les phrases manquantes avec Piper), puis les illustrations (`tools/images.py`, Draw Things ouvert avec son API locale).
+3. Tester en local (`python3 -m http.server 8765`) : séance complète, console sans « segment sans audio » ; puis `git commit` + `git push` : l'iPad se met à jour tout seul.
+
+## Outillage (hors du dépôt, dans `~/.revisions-cm1/`)
+- `venv/` : Python 3.12 (Homebrew) + Piper, installé **uniquement** depuis `tools/requirements.txt` (`--require-hashes --only-binary=:all:`). Ne jamais ajouter de paquet sans figer version + empreinte vérifiée sur PyPI et passage dans OSV.
+- `voices/` : voix `.onnx` vérifiées par `tools/voices.sha256` (dépôt rhasspy/piper-voices, révision figée). Format ONNX : pas d'exécution de code.
+- Images : app Draw Things (Mac App Store, sandboxée), serveur API en local seulement (127.0.0.1), à éteindre après usage.
+- Hook `.githooks/pre-commit` (activé par `git config core.hooksPath .githooks`) : bloque secrets, fichiers > 5 Mo et fichiers de modèles.
 
 ## Règles pédagogiques (à respecter dans tout contenu)
-- Tout est lu à voix haute : phrases courtes, pas d'abréviation que la voix lirait mal (les siècles en chiffres romains sont gérés par `toSpeech` dans `js/speech.js`).
+- Seule la consigne est lue automatiquement ; chaque réponse ou étiquette a son bouton 🔊. Phrases courtes, pas d'abréviation que la voix lirait mal (les siècles en chiffres romains sont gérés par `toSpeech` dans `js/speech.js`).
 - Rien à taper au clavier, pas de glisser-déposer : on touche.
-- Une idée par question ; 3 choix au début, 4 ensuite ; définitions courtes, vocabulaire de la fiche.
+- Une idée par question ; 4 choix ; jamais une question qui recopie la définition juste vue (`indice`, intrus, pourquoi, situations).
 - Erreur bienveillante : un indice (`hint`) qui aide sans donner la réponse ; `explain` court.
 - Pas d'italique, pas de texte justifié, pas d'image copiée de la fiche : dessins SVG originaux ou emoji.
 - Maths (dyscalculie) : préférer des représentations visuelles (quantités, droite graduée) — nouveau type d'activité à ajouter dans `js/activities.js` si besoin.
 
 ## Architecture
 - `js/srs.js` : niveaux de maîtrise 0→4 par notion, construction de la séance (3 nouveautés max, jeux variés).
-- `js/lessons.js` : chargement et génération automatique des exercices de vocabulaire.
+- `tools/build.py` : génération des exercices de vocabulaire et de la liste des phrases ; `js/lessons.js` charge `lessons/build/`.
+- `js/speech.js` + `audio/` : phrases pré-enregistrées (nom = empreinte FNV-1a du texte), repli sur la voix de l'iPad ; `phrases.json` = phrases fixes de l'app.
 - `js/activities.js` : qcm, vf, schema, placer (tri / frise / relie / phrase).
 - `js/rewards.js` : dragon en 5 stades (étoiles), cartes à collectionner.
 - `js/parent.js` : espace parent (appui long sur ⚙️ en haut à droite + une multiplication).

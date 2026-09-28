@@ -1,3 +1,7 @@
 .DS_Store
 .claude/
 CLAUDE.local.md
+tools/.venv/
+tools/work/
+tools/voices/
+__pycache__/

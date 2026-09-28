@@ -99,9 +99,13 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .prompt .text { font-size: 30px; font-weight: 700; flex: 1; }
 .speak { flex: none; }
 .choices { display: grid; gap: 16px; }
-.choice { display: flex; align-items: center; gap: 12px; text-align: left; font-size: 26px; width: 100%; }
-.choice .label { flex: 1; }
-.choice .ear { font-size: 24px; opacity: .6; padding: 6px 10px; }
+.col { display: flex; flex-direction: column; gap: 16px; }
+.choice-row { display: grid; grid-template-columns: 1fr 72px; gap: 12px; align-items: stretch; }
+.choice { text-align: left; font-size: 26px; width: 100%; }
+.ear-btn { min-height: 72px; font-size: 28px; }
+.ear { min-height: 44px; min-width: 44px; padding: 4px 8px; font-size: 20px; border-width: 2px; box-shadow: none; background: var(--primary-soft); border-color: transparent; border-radius: 14px; flex: none; }
+.token-wrap { display: inline-flex; align-items: center; gap: 6px; }
+.tlabel { flex: 1; }
 .reading { border-color: var(--primary); background: var(--primary-soft); }
 .good { border-color: var(--good) !important; background: var(--good-soft) !important; }
 .dim { opacity: .35; }
@@ -126,7 +130,7 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .targets { display: grid; gap: 16px; }
 .targets.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .targets.cols-2 { grid-template-columns: repeat(2, 1fr); }
-.target { min-height: 150px; display: flex; flex-direction: column; gap: 8px; align-items: stretch; text-align: left; font-size: 24px; }
+.target { min-height: 150px; background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); cursor: pointer; display: flex; flex-direction: column; gap: 8px; align-items: stretch; text-align: left; font-size: 24px; }
 .target .tname { font-weight: 700; display: flex; align-items: center; gap: 8px; }
 .target .placed { display: flex; flex-wrap: wrap; gap: 6px; }
 .target .placed span { font-size: 20px; background: rgba(255,255,255,.8); border-radius: 12px; padding: 4px 10px; }
@@ -149,6 +153,7 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .schema-wrap .zone.dimz { opacity: .3; }
 .schema-wrap .zone.flash { animation: flash .6s ease-in-out 2; }
 @keyframes flash { 50% { opacity: .3; } }
+.schema-wrap.show-zones [data-zone] > * { stroke: #e0474c; stroke-width: 3; stroke-dasharray: 8 4; fill-opacity: .25; }
 
 /* découverte */
 .discover { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }

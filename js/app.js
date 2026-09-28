@@ -1,6 +1,7 @@
 import { h, cap, pick } from './util.js';
 import { state, save } from './store.js';
-import { say, sayAll, stop, unlock } from './speech.js';
+import { say, sayAll, stop, unlock, loadAudio } from './speech.js';
+import { P, loadPhrases } from './phrases.js';
 import { loadLessons } from './lessons.js';
 import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson } from './srs.js';
 import { renderStep, schemaView } from './activities.js';
@@ -63,7 +64,7 @@ function home() {
   screen(
     gear,
     h('div', { class: 'home-top' },
-      h('div', { class: 'companion', onclick: () => say(`${companionName()}. ${STAGES[stageOf(stars)].name}. Tu as ${stars} étoiles.`), html: companionSVG(stars) }),
+      h('div', { class: 'companion', onclick: () => say([P.stages[stageOf(stars)], P.companionMore]), html: companionSVG(stars) }),
       h('div', { style: { display: 'flex', flexDirection: 'column', gap: '12px' } },
         h('div', { class: 'row' },
           h('span', { class: 'companion-name' }, companionName()),
@@ -128,7 +129,7 @@ function start(L) {
         h('button', { class: 'icon', onclick: () => say(text) }, '🔊'),
         h('span', { class: 'spacer' }),
         h('button', { class: 'primary big', onclick: () => { markSeen(L, n.id); next(); } }, 'J’ai compris 👍')));
-    say(`Nouveau mot. ${text}`);
+    say([P.newWord, text]);
   }
 
   function show(item) {
@@ -158,10 +159,10 @@ function start(L) {
     const grew = addStars(earned);
     const cards = checkCards(L);
     const stars = state.companion.stars;
-    const lines = [`Bravo ! Tu as gagné ${earned} étoiles.`];
-    if (grew) lines.push(`Waouh ! ${companionName()} a grandi : ${STAGES[stageOf(stars)].name} !`);
-    if (cards.length) lines.push(cards.length > 1 ? `Tu débloques ${cards.length} nouvelles cartes !` : `Tu débloques une nouvelle carte : ${cards[0].name} !`);
-    lines.push('Tu peux faire une pause.');
+    const lines = [P.endStars];
+    if (grew) lines.push(P.endGrew, P.stages[stageOf(stars)]);
+    if (cards.length) lines.push(cards.length > 1 ? P.endCards : P.endCard, ...cards.map((c) => c.name));
+    lines.push(P.endPause);
     screen(
       h('div', { class: 'center' },
         h('h1', {}, pick(['Séance terminée !', 'Mission accomplie !', 'Bien joué !'])),
@@ -171,7 +172,7 @@ function start(L) {
         cards.length ? h('div', { class: 'new-cards' }, cards.map((c) => cardEl(c, true))) : null,
         h('p', { class: 'muted' }, '🌿 Fais une petite pause : bois un verre d’eau, étire-toi.'),
         h('button', { class: 'primary big', onclick: home }, '🏠 Retour')));
-    sayAll(lines);
+    say(lines);
   }
 
   next();
@@ -213,13 +214,12 @@ function album() {
         const el = cardEl(c, has);
         el.addEventListener('click', () => {
           if (has) return zoom(c);
-          const names = (c.notions === 'all' ? ['toute la leçon'] : c.notions.map((id) => L.notionById[id].term)).join(', ');
-          say(`Carte à gagner. Pour la débloquer, révise : ${names}.`);
+          say(c.notions === 'all' ? P.cardLockedAll : [P.cardLocked, ...c.notions.map((id) => cap(L.notionById[id].term))]);
         });
         return el;
       })),
     ]).flat());
-  say(`Tu as ${owned} cartes sur ${all.length}.`);
+  say(P.album);
 }
 
 function zoom(c) {
@@ -229,13 +229,14 @@ function zoom(c) {
         h('div', { class: 'art' }, c.emoji), h('div', {}, c.name)),
       h('div', { class: 'panel' }, c.desc)));
   document.body.append(ov);
-  say(`${c.name}. ${c.desc}`);
+  say([c.name, c.desc]);
 }
 
 /* ---------- Démarrage ---------- */
 async function boot() {
   applySettings();
   try {
+    await Promise.all([loadPhrases(), loadAudio()]);
     lessons = await loadLessons();
   } catch (e) {
     app.replaceChildren(h('div', { class: 'panel' }, 'Impossible de charger les leçons. Vérifie la connexion puis relance l’app.'));

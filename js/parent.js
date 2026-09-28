@@ -2,7 +2,8 @@
 
 import { h } from './util.js';
 import { state, save, exportCode, importCode, resetAll } from './store.js';
-import { say, stop, frenchVoices } from './speech.js';
+import { say, stop } from './speech.js';
+import { P } from './phrases.js';
 import { ns, lessonProgress } from './srs.js';
 
 export function parentGate(lessons, back) {
@@ -32,13 +33,8 @@ function parent(lessons, back) {
   const app = document.getElementById('app');
   const set = (k, v) => { state.settings[k] = v; save(); };
 
-  const voices = frenchVoices();
-  const voiceSel = h('select', { onchange: (e) => set('voiceName', e.target.value) },
-    h('option', { value: '' }, 'Automatique'),
-    voices.map((v) => h('option', { value: v.name, selected: v.name === state.settings.voiceName }, `${v.name} (${v.lang})`)));
-
-  const rate = h('input', { type: 'range', min: '0.6', max: '1.2', step: '0.05', value: state.settings.rate,
-    onchange: (e) => { set('rate', Number(e.target.value)); say('Voici la vitesse de lecture.'); } });
+  const rate = h('input', { type: 'range', min: '0.7', max: '1.2', step: '0.05', value: state.settings.rate,
+    onchange: (e) => { set('rate', Number(e.target.value)); say(P.rateTest); } });
 
   const fontSel = h('select', { onchange: (e) => { set('font', e.target.value); document.body.classList.toggle('font-lexend', e.target.value === 'lexend'); document.body.classList.toggle('font-system', e.target.value === 'system'); } },
     [['andika', 'Andika (conçue pour apprendre à lire)'], ['lexend', 'Lexend (très aérée)'], ['system', 'Police de l’iPad']]
@@ -46,8 +42,6 @@ function parent(lessons, back) {
 
   const lenSel = h('select', { onchange: (e) => set('sessionLen', Number(e.target.value)) },
     [4, 6, 8, 10].map((n) => h('option', { value: n, selected: state.settings.sessionLen === n }, `${n} questions (~${Math.round(n * 0.8)} min)`)));
-
-  const readChoices = h('input', { type: 'checkbox', checked: state.settings.readChoices, onchange: (e) => set('readChoices', e.target.checked) });
 
   const code = h('textarea', { readonly: true }, exportCode());
   const importBox = h('textarea', { placeholder: 'Coller ici un code de sauvegarde' });
@@ -73,11 +67,9 @@ function parent(lessons, back) {
     h('div', { class: 'panel', style: { display: 'flex', flexDirection: 'column', gap: '14px' } },
       h('h3', {}, 'Réglages'),
       h('label', {}, 'Police', fontSel),
-      h('label', {}, 'Voix', voiceSel),
       h('label', {}, 'Vitesse de la voix', rate),
       h('label', {}, 'Durée d’une séance', lenSel),
-      h('label', {}, readChoices, 'Lire aussi les réponses à voix haute'),
-      voices.length ? null : h('p', { class: 'muted' }, 'Aucune voix française trouvée : Réglages de l’iPad → Accessibilité → Contenu énoncé → Voix → Français.')),
+      h('p', { class: 'muted' }, 'Voix : Piper (open source, enregistrée à l’avance). Illustrations : générées localement avec FLUX.1 [schnell].')),
     ...lessonBlocks,
     h('div', { class: 'panel', style: { display: 'flex', flexDirection: 'column', gap: '12px' } },
       h('h3', {}, 'Sauvegarde'),

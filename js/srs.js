@@ -4,7 +4,6 @@
 // Raté : niveau −1, revient tout de suite.
 
 import { state, save } from './store.js';
-import { shuffle } from './util.js';
 
 const DAY = 864e5;
 const INTERVALS = [0, 1, 3, 7, 16];
@@ -77,51 +76,47 @@ export function buildSession(lesson, n) {
     review = review.concat(rest.slice(0, n - review.length - fresh.length));
   }
 
-  // Alterne nouveautés et révisions.
-  const order = [];
-  for (let i = 0; i < Math.max(fresh.length, review.length); i++) {
-    if (fresh[i]) order.push(fresh[i]);
-    if (review[i]) order.push(review[i]);
-  }
-
-  const known = new Set(seen.map((x) => x.id));
+  const known = new Set([...seen, ...fresh].map((x) => x.id));
+  const isNew = new Set(fresh.map((x) => x.id));
   const used = new Set();
-  const steps = [];
-  let count = 0;
   const typeCount = {};
-  const addItem = (notion) => {
-    const item = pickItem(lesson, notion, known, used, typeCount);
-    if (!item) return;
+  const take = (notion) => {
+    const item = pickItem(lesson, notion, known, isNew, used, typeCount);
+    if (!item) return null;
     used.add(item.id);
     const t = item.layout || item.type;
     typeCount[t] = (typeCount[t] || 0) + 1;
-    steps.push({ kind: 'item', item });
-    count++;
+    return { kind: 'item', item };
   };
-  for (const notion of order) {
-    if (count >= n) break;
-    if (!st(notion).seen) {
-      steps.push({ kind: 'decouverte', notion });
-      known.add(notion.id);
-    }
-    addItem(notion);
+
+  const reviewQ = review.map(take).filter(Boolean);
+  // Deux questions par mot nouveau si la séance est courte (début de leçon).
+  const perNew = reviewQ.length + fresh.length < n ? 2 : 1;
+  const freshQ = [];
+  for (let r = 0; r < perNew; r++) for (const x of fresh) { const q = take(x); if (q) freshQ.push(q); }
+
+  // Les mots nouveaux sont découverts d'abord ; leurs questions arrivent au moins
+  // deux questions plus tard, jamais juste après la carte.
+  const questions = [];
+  const lead = reviewQ.splice(0, 2);
+  questions.push(...lead);
+  while (reviewQ.length || freshQ.length) {
+    if (freshQ.length) questions.push(freshQ.shift());
+    if (reviewQ.length) questions.push(reviewQ.shift());
   }
-  // Séance trop courte (début de leçon) : on reprend les nouveautés sous une autre forme.
-  for (const notion of shuffle(fresh)) {
-    if (count >= n) break;
-    addItem(notion);
-  }
-  return steps;
+  return [...fresh.map((notion) => ({ kind: 'decouverte', notion })), ...questions.slice(0, n)];
 }
 
-function pickItem(lesson, notion, known, used, typeCount) {
+function pickItem(lesson, notion, known, isNew, used, typeCount) {
   const level = ns(lesson, notion.id).level;
-  const target = Math.min(3, level + 1);
+  const target = Math.min(3, level + 2);
   const candidates = lesson.items.filter((it) =>
-    it.notions.includes(notion.id) && !used.has(it.id) && it.notions.every((id) => known.has(id)));
+    it.notions.includes(notion.id) && !used.has(it.id) && it.notions.every((id) => known.has(id)) &&
+    // « Que veut dire… ? » et « Relie » redonnent la définition : pas le jour de la découverte.
+    !(it.review && it.notions.some((id) => isNew.has(id))));
   if (!candidates.length) return null;
   return candidates
     // On varie les jeux : chaque jeu déjà proposé dans la séance est pénalisé.
-    .map((it) => ({ it, score: Math.abs((it.diff ?? 1) - target) + Math.random() * 0.8 + 0.5 * (typeCount[it.layout || it.type] || 0) }))
+    .map((it) => ({ it, score: Math.abs((it.diff ?? 1) - target) + Math.random() * 0.8 + 0.8 * (typeCount[it.layout || it.type] || 0) }))
     .sort((a, b) => a.score - b.score)[0].it;
 }

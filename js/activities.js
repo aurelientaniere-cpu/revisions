@@ -1,19 +1,27 @@
 // Les activités. Chacune affiche une question et appelle finish('ok' | 'partial' | 'fail').
-// Règles : tout est lu à voix haute, on touche au lieu d'écrire ou de glisser,
-// une erreur n'est jamais punie : indice d'abord, puis la réponse est montrée.
+// Règles : seule la consigne est lue automatiquement ; chaque réponse ou étiquette a son 🔊.
+// On touche au lieu d'écrire ou de glisser. Une erreur n'est jamais punie : indice d'abord,
+// puis la réponse est montrée.
 
-import { h, shuffle, pick, cap } from './util.js';
-import { say, sayAll, stop } from './speech.js';
-import { state } from './store.js';
+import { h, shuffle, pick } from './util.js';
+import { say, stop } from './speech.js';
+import { P, fill } from './phrases.js';
 
-const BRAVO = ['Bravo !', 'Super !', 'Génial !', 'Exactement !', 'Tu as trouvé !', 'Très bien !'];
-const RETRY = ['Presque ! Essaie encore.', 'Pas tout à fait. Réessaie !', 'Bien essayé ! Encore une fois.'];
+const MAX_CHOICES = 4;
+
+function ear(text, cls = 'ear') {
+  return h('button', {
+    class: cls, 'aria-label': 'Écouter',
+    onclick: (e) => { e.stopPropagation(); say(text); },
+  }, '🔊');
+}
 
 // Zone commune : consigne lue + zone de réponse + bandeau de retour.
-function frame(root, text, extraSpeech) {
-  const speakBtn = h('button', { class: 'icon speak', 'aria-label': 'Écouter', onclick: () => say(text) }, '🔊');
-  const prompt = h('div', { class: 'prompt' }, h('div', { class: 'text' }, text), speakBtn);
-  const body = h('div', { class: 'col', style: { display: 'flex', flexDirection: 'column', gap: '16px' } });
+function frame(root, text, speech = text) {
+  const prompt = h('div', { class: 'prompt' },
+    h('div', { class: 'text' }, text),
+    h('button', { class: 'icon speak', 'aria-label': 'Écouter', onclick: () => say(speech) }, '🔊'));
+  const body = h('div', { class: 'col' });
   const fb = h('div');
   root.append(prompt, body, fb);
   return { body, fb };
@@ -26,85 +34,87 @@ function feedback(fb, kind, msg, next) {
     next ? h('button', { class: 'primary', onclick: () => { stop(); next(); } }, 'Suivant ➜') : null));
 }
 
+// segments : liste de phrases enregistrées, affichées bout à bout.
 function finisher(fb, done) {
-  return (result, msg) => {
-    const kind = result === 'fail' ? 'show' : 'ok';
-    feedback(fb, kind, msg, () => done(result));
-    say(msg);
+  return (result, segments) => {
+    const segs = segments.filter(Boolean);
+    feedback(fb, result === 'fail' ? 'show' : 'ok', segs.join(' '), () => done(result));
+    say(segs);
   };
 }
 
+function hint(fb, segments) {
+  const segs = segments.filter(Boolean);
+  feedback(fb, 'try', segs.join(' '));
+  say(segs);
+}
+
 export function renderStep(item, ctx) {
-  const fn = { qcm, vf, schema, placer }[item.type];
-  fn(item, ctx);
+  ({ qcm, vf, schema, placer })[item.type](item, ctx);
 }
 
 /* ---------- QCM ---------- */
-function qcm(item, { root, level, done }) {
-  const text = item.sentence ? `Termine la phrase : ${item.sentence}…` : item.q;
+function qcm(item, { root, done }) {
+  const text = item.sentence ? `${P.completePrefix} ${item.sentence}…` : item.q;
   const { body, fb } = frame(root, text);
   const finish = finisher(fb, done);
-  let choices = item.choices.map((t, i) => ({ t, ok: i === 0 }));
-  if (level <= 1 && choices.length > 3) choices = [choices[0], ...shuffle(choices.slice(1)).slice(0, 2)];
-  choices = shuffle(choices);
+  const choices = shuffle([
+    { t: item.choices[0], ok: true },
+    ...shuffle(item.choices.slice(1)).slice(0, MAX_CHOICES - 1).map((t) => ({ t, ok: false })),
+  ]);
+  const full = item.sentence ? `${item.sentence} ${item.choices[0]}.` : null;
   let errors = 0, over = false;
 
-  const buttons = choices.map((c) => {
-    const btn = h('button', { class: 'choice' },
-      h('span', { class: 'label' }, c.t),
-      h('span', { class: 'ear', onclick: (e) => { e.stopPropagation(); say(c.t); } }, '🔊'));
+  const rows = choices.map((c) => {
+    const btn = h('button', { class: 'choice' }, c.t);
     btn.addEventListener('click', () => answer(c, btn));
-    return btn;
+    c.btn = btn;
+    return h('div', { class: 'choice-row' }, btn, ear(c.t, 'icon ear-btn'));
   });
-  body.append(h('div', { class: 'choices' }, buttons));
+  body.append(h('div', { class: 'choices' }, rows));
 
   function answer(c, btn) {
     if (over || btn.disabled) return;
-    stop();
-    buttons.forEach((b) => b.classList.remove('reading'));
-    const full = item.sentence ? `${item.sentence} ${c.t}` : c.t;
     if (c.ok) {
       over = true;
       btn.classList.add('good');
-      finish(errors ? 'partial' : 'ok', `${pick(BRAVO)} ${item.sentence ? full + '.' : ''} ${item.explain || ''}`.trim());
+      finish(errors ? 'partial' : 'ok', [pick(P.bravo), full, item.explain]);
       return;
     }
     errors++;
     btn.disabled = true;
     btn.classList.add('dim');
     if (errors === 1 && choices.length > 2) {
-      const msg = `${pick(RETRY)} ${item.hint || ''}`.trim();
-      feedback(fb, 'try', msg);
-      say(msg);
+      hint(fb, [pick(P.retry), item.hint]);
     } else {
       over = true;
-      const good = choices.findIndex((x) => x.ok);
-      buttons[good].classList.add('reveal');
-      finish('fail', `La bonne réponse est : ${choices[good].t}. ${item.explain || ''}`.trim());
+      const good = choices.find((x) => x.ok);
+      good.btn.classList.add('reveal');
+      finish('fail', [P.reveal, good.t, full, item.explain]);
     }
   }
 
-  const texts = [text, ...(state.settings.readChoices ? choices.map((c) => c.t) : [])];
-  sayAll(texts, (i) => buttons.forEach((b, j) => b.classList.toggle('reading', i > 0 && j === i - 1)));
+  say(text);
 }
 
 /* ---------- Vrai / Faux ---------- */
 function vf(item, { root, done }) {
-  const text = item.q;
-  const { body, fb } = frame(root, `Vrai ou faux ? ${text}`);
+  const text = `${P.vfPrefix} ${item.q}`;
+  const { body, fb } = frame(root, text);
   const finish = finisher(fb, done);
   let over = false;
+  const key = String(item.answer);
   const make = (val, label) => {
     const b = h('button', { onclick: () => {
       if (over) return;
       over = true;
       if (val === item.answer) {
         b.classList.add('good');
-        finish('ok', `${pick(BRAVO)} C'est ${item.answer ? 'vrai' : 'faux'}. ${item.explain || ''}`);
+        finish('ok', [pick(P.bravo), P.vfOk[key], item.explain]);
       } else {
         b.classList.add('dim');
         (val ? f : t).classList.add('reveal');
-        finish('fail', `Eh non, c'est ${item.answer ? 'vrai' : 'faux'}. ${item.explain || ''}`);
+        finish('fail', [P.vfKo[key], item.explain]);
       }
     } }, label);
     return b;
@@ -112,18 +122,19 @@ function vf(item, { root, done }) {
   const t = make(true, '👍 Vrai');
   const f = make(false, '👎 Faux');
   body.append(h('div', { class: 'vf' }, t, f));
-  say(`Vrai ou faux ? ${text}`);
+  say(text);
 }
 
 /* ---------- Schéma à toucher ---------- */
 const svgCache = {};
-export async function loadSvg(url) {
+async function loadSvg(url) {
   if (!svgCache[url]) svgCache[url] = await fetch(url).then((r) => r.text());
   return svgCache[url];
 }
 
 export async function schemaView(lesson, highlight) {
   const wrap = h('div', { class: 'schema-wrap', html: await loadSvg(lesson.schema.asset) });
+  if (new URLSearchParams(location.search).has('zones')) wrap.classList.add('show-zones');
   if (highlight) {
     wrap.classList.add('focus');
     wrap.querySelectorAll(`[data-zone="${highlight}"]`).forEach((z) => z.classList.add('hl'));
@@ -138,6 +149,7 @@ async function schema(item, { root, lesson, done }) {
   body.append(wrap);
   let errors = 0, over = false;
   const zones = (name) => wrap.querySelectorAll(`[data-zone="${name}"]`);
+  const target = lesson.zoneNames[item.target];
   wrap.addEventListener('click', (e) => {
     const z = e.target.closest('[data-zone]');
     if (!z || over) return;
@@ -146,28 +158,26 @@ async function schema(item, { root, lesson, done }) {
       over = true;
       zones(name).forEach((el) => el.classList.add('hl'));
       wrap.classList.add('focus');
-      finish(errors ? 'partial' : 'ok', `${pick(BRAVO)} ${item.explain}`);
+      finish(errors ? 'partial' : 'ok', [pick(P.bravo), item.explain]);
       return;
     }
     errors++;
-    const that = lesson.zoneNames[name];
+    const that = fill(P.zoneThis, lesson.zoneNames[name]);
     zones(name).forEach((el) => { el.classList.remove('flash'); void el.getBBox(); el.classList.add('flash'); });
     if (errors < 2) {
-      const msg = `Ça, c'est ${that}. ${pick(RETRY)}`;
-      feedback(fb, 'try', msg);
-      say(msg);
+      hint(fb, [that, pick(P.retry)]);
     } else {
       over = true;
       zones(item.target).forEach((el) => el.classList.add('hl'));
       wrap.classList.add('focus');
-      finish('fail', `Ça, c'est ${that}. Regarde, ${lesson.zoneNames[item.target]} est ici. ${item.explain}`);
+      finish('fail', [that, fill(P.zoneHere, target), item.explain]);
     }
   });
   say(item.q);
 }
 
 /* ---------- Placer : trier, frise, relier, phrase ----------
-   On touche une étiquette (elle est lue), puis l'endroit où elle va. */
+   On touche une étiquette pour la choisir (son 🔊 la lit), puis l'endroit où elle va. */
 function placer(item, { root, done }) {
   const { body, fb } = frame(root, item.q);
   const finish = finisher(fb, done);
@@ -177,10 +187,9 @@ function placer(item, { root, done }) {
     shuffle(tokens).forEach((t) => (byTarget[t.target] ||= []).push(t));
     const lists = Object.values(byTarget);
     const out = [];
-    for (let i = 0; out.length < item.sample; i++) {
+    for (let i = 0; out.length < item.sample && lists.some((l) => l.length); i++) {
       const l = lists[i % lists.length];
       if (l.length) out.push(l.shift());
-      if (lists.every((x) => !x.length)) break;
     }
     tokens = out;
   }
@@ -189,12 +198,12 @@ function placer(item, { root, done }) {
   let selected = null, errors = 0, left = tokens.length;
 
   const tokenBox = h('div', { class: 'tokens' });
-  const tokenEls = tokens.map((t) => {
-    const b = h('button', { class: 'token', onclick: () => select(t, b) }, t.text);
-    t.el = b;
-    return b;
-  });
-  tokenBox.append(...tokenEls);
+  for (const t of tokens) {
+    const b = h('button', { class: 'token', onclick: () => select(t) }, t.text);
+    t.btn = b;
+    t.wrap = h('span', { class: 'token-wrap' }, b, ear(t.text));
+    tokenBox.append(t.wrap);
+  }
 
   const targetEls = {};
   const targets = layout === 'relie' ? shuffle(item.targets) : item.targets;
@@ -203,10 +212,10 @@ function placer(item, { root, done }) {
   targets.forEach((tg, i) => {
     const placed = h('div', { class: 'placed' });
     const style = tg.color ? { background: tg.color + '22', borderColor: tg.color } : {};
-    const el = h('button', { class: 'target', style, onclick: () => drop(tg, el) },
+    const el = h('div', { class: 'target', role: 'button', style, onclick: () => drop(tg, el) },
       tg.date ? h('span', { class: 'date' }, tg.date) : null,
       layout === 'phrase' ? h('span', { class: 'num' }, `${i + 1}`) : null,
-      tg.label ? h('span', { class: 'tname' }, tg.emoji || '', tg.label) : null,
+      tg.label ? h('span', { class: 'tname' }, tg.emoji || '', h('span', { class: 'tlabel' }, tg.label), ear(tg.label)) : null,
       placed);
     el.placed = placed;
     targetEls[tg.id] = el;
@@ -217,46 +226,39 @@ function placer(item, { root, done }) {
   else if (layout === 'phrase') body.append(targetBox, tokenBox);
   else body.append(tokenBox, targetBox);
 
-  function select(t, b) {
+  function select(t) {
     if (t.done) return;
-    tokenEls.forEach((x) => x.classList.remove('selected'));
+    tokens.forEach((x) => x.btn.classList.remove('selected'));
     Object.values(targetEls).forEach((x) => x.classList.remove('hintglow'));
     selected = t;
-    b.classList.add('selected');
+    t.btn.classList.add('selected');
     fb.replaceChildren();
-    say(t.text);
     if (t.misses >= 2) targetEls[t.target].classList.add('hintglow');
   }
 
   function drop(tg, el) {
-    if (!selected) { say(tg.label || tg.date || ''); return; }
+    if (!selected) return;
     const t = selected;
     if (t.target === tg.id) {
       t.done = true;
       selected = null;
-      t.el.remove();
+      t.wrap.remove();
       el.classList.remove('hintglow');
       el.placed.append(h('span', {}, t.text));
       if (layout !== 'tri') el.classList.add('good');
-      left--;
-      if (!left) {
-        const result = errors === 0 ? 'ok' : errors <= 2 ? 'partial' : 'fail';
-        const end = layout === 'phrase'
-          ? `${pick(BRAVO)} ${item.targets.map((x) => item.tokens.find((k) => k.target === x.id).text).join(' ')}`
-          : `${pick(BRAVO)} ${item.explain || 'Tout est bien rangé.'}`;
-        finish(result, end);
-      } else {
-        fb.replaceChildren();
-        say(pick(['Oui !', 'Bien !', 'Parfait !']));
-      }
+      fb.replaceChildren();
+      if (--left) { say(pick(P.okSmall)); return; }
+      const result = errors === 0 ? 'ok' : errors <= 2 ? 'partial' : 'fail';
+      const end = layout === 'phrase'
+        ? item.targets.map((x) => item.tokens.find((k) => k.target === x.id).text).join(' ')
+        : item.explain || P.placerDone;
+      finish(result, [pick(P.bravo), end]);
       return;
     }
     errors++;
     t.misses++;
-    const msg = t.misses >= 2 ? 'Regarde, la bonne place brille en orange.' : 'Pas ici. Essaie un autre endroit.';
     if (t.misses >= 2) targetEls[t.target].classList.add('hintglow');
-    feedback(fb, 'try', msg);
-    say(msg);
+    hint(fb, [t.misses >= 2 ? P.placerGlow : P.placerHere]);
   }
 
   say(item.q);

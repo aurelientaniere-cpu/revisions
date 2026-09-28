@@ -3,7 +3,7 @@
 const KEY = 'revisions-cm1-v1';
 
 const DEFAULTS = () => ({
-  settings: { font: 'andika', rate: 0.9, sessionLen: 6, voiceName: '', readChoices: true },
+  settings: { font: 'andika', rate: 1, sessionLen: 6 },
   companion: { name: '', stars: 0 },
   notions: {},          // "lecon/notion" -> { level, seen, due, ok, ko }
   cards: [],            // ids des cartes débloquées

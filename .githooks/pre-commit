@@ -1,0 +1,16 @@
+#!/bin/sh
+# Garde-fou : refuse un commit qui contient un secret probable ou un fichier trop gros.
+fail=0
+patterns='AIza[0-9A-Za-z_-]{35}|sk-[A-Za-z0-9_-]{20,}|gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{20,}|hf_[A-Za-z0-9]{30,}|AKIA[0-9A-Z]{16}|xox[abpr]-[A-Za-z0-9-]{10,}|-----BEGIN [A-Z ]*PRIVATE KEY-----'
+if git diff --cached -U0 --no-color | grep -E '^\+' | grep -Eq "$patterns"; then
+  echo "✋ Commit refusé : un secret (clé d'API, jeton, clé privée) semble présent :"
+  git diff --cached -U0 --no-color | grep -E '^\+' | grep -Eo "$patterns" | sed 's/\(.\{8\}\).*/\1…/' | sort -u
+  fail=1
+fi
+for f in $(git diff --cached --name-only --diff-filter=AM); do
+  [ -f "$f" ] || continue
+  size=$(wc -c < "$f")
+  if [ "$size" -gt 5242880 ]; then echo "✋ Commit refusé : $f dépasse 5 Mo."; fail=1; fi
+  case "$f" in CLAUDE.local.md|*.onnx|*.safetensors|*.ckpt|*.pt) echo "✋ Commit refusé : $f ne doit pas être publié."; fail=1;; esac
+done
+exit $fail

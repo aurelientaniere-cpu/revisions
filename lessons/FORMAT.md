@@ -1,6 +1,6 @@
 # Format d'une leçon
 
-Une leçon = un fichier JSON dans `lessons/`, déclaré dans `lessons/index.json`.
+Une leçon = un fichier JSON dans `lessons/`, déclaré dans `lessons/index.json`, puis construit par `python3 tools/build.py` vers `lessons/build/` (c'est ce fichier que l'app lit).
 Modèle complet : `histoire-moyen-age.json`.
 
 ## Champs de la leçon
@@ -15,15 +15,18 @@ Modèle complet : `histoire-moyen-age.json`.
 | `items` | exercices écrits à la main |
 
 ## Notions
-`{ "id", "term", "nom", "def", "emoji", "group"?, "zone"?, "noAuto"? }`
+`{ "id", "term", "nom", "def", "indice", "emoji", "group"?, "zone"?, "noAuto"? }`
 - `term` : le mot seul (« donjon ») ; `nom` : avec l'article (« le donjon ») ; `def` : définition courte, sans majuscule ni point final.
-- `group` : les notions d'un même groupe servent de distracteurs entre elles. Pour chaque notion groupée, l'app génère seule : « Que veut dire… ? », « Comment s'appelle… ? », « Relie » (par 3) et, si `zone`, « Touche … sur le schéma ».
+- `indice` (obligatoire si `group`) : une situation concrète qui fait deviner le mot **sans recopier la définition** (« Quand l'ennemi approche, les gardes le remontent avec des chaînes. »).
+- `group` : les notions d'un même groupe servent de distracteurs entre elles. Pour chaque notion groupée, `build.py` génère : « De quoi parle-t-on ? {indice} », « Que veut dire… ? » et « Relie » (par 3, seulement lors d'une séance suivante), et, si `zone`, « Touche … sur le schéma ».
 - `noAuto: true` : pas d'exercice généré (dates, idées) — écrire des `items`.
 - Ne jamais changer l'`id` d'une notion existante.
 
 ## Items écrits à la main
-Tous ont `type`, `diff` (1 facile → 3 difficile), `notions` (ids concernés).
-- `qcm` : `q`, `choices` (**la bonne réponse en premier**, l'app mélange), `hint` (indice après la 1re erreur), `explain`. Variante « phrase à terminer » : `sentence` au lieu de `q`.
+Tous ont `type`, `diff` (2 normal → 3 difficile ; une notion neuve démarre à 2), `notions` (ids concernés), `review: true` si l'exercice redonne la définition (jamais le jour de la découverte).
+- `qcm` : `q`, `choices` (**la bonne réponse en premier**, au moins 4 choix plausibles ; l'app en tire 4 et mélange), `hint` (aide sans donner la réponse, jamais « commence par… »), `explain`. Variante « phrase à terminer » : `sentence` au lieu de `q`.
+- Viser des questions qui font réfléchir : l'intrus (« Lequel n'est PAS… »), les « pourquoi », les situations (« Un paysan veut cuire son pain : que doit-il faire ? »).
+- Tout texte est enregistré en audio : phrases courtes, pas de nombre ni de prénom variable dans les messages.
 - `vf` : `q` (affirmation), `answer` (true/false), `explain`.
 - `placer` + `layout` :
   - `tri` : `targets` = paniers `{id,label,emoji,color}`, `tokens` = `{text,target}` ; `sample` = nombre d'étiquettes tirées.

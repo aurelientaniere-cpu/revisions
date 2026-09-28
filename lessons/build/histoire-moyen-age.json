@@ -1,0 +1,3556 @@
+{
+ "id": "histoire-moyen-age",
+ "subject": "Histoire",
+ "title": "La vie au Moyen Âge",
+ "subtitle": "XIe–XIIIe siècles",
+ "emoji": "🏰",
+ "color": "#8e5bd6",
+ "source": "Fiches CM1 « La vie quotidienne au Moyen-Âge XIe-XIIIe siècles » (activité n°1 + repère audio)",
+ "schema": {
+  "asset": "lessons/assets/chateau.svg"
+ },
+ "summary": [
+  "Le Moyen Âge commence en 476 et se termine en 1492. Nous étudions les XIe, XIIe et XIIIe siècles : le temps des seigneuries, des paroisses, des villes et des cathédrales.",
+  "À cette époque, la plupart des femmes et des hommes vivent à la campagne, dans des seigneuries. Une seigneurie est un territoire dirigé par un seigneur.",
+  "Les paysans et les paysannes cultivent les terres du seigneur. En échange, ils lui paient des redevances, font des corvées, et paient pour utiliser le four et le moulin.",
+  "Le château fort est la demeure du seigneur. Il a trois fonctions : c'est un lieu de protection, un lieu de vie, et un symbole de la puissance du seigneur.",
+  "Les remparts, les tours, les douves et le pont-levis protègent le château en cas d'attaque. Le seigneur y vit avec sa famille, ses chevaliers et ses serviteurs.",
+  "L'Église joue un rôle très important. Elle encadre la vie des habitants dans la paroisse, de la naissance à la mort. Les paysans lui paient un impôt : la dîme.",
+  "C'est aussi le temps des abbayes, comme Cluny en Bourgogne, où vivent les moines. On construit des églises romanes, aux murs épais et aux arcs arrondis, puis des cathédrales gothiques, hautes et lumineuses, comme Notre-Dame de Paris.",
+  "Au XIIIe siècle, les villes se développent autour des marchés, des foires et de l'artisanat. Ce sont des centres de commerce.",
+  "La phrase à retenir : entre le XIe et le XIIIe siècle, la plupart des femmes et des hommes vivent à la campagne, dans des seigneuries."
+ ],
+ "notions": [
+  {
+   "id": "chateau",
+   "term": "château fort",
+   "nom": "le château fort",
+   "def": "la demeure du seigneur, qui protège, où l'on vit, et qui montre sa puissance",
+   "emoji": "🏰",
+   "noAuto": true
+  },
+  {
+   "id": "seigneur",
+   "term": "seigneur",
+   "nom": "le seigneur",
+   "def": "homme puissant qui domine une seigneurie",
+   "group": "mots",
+   "emoji": "👑",
+   "indice": "Il habite le château, commande les chevaliers et décide de tout sur ses terres."
+  },
+  {
+   "id": "seigneurie",
+   "term": "seigneurie",
+   "nom": "la seigneurie",
+   "def": "territoire dirigé par un seigneur",
+   "group": "mots",
+   "emoji": "🗺️",
+   "indice": "Les champs, les forêts, le village et le château : tout cet ensemble appartient au même maître."
+  },
+  {
+   "id": "donjon",
+   "term": "donjon",
+   "nom": "le donjon",
+   "def": "la plus grande tour du château, où vit le seigneur",
+   "group": "chateau",
+   "zone": "donjon",
+   "emoji": "♜",
+   "indice": "C'est la tour la plus haute : si l'ennemi entre dans le château, on s'y réfugie en dernier."
+  },
+  {
+   "id": "remparts",
+   "term": "remparts",
+   "nom": "les remparts",
+   "def": "les hauts murs épais qui entourent le château",
+   "group": "chateau",
+   "zone": "remparts",
+   "emoji": "🧱",
+   "indice": "Pour attaquer le château, l'ennemi doit d'abord franchir ces murs de pierre très épais."
+  },
+  {
+   "id": "pont-levis",
+   "term": "pont-levis",
+   "nom": "le pont-levis",
+   "def": "le pont que l'on relève pour empêcher d'entrer",
+   "group": "chateau",
+   "zone": "pont-levis",
+   "emoji": "🌉",
+   "indice": "Quand l'ennemi approche, les gardes le remontent avec des chaînes."
+  },
+  {
+   "id": "paysan",
+   "term": "paysan",
+   "nom": "le paysan",
+   "def": "personne qui travaille la terre",
+   "group": "mots",
+   "emoji": "🧑‍🌾",
+   "indice": "Du matin au soir, il laboure les champs, sème le blé et s'occupe des animaux."
+  },
+  {
+   "id": "douves",
+   "term": "douves",
+   "nom": "les douves",
+   "def": "le fossé rempli d'eau autour du château",
+   "group": "chateau",
+   "zone": "douves",
+   "emoji": "🌊",
+   "indice": "Les ennemis ne peuvent pas s'approcher des murs à cause de cette eau profonde."
+  },
+  {
+   "id": "corvee",
+   "term": "corvée",
+   "nom": "la corvée",
+   "def": "travail obligatoire dû au seigneur",
+   "group": "mots",
+   "emoji": "⛏️",
+   "indice": "Plusieurs jours par an, Jean doit réparer les chemins du seigneur sans être payé."
+  },
+  {
+   "id": "tour",
+   "term": "tour",
+   "nom": "une tour",
+   "def": "construction haute, au coin des remparts, pour surveiller et se défendre",
+   "group": "chateau",
+   "zone": "tour",
+   "emoji": "♖",
+   "indice": "Il y en a une à chaque coin des murs : les guetteurs y montent pour voir arriver l'ennemi."
+  },
+  {
+   "id": "fonctions",
+   "term": "les 3 fonctions du château",
+   "nom": "les trois fonctions du château",
+   "def": "protéger, être un lieu de vie, montrer la puissance du seigneur",
+   "emoji": "🛡️",
+   "noAuto": true
+  },
+  {
+   "id": "dates",
+   "term": "de 476 à 1492",
+   "nom": "le Moyen Âge",
+   "def": "le Moyen Âge commence en 476 et se termine en 1492",
+   "emoji": "⏳",
+   "noAuto": true
+  },
+  {
+   "id": "herse",
+   "term": "herse",
+   "nom": "la herse",
+   "def": "la grille en bois et en fer que l'on descend pour fermer l'entrée",
+   "group": "chateau",
+   "zone": "herse",
+   "emoji": "🚧",
+   "indice": "Quand on la fait descendre, plus personne ne peut passer la porte : c'est une grille pointue."
+  },
+  {
+   "id": "dime",
+   "term": "dîme",
+   "nom": "la dîme",
+   "def": "impôt payé à l'Église",
+   "group": "mots",
+   "emoji": "💰",
+   "indice": "Chaque année, le paysan donne une partie de sa récolte pour les prêtres."
+  },
+  {
+   "id": "chapelle",
+   "term": "chapelle",
+   "nom": "la chapelle",
+   "def": "la petite église du château, pour prier",
+   "group": "chateau",
+   "zone": "chapelle",
+   "emoji": "⛪",
+   "indice": "Le seigneur et sa famille viennent y prier sans sortir du château."
+  },
+  {
+   "id": "periode",
+   "term": "XIe–XIIIe siècles",
+   "nom": "les XIe, XIIe et XIIIe siècles",
+   "def": "la période étudiée : seigneuries, châteaux forts, paroisses, villes et cathédrales",
+   "emoji": "📅",
+   "noAuto": true
+  },
+  {
+   "id": "chemin-de-ronde",
+   "term": "chemin de ronde",
+   "nom": "le chemin de ronde",
+   "def": "le passage en haut des remparts où marchent les gardes",
+   "group": "chateau",
+   "zone": "chemin-de-ronde",
+   "emoji": "💂",
+   "indice": "Les gardes marchent tout en haut des murs pour surveiller les alentours."
+  },
+  {
+   "id": "eglise",
+   "term": "Église",
+   "nom": "l'Église",
+   "def": "avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+   "group": "mots",
+   "emoji": "✝️",
+   "indice": "Le pape, les évêques, les moines et tous les croyants chrétiens en font partie."
+  },
+  {
+   "id": "paroisse",
+   "term": "paroisse",
+   "nom": "la paroisse",
+   "def": "territoire religieux autour d'une église",
+   "group": "mots",
+   "emoji": "🔔",
+   "indice": "Tous les habitants de ce village vont prier dans la même église, avec le même curé."
+  },
+  {
+   "id": "cour",
+   "term": "cour",
+   "nom": "la cour",
+   "def": "le grand espace à l'intérieur des remparts",
+   "group": "chateau",
+   "zone": "cour",
+   "emoji": "🐓",
+   "indice": "Au milieu du château, on y trouve le puits, les poules et les chevaux."
+  },
+  {
+   "id": "clerge",
+   "term": "clergé",
+   "nom": "le clergé",
+   "def": "ensemble des personnes de l'Église",
+   "group": "mots",
+   "emoji": "🙏",
+   "indice": "Les prêtres, les moines et les évêques forment ce groupe."
+  },
+  {
+   "id": "entree",
+   "term": "entrée",
+   "nom": "l'entrée",
+   "def": "la porte fortifiée du château, très bien protégée",
+   "group": "chateau",
+   "zone": "entree",
+   "emoji": "🚪",
+   "indice": "C'est le seul passage pour entrer : elle est gardée jour et nuit."
+  },
+  {
+   "id": "abbaye",
+   "term": "abbaye",
+   "nom": "l'abbaye",
+   "def": "monastère dirigé par un abbé ou une abbesse",
+   "group": "mots",
+   "emoji": "📿",
+   "indice": "Des moines y vivent ensemble : ils prient, copient des livres et cultivent un jardin."
+  },
+  {
+   "id": "cathedrale",
+   "term": "cathédrale",
+   "nom": "la cathédrale",
+   "def": "grande église de l'évêque",
+   "group": "mots",
+   "emoji": "⛪",
+   "indice": "Dans cette immense église de la ville, c'est l'évêque qui dirige la messe."
+  },
+  {
+   "id": "roman",
+   "term": "art roman",
+   "nom": "l'art roman",
+   "def": "style d'église aux murs épais et aux ouvertures arrondies",
+   "group": "mots",
+   "emoji": "🌙",
+   "indice": "Les murs sont très épais, les fenêtres petites et les arcs bien ronds."
+  },
+  {
+   "id": "gothique",
+   "term": "art gothique",
+   "nom": "l'art gothique",
+   "def": "style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux",
+   "group": "mots",
+   "emoji": "🌈",
+   "indice": "L'église monte très haut et une lumière colorée entre par d'immenses vitraux."
+  },
+  {
+   "id": "ville",
+   "term": "ville",
+   "nom": "la ville",
+   "def": "centre de commerce qui se développe autour des marchés, des foires et de l'artisanat",
+   "emoji": "🎪",
+   "noAuto": true
+  }
+ ],
+ "cards": [
+  {
+   "id": "mda-chateau",
+   "name": "Le château fort",
+   "emoji": "🏰",
+   "color": "#8e5bd6",
+   "notions": [
+    "chateau",
+    "fonctions"
+   ],
+   "desc": "Il protège les habitants, c'est la maison du seigneur, et il montre sa puissance."
+  },
+  {
+   "id": "mda-donjon",
+   "name": "Le donjon",
+   "emoji": "♜",
+   "color": "#5b7fd6",
+   "notions": [
+    "donjon",
+    "tour",
+    "remparts",
+    "chemin-de-ronde"
+   ],
+   "desc": "La plus grande tour, au centre du château. Le seigneur y vit."
+  },
+  {
+   "id": "mda-pont",
+   "name": "Le pont-levis",
+   "emoji": "🌉",
+   "color": "#3a9bb5",
+   "notions": [
+    "pont-levis",
+    "herse",
+    "douves",
+    "entree"
+   ],
+   "desc": "On le relève et on baisse la herse : personne ne peut entrer !"
+  },
+  {
+   "id": "mda-seigneur",
+   "name": "Le seigneur",
+   "emoji": "👑",
+   "color": "#d6a05b",
+   "notions": [
+    "seigneur",
+    "seigneurie"
+   ],
+   "desc": "Un homme puissant qui dirige la seigneurie et commande ses habitants."
+  },
+  {
+   "id": "mda-paysans",
+   "name": "Les paysans",
+   "emoji": "🧑‍🌾",
+   "color": "#6aa84f",
+   "notions": [
+    "paysan",
+    "corvee"
+   ],
+   "desc": "Ils cultivent la terre, paient des redevances et font des corvées."
+  },
+  {
+   "id": "mda-eglise",
+   "name": "L'Église",
+   "emoji": "✝️",
+   "color": "#c0607a",
+   "notions": [
+    "eglise",
+    "paroisse",
+    "clerge",
+    "dime",
+    "chapelle"
+   ],
+   "desc": "Elle rythme la vie de tous, de la naissance à la mort."
+  },
+  {
+   "id": "mda-abbaye",
+   "name": "L'abbaye de Cluny",
+   "emoji": "📿",
+   "color": "#7a6a5a",
+   "notions": [
+    "abbaye"
+   ],
+   "desc": "En Bourgogne, une abbaye célèbre où vivent les moines."
+  },
+  {
+   "id": "mda-cathedrale",
+   "name": "Notre-Dame de Paris",
+   "emoji": "🌈",
+   "color": "#4f6fc0",
+   "notions": [
+    "cathedrale",
+    "roman",
+    "gothique"
+   ],
+   "desc": "Une cathédrale gothique : haute, lumineuse, avec de grands vitraux."
+  },
+  {
+   "id": "mda-ville",
+   "name": "La foire",
+   "emoji": "🎪",
+   "color": "#e07a3a",
+   "notions": [
+    "ville"
+   ],
+   "desc": "Au XIIIe siècle, les villes grandissent grâce aux marchés et aux foires."
+  },
+  {
+   "id": "mda-frise",
+   "name": "Le voyageur du temps",
+   "emoji": "⏳",
+   "color": "#4a4a6a",
+   "notions": [
+    "dates",
+    "periode"
+   ],
+   "desc": "Le Moyen Âge : de 476 à 1492. Mille ans d'histoire !"
+  },
+  {
+   "id": "mda-legende",
+   "name": "Maître du Moyen Âge",
+   "emoji": "🐉",
+   "color": "#b8860b",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Carte légendaire : tu connais toute la leçon sur le bout des doigts !"
+  }
+ ],
+ "items": [
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chateau",
+    "seigneur"
+   ],
+   "q": "Où vit le seigneur ?",
+   "choices": [
+    "Dans le château fort",
+    "Dans l'abbaye",
+    "Dans la cathédrale",
+    "Dans le moulin"
+   ],
+   "hint": "C'est un grand bâtiment avec des remparts.",
+   "explain": "Le château est la demeure du seigneur.",
+   "id": "histoire-moyen-age#0"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "donjon"
+   ],
+   "q": "Dans quelle partie du château le seigneur et sa famille habitent-ils ?",
+   "choices": [
+    "Le donjon",
+    "La chapelle",
+    "Les douves",
+    "La herse"
+   ],
+   "hint": "C'est la plus grande tour.",
+   "explain": "Ils habitent dans le donjon, la plus grande tour.",
+   "id": "histoire-moyen-age#1"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chapelle"
+   ],
+   "q": "Quel bâtiment du château montre que les seigneurs étaient chrétiens ?",
+   "choices": [
+    "La chapelle",
+    "Le donjon",
+    "La tour",
+    "La cour"
+   ],
+   "hint": "On y va pour prier.",
+   "explain": "La chapelle est la petite église du château.",
+   "id": "histoire-moyen-age#2"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "seigneur"
+   ],
+   "q": "Pourquoi le seigneur porte-t-il une épée ?",
+   "choices": [
+    "C'est un guerrier : il défend sa seigneurie",
+    "Pour travailler la terre",
+    "Pour prier à l'église",
+    "Pour couper le pain"
+   ],
+   "hint": "Son activité principale, c'est la guerre.",
+   "explain": "Le seigneur est un guerrier : il protège sa seigneurie et fait la guerre.",
+   "id": "histoire-moyen-age#3"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chateau"
+   ],
+   "q": "Avec quel matériau le château fort est-il construit ?",
+   "choices": [
+    "La pierre",
+    "Le béton",
+    "Le verre",
+    "Le plastique"
+   ],
+   "hint": "Il faut un matériau très solide qui existait déjà au Moyen Âge.",
+   "explain": "Les châteaux forts sont en pierre : c'est solide contre les attaques.",
+   "id": "histoire-moyen-age#4"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chateau"
+   ],
+   "q": "Qui d'autre que le seigneur et sa famille vit dans le château ?",
+   "choices": [
+    "Ses chevaliers, ses serviteurs et parfois des artisans",
+    "Les moines",
+    "L'évêque",
+    "Tous les paysans"
+   ],
+   "hint": "Ce sont des gens qui travaillent ou combattent pour le seigneur.",
+   "explain": "Le château abrite les chevaliers, les serviteurs et parfois des artisans.",
+   "id": "histoire-moyen-age#5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "dates"
+   ],
+   "q": "Quelles sont les dates du Moyen Âge ?",
+   "choices": [
+    "De 476 à 1492",
+    "De 1492 à 1789",
+    "De l'an 1 à 476",
+    "De 1900 à 2000"
+   ],
+   "hint": "Il commence en 476.",
+   "explain": "Le Moyen Âge va de 476 à 1492.",
+   "id": "histoire-moyen-age#6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "periode"
+   ],
+   "q": "À quels siècles trouve-t-on les châteaux forts ?",
+   "choices": [
+    "Aux XIe–XIIIe siècles",
+    "Au Ve siècle",
+    "Au XXe siècle",
+    "Au XVIIIe siècle"
+   ],
+   "hint": "C'est la période de la leçon.",
+   "explain": "Les châteaux forts, c'est aux XIe, XIIe et XIIIe siècles.",
+   "id": "histoire-moyen-age#7"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "dime"
+   ],
+   "q": "Quel impôt les paysans paient-ils à l'Église ?",
+   "choices": [
+    "La dîme",
+    "La corvée",
+    "Le péage",
+    "La foire"
+   ],
+   "hint": "C'est un impôt pour les prêtres, pas pour le seigneur.",
+   "explain": "La dîme est l'impôt payé à l'Église.",
+   "id": "histoire-moyen-age#8"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ville"
+   ],
+   "q": "Où trouve-t-on les marchés et les foires ?",
+   "choices": [
+    "En ville",
+    "Dans le donjon",
+    "Dans l'abbaye",
+    "Dans la chapelle"
+   ],
+   "hint": "C'est là que se fait le commerce.",
+   "explain": "Les marchés et les foires se tiennent en ville.",
+   "id": "histoire-moyen-age#9"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ville"
+   ],
+   "q": "Pourquoi les villes se développent-elles au XIIIe siècle ?",
+   "choices": [
+    "Grâce au commerce : marchés, foires et artisans",
+    "Grâce aux châteaux forts",
+    "Grâce aux douves",
+    "Parce que les paysans quittent l'Église"
+   ],
+   "hint": "On y achète et on y vend.",
+   "explain": "Les villes sont des centres de commerce.",
+   "id": "histoire-moyen-age#10"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "seigneurie"
+   ],
+   "q": "Où vivent la plupart des gens au Moyen Âge ?",
+   "choices": [
+    "À la campagne, dans des seigneuries",
+    "Dans de grandes villes",
+    "Dans les châteaux",
+    "Dans des abbayes"
+   ],
+   "hint": "Ils travaillent la terre.",
+   "explain": "La plupart des gens vivent à la campagne, dans des seigneuries.",
+   "id": "histoire-moyen-age#11"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "paysan",
+    "corvee"
+   ],
+   "q": "Que doivent les paysans au seigneur ?",
+   "choices": [
+    "Des redevances et des corvées",
+    "Des prières",
+    "Une épée",
+    "Des vitraux"
+   ],
+   "hint": "Ils paient et ils travaillent gratuitement pour lui.",
+   "explain": "Les paysans paient des redevances et font des corvées pour le seigneur.",
+   "id": "histoire-moyen-age#12"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "paysan"
+   ],
+   "q": "Pour quoi les paysans paient-ils aussi le seigneur ?",
+   "choices": [
+    "Pour utiliser le four et le moulin",
+    "Pour aller à l'école",
+    "Pour entrer dans l'abbaye",
+    "Pour avoir une épée"
+   ],
+   "hint": "Pour faire le pain et la farine.",
+   "explain": "Ils paient pour utiliser le four et le moulin du seigneur, et un péage pour passer les ponts.",
+   "id": "histoire-moyen-age#13"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "eglise"
+   ],
+   "q": "Que fait l'Église dans les villes ?",
+   "choices": [
+    "Elle aide les pauvres, soigne les malades et enseigne",
+    "Elle construit les châteaux forts",
+    "Elle organise les foires",
+    "Elle fait la guerre"
+   ],
+   "hint": "Elle s'occupe des gens qui en ont besoin.",
+   "explain": "En ville, l'Église aide les pauvres et les malades et participe à l'enseignement.",
+   "id": "histoire-moyen-age#14"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "abbaye"
+   ],
+   "q": "Comment s'appelle la célèbre abbaye de Bourgogne ?",
+   "choices": [
+    "Cluny",
+    "Notre-Dame",
+    "Versailles",
+    "Carcassonne"
+   ],
+   "hint": "Ce n'est ni une cathédrale, ni un château.",
+   "explain": "L'abbaye de Cluny, en Bourgogne.",
+   "id": "histoire-moyen-age#15"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "abbaye"
+   ],
+   "q": "Qui vit dans une abbaye ?",
+   "choices": [
+    "Les moines",
+    "Les chevaliers",
+    "Le seigneur",
+    "Les marchands"
+   ],
+   "hint": "Ils prient toute la journée.",
+   "explain": "Les moines vivent dans l'abbaye.",
+   "id": "histoire-moyen-age#16"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "gothique"
+   ],
+   "q": "Notre-Dame de Paris est une cathédrale…",
+   "choices": [
+    "gothique",
+    "romane"
+   ],
+   "explain": "Notre-Dame de Paris est gothique : haute et lumineuse.",
+   "id": "histoire-moyen-age#17"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "fonctions"
+   ],
+   "q": "Quelles sont les trois fonctions du château fort ?",
+   "choices": [
+    "Protéger, lieu de vie, montrer la puissance",
+    "Prier, vendre, cultiver",
+    "Soigner, enseigner, prier",
+    "Attaquer, voler, cacher"
+   ],
+   "hint": "Pense aux trois couleurs de ta fiche : rouge, vert, jaune.",
+   "explain": "Le château sert à protéger, c'est un lieu de vie, et il montre la puissance du seigneur.",
+   "id": "histoire-moyen-age#18"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "fonctions"
+   ],
+   "sentence": "Le château fort sert à",
+   "choices": [
+    "protéger les habitants et montrer la puissance du seigneur",
+    "cultiver les champs",
+    "vendre des marchandises",
+    "soigner les malades"
+   ],
+   "explain": "",
+   "id": "histoire-moyen-age#19"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "remparts",
+    "tour"
+   ],
+   "sentence": "Les remparts et les tours permettent de",
+   "choices": [
+    "se défendre en cas d'attaque",
+    "faire la fête",
+    "ranger le blé",
+    "prier Dieu"
+   ],
+   "explain": "",
+   "id": "histoire-moyen-age#20"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "fonctions",
+    "seigneur"
+   ],
+   "sentence": "Le château, construit en hauteur, montre que le seigneur",
+   "choices": [
+    "domine son territoire et commande les habitants",
+    "obéit aux paysans",
+    "est un moine",
+    "cultive lui-même ses champs"
+   ],
+   "explain": "",
+   "id": "histoire-moyen-age#21"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "donjon"
+   ],
+   "sentence": "Dans le donjon, le seigneur peut",
+   "choices": [
+    "vivre avec sa famille et se réfugier en cas d'attaque",
+    "cultiver ses champs",
+    "tenir une foire",
+    "vendre ses marchandises"
+   ],
+   "explain": "",
+   "id": "histoire-moyen-age#22"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "roman"
+   ],
+   "q": "Une église romane a des murs épais et des ouvertures arrondies.",
+   "answer": true,
+   "explain": "Roman : murs épais, arcs arrondis.",
+   "id": "histoire-moyen-age#23"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "gothique"
+   ],
+   "q": "Une église gothique est sombre, avec de toutes petites fenêtres.",
+   "answer": false,
+   "explain": "Gothique : haute, lumineuse, avec des vitraux.",
+   "id": "histoire-moyen-age#24"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "dime"
+   ],
+   "q": "La dîme est un impôt payé au roi.",
+   "answer": false,
+   "explain": "La dîme est payée à l'Église.",
+   "id": "histoire-moyen-age#25"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "corvee"
+   ],
+   "q": "La corvée est un travail obligatoire dû au seigneur.",
+   "answer": true,
+   "explain": "Les paysans doivent travailler gratuitement pour le seigneur.",
+   "id": "histoire-moyen-age#26"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "fonctions"
+   ],
+   "q": "Le château est construit en hauteur pour être visible de loin.",
+   "answer": true,
+   "explain": "Il montre la puissance du seigneur.",
+   "id": "histoire-moyen-age#27"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "clerge"
+   ],
+   "q": "Le clergé, ce sont les chevaliers du seigneur.",
+   "answer": false,
+   "explain": "Le clergé, ce sont les personnes de l'Église.",
+   "id": "histoire-moyen-age#28"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "paroisse"
+   ],
+   "q": "Une paroisse est un territoire religieux autour d'une église.",
+   "answer": true,
+   "explain": "",
+   "id": "histoire-moyen-age#29"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "douves"
+   ],
+   "q": "Les douves sont les chambres du seigneur.",
+   "answer": false,
+   "explain": "Les douves sont le fossé plein d'eau autour du château.",
+   "id": "histoire-moyen-age#30"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "dates"
+   ],
+   "q": "Le Moyen Âge se termine en 1492.",
+   "answer": true,
+   "explain": "Il va de 476 à 1492.",
+   "id": "histoire-moyen-age#31"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 6,
+   "notions": [
+    "fonctions"
+   ],
+   "q": "Range chaque élément dans la bonne fonction du château.",
+   "explain": "Comme sur ta fiche : rouge pour protéger, vert pour la vie, jaune pour la puissance.",
+   "targets": [
+    {
+     "id": "p",
+     "label": "Protéger",
+     "emoji": "🛡️",
+     "color": "#e0474c"
+    },
+    {
+     "id": "v",
+     "label": "Lieu de vie",
+     "emoji": "🏠",
+     "color": "#3fa34d"
+    },
+    {
+     "id": "u",
+     "label": "Puissance",
+     "emoji": "👑",
+     "color": "#d9a400"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "les remparts",
+     "target": "p"
+    },
+    {
+     "text": "les douves",
+     "target": "p"
+    },
+    {
+     "text": "le pont-levis",
+     "target": "p"
+    },
+    {
+     "text": "la cour",
+     "target": "v"
+    },
+    {
+     "text": "les salles et les réserves",
+     "target": "v"
+    },
+    {
+     "text": "les écuries",
+     "target": "v"
+    },
+    {
+     "text": "construit en hauteur",
+     "target": "u"
+    },
+    {
+     "text": "visible de loin",
+     "target": "u"
+    },
+    {
+     "text": "domine le territoire",
+     "target": "u"
+    }
+   ],
+   "id": "histoire-moyen-age#32"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 6,
+   "notions": [
+    "seigneur",
+    "paysan",
+    "clerge"
+   ],
+   "q": "Qui fait quoi ? Range chaque action.",
+   "explain": "Chacun a sa place dans la seigneurie.",
+   "targets": [
+    {
+     "id": "s",
+     "label": "Le seigneur",
+     "emoji": "👑",
+     "color": "#8e5bd6"
+    },
+    {
+     "id": "p",
+     "label": "Les paysans",
+     "emoji": "🧑‍🌾",
+     "color": "#6aa84f"
+    },
+    {
+     "id": "c",
+     "label": "Le clergé",
+     "emoji": "🙏",
+     "color": "#c0607a"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "habite le château",
+     "target": "s"
+    },
+    {
+     "text": "commande la seigneurie",
+     "target": "s"
+    },
+    {
+     "text": "fait la guerre",
+     "target": "s"
+    },
+    {
+     "text": "cultive la terre",
+     "target": "p"
+    },
+    {
+     "text": "fait des corvées",
+     "target": "p"
+    },
+    {
+     "text": "paie la dîme",
+     "target": "p"
+    },
+    {
+     "text": "reçoit la dîme",
+     "target": "c"
+    },
+    {
+     "text": "prie à l'abbaye",
+     "target": "c"
+    },
+    {
+     "text": "aide les malades",
+     "target": "c"
+    }
+   ],
+   "id": "histoire-moyen-age#33"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 3,
+   "notions": [
+    "roman",
+    "gothique"
+   ],
+   "q": "Église romane ou église gothique ?",
+   "explain": "Roman : épais et arrondi. Gothique : haut, lumineux, arcs brisés.",
+   "targets": [
+    {
+     "id": "r",
+     "label": "Romane",
+     "emoji": "🌙",
+     "color": "#a0703c"
+    },
+    {
+     "id": "g",
+     "label": "Gothique",
+     "emoji": "🌈",
+     "color": "#4f6fc0"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "murs épais",
+     "target": "r"
+    },
+    {
+     "text": "ouvertures arrondies",
+     "target": "r"
+    },
+    {
+     "text": "plutôt sombre",
+     "target": "r"
+    },
+    {
+     "text": "arcs brisés",
+     "target": "g"
+    },
+    {
+     "text": "grands vitraux",
+     "target": "g"
+    },
+    {
+     "text": "très haute et lumineuse",
+     "target": "g"
+    }
+   ],
+   "id": "histoire-moyen-age#34"
+  },
+  {
+   "type": "placer",
+   "layout": "frise",
+   "diff": 2,
+   "notions": [
+    "dates",
+    "periode"
+   ],
+   "q": "Place chaque étiquette sur la frise du temps.",
+   "explain": "476, les châteaux aux XIe–XIIIe siècles, puis 1492.",
+   "targets": [
+    {
+     "id": "a",
+     "date": "476"
+    },
+    {
+     "id": "b",
+     "date": "XIe–XIIIe s."
+    },
+    {
+     "id": "c",
+     "date": "1492"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Début du Moyen Âge",
+     "target": "a"
+    },
+    {
+     "text": "Châteaux forts et cathédrales",
+     "target": "b"
+    },
+    {
+     "text": "Fin du Moyen Âge",
+     "target": "c"
+    }
+   ],
+   "id": "histoire-moyen-age#35"
+  },
+  {
+   "type": "placer",
+   "layout": "frise",
+   "diff": 3,
+   "notions": [
+    "dates",
+    "periode"
+   ],
+   "q": "Range les dates de la plus ancienne à la plus récente.",
+   "explain": "D'abord 476, puis les XIe–XIIIe siècles, et enfin 1492.",
+   "targets": [
+    {
+     "id": "a",
+     "date": "1er"
+    },
+    {
+     "id": "b",
+     "date": "2e"
+    },
+    {
+     "id": "c",
+     "date": "3e"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "476",
+     "target": "a"
+    },
+    {
+     "text": "XIe–XIIIe siècles",
+     "target": "b"
+    },
+    {
+     "text": "1492",
+     "target": "c"
+    }
+   ],
+   "id": "histoire-moyen-age#36"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 3,
+   "notions": [
+    "seigneurie",
+    "periode"
+   ],
+   "q": "Reconstruis la phrase mémo.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    },
+    {
+     "id": "4"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Entre le XIe et le XIIIe siècle,",
+     "target": "1"
+    },
+    {
+     "text": "la plupart des femmes et des hommes",
+     "target": "2"
+    },
+    {
+     "text": "vivent à la campagne,",
+     "target": "3"
+    },
+    {
+     "text": "dans des seigneuries.",
+     "target": "4"
+    }
+   ],
+   "id": "histoire-moyen-age#37"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "chateau"
+   ],
+   "q": "Reconstruis la phrase.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Le château",
+     "target": "1"
+    },
+    {
+     "text": "est la demeure",
+     "target": "2"
+    },
+    {
+     "text": "du seigneur.",
+     "target": "3"
+    }
+   ],
+   "id": "histoire-moyen-age#38"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 3,
+   "notions": [
+    "eglise"
+   ],
+   "q": "Reconstruis la phrase.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "L'Église",
+     "target": "1"
+    },
+    {
+     "text": "rythme la vie",
+     "target": "2"
+    },
+    {
+     "text": "des femmes et des hommes.",
+     "target": "3"
+    }
+   ],
+   "id": "histoire-moyen-age#39"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 3,
+   "notions": [
+    "ville"
+   ],
+   "q": "Reconstruis la phrase.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Les villes",
+     "target": "1"
+    },
+    {
+     "text": "sont des centres",
+     "target": "2"
+    },
+    {
+     "text": "de commerce.",
+     "target": "3"
+    }
+   ],
+   "id": "histoire-moyen-age#40"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chateau"
+   ],
+   "q": "Lequel n'est PAS une partie du château fort ?",
+   "choices": [
+    "L'abbaye",
+    "Le donjon",
+    "La herse",
+    "Le chemin de ronde"
+   ],
+   "hint": "Cherche un bâtiment où vivent des moines.",
+   "explain": "L'abbaye est un monastère : elle ne fait pas partie du château.",
+   "id": "histoire-moyen-age#41"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "chapelle",
+    "fonctions"
+   ],
+   "q": "Lequel ne sert PAS à protéger le château ?",
+   "choices": [
+    "La chapelle",
+    "Les douves",
+    "La herse",
+    "Les remparts"
+   ],
+   "hint": "Un de ces endroits sert à prier.",
+   "explain": "La chapelle sert à prier : c'est un lieu de vie, pas de défense.",
+   "id": "histoire-moyen-age#42"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "clerge"
+   ],
+   "q": "Qui ne fait PAS partie du clergé ?",
+   "choices": [
+    "Le chevalier",
+    "Le moine",
+    "L'évêque",
+    "Le curé"
+   ],
+   "hint": "Le clergé, ce sont les gens de l'Église.",
+   "explain": "Le chevalier est un guerrier du seigneur, pas un homme d'Église.",
+   "id": "histoire-moyen-age#43"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chateau"
+   ],
+   "q": "Quelle personne ne vit PAS dans le château ?",
+   "choices": [
+    "Le moine",
+    "Le seigneur",
+    "Le chevalier",
+    "Le serviteur"
+   ],
+   "hint": "Une de ces personnes vit dans une abbaye.",
+   "explain": "Le moine vit à l'abbaye.",
+   "id": "histoire-moyen-age#44"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "fonctions"
+   ],
+   "q": "Pourquoi construit-on le château en hauteur ?",
+   "choices": [
+    "Pour voir l'ennemi arriver de loin et montrer sa puissance",
+    "Pour avoir moins froid",
+    "Pour être plus près de l'église",
+    "Parce que la terre y est meilleure"
+   ],
+   "hint": "Pense à la défense et à la puissance du seigneur.",
+   "explain": "En hauteur, on surveille les environs et tout le monde voit le château.",
+   "id": "histoire-moyen-age#45"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pont-levis"
+   ],
+   "q": "Pourquoi relève-t-on le pont-levis ?",
+   "choices": [
+    "Pour empêcher l'ennemi d'entrer",
+    "Pour laisser passer les bateaux",
+    "Pour le réparer",
+    "Pour faire entrer les paysans"
+   ],
+   "hint": "Il enjambe les douves.",
+   "explain": "Pont relevé, les douves bloquent le passage.",
+   "id": "histoire-moyen-age#46"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "fonctions",
+    "paysan"
+   ],
+   "q": "Pourquoi les paysans se réfugient-ils parfois dans le château ?",
+   "choices": [
+    "Pour être protégés pendant une attaque",
+    "Pour payer la dîme",
+    "Pour prier à l'abbaye",
+    "Pour vendre au marché"
+   ],
+   "hint": "Pense à la première fonction du château.",
+   "explain": "Le château protège aussi les habitants de la seigneurie.",
+   "id": "histoire-moyen-age#47"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "gothique"
+   ],
+   "q": "Pourquoi les églises gothiques sont-elles si lumineuses ?",
+   "choices": [
+    "Grâce à leurs grandes ouvertures et leurs vitraux",
+    "Grâce à leurs murs épais",
+    "Parce qu'elles n'ont pas de toit",
+    "Grâce aux bougies"
+   ],
+   "hint": "Regarde les fenêtres.",
+   "explain": "Les arcs brisés permettent de grandes fenêtres avec des vitraux.",
+   "id": "histoire-moyen-age#48"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "paysan",
+    "seigneur"
+   ],
+   "q": "Un paysan veut faire cuire son pain. Que doit-il faire ?",
+   "choices": [
+    "Payer le seigneur pour utiliser son four",
+    "Payer la dîme au curé",
+    "Aller à l'abbaye",
+    "Faire une corvée à l'église"
+   ],
+   "hint": "Le four appartient à quelqu'un de puissant.",
+   "explain": "Le four et le moulin sont au seigneur : il faut payer pour s'en servir.",
+   "id": "histoire-moyen-age#49"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "seigneurie"
+   ],
+   "q": "Un marchand veut traverser un pont de la seigneurie. Que doit-il faire ?",
+   "choices": [
+    "Payer un péage au seigneur",
+    "Payer la dîme",
+    "Faire une corvée",
+    "Rien, c'est gratuit"
+   ],
+   "hint": "Le pont appartient au seigneur.",
+   "explain": "Il faut payer un droit de péage pour emprunter les ponts.",
+   "id": "histoire-moyen-age#50"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "pont-levis",
+    "herse"
+   ],
+   "q": "Des ennemis arrivent ! Que font les gardes en premier ?",
+   "choices": [
+    "Ils relèvent le pont-levis et baissent la herse",
+    "Ils ouvrent la grande porte",
+    "Ils vont prier à la chapelle",
+    "Ils remplissent les douves de terre"
+   ],
+   "hint": "Il faut fermer l'entrée.",
+   "explain": "Pont-levis relevé et herse baissée : personne ne passe.",
+   "id": "histoire-moyen-age#51"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "paroisse",
+    "eglise"
+   ],
+   "q": "Un bébé vient de naître au village. Qui va le baptiser ?",
+   "choices": [
+    "Le curé de la paroisse",
+    "Le seigneur",
+    "Le chevalier",
+    "Le marchand"
+   ],
+   "hint": "C'est un homme d'Église.",
+   "explain": "L'Église accompagne chaque habitant, de la naissance à la mort.",
+   "id": "histoire-moyen-age#52"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ville"
+   ],
+   "q": "Ta famille fabrique des tissus. Où allez-vous les vendre ?",
+   "choices": [
+    "À la foire, en ville",
+    "Dans le donjon",
+    "À l'abbaye",
+    "Dans les douves"
+   ],
+   "hint": "Là où on achète et on vend.",
+   "explain": "Les foires et les marchés sont en ville.",
+   "id": "histoire-moyen-age#53"
+  },
+  {
+   "type": "vf",
+   "diff": 3,
+   "notions": [
+    "seigneurie"
+   ],
+   "q": "Au Moyen Âge, la plupart des gens vivent en ville.",
+   "answer": false,
+   "explain": "La plupart vivent à la campagne, dans des seigneuries.",
+   "id": "histoire-moyen-age#54"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "dates"
+   ],
+   "q": "Combien de temps dure le Moyen Âge, à peu près ?",
+   "choices": [
+    "Environ mille ans",
+    "Environ cent ans",
+    "Environ dix ans",
+    "Environ deux mille ans"
+   ],
+   "hint": "De 476 à 1492.",
+   "explain": "De 476 à 1492 : un peu plus de mille ans.",
+   "id": "histoire-moyen-age#55"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 3,
+   "notions": [
+    "abbaye",
+    "chateau"
+   ],
+   "q": "Château fort ou abbaye ?",
+   "explain": "Au château, les guerriers ; à l'abbaye, les moines.",
+   "targets": [
+    {
+     "id": "c",
+     "label": "Château fort",
+     "emoji": "🏰",
+     "color": "#8e5bd6"
+    },
+    {
+     "id": "a",
+     "label": "Abbaye",
+     "emoji": "📿",
+     "color": "#7a6a5a"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "le donjon",
+     "target": "c"
+    },
+    {
+     "text": "les douves",
+     "target": "c"
+    },
+    {
+     "text": "les chevaliers",
+     "target": "c"
+    },
+    {
+     "text": "les moines",
+     "target": "a"
+    },
+    {
+     "text": "copier des livres",
+     "target": "a"
+    },
+    {
+     "text": "l'abbé",
+     "target": "a"
+    }
+   ],
+   "id": "histoire-moyen-age#56"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "seigneur"
+   ],
+   "q": "De quoi parle-t-on ? Il habite le château, commande les chevaliers et décide de tout sur ses terres.",
+   "choices": [
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "Le seigneur : homme puissant qui domine une seigneurie.",
+   "id": "histoire-moyen-age#57"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "seigneur"
+   ],
+   "q": "Que veut dire « seigneur » ?",
+   "choices": [
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "Le seigneur : homme puissant qui domine une seigneurie.",
+   "id": "histoire-moyen-age#58"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "seigneurie"
+   ],
+   "q": "De quoi parle-t-on ? Les champs, les forêts, le village et le château : tout cet ensemble appartient au même maître.",
+   "choices": [
+    "Seigneurie",
+    "Seigneur",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "La seigneurie : territoire dirigé par un seigneur.",
+   "id": "histoire-moyen-age#59"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "seigneurie"
+   ],
+   "q": "Que veut dire « seigneurie » ?",
+   "choices": [
+    "Territoire dirigé par un seigneur",
+    "Homme puissant qui domine une seigneurie",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "La seigneurie : territoire dirigé par un seigneur.",
+   "id": "histoire-moyen-age#60"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "paysan"
+   ],
+   "q": "De quoi parle-t-on ? Du matin au soir, il laboure les champs, sème le blé et s'occupe des animaux.",
+   "choices": [
+    "Paysan",
+    "Seigneur",
+    "Seigneurie",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "Le paysan : personne qui travaille la terre.",
+   "id": "histoire-moyen-age#61"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "paysan"
+   ],
+   "q": "Que veut dire « paysan » ?",
+   "choices": [
+    "Personne qui travaille la terre",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "Le paysan : personne qui travaille la terre.",
+   "id": "histoire-moyen-age#62"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "corvee"
+   ],
+   "q": "De quoi parle-t-on ? Plusieurs jours par an, Jean doit réparer les chemins du seigneur sans être payé.",
+   "choices": [
+    "Corvée",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "La corvée : travail obligatoire dû au seigneur.",
+   "id": "histoire-moyen-age#63"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "corvee"
+   ],
+   "q": "Que veut dire « corvée » ?",
+   "choices": [
+    "Travail obligatoire dû au seigneur",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "La corvée : travail obligatoire dû au seigneur.",
+   "id": "histoire-moyen-age#64"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "dime"
+   ],
+   "q": "De quoi parle-t-on ? Chaque année, le paysan donne une partie de sa récolte pour les prêtres.",
+   "choices": [
+    "Dîme",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "La dîme : impôt payé à l'Église.",
+   "id": "histoire-moyen-age#65"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "dime"
+   ],
+   "q": "Que veut dire « dîme » ?",
+   "choices": [
+    "Impôt payé à l'Église",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "La dîme : impôt payé à l'Église.",
+   "id": "histoire-moyen-age#66"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "eglise"
+   ],
+   "q": "De quoi parle-t-on ? Le pape, les évêques, les moines et tous les croyants chrétiens en font partie.",
+   "choices": [
+    "Église",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "L'Église : avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment.",
+   "id": "histoire-moyen-age#67"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "eglise"
+   ],
+   "q": "Que veut dire « Église » ?",
+   "choices": [
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "L'Église : avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment.",
+   "id": "histoire-moyen-age#68"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "paroisse"
+   ],
+   "q": "De quoi parle-t-on ? Tous les habitants de ce village vont prier dans la même église, avec le même curé.",
+   "choices": [
+    "Paroisse",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "La paroisse : territoire religieux autour d'une église.",
+   "id": "histoire-moyen-age#69"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "paroisse"
+   ],
+   "q": "Que veut dire « paroisse » ?",
+   "choices": [
+    "Territoire religieux autour d'une église",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "La paroisse : territoire religieux autour d'une église.",
+   "id": "histoire-moyen-age#70"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "clerge"
+   ],
+   "q": "De quoi parle-t-on ? Les prêtres, les moines et les évêques forment ce groupe.",
+   "choices": [
+    "Clergé",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "Le clergé : ensemble des personnes de l'Église.",
+   "id": "histoire-moyen-age#71"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "clerge"
+   ],
+   "q": "Que veut dire « clergé » ?",
+   "choices": [
+    "Ensemble des personnes de l'Église",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "Le clergé : ensemble des personnes de l'Église.",
+   "id": "histoire-moyen-age#72"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "abbaye"
+   ],
+   "q": "De quoi parle-t-on ? Des moines y vivent ensemble : ils prient, copient des livres et cultivent un jardin.",
+   "choices": [
+    "Abbaye",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Cathédrale",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "L'abbaye : monastère dirigé par un abbé ou une abbesse.",
+   "id": "histoire-moyen-age#73"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "abbaye"
+   ],
+   "q": "Que veut dire « abbaye » ?",
+   "choices": [
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "L'abbaye : monastère dirigé par un abbé ou une abbesse.",
+   "id": "histoire-moyen-age#74"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cathedrale"
+   ],
+   "q": "De quoi parle-t-on ? Dans cette immense église de la ville, c'est l'évêque qui dirige la messe.",
+   "choices": [
+    "Cathédrale",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Art roman",
+    "Art gothique"
+   ],
+   "explain": "La cathédrale : grande église de l'évêque.",
+   "id": "histoire-moyen-age#75"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cathedrale"
+   ],
+   "q": "Que veut dire « cathédrale » ?",
+   "choices": [
+    "Grande église de l'évêque",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "La cathédrale : grande église de l'évêque.",
+   "id": "histoire-moyen-age#76"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "roman"
+   ],
+   "q": "De quoi parle-t-on ? Les murs sont très épais, les fenêtres petites et les arcs bien ronds.",
+   "choices": [
+    "Art roman",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art gothique"
+   ],
+   "explain": "L'art roman : style d'église aux murs épais et aux ouvertures arrondies.",
+   "id": "histoire-moyen-age#77"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "roman"
+   ],
+   "q": "Que veut dire « art roman » ?",
+   "choices": [
+    "Style d'église aux murs épais et aux ouvertures arrondies",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+   ],
+   "explain": "L'art roman : style d'église aux murs épais et aux ouvertures arrondies.",
+   "id": "histoire-moyen-age#78"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "gothique"
+   ],
+   "q": "De quoi parle-t-on ? L'église monte très haut et une lumière colorée entre par d'immenses vitraux.",
+   "choices": [
+    "Art gothique",
+    "Seigneur",
+    "Seigneurie",
+    "Paysan",
+    "Corvée",
+    "Dîme",
+    "Église",
+    "Paroisse",
+    "Clergé",
+    "Abbaye",
+    "Cathédrale",
+    "Art roman"
+   ],
+   "explain": "L'art gothique : style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux.",
+   "id": "histoire-moyen-age#79"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "gothique"
+   ],
+   "q": "Que veut dire « art gothique » ?",
+   "choices": [
+    "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux",
+    "Homme puissant qui domine une seigneurie",
+    "Territoire dirigé par un seigneur",
+    "Personne qui travaille la terre",
+    "Travail obligatoire dû au seigneur",
+    "Impôt payé à l'Église",
+    "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+    "Territoire religieux autour d'une église",
+    "Ensemble des personnes de l'Église",
+    "Monastère dirigé par un abbé ou une abbesse",
+    "Grande église de l'évêque",
+    "Style d'église aux murs épais et aux ouvertures arrondies"
+   ],
+   "explain": "L'art gothique : style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux.",
+   "id": "histoire-moyen-age#80"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "seigneur",
+    "seigneurie",
+    "paysan"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "seigneur",
+     "label": "Homme puissant qui domine une seigneurie"
+    },
+    {
+     "id": "seigneurie",
+     "label": "Territoire dirigé par un seigneur"
+    },
+    {
+     "id": "paysan",
+     "label": "Personne qui travaille la terre"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Seigneur",
+     "target": "seigneur"
+    },
+    {
+     "text": "Seigneurie",
+     "target": "seigneurie"
+    },
+    {
+     "text": "Paysan",
+     "target": "paysan"
+    }
+   ],
+   "id": "histoire-moyen-age#81"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "corvee",
+    "dime",
+    "eglise"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "corvee",
+     "label": "Travail obligatoire dû au seigneur"
+    },
+    {
+     "id": "dime",
+     "label": "Impôt payé à l'Église"
+    },
+    {
+     "id": "eglise",
+     "label": "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Corvée",
+     "target": "corvee"
+    },
+    {
+     "text": "Dîme",
+     "target": "dime"
+    },
+    {
+     "text": "Église",
+     "target": "eglise"
+    }
+   ],
+   "id": "histoire-moyen-age#82"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "paroisse",
+    "clerge",
+    "abbaye"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "paroisse",
+     "label": "Territoire religieux autour d'une église"
+    },
+    {
+     "id": "clerge",
+     "label": "Ensemble des personnes de l'Église"
+    },
+    {
+     "id": "abbaye",
+     "label": "Monastère dirigé par un abbé ou une abbesse"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Paroisse",
+     "target": "paroisse"
+    },
+    {
+     "text": "Clergé",
+     "target": "clerge"
+    },
+    {
+     "text": "Abbaye",
+     "target": "abbaye"
+    }
+   ],
+   "id": "histoire-moyen-age#83"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cathedrale",
+    "roman",
+    "gothique"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "cathedrale",
+     "label": "Grande église de l'évêque"
+    },
+    {
+     "id": "roman",
+     "label": "Style d'église aux murs épais et aux ouvertures arrondies"
+    },
+    {
+     "id": "gothique",
+     "label": "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Cathédrale",
+     "target": "cathedrale"
+    },
+    {
+     "text": "Art roman",
+     "target": "roman"
+    },
+    {
+     "text": "Art gothique",
+     "target": "gothique"
+    }
+   ],
+   "id": "histoire-moyen-age#84"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "donjon"
+   ],
+   "q": "De quoi parle-t-on ? C'est la tour la plus haute : si l'ennemi entre dans le château, on s'y réfugie en dernier.",
+   "choices": [
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "Le donjon : la plus grande tour du château, où vit le seigneur.",
+   "id": "histoire-moyen-age#85"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "donjon"
+   ],
+   "q": "Que veut dire « donjon » ?",
+   "choices": [
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "Le donjon : la plus grande tour du château, où vit le seigneur.",
+   "id": "histoire-moyen-age#86"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "donjon"
+   ],
+   "target": "donjon",
+   "q": "Touche le donjon sur le château.",
+   "explain": "Le donjon : la plus grande tour du château, où vit le seigneur.",
+   "id": "histoire-moyen-age#87"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "remparts"
+   ],
+   "q": "De quoi parle-t-on ? Pour attaquer le château, l'ennemi doit d'abord franchir ces murs de pierre très épais.",
+   "choices": [
+    "Remparts",
+    "Donjon",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "Les remparts : les hauts murs épais qui entourent le château.",
+   "id": "histoire-moyen-age#88"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "remparts"
+   ],
+   "q": "Que veut dire « remparts » ?",
+   "choices": [
+    "Les hauts murs épais qui entourent le château",
+    "La plus grande tour du château, où vit le seigneur",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "Les remparts : les hauts murs épais qui entourent le château.",
+   "id": "histoire-moyen-age#89"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "remparts"
+   ],
+   "target": "remparts",
+   "q": "Touche les remparts sur le château.",
+   "explain": "Les remparts : les hauts murs épais qui entourent le château.",
+   "id": "histoire-moyen-age#90"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pont-levis"
+   ],
+   "q": "De quoi parle-t-on ? Quand l'ennemi approche, les gardes le remontent avec des chaînes.",
+   "choices": [
+    "Pont-levis",
+    "Donjon",
+    "Remparts",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "Le pont-levis : le pont que l'on relève pour empêcher d'entrer.",
+   "id": "histoire-moyen-age#91"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "pont-levis"
+   ],
+   "q": "Que veut dire « pont-levis » ?",
+   "choices": [
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "Le pont-levis : le pont que l'on relève pour empêcher d'entrer.",
+   "id": "histoire-moyen-age#92"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "pont-levis"
+   ],
+   "target": "pont-levis",
+   "q": "Touche le pont-levis sur le château.",
+   "explain": "Le pont-levis : le pont que l'on relève pour empêcher d'entrer.",
+   "id": "histoire-moyen-age#93"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "douves"
+   ],
+   "q": "De quoi parle-t-on ? Les ennemis ne peuvent pas s'approcher des murs à cause de cette eau profonde.",
+   "choices": [
+    "Douves",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "Les douves : le fossé rempli d'eau autour du château.",
+   "id": "histoire-moyen-age#94"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "douves"
+   ],
+   "q": "Que veut dire « douves » ?",
+   "choices": [
+    "Le fossé rempli d'eau autour du château",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "Les douves : le fossé rempli d'eau autour du château.",
+   "id": "histoire-moyen-age#95"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "douves"
+   ],
+   "target": "douves",
+   "q": "Touche les douves sur le château.",
+   "explain": "Les douves : le fossé rempli d'eau autour du château.",
+   "id": "histoire-moyen-age#96"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "tour"
+   ],
+   "q": "De quoi parle-t-on ? Il y en a une à chaque coin des murs : les guetteurs y montent pour voir arriver l'ennemi.",
+   "choices": [
+    "Tour",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "Une tour : construction haute, au coin des remparts, pour surveiller et se défendre.",
+   "id": "histoire-moyen-age#97"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "tour"
+   ],
+   "q": "Que veut dire « tour » ?",
+   "choices": [
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "Une tour : construction haute, au coin des remparts, pour surveiller et se défendre.",
+   "id": "histoire-moyen-age#98"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "tour"
+   ],
+   "target": "tour",
+   "q": "Touche une tour sur le château.",
+   "explain": "Une tour : construction haute, au coin des remparts, pour surveiller et se défendre.",
+   "id": "histoire-moyen-age#99"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "herse"
+   ],
+   "q": "De quoi parle-t-on ? Quand on la fait descendre, plus personne ne peut passer la porte : c'est une grille pointue.",
+   "choices": [
+    "Herse",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "La herse : la grille en bois et en fer que l'on descend pour fermer l'entrée.",
+   "id": "histoire-moyen-age#100"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "herse"
+   ],
+   "q": "Que veut dire « herse » ?",
+   "choices": [
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "La herse : la grille en bois et en fer que l'on descend pour fermer l'entrée.",
+   "id": "histoire-moyen-age#101"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "herse"
+   ],
+   "target": "herse",
+   "q": "Touche la herse sur le château.",
+   "explain": "La herse : la grille en bois et en fer que l'on descend pour fermer l'entrée.",
+   "id": "histoire-moyen-age#102"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chapelle"
+   ],
+   "q": "De quoi parle-t-on ? Le seigneur et sa famille viennent y prier sans sortir du château.",
+   "choices": [
+    "Chapelle",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chemin de ronde",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "La chapelle : la petite église du château, pour prier.",
+   "id": "histoire-moyen-age#103"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "chapelle"
+   ],
+   "q": "Que veut dire « chapelle » ?",
+   "choices": [
+    "La petite église du château, pour prier",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "La chapelle : la petite église du château, pour prier.",
+   "id": "histoire-moyen-age#104"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "chapelle"
+   ],
+   "target": "chapelle",
+   "q": "Touche la chapelle sur le château.",
+   "explain": "La chapelle : la petite église du château, pour prier.",
+   "id": "histoire-moyen-age#105"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "chemin-de-ronde"
+   ],
+   "q": "De quoi parle-t-on ? Les gardes marchent tout en haut des murs pour surveiller les alentours.",
+   "choices": [
+    "Chemin de ronde",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Cour",
+    "Entrée"
+   ],
+   "explain": "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
+   "id": "histoire-moyen-age#106"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "chemin-de-ronde"
+   ],
+   "q": "Que veut dire « chemin de ronde » ?",
+   "choices": [
+    "Le passage en haut des remparts où marchent les gardes",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le grand espace à l'intérieur des remparts",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
+   "id": "histoire-moyen-age#107"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "chemin-de-ronde"
+   ],
+   "target": "chemin-de-ronde",
+   "q": "Touche le chemin de ronde sur le château.",
+   "explain": "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
+   "id": "histoire-moyen-age#108"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cour"
+   ],
+   "q": "De quoi parle-t-on ? Au milieu du château, on y trouve le puits, les poules et les chevaux.",
+   "choices": [
+    "Cour",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Entrée"
+   ],
+   "explain": "La cour : le grand espace à l'intérieur des remparts.",
+   "id": "histoire-moyen-age#109"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cour"
+   ],
+   "q": "Que veut dire « cour » ?",
+   "choices": [
+    "Le grand espace à l'intérieur des remparts",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "La porte fortifiée du château, très bien protégée"
+   ],
+   "explain": "La cour : le grand espace à l'intérieur des remparts.",
+   "id": "histoire-moyen-age#110"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "cour"
+   ],
+   "target": "cour",
+   "q": "Touche la cour sur le château.",
+   "explain": "La cour : le grand espace à l'intérieur des remparts.",
+   "id": "histoire-moyen-age#111"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "entree"
+   ],
+   "q": "De quoi parle-t-on ? C'est le seul passage pour entrer : elle est gardée jour et nuit.",
+   "choices": [
+    "Entrée",
+    "Donjon",
+    "Remparts",
+    "Pont-levis",
+    "Douves",
+    "Tour",
+    "Herse",
+    "Chapelle",
+    "Chemin de ronde",
+    "Cour"
+   ],
+   "explain": "L'entrée : la porte fortifiée du château, très bien protégée.",
+   "id": "histoire-moyen-age#112"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "entree"
+   ],
+   "q": "Que veut dire « entrée » ?",
+   "choices": [
+    "La porte fortifiée du château, très bien protégée",
+    "La plus grande tour du château, où vit le seigneur",
+    "Les hauts murs épais qui entourent le château",
+    "Le pont que l'on relève pour empêcher d'entrer",
+    "Le fossé rempli d'eau autour du château",
+    "Construction haute, au coin des remparts, pour surveiller et se défendre",
+    "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+    "La petite église du château, pour prier",
+    "Le passage en haut des remparts où marchent les gardes",
+    "Le grand espace à l'intérieur des remparts"
+   ],
+   "explain": "L'entrée : la porte fortifiée du château, très bien protégée.",
+   "id": "histoire-moyen-age#113"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "entree"
+   ],
+   "target": "entree",
+   "q": "Touche l'entrée sur le château.",
+   "explain": "L'entrée : la porte fortifiée du château, très bien protégée.",
+   "id": "histoire-moyen-age#114"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "donjon",
+    "remparts",
+    "pont-levis"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "donjon",
+     "label": "La plus grande tour du château, où vit le seigneur"
+    },
+    {
+     "id": "remparts",
+     "label": "Les hauts murs épais qui entourent le château"
+    },
+    {
+     "id": "pont-levis",
+     "label": "Le pont que l'on relève pour empêcher d'entrer"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Donjon",
+     "target": "donjon"
+    },
+    {
+     "text": "Remparts",
+     "target": "remparts"
+    },
+    {
+     "text": "Pont-levis",
+     "target": "pont-levis"
+    }
+   ],
+   "id": "histoire-moyen-age#115"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "douves",
+    "tour",
+    "herse"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "douves",
+     "label": "Le fossé rempli d'eau autour du château"
+    },
+    {
+     "id": "tour",
+     "label": "Construction haute, au coin des remparts, pour surveiller et se défendre"
+    },
+    {
+     "id": "herse",
+     "label": "La grille en bois et en fer que l'on descend pour fermer l'entrée"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Douves",
+     "target": "douves"
+    },
+    {
+     "text": "Tour",
+     "target": "tour"
+    },
+    {
+     "text": "Herse",
+     "target": "herse"
+    }
+   ],
+   "id": "histoire-moyen-age#116"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "chapelle",
+    "chemin-de-ronde",
+    "cour"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "chapelle",
+     "label": "La petite église du château, pour prier"
+    },
+    {
+     "id": "chemin-de-ronde",
+     "label": "Le passage en haut des remparts où marchent les gardes"
+    },
+    {
+     "id": "cour",
+     "label": "Le grand espace à l'intérieur des remparts"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Chapelle",
+     "target": "chapelle"
+    },
+    {
+     "text": "Chemin de ronde",
+     "target": "chemin-de-ronde"
+    },
+    {
+     "text": "Cour",
+     "target": "cour"
+    }
+   ],
+   "id": "histoire-moyen-age#117"
+  }
+ ],
+ "speech": [
+  "1492",
+  "476",
+  "476, les châteaux aux XIe–XIIIe siècles, puis 1492.",
+  "Abbaye",
+  "Aller à l'abbaye",
+  "Art gothique",
+  "Art roman",
+  "Attaquer, voler, cacher",
+  "Au Ve siècle",
+  "Au XIIIe siècle, les villes grandissent grâce aux marchés et aux foires.",
+  "Au XIIIe siècle, les villes se développent autour des marchés, des foires et de l'artisanat. Ce sont des centres de commerce.",
+  "Au XVIIIe siècle",
+  "Au XXe siècle",
+  "Au château, les guerriers ; à l'abbaye, les moines.",
+  "Aux XIe–XIIIe siècles",
+  "Avec quel matériau le château fort est-il construit ?",
+  "Avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment",
+  "C'est aussi le temps des abbayes, comme Cluny en Bourgogne, où vivent les moines. On construit des églises romanes, aux murs épais et aux arcs arrondis, puis des cathédrales gothiques, hautes et lumineuses, comme Notre-Dame de Paris.",
+  "C'est la plus grande tour.",
+  "C'est la période de la leçon.",
+  "C'est là que se fait le commerce.",
+  "C'est un grand bâtiment avec des remparts.",
+  "C'est un guerrier : il défend sa seigneurie",
+  "C'est un homme d'Église.",
+  "C'est un impôt pour les prêtres, pas pour le seigneur.",
+  "Carcassonne",
+  "Carte légendaire : tu connais toute la leçon sur le bout des doigts !",
+  "Cathédrale",
+  "Ce n'est ni une cathédrale, ni un château.",
+  "Ce sont des gens qui travaillent ou combattent pour le seigneur.",
+  "Chacun a sa place dans la seigneurie.",
+  "Chapelle",
+  "Chemin de ronde",
+  "Cherche un bâtiment où vivent des moines.",
+  "Château fort",
+  "Château fort ou abbaye ?",
+  "Châteaux forts et cathédrales",
+  "Clergé",
+  "Cluny",
+  "Combien de temps dure le Moyen Âge, à peu près ?",
+  "Comme sur ta fiche : rouge pour protéger, vert pour la vie, jaune pour la puissance.",
+  "Comment s'appelle la célèbre abbaye de Bourgogne ?",
+  "Construction haute, au coin des remparts, pour surveiller et se défendre",
+  "Corvée",
+  "Cour",
+  "D'abord 476, puis les XIe–XIIIe siècles, et enfin 1492.",
+  "Dans de grandes villes",
+  "Dans des abbayes",
+  "Dans l'abbaye",
+  "Dans la cathédrale",
+  "Dans la chapelle",
+  "Dans le château fort",
+  "Dans le donjon",
+  "Dans le donjon, le seigneur peut vivre avec sa famille et se réfugier en cas d'attaque.",
+  "Dans le moulin",
+  "Dans les châteaux",
+  "Dans les douves",
+  "Dans quelle partie du château le seigneur et sa famille habitent-ils ?",
+  "De 1492 à 1789",
+  "De 1900 à 2000",
+  "De 476 à 1492",
+  "De 476 à 1492 : un peu plus de mille ans.",
+  "De 476 à 1492.",
+  "De l'an 1 à 476",
+  "De quoi parle-t-on ? Au milieu du château, on y trouve le puits, les poules et les chevaux.",
+  "De quoi parle-t-on ? C'est la tour la plus haute : si l'ennemi entre dans le château, on s'y réfugie en dernier.",
+  "De quoi parle-t-on ? C'est le seul passage pour entrer : elle est gardée jour et nuit.",
+  "De quoi parle-t-on ? Chaque année, le paysan donne une partie de sa récolte pour les prêtres.",
+  "De quoi parle-t-on ? Dans cette immense église de la ville, c'est l'évêque qui dirige la messe.",
+  "De quoi parle-t-on ? Des moines y vivent ensemble : ils prient, copient des livres et cultivent un jardin.",
+  "De quoi parle-t-on ? Du matin au soir, il laboure les champs, sème le blé et s'occupe des animaux.",
+  "De quoi parle-t-on ? Il habite le château, commande les chevaliers et décide de tout sur ses terres.",
+  "De quoi parle-t-on ? Il y en a une à chaque coin des murs : les guetteurs y montent pour voir arriver l'ennemi.",
+  "De quoi parle-t-on ? L'église monte très haut et une lumière colorée entre par d'immenses vitraux.",
+  "De quoi parle-t-on ? Le pape, les évêques, les moines et tous les croyants chrétiens en font partie.",
+  "De quoi parle-t-on ? Le seigneur et sa famille viennent y prier sans sortir du château.",
+  "De quoi parle-t-on ? Les champs, les forêts, le village et le château : tout cet ensemble appartient au même maître.",
+  "De quoi parle-t-on ? Les ennemis ne peuvent pas s'approcher des murs à cause de cette eau profonde.",
+  "De quoi parle-t-on ? Les gardes marchent tout en haut des murs pour surveiller les alentours.",
+  "De quoi parle-t-on ? Les murs sont très épais, les fenêtres petites et les arcs bien ronds.",
+  "De quoi parle-t-on ? Les prêtres, les moines et les évêques forment ce groupe.",
+  "De quoi parle-t-on ? Plusieurs jours par an, Jean doit réparer les chemins du seigneur sans être payé.",
+  "De quoi parle-t-on ? Pour attaquer le château, l'ennemi doit d'abord franchir ces murs de pierre très épais.",
+  "De quoi parle-t-on ? Quand l'ennemi approche, les gardes le remontent avec des chaînes.",
+  "De quoi parle-t-on ? Quand on la fait descendre, plus personne ne peut passer la porte : c'est une grille pointue.",
+  "De quoi parle-t-on ? Tous les habitants de ce village vont prier dans la même église, avec le même curé.",
+  "Des ennemis arrivent ! Que font les gardes en premier ?",
+  "Des prières",
+  "Des redevances et des corvées",
+  "Des vitraux",
+  "Donjon",
+  "Douves",
+  "Début du Moyen Âge",
+  "Dîme",
+  "Elle aide les pauvres, soigne les malades et enseigne",
+  "Elle construit les châteaux forts",
+  "Elle fait la guerre",
+  "Elle organise les foires",
+  "Elle rythme la vie de tous, de la naissance à la mort.",
+  "Elle s'occupe des gens qui en ont besoin.",
+  "En Bourgogne, une abbaye célèbre où vivent les moines.",
+  "En hauteur, on surveille les environs et tout le monde voit le château.",
+  "En ville",
+  "En ville, l'Église aide les pauvres et les malades et participe à l'enseignement.",
+  "Ensemble des personnes de l'Église",
+  "Entre le XIe et le XIIIe siècle,",
+  "Entre le XIe et le XIIIe siècle, la plupart des femmes et des hommes vivent à la campagne, dans des seigneuries.",
+  "Entrée",
+  "Environ cent ans",
+  "Environ deux mille ans",
+  "Environ dix ans",
+  "Environ mille ans",
+  "Faire une corvée",
+  "Faire une corvée à l'église",
+  "Fin du Moyen Âge",
+  "Gothique",
+  "Gothique : haute, lumineuse, avec des vitraux.",
+  "Grande église de l'évêque",
+  "Grâce au commerce : marchés, foires et artisans",
+  "Grâce aux bougies",
+  "Grâce aux châteaux forts",
+  "Grâce aux douves",
+  "Grâce à leurs grandes ouvertures et leurs vitraux",
+  "Grâce à leurs murs épais",
+  "Herse",
+  "Homme puissant qui domine une seigneurie",
+  "Il commence en 476.",
+  "Il enjambe les douves.",
+  "Il faut fermer l'entrée.",
+  "Il faut payer un droit de péage pour emprunter les ponts.",
+  "Il faut un matériau très solide qui existait déjà au Moyen Âge.",
+  "Il montre la puissance du seigneur.",
+  "Il protège les habitants, c'est la maison du seigneur, et il montre sa puissance.",
+  "Il va de 476 à 1492.",
+  "Ils cultivent la terre, paient des redevances et font des corvées.",
+  "Ils habitent dans le donjon, la plus grande tour.",
+  "Ils ouvrent la grande porte",
+  "Ils paient et ils travaillent gratuitement pour lui.",
+  "Ils paient pour utiliser le four et le moulin du seigneur, et un péage pour passer les ponts.",
+  "Ils prient toute la journée.",
+  "Ils relèvent le pont-levis et baissent la herse",
+  "Ils remplissent les douves de terre",
+  "Ils travaillent la terre.",
+  "Ils vont prier à la chapelle",
+  "Impôt payé à l'Église",
+  "L'abbaye",
+  "L'abbaye : monastère dirigé par un abbé ou une abbesse.",
+  "L'abbaye de Cluny",
+  "L'abbaye de Cluny, en Bourgogne.",
+  "L'abbaye est un monastère : elle ne fait pas partie du château.",
+  "L'art gothique : style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux.",
+  "L'art roman : style d'église aux murs épais et aux ouvertures arrondies.",
+  "L'entrée : la porte fortifiée du château, très bien protégée.",
+  "L'Église",
+  "L'Église : avec une majuscule : le clergé et les croyants ; avec une minuscule : le bâtiment.",
+  "L'Église accompagne chaque habitant, de la naissance à la mort.",
+  "L'Église joue un rôle très important. Elle encadre la vie des habitants dans la paroisse, de la naissance à la mort. Les paysans lui paient un impôt : la dîme.",
+  "L'Église rythme la vie des femmes et des hommes.",
+  "L'évêque",
+  "La cathédrale : grande église de l'évêque.",
+  "La chapelle",
+  "La chapelle : la petite église du château, pour prier.",
+  "La chapelle est la petite église du château.",
+  "La chapelle sert à prier : c'est un lieu de vie, pas de défense.",
+  "La corvée",
+  "La corvée : travail obligatoire dû au seigneur.",
+  "La cour",
+  "La cour : le grand espace à l'intérieur des remparts.",
+  "La dîme",
+  "La dîme : impôt payé à l'Église.",
+  "La dîme est l'impôt payé à l'Église.",
+  "La dîme est payée à l'Église.",
+  "La foire",
+  "La grille en bois et en fer que l'on descend pour fermer l'entrée",
+  "La herse",
+  "La herse : la grille en bois et en fer que l'on descend pour fermer l'entrée.",
+  "La paroisse : territoire religieux autour d'une église.",
+  "La petite église du château, pour prier",
+  "La phrase à retenir : entre le XIe et le XIIIe siècle, la plupart des femmes et des hommes vivent à la campagne, dans des seigneuries.",
+  "La pierre",
+  "La plupart des gens vivent à la campagne, dans des seigneuries.",
+  "La plupart vivent à la campagne, dans des seigneuries.",
+  "La plus grande tour du château, où vit le seigneur",
+  "La plus grande tour, au centre du château. Le seigneur y vit.",
+  "La porte fortifiée du château, très bien protégée",
+  "La seigneurie : territoire dirigé par un seigneur.",
+  "La tour",
+  "La ville : centre de commerce qui se développe autour des marchés, des foires et de l'artisanat.",
+  "Le Moyen Âge : de 476 à 1492. Mille ans d'histoire !",
+  "Le Moyen Âge : le Moyen Âge commence en 476 et se termine en 1492.",
+  "Le Moyen Âge commence en 476 et se termine en 1492. Nous étudions les XIe, XIIe et XIIIe siècles : le temps des seigneuries, des paroisses, des villes et des cathédrales.",
+  "Le Moyen Âge va de 476 à 1492.",
+  "Le béton",
+  "Le chemin de ronde",
+  "Le chemin de ronde : le passage en haut des remparts où marchent les gardes.",
+  "Le chevalier",
+  "Le chevalier est un guerrier du seigneur, pas un homme d'Église.",
+  "Le château",
+  "Le château abrite les chevaliers, les serviteurs et parfois des artisans.",
+  "Le château est la demeure du seigneur.",
+  "Le château fort",
+  "Le château fort : la demeure du seigneur, qui protège, où l'on vit, et qui montre sa puissance.",
+  "Le château fort est la demeure du seigneur. Il a trois fonctions : c'est un lieu de protection, un lieu de vie, et un symbole de la puissance du seigneur.",
+  "Le château fort sert à protéger les habitants et montrer la puissance du seigneur.",
+  "Le château protège aussi les habitants de la seigneurie.",
+  "Le château sert à protéger, c'est un lieu de vie, et il montre la puissance du seigneur.",
+  "Le château, construit en hauteur, montre que le seigneur domine son territoire et commande les habitants.",
+  "Le clergé",
+  "Le clergé : ensemble des personnes de l'Église.",
+  "Le clergé, ce sont les gens de l'Église.",
+  "Le clergé, ce sont les personnes de l'Église.",
+  "Le curé",
+  "Le curé de la paroisse",
+  "Le donjon",
+  "Le donjon : la plus grande tour du château, où vit le seigneur.",
+  "Le fossé rempli d'eau autour du château",
+  "Le four appartient à quelqu'un de puissant.",
+  "Le four et le moulin sont au seigneur : il faut payer pour s'en servir.",
+  "Le grand espace à l'intérieur des remparts",
+  "Le marchand",
+  "Le moine",
+  "Le moine vit à l'abbaye.",
+  "Le passage en haut des remparts où marchent les gardes",
+  "Le paysan : personne qui travaille la terre.",
+  "Le plastique",
+  "Le pont appartient au seigneur.",
+  "Le pont que l'on relève pour empêcher d'entrer",
+  "Le pont-levis",
+  "Le pont-levis : le pont que l'on relève pour empêcher d'entrer.",
+  "Le péage",
+  "Le seigneur",
+  "Le seigneur : homme puissant qui domine une seigneurie.",
+  "Le seigneur est un guerrier : il protège sa seigneurie et fait la guerre.",
+  "Le serviteur",
+  "Le verre",
+  "Le voyageur du temps",
+  "Lequel n'est PAS une partie du château fort ?",
+  "Lequel ne sert PAS à protéger le château ?",
+  "Les 3 fonctions du château",
+  "Les XIe, XIIe et XIIIe siècles : la période étudiée : seigneuries, châteaux forts, paroisses, villes et cathédrales.",
+  "Les arcs brisés permettent de grandes fenêtres avec des vitraux.",
+  "Les chevaliers",
+  "Les châteaux forts sont en pierre : c'est solide contre les attaques.",
+  "Les châteaux forts, c'est aux XIe, XIIe et XIIIe siècles.",
+  "Les douves",
+  "Les douves : le fossé rempli d'eau autour du château.",
+  "Les douves sont le fossé plein d'eau autour du château.",
+  "Les foires et les marchés sont en ville.",
+  "Les hauts murs épais qui entourent le château",
+  "Les marchands",
+  "Les marchés et les foires se tiennent en ville.",
+  "Les moines",
+  "Les moines vivent dans l'abbaye.",
+  "Les paysans",
+  "Les paysans doivent travailler gratuitement pour le seigneur.",
+  "Les paysans et les paysannes cultivent les terres du seigneur. En échange, ils lui paient des redevances, font des corvées, et paient pour utiliser le four et le moulin.",
+  "Les paysans paient des redevances et font des corvées pour le seigneur.",
+  "Les remparts",
+  "Les remparts : les hauts murs épais qui entourent le château.",
+  "Les remparts et les tours permettent de se défendre en cas d'attaque.",
+  "Les remparts, les tours, les douves et le pont-levis protègent le château en cas d'attaque. Le seigneur y vit avec sa famille, ses chevaliers et ses serviteurs.",
+  "Les trois fonctions du château : protéger, être un lieu de vie, montrer la puissance du seigneur.",
+  "Les villes",
+  "Les villes sont des centres de commerce.",
+  "Lieu de vie",
+  "Là où on achète et on vend.",
+  "Maître du Moyen Âge",
+  "Monastère dirigé par un abbé ou une abbesse",
+  "Notre-Dame",
+  "Notre-Dame de Paris",
+  "Notre-Dame de Paris est gothique : haute et lumineuse.",
+  "Notre-Dame de Paris est une cathédrale…",
+  "On le relève et on baisse la herse : personne ne peut entrer !",
+  "On y achète et on y vend.",
+  "On y va pour prier.",
+  "Où trouve-t-on les marchés et les foires ?",
+  "Où vit le seigneur ?",
+  "Où vivent la plupart des gens au Moyen Âge ?",
+  "Parce qu'elles n'ont pas de toit",
+  "Parce que la terre y est meilleure",
+  "Parce que les paysans quittent l'Église",
+  "Paroisse",
+  "Payer la dîme",
+  "Payer la dîme au curé",
+  "Payer le seigneur pour utiliser son four",
+  "Payer un péage au seigneur",
+  "Paysan",
+  "Pense aux trois couleurs de ta fiche : rouge, vert, jaune.",
+  "Pense à la défense et à la puissance du seigneur.",
+  "Pense à la première fonction du château.",
+  "Personne qui travaille la terre",
+  "Place chaque étiquette sur la frise du temps.",
+  "Pont relevé, les douves bloquent le passage.",
+  "Pont-levis",
+  "Pont-levis relevé et herse baissée : personne ne passe.",
+  "Pour aller à l'école",
+  "Pour avoir moins froid",
+  "Pour avoir une épée",
+  "Pour couper le pain",
+  "Pour empêcher l'ennemi d'entrer",
+  "Pour entrer dans l'abbaye",
+  "Pour faire entrer les paysans",
+  "Pour faire le pain et la farine.",
+  "Pour laisser passer les bateaux",
+  "Pour le réparer",
+  "Pour payer la dîme",
+  "Pour prier à l'abbaye",
+  "Pour prier à l'église",
+  "Pour quoi les paysans paient-ils aussi le seigneur ?",
+  "Pour travailler la terre",
+  "Pour utiliser le four et le moulin",
+  "Pour vendre au marché",
+  "Pour voir l'ennemi arriver de loin et montrer sa puissance",
+  "Pour être plus près de l'église",
+  "Pour être protégés pendant une attaque",
+  "Pourquoi construit-on le château en hauteur ?",
+  "Pourquoi le seigneur porte-t-il une épée ?",
+  "Pourquoi les paysans se réfugient-ils parfois dans le château ?",
+  "Pourquoi les villes se développent-elles au XIIIe siècle ?",
+  "Pourquoi les églises gothiques sont-elles si lumineuses ?",
+  "Pourquoi relève-t-on le pont-levis ?",
+  "Prier, vendre, cultiver",
+  "Protéger",
+  "Protéger, lieu de vie, montrer la puissance",
+  "Puissance",
+  "Que doivent les paysans au seigneur ?",
+  "Que fait l'Église dans les villes ?",
+  "Que veut dire « abbaye » ?",
+  "Que veut dire « art gothique » ?",
+  "Que veut dire « art roman » ?",
+  "Que veut dire « cathédrale » ?",
+  "Que veut dire « chapelle » ?",
+  "Que veut dire « chemin de ronde » ?",
+  "Que veut dire « clergé » ?",
+  "Que veut dire « corvée » ?",
+  "Que veut dire « cour » ?",
+  "Que veut dire « donjon » ?",
+  "Que veut dire « douves » ?",
+  "Que veut dire « dîme » ?",
+  "Que veut dire « entrée » ?",
+  "Que veut dire « herse » ?",
+  "Que veut dire « paroisse » ?",
+  "Que veut dire « paysan » ?",
+  "Que veut dire « pont-levis » ?",
+  "Que veut dire « remparts » ?",
+  "Que veut dire « seigneur » ?",
+  "Que veut dire « seigneurie » ?",
+  "Que veut dire « tour » ?",
+  "Que veut dire « Église » ?",
+  "Quel bâtiment du château montre que les seigneurs étaient chrétiens ?",
+  "Quel impôt les paysans paient-ils à l'Église ?",
+  "Quelle personne ne vit PAS dans le château ?",
+  "Quelles sont les dates du Moyen Âge ?",
+  "Quelles sont les trois fonctions du château fort ?",
+  "Qui d'autre que le seigneur et sa famille vit dans le château ?",
+  "Qui fait quoi ? Range chaque action.",
+  "Qui ne fait PAS partie du clergé ?",
+  "Qui vit dans une abbaye ?",
+  "Range chaque élément dans la bonne fonction du château.",
+  "Range les dates de la plus ancienne à la plus récente.",
+  "Reconstruis la phrase mémo.",
+  "Reconstruis la phrase.",
+  "Regarde les fenêtres.",
+  "Regarde, l'entrée est ici.",
+  "Regarde, la chapelle est ici.",
+  "Regarde, la cour est ici.",
+  "Regarde, la herse est ici.",
+  "Regarde, le chemin de ronde est ici.",
+  "Regarde, le donjon est ici.",
+  "Regarde, le pont-levis est ici.",
+  "Regarde, les douves est ici.",
+  "Regarde, les remparts est ici.",
+  "Regarde, une tour est ici.",
+  "Relie chaque mot à sa définition.",
+  "Remparts",
+  "Rien, c'est gratuit",
+  "Roman : murs épais, arcs arrondis.",
+  "Roman : épais et arrondi. Gothique : haut, lumineux, arcs brisés.",
+  "Romane",
+  "Seigneur",
+  "Seigneurie",
+  "Ses chevaliers, ses serviteurs et parfois des artisans",
+  "Soigner, enseigner, prier",
+  "Son activité principale, c'est la guerre.",
+  "Style d'église aux murs épais et aux ouvertures arrondies",
+  "Style d'église plus haute, lumineuse, avec des arcs brisés et des vitraux",
+  "Ta famille fabrique des tissus. Où allez-vous les vendre ?",
+  "Termine la phrase : Dans le donjon, le seigneur peut…",
+  "Termine la phrase : Le château fort sert à…",
+  "Termine la phrase : Le château, construit en hauteur, montre que le seigneur…",
+  "Termine la phrase : Les remparts et les tours permettent de…",
+  "Territoire dirigé par un seigneur",
+  "Territoire religieux autour d'une église",
+  "Touche l'entrée sur le château.",
+  "Touche la chapelle sur le château.",
+  "Touche la cour sur le château.",
+  "Touche la herse sur le château.",
+  "Touche le chemin de ronde sur le château.",
+  "Touche le donjon sur le château.",
+  "Touche le pont-levis sur le château.",
+  "Touche les douves sur le château.",
+  "Touche les remparts sur le château.",
+  "Touche une tour sur le château.",
+  "Tour",
+  "Tous les paysans",
+  "Travail obligatoire dû au seigneur",
+  "Un bébé vient de naître au village. Qui va le baptiser ?",
+  "Un de ces endroits sert à prier.",
+  "Un homme puissant qui dirige la seigneurie et commande ses habitants.",
+  "Un marchand veut traverser un pont de la seigneurie. Que doit-il faire ?",
+  "Un paysan veut faire cuire son pain. Que doit-il faire ?",
+  "Une cathédrale gothique : haute, lumineuse, avec de grands vitraux.",
+  "Une de ces personnes vit dans une abbaye.",
+  "Une tour : construction haute, au coin des remparts, pour surveiller et se défendre.",
+  "Une épée",
+  "Versailles",
+  "Ville",
+  "Vrai ou faux ? Au Moyen Âge, la plupart des gens vivent en ville.",
+  "Vrai ou faux ? La corvée est un travail obligatoire dû au seigneur.",
+  "Vrai ou faux ? La dîme est un impôt payé au roi.",
+  "Vrai ou faux ? Le Moyen Âge se termine en 1492.",
+  "Vrai ou faux ? Le château est construit en hauteur pour être visible de loin.",
+  "Vrai ou faux ? Le clergé, ce sont les chevaliers du seigneur.",
+  "Vrai ou faux ? Les douves sont les chambres du seigneur.",
+  "Vrai ou faux ? Une paroisse est un territoire religieux autour d'une église.",
+  "Vrai ou faux ? Une église gothique est sombre, avec de toutes petites fenêtres.",
+  "Vrai ou faux ? Une église romane a des murs épais et des ouvertures arrondies.",
+  "XIe–XIIIe siècles",
+  "aide les malades",
+  "arcs brisés",
+  "commande la seigneurie",
+  "construit en hauteur",
+  "copier des livres",
+  "cultive la terre",
+  "cultive lui-même ses champs",
+  "cultiver les champs",
+  "cultiver ses champs",
+  "dans des seigneuries.",
+  "de commerce.",
+  "des femmes et des hommes.",
+  "domine le territoire",
+  "domine son territoire et commande les habitants",
+  "du seigneur.",
+  "est la demeure",
+  "est un moine",
+  "faire la fête",
+  "fait des corvées",
+  "fait la guerre",
+  "gothique",
+  "grands vitraux",
+  "habite le château",
+  "l'abbé",
+  "la cour",
+  "la plupart des femmes et des hommes",
+  "le donjon",
+  "le pont-levis",
+  "les chevaliers",
+  "les douves",
+  "les moines",
+  "les remparts",
+  "les salles et les réserves",
+  "les écuries",
+  "murs épais",
+  "obéit aux paysans",
+  "ouvertures arrondies",
+  "paie la dîme",
+  "plutôt sombre",
+  "prie à l'abbaye",
+  "prier Dieu",
+  "protéger les habitants et montrer la puissance du seigneur",
+  "ranger le blé",
+  "reçoit la dîme",
+  "romane",
+  "rythme la vie",
+  "se défendre en cas d'attaque",
+  "soigner les malades",
+  "sont des centres",
+  "tenir une foire",
+  "très haute et lumineuse",
+  "vendre des marchandises",
+  "vendre ses marchandises",
+  "visible de loin",
+  "vivent à la campagne,",
+  "vivre avec sa famille et se réfugier en cas d'attaque",
+  "À cette époque, la plupart des femmes et des hommes vivent à la campagne, dans des seigneuries. Une seigneurie est un territoire dirigé par un seigneur.",
+  "À l'abbaye",
+  "À la campagne, dans des seigneuries",
+  "À la foire, en ville",
+  "À quels siècles trouve-t-on les châteaux forts ?",
+  "Ça, c'est l'entrée.",
+  "Ça, c'est la chapelle.",
+  "Ça, c'est la cour.",
+  "Ça, c'est la herse.",
+  "Ça, c'est le chemin de ronde.",
+  "Ça, c'est le donjon.",
+  "Ça, c'est le pont-levis.",
+  "Ça, c'est les douves.",
+  "Ça, c'est les remparts.",
+  "Ça, c'est une tour.",
+  "Église",
+  "Église romane ou église gothique ?"
+ ]
+}
