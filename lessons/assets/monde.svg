@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 737" role="img" aria-label="Carte du monde">
+  <image href="lessons/img/sciences-alimentation/schema-monde.jpg" width="1400" height="737"/>
+  <!-- Zones à toucher, invisibles (?zones=1 pour les voir). Petites îles : zones agrandies. -->
+  <g fill="transparent" stroke="transparent">
+    <g data-zone="etats-unis" class="zone"><polygon points="236,188 420,186 472,198 456,232 402,256 376,288 358,260 330,266 304,282 278,266 250,242 232,214"/></g>
+    <g data-zone="amerique-sud" class="zone"><polygon points="380,352 480,366 554,426 524,504 464,580 436,652 406,600 390,480 360,410"/></g>
+    <g data-zone="afrique" class="zone"><polygon points="610,300 720,276 824,300 844,396 876,424 824,504 776,564 720,564 692,464 672,400 610,376"/></g>
+    <g data-zone="inde" class="zone"><polygon points="922,232 966,242 1006,268 1016,290 992,320 982,378 960,342 934,302 912,274"/></g>
+    <g data-zone="japon" class="zone"><polygon points="1160,198 1204,192 1204,246 1178,282 1148,278 1152,244"/></g>
+    <g data-zone="antilles" class="zone"><circle cx="445" cy="334" r="24"/></g>
+    <g data-zone="france" class="zone"><circle cx="682" cy="188" r="28"/></g>
+  </g>
+</svg>

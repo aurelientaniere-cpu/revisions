@@ -1,0 +1,2872 @@
+{
+ "id": "sciences-alimentation",
+ "subject": "Sciences",
+ "title": "Se nourrir dans le monde",
+ "subtitle": "D'où viennent nos aliments ?",
+ "emoji": "🍽️",
+ "color": "#3fa34d",
+ "source": "Fiches CM1 « Se nourrir dans le monde » : 1. Des pratiques alimentaires variées ; 2. D'où viennent nos aliments ?",
+ "schema": {
+  "asset": "lessons/assets/monde.svg"
+ },
+ "summary": [
+  "Dans le monde, on ne mange pas partout la même chose. Chaque pays a ses habitudes.",
+  "Au Japon, le riz est l'aliment de base. On mange souvent du poisson, des légumes et de la soupe.",
+  "En Inde, beaucoup de personnes sont végétariennes, pour des raisons religieuses. Les repas sont souvent faits de riz, de légumes et de lentilles.",
+  "Aux États-Unis, on mange beaucoup de produits transformés : des hamburgers, des pizzas, des boissons sucrées ou des plats préparés.",
+  "Dans beaucoup de campagnes d'Afrique, les repas sont préparés avec les céréales cultivées sur place : le mil, le maïs et le sorgho.",
+  "Trois choses changent ce que l'on mange : la culture, c'est-à-dire la religion et les traditions ; le niveau de richesse ; et les ressources disponibles, comme le climat et l'agriculture.",
+  "Nos aliments viennent de l'agriculture. Les cultures donnent les céréales, les fruits et les légumes. L'élevage donne la viande, le lait et les œufs.",
+  "Le cacao pousse dans les pays chauds d'Afrique, comme la Côte d'Ivoire et le Ghana, et d'Amérique du Sud, comme le Brésil et l'Équateur.",
+  "Les bananes poussent dans les pays chauds d'Amérique, comme l'Équateur et le Costa Rica. On en cultive aussi en France d'outre-mer : en Guadeloupe et à la Martinique.",
+  "Ces aliments ne poussent pas en France métropolitaine : il n'y fait pas assez chaud. Ils voyagent en bateau. Ceux qui doivent arriver très vite, comme les fruits fragiles ou le poisson frais, voyagent parfois en avion."
+ ],
+ "notions": [
+  {
+   "id": "aliment-base",
+   "term": "aliment de base",
+   "nom": "l'aliment de base",
+   "def": "aliment que l'on mange presque à chaque repas",
+   "emoji": "🍚",
+   "group": "mots",
+   "indice": "Au Japon, c'est le riz. En France, c'est souvent le pain."
+  },
+  {
+   "id": "vegetarien",
+   "term": "végétarien",
+   "nom": "un végétarien",
+   "def": "personne qui ne mange ni viande ni poisson",
+   "emoji": "🥗",
+   "group": "mots",
+   "indice": "À la cantine, il prend les lentilles et laisse le poulet et le poisson."
+  },
+  {
+   "id": "culture-peuple",
+   "term": "culture d'un peuple",
+   "nom": "la culture d'un peuple",
+   "def": "ensemble des traditions et des habitudes d'un peuple",
+   "emoji": "🎎",
+   "group": "mots",
+   "indice": "Les fêtes, la langue, la musique et la cuisine d'un pays, tout cela ensemble."
+  },
+  {
+   "id": "tradition",
+   "term": "tradition",
+   "nom": "une tradition",
+   "def": "manière de vivre transmise de génération en génération",
+   "emoji": "👵",
+   "group": "mots",
+   "indice": "Ta grand-mère a appris cette recette de sa mère. Un jour, elle te l'apprendra."
+  },
+  {
+   "id": "produit-agricole",
+   "term": "produit agricole",
+   "nom": "un produit agricole",
+   "def": "aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+   "emoji": "🍎",
+   "group": "mots",
+   "indice": "Une pomme cueillie sur l'arbre, ou un œuf ramassé au poulailler."
+  },
+  {
+   "id": "produit-transforme",
+   "term": "produit transformé",
+   "nom": "un produit transformé",
+   "def": "aliment fabriqué à partir de produits agricoles",
+   "emoji": "🍕",
+   "group": "mots",
+   "indice": "Une pizza faite à l'usine avec de la farine, des tomates et du fromage."
+  },
+  {
+   "id": "agriculture",
+   "term": "agriculture",
+   "nom": "l'agriculture",
+   "def": "ensemble des activités qui permettent de produire des aliments",
+   "emoji": "🚜",
+   "group": "mots",
+   "indice": "C'est le grand mot pour tout le travail de la ferme : semer, récolter, s'occuper des animaux."
+  },
+  {
+   "id": "culture-plantes",
+   "term": "culture des champs",
+   "nom": "la culture des champs",
+   "def": "production de plantes, comme les céréales, les fruits et les légumes",
+   "emoji": "🌱",
+   "group": "mots",
+   "indice": "Le paysan sème du blé, plante des pommiers et récolte des salades."
+  },
+  {
+   "id": "elevage",
+   "term": "élevage",
+   "nom": "l'élevage",
+   "def": "activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+   "emoji": "🐄",
+   "group": "mots",
+   "indice": "Le fermier nourrit ses vaches, ses poules et ses moutons tous les matins."
+  },
+  {
+   "id": "cereales",
+   "term": "céréales",
+   "nom": "les céréales",
+   "def": "plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+   "emoji": "🌾",
+   "group": "mots",
+   "indice": "Le mil et le sorgho en font partie. Avec leurs grains, on fait de la farine."
+  },
+  {
+   "id": "outre-mer",
+   "term": "outre-mer",
+   "nom": "l'outre-mer",
+   "def": "zone géographique située au-delà d'un océan ou d'une mer",
+   "emoji": "🏝️",
+   "group": "mots",
+   "indice": "La Guadeloupe et la Martinique : pour y aller depuis Paris, il faut traverser l'océan."
+  },
+  {
+   "id": "japon",
+   "term": "Japon",
+   "nom": "le Japon",
+   "def": "pays d'Asie où le riz est l'aliment de base, avec du poisson, des légumes et de la soupe",
+   "emoji": "🍱",
+   "noAuto": true,
+   "zone": "japon"
+  },
+  {
+   "id": "inde",
+   "term": "Inde",
+   "nom": "l'Inde",
+   "def": "pays d'Asie où beaucoup de personnes sont végétariennes, pour des raisons religieuses",
+   "emoji": "🍛",
+   "noAuto": true,
+   "zone": "inde"
+  },
+  {
+   "id": "etats-unis",
+   "term": "États-Unis",
+   "nom": "les États-Unis",
+   "def": "pays d'Amérique du Nord où l'on mange beaucoup de produits transformés",
+   "emoji": "🍔",
+   "noAuto": true,
+   "zone": "etats-unis"
+  },
+  {
+   "id": "afrique",
+   "term": "Afrique",
+   "nom": "l'Afrique",
+   "def": "continent où, dans les campagnes, on cuisine les céréales cultivées sur place : le mil, le maïs et le sorgho",
+   "emoji": "🌽",
+   "noAuto": true,
+   "zone": "afrique"
+  },
+  {
+   "id": "amerique-sud",
+   "term": "Amérique du Sud",
+   "nom": "l'Amérique du Sud",
+   "def": "continent chaud où l'on cultive le cacao et les bananes, par exemple au Brésil et en Équateur",
+   "emoji": "🌎",
+   "noAuto": true,
+   "zone": "amerique-sud"
+  },
+  {
+   "id": "antilles",
+   "term": "Guadeloupe et Martinique",
+   "nom": "la Guadeloupe et la Martinique",
+   "def": "îles de la France d'outre-mer où l'on cultive des bananes",
+   "emoji": "🌴",
+   "noAuto": true,
+   "zone": "antilles"
+  },
+  {
+   "id": "france",
+   "term": "France métropolitaine",
+   "nom": "la France métropolitaine",
+   "def": "la partie de la France qui se trouve en Europe",
+   "emoji": "🥖",
+   "noAuto": true,
+   "zone": "france"
+  },
+  {
+   "id": "facteur-culture",
+   "term": "religion et traditions",
+   "nom": "la religion et les traditions",
+   "def": "elles décident des aliments interdits ou préférés",
+   "emoji": "🙏",
+   "noAuto": true
+  },
+  {
+   "id": "facteur-richesse",
+   "term": "niveau de richesse",
+   "nom": "le niveau de richesse",
+   "def": "il permet d'acheter plus ou moins de produits transformés",
+   "emoji": "💰",
+   "noAuto": true
+  },
+  {
+   "id": "facteur-ressources",
+   "term": "ressources disponibles",
+   "nom": "les ressources disponibles",
+   "def": "le climat et l'agriculture permettent de produire certains aliments plus que d'autres",
+   "emoji": "🌦️",
+   "noAuto": true
+  },
+  {
+   "id": "cacao",
+   "term": "cacao",
+   "nom": "le cacao",
+   "def": "fruit des pays chauds d'Afrique et d'Amérique du Sud, qui sert à fabriquer le chocolat",
+   "emoji": "🍫",
+   "noAuto": true
+  },
+  {
+   "id": "banane",
+   "term": "banane",
+   "nom": "la banane",
+   "def": "fruit des pays chauds d'Amérique, cultivé aussi en Guadeloupe et à la Martinique",
+   "emoji": "🍌",
+   "noAuto": true
+  },
+  {
+   "id": "importer",
+   "term": "aliments venus de loin",
+   "nom": "les aliments venus de loin",
+   "def": "ils ne poussent pas en France métropolitaine : on les fait venir d'autres pays",
+   "emoji": "🌍",
+   "noAuto": true
+  },
+  {
+   "id": "transport",
+   "term": "transport des aliments",
+   "nom": "le transport des aliments",
+   "def": "les aliments voyagent en bateau, ou en avion quand ils doivent arriver très vite",
+   "emoji": "🚢",
+   "noAuto": true
+  }
+ ],
+ "cards": [
+  {
+   "id": "sa-japon",
+   "name": "Le repas japonais",
+   "emoji": "🍱",
+   "color": "#d64545",
+   "notions": [
+    "japon",
+    "aliment-base"
+   ],
+   "desc": "Du riz à chaque repas, avec du poisson, des légumes et de la soupe.",
+   "image": "japon"
+  },
+  {
+   "id": "sa-inde",
+   "name": "Le repas indien",
+   "emoji": "🍛",
+   "color": "#e08a1e",
+   "notions": [
+    "inde",
+    "vegetarien"
+   ],
+   "desc": "Du riz, des légumes et des lentilles. Beaucoup d'Indiens sont végétariens.",
+   "image": "inde"
+  },
+  {
+   "id": "sa-usa",
+   "name": "Le repas américain",
+   "emoji": "🍔",
+   "color": "#5b7fd6",
+   "notions": [
+    "etats-unis",
+    "produit-transforme"
+   ],
+   "desc": "Hamburgers, pizzas, boissons sucrées : beaucoup de produits transformés.",
+   "image": "etats-unis"
+  },
+  {
+   "id": "sa-afrique",
+   "name": "Le repas africain",
+   "emoji": "🌽",
+   "color": "#c9a227",
+   "notions": [
+    "afrique",
+    "cereales"
+   ],
+   "desc": "Le mil, le maïs et le sorgho cultivés près de la maison.",
+   "image": "afrique"
+  },
+  {
+   "id": "sa-traditions",
+   "name": "Les traditions",
+   "emoji": "🎎",
+   "color": "#8e5bd6",
+   "notions": [
+    "culture-peuple",
+    "tradition"
+   ],
+   "desc": "Des habitudes transmises de génération en génération.",
+   "image": "tradition"
+  },
+  {
+   "id": "sa-facteurs",
+   "name": "Les trois secrets de l'assiette",
+   "emoji": "⚖️",
+   "color": "#2aa6a0",
+   "notions": [
+    "facteur-culture",
+    "facteur-richesse",
+    "facteur-ressources"
+   ],
+   "desc": "La culture, la richesse et les ressources décident de ce que l'on mange.",
+   "image": "facteur-ressources"
+  },
+  {
+   "id": "sa-champs",
+   "name": "Les cultures",
+   "emoji": "🌾",
+   "color": "#3fa34d",
+   "notions": [
+    "agriculture",
+    "culture-plantes",
+    "produit-agricole"
+   ],
+   "desc": "Céréales, fruits et légumes poussent dans les champs.",
+   "image": "culture-plantes"
+  },
+  {
+   "id": "sa-ferme",
+   "name": "L'élevage",
+   "emoji": "🐄",
+   "color": "#b5651d",
+   "notions": [
+    "elevage"
+   ],
+   "desc": "Les animaux de la ferme donnent la viande, le lait et les œufs.",
+   "image": "elevage"
+  },
+  {
+   "id": "sa-cacao",
+   "name": "Le cacao",
+   "emoji": "🍫",
+   "color": "#7a4a2a",
+   "notions": [
+    "cacao",
+    "amerique-sud"
+   ],
+   "desc": "Il pousse dans les pays chauds. Avec ses fèves, on fait le chocolat.",
+   "image": "cacao"
+  },
+  {
+   "id": "sa-banane",
+   "name": "La banane",
+   "emoji": "🍌",
+   "color": "#e6c228",
+   "notions": [
+    "banane",
+    "antilles",
+    "outre-mer"
+   ],
+   "desc": "Elle pousse en Amérique, et en France d'outre-mer.",
+   "image": "banane"
+  },
+  {
+   "id": "sa-voyage",
+   "name": "Le voyage des aliments",
+   "emoji": "🚢",
+   "color": "#3a7bd5",
+   "notions": [
+    "transport",
+    "importer",
+    "france"
+   ],
+   "desc": "En bateau ou en avion, des aliments traversent le monde.",
+   "image": "transport"
+  },
+  {
+   "id": "sa-legende",
+   "name": "Grand chef du monde",
+   "emoji": "👑",
+   "color": "#b8860b",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Carte légendaire : tu connais toute la leçon sur le bout des doigts !",
+   "image": "legende"
+  }
+ ],
+ "items": [
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "japon",
+    "aliment-base"
+   ],
+   "q": "Au Japon, quel est l'aliment de base ?",
+   "choices": [
+    "Le riz",
+    "Le pain",
+    "Les pâtes",
+    "Le maïs",
+    "Les pommes de terre"
+   ],
+   "hint": "Il est blanc, en tout petits grains, et on le mange avec des baguettes.",
+   "explain": "Au Japon, le riz est l'aliment de base.",
+   "id": "sciences-alimentation#0"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "japon"
+   ],
+   "q": "Au Japon, que mange-t-on souvent avec le riz ?",
+   "choices": [
+    "Du poisson, des légumes et de la soupe",
+    "Des hamburgers et des frites",
+    "Du mil et du sorgho",
+    "Des gâteaux et des bonbons"
+   ],
+   "hint": "Le Japon est entouré par la mer.",
+   "explain": "Au Japon, on mange souvent du poisson, des légumes et de la soupe.",
+   "id": "sciences-alimentation#1"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "inde"
+   ],
+   "q": "En Inde, de quoi les repas sont-ils souvent faits ?",
+   "choices": [
+    "De riz, de légumes et de lentilles",
+    "De hamburgers et de pizzas",
+    "De viande à chaque repas",
+    "De poisson et de soupe"
+   ],
+   "hint": "Beaucoup d'Indiens ne mangent pas de viande.",
+   "explain": "En Inde, les repas sont souvent faits de riz, de légumes et de lentilles.",
+   "id": "sciences-alimentation#2"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "inde",
+    "vegetarien",
+    "facteur-culture"
+   ],
+   "q": "Pourquoi beaucoup d'Indiens ne mangent-ils pas de viande ?",
+   "choices": [
+    "Pour des raisons religieuses",
+    "Parce qu'il fait trop froid",
+    "Parce qu'ils n'ont pas de cuisine",
+    "Parce qu'il n'y a pas d'animaux en Inde"
+   ],
+   "hint": "Pense aux croyances et aux traditions.",
+   "explain": "En Inde, beaucoup de personnes sont végétariennes pour des raisons religieuses.",
+   "id": "sciences-alimentation#3"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "vegetarien"
+   ],
+   "q": "Une famille végétarienne prépare le repas. Que ne met-elle PAS dans les assiettes ?",
+   "choices": [
+    "Du poulet",
+    "Des lentilles",
+    "Du riz",
+    "Des légumes",
+    "Des fruits"
+   ],
+   "hint": "Un végétarien ne mange pas les animaux.",
+   "explain": "Un végétarien ne mange ni viande ni poisson.",
+   "id": "sciences-alimentation#4"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "etats-unis",
+    "produit-transforme"
+   ],
+   "q": "Dans quel pays mange-t-on beaucoup de hamburgers, de pizzas et de boissons sucrées ?",
+   "choices": [
+    "Aux États-Unis",
+    "Au Japon",
+    "En Inde",
+    "Dans les campagnes d'Afrique"
+   ],
+   "hint": "C'est un grand pays d'Amérique du Nord.",
+   "explain": "Aux États-Unis, on mange beaucoup de produits transformés.",
+   "id": "sciences-alimentation#5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "etats-unis",
+    "produit-transforme"
+   ],
+   "sentence": "Aux États-Unis, ce repas est surtout fait de",
+   "choices": [
+    "produits transformés",
+    "produits agricoles",
+    "céréales cultivées sur place",
+    "lentilles et légumes"
+   ],
+   "hint": "Les hamburgers et les pizzas sont fabriqués.",
+   "explain": "Hamburgers, pizzas, boissons sucrées : ce sont des produits transformés.",
+   "id": "sciences-alimentation#6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "afrique",
+    "cereales"
+   ],
+   "q": "Dans les campagnes d'Afrique, avec quoi prépare-t-on souvent les repas ?",
+   "choices": [
+    "Des céréales cultivées sur place",
+    "Des plats préparés achetés au magasin",
+    "Des hamburgers",
+    "Du poisson venu du Japon"
+   ],
+   "hint": "Pense à ce que la famille fait pousser près de chez elle.",
+   "explain": "On cuisine le mil, le maïs et le sorgho cultivés sur place.",
+   "id": "sciences-alimentation#7"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "afrique",
+    "facteur-ressources"
+   ],
+   "q": "Pourquoi, dans les campagnes d'Afrique, mange-t-on surtout ce qu'on cultive près de chez soi ?",
+   "choices": [
+    "On utilise les ressources disponibles autour de soi",
+    "On achète surtout des plats préparés",
+    "On fait venir les aliments en avion",
+    "On mange surtout des produits transformés"
+   ],
+   "hint": "Pense aux champs qui entourent le village.",
+   "explain": "Les familles mangent ce qu'elles cultivent : ce sont les ressources disponibles.",
+   "id": "sciences-alimentation#8"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "japon",
+    "facteur-ressources"
+   ],
+   "q": "Au Japon, on mange souvent du poisson. Qu'est-ce qui l'explique le mieux ?",
+   "choices": [
+    "La mer est tout autour du pays",
+    "Le poisson est un produit transformé",
+    "La religion interdit le riz",
+    "Il n'y a pas de champs au Japon"
+   ],
+   "hint": "Le Japon est fait d'îles.",
+   "explain": "Le Japon est entouré par la mer : le poisson est une ressource disponible.",
+   "id": "sciences-alimentation#9"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "facteur-culture"
+   ],
+   "sentence": "La religion et les traditions décident",
+   "choices": [
+    "des aliments interdits ou préférés",
+    "du climat du pays",
+    "de la quantité de pluie",
+    "de la taille des champs"
+   ],
+   "hint": "Pense aux Indiens végétariens.",
+   "explain": "La culture dit ce que l'on peut manger, et ce que l'on aime manger.",
+   "id": "sciences-alimentation#10"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "facteur-richesse"
+   ],
+   "sentence": "Le niveau de richesse permet d'acheter",
+   "choices": [
+    "plus ou moins de produits transformés",
+    "des aliments interdits",
+    "un climat plus chaud",
+    "des champs de cacao"
+   ],
+   "hint": "Les produits fabriqués coûtent de l'argent.",
+   "explain": "Plus on a d'argent, plus on peut acheter de produits transformés.",
+   "id": "sciences-alimentation#11"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "facteur-ressources"
+   ],
+   "sentence": "Le climat et l'agriculture permettent de produire",
+   "choices": [
+    "certains aliments plus que d'autres",
+    "des aliments interdits",
+    "plus d'argent pour tout le monde",
+    "seulement des plats préparés"
+   ],
+   "hint": "Le cacao a besoin de chaleur, le blé pousse bien en France.",
+   "explain": "Selon le climat, on cultive certains aliments plus que d'autres.",
+   "id": "sciences-alimentation#12"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "culture-peuple",
+    "culture-plantes"
+   ],
+   "q": "Quel mot a deux sens : les traditions d'un peuple, et le travail des champs ?",
+   "choices": [
+    "Culture",
+    "Élevage",
+    "Tradition",
+    "Outre-mer",
+    "Récolte"
+   ],
+   "hint": "Ce mot se cache à la fin du mot agriculture.",
+   "explain": "Culture : les traditions d'un peuple, ou la production de plantes.",
+   "id": "sciences-alimentation#13"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "produit-transforme",
+    "produit-agricole"
+   ],
+   "q": "Lequel n'est PAS un produit transformé ?",
+   "choices": [
+    "Une pomme",
+    "Une pizza",
+    "Un hamburger",
+    "Une boisson sucrée",
+    "Un plat préparé",
+    "Une tablette de chocolat"
+   ],
+   "hint": "Cherche l'aliment que l'on cueille tel quel.",
+   "explain": "La pomme vient directement de l'arbre : c'est un produit agricole.",
+   "id": "sciences-alimentation#14"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "produit-agricole",
+    "elevage"
+   ],
+   "q": "Lequel est un produit agricole ?",
+   "choices": [
+    "Un œuf",
+    "Une pizza",
+    "Une boisson sucrée",
+    "Un plat préparé",
+    "Un hamburger"
+   ],
+   "hint": "Il vient directement de la ferme, sans passer par l'usine.",
+   "explain": "L'œuf vient directement de l'élevage : c'est un produit agricole.",
+   "id": "sciences-alimentation#15"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "produit-transforme"
+   ],
+   "q": "Comment sait-on qu'une pizza est un produit transformé ?",
+   "choices": [
+    "On la fabrique avec d'autres aliments",
+    "Elle pousse sur un arbre",
+    "On la ramasse dans un champ",
+    "Elle sort directement d'un animal"
+   ],
+   "hint": "Pense à la farine, aux tomates et au fromage.",
+   "explain": "La pizza est fabriquée à partir de produits agricoles.",
+   "id": "sciences-alimentation#16"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cacao",
+    "produit-transforme"
+   ],
+   "q": "Avec quel produit agricole fabrique-t-on le chocolat ?",
+   "choices": [
+    "Le cacao",
+    "La banane",
+    "Le blé",
+    "Le riz",
+    "La tomate"
+   ],
+   "hint": "Ses grosses cosses sont pleines de fèves.",
+   "explain": "Le chocolat est fabriqué avec les fèves de cacao.",
+   "id": "sciences-alimentation#17"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "elevage"
+   ],
+   "q": "D'où viennent la viande, le lait et les œufs ?",
+   "choices": [
+    "De l'élevage",
+    "Des champs de blé",
+    "De l'usine",
+    "Des arbres fruitiers"
+   ],
+   "hint": "Il faut des animaux à la ferme.",
+   "explain": "L'élevage donne la viande, le lait et les œufs.",
+   "id": "sciences-alimentation#18"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "elevage",
+    "culture-plantes"
+   ],
+   "q": "Lequel n'est PAS un produit de l'élevage ?",
+   "choices": [
+    "Le blé",
+    "Le lait",
+    "Les œufs",
+    "La viande"
+   ],
+   "hint": "Celui-là pousse dans un champ.",
+   "explain": "Le blé vient de la culture des champs, pas de l'élevage.",
+   "id": "sciences-alimentation#19"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "elevage"
+   ],
+   "q": "Lequel n'est PAS un animal de la ferme ?",
+   "choices": [
+    "Le lion",
+    "La vache",
+    "La poule",
+    "Le mouton",
+    "La chèvre"
+   ],
+   "hint": "Il vit en liberté dans la savane.",
+   "explain": "Vaches, poules, moutons et chèvres sont élevés à la ferme.",
+   "id": "sciences-alimentation#20"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cereales",
+    "culture-plantes"
+   ],
+   "q": "Lequel n'est PAS une céréale ?",
+   "choices": [
+    "La tomate",
+    "Le blé",
+    "Le riz",
+    "Le maïs",
+    "Le mil",
+    "Le sorgho"
+   ],
+   "hint": "Les céréales donnent des petits grains.",
+   "explain": "La tomate est un fruit. Le blé, le riz, le maïs, le mil et le sorgho sont des céréales.",
+   "id": "sciences-alimentation#21"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "outre-mer",
+    "antilles"
+   ],
+   "review": true,
+   "q": "Comment appelle-t-on la partie de la France qui se trouve de l'autre côté de l'océan ?",
+   "choices": [
+    "La France d'outre-mer",
+    "La France métropolitaine",
+    "Les États-Unis",
+    "L'Afrique"
+   ],
+   "hint": "Outre veut dire au-delà.",
+   "explain": "La Guadeloupe et la Martinique sont en France d'outre-mer.",
+   "id": "sciences-alimentation#22"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cacao",
+    "afrique",
+    "amerique-sud"
+   ],
+   "q": "Où pousse le cacao ?",
+   "choices": [
+    "Dans les pays chauds d'Afrique et d'Amérique du Sud",
+    "En France métropolitaine",
+    "Dans les pays froids du Nord",
+    "Au Japon"
+   ],
+   "hint": "Le cacaoyer a besoin de chaleur toute l'année.",
+   "explain": "Le cacao pousse par exemple en Côte d'Ivoire, au Ghana, au Brésil et en Équateur.",
+   "id": "sciences-alimentation#23"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "banane",
+    "antilles",
+    "outre-mer"
+   ],
+   "q": "Où cultive-t-on des bananes en France ?",
+   "choices": [
+    "En Guadeloupe et à la Martinique",
+    "En Bretagne",
+    "À Paris",
+    "Dans les Alpes"
+   ],
+   "hint": "Ce sont des îles chaudes, de l'autre côté de l'océan.",
+   "explain": "On cultive des bananes en France d'outre-mer : en Guadeloupe et à la Martinique.",
+   "id": "sciences-alimentation#24"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "importer",
+    "cacao",
+    "banane"
+   ],
+   "q": "Pourquoi fait-on venir le cacao et les bananes de loin ?",
+   "choices": [
+    "Ils ne poussent pas en France métropolitaine",
+    "Ils sont fabriqués dans des usines lointaines",
+    "Ils sont interdits en France",
+    "Ils poussent seulement sous la neige"
+   ],
+   "hint": "Ces plantes ont besoin de chaleur toute l'année.",
+   "explain": "Il ne fait pas assez chaud en France métropolitaine pour les cultiver.",
+   "id": "sciences-alimentation#25"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "importer",
+    "culture-plantes",
+    "france"
+   ],
+   "q": "Lequel de ces aliments pousse en France métropolitaine ?",
+   "choices": [
+    "La pomme",
+    "Le cacao",
+    "La banane",
+    "Le café"
+   ],
+   "hint": "Il pousse sur un arbre du verger, même quand il fait frais.",
+   "explain": "La pomme pousse en France. Le cacao, la banane et le café viennent des pays chauds.",
+   "id": "sciences-alimentation#26"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "importer"
+   ],
+   "q": "Lequel de ces aliments vient de loin ?",
+   "choices": [
+    "Le café",
+    "La pomme",
+    "Le blé",
+    "La salade",
+    "Le lait"
+   ],
+   "hint": "Il pousse dans les pays chauds, comme le cacao.",
+   "explain": "Le café pousse dans les pays chauds, loin de la France.",
+   "id": "sciences-alimentation#27"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "transport",
+    "banane"
+   ],
+   "q": "Comment les bananes arrivent-elles le plus souvent en France ?",
+   "choices": [
+    "En bateau",
+    "En camion depuis l'Équateur",
+    "En train depuis la Martinique",
+    "À pied"
+   ],
+   "hint": "Il faut traverser l'océan avec beaucoup de bananes.",
+   "explain": "De grands bateaux transportent les aliments à travers les océans.",
+   "id": "sciences-alimentation#28"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "transport"
+   ],
+   "q": "Un poisson frais doit arriver très vite. Quel transport choisit-on ?",
+   "choices": [
+    "L'avion",
+    "Le bateau",
+    "Le vélo",
+    "Le cheval"
+   ],
+   "hint": "C'est le plus rapide, et il vole.",
+   "explain": "Les aliments fragiles ou frais voyagent parfois en avion.",
+   "id": "sciences-alimentation#29"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "transport"
+   ],
+   "q": "Pourquoi certains fruits fragiles voyagent-ils en avion ?",
+   "choices": [
+    "Ils doivent arriver très vite",
+    "L'avion coûte moins cher",
+    "Le bateau ne va pas en France",
+    "Ils sont trop lourds pour le bateau"
+   ],
+   "hint": "Un fruit fragile s'abîme s'il attend trop.",
+   "explain": "Les aliments qui doivent arriver très vite voyagent parfois en avion.",
+   "id": "sciences-alimentation#30"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "japon",
+    "aliment-base"
+   ],
+   "q": "Au Japon, le riz est l'aliment de base.",
+   "answer": true,
+   "explain": "Au Japon, on mange du riz presque à chaque repas.",
+   "id": "sciences-alimentation#31"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "vegetarien"
+   ],
+   "q": "Un végétarien mange du poisson.",
+   "answer": false,
+   "explain": "Un végétarien ne mange ni viande ni poisson.",
+   "id": "sciences-alimentation#32"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "culture-peuple"
+   ],
+   "q": "Partout dans le monde, on mange la même chose.",
+   "answer": false,
+   "explain": "Chaque pays a ses habitudes, selon sa culture et ses ressources.",
+   "id": "sciences-alimentation#33"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "produit-transforme"
+   ],
+   "q": "Une pizza est un produit agricole.",
+   "answer": false,
+   "explain": "La pizza est fabriquée : c'est un produit transformé.",
+   "id": "sciences-alimentation#34"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "elevage",
+    "produit-agricole"
+   ],
+   "q": "Le lait vient de l'élevage.",
+   "answer": true,
+   "explain": "On élève les vaches, les chèvres et les brebis pour leur lait.",
+   "id": "sciences-alimentation#35"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "cereales",
+    "afrique"
+   ],
+   "q": "Le mil, le maïs et le sorgho sont des céréales.",
+   "answer": true,
+   "explain": "Ce sont des céréales cultivées en Afrique.",
+   "id": "sciences-alimentation#36"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "cacao",
+    "france"
+   ],
+   "q": "Le cacao pousse en France métropolitaine.",
+   "answer": false,
+   "explain": "Le cacao pousse dans les pays chauds d'Afrique et d'Amérique du Sud.",
+   "id": "sciences-alimentation#37"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "banane",
+    "antilles"
+   ],
+   "q": "On cultive des bananes en Guadeloupe et à la Martinique.",
+   "answer": true,
+   "explain": "C'est la France d'outre-mer, où il fait chaud.",
+   "id": "sciences-alimentation#38"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "transport"
+   ],
+   "q": "Les aliments fragiles voyagent parfois en avion.",
+   "answer": true,
+   "explain": "L'avion va très vite : les fruits fragiles n'ont pas le temps de s'abîmer.",
+   "id": "sciences-alimentation#39"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "facteur-richesse"
+   ],
+   "q": "Le niveau de richesse ne change rien à ce que l'on mange.",
+   "answer": false,
+   "explain": "Il permet d'acheter plus ou moins de produits transformés.",
+   "id": "sciences-alimentation#40"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "tradition"
+   ],
+   "q": "Une tradition se transmet de génération en génération.",
+   "answer": true,
+   "explain": "Les parents la transmettent aux enfants, qui la transmettront à leur tour.",
+   "review": true,
+   "id": "sciences-alimentation#41"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "japon"
+   ],
+   "target": "japon",
+   "q": "Touche le Japon sur la carte.",
+   "explain": "Le Japon est un pays d'îles, en Asie.",
+   "id": "sciences-alimentation#42"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "inde"
+   ],
+   "target": "inde",
+   "q": "Touche l'Inde sur la carte.",
+   "explain": "L'Inde est un grand pays d'Asie.",
+   "id": "sciences-alimentation#43"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "etats-unis"
+   ],
+   "target": "etats-unis",
+   "q": "Touche les États-Unis sur la carte.",
+   "explain": "Les États-Unis sont en Amérique du Nord.",
+   "id": "sciences-alimentation#44"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "afrique"
+   ],
+   "target": "afrique",
+   "q": "Touche l'Afrique sur la carte.",
+   "explain": "L'Afrique est un grand continent, au sud de l'Europe.",
+   "id": "sciences-alimentation#45"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "amerique-sud"
+   ],
+   "target": "amerique-sud",
+   "q": "Touche l'Amérique du Sud sur la carte.",
+   "explain": "L'Amérique du Sud est sous l'Amérique du Nord.",
+   "id": "sciences-alimentation#46"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "antilles"
+   ],
+   "target": "antilles",
+   "q": "Touche la Guadeloupe et la Martinique sur la carte.",
+   "explain": "Ce sont de petites îles, entre les deux Amériques.",
+   "id": "sciences-alimentation#47"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "france"
+   ],
+   "target": "france",
+   "q": "Touche la France métropolitaine sur la carte.",
+   "explain": "La France métropolitaine est en Europe.",
+   "id": "sciences-alimentation#48"
+  },
+  {
+   "type": "schema",
+   "diff": 3,
+   "notions": [
+    "inde"
+   ],
+   "target": "inde",
+   "q": "Touche le pays où beaucoup de personnes sont végétariennes.",
+   "explain": "En Inde, beaucoup de personnes sont végétariennes.",
+   "id": "sciences-alimentation#49"
+  },
+  {
+   "type": "schema",
+   "diff": 3,
+   "notions": [
+    "etats-unis"
+   ],
+   "target": "etats-unis",
+   "q": "Touche le pays où l'on mange beaucoup de hamburgers et de pizzas.",
+   "explain": "Aux États-Unis, on mange beaucoup de produits transformés.",
+   "id": "sciences-alimentation#50"
+  },
+  {
+   "type": "schema",
+   "diff": 3,
+   "notions": [
+    "antilles"
+   ],
+   "target": "antilles",
+   "q": "Touche les îles françaises où l'on cultive des bananes.",
+   "explain": "La Guadeloupe et la Martinique : la France d'outre-mer.",
+   "id": "sciences-alimentation#51"
+  },
+  {
+   "type": "schema",
+   "diff": 3,
+   "notions": [
+    "japon"
+   ],
+   "target": "japon",
+   "q": "Touche le pays où le riz est l'aliment de base, avec le poisson.",
+   "explain": "Au Japon, on mange du riz et du poisson.",
+   "id": "sciences-alimentation#52"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 6,
+   "notions": [
+    "produit-agricole",
+    "produit-transforme"
+   ],
+   "q": "Range chaque aliment : produit agricole ou produit transformé ?",
+   "explain": "Le produit agricole vient directement de la ferme. Le produit transformé est fabriqué.",
+   "targets": [
+    {
+     "id": "a",
+     "label": "Produit agricole",
+     "emoji": "🧺",
+     "color": "#3fa34d"
+    },
+    {
+     "id": "t",
+     "label": "Produit transformé",
+     "emoji": "🏭",
+     "color": "#e07a2e"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "une pomme",
+     "target": "a"
+    },
+    {
+     "text": "des œufs",
+     "target": "a"
+    },
+    {
+     "text": "du lait",
+     "target": "a"
+    },
+    {
+     "text": "du riz",
+     "target": "a"
+    },
+    {
+     "text": "une carotte",
+     "target": "a"
+    },
+    {
+     "text": "un poisson",
+     "target": "a"
+    },
+    {
+     "text": "une pizza",
+     "target": "t"
+    },
+    {
+     "text": "un hamburger",
+     "target": "t"
+    },
+    {
+     "text": "une boisson sucrée",
+     "target": "t"
+    },
+    {
+     "text": "du chocolat",
+     "target": "t"
+    },
+    {
+     "text": "un plat préparé",
+     "target": "t"
+    },
+    {
+     "text": "des biscuits",
+     "target": "t"
+    }
+   ],
+   "id": "sciences-alimentation#53"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 6,
+   "notions": [
+    "culture-plantes",
+    "elevage"
+   ],
+   "q": "D'où vient chaque aliment : de la culture des champs, ou de l'élevage ?",
+   "explain": "Les plantes viennent des cultures. La viande, le lait et les œufs viennent de l'élevage.",
+   "targets": [
+    {
+     "id": "c",
+     "label": "Culture des champs",
+     "emoji": "🌱",
+     "color": "#3fa34d"
+    },
+    {
+     "id": "e",
+     "label": "Élevage",
+     "emoji": "🐄",
+     "color": "#b5651d"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "le blé",
+     "target": "c"
+    },
+    {
+     "text": "la tomate",
+     "target": "c"
+    },
+    {
+     "text": "la salade",
+     "target": "c"
+    },
+    {
+     "text": "la pomme",
+     "target": "c"
+    },
+    {
+     "text": "le cacao",
+     "target": "c"
+    },
+    {
+     "text": "la viande",
+     "target": "e"
+    },
+    {
+     "text": "le lait",
+     "target": "e"
+    },
+    {
+     "text": "les œufs",
+     "target": "e"
+    },
+    {
+     "text": "le fromage de chèvre",
+     "target": "e"
+    }
+   ],
+   "id": "sciences-alimentation#54"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 3,
+   "sample": 6,
+   "notions": [
+    "france",
+    "outre-mer",
+    "importer"
+   ],
+   "q": "D'où vient chaque aliment ?",
+   "explain": "Pomme et blé : France métropolitaine. Bananes des Antilles : outre-mer. Cacao et café : de loin.",
+   "targets": [
+    {
+     "id": "m",
+     "label": "France métropolitaine",
+     "emoji": "🥖",
+     "color": "#5b7fd6"
+    },
+    {
+     "id": "o",
+     "label": "France d'outre-mer",
+     "emoji": "🌴",
+     "color": "#2aa6a0"
+    },
+    {
+     "id": "l",
+     "label": "Vient de loin",
+     "emoji": "🚢",
+     "color": "#e07a2e"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "la pomme",
+     "target": "m"
+    },
+    {
+     "text": "le blé",
+     "target": "m"
+    },
+    {
+     "text": "la salade",
+     "target": "m"
+    },
+    {
+     "text": "la banane de Guadeloupe",
+     "target": "o"
+    },
+    {
+     "text": "la banane de Martinique",
+     "target": "o"
+    },
+    {
+     "text": "le cacao de Côte d'Ivoire",
+     "target": "l"
+    },
+    {
+     "text": "le café du Brésil",
+     "target": "l"
+    },
+    {
+     "text": "la banane d'Équateur",
+     "target": "l"
+    }
+   ],
+   "id": "sciences-alimentation#55"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 3,
+   "notions": [
+    "facteur-culture",
+    "facteur-richesse",
+    "facteur-ressources"
+   ],
+   "q": "Relie chaque facteur à son effet sur ce que l'on mange.",
+   "explain": "La culture décide des aliments interdits ou préférés. La richesse permet d'acheter. Les ressources permettent de produire.",
+   "targets": [
+    {
+     "id": "c",
+     "label": "Décide des aliments interdits ou préférés"
+    },
+    {
+     "id": "r",
+     "label": "Permet d'acheter plus ou moins de produits transformés"
+    },
+    {
+     "id": "s",
+     "label": "Permet de produire certains aliments plus que d'autres"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "La religion et les traditions",
+     "target": "c"
+    },
+    {
+     "text": "Le niveau de richesse",
+     "target": "r"
+    },
+    {
+     "text": "Le climat et l'agriculture",
+     "target": "s"
+    }
+   ],
+   "id": "sciences-alimentation#56"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "notions": [
+    "japon",
+    "inde",
+    "etats-unis",
+    "afrique"
+   ],
+   "q": "Relie chaque pays à son repas.",
+   "explain": "Chaque pays a ses habitudes alimentaires.",
+   "targets": [
+    {
+     "id": "j",
+     "label": "Riz, poisson, légumes et soupe"
+    },
+    {
+     "id": "i",
+     "label": "Riz, légumes et lentilles, sans viande"
+    },
+    {
+     "id": "u",
+     "label": "Hamburgers, pizzas et boissons sucrées"
+    },
+    {
+     "id": "a",
+     "label": "Mil, maïs et sorgho cultivés sur place"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Le Japon",
+     "target": "j"
+    },
+    {
+     "text": "L'Inde",
+     "target": "i"
+    },
+    {
+     "text": "Les États-Unis",
+     "target": "u"
+    },
+    {
+     "text": "Les campagnes d'Afrique",
+     "target": "a"
+    }
+   ],
+   "id": "sciences-alimentation#57"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 3,
+   "notions": [
+    "facteur-culture",
+    "facteur-richesse",
+    "facteur-ressources"
+   ],
+   "q": "Reconstruis la phrase mémo.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    },
+    {
+     "id": "4"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Ce que l'on mange dépend",
+     "target": "1"
+    },
+    {
+     "text": "de la culture,",
+     "target": "2"
+    },
+    {
+     "text": "du niveau de richesse",
+     "target": "3"
+    },
+    {
+     "text": "et des ressources disponibles.",
+     "target": "4"
+    }
+   ],
+   "id": "sciences-alimentation#58"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 3,
+   "notions": [
+    "cacao",
+    "banane",
+    "transport"
+   ],
+   "q": "Reconstruis la phrase mémo.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    },
+    {
+     "id": "4"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Le cacao et les bananes",
+     "target": "1"
+    },
+    {
+     "text": "poussent dans les pays chauds",
+     "target": "2"
+    },
+    {
+     "text": "et voyagent jusqu'en France",
+     "target": "3"
+    },
+    {
+     "text": "en bateau.",
+     "target": "4"
+    }
+   ],
+   "id": "sciences-alimentation#59"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "aliment-base"
+   ],
+   "q": "De quoi parle-t-on ? Au Japon, c'est le riz. En France, c'est souvent le pain.",
+   "choices": [
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "L'aliment de base : aliment que l'on mange presque à chaque repas.",
+   "id": "sciences-alimentation#60"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "aliment-base"
+   ],
+   "q": "Que veut dire « aliment de base » ?",
+   "choices": [
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "L'aliment de base : aliment que l'on mange presque à chaque repas.",
+   "id": "sciences-alimentation#61"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "vegetarien"
+   ],
+   "q": "De quoi parle-t-on ? À la cantine, il prend les lentilles et laisse le poulet et le poisson.",
+   "choices": [
+    "Végétarien",
+    "Aliment de base",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "Un végétarien : personne qui ne mange ni viande ni poisson.",
+   "id": "sciences-alimentation#62"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "vegetarien"
+   ],
+   "q": "Que veut dire « végétarien » ?",
+   "choices": [
+    "Personne qui ne mange ni viande ni poisson",
+    "Aliment que l'on mange presque à chaque repas",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "Un végétarien : personne qui ne mange ni viande ni poisson.",
+   "id": "sciences-alimentation#63"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "culture-peuple"
+   ],
+   "q": "De quoi parle-t-on ? Les fêtes, la langue, la musique et la cuisine d'un pays, tout cela ensemble.",
+   "choices": [
+    "Culture d'un peuple",
+    "Aliment de base",
+    "Végétarien",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
+   "id": "sciences-alimentation#64"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "culture-peuple"
+   ],
+   "q": "Que veut dire « culture d'un peuple » ?",
+   "choices": [
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
+   "id": "sciences-alimentation#65"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "tradition"
+   ],
+   "q": "De quoi parle-t-on ? Ta grand-mère a appris cette recette de sa mère. Un jour, elle te l'apprendra.",
+   "choices": [
+    "Tradition",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "Une tradition : manière de vivre transmise de génération en génération.",
+   "id": "sciences-alimentation#66"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "tradition"
+   ],
+   "q": "Que veut dire « tradition » ?",
+   "choices": [
+    "Manière de vivre transmise de génération en génération",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "Une tradition : manière de vivre transmise de génération en génération.",
+   "id": "sciences-alimentation#67"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "produit-agricole"
+   ],
+   "q": "De quoi parle-t-on ? Une pomme cueillie sur l'arbre, ou un œuf ramassé au poulailler.",
+   "choices": [
+    "Produit agricole",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+   "id": "sciences-alimentation#68"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "produit-agricole"
+   ],
+   "q": "Que veut dire « produit agricole » ?",
+   "choices": [
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+   "id": "sciences-alimentation#69"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "produit-transforme"
+   ],
+   "q": "De quoi parle-t-on ? Une pizza faite à l'usine avec de la farine, des tomates et du fromage.",
+   "choices": [
+    "Produit transformé",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
+   "id": "sciences-alimentation#70"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "produit-transforme"
+   ],
+   "q": "Que veut dire « produit transformé » ?",
+   "choices": [
+    "Aliment fabriqué à partir de produits agricoles",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
+   "id": "sciences-alimentation#71"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "agriculture"
+   ],
+   "q": "De quoi parle-t-on ? C'est le grand mot pour tout le travail de la ferme : semer, récolter, s'occuper des animaux.",
+   "choices": [
+    "Agriculture",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Culture des champs",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
+   "id": "sciences-alimentation#72"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "agriculture"
+   ],
+   "q": "Que veut dire « agriculture » ?",
+   "choices": [
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
+   "id": "sciences-alimentation#73"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "culture-plantes"
+   ],
+   "q": "De quoi parle-t-on ? Le paysan sème du blé, plante des pommiers et récolte des salades.",
+   "choices": [
+    "Culture des champs",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Élevage",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
+   "id": "sciences-alimentation#74"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "culture-plantes"
+   ],
+   "q": "Que veut dire « culture des champs » ?",
+   "choices": [
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
+   "id": "sciences-alimentation#75"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "elevage"
+   ],
+   "q": "De quoi parle-t-on ? Le fermier nourrit ses vaches, ses poules et ses moutons tous les matins.",
+   "choices": [
+    "Élevage",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Céréales",
+    "Outre-mer"
+   ],
+   "explain": "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+   "id": "sciences-alimentation#76"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "elevage"
+   ],
+   "q": "Que veut dire « élevage » ?",
+   "choices": [
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+   "id": "sciences-alimentation#77"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cereales"
+   ],
+   "q": "De quoi parle-t-on ? Le mil et le sorgho en font partie. Avec leurs grains, on fait de la farine.",
+   "choices": [
+    "Céréales",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Outre-mer"
+   ],
+   "explain": "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+   "id": "sciences-alimentation#78"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cereales"
+   ],
+   "q": "Que veut dire « céréales » ?",
+   "choices": [
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Zone géographique située au-delà d'un océan ou d'une mer"
+   ],
+   "explain": "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+   "id": "sciences-alimentation#79"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "outre-mer"
+   ],
+   "q": "De quoi parle-t-on ? La Guadeloupe et la Martinique : pour y aller depuis Paris, il faut traverser l'océan.",
+   "choices": [
+    "Outre-mer",
+    "Aliment de base",
+    "Végétarien",
+    "Culture d'un peuple",
+    "Tradition",
+    "Produit agricole",
+    "Produit transformé",
+    "Agriculture",
+    "Culture des champs",
+    "Élevage",
+    "Céréales"
+   ],
+   "explain": "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
+   "id": "sciences-alimentation#80"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "outre-mer"
+   ],
+   "q": "Que veut dire « outre-mer » ?",
+   "choices": [
+    "Zone géographique située au-delà d'un océan ou d'une mer",
+    "Aliment que l'on mange presque à chaque repas",
+    "Personne qui ne mange ni viande ni poisson",
+    "Ensemble des traditions et des habitudes d'un peuple",
+    "Manière de vivre transmise de génération en génération",
+    "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+    "Aliment fabriqué à partir de produits agricoles",
+    "Ensemble des activités qui permettent de produire des aliments",
+    "Production de plantes, comme les céréales, les fruits et les légumes",
+    "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+    "Plantes dont on mange les grains, comme le blé, le riz ou le maïs"
+   ],
+   "explain": "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
+   "id": "sciences-alimentation#81"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "aliment-base",
+    "vegetarien",
+    "culture-peuple"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "aliment-base",
+     "label": "Aliment que l'on mange presque à chaque repas"
+    },
+    {
+     "id": "vegetarien",
+     "label": "Personne qui ne mange ni viande ni poisson"
+    },
+    {
+     "id": "culture-peuple",
+     "label": "Ensemble des traditions et des habitudes d'un peuple"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Aliment de base",
+     "target": "aliment-base"
+    },
+    {
+     "text": "Végétarien",
+     "target": "vegetarien"
+    },
+    {
+     "text": "Culture d'un peuple",
+     "target": "culture-peuple"
+    }
+   ],
+   "id": "sciences-alimentation#82"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "tradition",
+    "produit-agricole",
+    "produit-transforme"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "tradition",
+     "label": "Manière de vivre transmise de génération en génération"
+    },
+    {
+     "id": "produit-agricole",
+     "label": "Aliment obtenu directement grâce à l'agriculture ou à l'élevage"
+    },
+    {
+     "id": "produit-transforme",
+     "label": "Aliment fabriqué à partir de produits agricoles"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Tradition",
+     "target": "tradition"
+    },
+    {
+     "text": "Produit agricole",
+     "target": "produit-agricole"
+    },
+    {
+     "text": "Produit transformé",
+     "target": "produit-transforme"
+    }
+   ],
+   "id": "sciences-alimentation#83"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "agriculture",
+    "culture-plantes",
+    "elevage"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "agriculture",
+     "label": "Ensemble des activités qui permettent de produire des aliments"
+    },
+    {
+     "id": "culture-plantes",
+     "label": "Production de plantes, comme les céréales, les fruits et les légumes"
+    },
+    {
+     "id": "elevage",
+     "label": "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Agriculture",
+     "target": "agriculture"
+    },
+    {
+     "text": "Culture des champs",
+     "target": "culture-plantes"
+    },
+    {
+     "text": "Élevage",
+     "target": "elevage"
+    }
+   ],
+   "id": "sciences-alimentation#84"
+  }
+ ],
+ "images": {
+  "aliment-base": {
+   "prompt": "a big steaming bowl of white rice in the center of a table, surrounded by a basket of bread and a plate of pasta, cozy kitchen",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "vegetarien": {
+   "prompt": "a smiling child eating a colorful plate of lentils, rice and vegetables, a bowl of salad and fruits on the table, no meat, no fish",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "culture-peuple": {
+   "prompt": "a joyful village festival with people in colorful traditional clothes, music, dancing, lanterns and a big shared table of food",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "tradition": {
+   "prompt": "a grandmother teaching her granddaughter to make a cake in a warm kitchen, the mother watching and smiling, three generations together",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "produit-agricole": {
+   "prompt": "a wicker basket at a farm full of fresh apples, eggs, carrots, a bottle of milk, green fields and a farmhouse behind",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "produit-transforme": {
+   "prompt": "a small factory with a smiling baker putting pizzas on a conveyor belt, boxes of biscuits and bottles of soda nearby",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "agriculture": {
+   "prompt": "a green countryside seen from a hill: a farmer on a small red tractor in a wheat field, an orchard, a vegetable garden, cows in a meadow",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "culture-plantes": {
+   "prompt": "a farmer sowing wheat in a golden field, apple trees and rows of lettuces and cabbages in the vegetable garden",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "elevage": {
+   "prompt": "a farmer woman feeding a black and white cow, hens and sheep in a green meadow in front of a small farm",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "cereales": {
+   "prompt": "big bundles of cereal plants side by side: golden wheat ears, corn cobs, rice stalks and millet, with small bowls of grains in front",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "outre-mer": {
+   "prompt": "on the left a small French harbor town on the coast, a very wide blue ocean in the middle, on the right a sunny tropical island with palm trees and banana plants, a small cargo ship crossing the ocean between them",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "japon": {
+   "prompt": "a smiling Japanese family sitting at a low table, eating bowls of rice with chopsticks, grilled fish, miso soup and vegetables, paper sliding doors",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "inde": {
+   "prompt": "a smiling Indian family sharing a meal of rice, lentils dal, vegetable curry and flatbread on round metal plates, colorful clothes",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "etats-unis": {
+   "prompt": "a smiling American family at a diner table with hamburgers, pizza, french fries and big cups of soda",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "afrique": {
+   "prompt": "a smiling family in a rural African village sharing a big dish of millet and corn porridge with vegetables, fields of millet and sorghum behind, round huts",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "amerique-sud": {
+   "prompt": "a sunny tropical plantation in South America with cacao trees bearing big pods and banana plants, green mountains behind",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "antilles": {
+   "prompt": "a sunny Caribbean island with a banana plantation, palm trees, a turquoise sea and a small colorful house",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "france": {
+   "prompt": "a French countryside with a small village, a church, apple orchards, wheat fields and a baker holding a baguette",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "facteur-culture": {
+   "prompt": "a family around a festive table sharing a traditional holiday meal, candles and decorations, grandparents and children smiling",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "facteur-richesse": {
+   "prompt": "a child and a parent at a colorful market stall choosing vegetables and fruit, holding a small purse with coins, a shelf of packaged food boxes behind",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "facteur-ressources": {
+   "prompt": "two landscapes side by side: on the left a hot sunny tropical land with cacao trees full of big orange pods and tall banana plants with bunches of bananas, on the right a cool green countryside with golden wheat fields and apple trees",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "cacao": {
+   "prompt": "a cacao tree with big yellow and red cacao pods, one pod cut open showing the white beans, a bar of chocolate next to it",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "banane": {
+   "prompt": "a banana plant with a big bunch of green bananas hanging, a bunch of yellow ripe bananas on a wooden table in front",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "importer": {
+   "prompt": "a world globe with little arrows made of fruits: bananas, coffee beans and cacao pods traveling toward a small French market stall",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "transport": {
+   "prompt": "a big cargo ship full of containers crossing the ocean with bananas, and a small airplane flying above in the sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "legende": {
+   "prompt": "a proud cute purple dragon wearing a white chef hat and apron, holding a big spoon, surrounded by rice, bananas, pizza and vegetables, cream belly, sparkles, smiling, centered, plain cream background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "schema-monde": {
+   "prompt": "a simple and geographically accurate flat world map, equirectangular projection, the Americas on the left, Europe and Africa in the center, Asia on the right, Australia bottom right, green and beige continents on a light blue ocean, no borders, no labels",
+   "w": 1216,
+   "h": 640,
+   "out_w": 1400,
+   "seed": 11
+  }
+ },
+ "speech": [
+  "Activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs",
+  "Afrique",
+  "Agriculture",
+  "Aliment de base",
+  "Aliment fabriqué à partir de produits agricoles",
+  "Aliment obtenu directement grâce à l'agriculture ou à l'élevage",
+  "Aliment que l'on mange presque à chaque repas",
+  "Aliments venus de loin",
+  "Amérique du Sud",
+  "Au Japon",
+  "Au Japon, le riz est l'aliment de base.",
+  "Au Japon, le riz est l'aliment de base. On mange souvent du poisson, des légumes et de la soupe.",
+  "Au Japon, on mange du riz et du poisson.",
+  "Au Japon, on mange du riz presque à chaque repas.",
+  "Au Japon, on mange souvent du poisson, des légumes et de la soupe.",
+  "Au Japon, on mange souvent du poisson. Qu'est-ce qui l'explique le mieux ?",
+  "Au Japon, que mange-t-on souvent avec le riz ?",
+  "Au Japon, quel est l'aliment de base ?",
+  "Aux États-Unis",
+  "Aux États-Unis, ce repas est surtout fait de produits transformés.",
+  "Aux États-Unis, on mange beaucoup de produits transformés : des hamburgers, des pizzas, des boissons sucrées ou des plats préparés.",
+  "Aux États-Unis, on mange beaucoup de produits transformés.",
+  "Avec quel produit agricole fabrique-t-on le chocolat ?",
+  "Banane",
+  "Beaucoup d'Indiens ne mangent pas de viande.",
+  "C'est la France d'outre-mer, où il fait chaud.",
+  "C'est le plus rapide, et il vole.",
+  "C'est un grand pays d'Amérique du Nord.",
+  "Cacao",
+  "Carte légendaire : tu connais toute la leçon sur le bout des doigts !",
+  "Ce mot se cache à la fin du mot agriculture.",
+  "Ce que l'on mange dépend",
+  "Ce que l'on mange dépend de la culture, du niveau de richesse et des ressources disponibles.",
+  "Ce sont de petites îles, entre les deux Amériques.",
+  "Ce sont des céréales cultivées en Afrique.",
+  "Ce sont des îles chaudes, de l'autre côté de l'océan.",
+  "Celui-là pousse dans un champ.",
+  "Ces aliments ne poussent pas en France métropolitaine : il n'y fait pas assez chaud. Ils voyagent en bateau. Ceux qui doivent arriver très vite, comme les fruits fragiles ou le poisson frais, voyagent parfois en avion.",
+  "Ces plantes ont besoin de chaleur toute l'année.",
+  "Chaque pays a ses habitudes alimentaires.",
+  "Chaque pays a ses habitudes, selon sa culture et ses ressources.",
+  "Cherche l'aliment que l'on cueille tel quel.",
+  "Comment appelle-t-on la partie de la France qui se trouve de l'autre côté de l'océan ?",
+  "Comment les bananes arrivent-elles le plus souvent en France ?",
+  "Comment sait-on qu'une pizza est un produit transformé ?",
+  "Culture",
+  "Culture : les traditions d'un peuple, ou la production de plantes.",
+  "Culture d'un peuple",
+  "Culture des champs",
+  "Céréales",
+  "Céréales, fruits et légumes poussent dans les champs.",
+  "D'où viennent la viande, le lait et les œufs ?",
+  "D'où vient chaque aliment : de la culture des champs, ou de l'élevage ?",
+  "D'où vient chaque aliment ?",
+  "Dans beaucoup de campagnes d'Afrique, les repas sont préparés avec les céréales cultivées sur place : le mil, le maïs et le sorgho.",
+  "Dans le monde, on ne mange pas partout la même chose. Chaque pays a ses habitudes.",
+  "Dans les Alpes",
+  "Dans les campagnes d'Afrique",
+  "Dans les campagnes d'Afrique, avec quoi prépare-t-on souvent les repas ?",
+  "Dans les pays chauds d'Afrique et d'Amérique du Sud",
+  "Dans les pays froids du Nord",
+  "Dans quel pays mange-t-on beaucoup de hamburgers, de pizzas et de boissons sucrées ?",
+  "De grands bateaux transportent les aliments à travers les océans.",
+  "De hamburgers et de pizzas",
+  "De l'usine",
+  "De l'élevage",
+  "De poisson et de soupe",
+  "De quoi parle-t-on ? Au Japon, c'est le riz. En France, c'est souvent le pain.",
+  "De quoi parle-t-on ? C'est le grand mot pour tout le travail de la ferme : semer, récolter, s'occuper des animaux.",
+  "De quoi parle-t-on ? La Guadeloupe et la Martinique : pour y aller depuis Paris, il faut traverser l'océan.",
+  "De quoi parle-t-on ? Le fermier nourrit ses vaches, ses poules et ses moutons tous les matins.",
+  "De quoi parle-t-on ? Le mil et le sorgho en font partie. Avec leurs grains, on fait de la farine.",
+  "De quoi parle-t-on ? Le paysan sème du blé, plante des pommiers et récolte des salades.",
+  "De quoi parle-t-on ? Les fêtes, la langue, la musique et la cuisine d'un pays, tout cela ensemble.",
+  "De quoi parle-t-on ? Ta grand-mère a appris cette recette de sa mère. Un jour, elle te l'apprendra.",
+  "De quoi parle-t-on ? Une pizza faite à l'usine avec de la farine, des tomates et du fromage.",
+  "De quoi parle-t-on ? Une pomme cueillie sur l'arbre, ou un œuf ramassé au poulailler.",
+  "De quoi parle-t-on ? À la cantine, il prend les lentilles et laisse le poulet et le poisson.",
+  "De riz, de légumes et de lentilles",
+  "De viande à chaque repas",
+  "Des arbres fruitiers",
+  "Des champs de blé",
+  "Des céréales cultivées sur place",
+  "Des fruits",
+  "Des gâteaux et des bonbons",
+  "Des habitudes transmises de génération en génération.",
+  "Des hamburgers",
+  "Des hamburgers et des frites",
+  "Des lentilles",
+  "Des légumes",
+  "Des plats préparés achetés au magasin",
+  "Du mil et du sorgho",
+  "Du poisson venu du Japon",
+  "Du poisson, des légumes et de la soupe",
+  "Du poulet",
+  "Du riz",
+  "Du riz à chaque repas, avec du poisson, des légumes et de la soupe.",
+  "Du riz, des légumes et des lentilles. Beaucoup d'Indiens sont végétariens.",
+  "Décide des aliments interdits ou préférés",
+  "Elle pousse en Amérique, et en France d'outre-mer.",
+  "Elle pousse sur un arbre",
+  "Elle sort directement d'un animal",
+  "En Bretagne",
+  "En France métropolitaine",
+  "En Guadeloupe et à la Martinique",
+  "En Inde",
+  "En Inde, beaucoup de personnes sont végétariennes pour des raisons religieuses.",
+  "En Inde, beaucoup de personnes sont végétariennes, pour des raisons religieuses. Les repas sont souvent faits de riz, de légumes et de lentilles.",
+  "En Inde, beaucoup de personnes sont végétariennes.",
+  "En Inde, de quoi les repas sont-ils souvent faits ?",
+  "En Inde, les repas sont souvent faits de riz, de légumes et de lentilles.",
+  "En bateau",
+  "En bateau ou en avion, des aliments traversent le monde.",
+  "En camion depuis l'Équateur",
+  "En train depuis la Martinique",
+  "Ensemble des activités qui permettent de produire des aliments",
+  "Ensemble des traditions et des habitudes d'un peuple",
+  "France d'outre-mer",
+  "France métropolitaine",
+  "Grand chef du monde",
+  "Guadeloupe et Martinique",
+  "Hamburgers, pizzas et boissons sucrées",
+  "Hamburgers, pizzas, boissons sucrées : beaucoup de produits transformés.",
+  "Hamburgers, pizzas, boissons sucrées : ce sont des produits transformés.",
+  "Il est blanc, en tout petits grains, et on le mange avec des baguettes.",
+  "Il faut des animaux à la ferme.",
+  "Il faut traverser l'océan avec beaucoup de bananes.",
+  "Il n'y a pas de champs au Japon",
+  "Il ne fait pas assez chaud en France métropolitaine pour les cultiver.",
+  "Il permet d'acheter plus ou moins de produits transformés.",
+  "Il pousse dans les pays chauds, comme le cacao.",
+  "Il pousse dans les pays chauds. Avec ses fèves, on fait le chocolat.",
+  "Il pousse sur un arbre du verger, même quand il fait frais.",
+  "Il vient directement de la ferme, sans passer par l'usine.",
+  "Il vit en liberté dans la savane.",
+  "Ils doivent arriver très vite",
+  "Ils ne poussent pas en France métropolitaine",
+  "Ils poussent seulement sous la neige",
+  "Ils sont fabriqués dans des usines lointaines",
+  "Ils sont interdits en France",
+  "Ils sont trop lourds pour le bateau",
+  "Inde",
+  "Japon",
+  "L'Afrique",
+  "L'Afrique : continent où, dans les campagnes, on cuisine les céréales cultivées sur place : le mil, le maïs et le sorgho.",
+  "L'Afrique est un grand continent, au sud de l'Europe.",
+  "L'Amérique du Sud : continent chaud où l'on cultive le cacao et les bananes, par exemple au Brésil et en Équateur.",
+  "L'Amérique du Sud est sous l'Amérique du Nord.",
+  "L'Inde",
+  "L'Inde : pays d'Asie où beaucoup de personnes sont végétariennes, pour des raisons religieuses.",
+  "L'Inde est un grand pays d'Asie.",
+  "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
+  "L'aliment de base : aliment que l'on mange presque à chaque repas.",
+  "L'avion",
+  "L'avion coûte moins cher",
+  "L'avion va très vite : les fruits fragiles n'ont pas le temps de s'abîmer.",
+  "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
+  "L'élevage",
+  "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+  "L'élevage donne la viande, le lait et les œufs.",
+  "L'œuf vient directement de l'élevage : c'est un produit agricole.",
+  "La France d'outre-mer",
+  "La France métropolitaine",
+  "La France métropolitaine : la partie de la France qui se trouve en Europe.",
+  "La France métropolitaine est en Europe.",
+  "La Guadeloupe et la Martinique : la France d'outre-mer.",
+  "La Guadeloupe et la Martinique : îles de la France d'outre-mer où l'on cultive des bananes.",
+  "La Guadeloupe et la Martinique sont en France d'outre-mer.",
+  "La banane",
+  "La banane : fruit des pays chauds d'Amérique, cultivé aussi en Guadeloupe et à la Martinique.",
+  "La chèvre",
+  "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
+  "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
+  "La culture dit ce que l'on peut manger, et ce que l'on aime manger.",
+  "La culture décide des aliments interdits ou préférés. La richesse permet d'acheter. Les ressources permettent de produire.",
+  "La culture, la richesse et les ressources décident de ce que l'on mange.",
+  "La mer est tout autour du pays",
+  "La pizza est fabriquée : c'est un produit transformé.",
+  "La pizza est fabriquée à partir de produits agricoles.",
+  "La pomme",
+  "La pomme pousse en France. Le cacao, la banane et le café viennent des pays chauds.",
+  "La pomme vient directement de l'arbre : c'est un produit agricole.",
+  "La poule",
+  "La religion et les traditions",
+  "La religion et les traditions : elles décident des aliments interdits ou préférés.",
+  "La religion et les traditions décident des aliments interdits ou préférés.",
+  "La religion interdit le riz",
+  "La salade",
+  "La tomate",
+  "La tomate est un fruit. Le blé, le riz, le maïs, le mil et le sorgho sont des céréales.",
+  "La vache",
+  "La viande",
+  "Le Japon",
+  "Le Japon : pays d'Asie où le riz est l'aliment de base, avec du poisson, des légumes et de la soupe.",
+  "Le Japon est entouré par la mer : le poisson est une ressource disponible.",
+  "Le Japon est entouré par la mer.",
+  "Le Japon est fait d'îles.",
+  "Le Japon est un pays d'îles, en Asie.",
+  "Le bateau",
+  "Le bateau ne va pas en France",
+  "Le blé",
+  "Le blé vient de la culture des champs, pas de l'élevage.",
+  "Le cacao",
+  "Le cacao : fruit des pays chauds d'Afrique et d'Amérique du Sud, qui sert à fabriquer le chocolat.",
+  "Le cacao a besoin de chaleur, le blé pousse bien en France.",
+  "Le cacao et les bananes",
+  "Le cacao et les bananes poussent dans les pays chauds et voyagent jusqu'en France en bateau.",
+  "Le cacao pousse dans les pays chauds d'Afrique et d'Amérique du Sud.",
+  "Le cacao pousse dans les pays chauds d'Afrique, comme la Côte d'Ivoire et le Ghana, et d'Amérique du Sud, comme le Brésil et l'Équateur.",
+  "Le cacao pousse par exemple en Côte d'Ivoire, au Ghana, au Brésil et en Équateur.",
+  "Le cacaoyer a besoin de chaleur toute l'année.",
+  "Le café",
+  "Le café pousse dans les pays chauds, loin de la France.",
+  "Le cheval",
+  "Le chocolat est fabriqué avec les fèves de cacao.",
+  "Le climat et l'agriculture",
+  "Le climat et l'agriculture permettent de produire certains aliments plus que d'autres.",
+  "Le lait",
+  "Le lion",
+  "Le maïs",
+  "Le mil",
+  "Le mil, le maïs et le sorgho cultivés près de la maison.",
+  "Le mouton",
+  "Le niveau de richesse",
+  "Le niveau de richesse : il permet d'acheter plus ou moins de produits transformés.",
+  "Le niveau de richesse permet d'acheter plus ou moins de produits transformés.",
+  "Le pain",
+  "Le poisson est un produit transformé",
+  "Le produit agricole vient directement de la ferme. Le produit transformé est fabriqué.",
+  "Le repas africain",
+  "Le repas américain",
+  "Le repas indien",
+  "Le repas japonais",
+  "Le riz",
+  "Le sorgho",
+  "Le transport des aliments : les aliments voyagent en bateau, ou en avion quand ils doivent arriver très vite.",
+  "Le voyage des aliments",
+  "Le vélo",
+  "Lequel de ces aliments pousse en France métropolitaine ?",
+  "Lequel de ces aliments vient de loin ?",
+  "Lequel est un produit agricole ?",
+  "Lequel n'est PAS un animal de la ferme ?",
+  "Lequel n'est PAS un produit de l'élevage ?",
+  "Lequel n'est PAS un produit transformé ?",
+  "Lequel n'est PAS une céréale ?",
+  "Les aliments fragiles ou frais voyagent parfois en avion.",
+  "Les aliments qui doivent arriver très vite voyagent parfois en avion.",
+  "Les aliments venus de loin : ils ne poussent pas en France métropolitaine : on les fait venir d'autres pays.",
+  "Les animaux de la ferme donnent la viande, le lait et les œufs.",
+  "Les bananes poussent dans les pays chauds d'Amérique, comme l'Équateur et le Costa Rica. On en cultive aussi en France d'outre-mer : en Guadeloupe et à la Martinique.",
+  "Les campagnes d'Afrique",
+  "Les cultures",
+  "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+  "Les céréales donnent des petits grains.",
+  "Les familles mangent ce qu'elles cultivent : ce sont les ressources disponibles.",
+  "Les hamburgers et les pizzas sont fabriqués.",
+  "Les parents la transmettent aux enfants, qui la transmettront à leur tour.",
+  "Les plantes viennent des cultures. La viande, le lait et les œufs viennent de l'élevage.",
+  "Les pommes de terre",
+  "Les produits fabriqués coûtent de l'argent.",
+  "Les pâtes",
+  "Les ressources disponibles : le climat et l'agriculture permettent de produire certains aliments plus que d'autres.",
+  "Les traditions",
+  "Les trois secrets de l'assiette",
+  "Les États-Unis",
+  "Les États-Unis : pays d'Amérique du Nord où l'on mange beaucoup de produits transformés.",
+  "Les États-Unis sont en Amérique du Nord.",
+  "Les œufs",
+  "Manière de vivre transmise de génération en génération",
+  "Mil, maïs et sorgho cultivés sur place",
+  "Niveau de richesse",
+  "Nos aliments viennent de l'agriculture. Les cultures donnent les céréales, les fruits et les légumes. L'élevage donne la viande, le lait et les œufs.",
+  "On achète surtout des plats préparés",
+  "On cuisine le mil, le maïs et le sorgho cultivés sur place.",
+  "On cultive des bananes en France d'outre-mer : en Guadeloupe et à la Martinique.",
+  "On fait venir les aliments en avion",
+  "On la fabrique avec d'autres aliments",
+  "On la ramasse dans un champ",
+  "On mange surtout des produits transformés",
+  "On utilise les ressources disponibles autour de soi",
+  "On élève les vaches, les chèvres et les brebis pour leur lait.",
+  "Outre veut dire au-delà.",
+  "Outre-mer",
+  "Où cultive-t-on des bananes en France ?",
+  "Où pousse le cacao ?",
+  "Parce qu'il fait trop froid",
+  "Parce qu'il n'y a pas d'animaux en Inde",
+  "Parce qu'ils n'ont pas de cuisine",
+  "Pense aux Indiens végétariens.",
+  "Pense aux champs qui entourent le village.",
+  "Pense aux croyances et aux traditions.",
+  "Pense à ce que la famille fait pousser près de chez elle.",
+  "Pense à la farine, aux tomates et au fromage.",
+  "Permet d'acheter plus ou moins de produits transformés",
+  "Permet de produire certains aliments plus que d'autres",
+  "Personne qui ne mange ni viande ni poisson",
+  "Plantes dont on mange les grains, comme le blé, le riz ou le maïs",
+  "Plus on a d'argent, plus on peut acheter de produits transformés.",
+  "Pomme et blé : France métropolitaine. Bananes des Antilles : outre-mer. Cacao et café : de loin.",
+  "Pour des raisons religieuses",
+  "Pourquoi beaucoup d'Indiens ne mangent-ils pas de viande ?",
+  "Pourquoi certains fruits fragiles voyagent-ils en avion ?",
+  "Pourquoi fait-on venir le cacao et les bananes de loin ?",
+  "Pourquoi, dans les campagnes d'Afrique, mange-t-on surtout ce qu'on cultive près de chez soi ?",
+  "Production de plantes, comme les céréales, les fruits et les légumes",
+  "Produit agricole",
+  "Produit transformé",
+  "Que veut dire « agriculture » ?",
+  "Que veut dire « aliment de base » ?",
+  "Que veut dire « culture d'un peuple » ?",
+  "Que veut dire « culture des champs » ?",
+  "Que veut dire « céréales » ?",
+  "Que veut dire « outre-mer » ?",
+  "Que veut dire « produit agricole » ?",
+  "Que veut dire « produit transformé » ?",
+  "Que veut dire « tradition » ?",
+  "Que veut dire « végétarien » ?",
+  "Que veut dire « élevage » ?",
+  "Quel mot a deux sens : les traditions d'un peuple, et le travail des champs ?",
+  "Range chaque aliment : produit agricole ou produit transformé ?",
+  "Reconstruis la phrase mémo.",
+  "Regarde, l'Afrique est ici.",
+  "Regarde, l'Amérique du Sud est ici.",
+  "Regarde, l'Inde est ici.",
+  "Regarde, la France métropolitaine est ici.",
+  "Regarde, la Guadeloupe et la Martinique est ici.",
+  "Regarde, le Japon est ici.",
+  "Regarde, les États-Unis est ici.",
+  "Relie chaque facteur à son effet sur ce que l'on mange.",
+  "Relie chaque mot à sa définition.",
+  "Relie chaque pays à son repas.",
+  "Religion et traditions",
+  "Ressources disponibles",
+  "Riz, légumes et lentilles, sans viande",
+  "Riz, poisson, légumes et soupe",
+  "Récolte",
+  "Selon le climat, on cultive certains aliments plus que d'autres.",
+  "Ses grosses cosses sont pleines de fèves.",
+  "Termine la phrase : Aux États-Unis, ce repas est surtout fait de…",
+  "Termine la phrase : La religion et les traditions décident…",
+  "Termine la phrase : Le climat et l'agriculture permettent de produire…",
+  "Termine la phrase : Le niveau de richesse permet d'acheter…",
+  "Touche l'Afrique sur la carte.",
+  "Touche l'Amérique du Sud sur la carte.",
+  "Touche l'Inde sur la carte.",
+  "Touche la France métropolitaine sur la carte.",
+  "Touche la Guadeloupe et la Martinique sur la carte.",
+  "Touche le Japon sur la carte.",
+  "Touche le pays où beaucoup de personnes sont végétariennes.",
+  "Touche le pays où l'on mange beaucoup de hamburgers et de pizzas.",
+  "Touche le pays où le riz est l'aliment de base, avec le poisson.",
+  "Touche les États-Unis sur la carte.",
+  "Touche les îles françaises où l'on cultive des bananes.",
+  "Tradition",
+  "Transport des aliments",
+  "Trois choses changent ce que l'on mange : la culture, c'est-à-dire la religion et les traditions ; le niveau de richesse ; et les ressources disponibles, comme le climat et l'agriculture.",
+  "Un fruit fragile s'abîme s'il attend trop.",
+  "Un hamburger",
+  "Un plat préparé",
+  "Un poisson frais doit arriver très vite. Quel transport choisit-on ?",
+  "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+  "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
+  "Un végétarien : personne qui ne mange ni viande ni poisson.",
+  "Un végétarien ne mange ni viande ni poisson.",
+  "Un végétarien ne mange pas les animaux.",
+  "Un œuf",
+  "Une boisson sucrée",
+  "Une famille végétarienne prépare le repas. Que ne met-elle PAS dans les assiettes ?",
+  "Une pizza",
+  "Une pomme",
+  "Une tablette de chocolat",
+  "Une tradition : manière de vivre transmise de génération en génération.",
+  "Vaches, poules, moutons et chèvres sont élevés à la ferme.",
+  "Vient de loin",
+  "Vrai ou faux ? Au Japon, le riz est l'aliment de base.",
+  "Vrai ou faux ? Le cacao pousse en France métropolitaine.",
+  "Vrai ou faux ? Le lait vient de l'élevage.",
+  "Vrai ou faux ? Le mil, le maïs et le sorgho sont des céréales.",
+  "Vrai ou faux ? Le niveau de richesse ne change rien à ce que l'on mange.",
+  "Vrai ou faux ? Les aliments fragiles voyagent parfois en avion.",
+  "Vrai ou faux ? On cultive des bananes en Guadeloupe et à la Martinique.",
+  "Vrai ou faux ? Partout dans le monde, on mange la même chose.",
+  "Vrai ou faux ? Un végétarien mange du poisson.",
+  "Vrai ou faux ? Une pizza est un produit agricole.",
+  "Vrai ou faux ? Une tradition se transmet de génération en génération.",
+  "Végétarien",
+  "Zone géographique située au-delà d'un océan ou d'une mer",
+  "certains aliments plus que d'autres",
+  "céréales cultivées sur place",
+  "de la culture,",
+  "de la quantité de pluie",
+  "de la taille des champs",
+  "des aliments interdits",
+  "des aliments interdits ou préférés",
+  "des biscuits",
+  "des champs de cacao",
+  "des œufs",
+  "du chocolat",
+  "du climat du pays",
+  "du lait",
+  "du niveau de richesse",
+  "du riz",
+  "en bateau.",
+  "et des ressources disponibles.",
+  "et voyagent jusqu'en France",
+  "la banane d'Équateur",
+  "la banane de Guadeloupe",
+  "la banane de Martinique",
+  "la pomme",
+  "la salade",
+  "la tomate",
+  "la viande",
+  "le blé",
+  "le cacao",
+  "le cacao de Côte d'Ivoire",
+  "le café du Brésil",
+  "le fromage de chèvre",
+  "le lait",
+  "lentilles et légumes",
+  "les œufs",
+  "plus d'argent pour tout le monde",
+  "plus ou moins de produits transformés",
+  "poussent dans les pays chauds",
+  "produits agricoles",
+  "produits transformés",
+  "seulement des plats préparés",
+  "un climat plus chaud",
+  "un hamburger",
+  "un plat préparé",
+  "un poisson",
+  "une boisson sucrée",
+  "une carotte",
+  "une pizza",
+  "une pomme",
+  "À Paris",
+  "À pied",
+  "Ça, c'est l'Afrique.",
+  "Ça, c'est l'Amérique du Sud.",
+  "Ça, c'est l'Inde.",
+  "Ça, c'est la France métropolitaine.",
+  "Ça, c'est la Guadeloupe et la Martinique.",
+  "Ça, c'est le Japon.",
+  "Ça, c'est les États-Unis.",
+  "Élevage",
+  "États-Unis"
+ ]
+}
