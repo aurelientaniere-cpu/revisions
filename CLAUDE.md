@@ -2,6 +2,8 @@
 
 Web app de révision pour le CM1, conçue pour être accessible aux enfants dys et TDAH, installée sur l'écran d'accueil d'un iPad. HTML/CSS/JS sans compilation, hors-ligne via `sw.js`, publiée sur GitHub Pages (dépôt public : rien de personnel dans les fichiers suivis). La progression reste dans le `localStorage` de l'iPad. Contexte privé : `CLAUDE.local.md` (non suivi par git).
 
+En ligne : https://aurelientaniere-cpu.github.io/revisions/ (dépôt `aurelientaniere-cpu/revisions`, branche `main`, Pages déployé à chaque push, ~1 min).
+
 ## Ajouter une leçon (demande habituelle : « voici la photo de la fiche »)
 1. Lire la fiche, écrire `lessons/<matiere>-<sujet>.json` selon `lessons/FORMAT.md` (modèle : `histoire-moyen-age.json`).
 2. L'ajouter à `lessons/index.json` et à la liste `SHELL` de `sw.js`, puis incrémenter `CACHE` dans `sw.js`.
