@@ -3,7 +3,7 @@ import { state, save } from './store.js';
 import { say, sayAll, stop, unlock, loadAudio } from './speech.js';
 import { P, loadPhrases } from './phrases.js';
 import { loadLessons } from './lessons.js';
-import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson } from './srs.js';
+import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson, retryItem } from './srs.js';
 import { renderStep, schemaView } from './activities.js';
 import { companionHTML, stageOf, nextStage, STAGES, starsForSession, addStars, recordDay, checkCards } from './rewards.js';
 import { parentGate } from './parent.js';
@@ -145,11 +145,12 @@ function start(L) {
     renderStep(item, {
       root, lesson: L, level,
       done: (result) => {
-        grade(L, item.notions, result);
+        grade(L, item.notions, result, item.id);
         if (result === 'fail' && !requeued.has(item.id)) {
-          // La question reviendra à la fin de la séance, sans compter une case de plus.
-          requeued.add(item.id);
-          steps.push({ kind: 'item', item, retry: true });
+          // La notion reviendra à la fin de la séance (autre question si possible), sans compter une case de plus.
+          const again = retryItem(L, item);
+          requeued.add(item.id).add(again.id);
+          steps.push({ kind: 'item', item: again, retry: true });
         } else {
           results.push(result);
         }

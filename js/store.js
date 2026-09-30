@@ -6,6 +6,7 @@ const DEFAULTS = () => ({
   settings: { font: 'andika', rate: 1, sessionLen: 6 },
   companion: { name: '', stars: 0 },
   notions: {},          // "lecon/notion" -> { level, seen, due, ok, ko }
+  items: {},            // "lecon#empreinte" -> { d: jour, s: n° de séance de la leçon, n: posé, ok: réussi }
   cards: [],            // ids des cartes débloquées
   stats: { sessions: 0, seconds: 0, lastDay: '', days: 0 },
 });

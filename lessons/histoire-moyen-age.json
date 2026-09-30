@@ -269,6 +269,13 @@
       "noAuto": true
     }
   ],
+  "groups": {
+    "chateau": {
+      "label": "une partie du château fort",
+      "hint": "Trois réponses sont des endroits du château. Cherche l'autre.",
+      "outsiders": ["abbaye", "cathedrale", "paroisse", "dime", "corvee"]
+    }
+  },
   "cards": [
     {
       "id": "mda-chateau",
