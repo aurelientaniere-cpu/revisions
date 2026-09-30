@@ -56,6 +56,16 @@ def auto_items(lesson):
                     "q": f"Touche {nom(n)} sur le château.",
                     "explain": explain,
                 })
+            # Vrai / faux sur la définition : la vraie, puis celle d'un autre mot du groupe.
+            # Redonne la définition : uniquement lors d'une séance suivante (`review`).
+            if others:
+                other = members[(members.index(n) + 1) % len(members)]
+                for d, ok, diff in ((n["def"], True, 1), (other["def"], False, 2)):
+                    items.append({
+                        "type": "vf", "diff": diff, "review": True, "answer": ok, "notions": [n["id"]],
+                        "q": f"« {cap(n['term'])} » veut dire : {d}.",
+                        "explain": explain,
+                    })
         for i in range(0, len(members) - 2, 3):
             trio = members[i:i + 3]
             if len(trio) < 3:
@@ -67,7 +77,44 @@ def auto_items(lesson):
                 "targets": [{"id": n["id"], "label": cap(n["def"])} for n in trio],
                 "tokens": [{"text": cap(n["term"]), "target": n["id"]} for n in trio],
             })
+
+    # L'intrus : « Lequel n'est PAS {label} ? », si la leçon décrit le groupe dans `groups`.
+    byid = {n["id"]: n for n in lesson["notions"]}
+    for g, conf in lesson.get("groups", {}).items():
+        members = groups.get(g, [])
+        outsiders = [byid[x] for x in conf.get("outsiders", [])]
+        if len(members) < 3 or not outsiders:
+            continue
+        for i, m in enumerate(members):
+            o = outsiders[i % len(outsiders)]
+            mates = [members[(i + k) % len(members)] for k in (0, 1, 2)]
+            items.append({
+                "type": "qcm", "diff": 3, "notions": [m["id"], o["id"]],
+                "q": f"Lequel n'est PAS {conf['label']} ?",
+                "choices": [cap(nom(o))] + [cap(nom(x)) for x in mates],
+                "hint": conf.get("hint", ""),
+                "explain": f"{cap(nom(o))} n'est pas {conf['label']}.",
+            })
     return items
+
+
+def fnv1a(text):
+    """FNV-1a 32 bits (même calcul que clipKey() dans js/speech.js)."""
+    h = 0x811C9DC5
+    for b in text.encode("utf-8"):
+        h = ((h ^ b) * 0x01000193) & 0xFFFFFFFF
+    return f"{h:08x}"
+
+
+def item_key(it):
+    """Empreinte stable d'un exercice (type + question + réponses) : l'app s'en sert
+    pour retenir, d'une séance à l'autre, quels exercices ont déjà été posés."""
+    parts = [it["type"], it.get("layout", ""), it.get("q", ""), it.get("sentence", ""), str(it.get("target", ""))]
+    parts += it.get("choices", [])
+    if "answer" in it:
+        parts.append(str(it["answer"]))
+    parts += [f"{k['text']}>{k['target']}" for k in it.get("tokens", [])]
+    return fnv1a("|".join(parts))
 
 
 def item_speech(it):
@@ -101,12 +148,24 @@ def build(src):
     if missing:
         sys.exit(f"{src} : « indice » manquant pour {', '.join(missing)}")
 
+    for g, conf in lesson.get("groups", {}).items():
+        bad = [x for x in conf.get("outsiders", []) if x not in ids]
+        if bad:
+            sys.exit(f"{src} : groups.{g}.outsiders cite des notions inconnues {bad}")
+
     items = list(lesson.get("items", [])) + auto_items(lesson)
+    seen_ids = set()
     for i, it in enumerate(items):
         bad = [x for x in it["notions"] if x not in ids]
         if bad:
             sys.exit(f"{src} : item {i} cite des notions inconnues {bad}")
-        it["id"] = f"{lesson['id']}#{i}"
+        # Id écrit à la main conservé ; sinon empreinte du contenu (ne bouge pas quand on ajoute des exercices).
+        base = it.get("id") or f"{lesson['id']}#{item_key(it)}"
+        uid, k = base, 2
+        while uid in seen_ids:
+            uid, k = f"{base}-{k}", k + 1
+        seen_ids.add(uid)
+        it["id"] = uid
     lesson["items"] = items
 
     speech = []

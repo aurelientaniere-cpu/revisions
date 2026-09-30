@@ -407,7 +407,7 @@
    ],
    "hint": "Il est blanc, en tout petits grains, et on le mange avec des baguettes.",
    "explain": "Au Japon, le riz est l'aliment de base.",
-   "id": "sciences-alimentation#0"
+   "id": "sciences-alimentation#784ad64b"
   },
   {
    "type": "qcm",
@@ -424,7 +424,7 @@
    ],
    "hint": "Le Japon est entouré par la mer.",
    "explain": "Au Japon, on mange souvent du poisson, des légumes et de la soupe.",
-   "id": "sciences-alimentation#1"
+   "id": "sciences-alimentation#72fc0404"
   },
   {
    "type": "qcm",
@@ -441,7 +441,7 @@
    ],
    "hint": "Beaucoup d'Indiens ne mangent pas de viande.",
    "explain": "En Inde, les repas sont souvent faits de riz, de légumes et de lentilles.",
-   "id": "sciences-alimentation#2"
+   "id": "sciences-alimentation#c1fec0d1"
   },
   {
    "type": "qcm",
@@ -460,7 +460,7 @@
    ],
    "hint": "Pense aux croyances et aux traditions.",
    "explain": "En Inde, beaucoup de personnes sont végétariennes pour des raisons religieuses.",
-   "id": "sciences-alimentation#3"
+   "id": "sciences-alimentation#344cb4c4"
   },
   {
    "type": "qcm",
@@ -478,7 +478,7 @@
    ],
    "hint": "Un végétarien ne mange pas les animaux.",
    "explain": "Un végétarien ne mange ni viande ni poisson.",
-   "id": "sciences-alimentation#4"
+   "id": "sciences-alimentation#a977ec50"
   },
   {
    "type": "qcm",
@@ -496,7 +496,7 @@
    ],
    "hint": "C'est un grand pays d'Amérique du Nord.",
    "explain": "Aux États-Unis, on mange beaucoup de produits transformés.",
-   "id": "sciences-alimentation#5"
+   "id": "sciences-alimentation#800eb76a"
   },
   {
    "type": "qcm",
@@ -514,7 +514,7 @@
    ],
    "hint": "Les hamburgers et les pizzas sont fabriqués.",
    "explain": "Hamburgers, pizzas, boissons sucrées : ce sont des produits transformés.",
-   "id": "sciences-alimentation#6"
+   "id": "sciences-alimentation#f0ac098e"
   },
   {
    "type": "qcm",
@@ -532,7 +532,7 @@
    ],
    "hint": "Pense à ce que la famille fait pousser près de chez elle.",
    "explain": "On cuisine le mil, le maïs et le sorgho cultivés sur place.",
-   "id": "sciences-alimentation#7"
+   "id": "sciences-alimentation#c4981d40"
   },
   {
    "type": "qcm",
@@ -550,7 +550,7 @@
    ],
    "hint": "Pense aux champs qui entourent le village.",
    "explain": "Les familles mangent ce qu'elles cultivent : ce sont les ressources disponibles.",
-   "id": "sciences-alimentation#8"
+   "id": "sciences-alimentation#f8363450"
   },
   {
    "type": "qcm",
@@ -568,7 +568,7 @@
    ],
    "hint": "Le Japon est fait d'îles.",
    "explain": "Le Japon est entouré par la mer : le poisson est une ressource disponible.",
-   "id": "sciences-alimentation#9"
+   "id": "sciences-alimentation#43331147"
   },
   {
    "type": "qcm",
@@ -585,7 +585,7 @@
    ],
    "hint": "Pense aux Indiens végétariens.",
    "explain": "La culture dit ce que l'on peut manger, et ce que l'on aime manger.",
-   "id": "sciences-alimentation#10"
+   "id": "sciences-alimentation#09ed2a23"
   },
   {
    "type": "qcm",
@@ -602,7 +602,7 @@
    ],
    "hint": "Les produits fabriqués coûtent de l'argent.",
    "explain": "Plus on a d'argent, plus on peut acheter de produits transformés.",
-   "id": "sciences-alimentation#11"
+   "id": "sciences-alimentation#08571477"
   },
   {
    "type": "qcm",
@@ -619,7 +619,7 @@
    ],
    "hint": "Le cacao a besoin de chaleur, le blé pousse bien en France.",
    "explain": "Selon le climat, on cultive certains aliments plus que d'autres.",
-   "id": "sciences-alimentation#12"
+   "id": "sciences-alimentation#060a0ece"
   },
   {
    "type": "qcm",
@@ -638,7 +638,7 @@
    ],
    "hint": "Ce mot se cache à la fin du mot agriculture.",
    "explain": "Culture : les traditions d'un peuple, ou la production de plantes.",
-   "id": "sciences-alimentation#13"
+   "id": "sciences-alimentation#9c4c05aa"
   },
   {
    "type": "qcm",
@@ -658,7 +658,7 @@
    ],
    "hint": "Cherche l'aliment que l'on cueille tel quel.",
    "explain": "La pomme vient directement de l'arbre : c'est un produit agricole.",
-   "id": "sciences-alimentation#14"
+   "id": "sciences-alimentation#45fef515"
   },
   {
    "type": "qcm",
@@ -677,7 +677,7 @@
    ],
    "hint": "Il vient directement de la ferme, sans passer par l'usine.",
    "explain": "L'œuf vient directement de l'élevage : c'est un produit agricole.",
-   "id": "sciences-alimentation#15"
+   "id": "sciences-alimentation#82642ccd"
   },
   {
    "type": "qcm",
@@ -694,7 +694,7 @@
    ],
    "hint": "Pense à la farine, aux tomates et au fromage.",
    "explain": "La pizza est fabriquée à partir de produits agricoles.",
-   "id": "sciences-alimentation#16"
+   "id": "sciences-alimentation#0d773034"
   },
   {
    "type": "qcm",
@@ -713,7 +713,7 @@
    ],
    "hint": "Ses grosses cosses sont pleines de fèves.",
    "explain": "Le chocolat est fabriqué avec les fèves de cacao.",
-   "id": "sciences-alimentation#17"
+   "id": "sciences-alimentation#ed45ffdc"
   },
   {
    "type": "qcm",
@@ -730,7 +730,7 @@
    ],
    "hint": "Il faut des animaux à la ferme.",
    "explain": "L'élevage donne la viande, le lait et les œufs.",
-   "id": "sciences-alimentation#18"
+   "id": "sciences-alimentation#285c14a5"
   },
   {
    "type": "qcm",
@@ -748,7 +748,7 @@
    ],
    "hint": "Celui-là pousse dans un champ.",
    "explain": "Le blé vient de la culture des champs, pas de l'élevage.",
-   "id": "sciences-alimentation#19"
+   "id": "sciences-alimentation#610c3ade"
   },
   {
    "type": "qcm",
@@ -766,7 +766,7 @@
    ],
    "hint": "Il vit en liberté dans la savane.",
    "explain": "Vaches, poules, moutons et chèvres sont élevés à la ferme.",
-   "id": "sciences-alimentation#20"
+   "id": "sciences-alimentation#12d300b8"
   },
   {
    "type": "qcm",
@@ -786,7 +786,7 @@
    ],
    "hint": "Les céréales donnent des petits grains.",
    "explain": "La tomate est un fruit. Le blé, le riz, le maïs, le mil et le sorgho sont des céréales.",
-   "id": "sciences-alimentation#21"
+   "id": "sciences-alimentation#e5db2fad"
   },
   {
    "type": "qcm",
@@ -805,7 +805,7 @@
    ],
    "hint": "Outre veut dire au-delà.",
    "explain": "La Guadeloupe et la Martinique sont en France d'outre-mer.",
-   "id": "sciences-alimentation#22"
+   "id": "sciences-alimentation#5168304f"
   },
   {
    "type": "qcm",
@@ -824,7 +824,7 @@
    ],
    "hint": "Le cacaoyer a besoin de chaleur toute l'année.",
    "explain": "Le cacao pousse par exemple en Côte d'Ivoire, au Ghana, au Brésil et en Équateur.",
-   "id": "sciences-alimentation#23"
+   "id": "sciences-alimentation#2e0a4322"
   },
   {
    "type": "qcm",
@@ -843,7 +843,7 @@
    ],
    "hint": "Ce sont des îles chaudes, de l'autre côté de l'océan.",
    "explain": "On cultive des bananes en France d'outre-mer : en Guadeloupe et à la Martinique.",
-   "id": "sciences-alimentation#24"
+   "id": "sciences-alimentation#fe0bd63f"
   },
   {
    "type": "qcm",
@@ -862,7 +862,7 @@
    ],
    "hint": "Ces plantes ont besoin de chaleur toute l'année.",
    "explain": "Il ne fait pas assez chaud en France métropolitaine pour les cultiver.",
-   "id": "sciences-alimentation#25"
+   "id": "sciences-alimentation#2b2fdd70"
   },
   {
    "type": "qcm",
@@ -881,7 +881,7 @@
    ],
    "hint": "Il pousse sur un arbre du verger, même quand il fait frais.",
    "explain": "La pomme pousse en France. Le cacao, la banane et le café viennent des pays chauds.",
-   "id": "sciences-alimentation#26"
+   "id": "sciences-alimentation#64c8c142"
   },
   {
    "type": "qcm",
@@ -899,7 +899,7 @@
    ],
    "hint": "Il pousse dans les pays chauds, comme le cacao.",
    "explain": "Le café pousse dans les pays chauds, loin de la France.",
-   "id": "sciences-alimentation#27"
+   "id": "sciences-alimentation#fb22aef8"
   },
   {
    "type": "qcm",
@@ -917,7 +917,7 @@
    ],
    "hint": "Il faut traverser l'océan avec beaucoup de bananes.",
    "explain": "De grands bateaux transportent les aliments à travers les océans.",
-   "id": "sciences-alimentation#28"
+   "id": "sciences-alimentation#90573167"
   },
   {
    "type": "qcm",
@@ -934,7 +934,7 @@
    ],
    "hint": "C'est le plus rapide, et il vole.",
    "explain": "Les aliments fragiles ou frais voyagent parfois en avion.",
-   "id": "sciences-alimentation#29"
+   "id": "sciences-alimentation#bc09ae2d"
   },
   {
    "type": "qcm",
@@ -951,7 +951,7 @@
    ],
    "hint": "Un fruit fragile s'abîme s'il attend trop.",
    "explain": "Les aliments qui doivent arriver très vite voyagent parfois en avion.",
-   "id": "sciences-alimentation#30"
+   "id": "sciences-alimentation#3ec20ded"
   },
   {
    "type": "vf",
@@ -963,7 +963,7 @@
    "q": "Au Japon, le riz est l'aliment de base.",
    "answer": true,
    "explain": "Au Japon, on mange du riz presque à chaque repas.",
-   "id": "sciences-alimentation#31"
+   "id": "sciences-alimentation#4e363856"
   },
   {
    "type": "vf",
@@ -974,7 +974,7 @@
    "q": "Un végétarien mange du poisson.",
    "answer": false,
    "explain": "Un végétarien ne mange ni viande ni poisson.",
-   "id": "sciences-alimentation#32"
+   "id": "sciences-alimentation#b4582509"
   },
   {
    "type": "vf",
@@ -985,7 +985,7 @@
    "q": "Partout dans le monde, on mange la même chose.",
    "answer": false,
    "explain": "Chaque pays a ses habitudes, selon sa culture et ses ressources.",
-   "id": "sciences-alimentation#33"
+   "id": "sciences-alimentation#4c20db6b"
   },
   {
    "type": "vf",
@@ -996,7 +996,7 @@
    "q": "Une pizza est un produit agricole.",
    "answer": false,
    "explain": "La pizza est fabriquée : c'est un produit transformé.",
-   "id": "sciences-alimentation#34"
+   "id": "sciences-alimentation#8b6e1f5a"
   },
   {
    "type": "vf",
@@ -1008,7 +1008,7 @@
    "q": "Le lait vient de l'élevage.",
    "answer": true,
    "explain": "On élève les vaches, les chèvres et les brebis pour leur lait.",
-   "id": "sciences-alimentation#35"
+   "id": "sciences-alimentation#0f68563a"
   },
   {
    "type": "vf",
@@ -1020,7 +1020,7 @@
    "q": "Le mil, le maïs et le sorgho sont des céréales.",
    "answer": true,
    "explain": "Ce sont des céréales cultivées en Afrique.",
-   "id": "sciences-alimentation#36"
+   "id": "sciences-alimentation#44a33380"
   },
   {
    "type": "vf",
@@ -1032,7 +1032,7 @@
    "q": "Le cacao pousse en France métropolitaine.",
    "answer": false,
    "explain": "Le cacao pousse dans les pays chauds d'Afrique et d'Amérique du Sud.",
-   "id": "sciences-alimentation#37"
+   "id": "sciences-alimentation#cc00cf8e"
   },
   {
    "type": "vf",
@@ -1044,7 +1044,7 @@
    "q": "On cultive des bananes en Guadeloupe et à la Martinique.",
    "answer": true,
    "explain": "C'est la France d'outre-mer, où il fait chaud.",
-   "id": "sciences-alimentation#38"
+   "id": "sciences-alimentation#c7373ffa"
   },
   {
    "type": "vf",
@@ -1055,7 +1055,7 @@
    "q": "Les aliments fragiles voyagent parfois en avion.",
    "answer": true,
    "explain": "L'avion va très vite : les fruits fragiles n'ont pas le temps de s'abîmer.",
-   "id": "sciences-alimentation#39"
+   "id": "sciences-alimentation#a561bb2e"
   },
   {
    "type": "vf",
@@ -1066,7 +1066,7 @@
    "q": "Le niveau de richesse ne change rien à ce que l'on mange.",
    "answer": false,
    "explain": "Il permet d'acheter plus ou moins de produits transformés.",
-   "id": "sciences-alimentation#40"
+   "id": "sciences-alimentation#803b4f6b"
   },
   {
    "type": "vf",
@@ -1078,7 +1078,7 @@
    "answer": true,
    "explain": "Les parents la transmettent aux enfants, qui la transmettront à leur tour.",
    "review": true,
-   "id": "sciences-alimentation#41"
+   "id": "sciences-alimentation#5c850d63"
   },
   {
    "type": "schema",
@@ -1089,7 +1089,7 @@
    "target": "japon",
    "q": "Touche le Japon sur la carte.",
    "explain": "Le Japon est un pays d'îles, en Asie.",
-   "id": "sciences-alimentation#42"
+   "id": "sciences-alimentation#e024fbdf"
   },
   {
    "type": "schema",
@@ -1100,7 +1100,7 @@
    "target": "inde",
    "q": "Touche l'Inde sur la carte.",
    "explain": "L'Inde est un grand pays d'Asie.",
-   "id": "sciences-alimentation#43"
+   "id": "sciences-alimentation#6aff623b"
   },
   {
    "type": "schema",
@@ -1111,7 +1111,7 @@
    "target": "etats-unis",
    "q": "Touche les États-Unis sur la carte.",
    "explain": "Les États-Unis sont en Amérique du Nord.",
-   "id": "sciences-alimentation#44"
+   "id": "sciences-alimentation#8869930f"
   },
   {
    "type": "schema",
@@ -1122,7 +1122,7 @@
    "target": "afrique",
    "q": "Touche l'Afrique sur la carte.",
    "explain": "L'Afrique est un grand continent, au sud de l'Europe.",
-   "id": "sciences-alimentation#45"
+   "id": "sciences-alimentation#4d4e16cd"
   },
   {
    "type": "schema",
@@ -1133,7 +1133,7 @@
    "target": "amerique-sud",
    "q": "Touche l'Amérique du Sud sur la carte.",
    "explain": "L'Amérique du Sud est sous l'Amérique du Nord.",
-   "id": "sciences-alimentation#46"
+   "id": "sciences-alimentation#d945c384"
   },
   {
    "type": "schema",
@@ -1144,7 +1144,7 @@
    "target": "antilles",
    "q": "Touche la Guadeloupe et la Martinique sur la carte.",
    "explain": "Ce sont de petites îles, entre les deux Amériques.",
-   "id": "sciences-alimentation#47"
+   "id": "sciences-alimentation#24d19703"
   },
   {
    "type": "schema",
@@ -1155,7 +1155,7 @@
    "target": "france",
    "q": "Touche la France métropolitaine sur la carte.",
    "explain": "La France métropolitaine est en Europe.",
-   "id": "sciences-alimentation#48"
+   "id": "sciences-alimentation#22eba468"
   },
   {
    "type": "schema",
@@ -1166,7 +1166,7 @@
    "target": "inde",
    "q": "Touche le pays où beaucoup de personnes sont végétariennes.",
    "explain": "En Inde, beaucoup de personnes sont végétariennes.",
-   "id": "sciences-alimentation#49"
+   "id": "sciences-alimentation#3abace9f"
   },
   {
    "type": "schema",
@@ -1177,7 +1177,7 @@
    "target": "etats-unis",
    "q": "Touche le pays où l'on mange beaucoup de hamburgers et de pizzas.",
    "explain": "Aux États-Unis, on mange beaucoup de produits transformés.",
-   "id": "sciences-alimentation#50"
+   "id": "sciences-alimentation#26e165f6"
   },
   {
    "type": "schema",
@@ -1188,7 +1188,7 @@
    "target": "antilles",
    "q": "Touche les îles françaises où l'on cultive des bananes.",
    "explain": "La Guadeloupe et la Martinique : la France d'outre-mer.",
-   "id": "sciences-alimentation#51"
+   "id": "sciences-alimentation#1b4288b4"
   },
   {
    "type": "schema",
@@ -1199,7 +1199,7 @@
    "target": "japon",
    "q": "Touche le pays où le riz est l'aliment de base, avec le poisson.",
    "explain": "Au Japon, on mange du riz et du poisson.",
-   "id": "sciences-alimentation#52"
+   "id": "sciences-alimentation#8ede39d9"
   },
   {
    "type": "placer",
@@ -1276,7 +1276,7 @@
      "target": "t"
     }
    ],
-   "id": "sciences-alimentation#53"
+   "id": "sciences-alimentation#e23d7043"
   },
   {
    "type": "placer",
@@ -1341,7 +1341,7 @@
      "target": "e"
     }
    ],
-   "id": "sciences-alimentation#54"
+   "id": "sciences-alimentation#d64fbfef"
   },
   {
    "type": "placer",
@@ -1409,7 +1409,7 @@
      "target": "l"
     }
    ],
-   "id": "sciences-alimentation#55"
+   "id": "sciences-alimentation#1f4e4b22"
   },
   {
    "type": "placer",
@@ -1450,7 +1450,7 @@
      "target": "s"
     }
    ],
-   "id": "sciences-alimentation#56"
+   "id": "sciences-alimentation#2ab91049"
   },
   {
    "type": "placer",
@@ -1500,7 +1500,7 @@
      "target": "a"
     }
    ],
-   "id": "sciences-alimentation#57"
+   "id": "sciences-alimentation#a9c891f2"
   },
   {
    "type": "placer",
@@ -1544,7 +1544,7 @@
      "target": "4"
     }
    ],
-   "id": "sciences-alimentation#58"
+   "id": "sciences-alimentation#6e8aaaf8"
   },
   {
    "type": "placer",
@@ -1588,7 +1588,7 @@
      "target": "4"
     }
    ],
-   "id": "sciences-alimentation#59"
+   "id": "sciences-alimentation#ffb11f6e"
   },
   {
    "type": "qcm",
@@ -1611,7 +1611,7 @@
     "Outre-mer"
    ],
    "explain": "L'aliment de base : aliment que l'on mange presque à chaque repas.",
-   "id": "sciences-alimentation#60"
+   "id": "sciences-alimentation#970023da"
   },
   {
    "type": "qcm",
@@ -1635,7 +1635,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "L'aliment de base : aliment que l'on mange presque à chaque repas.",
-   "id": "sciences-alimentation#61"
+   "id": "sciences-alimentation#5e85c174"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "aliment-base"
+   ],
+   "q": "« Aliment de base » veut dire : aliment que l'on mange presque à chaque repas.",
+   "explain": "L'aliment de base : aliment que l'on mange presque à chaque repas.",
+   "id": "sciences-alimentation#cd3b7060"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "aliment-base"
+   ],
+   "q": "« Aliment de base » veut dire : personne qui ne mange ni viande ni poisson.",
+   "explain": "L'aliment de base : aliment que l'on mange presque à chaque repas.",
+   "id": "sciences-alimentation#279da83e"
   },
   {
    "type": "qcm",
@@ -1658,7 +1682,7 @@
     "Outre-mer"
    ],
    "explain": "Un végétarien : personne qui ne mange ni viande ni poisson.",
-   "id": "sciences-alimentation#62"
+   "id": "sciences-alimentation#7e8a1eba"
   },
   {
    "type": "qcm",
@@ -1682,7 +1706,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "Un végétarien : personne qui ne mange ni viande ni poisson.",
-   "id": "sciences-alimentation#63"
+   "id": "sciences-alimentation#4d7c4fa4"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "vegetarien"
+   ],
+   "q": "« Végétarien » veut dire : personne qui ne mange ni viande ni poisson.",
+   "explain": "Un végétarien : personne qui ne mange ni viande ni poisson.",
+   "id": "sciences-alimentation#bdcbfbf5"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "vegetarien"
+   ],
+   "q": "« Végétarien » veut dire : ensemble des traditions et des habitudes d'un peuple.",
+   "explain": "Un végétarien : personne qui ne mange ni viande ni poisson.",
+   "id": "sciences-alimentation#3e9b55cd"
   },
   {
    "type": "qcm",
@@ -1705,7 +1753,7 @@
     "Outre-mer"
    ],
    "explain": "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
-   "id": "sciences-alimentation#64"
+   "id": "sciences-alimentation#626acbf2"
   },
   {
    "type": "qcm",
@@ -1729,7 +1777,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
-   "id": "sciences-alimentation#65"
+   "id": "sciences-alimentation#8c596e7f"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "culture-peuple"
+   ],
+   "q": "« Culture d'un peuple » veut dire : ensemble des traditions et des habitudes d'un peuple.",
+   "explain": "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
+   "id": "sciences-alimentation#dd8535ad"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "culture-peuple"
+   ],
+   "q": "« Culture d'un peuple » veut dire : manière de vivre transmise de génération en génération.",
+   "explain": "La culture d'un peuple : ensemble des traditions et des habitudes d'un peuple.",
+   "id": "sciences-alimentation#47ce2b0b"
   },
   {
    "type": "qcm",
@@ -1752,7 +1824,7 @@
     "Outre-mer"
    ],
    "explain": "Une tradition : manière de vivre transmise de génération en génération.",
-   "id": "sciences-alimentation#66"
+   "id": "sciences-alimentation#949109b1"
   },
   {
    "type": "qcm",
@@ -1776,7 +1848,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "Une tradition : manière de vivre transmise de génération en génération.",
-   "id": "sciences-alimentation#67"
+   "id": "sciences-alimentation#4188ece8"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "tradition"
+   ],
+   "q": "« Tradition » veut dire : manière de vivre transmise de génération en génération.",
+   "explain": "Une tradition : manière de vivre transmise de génération en génération.",
+   "id": "sciences-alimentation#4a00bb07"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "tradition"
+   ],
+   "q": "« Tradition » veut dire : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+   "explain": "Une tradition : manière de vivre transmise de génération en génération.",
+   "id": "sciences-alimentation#d8816b2a"
   },
   {
    "type": "qcm",
@@ -1799,7 +1895,7 @@
     "Outre-mer"
    ],
    "explain": "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
-   "id": "sciences-alimentation#68"
+   "id": "sciences-alimentation#910d0cc4"
   },
   {
    "type": "qcm",
@@ -1823,7 +1919,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
-   "id": "sciences-alimentation#69"
+   "id": "sciences-alimentation#ca13c9c7"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "produit-agricole"
+   ],
+   "q": "« Produit agricole » veut dire : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+   "explain": "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+   "id": "sciences-alimentation#8643932e"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "produit-agricole"
+   ],
+   "q": "« Produit agricole » veut dire : aliment fabriqué à partir de produits agricoles.",
+   "explain": "Un produit agricole : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+   "id": "sciences-alimentation#b3ec092c"
   },
   {
    "type": "qcm",
@@ -1846,7 +1966,7 @@
     "Outre-mer"
    ],
    "explain": "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
-   "id": "sciences-alimentation#70"
+   "id": "sciences-alimentation#dfdd7ed0"
   },
   {
    "type": "qcm",
@@ -1870,7 +1990,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
-   "id": "sciences-alimentation#71"
+   "id": "sciences-alimentation#f9a05d53"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "produit-transforme"
+   ],
+   "q": "« Produit transformé » veut dire : aliment fabriqué à partir de produits agricoles.",
+   "explain": "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
+   "id": "sciences-alimentation#d2d25aaf"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "produit-transforme"
+   ],
+   "q": "« Produit transformé » veut dire : ensemble des activités qui permettent de produire des aliments.",
+   "explain": "Un produit transformé : aliment fabriqué à partir de produits agricoles.",
+   "id": "sciences-alimentation#8e8f2390"
   },
   {
    "type": "qcm",
@@ -1893,7 +2037,7 @@
     "Outre-mer"
    ],
    "explain": "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
-   "id": "sciences-alimentation#72"
+   "id": "sciences-alimentation#eea20198"
   },
   {
    "type": "qcm",
@@ -1917,7 +2061,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
-   "id": "sciences-alimentation#73"
+   "id": "sciences-alimentation#17c1a9ef"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "agriculture"
+   ],
+   "q": "« Agriculture » veut dire : ensemble des activités qui permettent de produire des aliments.",
+   "explain": "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
+   "id": "sciences-alimentation#7803a019"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "agriculture"
+   ],
+   "q": "« Agriculture » veut dire : production de plantes, comme les céréales, les fruits et les légumes.",
+   "explain": "L'agriculture : ensemble des activités qui permettent de produire des aliments.",
+   "id": "sciences-alimentation#97b80500"
   },
   {
    "type": "qcm",
@@ -1940,7 +2108,7 @@
     "Outre-mer"
    ],
    "explain": "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
-   "id": "sciences-alimentation#74"
+   "id": "sciences-alimentation#5e943dd2"
   },
   {
    "type": "qcm",
@@ -1964,7 +2132,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
-   "id": "sciences-alimentation#75"
+   "id": "sciences-alimentation#d4762454"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "culture-plantes"
+   ],
+   "q": "« Culture des champs » veut dire : production de plantes, comme les céréales, les fruits et les légumes.",
+   "explain": "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
+   "id": "sciences-alimentation#7a972094"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "culture-plantes"
+   ],
+   "q": "« Culture des champs » veut dire : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+   "explain": "La culture des champs : production de plantes, comme les céréales, les fruits et les légumes.",
+   "id": "sciences-alimentation#1cc9dcc1"
   },
   {
    "type": "qcm",
@@ -1987,7 +2179,7 @@
     "Outre-mer"
    ],
    "explain": "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
-   "id": "sciences-alimentation#76"
+   "id": "sciences-alimentation#d7ab4491"
   },
   {
    "type": "qcm",
@@ -2011,7 +2203,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
-   "id": "sciences-alimentation#77"
+   "id": "sciences-alimentation#ea06a36a"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "elevage"
+   ],
+   "q": "« Élevage » veut dire : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+   "explain": "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+   "id": "sciences-alimentation#facceada"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "elevage"
+   ],
+   "q": "« Élevage » veut dire : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+   "explain": "L'élevage : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+   "id": "sciences-alimentation#43bf5137"
   },
   {
    "type": "qcm",
@@ -2034,7 +2250,7 @@
     "Outre-mer"
    ],
    "explain": "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
-   "id": "sciences-alimentation#78"
+   "id": "sciences-alimentation#48a6474d"
   },
   {
    "type": "qcm",
@@ -2058,7 +2274,31 @@
     "Zone géographique située au-delà d'un océan ou d'une mer"
    ],
    "explain": "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
-   "id": "sciences-alimentation#79"
+   "id": "sciences-alimentation#fb9a97b0"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "cereales"
+   ],
+   "q": "« Céréales » veut dire : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+   "explain": "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+   "id": "sciences-alimentation#34a084aa"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "cereales"
+   ],
+   "q": "« Céréales » veut dire : zone géographique située au-delà d'un océan ou d'une mer.",
+   "explain": "Les céréales : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+   "id": "sciences-alimentation#a8b607af"
   },
   {
    "type": "qcm",
@@ -2081,7 +2321,7 @@
     "Céréales"
    ],
    "explain": "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
-   "id": "sciences-alimentation#80"
+   "id": "sciences-alimentation#93b54f8d"
   },
   {
    "type": "qcm",
@@ -2105,7 +2345,31 @@
     "Plantes dont on mange les grains, comme le blé, le riz ou le maïs"
    ],
    "explain": "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
-   "id": "sciences-alimentation#81"
+   "id": "sciences-alimentation#62d2a236"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "outre-mer"
+   ],
+   "q": "« Outre-mer » veut dire : zone géographique située au-delà d'un océan ou d'une mer.",
+   "explain": "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
+   "id": "sciences-alimentation#f6de5914"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "outre-mer"
+   ],
+   "q": "« Outre-mer » veut dire : aliment que l'on mange presque à chaque repas.",
+   "explain": "L'outre-mer : zone géographique située au-delà d'un océan ou d'une mer.",
+   "id": "sciences-alimentation#6e1f0dab"
   },
   {
    "type": "placer",
@@ -2146,7 +2410,7 @@
      "target": "culture-peuple"
     }
    ],
-   "id": "sciences-alimentation#82"
+   "id": "sciences-alimentation#facfe599"
   },
   {
    "type": "placer",
@@ -2187,7 +2451,7 @@
      "target": "produit-transforme"
     }
    ],
-   "id": "sciences-alimentation#83"
+   "id": "sciences-alimentation#3d843b95"
   },
   {
    "type": "placer",
@@ -2228,7 +2492,7 @@
      "target": "elevage"
     }
    ],
-   "id": "sciences-alimentation#84"
+   "id": "sciences-alimentation#56fa53e9"
   }
  ],
  "images": {
@@ -2808,6 +3072,28 @@
   "Vrai ou faux ? Un végétarien mange du poisson.",
   "Vrai ou faux ? Une pizza est un produit agricole.",
   "Vrai ou faux ? Une tradition se transmet de génération en génération.",
+  "Vrai ou faux ? « Agriculture » veut dire : ensemble des activités qui permettent de produire des aliments.",
+  "Vrai ou faux ? « Agriculture » veut dire : production de plantes, comme les céréales, les fruits et les légumes.",
+  "Vrai ou faux ? « Aliment de base » veut dire : aliment que l'on mange presque à chaque repas.",
+  "Vrai ou faux ? « Aliment de base » veut dire : personne qui ne mange ni viande ni poisson.",
+  "Vrai ou faux ? « Culture d'un peuple » veut dire : ensemble des traditions et des habitudes d'un peuple.",
+  "Vrai ou faux ? « Culture d'un peuple » veut dire : manière de vivre transmise de génération en génération.",
+  "Vrai ou faux ? « Culture des champs » veut dire : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+  "Vrai ou faux ? « Culture des champs » veut dire : production de plantes, comme les céréales, les fruits et les légumes.",
+  "Vrai ou faux ? « Céréales » veut dire : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
+  "Vrai ou faux ? « Céréales » veut dire : zone géographique située au-delà d'un océan ou d'une mer.",
+  "Vrai ou faux ? « Outre-mer » veut dire : aliment que l'on mange presque à chaque repas.",
+  "Vrai ou faux ? « Outre-mer » veut dire : zone géographique située au-delà d'un océan ou d'une mer.",
+  "Vrai ou faux ? « Produit agricole » veut dire : aliment fabriqué à partir de produits agricoles.",
+  "Vrai ou faux ? « Produit agricole » veut dire : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+  "Vrai ou faux ? « Produit transformé » veut dire : aliment fabriqué à partir de produits agricoles.",
+  "Vrai ou faux ? « Produit transformé » veut dire : ensemble des activités qui permettent de produire des aliments.",
+  "Vrai ou faux ? « Tradition » veut dire : aliment obtenu directement grâce à l'agriculture ou à l'élevage.",
+  "Vrai ou faux ? « Tradition » veut dire : manière de vivre transmise de génération en génération.",
+  "Vrai ou faux ? « Végétarien » veut dire : ensemble des traditions et des habitudes d'un peuple.",
+  "Vrai ou faux ? « Végétarien » veut dire : personne qui ne mange ni viande ni poisson.",
+  "Vrai ou faux ? « Élevage » veut dire : activité qui consiste à élever des animaux pour leur viande, leur lait ou leurs œufs.",
+  "Vrai ou faux ? « Élevage » veut dire : plantes dont on mange les grains, comme le blé, le riz ou le maïs.",
   "Végétarien",
   "Zone géographique située au-delà d'un océan ou d'une mer",
   "certains aliments plus que d'autres",
