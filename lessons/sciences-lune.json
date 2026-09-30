@@ -16,6 +16,8 @@
     "Vue de la Terre, la partie éclairée change de forme : ce sont les phases de la Lune. Nouvelle lune, premier croissant, premier quartier, pleine lune, dernier quartier, dernier croissant, puis tout recommence.",
     "Il faut environ vingt-neuf jours et demi pour revoir la même phase : c'est la lunaison.",
     "Chez nous, quand la Lune grandit, elle est éclairée à droite. Quand elle diminue, elle est éclairée à gauche.",
+    "Pourquoi la forme change ? Le Soleil éclaire toujours une moitié de la Lune. Pendant qu'elle tourne autour de la Terre, on voit une partie plus ou moins grande de cette moitié éclairée. La Lune, elle, reste toujours ronde.",
+    "Une astuce : la Lune est menteuse. Quand elle dessine la lettre D, elle croît. Quand elle dessine la lettre C, elle décroît.",
     "La Lune n'a pas d'atmosphère : pas d'air, pas de vent, pas de pluie. Sa surface est couverte de cratères, creusés par des météorites.",
     "La Lune est environ quatre fois plus petite que la Terre. On y pèse six fois moins lourd : les astronautes y font de grands bonds.",
     "En 1969, la mission Apollo 11 a emmené des astronautes sur la Lune. Neil Armstrong a été le premier homme à y marcher.",
@@ -195,6 +197,22 @@
       "zone": "dernier-croissant"
     },
     {
+      "id": "pourquoi-phases",
+      "term": "pourquoi la Lune change de forme",
+      "nom": "pourquoi la Lune change de forme",
+      "def": "le Soleil éclaire toujours une moitié de la Lune ; en tournant autour de la Terre, on voit une partie plus ou moins grande de cette moitié",
+      "emoji": "🔦",
+      "noAuto": true
+    },
+    {
+      "id": "lune-menteuse",
+      "term": "la Lune menteuse",
+      "nom": "l'astuce de la Lune menteuse",
+      "def": "quand la Lune dessine la lettre D, elle croît ; quand elle dessine la lettre C, elle décroît : elle dit le contraire",
+      "emoji": "🌛",
+      "noAuto": true
+    },
+    {
       "id": "lumiere",
       "term": "lumière de la Lune",
       "nom": "la lumière de la Lune",
@@ -281,6 +299,14 @@
       "image": "lunaison"
     },
     {
+      "id": "lu-menteuse",
+      "name": "La Lune menteuse",
+      "emoji": "🌛",
+      "color": "#5a67b8",
+      "notions": ["pourquoi-phases", "lune-menteuse"],
+      "desc": "Elle dessine un D quand elle croît, un C quand elle décroît."
+    },
+    {
       "id": "lu-pleine",
       "name": "La pleine lune",
       "emoji": "🌕",
@@ -356,6 +382,73 @@
     }
   ],
   "items": [
+    {
+      "type": "qcm", "diff": 2, "notions": ["pourquoi-phases"],
+      "q": "Quelle partie de la Lune le Soleil éclaire-t-il ?",
+      "choices": ["Toujours une moitié", "Seulement un petit croissant", "Toute la Lune en même temps", "Rien du tout"],
+      "hint": "Pense à un ballon éclairé par une lampe : un côté reste dans l'ombre.",
+      "explain": "Le Soleil éclaire toujours la moitié de la Lune tournée vers lui."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["pourquoi-phases"],
+      "q": "Tu éclaires un ballon avec une lampe, puis tu marches autour. Que vois-tu ?",
+      "choices": ["La partie éclairée change de forme", "Le ballon rétrécit", "Le ballon devient tout noir", "Le ballon s'allume tout seul"],
+      "hint": "Le ballon ne change pas. C'est ce que tu vois qui change.",
+      "explain": "Comme la Lune : selon l'endroit d'où on regarde, on voit plus ou moins de la partie éclairée."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["pourquoi-phases", "pleine-lune"],
+      "q": "Pourquoi voit-on la pleine lune toute ronde et éclairée ?",
+      "choices": ["Sa moitié éclairée est tournée vers la Terre", "Elle s'approche du Soleil", "Elle s'allume la nuit", "Elle devient plus grosse"],
+      "hint": "Regarde le dessin : la Terre est entre le Soleil et la Lune.",
+      "explain": "La Terre est entre le Soleil et la Lune : on voit toute sa moitié éclairée."
+    },
+    {
+      "type": "vf", "diff": 2, "notions": ["pourquoi-phases", "nouvelle-lune"],
+      "q": "À la nouvelle lune, le Soleil n'éclaire plus du tout la Lune.",
+      "answer": false,
+      "explain": "Le Soleil l'éclaire toujours, mais sa moitié éclairée ne nous regarde pas."
+    },
+    {
+      "type": "vf", "diff": 1, "notions": ["pourquoi-phases"],
+      "q": "Même quand on voit un croissant, la Lune reste une boule toute ronde.",
+      "answer": true,
+      "explain": "La Lune ne change pas : c'est la partie éclairée que l'on voit qui change."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["lune-menteuse"],
+      "q": "Ce soir, la Lune dessine la lettre D. Que fait-elle ?",
+      "choices": ["Elle croît", "Elle décroît", "Elle est pleine", "Elle a disparu"],
+      "hint": "La Lune est menteuse : elle fait le contraire de ce que dit sa lettre.",
+      "explain": "Elle dessine la lettre D, mais elle croît : elle grandit."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["lune-menteuse"],
+      "q": "Ce soir, la Lune dessine la lettre C. Que fait-elle ?",
+      "choices": ["Elle décroît", "Elle croît", "Elle est pleine", "Elle a disparu"],
+      "hint": "La Lune est menteuse : elle fait le contraire de ce que dit sa lettre.",
+      "explain": "Elle dessine la lettre C, mais elle décroît : elle diminue."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["lune-menteuse", "premier-quartier"],
+      "q": "Au premier quartier, la moitié droite est éclairée. Quelle lettre la Lune dessine-t-elle ?",
+      "choices": ["La lettre D", "La lettre C", "La lettre O", "La lettre L"],
+      "hint": "Imagine le rond coupé en deux : le côté plat est à gauche.",
+      "explain": "Elle dessine un D, et pourtant elle croît : la Lune est menteuse."
+    },
+    {
+      "type": "vf", "diff": 2, "notions": ["lune-menteuse"],
+      "q": "Quand la Lune dessine la lettre C, elle croît.",
+      "answer": false,
+      "explain": "La Lune est menteuse : quand elle dessine la lettre C, elle décroît."
+    },
+    {
+      "type": "placer", "layout": "relie", "diff": 2, "notions": ["lune-menteuse"],
+      "q": "La Lune dessine une forme. Relie chaque forme à ce que fait la Lune.",
+      "targets": [{"id": "d", "label": "Elle croît : elle grandit"}, {"id": "c", "label": "Elle décroît : elle diminue"}, {"id": "o", "label": "Elle est pleine"}],
+      "tokens": [{"text": "La lettre D", "target": "d"}, {"text": "La lettre C", "target": "c"}, {"text": "Un rond", "target": "o"}],
+      "explain": "La Lune est menteuse : D, elle croît ; C, elle décroît."
+    },
     {
       "type": "qcm", "diff": 2, "notions": ["lumiere"],
       "q": "Pourquoi voit-on la Lune briller la nuit ?",

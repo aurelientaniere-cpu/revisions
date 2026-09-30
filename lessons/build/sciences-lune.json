@@ -16,6 +16,8 @@
   "Vue de la Terre, la partie éclairée change de forme : ce sont les phases de la Lune. Nouvelle lune, premier croissant, premier quartier, pleine lune, dernier quartier, dernier croissant, puis tout recommence.",
   "Il faut environ vingt-neuf jours et demi pour revoir la même phase : c'est la lunaison.",
   "Chez nous, quand la Lune grandit, elle est éclairée à droite. Quand elle diminue, elle est éclairée à gauche.",
+  "Pourquoi la forme change ? Le Soleil éclaire toujours une moitié de la Lune. Pendant qu'elle tourne autour de la Terre, on voit une partie plus ou moins grande de cette moitié éclairée. La Lune, elle, reste toujours ronde.",
+  "Une astuce : la Lune est menteuse. Quand elle dessine la lettre D, elle croît. Quand elle dessine la lettre C, elle décroît.",
   "La Lune n'a pas d'atmosphère : pas d'air, pas de vent, pas de pluie. Sa surface est couverte de cratères, creusés par des météorites.",
   "La Lune est environ quatre fois plus petite que la Terre. On y pèse six fois moins lourd : les astronautes y font de grands bonds.",
   "En 1969, la mission Apollo 11 a emmené des astronautes sur la Lune. Neil Armstrong a été le premier homme à y marcher.",
@@ -195,6 +197,22 @@
    "zone": "dernier-croissant"
   },
   {
+   "id": "pourquoi-phases",
+   "term": "pourquoi la Lune change de forme",
+   "nom": "pourquoi la Lune change de forme",
+   "def": "le Soleil éclaire toujours une moitié de la Lune ; en tournant autour de la Terre, on voit une partie plus ou moins grande de cette moitié",
+   "emoji": "🔦",
+   "noAuto": true
+  },
+  {
+   "id": "lune-menteuse",
+   "term": "la Lune menteuse",
+   "nom": "l'astuce de la Lune menteuse",
+   "def": "quand la Lune dessine la lettre D, elle croît ; quand elle dessine la lettre C, elle décroît : elle dit le contraire",
+   "emoji": "🌛",
+   "noAuto": true
+  },
+  {
    "id": "lumiere",
    "term": "lumière de la Lune",
    "nom": "la lumière de la Lune",
@@ -295,6 +313,17 @@
    "image": "lunaison"
   },
   {
+   "id": "lu-menteuse",
+   "name": "La Lune menteuse",
+   "emoji": "🌛",
+   "color": "#5a67b8",
+   "notions": [
+    "pourquoi-phases",
+    "lune-menteuse"
+   ],
+   "desc": "Elle dessine un D quand elle croît, un C quand elle décroît."
+  },
+  {
    "id": "lu-pleine",
    "name": "La pleine lune",
    "emoji": "🌕",
@@ -392,6 +421,183 @@
   }
  ],
  "items": [
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pourquoi-phases"
+   ],
+   "q": "Quelle partie de la Lune le Soleil éclaire-t-il ?",
+   "choices": [
+    "Toujours une moitié",
+    "Seulement un petit croissant",
+    "Toute la Lune en même temps",
+    "Rien du tout"
+   ],
+   "hint": "Pense à un ballon éclairé par une lampe : un côté reste dans l'ombre.",
+   "explain": "Le Soleil éclaire toujours la moitié de la Lune tournée vers lui.",
+   "id": "sciences-lune#e8e94399"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "pourquoi-phases"
+   ],
+   "q": "Tu éclaires un ballon avec une lampe, puis tu marches autour. Que vois-tu ?",
+   "choices": [
+    "La partie éclairée change de forme",
+    "Le ballon rétrécit",
+    "Le ballon devient tout noir",
+    "Le ballon s'allume tout seul"
+   ],
+   "hint": "Le ballon ne change pas. C'est ce que tu vois qui change.",
+   "explain": "Comme la Lune : selon l'endroit d'où on regarde, on voit plus ou moins de la partie éclairée.",
+   "id": "sciences-lune#15808820"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "pourquoi-phases",
+    "pleine-lune"
+   ],
+   "q": "Pourquoi voit-on la pleine lune toute ronde et éclairée ?",
+   "choices": [
+    "Sa moitié éclairée est tournée vers la Terre",
+    "Elle s'approche du Soleil",
+    "Elle s'allume la nuit",
+    "Elle devient plus grosse"
+   ],
+   "hint": "Regarde le dessin : la Terre est entre le Soleil et la Lune.",
+   "explain": "La Terre est entre le Soleil et la Lune : on voit toute sa moitié éclairée.",
+   "id": "sciences-lune#9c8b3f31"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "pourquoi-phases",
+    "nouvelle-lune"
+   ],
+   "q": "À la nouvelle lune, le Soleil n'éclaire plus du tout la Lune.",
+   "answer": false,
+   "explain": "Le Soleil l'éclaire toujours, mais sa moitié éclairée ne nous regarde pas.",
+   "id": "sciences-lune#565a2ab2"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "pourquoi-phases"
+   ],
+   "q": "Même quand on voit un croissant, la Lune reste une boule toute ronde.",
+   "answer": true,
+   "explain": "La Lune ne change pas : c'est la partie éclairée que l'on voit qui change.",
+   "id": "sciences-lune#f9f5831c"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "lune-menteuse"
+   ],
+   "q": "Ce soir, la Lune dessine la lettre D. Que fait-elle ?",
+   "choices": [
+    "Elle croît",
+    "Elle décroît",
+    "Elle est pleine",
+    "Elle a disparu"
+   ],
+   "hint": "La Lune est menteuse : elle fait le contraire de ce que dit sa lettre.",
+   "explain": "Elle dessine la lettre D, mais elle croît : elle grandit.",
+   "id": "sciences-lune#b69956bb"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "lune-menteuse"
+   ],
+   "q": "Ce soir, la Lune dessine la lettre C. Que fait-elle ?",
+   "choices": [
+    "Elle décroît",
+    "Elle croît",
+    "Elle est pleine",
+    "Elle a disparu"
+   ],
+   "hint": "La Lune est menteuse : elle fait le contraire de ce que dit sa lettre.",
+   "explain": "Elle dessine la lettre C, mais elle décroît : elle diminue.",
+   "id": "sciences-lune#2adc0bb6"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "lune-menteuse",
+    "premier-quartier"
+   ],
+   "q": "Au premier quartier, la moitié droite est éclairée. Quelle lettre la Lune dessine-t-elle ?",
+   "choices": [
+    "La lettre D",
+    "La lettre C",
+    "La lettre O",
+    "La lettre L"
+   ],
+   "hint": "Imagine le rond coupé en deux : le côté plat est à gauche.",
+   "explain": "Elle dessine un D, et pourtant elle croît : la Lune est menteuse.",
+   "id": "sciences-lune#df5c71b6"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "lune-menteuse"
+   ],
+   "q": "Quand la Lune dessine la lettre C, elle croît.",
+   "answer": false,
+   "explain": "La Lune est menteuse : quand elle dessine la lettre C, elle décroît.",
+   "id": "sciences-lune#f246c71c"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "notions": [
+    "lune-menteuse"
+   ],
+   "q": "La Lune dessine une forme. Relie chaque forme à ce que fait la Lune.",
+   "targets": [
+    {
+     "id": "d",
+     "label": "Elle croît : elle grandit"
+    },
+    {
+     "id": "c",
+     "label": "Elle décroît : elle diminue"
+    },
+    {
+     "id": "o",
+     "label": "Elle est pleine"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "La lettre D",
+     "target": "d"
+    },
+    {
+     "text": "La lettre C",
+     "target": "c"
+    },
+    {
+     "text": "Un rond",
+     "target": "o"
+    }
+   ],
+   "explain": "La Lune est menteuse : D, elle croît ; C, elle décroît.",
+   "id": "sciences-lune#44d07785"
+  },
   {
    "type": "qcm",
    "diff": 2,
@@ -2467,137 +2673,137 @@
  ],
  "images": {
   "satellite": {
-   "prompt": "the blue and green planet Earth in space with the grey Moon beside it, a dotted circular path around the Earth showing the Moon's orbit, dark starry sky",
+   "prompt": "the blue and green planet Earth in space with the round grey Moon beside it, a dotted circular path around the Earth showing the Moon's orbit, dark starry sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "orbite": {
-   "prompt": "the grey Moon travelling along a big dotted circle around the blue planet Earth, small arrows along the circle, dark starry space",
+   "prompt": "the round grey Moon travelling along a big dotted circle around the planet Earth with blue oceans and green continents, small arrows along the circle, dark starry space",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 55
   },
   "revolution": {
-   "prompt": "a child in pajamas at a window drawing the Moon on a big wall calendar, one small moon drawing per day, night sky outside",
+   "prompt": "a child in pajamas running one full circle around a big round tree in a garden at night, a dotted circle path drawn on the grass around the tree, a big round full Moon in the starry sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 44
   },
   "phase": {
-   "prompt": "a child in a garden at dusk pointing at a thin bright crescent Moon low in a dark blue sky, stars appearing",
+   "prompt": "a curious child in a garden at dusk looking into a small telescope pointed up at the dark blue sky, a notebook on the grass, stars appearing",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "lunaison": {
-   "prompt": "a cozy bedroom at night, a child and a parent looking at a half Moon through the window, a calendar on the wall",
+   "prompt": "a cozy bedroom at night, a child and a parent sitting at the window looking at a dark starry sky, a big wooden hourglass on the windowsill",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 55
   },
   "face-cachee": {
    "prompt": "a small space probe with solar panels flying behind the grey Moon, taking a photo of its cratered surface, the blue Earth far away",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 22
   },
   "cratere": {
    "prompt": "the grey surface of the Moon covered with many round craters of all sizes, like bowls in the dust, black sky above",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "meteorite": {
    "prompt": "a small rock from space with a glowing trail falling toward the grey cratered surface of the Moon, black starry sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "atmosphere": {
    "prompt": "the planet Earth seen from space surrounded by a thin glowing blue layer of air, white clouds, the grey Moon far away without any air",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "astronaute": {
    "prompt": "a smiling astronaut in a white space suit and helmet waving, standing next to a small rocket, stars in the sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "eclipse": {
    "prompt": "a solar eclipse seen from a green hill: the dark Moon covering the Sun with a bright glowing ring around it, a family watching with special glasses",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "lumiere": {
    "prompt": "a dark room where a child shines a flashlight on a white ball hanging on a string, one side of the ball lit and the other side dark",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 33
   },
   "meme-face": {
    "prompt": "a child walking in a circle around a chair while always facing the chair, a smiling friend sitting on the chair, playful",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 22
   },
   "taille": {
-   "prompt": "a big blue and green planet Earth next to a much smaller grey Moon, about four times smaller, side by side in space",
+   "prompt": "size comparison in space: a big round blue and green planet Earth on the left, and on the right, apart from it, a small round grey Moon whose width is only one quarter of the Earth's width, both smiling",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 44
   },
   "pesanteur": {
    "prompt": "a happy astronaut in a white suit making a big high jump on the grey dusty Moon, the blue Earth in the black sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 33
   },
   "premiers-pas": {
    "prompt": "an astronaut in a white space suit taking a first step on the grey dusty Moon next to a four-legged lunar lander, a footprint in the dust, the Earth in the black sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 22
   },
   "marees": {
    "prompt": "a beach seen twice side by side: on the left the sea is high near the rocks, on the right the sea is far away showing wet sand and shells, a full Moon in the sky",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 22
   },
   "pleine-lune": {
    "prompt": "a big round bright full Moon above a quiet village at night, roofs and trees lit by moonlight, stars",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   },
   "legende": {
-   "prompt": "a proud cute purple dragon wearing a white astronaut helmet, sitting on a crescent Moon among stars, cream belly, sparkles, smiling, centered, plain dark blue background",
+   "prompt": "a proud cute purple dragon wearing a white astronaut helmet, sitting on top of a big round grey full Moon with craters, among stars, cream belly, sparkles, smiling, centered, plain dark blue background",
    "w": 768,
    "h": 768,
    "out_w": 600,
-   "seed": 42
+   "seed": 11
   }
  },
  "speech": [
@@ -2614,6 +2820,7 @@
   "Astronaute",
   "Atmosphère",
   "Au bord de la mer, l'eau monte et descend chaque jour. Qui en est la principale cause ?",
+  "Au premier quartier, la moitié droite est éclairée. Quelle lettre la Lune dessine-t-elle ?",
   "Autour d'une étoile filante",
   "Autour de Mars",
   "Autour de la Terre",
@@ -2632,6 +2839,8 @@
   "C'était un astronaute américain de la mission Apollo 11.",
   "Caillou venu de l'espace qui tombe sur un astre",
   "Carte légendaire : tu connais toute la leçon sur la Lune !",
+  "Ce soir, la Lune dessine la lettre C. Que fait-elle ?",
+  "Ce soir, la Lune dessine la lettre D. Que fait-elle ?",
   "Ce soir, tu vois un fin croissant éclairé à gauche. Que va faire la Lune les jours suivants ?",
   "Ce sont des cailloux venus de l'espace.",
   "Cent ans",
@@ -2646,6 +2855,7 @@
   "Chez nous, quand la Lune grandit, elle est éclairée à droite. Quand elle diminue, elle est éclairée à gauche.",
   "Christophe Colomb",
   "Combien de temps met la Lune pour faire le tour de la Terre ?",
+  "Comme la Lune : selon l'endroit d'où on regarde, on voit plus ou moins de la partie éclairée.",
   "Comment a-t-on pu voir la face cachée de la Lune ?",
   "Comment les astronautes d'Apollo 11 sont-ils allés sur la Lune ?",
   "Couche d'air qui entoure une planète",
@@ -2681,14 +2891,25 @@
   "Diminuer jusqu'à disparaître",
   "Dragon de la Lune",
   "Elle a des cratères",
+  "Elle a disparu",
   "Elle arrive dans la première partie du cycle.",
   "Elle arrive à la fin du cycle.",
+  "Elle croît",
+  "Elle croît : elle grandit",
+  "Elle dessine la lettre C, mais elle décroît : elle diminue.",
+  "Elle dessine la lettre D, mais elle croît : elle grandit.",
+  "Elle dessine un D quand elle croît, un C quand elle décroît.",
+  "Elle dessine un D, et pourtant elle croît : la Lune est menteuse.",
+  "Elle devient plus grosse",
   "Elle devient rouge",
   "Elle diminue",
   "Elle dure environ vingt-neuf jours et demi.",
+  "Elle décroît",
+  "Elle décroît : elle diminue",
   "Elle est déjà complète : elle ne peut pas être plus grande.",
   "Elle est en feu",
   "Elle est environ quatre fois plus petite.",
+  "Elle est pleine",
   "Elle est pleine de lampes",
   "Elle est une étoile",
   "Elle est éclairée par le Soleil",
@@ -2702,6 +2923,8 @@
   "Elle produit sa propre lumière",
   "Elle reste pleine un mois",
   "Elle reste ronde : c'est la partie éclairée que l'on voit qui change.",
+  "Elle s'allume la nuit",
+  "Elle s'approche du Soleil",
   "Elle se casse en morceaux",
   "Elle tourne autour de la Terre",
   "Elle tourne sur elle-même aussi vite qu'autour de la Terre",
@@ -2734,7 +2957,9 @@
   "Il y a des océans",
   "Ils sont protégés par une barrière",
   "Ils sont tout neufs",
+  "Imagine le rond coupé en deux : le côté plat est à gauche.",
   "Juste après la nouvelle lune, voici le premier croissant.",
+  "L'astuce de la Lune menteuse : quand la Lune dessine la lettre D, elle croît ; quand elle dessine la lettre C, elle décroît : elle dit le contraire.",
   "L'atmosphère : couche d'air qui entoure une planète.",
   "L'autre côté est tout noir",
   "L'autre côté s'appelle la face cachée.",
@@ -2744,11 +2969,15 @@
   "La Lune attire l'eau des océans : c'est la principale cause des marées.",
   "La Lune attire l'eau des océans.",
   "La Lune commence à grandir, tout doucement.",
+  "La Lune dessine une forme. Relie chaque forme à ce que fait la Lune.",
   "La Lune diminue",
   "La Lune est environ quatre fois plus petite que la Terre.",
   "La Lune est environ quatre fois plus petite que la Terre. On y pèse six fois moins lourd : les astronautes y font de grands bonds.",
   "La Lune est le satellite naturel de la Terre : elle tourne autour de la Terre.",
   "La Lune est le satellite naturel de la Terre.",
+  "La Lune est menteuse : D, elle croît ; C, elle décroît.",
+  "La Lune est menteuse : elle fait le contraire de ce que dit sa lettre.",
+  "La Lune est menteuse : quand elle dessine la lettre C, elle décroît.",
   "La Lune est petite : elle attire moins les objets que la Terre.",
   "La Lune est presque pleine et elle grandit encore. Comment s'appelle cette phase ?",
   "La Lune est-elle plus grande ou plus petite que la Terre ?",
@@ -2760,6 +2989,7 @@
   "La Lune gibbeuse décroissante",
   "La Lune gibbeuse décroissante : Lune presque pleine, qui commence à diminuer.",
   "La Lune grandit",
+  "La Lune menteuse",
   "La Lune n'a pas d'atmosphère : pas d'air, donc pas de vent.",
   "La Lune n'a pas d'atmosphère : pas d'air, pas de vent, pas de pluie. Sa surface est couverte de cratères, creusés par des météorites.",
   "La Lune n'a pas d'atmosphère : son casque lui apporte de l'air.",
@@ -2779,6 +3009,7 @@
   "La Lune tourne autour de la Terre. Elle ne brille pas seule : elle est éclairée par le Soleil.",
   "La Terre a de l'air et de l'eau. La Lune n'a pas d'atmosphère.",
   "La Terre empêche la lumière du Soleil d'arriver sur la Lune.",
+  "La Terre est entre le Soleil et la Lune : on voit toute sa moitié éclairée.",
   "La Terre fait de l'ombre à la Lune",
   "La Terre la cache",
   "La Terre passe devant la Lune",
@@ -2786,6 +3017,10 @@
   "La face cachée",
   "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
   "La lampe du Soleil",
+  "La lettre C",
+  "La lettre D",
+  "La lettre L",
+  "La lettre O",
   "La lumière de la Lune : la Lune ne brille pas seule : elle renvoie la lumière du Soleil.",
   "La lunaison : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
   "La moitié droite de la Lune est éclairée, et elle grandit. Quelle est cette phase ?",
@@ -2794,6 +3029,7 @@
   "La moitié gauche éclairée",
   "La nouvelle lune",
   "La nouvelle lune : phase où l'on ne voit pas la Lune : sa face éclairée est tournée vers le Soleil.",
+  "La partie éclairée change de forme",
   "La pleine lune",
   "La pleine lune : phase où l'on voit un disque rond, entièrement éclairé.",
   "La pleine lune : un disque rond, entièrement éclairé.",
@@ -2802,8 +3038,14 @@
   "La révolution : un tour complet d'un astre autour d'un autre.",
   "La taille de la Lune : la Lune est environ quatre fois plus petite que la Terre.",
   "Le Soleil l'éclaire",
+  "Le Soleil l'éclaire toujours, mais sa moitié éclairée ne nous regarde pas.",
   "Le Soleil passe devant la Lune",
   "Le Soleil s'éteint",
+  "Le Soleil éclaire toujours la moitié de la Lune tournée vers lui.",
+  "Le ballon devient tout noir",
+  "Le ballon ne change pas. C'est ce que tu vois qui change.",
+  "Le ballon rétrécit",
+  "Le ballon s'allume tout seul",
   "Le dernier croissant",
   "Le dernier croissant : fin croissant éclairé à gauche, juste avant la nouvelle lune.",
   "Le dernier croissant : un fin croissant éclairé à gauche.",
@@ -2871,6 +3113,7 @@
   "Pense à ce que tu fais sans y penser, à chaque seconde.",
   "Pense à notre planète, entre le Soleil et la Lune.",
   "Pense à un ballon dans le noir, éclairé par une lampe de poche.",
+  "Pense à un ballon éclairé par une lampe : un côté reste dans l'ombre.",
   "Pense à une danseuse qui fait le tour d'une chaise en la regardant toujours.",
   "Personne qui voyage dans l'espace",
   "Phase",
@@ -2880,11 +3123,15 @@
   "Pour ne pas être reconnu",
   "Pour qu'il existe, il faut de l'air.",
   "Pour revoir la même phase de la Lune, il faut attendre environ vingt-neuf jours et demi.",
+  "Pourquoi la Lune change de forme",
+  "Pourquoi la Lune change de forme : le Soleil éclaire toujours une moitié de la Lune ; en tournant autour de la Terre, on voit une partie plus ou moins grande de cette moitié.",
   "Pourquoi la Lune semble-t-elle changer de forme ?",
+  "Pourquoi la forme change ? Le Soleil éclaire toujours une moitié de la Lune. Pendant qu'elle tourne autour de la Terre, on voit une partie plus ou moins grande de cette moitié éclairée. La Lune, elle, reste toujours ronde.",
   "Pourquoi les astronautes font-ils de grands bonds sur la Lune ?",
   "Pourquoi les traces de pas des astronautes sont-elles toujours sur la Lune ?",
   "Pourquoi un astronaute garde-t-il son casque sur la Lune ?",
   "Pourquoi voit-on la Lune briller la nuit ?",
+  "Pourquoi voit-on la pleine lune toute ronde et éclairée ?",
   "Pourquoi voit-on toujours la même face de la Lune ?",
   "Premier croissant",
   "Premier quartier",
@@ -2908,6 +3155,7 @@
   "Que veut dire « satellite naturel » ?",
   "Que veut dire « éclipse » ?",
   "Que voit-on dans le ciel à la nouvelle lune ?",
+  "Quelle partie de la Lune le Soleil éclaire-t-il ?",
   "Quelle phase vient juste après la nouvelle lune ?",
   "Quelqu'un les repeint chaque année",
   "Qui a été le premier homme à marcher sur la Lune ?",
@@ -2915,6 +3163,7 @@
   "Range les phases dans l'ordre, quand la Lune diminue.",
   "Range les phases dans l'ordre, quand la Lune grandit.",
   "Reconstruis la phrase mémo.",
+  "Regarde le dessin : la Terre est entre le Soleil et la Lune.",
   "Regarde, voici la Lune gibbeuse croissante.",
   "Regarde, voici la Lune gibbeuse décroissante.",
   "Regarde, voici la nouvelle lune.",
@@ -2927,12 +3176,15 @@
   "Relie chaque mot à sa définition.",
   "Relie chaque phase à ce que l'on voit dans le ciel.",
   "Rester pareille",
+  "Rien du tout",
   "Rien, un disque, une moitié à droite, une moitié à gauche.",
   "Révolution",
   "Sa face éclairée est tournée vers le Soleil, pas vers nous.",
+  "Sa moitié éclairée est tournée vers la Terre",
   "Sans air ni eau, rien ne les use",
   "Sans atmosphère, pas de vent ni de pluie : les traces restent.",
   "Satellite naturel",
+  "Seulement un petit croissant",
   "Son nom dit qu'elle est complète.",
   "Sur Terre, le vent et la pluie usent les roches petit à petit.",
   "Sur la Lune",
@@ -2956,6 +3208,9 @@
   "Touche le premier quartier sur le dessin.",
   "Toujours la même face",
   "Toujours la même face : la Lune tourne sur elle-même aussi vite qu'autour de la Terre : on voit toujours le même côté.",
+  "Toujours une moitié",
+  "Toute la Lune en même temps",
+  "Tu éclaires un ballon avec une lampe, puis tu marches autour. Que vois-tu ?",
   "Un astre se glisse entre nous et le Soleil.",
   "Un astronaute : personne qui voyage dans l'espace.",
   "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
@@ -2967,9 +3222,11 @@
   "Un jour",
   "Un miroir au soleil",
   "Un monde sans air",
+  "Un rond",
   "Un satellite naturel : astre qui tourne autour d'une planète.",
   "Un tour complet d'un astre autour d'un autre",
   "Un tour sur elle-même pour un tour de la Terre : on voit toujours le même côté.",
+  "Une astuce : la Lune est menteuse. Quand elle dessine la lettre D, elle croît. Quand elle dessine la lettre C, elle décroît.",
   "Une bougie allumée",
   "Une heure",
   "Une lampe de poche",
@@ -2987,7 +3244,9 @@
   "Vrai ou faux ? La Lune produit sa propre lumière.",
   "Vrai ou faux ? La Lune tourne autour de la Terre.",
   "Vrai ou faux ? Les cratères de la Lune ont été creusés par des météorites.",
+  "Vrai ou faux ? Même quand on voit un croissant, la Lune reste une boule toute ronde.",
   "Vrai ou faux ? Neil Armstrong a été le premier homme à marcher sur la Lune.",
+  "Vrai ou faux ? Quand la Lune dessine la lettre C, elle croît.",
   "Vrai ou faux ? Sur la Lune, il y a de l'air pour respirer.",
   "Vrai ou faux ? Sur la Lune, on pèse moins lourd que sur la Terre.",
   "Vrai ou faux ? Une lunaison dure environ une semaine.",
@@ -3013,6 +3272,7 @@
   "Vrai ou faux ? « Satellite naturel » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
   "Vrai ou faux ? « Éclipse » veut dire : astre qui tourne autour d'une planète.",
   "Vrai ou faux ? « Éclipse » veut dire : moment où un astre cache la lumière d'un autre.",
+  "Vrai ou faux ? À la nouvelle lune, le Soleil n'éclaire plus du tout la Lune.",
   "Vrai ou faux ? À la nouvelle lune, on voit un disque tout rond.",
   "Vue de la Terre, la partie éclairée change de forme : ce sont les phases de la Lune. Nouvelle lune, premier croissant, premier quartier, pleine lune, dernier quartier, dernier croissant, puis tout recommence.",
   "a marché sur la Lune en 1969",
