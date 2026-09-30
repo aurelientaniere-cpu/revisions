@@ -68,31 +68,36 @@
           "prompt": "a single cream colored egg with green spots in a small straw nest, cute, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-foret1": {
           "prompt": "a cream colored egg with green spots cracking open, two big cute eyes of a baby creature peeking through the crack, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-foret2": {
           "prompt": "a tiny cute round green baby dragon with big shiny eyes, a light yellow belly and two tiny leaf-shaped wings, sitting, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-foret3": {
           "prompt": "a young cute green forest dragon with small leaf-shaped wings, two little wooden horns and a light yellow belly, a few leaves around, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-foret4": {
           "prompt": "a proud cute green forest dragon with big leafy wings, small branch-like horns with tiny flowers, a light yellow belly, butterflies around, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 22
         }
       }
     },
@@ -113,31 +118,36 @@
           "prompt": "a single pale blue egg with white swirls in a small straw nest, cute, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-glace1": {
           "prompt": "a pale blue egg with white swirls cracking open, two big cute eyes of a baby creature peeking through the crack, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-glace2": {
           "prompt": "a tiny cute round pale blue baby dragon with big shiny eyes and a white belly, sitting, a few snowflakes around, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-glace3": {
           "prompt": "a young cute light blue ice dragon with small frosty wings, two little crystal horns and a white belly, snowflakes around, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "dragon-glace4": {
           "prompt": "a proud cute light blue ice dragon with big crystal wings, a small crown of ice crystals, a white belly, snowflakes and sparkles around, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 22
         }
       }
     },
@@ -158,31 +168,36 @@
           "prompt": "a single warm orange egg with red and golden speckles in a small straw nest, cute, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 22
         },
         "phenix1": {
           "prompt": "a warm orange egg with red and golden speckles cracking open, two big cute eyes of a baby creature peeking through the crack, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 22
         },
         "phenix2": {
           "prompt": "a tiny cute round fluffy baby phoenix chick with red and orange down feathers, big shiny eyes and a small yellow beak, sitting, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 33
         },
         "phenix3": {
           "prompt": "a young cute phoenix bird with red, orange and yellow feathers, small wings and a little flame-shaped crest on its head, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 33
         },
         "phenix4": {
           "prompt": "a proud cute phoenix, a magical bird of fire, wide spread wings of red, orange and golden feathers with soft flames at the tips, a long flowing tail of flames, a golden crest, sparkles around, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         }
       }
     },
@@ -204,31 +219,36 @@
           "prompt": "a single white egg with pastel pink and lilac stripes in a small straw nest, cute, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 22
         },
         "licorne1": {
           "prompt": "a white egg with pastel pink and lilac stripes cracking open, two big cute eyes of a baby creature peeking through the crack, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "licorne2": {
           "prompt": "a tiny cute white baby unicorn foal with big shiny eyes, a short pastel rainbow mane and one single small golden horn on its forehead, lying down, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "licorne3": {
           "prompt": "a young cute white unicorn with a pastel rainbow mane and tail and one single golden horn on its forehead, standing, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "licorne4": {
           "prompt": "a proud cute white unicorn with a long flowing pastel rainbow mane and tail and one single spiral golden horn on its forehead, stars and sparkles around, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         }
       }
     },
@@ -249,31 +269,36 @@
           "prompt": "a single golden brown egg with dark brown speckles in a small straw nest, cute, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 33
         },
         "griffon1": {
           "prompt": "a golden brown egg with dark brown speckles cracking open, two big cute eyes of a baby creature peeking through the crack, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 22
         },
         "griffon2": {
-          "prompt": "a tiny cute baby griffin with the fluffy head, small yellow beak and tiny wings of an eagle chick and the body, four paws and tail of a lion cub, big shiny eyes, sitting, centered, plain cream background",
+          "prompt": "a tiny cute baby griffin: the fluffy white head, small yellow beak, tiny wings and front legs with little yellow talons of an eagle chick, and the golden back legs and tufted tail of a lion cub, big shiny eyes, sitting, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 55
         },
         "griffon3": {
-          "prompt": "a young cute griffin with the head, beak and wings of a golden eagle and the body, four paws and tufted tail of a young lion, smiling, centered, plain cream background",
+          "prompt": "a young cute griffin: the white feathered head, yellow beak, brown wings and yellow taloned front legs of an eagle, and the golden body, back paws and tufted tail of a young lion, smiling, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         },
         "griffon4": {
-          "prompt": "a proud cute majestic griffin with the white feathered head and hooked yellow beak of an eagle, big wide brown eagle wings, and the golden body, four paws and tufted tail of a lion, sparkles around, centered, plain cream background",
+          "prompt": "a proud cute majestic griffin walking on four legs, side view: a golden lion body with a tufted lion tail, big brown eagle wings on its back, the white feathered head and yellow beak of an eagle with kind smiling eyes, front legs with yellow eagle talons, sparkles around, centered, plain cream background",
           "w": 768,
           "h": 768,
-          "out_w": 600
+          "out_w": 600,
+          "seed": 11
         }
       }
     }

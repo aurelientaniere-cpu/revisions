@@ -822,80 +822,80 @@
   ],
   "images": {
     "satellite": {
-      "prompt": "the blue and green planet Earth in space with the grey Moon beside it, a dotted circular path around the Earth showing the Moon's orbit, dark starry sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "the blue and green planet Earth in space with the round grey Moon beside it, a dotted circular path around the Earth showing the Moon's orbit, dark starry sky",
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "orbite": {
-      "prompt": "the grey Moon travelling along a big dotted circle around the blue planet Earth, small arrows along the circle, dark starry space",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "the round grey Moon travelling along a big dotted circle around the planet Earth with blue oceans and green continents, small arrows along the circle, dark starry space",
+      "w": 768, "h": 768, "out_w": 600, "seed": 55
     },
     "revolution": {
-      "prompt": "a child in pajamas at a window drawing the Moon on a big wall calendar, one small moon drawing per day, night sky outside",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "a child in pajamas running one full circle around a big round tree in a garden at night, a dotted circle path drawn on the grass around the tree, a big round full Moon in the starry sky",
+      "w": 768, "h": 768, "out_w": 600, "seed": 44
     },
     "phase": {
-      "prompt": "a child in a garden at dusk pointing at a thin bright crescent Moon low in a dark blue sky, stars appearing",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "a curious child in a garden at dusk looking into a small telescope pointed up at the dark blue sky, a notebook on the grass, stars appearing",
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "lunaison": {
-      "prompt": "a cozy bedroom at night, a child and a parent looking at a half Moon through the window, a calendar on the wall",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "a cozy bedroom at night, a child and a parent sitting at the window looking at a dark starry sky, a big wooden hourglass on the windowsill",
+      "w": 768, "h": 768, "out_w": 600, "seed": 55
     },
     "face-cachee": {
       "prompt": "a small space probe with solar panels flying behind the grey Moon, taking a photo of its cratered surface, the blue Earth far away",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 22
     },
     "cratere": {
       "prompt": "the grey surface of the Moon covered with many round craters of all sizes, like bowls in the dust, black sky above",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "meteorite": {
       "prompt": "a small rock from space with a glowing trail falling toward the grey cratered surface of the Moon, black starry sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "atmosphere": {
       "prompt": "the planet Earth seen from space surrounded by a thin glowing blue layer of air, white clouds, the grey Moon far away without any air",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "astronaute": {
       "prompt": "a smiling astronaut in a white space suit and helmet waving, standing next to a small rocket, stars in the sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "eclipse": {
       "prompt": "a solar eclipse seen from a green hill: the dark Moon covering the Sun with a bright glowing ring around it, a family watching with special glasses",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "lumiere": {
       "prompt": "a dark room where a child shines a flashlight on a white ball hanging on a string, one side of the ball lit and the other side dark",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 33
     },
     "meme-face": {
       "prompt": "a child walking in a circle around a chair while always facing the chair, a smiling friend sitting on the chair, playful",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 22
     },
     "taille": {
-      "prompt": "a big blue and green planet Earth next to a much smaller grey Moon, about four times smaller, side by side in space",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "size comparison in space: a big round blue and green planet Earth on the left, and on the right, apart from it, a small round grey Moon whose width is only one quarter of the Earth's width, both smiling",
+      "w": 768, "h": 768, "out_w": 600, "seed": 44
     },
     "pesanteur": {
       "prompt": "a happy astronaut in a white suit making a big high jump on the grey dusty Moon, the blue Earth in the black sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 33
     },
     "premiers-pas": {
       "prompt": "an astronaut in a white space suit taking a first step on the grey dusty Moon next to a four-legged lunar lander, a footprint in the dust, the Earth in the black sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 22
     },
     "marees": {
       "prompt": "a beach seen twice side by side: on the left the sea is high near the rocks, on the right the sea is far away showing wet sand and shells, a full Moon in the sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 22
     },
     "pleine-lune": {
       "prompt": "a big round bright full Moon above a quiet village at night, roofs and trees lit by moonlight, stars",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "legende": {
-      "prompt": "a proud cute purple dragon wearing a white astronaut helmet, sitting on a crescent Moon among stars, cream belly, sparkles, smiling, centered, plain dark blue background",
-      "w": 768, "h": 768, "out_w": 600, "seed": 42
+      "prompt": "a proud cute purple dragon wearing a white astronaut helmet, sitting on top of a big round grey full Moon with craters, among stars, cream belly, sparkles, smiling, centered, plain dark blue background",
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     }
   }
 }
