@@ -2,16 +2,20 @@
 """Enregistre toutes les phrases de l'app avec la voix Piper (100 % local, sans réseau).
 
 Usage :
-  ~/.revisions-cm1/venv/bin/python tools/voice.py            # enregistre les phrases manquantes
+  ~/.revisions-cm1/venv/bin/python tools/voice.py            # enregistre les phrases manquantes ou à refaire
+  ~/.revisions-cm1/venv/bin/python tools/voice.py --audit    # repère les prononciations douteuses
   ~/.revisions-cm1/venv/bin/python tools/voice.py --samples  # extraits pour choisir la voix
 
 Outillage hors du dossier Google Drive (espeak refuse les chemins trop longs) :
   ~/.revisions-cm1/venv    Python + Piper (installé depuis tools/requirements.txt, empreintes figées)
   ~/.revisions-cm1/voices  voix .onnx (empreintes dans tools/voices.sha256)
 
-Entrées : phrases.json, lessons/companions.json (noms et stades), lessons/build/*.json (voir tools/build.py), tools/voice.json
-Sortie  : audio/<empreinte>.m4a + audio/manifest.json
+Entrées : phrases.json, lessons/companions.json (noms et stades), lessons/build/*.json (voir tools/build.py), tools/voice.json,
+          tools/prononciation.json (lexique : mot -> graphie, ou [[phonèmes]], donnée à la voix)
+Sortie  : audio/<empreinte>.m4a + audio/manifest.json (lu par l'app)
+          + audio/spoken.json (texte réellement prononcé par clip : un clip est refait si ce texte change)
 """
+import collections
 import json
 import pathlib
 import re
@@ -28,6 +32,7 @@ TOOLS = ROOT / "tools"
 AUDIO = ROOT / "audio"
 HOME = pathlib.Path.home() / ".revisions-cm1"
 CONF = json.loads((TOOLS / "voice.json").read_text(encoding="utf-8"))
+SPOKEN = AUDIO / "spoken.json"
 
 
 def clip_key(text):
@@ -53,8 +58,8 @@ def roman(s):
     return n
 
 
-def to_speech(text):
-    """Même règle que toSpeech() dans js/speech.js."""
+def base_speech(text):
+    """Même règle que toSpeech() dans js/speech.js (sans le lexique, propre à l'enregistrement)."""
     def ordinal(m):
         n = roman(m.group(1))
         return ORD[n] if 0 < n < len(ORD) else m.group(0)
@@ -66,6 +71,63 @@ def to_speech(text):
     t = re.sub(r"…|\.\.\.", ", ", t)
     t = re.sub(r"[«»]", "", t)
     return t.strip()
+
+
+# Emoji : équivalent de \p{Extended_Pictographic} dans js/speech.js (+ sélecteur de variante et liant).
+EMOJI = re.compile("[\u00a9\u00ae\u203c\u2049\u2122\u2139\u2194-\u21aa\u231a-\u23ff\u24c2\u25aa-\u25fe"
+                   "\u2600-\u27bf\u2934\u2935\u2b05-\u2b55\u3030\u303d\u3297\u3299"
+                   "\U0001f000-\U0001faff\ufe0f\u200d]")
+
+# Lexique (tools/prononciation.json) :
+#  - "mots" : mot entier (ou expression) -> graphie de remplacement, ou [[phonèmes]] bruts (passés tels quels
+#    par Piper). Clé en minuscules : toute casse, majuscule initiale conservée. Clé avec une majuscule
+#    (nom propre, sigle) : cette casse exacte seulement.
+#  - "sans_liaison_apres" : mots après lesquels espeak ne doit pas faire de liaison (noms, adjectifs au pluriel :
+#    « les remparts | où »), "sans_liaison_avant" : mots qui n'en reçoivent jamais (« et », « ou »),
+#    "liaison_gardee" : exceptions (« vingt et un »). Une apostrophe isolée « ' » bloque la liaison sans pause.
+PRON = json.loads((TOOLS / "prononciation.json").read_text(encoding="utf-8"))
+LEXICON = {k: v for k, v in PRON.get("mots", {}).items() if not k.startswith("_")}
+LEX_LOWER = {k: k for k in LEXICON if k == k.lower()}
+B, E = r"(?<![\w\['’-])", r"(?![\w\]'’-])"   # bornes de mot (ni apostrophe, ni trait d'union, ni [[ ]])
+LEX_RE = re.compile(B + "(" + "|".join(re.escape(k) for k in sorted(LEXICON, key=len, reverse=True))
+                    + ")" + E, re.IGNORECASE) if LEXICON else None
+LIAISON_CONS = "sxtdzn"
+VOWEL = "[aeiouyhàâéèêëîïôöûùüœæAEIOUYHÀÂÉÈÊËÎÏÔÖÛÙÜŒÆ]"
+NO_AFTER = {w.lower() for w in PRON.get("sans_liaison_apres", [])}
+NO_BEFORE = {w.lower() for w in PRON.get("sans_liaison_avant", [])}
+KEEP = [e.lower() for e in PRON.get("liaison_gardee", [])]
+
+
+def block_liaisons(t):
+    """Insère « ' » entre deux mots du même groupe quand la liaison qu'espeak ferait est fautive."""
+    def repl(m):
+        prev, nxt = m.group(1), m.group(2)
+        pl, nl = re.split(r"['’]", prev.lower())[-1], re.split(r"['’]", nxt.lower())[0]
+        if pl[-1:] not in LIAISON_CONS or any(k.startswith(f"{pl} {nl}") for k in KEEP):
+            return m.group(0)
+        return f"{prev} ' " if pl in NO_AFTER or nl in NO_BEFORE else m.group(0)
+    return re.sub(B + r"([\w'’-]+) +(?=(" + VOWEL + r"[\w’'-]*))", repl, t)
+
+
+def apply_lexicon(t):
+    def repl(m):
+        w = m.group(0)
+        if w in LEXICON:
+            return LEXICON[w]
+        k = LEX_LOWER.get(w.lower())
+        if k is None:  # clé sensible à la casse, écrite autrement ici : on n'y touche pas
+            return w
+        v = LEXICON[k]
+        if w[:1].isupper() and not v.startswith("[["):
+            v = v[:1].upper() + v[1:]
+        return v
+    return LEX_RE.sub(repl, t) if LEX_RE else t
+
+
+def to_speech(text):
+    """Texte réellement donné à la voix : règles de js/speech.js, sans emoji, liaisons fautives bloquées, lexique."""
+    t = re.sub(r"\s{2,}", " ", EMOJI.sub("", base_speech(text))).strip()
+    return apply_lexicon(block_liaisons(t))
 
 
 def all_segments():
@@ -91,7 +153,8 @@ def all_segments():
     return sorted(s for s in segs if s)
 
 
-def synth(voice, text, out_m4a, speaker=None):
+def synth(voice, spoken, out_m4a, speaker=None):
+    """Enregistre le texte déjà passé par to_speech()."""
     cfg = SynthesisConfig(
         speaker_id=speaker if speaker is not None else CONF.get("speaker_id"),
         length_scale=CONF.get("length_scale"),
@@ -100,7 +163,7 @@ def synth(voice, text, out_m4a, speaker=None):
     )
     with tempfile.NamedTemporaryFile(suffix=".wav") as tmp:
         with wave.open(tmp.name, "wb") as w:
-            voice.synthesize_wav(to_speech(text), w, syn_config=cfg)
+            voice.synthesize_wav(spoken, w, syn_config=cfg)
         subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "64000", "-c", "1", tmp.name, str(out_m4a)],
                        check=True, capture_output=True)
 
@@ -126,31 +189,180 @@ def samples():
     for name, speaker in CONF["candidates"]:
         voice = load(name)
         label = f"{name}{'-' + str(speaker) if speaker is not None else ''}"
-        synth(voice, text, out / f"{label}.m4a", speaker)
+        synth(voice, to_speech(text), out / f"{label}.m4a", speaker)
         print("extrait :", out / f"{label}.m4a")
+
+
+# ---------- Audit de prononciation (--audit) ----------
+
+def phonemes(text):
+    """Phonèmes espeak d'un texte, tels que Piper les verra (les [[phonèmes]] bruts passent tels quels).
+    Les mots pris pour de l'anglais (ou autre) sont marqués « (en) » : Piper retire la marque, pas l'accent."""
+    from piper import espeakbridge
+    out = []
+    for part in re.split(r"(\[\[.*?\]\])", text):
+        if part.startswith("[["):
+            out.append(part[2:-2].strip())
+        elif part.strip():
+            out.append(" ".join(p + t for p, t, _ in espeakbridge.get_phonemes(part)))
+    return " ".join(out)
+
+
+WORD = re.compile(r"[\w’'-]+")
+NASAL_A = "ɑ̃"
+# Mots après lesquels un « -ent » est presque toujours la fin d'un verbe au pluriel.
+BEFORE_VERB = {"ils", "elles", "qui", "se", "s'", "s’", "ne", "n'", "n’", "leur", "lui", "y", "en", "me", "te"}
+PLURAL_DET = {"les", "des", "ces", "mes", "tes", "ses", "nos", "vos", "leurs", "plusieurs", "certains",
+              "certaines", "quelques", "deux", "trois", "quatre", "beaucoup"}
+SINGULAR_DET = {"le", "un", "du", "au", "ce", "cet", "mon", "ton", "son", "l'", "l’", "d'", "d’", "chaque"}
+H_ASPIRE = ("haricot", "héros", "hibou", "herse", "hache", "haie", "hameau", "hanche", "hangar", "hareng",
+            "haut", "hauteur", "honte", "hutte", "huit", "hurler", "hêtre", "hérisson", "homard", "hongrois")
+# Mots après lesquels la liaison est normale (déterminants, pronoms, prépositions, adjectifs placés avant le nom).
+LIAISON_OK = PLURAL_DET | BEFORE_VERB | SINGULAR_DET | {
+    "on", "nous", "vous", "un", "très", "plus", "moins", "dans", "sans", "chez", "quand", "dont", "tout", "tous",
+    "toutes", "petits", "petites", "grands", "grandes", "gros", "grosse", "bons", "bonnes", "beaux", "vieux",
+    "nouveaux", "anciens", "autres", "mêmes", "premiers", "derniers", "est", "sont", "ont", "font", "vont",
+    "aux", "mon", "ton", "son", "aucun", "bien", "rien", "c'est", "n'est", "cet", "mais", "pas", "peut", "doit",
+    "vingt", "cent", "six", "dix", "moyen", "chacun", "grand"}
+
+
+def tokens(t):
+    """Mots avec l'élision détachée (« l'est » -> « l' », « est »)."""
+    out = []
+    for w in WORD.findall(t):
+        m = re.match(r"^([a-zA-Z]{1,2}['’])(.+)$", w)
+        out += [m.group(1), m.group(2)] if m else [w]
+    return out
+
+
+def audit():
+    from piper import espeakbridge
+    v = load(CONF["voice"])
+    v.phonemize("a")  # initialise espeak avec les données de la voix
+    espeakbridge.set_voice(v.config.espeak_voice)
+    segs = all_segments()
+    found = collections.defaultdict(dict)   # catégorie -> {clé : ligne}
+    nasal_words = collections.Counter()
+
+    def flag(cat, key, line):
+        found[cat].setdefault(key, line)
+
+    for s in segs:
+        say = to_speech(s)
+        ph = phonemes(say)
+        plain = re.sub(r"\[\[.*?\]\]", "", say)
+        toks = tokens(plain)
+        low = [w.lower() for w in toks]
+        for i, w in enumerate(toks):
+            lw, prev = low[i], low[i - 1] if i else ""
+            prev2 = low[i - 2] if i > 1 else ""
+            # 1. « -ent » : lu « an » (ɑ̃) ou muet ? On compare avec la phrase où « lèvent » devient « lève ».
+            if len(lw) > 4 and lw.endswith("ent"):
+                variant = re.sub(r"(?<![\w-])" + re.escape(w) + r"(?![\w-])", w[:-2], plain, count=1)
+                reads_an = phonemes(plain).count(NASAL_A) > phonemes(variant).count(NASAL_A)
+                verb_ctx = prev in BEFORE_VERB or (prev.endswith(("s", "x")) and prev2 in PLURAL_DET)
+                if reads_an:
+                    nasal_words[lw] += 1
+                    if verb_ctx:
+                        flag("ent lu « an » après un sujet pluriel (verbe ?)", lw, f"{w!r} dans : {s}")
+                elif prev in SINGULAR_DET:
+                    flag("ent muet après un déterminant (nom ?)", lw, f"{w!r} dans : {s}")
+            # 2. Nombres, sigles, noms propres : à vérifier une fois à l'oreille.
+            if re.search(r"\d", w):
+                flag("nombres", w, f"{w} -> {phonemes(w)}   ({s})")
+            elif len(w) > 1 and w.isupper() and w.isalpha() and not re.fullmatch(r"[IVX]+", w):
+                flag("sigles", w, f"{w} -> {phonemes(w)}   ({s})")
+            elif (w[:1].isupper() and i > 0 and lw not in SINGULAR_DET | {"la", "les"}
+                  and not re.search(r"[.!?:]\s*$", plain[:plain.find(w)])):
+                flag("noms propres", w, f"{w} -> {phonemes(w)}")
+        # 3. Liaisons faites par espeak dans la phrase : jamais devant « et », « ou » ni un h aspiré ;
+        #    après un nom ou un adjectif pluriel, souvent fautive (« les remparts-z-où »).
+        flat = ph.replace("ˈ", "").replace("ˌ", "")
+        for m in re.finditer(r"(?<![\w'’-])([\w-]+) +(?=(" + VOWEL + r"[\w-]*))", plain):
+            w, nxt = m.group(1), m.group(2)
+            lw = w.lower()
+            # Verbe au pluriel + « t » (« ils vivent-t-en ville ») : liaison facultative, acceptée.
+            if lw[-1:] not in LIAISON_CONS or lw in LIAISON_OK or lw.endswith(("ent", "ont")):
+                continue
+            alone = phonemes(w).rstrip(" .-")
+            both = phonemes(f"{w} {nxt}")
+            rest = both[len(alone):] if both.startswith(alone) else ""
+            if not re.match(r"-?[zntp] ", rest) or both.replace("ˈ", "").replace("ˌ", "") not in flat:
+                continue
+            line = f"{w} {nxt} -> {both}   ({s})"
+            if nxt.lower() in ("et", "ou") or nxt.lower().startswith(H_ASPIRE):
+                flag("liaison interdite (devant et / ou / h aspiré)", f"{lw} {nxt.lower()}", line)
+            else:
+                flag("liaison après un nom, un adjectif ou un verbe (à vérifier)", f"{lw} {nxt.lower()}", line)
+        # 4. Mots en « -se » : voyelle + se = /z/ ; « -ose » lu ɔ ouvert (chose, rose), « -ause » /o/ bref.
+        for m in re.finditer(r"\b\w*[aeiouéèêôâûy]s(?:es?|ent)\b", plain, re.IGNORECASE):
+            w = m.group(0)
+            p = phonemes(w)
+            if p.rstrip(".,!? ").endswith("s"):
+                flag("-se lu /s/", w.lower(), f"{w} -> {p}")
+            elif re.search(r"ˈ?[oɔ]z", p) and "oːz" not in p:
+                flag("-ose / -ause (o ouvert ou bref)", w.lower(), f"{w} -> {p}")
+        # 5. Mots lus comme une autre langue.
+        for p, _, _ in espeakbridge.get_phonemes(plain):
+            for lang in re.findall(r"\((\w+)\)", p):
+                if lang != "fr":
+                    flag("mot lu dans une autre langue", p, f"({lang}) {p}   ({s})")
+        # 6. « l'est » (point cardinal) : espeak le lit comme le verbe être.
+        if re.search(r"\bl['’]est\b", plain) and "ˈɛst" not in ph:
+            flag("« l'est » lu comme le verbe", s, s)
+    found["-ent lus « an » (tous, pour relecture)"] = {w: f"{w} ×{n}" for w, n in sorted(nasal_words.items())}
+
+    out = HOME / "audit-prononciation.txt"
+    lines = [f"Audit de prononciation — {len(segs)} phrases, lexique : {len(LEXICON)} entrées", ""]
+    for cat, items in found.items():
+        lines.append(f"## {cat} ({len(items)})")
+        lines += [f"  {v}" for v in items.values()] + [""]
+    out.write_text("\n".join(lines), encoding="utf-8")
+    print("\n".join(lines))
+    print("rapport :", out)
 
 
 def main():
     if "--samples" in sys.argv:
         return samples()
+    if "--audit" in sys.argv:
+        return audit()
     AUDIO.mkdir(exist_ok=True)
     segs = all_segments()
+    spoken = json.loads(SPOKEN.read_text(encoding="utf-8")) if SPOKEN.exists() else {}
     voice = None
-    made = 0
+    made = redone = 0
     for s in segs:
-        target = AUDIO / f"{clip_key(s)}.m4a"
-        if target.exists():
+        key = clip_key(s)
+        target = AUDIO / f"{key}.m4a"
+        say = to_speech(s)
+        # Clip enregistré avant spoken.json : il a été prononcé avec les seules règles de base.
+        before = spoken.get(key, base_speech(s)) if target.exists() else None
+        if before == say:
+            spoken[key] = say
             continue
         voice = voice or load(CONF["voice"])
-        synth(voice, s, target)
-        made += 1
+        if before is not None and voice.phonemize(before) == voice.phonemize(say):
+            spoken[key] = say  # graphie différente, mêmes phonèmes : le clip reste bon
+            continue
+        synth(voice, say, target)
+        spoken[key] = say
+        if before is None:
+            made += 1
+        else:
+            redone += 1
+            print(f"refait : {s}\n      -> {say}")
     keys = sorted({clip_key(s) for s in segs})
     # Les fichiers qui ne correspondent plus à aucune phrase sont retirés.
     for f in AUDIO.glob("*.m4a"):
         if f.stem not in keys:
             f.unlink()
     (AUDIO / "manifest.json").write_text(json.dumps({"voice": CONF["voice"], "clips": keys}), encoding="utf-8")
-    print(f"{len(segs)} phrases, {made} nouvelles enregistrées")
+    SPOKEN.write_text(json.dumps({k: spoken[k] for k in keys}, ensure_ascii=False, indent=0) + "\n",
+                      encoding="utf-8")
+    print(f"{len(segs)} phrases, {made} nouvelles enregistrées, {redone} réenregistrées")
+    if redone:
+        print("Des clips ont changé sous le même nom : incrémenter CACHE dans sw.js pour que l'iPad les recharge.")
 
 
 if __name__ == "__main__":
