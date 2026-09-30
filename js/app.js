@@ -2,10 +2,10 @@ import { h, cap, pick } from './util.js';
 import { state, save } from './store.js';
 import { say, sayAll, stop, unlock, loadAudio } from './speech.js';
 import { P, loadPhrases } from './phrases.js';
-import { loadLessons } from './lessons.js';
+import { loadLessons, loadCompanions } from './lessons.js';
 import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson } from './srs.js';
 import { renderStep, schemaView } from './activities.js';
-import { companionHTML, stageOf, nextStage, STAGES, starsForSession, addStars, recordDay, checkCards } from './rewards.js';
+import { starsForSession, addStars, recordDay, checkCards, setCompanions, current, stageName, companionArt, graduate, adultName, speciesOf, companionsView } from './rewards.js';
 import { parentGate } from './parent.js';
 
 const app = document.getElementById('app');
@@ -27,23 +27,20 @@ function backBtn(label = '🏠 Accueil', to = home) {
   return h('button', { class: 'ghost', onclick: to }, label);
 }
 
-// Illustration du compagnon au stade actuel (cherchée dans les leçons).
-function companionArt(stars) {
-  const key = `dragon${stageOf(stars)}`;
-  return companionHTML(stars, lessons.map((L) => L.img(key)).find(Boolean));
-}
-
 function companionName() {
-  return state.companion.name || 'Mon compagnon';
+  return state.companion.name || (current().stage < 2 ? 'Mon œuf' : 'Mon compagnon');
 }
 
 /* ---------- Accueil ---------- */
 function home() {
   applySettings();
   const stars = state.companion.stars;
-  const next = nextStage(stars);
-  const prev = STAGES[stageOf(stars)].at;
-  const pct = next ? Math.round(((stars - prev) / (next.at - prev)) * 100) : 100;
+  const cur = current();
+  const { next, stage } = cur;
+  const pct = next ? Math.round(((cur.rel - cur.prevAt) / (next.at - cur.prevAt)) * 100) : 100;
+  const nextName = stage === 1 ? 'l’éclosion' : next && stageName(cur.sp, stage + 1); // l'espèce reste une surprise
+  const newEgg = state.companion.isNew;
+  if (newEgg) { delete state.companion.isNew; save(); }
 
   const gear = h('button', { class: 'parent-gear', 'aria-label': 'Espace parent' }, '⚙️');
   let timer;
@@ -70,20 +67,25 @@ function home() {
   screen(
     gear,
     h('div', { class: 'home-top' },
-      h('div', { class: 'companion', onclick: () => say([P.stages[stageOf(stars)], P.companionMore]), html: companionArt(stars) }),
+      h('div', { class: 'companion', onclick: () => say([stageName(cur.sp, stage), P.companionMore]), html: companionArt(cur.sp.id, stage) }),
       h('div', { style: { display: 'flex', flexDirection: 'column', gap: '12px' } },
+        newEgg ? h('div', { class: 'panel new-egg' }, '🥚 Un nouvel œuf est arrivé !') : null,
         h('div', { class: 'row' },
           h('span', { class: 'companion-name' }, companionName()),
-          h('button', { class: 'icon ghost', 'aria-label': 'Changer le nom', onclick: rename }, '✏️')),
+          stage < 2 && !state.companion.name ? null
+            : state.companion.name ? h('button', { class: 'icon ghost', 'aria-label': 'Changer le nom', onclick: rename }, '✏️')
+              : h('button', { class: 'primary', onclick: rename }, '✏️ Choisis son nom')),
         h('div', { class: 'stars' }, h('b', {}, '★ '), `${stars} étoiles`),
         next ? h('div', {}, h('div', { class: 'meter' }, h('span', { style: { width: `${pct}%` } })),
-          h('div', { class: 'muted' }, `Encore ${next.at - stars} étoiles pour : ${next.name}`)) : h('div', {}, '👑 Ton dragon est au maximum !'),
+          h('div', { class: 'muted' }, `Encore ${next.at - cur.rel} étoiles pour : ${nextName}`))
+          : h('div', {}, '👑 Termine une séance : il rejoindra ta collection !'),
         h('div', { class: 'row' },
           best ? h('button', { class: 'primary big', onclick: () => start(best) }, '▶ C’est parti !') : null,
           h('button', { class: 'big', onclick: album }, '🃏 Mon album')))),
     h('h2', {}, 'Mes leçons'),
     h('div', { class: 'lessons' }, tiles),
   );
+  if (newEgg) say(P.newEgg);
 }
 
 function rename() {
@@ -164,17 +166,27 @@ function start(L) {
     const earned = starsForSession(results, first);
     const grew = addStars(earned);
     const cards = checkCards(L);
-    const stars = state.companion.stars;
+    // Compagnon au dernier stade : il rejoint la collection, un nouvel œuf arrive.
+    const adult = graduate();
+    const cur = current();
+    const hatched = grew && !adult && cur.stage === 2;
     const lines = [P.endStars];
-    if (grew) lines.push(P.endGrew, P.stages[stageOf(stars)]);
+    if (adult) lines.push(P.endAdult, P.adultJoins);
+    else if (grew) lines.push(hatched ? P.endHatched : P.endGrew, stageName(cur.sp, cur.stage));
+    if (hatched && !state.companion.name) lines.push(P.chooseName);
     if (cards.length) lines.push(cards.length > 1 ? P.endCards : P.endCard, ...cards.map((c) => c.name));
     lines.push(P.endPause);
     screen(
       h('div', { class: 'center' },
         h('h1', {}, pick(['Séance terminée !', 'Mission accomplie !', 'Bien joué !'])),
         h('div', { class: 'stars' }, h('b', {}, '★ '), `+${earned} étoiles`),
-        h('div', { class: 'companion', style: { width: '220px' }, html: companionArt(stars) }),
-        grew ? h('h2', {}, `${companionName()} a grandi !`) : null,
+        h('div', { class: 'companion', style: { width: '220px' }, html: adult ? companionArt(adult.species, 4) : companionArt(cur.sp.id, cur.stage) }),
+        adult ? [h('h2', {}, `🎉 ${adultName(adult)} est devenu${speciesOf(adult.species).fem ? 'e' : ''} adulte !`),
+          h('p', {}, `${speciesOf(adult.species).fem ? 'Elle' : 'Il'} rejoint ta collection. Un nouvel œuf t’attend !`),
+          h('button', { onclick: companionsPage }, '🐉 Mes compagnons')]
+          : hatched ? [h('h2', {}, `🐣 Ton œuf a éclos : ${stageName(cur.sp, cur.stage)} !`),
+            state.companion.name ? null : h('button', { class: 'primary', onclick: rename }, '✏️ Choisis son nom')]
+            : grew ? h('h2', {}, `${companionName()} a grandi !`) : null,
         cards.length ? h('div', { class: 'new-cards' }, cards.map((c) => cardEl(c, true, L))) : null,
         h('p', { class: 'muted' }, '🌿 Fais une petite pause : bois un verre d’eau, étire-toi.'),
         h('button', { class: 'primary big', onclick: home }, '🏠 Retour')));
@@ -216,7 +228,8 @@ function album() {
   const all = lessons.flatMap((L) => (L.cards || []).map((c) => ({ ...c, L })));
   const owned = all.filter((c) => state.cards.includes(c.id)).length;
   screen(
-    h('div', { class: 'row' }, backBtn()),
+    h('div', { class: 'row' }, backBtn(), h('span', { class: 'spacer' }),
+      h('button', { class: 'primary', onclick: companionsPage }, '🐉 Mes compagnons')),
     h('h1', {}, `🃏 Mon album — ${owned} / ${all.length}`),
     ...lessons.map((L) => [
       h('h2', {}, `${L.emoji} ${L.title}`),
@@ -231,6 +244,12 @@ function album() {
       })),
     ]).flat());
   say(P.album);
+}
+
+/* ---------- Mes compagnons ---------- */
+function companionsPage() {
+  screen(h('div', { class: 'row' }, backBtn(), backBtn('🃏 Mon album', album)), companionsView());
+  say(P.companions);
 }
 
 function zoom(c, L) {
@@ -249,6 +268,7 @@ async function boot() {
   try {
     await Promise.all([loadPhrases(), loadAudio()]);
     lessons = await loadLessons();
+    setCompanions(await loadCompanions().catch(() => ({ id: 'companions', species: [], img: () => null })));
   } catch (e) {
     app.replaceChildren(h('div', { class: 'panel' }, 'Impossible de charger les leçons. Vérifie la connexion puis relance l’app.'));
     return;

@@ -4,7 +4,10 @@ const KEY = 'revisions-cm1-v1';
 
 const DEFAULTS = () => ({
   settings: { font: 'andika', rate: 1, sessionLen: 6 },
-  companion: { name: '', stars: 0 },
+  // stars = total gagné ; l'œuf actuel grandit avec les étoiles gagnées depuis start.
+  // Une ancienne sauvegarde { name, stars } devient le dragon violet, start 0.
+  companion: { name: '', stars: 0, species: 'dragon-violet', start: 0 },
+  companions: [],       // compagnons tout grands : [{ species, name }]
   notions: {},          // "lecon/notion" -> { level, seen, due, ok, ko }
   cards: [],            // ids des cartes débloquées
   stats: { sessions: 0, seconds: 0, lastDay: '', days: 0 },

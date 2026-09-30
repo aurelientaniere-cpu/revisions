@@ -10,6 +10,8 @@ Usage :
   python3 tools/images.py                               # génère les images retenues manquantes
 
 Les prompts sont dans lessons/<leçon>.json, champ "images" : { clé: { prompt, w, h, seed? } }.
+Les compagnons (œufs, dragons, licorne…) : lessons/companions.json, « leçon » `companions`,
+champ "images" de chaque espèce (clés <espèce>0 … <espèce>4).
 Sortie : lessons/img/<leçon>/<clé>.jpg + lessons/img/manifest.json
 """
 import base64
@@ -49,8 +51,16 @@ def lesson_file(lid):
     return LESSONS / f"{lid}.json"
 
 
+def images_of(data):
+    """Toutes les images d'une leçon (ou de companions.json, rangées par espèce)."""
+    imgs = dict(data.get("images", {}))
+    for sp in data.get("species", []):
+        imgs.update(sp.get("images", {}))
+    return imgs
+
+
 def spec(lid, key):
-    return json.loads(lesson_file(lid).read_text(encoding="utf-8"))["images"][key]
+    return images_of(json.loads(lesson_file(lid).read_text(encoding="utf-8")))[key]
 
 
 def cmd_try(lid, key, seeds):
@@ -66,21 +76,22 @@ def cmd_try(lid, key, seeds):
 def cmd_pick(lid, key, seed):
     f = lesson_file(lid)
     data = json.loads(f.read_text(encoding="utf-8"))
-    data["images"][key]["seed"] = seed
+    s = images_of(data)[key]
+    s["seed"] = seed
     f.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     png = WORK / "variants" / f"{lid}-{key}-{seed}.png"
     if png.exists():
-        to_jpg(png, IMG / lid / f"{key}.jpg", data["images"][key].get("out_w", 1000))
+        to_jpg(png, IMG / lid / f"{key}.jpg", s.get("out_w", 1000))
     print(f"{key} : graine {seed} retenue")
 
 
 def cmd_all():
     index = json.loads((LESSONS / "index.json").read_text(encoding="utf-8"))
     files = []
-    for src in index["lessons"]:
+    for src in index["lessons"] + ["companions.json"]:
         data = json.loads((LESSONS / src).read_text(encoding="utf-8"))
         lid = data["id"]
-        for key, s in data.get("images", {}).items():
+        for key, s in images_of(data).items():
             if "seed" not in s:
                 continue
             jpg = IMG / lid / f"{key}.jpg"

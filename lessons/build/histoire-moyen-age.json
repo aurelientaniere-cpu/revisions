@@ -405,7 +405,7 @@
    "level": 3,
    "legend": true,
    "desc": "Carte légendaire : tu connais toute la leçon sur le bout des doigts !",
-   "image": "dragon4"
+   "image": "companions/dragon-violet4"
   }
  ],
  "items": [
@@ -3234,41 +3234,6 @@
   },
   "fonctions": {
    "prompt": "villagers taking shelter inside the walls of a medieval castle, guards standing on the walls, the lord watching from the keep",
-   "w": 768,
-   "h": 768,
-   "out_w": 600,
-   "seed": 42
-  },
-  "dragon0": {
-   "prompt": "a single cream colored egg with purple spots in a small straw nest, cute, centered, plain cream background",
-   "w": 768,
-   "h": 768,
-   "out_w": 600,
-   "seed": 42
-  },
-  "dragon1": {
-   "prompt": "a cream colored egg with purple spots cracking open, two big cute eyes of a baby dragon peeking through the crack, centered, plain cream background",
-   "w": 768,
-   "h": 768,
-   "out_w": 600,
-   "seed": 42
-  },
-  "dragon2": {
-   "prompt": "a tiny cute round purple baby dragon with big shiny eyes and a cream belly, sitting, centered, plain cream background",
-   "w": 768,
-   "h": 768,
-   "out_w": 600,
-   "seed": 42
-  },
-  "dragon3": {
-   "prompt": "a young cute purple dragon with small wings, two little horns and a cream belly, smiling, centered, plain cream background",
-   "w": 768,
-   "h": 768,
-   "out_w": 600,
-   "seed": 42
-  },
-  "dragon4": {
-   "prompt": "a proud cute purple dragon with big wings, a small golden crown, a cream belly, sparkles around, smiling, centered, plain cream background",
    "w": 768,
    "h": 768,
    "out_w": 600,

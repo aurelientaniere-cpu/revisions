@@ -23,5 +23,11 @@
   "cardLockedAll": "Carte légendaire. Pour la débloquer, révise toute la leçon.",
   "companionMore": "Continue à réviser pour le faire grandir !",
   "rateTest": "Voici la vitesse de lecture.",
-  "stages": ["Un œuf mystérieux", "Ça bouge dans l’œuf !", "Bébé dragon", "Jeune dragon", "Dragon royal"]
+  "endHatched": "Ton œuf a éclos !",
+  "chooseName": "Choisis un nom pour ton compagnon.",
+  "endAdult": "Bravo ! Ton compagnon est devenu adulte !",
+  "adultJoins": "Il rejoint ta collection. Un nouvel œuf t’attend !",
+  "newEgg": "Un nouvel œuf est arrivé ! Révise pour le faire éclore.",
+  "companions": "Voici tous tes compagnons.",
+  "companionLocked": "Un compagnon à découvrir. Continue à réviser !"
 }
