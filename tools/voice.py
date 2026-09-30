@@ -124,10 +124,34 @@ def apply_lexicon(t):
     return LEX_RE.sub(repl, t) if LEX_RE else t
 
 
+ENGINE = CONF.get("engine", "piper")
+APPLE = CONF.get("apple", {})
+# Signature de la voix, gardée devant le texte dans spoken.json : changer de voix fait tout réenregistrer.
+# Piper garde l'ancien format (texte seul).
+SIG = f"apple:{APPLE.get('voice')}:{APPLE.get('rate')}|" if ENGINE == "apple" else ""
+APPLE_LEX = {k: v for k, v in PRON.get("mots_apple", {}).items() if not k.startswith("_")}
+
+
 def to_speech(text):
-    """Texte réellement donné à la voix : règles de js/speech.js, sans emoji, liaisons fautives bloquées, lexique."""
+    """Texte réellement donné à la voix : règles de js/speech.js, sans emoji, puis
+    Piper : liaisons fautives bloquées + lexique ; Apple : lexique « mots_apple » seulement (espeak n'intervient pas)."""
     t = re.sub(r"\s{2,}", " ", EMOJI.sub("", base_speech(text))).strip()
+    if ENGINE == "apple":
+        for k, v in APPLE_LEX.items():
+            t = re.sub(B + re.escape(k) + E, v, t)
+        return t
     return apply_lexicon(block_liaisons(t))
+
+
+def synth_apple(spoken, out_m4a):
+    """Voix système du Mac (commande say), puis même format que Piper : AAC 64 kb/s mono."""
+    with tempfile.TemporaryDirectory() as d:
+        txt, aiff = pathlib.Path(d) / "t.txt", pathlib.Path(d) / "t.aiff"
+        txt.write_text(spoken, encoding="utf-8")
+        subprocess.run(["say", "-v", APPLE["voice"], "-r", str(APPLE["rate"]), "-f", str(txt), "-o", str(aiff)],
+                       check=True, capture_output=True)
+        subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "64000", "-c", "1", str(aiff), str(out_m4a)],
+                       check=True, capture_output=True)
 
 
 def all_segments():
@@ -335,29 +359,33 @@ def main():
     for s in segs:
         key = clip_key(s)
         target = AUDIO / f"{key}.m4a"
-        say = to_speech(s)
+        say = SIG + to_speech(s)
         # Clip enregistré avant spoken.json : il a été prononcé avec les seules règles de base.
         before = spoken.get(key, base_speech(s)) if target.exists() else None
         if before == say:
             spoken[key] = say
             continue
-        voice = voice or load(CONF["voice"])
-        if before is not None and voice.phonemize(before) == voice.phonemize(say):
-            spoken[key] = say  # graphie différente, mêmes phonèmes : le clip reste bon
-            continue
-        synth(voice, say, target)
+        if ENGINE == "apple":
+            synth_apple(say[len(SIG):], target)
+        else:
+            voice = voice or load(CONF["voice"])
+            if before is not None and voice.phonemize(before) == voice.phonemize(say):
+                spoken[key] = say  # graphie différente, mêmes phonèmes : le clip reste bon
+                continue
+            synth(voice, say, target)
         spoken[key] = say
         if before is None:
             made += 1
         else:
             redone += 1
-            print(f"refait : {s}\n      -> {say}")
+            if ENGINE != "apple":
+                print(f"refait : {s}\n      -> {say}")
     keys = sorted({clip_key(s) for s in segs})
     # Les fichiers qui ne correspondent plus à aucune phrase sont retirés.
     for f in AUDIO.glob("*.m4a"):
         if f.stem not in keys:
             f.unlink()
-    (AUDIO / "manifest.json").write_text(json.dumps({"voice": CONF["voice"], "clips": keys}), encoding="utf-8")
+    (AUDIO / "manifest.json").write_text(json.dumps({"voice": APPLE["voice"] if ENGINE == "apple" else CONF["voice"], "clips": keys}), encoding="utf-8")
     SPOKEN.write_text(json.dumps({k: spoken[k] for k in keys}, ensure_ascii=False, indent=0) + "\n",
                       encoding="utf-8")
     print(f"{len(segs)} phrases, {made} nouvelles enregistrées, {redone} réenregistrées")
