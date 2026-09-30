@@ -31,7 +31,8 @@ Tous ont `type`, `diff` (2 normal → 3 difficile ; une notion neuve démarre à
 - `placer` + `layout` :
   - `tri` : `targets` = paniers `{id,label,emoji,color}`, `tokens` = `{text,target}` ; `sample` = nombre d'étiquettes tirées.
   - `frise` : `targets` = `{id,date}` dans l'ordre chronologique.
-  - `phrase` : `targets` = cases `{id:"1"}`…, `tokens` = morceaux de phrase dans l'ordre.
+  - `relie` : `targets` = définitions (ou effets, repas…) `{id,label}`, `tokens` = mots `{text,target}` (un mot par cible, 3 à 4 paires). Les mots s'affichent à gauche, les définitions à droite (mélangées) ; on trace un trait du doigt de l'un à l'autre, ou on touche le mot puis la définition. `explain` optionnel (sinon « Chaque mot est relié à sa définition. »). Généré automatiquement par `build.py` pour les notions groupées.
+  - `phrase` : `targets` = cases `{id:"1"}`…, `tokens` = morceaux de phrase dans l'ordre (2 à 4 morceaux courts, qui tiennent sur 2 lignes dans une case). On glisse chaque morceau dans sa case numérotée, ou on touche le morceau puis la case ; à la fin la phrase entière est affichée et lue.
 
 ## Cartes
 `{ "id", "name", "emoji", "color", "notions": [...] | "all", "level"?, "legend"?, "desc" }` — débloquée quand toutes ses notions atteignent `level` (2 par défaut). Prévoir ~8 à 10 cartes + 1 légendaire (`"notions": "all", "level": 3, "legend": true`). Emoji uniquement (pas d'image protégée).

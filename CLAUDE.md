@@ -17,7 +17,7 @@ En ligne : https://aurelientaniere-cpu.github.io/revisions/ (dépôt `aurelienta
 
 ## Règles pédagogiques (à respecter dans tout contenu)
 - Seule la consigne est lue automatiquement ; chaque réponse ou étiquette a son bouton 🔊. Phrases courtes, pas d'abréviation que la voix lirait mal (les siècles en chiffres romains sont gérés par `toSpeech` dans `js/speech.js`).
-- Rien à taper au clavier, pas de glisser-déposer : on touche.
+- Rien à taper au clavier : on touche, ou on glisse du doigt pour relier/placer (`relie`, `phrase`, via `js/drag.js`), avec toujours l'alternative toucher-toucher (toucher l'élément, puis la cible).
 - Une idée par question ; 4 choix ; jamais une question qui recopie la définition juste vue (`indice`, intrus, pourquoi, situations).
 - Erreur bienveillante : un indice (`hint`) qui aide sans donner la réponse ; `explain` court.
 - Pas d'italique, pas de texte justifié, pas d'image copiée de la fiche : dessins SVG originaux ou emoji.
@@ -27,7 +27,7 @@ En ligne : https://aurelientaniere-cpu.github.io/revisions/ (dépôt `aurelienta
 - `js/srs.js` : niveaux de maîtrise 0→4 par notion, construction de la séance (3 nouveautés max, jeux variés).
 - `tools/build.py` : génération des exercices de vocabulaire et de la liste des phrases ; `js/lessons.js` charge `lessons/build/`.
 - `js/speech.js` + `audio/` : phrases pré-enregistrées (nom = empreinte FNV-1a du texte), repli sur la voix de l'iPad ; `phrases.json` = phrases fixes de l'app.
-- `js/activities.js` : qcm, vf, schema, placer (tri / frise / relie / phrase).
+- `js/activities.js` : qcm, vf, schema, placer (tri / frise / relie / phrase). `js/drag.js` : glisser du doigt en Pointer Events (dépôt sur la cible la plus proche, marge large), utilisé par relie (trait tracé dans un calque SVG) et phrase (bloc fantôme vers les cases numérotées).
 - `js/rewards.js` : dragon en 5 stades (étoiles), cartes à collectionner.
 - Illustrations : `tools/images.py` (Draw Things, style `tools/style.txt` = aquarelle/crayon, validé). Prompts et graines dans le champ `images` de la leçon ; clé = id de notion (illustration « Nouveau mot » + vignette), `schema-<nom>` pour un schéma, `dragon0`…`dragon4` pour le compagnon, `image` sur chaque carte. Toujours vérifier les images (fausses signatures, objet mal représenté) et refaire avec une autre graine. Zones du schéma : polygones dans `lessons/assets/chateau.svg`, vérifier avec `?zones=1`.
 - `js/parent.js` : espace parent (appui long sur ⚙️ en haut à droite + une multiplication).
