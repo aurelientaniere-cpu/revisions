@@ -7,6 +7,7 @@ const SHELL = [
   'js/activities.js', 'js/rewards.js', 'js/parent.js',
   'lessons/index.json', 'lessons/build/histoire-moyen-age.json', 'lessons/assets/chateau.svg',
   'lessons/build/sciences-alimentation.json', 'lessons/assets/monde.svg',
+  'lessons/build/sciences-lune.json', 'lessons/assets/lune.svg',
 ];
 
 async function precache() {

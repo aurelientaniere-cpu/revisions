@@ -1,6 +1,7 @@
 {
   "lessons": [
     "histoire-moyen-age.json",
-    "sciences-alimentation.json"
+    "sciences-alimentation.json",
+    "sciences-lune.json"
   ]
 }
