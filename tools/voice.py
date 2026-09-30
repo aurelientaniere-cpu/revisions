@@ -9,7 +9,7 @@ Outillage hors du dossier Google Drive (espeak refuse les chemins trop longs) :
   ~/.revisions-cm1/venv    Python + Piper (installé depuis tools/requirements.txt, empreintes figées)
   ~/.revisions-cm1/voices  voix .onnx (empreintes dans tools/voices.sha256)
 
-Entrées : phrases.json, lessons/build/*.json (voir tools/build.py), tools/voice.json
+Entrées : phrases.json, lessons/companions.json (noms et stades), lessons/build/*.json (voir tools/build.py), tools/voice.json
 Sortie  : audio/<empreinte>.m4a + audio/manifest.json
 """
 import json
@@ -83,6 +83,9 @@ def all_segments():
             for x in v.values():
                 walk(x)
     walk(phrases)
+    companions = json.loads((ROOT / "lessons" / "companions.json").read_text(encoding="utf-8"))
+    for sp in companions["species"]:
+        walk([sp["name"], sp["stages"]])
     for f in sorted((ROOT / "lessons" / "build").glob("*.json")):
         segs.update(json.loads(f.read_text(encoding="utf-8"))["speech"])
     return sorted(s for s in segs if s)
