@@ -494,7 +494,7 @@ function phrase(item, { root, done }) {
     fb.replaceChildren();
     mark(b);
     const r = b.el.getBoundingClientRect();
-    ghost = h('div', { class: 'ghost' }, b.text);
+    ghost = h('div', { class: 'drag-ghost' }, b.text);
     Object.assign(ghost.style, { left: `${r.left}px`, top: `${r.top}px`, width: `${r.width}px`, minHeight: `${r.height}px` });
     document.body.append(ghost);
     g0 = { r, x, y };

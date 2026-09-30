@@ -8,7 +8,7 @@
   "vfKo": { "true": "Eh non, c'est vrai.", "false": "Eh non, c'est faux." },
   "completePrefix": "Termine la phrase :",
   "zoneThis": "Ça, c'est {x}.",
-  "zoneHere": "Regarde, {x} est ici.",
+  "zoneHere": "Regarde, voici {x}.",
   "placerHere": "Pas ici. Essaie un autre endroit.",
   "placerGlow": "Regarde, la bonne place brille en orange.",
   "placerDone": "Tout est bien rangé.",

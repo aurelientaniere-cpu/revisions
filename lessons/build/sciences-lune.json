@@ -408,7 +408,7 @@
    ],
    "hint": "Pense à un ballon dans le noir, éclairé par une lampe de poche.",
    "explain": "La Lune ne brille pas seule : elle renvoie la lumière du Soleil.",
-   "id": "sciences-lune#0"
+   "id": "sciences-lune#2928cc0d"
   },
   {
    "type": "qcm",
@@ -425,7 +425,7 @@
    ],
    "hint": "Cherche l'objet qui ne fabrique pas de lumière lui-même.",
    "explain": "Le miroir renvoie la lumière du Soleil, comme la Lune.",
-   "id": "sciences-lune#1"
+   "id": "sciences-lune#d36ae178"
   },
   {
    "type": "qcm",
@@ -442,7 +442,7 @@
    ],
    "hint": "C'est notre planète.",
    "explain": "La Lune est le satellite naturel de la Terre.",
-   "id": "sciences-lune#2"
+   "id": "sciences-lune#7303b591"
   },
   {
    "type": "qcm",
@@ -459,7 +459,7 @@
    ],
    "hint": "C'est plus long qu'une semaine, mais bien moins qu'une année.",
    "explain": "La Lune fait le tour de la Terre en environ un mois.",
-   "id": "sciences-lune#3"
+   "id": "sciences-lune#8a9e4b2d"
   },
   {
    "type": "qcm",
@@ -477,7 +477,7 @@
    ],
    "hint": "C'est presque un mois.",
    "explain": "C'est la lunaison : environ vingt-neuf jours et demi.",
-   "id": "sciences-lune#4"
+   "id": "sciences-lune#0188a438"
   },
   {
    "type": "qcm",
@@ -495,7 +495,7 @@
    ],
    "hint": "Pense à une danseuse qui fait le tour d'une chaise en la regardant toujours.",
    "explain": "Un tour sur elle-même pour un tour de la Terre : on voit toujours le même côté.",
-   "id": "sciences-lune#5"
+   "id": "sciences-lune#8ff5420d"
   },
   {
    "type": "qcm",
@@ -512,7 +512,7 @@
    ],
    "hint": "Depuis la Terre, on ne la voit jamais.",
    "explain": "Il a fallu envoyer une sonde dans l'espace, derrière la Lune.",
-   "id": "sciences-lune#6"
+   "id": "sciences-lune#df498604"
   },
   {
    "type": "qcm",
@@ -530,7 +530,7 @@
    ],
    "hint": "La Lune reste toujours une boule bien ronde.",
    "explain": "La Lune ne change pas : c'est la partie éclairée que l'on voit qui change.",
-   "id": "sciences-lune#7"
+   "id": "sciences-lune#b145d0e3"
   },
   {
    "type": "qcm",
@@ -547,7 +547,7 @@
    ],
    "hint": "Sa face éclairée est tournée vers le Soleil, pas vers nous.",
    "explain": "À la nouvelle lune, on ne voit pas la Lune.",
-   "id": "sciences-lune#8"
+   "id": "sciences-lune#abc73c3e"
   },
   {
    "type": "qcm",
@@ -564,7 +564,7 @@
    ],
    "hint": "Son nom dit qu'elle est complète.",
    "explain": "À la pleine lune, toute la face tournée vers nous est éclairée.",
-   "id": "sciences-lune#9"
+   "id": "sciences-lune#f2b87ff4"
   },
   {
    "type": "qcm",
@@ -581,7 +581,7 @@
    ],
    "hint": "Elle arrive dans la première partie du cycle.",
    "explain": "Le premier quartier : une moitié éclairée, à droite.",
-   "id": "sciences-lune#10"
+   "id": "sciences-lune#97b1ce89"
   },
   {
    "type": "qcm",
@@ -598,7 +598,7 @@
    ],
    "hint": "Elle arrive à la fin du cycle.",
    "explain": "Le dernier quartier : une moitié éclairée, à gauche.",
-   "id": "sciences-lune#11"
+   "id": "sciences-lune#5523c0db"
   },
   {
    "type": "qcm",
@@ -616,7 +616,7 @@
    ],
    "hint": "La Lune commence à grandir, tout doucement.",
    "explain": "Après la nouvelle lune, un fin croissant apparaît : le premier croissant.",
-   "id": "sciences-lune#12"
+   "id": "sciences-lune#aa1af9e1"
   },
   {
    "type": "qcm",
@@ -634,7 +634,7 @@
    ],
    "hint": "Elle est déjà complète : elle ne peut pas être plus grande.",
    "explain": "Après la pleine lune, la Lune diminue jusqu'à la nouvelle lune.",
-   "id": "sciences-lune#13"
+   "id": "sciences-lune#03a4a74d"
   },
   {
    "type": "qcm",
@@ -652,7 +652,7 @@
    ],
    "hint": "Chez nous, la Lune qui grandit est éclairée à droite.",
    "explain": "Éclairé à gauche : c'est le dernier croissant. Bientôt, la nouvelle lune.",
-   "id": "sciences-lune#14"
+   "id": "sciences-lune#fff3962f"
   },
   {
    "type": "qcm",
@@ -670,7 +670,7 @@
    ],
    "hint": "Croître veut dire grandir.",
    "explain": "Presque pleine et elle grandit : c'est la Lune gibbeuse croissante.",
-   "id": "sciences-lune#15"
+   "id": "sciences-lune#a29a4043"
   },
   {
    "type": "qcm",
@@ -688,7 +688,7 @@
    ],
    "hint": "Pour qu'il existe, il faut de l'air.",
    "explain": "La Lune n'a pas d'atmosphère : pas d'air, donc pas de vent.",
-   "id": "sciences-lune#16"
+   "id": "sciences-lune#c8f485e0"
   },
   {
    "type": "qcm",
@@ -705,7 +705,7 @@
    ],
    "hint": "Sur une plage, qu'est-ce qui efface les traces de pas ?",
    "explain": "Sans atmosphère, pas de vent ni de pluie : les traces restent.",
-   "id": "sciences-lune#17"
+   "id": "sciences-lune#a9a5dc37"
   },
   {
    "type": "qcm",
@@ -723,7 +723,7 @@
    ],
    "hint": "Pense à ce que tu fais sans y penser, à chaque seconde.",
    "explain": "La Lune n'a pas d'atmosphère : son casque lui apporte de l'air.",
-   "id": "sciences-lune#18"
+   "id": "sciences-lune#71da518d"
   },
   {
    "type": "qcm",
@@ -741,7 +741,7 @@
    ],
    "hint": "Ce sont des cailloux venus de l'espace.",
    "explain": "Des météorites se sont écrasées sur la Lune et ont creusé des cratères.",
-   "id": "sciences-lune#19"
+   "id": "sciences-lune#c598c613"
   },
   {
    "type": "qcm",
@@ -759,7 +759,7 @@
    ],
    "hint": "Sur Terre, le vent et la pluie usent les roches petit à petit.",
    "explain": "Pas de vent, pas de pluie : les cratères ne s'effacent presque pas.",
-   "id": "sciences-lune#20"
+   "id": "sciences-lune#7ab6547f"
   },
   {
    "type": "qcm",
@@ -776,7 +776,7 @@
    ],
    "hint": "Dans le ciel, elle paraît grande car elle est proche de nous.",
    "explain": "La Lune est environ quatre fois plus petite que la Terre.",
-   "id": "sciences-lune#21"
+   "id": "sciences-lune#d6663e49"
   },
   {
    "type": "qcm",
@@ -793,7 +793,7 @@
    ],
    "hint": "La Lune est petite : elle attire moins les objets que la Terre.",
    "explain": "Sur la Lune, on pèse six fois moins lourd que sur la Terre.",
-   "id": "sciences-lune#22"
+   "id": "sciences-lune#0b82bbb5"
   },
   {
    "type": "qcm",
@@ -810,7 +810,7 @@
    ],
    "hint": "C'était un astronaute américain de la mission Apollo 11.",
    "explain": "Neil Armstrong a marché sur la Lune en 1969.",
-   "id": "sciences-lune#23"
+   "id": "sciences-lune#5168c6b7"
   },
   {
    "type": "qcm",
@@ -827,7 +827,7 @@
    ],
    "hint": "Tes grands-parents étaient peut-être déjà nés.",
    "explain": "C'était en 1969, avec la mission Apollo 11.",
-   "id": "sciences-lune#24"
+   "id": "sciences-lune#072f8140"
   },
   {
    "type": "qcm",
@@ -845,7 +845,7 @@
    ],
    "hint": "Il faut quitter la Terre et traverser l'espace, où il n'y a pas d'air.",
    "explain": "Une énorme fusée les a emmenés jusqu'à la Lune.",
-   "id": "sciences-lune#25"
+   "id": "sciences-lune#401c0885"
   },
   {
    "type": "qcm",
@@ -862,7 +862,7 @@
    ],
    "hint": "Un astre se glisse entre nous et le Soleil.",
    "explain": "Pendant une éclipse de Soleil, la Lune cache le Soleil.",
-   "id": "sciences-lune#26"
+   "id": "sciences-lune#3fd552a9"
   },
   {
    "type": "qcm",
@@ -879,7 +879,7 @@
    ],
    "hint": "Pense à notre planète, entre le Soleil et la Lune.",
    "explain": "La Terre empêche la lumière du Soleil d'arriver sur la Lune.",
-   "id": "sciences-lune#27"
+   "id": "sciences-lune#7428cecc"
   },
   {
    "type": "qcm",
@@ -896,7 +896,7 @@
    ],
    "hint": "Cet astre attire l'eau des océans.",
    "explain": "La Lune attire l'eau des océans : c'est la principale cause des marées.",
-   "id": "sciences-lune#28"
+   "id": "sciences-lune#382bdbb5"
   },
   {
    "type": "qcm",
@@ -914,7 +914,7 @@
    ],
    "hint": "Une étoile produit sa propre lumière.",
    "explain": "La Lune n'est pas une étoile : c'est le satellite naturel de la Terre.",
-   "id": "sciences-lune#29"
+   "id": "sciences-lune#c2479cb1"
   },
   {
    "type": "vf",
@@ -925,7 +925,7 @@
    "q": "La Lune produit sa propre lumière.",
    "answer": false,
    "explain": "Elle est éclairée par le Soleil.",
-   "id": "sciences-lune#30"
+   "id": "sciences-lune#1d6782d1"
   },
   {
    "type": "vf",
@@ -936,7 +936,7 @@
    "q": "La Lune tourne autour de la Terre.",
    "answer": true,
    "explain": "C'est le satellite naturel de la Terre.",
-   "id": "sciences-lune#31"
+   "id": "sciences-lune#3981c8bf"
   },
   {
    "type": "vf",
@@ -947,7 +947,7 @@
    "q": "Sur la Lune, il y a de l'air pour respirer.",
    "answer": false,
    "explain": "La Lune n'a pas d'atmosphère.",
-   "id": "sciences-lune#32"
+   "id": "sciences-lune#007c526a"
   },
   {
    "type": "vf",
@@ -958,7 +958,7 @@
    "q": "Depuis la Terre, on voit toujours la même face de la Lune.",
    "answer": true,
    "explain": "L'autre côté s'appelle la face cachée.",
-   "id": "sciences-lune#33"
+   "id": "sciences-lune#b730f3c2"
   },
   {
    "type": "vf",
@@ -969,7 +969,7 @@
    "q": "À la nouvelle lune, on voit un disque tout rond.",
    "answer": false,
    "explain": "À la nouvelle lune, on ne voit pas la Lune.",
-   "id": "sciences-lune#34"
+   "id": "sciences-lune#f7a6e730"
   },
   {
    "type": "vf",
@@ -980,7 +980,7 @@
    "q": "Neil Armstrong a été le premier homme à marcher sur la Lune.",
    "answer": true,
    "explain": "C'était en 1969, avec la mission Apollo 11.",
-   "id": "sciences-lune#35"
+   "id": "sciences-lune#335b53a0"
   },
   {
    "type": "vf",
@@ -991,7 +991,7 @@
    "q": "La Lune est plus grande que la Terre.",
    "answer": false,
    "explain": "Elle est environ quatre fois plus petite.",
-   "id": "sciences-lune#36"
+   "id": "sciences-lune#c52953e2"
   },
   {
    "type": "vf",
@@ -1002,7 +1002,7 @@
    "q": "Sur la Lune, on pèse moins lourd que sur la Terre.",
    "answer": true,
    "explain": "On y pèse six fois moins lourd.",
-   "id": "sciences-lune#37"
+   "id": "sciences-lune#28de0db0"
   },
   {
    "type": "vf",
@@ -1013,7 +1013,7 @@
    "q": "La Lune change vraiment de forme chaque soir.",
    "answer": false,
    "explain": "Elle reste ronde : c'est la partie éclairée que l'on voit qui change.",
-   "id": "sciences-lune#38"
+   "id": "sciences-lune#86ff257d"
   },
   {
    "type": "vf",
@@ -1024,7 +1024,7 @@
    "q": "Une lunaison dure environ une semaine.",
    "answer": false,
    "explain": "Elle dure environ vingt-neuf jours et demi.",
-   "id": "sciences-lune#39"
+   "id": "sciences-lune#b3781fc6"
   },
   {
    "type": "vf",
@@ -1036,7 +1036,7 @@
    "q": "Les cratères de la Lune ont été creusés par des météorites.",
    "answer": true,
    "explain": "Ces cailloux venus de l'espace ont creusé des trous ronds.",
-   "id": "sciences-lune#40"
+   "id": "sciences-lune#25fd918e"
   },
   {
    "type": "schema",
@@ -1047,7 +1047,7 @@
    "target": "pleine-lune",
    "q": "Touche la pleine lune sur le dessin.",
    "explain": "La pleine lune : un disque rond, entièrement éclairé.",
-   "id": "sciences-lune#41"
+   "id": "sciences-lune#1f8dba4f"
   },
   {
    "type": "schema",
@@ -1058,7 +1058,7 @@
    "target": "nouvelle-lune",
    "q": "Touche la nouvelle lune sur le dessin.",
    "explain": "À la nouvelle lune, on ne voit pas la partie éclairée.",
-   "id": "sciences-lune#42"
+   "id": "sciences-lune#79ed928b"
   },
   {
    "type": "schema",
@@ -1069,7 +1069,7 @@
    "target": "premier-quartier",
    "q": "Touche le premier quartier sur le dessin.",
    "explain": "Le premier quartier : la moitié droite est éclairée.",
-   "id": "sciences-lune#43"
+   "id": "sciences-lune#e2544bf3"
   },
   {
    "type": "schema",
@@ -1080,7 +1080,7 @@
    "target": "dernier-quartier",
    "q": "Touche le dernier quartier sur le dessin.",
    "explain": "Le dernier quartier : la moitié gauche est éclairée.",
-   "id": "sciences-lune#44"
+   "id": "sciences-lune#d7daa181"
   },
   {
    "type": "schema",
@@ -1091,7 +1091,7 @@
    "target": "premier-croissant",
    "q": "Touche le premier croissant sur le dessin.",
    "explain": "Le premier croissant : un fin croissant éclairé à droite.",
-   "id": "sciences-lune#45"
+   "id": "sciences-lune#655efe41"
   },
   {
    "type": "schema",
@@ -1102,7 +1102,7 @@
    "target": "dernier-croissant",
    "q": "Touche le dernier croissant sur le dessin.",
    "explain": "Le dernier croissant : un fin croissant éclairé à gauche.",
-   "id": "sciences-lune#46"
+   "id": "sciences-lune#0a8f77d9"
   },
   {
    "type": "schema",
@@ -1113,7 +1113,7 @@
    "target": "gibbeuse-croissante",
    "q": "Touche la Lune presque pleine qui grandit encore.",
    "explain": "C'est la Lune gibbeuse croissante, juste avant la pleine lune.",
-   "id": "sciences-lune#47"
+   "id": "sciences-lune#a6b1202b"
   },
   {
    "type": "schema",
@@ -1124,7 +1124,7 @@
    "target": "gibbeuse-decroissante",
    "q": "Touche la Lune presque pleine qui commence à diminuer.",
    "explain": "C'est la Lune gibbeuse décroissante, juste après la pleine lune.",
-   "id": "sciences-lune#48"
+   "id": "sciences-lune#f49caf38"
   },
   {
    "type": "schema",
@@ -1136,7 +1136,7 @@
    "target": "nouvelle-lune",
    "q": "Touche la Lune qui se trouve entre la Terre et le Soleil.",
    "explain": "C'est la nouvelle lune : sa face éclairée ne nous regarde pas.",
-   "id": "sciences-lune#49"
+   "id": "sciences-lune#1fd7baa3"
   },
   {
    "type": "schema",
@@ -1148,7 +1148,7 @@
    "target": "premier-croissant",
    "q": "Touche la phase qui vient juste après la nouvelle lune.",
    "explain": "Juste après la nouvelle lune, voici le premier croissant.",
-   "id": "sciences-lune#50"
+   "id": "sciences-lune#8886e557"
   },
   {
    "type": "schema",
@@ -1160,7 +1160,7 @@
    "target": "pleine-lune",
    "q": "Touche la Lune dont toute la face tournée vers nous est éclairée.",
    "explain": "C'est la pleine lune.",
-   "id": "sciences-lune#51"
+   "id": "sciences-lune#93c86421"
   },
   {
    "type": "placer",
@@ -1211,7 +1211,7 @@
      "target": "d"
     }
    ],
-   "id": "sciences-lune#52"
+   "id": "sciences-lune#73b7a9be"
   },
   {
    "type": "placer",
@@ -1262,7 +1262,7 @@
      "target": "d"
     }
    ],
-   "id": "sciences-lune#53"
+   "id": "sciences-lune#2c21ae52"
   },
   {
    "type": "placer",
@@ -1319,7 +1319,7 @@
      "target": "d"
     }
    ],
-   "id": "sciences-lune#54"
+   "id": "sciences-lune#2fac803e"
   },
   {
    "type": "placer",
@@ -1381,7 +1381,7 @@
      "target": "l"
     }
    ],
-   "id": "sciences-lune#55"
+   "id": "sciences-lune#de0e526d"
   },
   {
    "type": "placer",
@@ -1431,7 +1431,7 @@
      "target": "q2"
     }
    ],
-   "id": "sciences-lune#56"
+   "id": "sciences-lune#e5f95161"
   },
   {
    "type": "placer",
@@ -1472,7 +1472,7 @@
      "target": "c"
     }
    ],
-   "id": "sciences-lune#57"
+   "id": "sciences-lune#d3e108d7"
   },
   {
    "type": "placer",
@@ -1515,7 +1515,7 @@
      "target": "4"
     }
    ],
-   "id": "sciences-lune#58"
+   "id": "sciences-lune#94f88d6c"
   },
   {
    "type": "placer",
@@ -1558,7 +1558,7 @@
      "target": "4"
     }
    ],
-   "id": "sciences-lune#59"
+   "id": "sciences-lune#58fa3aea"
   },
   {
    "type": "qcm",
@@ -1581,7 +1581,7 @@
     "Éclipse"
    ],
    "explain": "Un satellite naturel : astre qui tourne autour d'une planète.",
-   "id": "sciences-lune#60"
+   "id": "sciences-lune#1f9407f3"
   },
   {
    "type": "qcm",
@@ -1605,7 +1605,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "Un satellite naturel : astre qui tourne autour d'une planète.",
-   "id": "sciences-lune#61"
+   "id": "sciences-lune#5a6d7e43"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "satellite"
+   ],
+   "q": "« Satellite naturel » veut dire : astre qui tourne autour d'une planète.",
+   "explain": "Un satellite naturel : astre qui tourne autour d'une planète.",
+   "id": "sciences-lune#a68089c6"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "satellite"
+   ],
+   "q": "« Satellite naturel » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+   "explain": "Un satellite naturel : astre qui tourne autour d'une planète.",
+   "id": "sciences-lune#5675f64c"
   },
   {
    "type": "qcm",
@@ -1628,7 +1652,7 @@
     "Éclipse"
    ],
    "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
-   "id": "sciences-lune#62"
+   "id": "sciences-lune#893da47e"
   },
   {
    "type": "qcm",
@@ -1652,7 +1676,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
-   "id": "sciences-lune#63"
+   "id": "sciences-lune#f67db8b6"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "orbite"
+   ],
+   "q": "« Orbite » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+   "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+   "id": "sciences-lune#cf18a0ea"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "orbite"
+   ],
+   "q": "« Orbite » veut dire : un tour complet d'un astre autour d'un autre.",
+   "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+   "id": "sciences-lune#9b41bddc"
   },
   {
    "type": "qcm",
@@ -1675,7 +1723,7 @@
     "Éclipse"
    ],
    "explain": "La révolution : un tour complet d'un astre autour d'un autre.",
-   "id": "sciences-lune#64"
+   "id": "sciences-lune#ddae6e09"
   },
   {
    "type": "qcm",
@@ -1699,7 +1747,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "La révolution : un tour complet d'un astre autour d'un autre.",
-   "id": "sciences-lune#65"
+   "id": "sciences-lune#fd7d642d"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "revolution"
+   ],
+   "q": "« Révolution » veut dire : un tour complet d'un astre autour d'un autre.",
+   "explain": "La révolution : un tour complet d'un astre autour d'un autre.",
+   "id": "sciences-lune#144f674e"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "revolution"
+   ],
+   "q": "« Révolution » veut dire : forme de la partie éclairée de la Lune, vue depuis la Terre.",
+   "explain": "La révolution : un tour complet d'un astre autour d'un autre.",
+   "id": "sciences-lune#c52d76a7"
   },
   {
    "type": "qcm",
@@ -1722,7 +1794,7 @@
     "Éclipse"
    ],
    "explain": "Une phase : forme de la partie éclairée de la Lune, vue depuis la Terre.",
-   "id": "sciences-lune#66"
+   "id": "sciences-lune#d4a3a454"
   },
   {
    "type": "qcm",
@@ -1746,7 +1818,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "Une phase : forme de la partie éclairée de la Lune, vue depuis la Terre.",
-   "id": "sciences-lune#67"
+   "id": "sciences-lune#7e50c85e"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "phase"
+   ],
+   "q": "« Phase » veut dire : forme de la partie éclairée de la Lune, vue depuis la Terre.",
+   "explain": "Une phase : forme de la partie éclairée de la Lune, vue depuis la Terre.",
+   "id": "sciences-lune#3832dbcd"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "phase"
+   ],
+   "q": "« Phase » veut dire : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
+   "explain": "Une phase : forme de la partie éclairée de la Lune, vue depuis la Terre.",
+   "id": "sciences-lune#82b3d9cd"
   },
   {
    "type": "qcm",
@@ -1769,7 +1865,7 @@
     "Éclipse"
    ],
    "explain": "La lunaison : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
-   "id": "sciences-lune#68"
+   "id": "sciences-lune#b08f837e"
   },
   {
    "type": "qcm",
@@ -1793,7 +1889,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "La lunaison : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
-   "id": "sciences-lune#69"
+   "id": "sciences-lune#0facd316"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "lunaison"
+   ],
+   "q": "« Lunaison » veut dire : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
+   "explain": "La lunaison : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
+   "id": "sciences-lune#320b3bd2"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "lunaison"
+   ],
+   "q": "« Lunaison » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "explain": "La lunaison : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
+   "id": "sciences-lune#4122b167"
   },
   {
    "type": "qcm",
@@ -1816,7 +1936,7 @@
     "Éclipse"
    ],
    "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
-   "id": "sciences-lune#70"
+   "id": "sciences-lune#0f1012e0"
   },
   {
    "type": "qcm",
@@ -1840,7 +1960,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
-   "id": "sciences-lune#71"
+   "id": "sciences-lune#d60f2040"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "« Face cachée » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "id": "sciences-lune#1197fc98"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "« Face cachée » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+   "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "id": "sciences-lune#48843533"
   },
   {
    "type": "qcm",
@@ -1863,7 +2007,7 @@
     "Éclipse"
    ],
    "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
-   "id": "sciences-lune#72"
+   "id": "sciences-lune#0bd200d0"
   },
   {
    "type": "qcm",
@@ -1887,7 +2031,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
-   "id": "sciences-lune#73"
+   "id": "sciences-lune#dff0d715"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "cratere"
+   ],
+   "q": "« Cratère » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+   "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+   "id": "sciences-lune#c89677f7"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "cratere"
+   ],
+   "q": "« Cratère » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+   "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+   "id": "sciences-lune#21e0be7a"
   },
   {
    "type": "qcm",
@@ -1910,7 +2078,7 @@
     "Éclipse"
    ],
    "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
-   "id": "sciences-lune#74"
+   "id": "sciences-lune#d79eb43c"
   },
   {
    "type": "qcm",
@@ -1934,7 +2102,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
-   "id": "sciences-lune#75"
+   "id": "sciences-lune#66ae006b"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "meteorite"
+   ],
+   "q": "« Météorite » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+   "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+   "id": "sciences-lune#1ec90df9"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "meteorite"
+   ],
+   "q": "« Météorite » veut dire : couche d'air qui entoure une planète.",
+   "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+   "id": "sciences-lune#96e26cb2"
   },
   {
    "type": "qcm",
@@ -1957,7 +2149,7 @@
     "Éclipse"
    ],
    "explain": "L'atmosphère : couche d'air qui entoure une planète.",
-   "id": "sciences-lune#76"
+   "id": "sciences-lune#0ec5cf58"
   },
   {
    "type": "qcm",
@@ -1981,7 +2173,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "L'atmosphère : couche d'air qui entoure une planète.",
-   "id": "sciences-lune#77"
+   "id": "sciences-lune#d5e4d2d3"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "« Atmosphère » veut dire : couche d'air qui entoure une planète.",
+   "explain": "L'atmosphère : couche d'air qui entoure une planète.",
+   "id": "sciences-lune#fd77f967"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "« Atmosphère » veut dire : personne qui voyage dans l'espace.",
+   "explain": "L'atmosphère : couche d'air qui entoure une planète.",
+   "id": "sciences-lune#5152c42e"
   },
   {
    "type": "qcm",
@@ -2004,7 +2220,7 @@
     "Éclipse"
    ],
    "explain": "Un astronaute : personne qui voyage dans l'espace.",
-   "id": "sciences-lune#78"
+   "id": "sciences-lune#046050c7"
   },
   {
    "type": "qcm",
@@ -2028,7 +2244,31 @@
     "Moment où un astre cache la lumière d'un autre"
    ],
    "explain": "Un astronaute : personne qui voyage dans l'espace.",
-   "id": "sciences-lune#79"
+   "id": "sciences-lune#6a83c9d9"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "astronaute"
+   ],
+   "q": "« Astronaute » veut dire : personne qui voyage dans l'espace.",
+   "explain": "Un astronaute : personne qui voyage dans l'espace.",
+   "id": "sciences-lune#41e07dc5"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "astronaute"
+   ],
+   "q": "« Astronaute » veut dire : moment où un astre cache la lumière d'un autre.",
+   "explain": "Un astronaute : personne qui voyage dans l'espace.",
+   "id": "sciences-lune#05f8f908"
   },
   {
    "type": "qcm",
@@ -2051,7 +2291,7 @@
     "Astronaute"
    ],
    "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
-   "id": "sciences-lune#80"
+   "id": "sciences-lune#3d23f309"
   },
   {
    "type": "qcm",
@@ -2075,7 +2315,31 @@
     "Personne qui voyage dans l'espace"
    ],
    "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
-   "id": "sciences-lune#81"
+   "id": "sciences-lune#ff1e9de3"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "« Éclipse » veut dire : moment où un astre cache la lumière d'un autre.",
+   "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
+   "id": "sciences-lune#89374159"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "« Éclipse » veut dire : astre qui tourne autour d'une planète.",
+   "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
+   "id": "sciences-lune#457ca147"
   },
   {
    "type": "placer",
@@ -2116,7 +2380,7 @@
      "target": "revolution"
     }
    ],
-   "id": "sciences-lune#82"
+   "id": "sciences-lune#91a3a01c"
   },
   {
    "type": "placer",
@@ -2157,7 +2421,7 @@
      "target": "face-cachee"
     }
    ],
-   "id": "sciences-lune#83"
+   "id": "sciences-lune#0665ddca"
   },
   {
    "type": "placer",
@@ -2198,7 +2462,7 @@
      "target": "atmosphere"
     }
    ],
-   "id": "sciences-lune#84"
+   "id": "sciences-lune#61695c72"
   }
  ],
  "images": {
@@ -2651,14 +2915,14 @@
   "Range les phases dans l'ordre, quand la Lune diminue.",
   "Range les phases dans l'ordre, quand la Lune grandit.",
   "Reconstruis la phrase mémo.",
-  "Regarde, la Lune gibbeuse croissante est ici.",
-  "Regarde, la Lune gibbeuse décroissante est ici.",
-  "Regarde, la nouvelle lune est ici.",
-  "Regarde, la pleine lune est ici.",
-  "Regarde, le dernier croissant est ici.",
-  "Regarde, le dernier quartier est ici.",
-  "Regarde, le premier croissant est ici.",
-  "Regarde, le premier quartier est ici.",
+  "Regarde, voici la Lune gibbeuse croissante.",
+  "Regarde, voici la Lune gibbeuse décroissante.",
+  "Regarde, voici la nouvelle lune.",
+  "Regarde, voici la pleine lune.",
+  "Regarde, voici le dernier croissant.",
+  "Regarde, voici le dernier quartier.",
+  "Regarde, voici le premier croissant.",
+  "Regarde, voici le premier quartier.",
   "Relie chaque début de phrase à sa fin.",
   "Relie chaque mot à sa définition.",
   "Relie chaque phase à ce que l'on voit dans le ciel.",
@@ -2727,6 +2991,28 @@
   "Vrai ou faux ? Sur la Lune, il y a de l'air pour respirer.",
   "Vrai ou faux ? Sur la Lune, on pèse moins lourd que sur la Terre.",
   "Vrai ou faux ? Une lunaison dure environ une semaine.",
+  "Vrai ou faux ? « Astronaute » veut dire : moment où un astre cache la lumière d'un autre.",
+  "Vrai ou faux ? « Astronaute » veut dire : personne qui voyage dans l'espace.",
+  "Vrai ou faux ? « Atmosphère » veut dire : couche d'air qui entoure une planète.",
+  "Vrai ou faux ? « Atmosphère » veut dire : personne qui voyage dans l'espace.",
+  "Vrai ou faux ? « Cratère » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+  "Vrai ou faux ? « Cratère » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+  "Vrai ou faux ? « Face cachée » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+  "Vrai ou faux ? « Face cachée » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+  "Vrai ou faux ? « Lunaison » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+  "Vrai ou faux ? « Lunaison » veut dire : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
+  "Vrai ou faux ? « Météorite » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+  "Vrai ou faux ? « Météorite » veut dire : couche d'air qui entoure une planète.",
+  "Vrai ou faux ? « Orbite » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+  "Vrai ou faux ? « Orbite » veut dire : un tour complet d'un astre autour d'un autre.",
+  "Vrai ou faux ? « Phase » veut dire : forme de la partie éclairée de la Lune, vue depuis la Terre.",
+  "Vrai ou faux ? « Phase » veut dire : temps entre deux nouvelles lunes, environ vingt-neuf jours et demi.",
+  "Vrai ou faux ? « Révolution » veut dire : forme de la partie éclairée de la Lune, vue depuis la Terre.",
+  "Vrai ou faux ? « Révolution » veut dire : un tour complet d'un astre autour d'un autre.",
+  "Vrai ou faux ? « Satellite naturel » veut dire : astre qui tourne autour d'une planète.",
+  "Vrai ou faux ? « Satellite naturel » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+  "Vrai ou faux ? « Éclipse » veut dire : astre qui tourne autour d'une planète.",
+  "Vrai ou faux ? « Éclipse » veut dire : moment où un astre cache la lumière d'un autre.",
   "Vrai ou faux ? À la nouvelle lune, on voit un disque tout rond.",
   "Vue de la Terre, la partie éclairée change de forme : ce sont les phases de la Lune. Nouvelle lune, premier croissant, premier quartier, pleine lune, dernier quartier, dernier croissant, puis tout recommence.",
   "a marché sur la Lune en 1969",

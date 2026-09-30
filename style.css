@@ -176,8 +176,8 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .pool-cell.used { visibility: hidden; }
 .block { font-size: 24px; min-height: 72px; }
 .block.lifted { opacity: .3; }
-.ghost { position: fixed; z-index: 20; pointer-events: none; display: flex; align-items: center; padding: 12px 18px; font-size: 24px; background: var(--primary-soft); border: 3px solid var(--primary); border-radius: var(--radius); box-shadow: 0 10px 24px rgba(43, 42, 51, .25); }
-.ghost.back { transition: transform .3s ease-in; }
+.drag-ghost { position: fixed; z-index: 20; pointer-events: none; display: flex; align-items: center; padding: 12px 18px; font-size: 24px; background: var(--primary-soft); border: 3px solid var(--primary); border-radius: var(--radius); box-shadow: 0 10px 24px rgba(43, 42, 51, .25); }
+.drag-ghost.back { transition: transform .3s ease-in; }
 .phrase-full { display: flex; align-items: center; gap: 18px; padding: 18px 22px; border: 3px solid var(--good); background: var(--good-soft); border-radius: var(--radius); font-size: 28px; font-weight: 700; }
 .phrase-full .phrase-text { flex: 1; }
 
