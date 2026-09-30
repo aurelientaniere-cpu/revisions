@@ -103,8 +103,9 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .choice-row { display: grid; grid-template-columns: 1fr 72px; gap: 12px; align-items: stretch; }
 .choice { text-align: left; font-size: 26px; width: 100%; }
 .ear-btn { min-height: 72px; font-size: 28px; }
-.ear { min-height: 44px; min-width: 44px; padding: 4px 8px; font-size: 20px; border-width: 2px; box-shadow: none; background: var(--primary-soft); border-color: transparent; border-radius: 14px; flex: none; }
-.token-wrap { display: inline-flex; align-items: center; gap: 6px; }
+.ear { min-height: 52px; min-width: 52px; padding: 4px 8px; font-size: 22px; border-width: 2px; box-shadow: none; background: var(--primary-soft); border-color: transparent; border-radius: 14px; flex: none; }
+/* Le 🔊 est écarté de l'étiquette pour éviter de toucher l'un à la place de l'autre. */
+.token-wrap { display: inline-flex; align-items: center; gap: 16px; }
 .tlabel { flex: 1; }
 .reading { border-color: var(--primary); background: var(--primary-soft); }
 .good { border-color: var(--good) !important; background: var(--good-soft) !important; }
@@ -131,7 +132,7 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .targets.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .targets.cols-2 { grid-template-columns: repeat(2, 1fr); }
 .target { min-height: 150px; background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); cursor: pointer; display: flex; flex-direction: column; gap: 8px; align-items: stretch; text-align: left; font-size: 24px; }
-.target .tname { font-weight: 700; display: flex; align-items: center; gap: 8px; }
+.target .tname { font-weight: 700; display: flex; align-items: center; gap: 14px; }
 .target .placed { display: flex; flex-wrap: wrap; gap: 6px; }
 .target .placed span { font-size: 20px; background: rgba(255,255,255,.8); border-radius: 12px; padding: 4px 10px; }
 .frise { position: relative; padding-top: 12px; }
@@ -139,10 +140,46 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .frise::after { content: ""; position: absolute; right: 0; top: 36px; border: 12px solid transparent; border-left: 24px solid var(--ink); border-right: 0; }
 .frise .target { position: relative; margin-top: 56px; min-height: 120px; }
 .frise .date { position: absolute; top: -62px; left: 50%; transform: translateX(-50%); background: var(--ink); color: #fff; font-weight: 700; padding: 2px 14px; border-radius: 12px; white-space: nowrap; font-size: 22px; }
-.relie .target { min-height: 88px; }
-.phrase-line { display: flex; flex-wrap: wrap; gap: 12px; }
-.phrase-line .target { min-height: 72px; min-width: 150px; justify-content: center; font-size: 24px; }
-.phrase-line .target .num { font-size: 18px; color: var(--muted); }
+
+/* glisser du doigt (js/drag.js) : pas de défilement ni de loupe iOS pendant le geste */
+.drag { touch-action: none; -webkit-touch-callout: none; }
+.miss { border-color: var(--hint) !important; background: var(--hint-soft) !important; animation: wobble .3s ease-in-out 2; }
+.over { border-color: var(--primary) !important; background: var(--primary-soft) !important; }
+@keyframes wobble { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+/* relier : mots à gauche, définitions à droite, traits dans un calque SVG */
+.relie-board { position: relative; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); column-gap: 88px; row-gap: 18px; align-items: center; }
+.relie-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 1; }
+.relie-lines line { stroke-width: 7; stroke-linecap: round; }
+.relie-lines line.temp { stroke-dasharray: 2 14; }
+.relie-lines line.wrong { animation: wobble .3s ease-in-out 2; }
+.relie-row { display: flex; align-items: center; gap: 16px; }
+.relie-card { position: relative; flex: 1; min-width: 0; min-height: 88px; display: flex; align-items: center; padding: 12px 20px; background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); cursor: pointer; text-align: left; }
+.relie-word { font-size: 26px; font-weight: 700; }
+.relie-def { font-size: 22px; line-height: 1.4; }
+.relie-card .dot { position: absolute; top: 50%; width: 26px; height: 26px; margin-top: -13px; border-radius: 50%; background: var(--card); border: 5px solid var(--primary); z-index: 2; }
+.relie-word .dot { right: -16px; }
+.relie-def .dot { left: -16px; }
+.relie-card.paired { box-shadow: none; cursor: default; }
+.relie-card.paired .dot { background: var(--pair); border-color: var(--pair); }
+.relie-card.selected .dot { background: var(--primary); }
+
+/* phrase : cases numérotées en haut, morceaux dessous */
+/* 2 cases par ligne (3 en paysage si la phrase a 3 morceaux) ; chaque case a la place pour 2 lignes : rien ne bouge quand elle se remplit */
+.phrase-slots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (min-width: 900px) { .phrase-slots.n3 { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.slot { min-height: 100px; display: flex; align-items: center; gap: 12px; padding: 10px 16px; border: 3px dashed #c9c0a8; border-radius: var(--radius); background: rgba(255,255,255,.6); cursor: pointer; font-size: 22px; line-height: 1.3; }
+.slot .num { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 700; font-size: 22px; display: flex; align-items: center; justify-content: center; }
+.slot.filled { border-style: solid; cursor: default; }
+.phrase-pool { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-top: 12px; }
+.pool-cell { display: inline-flex; align-items: center; gap: 16px; }
+.pool-cell.used { visibility: hidden; }
+.block { font-size: 24px; min-height: 72px; }
+.block.lifted { opacity: .3; }
+.ghost { position: fixed; z-index: 20; pointer-events: none; display: flex; align-items: center; padding: 12px 18px; font-size: 24px; background: var(--primary-soft); border: 3px solid var(--primary); border-radius: var(--radius); box-shadow: 0 10px 24px rgba(43, 42, 51, .25); }
+.ghost.back { transition: transform .3s ease-in; }
+.phrase-full { display: flex; align-items: center; gap: 18px; padding: 18px 22px; border: 3px solid var(--good); background: var(--good-soft); border-radius: var(--radius); font-size: 28px; font-weight: 700; }
+.phrase-full .phrase-text { flex: 1; }
 
 /* schéma */
 .schema-wrap { background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); padding: 8px; }
@@ -196,6 +233,9 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
   .targets.cols-3 { grid-template-columns: 1fr; }
   .discover { grid-template-columns: 1fr; text-align: center; }
   .prompt .text { font-size: 24px; }
+  .relie-board { column-gap: 56px; }
+  .relie-word { font-size: 22px; }
+  .relie-def { font-size: 19px; }
 }
 
 /* illustrations */

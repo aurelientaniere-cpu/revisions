@@ -1,11 +1,13 @@
 // Les activités. Chacune affiche une question et appelle finish('ok' | 'partial' | 'fail').
 // Règles : seule la consigne est lue automatiquement ; chaque réponse ou étiquette a son 🔊.
-// On touche au lieu d'écrire ou de glisser. Une erreur n'est jamais punie : indice d'abord,
+// On touche au lieu d'écrire ; pour relier et placer, on peut aussi glisser du doigt
+// (toujours avec l'alternative « toucher, puis toucher la cible »). Une erreur n'est jamais punie : indice d'abord,
 // puis la réponse est montrée.
 
 import { h, shuffle, pick } from './util.js';
 import { say, stop } from './speech.js';
 import { P, fill } from './phrases.js';
+import { draggable, nearest, flash } from './drag.js';
 
 const MAX_CHOICES = 4;
 
@@ -181,11 +183,9 @@ async function schema(item, { root, lesson, done }) {
   say(item.q);
 }
 
-/* ---------- Placer : trier, frise, relier, phrase ----------
-   On touche une étiquette pour la choisir (son 🔊 la lit), puis l'endroit où elle va. */
-function placer(item, { root, done }) {
-  const { body, fb } = frame(root, item.q);
-  const finish = finisher(fb, done);
+/* ---------- Placer : trier, frise, relier, phrase ---------- */
+// Tire `sample` étiquettes en alternant les cibles, puis mélange.
+function sampleTokens(item) {
   let tokens = item.tokens;
   if (item.sample && tokens.length > item.sample) {
     const byTarget = {};
@@ -198,8 +198,25 @@ function placer(item, { root, done }) {
     }
     tokens = out;
   }
-  tokens = shuffle(tokens).map((t) => ({ ...t, misses: 0 }));
+  return shuffle(tokens).map((t) => ({ ...t, misses: 0 }));
+}
+
+const resultOf = (errors) => (errors === 0 ? 'ok' : errors <= 2 ? 'partial' : 'fail');
+// Pas de « Bravo » après un échec.
+const endSegments = (result, end) => (result === 'fail' ? [end, P.placerFail] : [pick(P.bravo), end]);
+
+function placer(item, ctx) {
   const layout = item.layout || 'tri';
+  if (layout === 'relie') return relie(item, ctx);
+  if (layout === 'phrase') return phrase(item, ctx);
+  triFrise(item, ctx, layout);
+}
+
+/* Tri et frise : on touche une étiquette pour la choisir (son 🔊 la lit), puis l'endroit où elle va. */
+function triFrise(item, { root, done }, layout) {
+  const { body, fb } = frame(root, item.q);
+  const finish = finisher(fb, done);
+  const tokens = sampleTokens(item);
   let selected = null, errors = 0, left = tokens.length;
 
   const tokenBox = h('div', { class: 'tokens' });
@@ -211,15 +228,14 @@ function placer(item, { root, done }) {
   }
 
   const targetEls = {};
-  const targets = layout === 'relie' ? shuffle(item.targets) : item.targets;
-  const cols = layout === 'relie' || layout === 'phrase' ? '' : targets.length === 2 ? 'cols-2' : 'cols-3';
-  const targetBox = h('div', { class: `targets ${cols} ${layout}${layout === 'phrase' ? ' phrase-line' : ''}` });
-  targets.forEach((tg, i) => {
+  const targets = item.targets;
+  const cols = targets.length === 2 ? 'cols-2' : 'cols-3';
+  const targetBox = h('div', { class: `targets ${cols} ${layout}` });
+  targets.forEach((tg) => {
     const placed = h('div', { class: 'placed' });
     const style = tg.color ? { background: tg.color + '22', borderColor: tg.color } : {};
     const el = h('div', { class: 'target', role: 'button', style, onclick: () => drop(tg, el) },
       tg.date ? h('span', { class: 'date' }, tg.date) : null,
-      layout === 'phrase' ? h('span', { class: 'num' }, `${i + 1}`) : null,
       tg.label ? h('span', { class: 'tname' }, tg.emoji || '', h('span', { class: 'tlabel' }, tg.label), ear(tg.label)) : null,
       placed);
     el.placed = placed;
@@ -228,7 +244,6 @@ function placer(item, { root, done }) {
   });
 
   if (layout === 'frise') body.append(h('div', { class: 'frise' }, targetBox), tokenBox);
-  else if (layout === 'phrase') body.append(targetBox, tokenBox);
   else body.append(tokenBox, targetBox);
 
   function select(t) {
@@ -253,17 +268,296 @@ function placer(item, { root, done }) {
       if (layout !== 'tri') el.classList.add('good');
       fb.replaceChildren();
       if (--left) { say(pick(P.okSmall)); return; }
-      const result = errors === 0 ? 'ok' : errors <= 2 ? 'partial' : 'fail';
-      const end = layout === 'phrase'
-        ? item.targets.map((x) => item.tokens.find((k) => k.target === x.id).text).join(' ')
-        : item.explain || P.placerDone;
-      finish(result, [pick(P.bravo), end]);
+      const result = resultOf(errors);
+      finish(result, endSegments(result, item.explain || P.placerDone));
       return;
     }
     errors++;
     t.misses++;
     if (t.misses >= 2) targetEls[t.target].classList.add('hintglow');
     hint(fb, [t.misses >= 2 ? P.placerGlow : P.placerHere]);
+  }
+
+  say(item.q);
+}
+
+/* ---------- Relier : mots à gauche, définitions à droite ----------
+   On trace un trait du doigt depuis un mot jusqu'à sa définition,
+   ou on touche le mot puis la définition. Rien ne bouge à l'écran. */
+const PAIR_COLORS = ['#1f8fbf', '#d6457a', '#2f9e6a', '#9a6b2f', '#138a8a', '#b0413e']; // ni violet (sélection) ni orange (erreur)
+const WRONG = '#e89a1c';
+const SVGNS = 'http://www.w3.org/2000/svg';
+
+function relie(item, { root, done }) {
+  const { body, fb } = frame(root, item.q);
+  const finish = finisher(fb, done);
+  const words = sampleTokens(item);
+  const defs = shuffle(item.targets.filter((tg) => words.some((w) => w.target === tg.id))).map((tg) => ({ ...tg }));
+  let selected = null, errors = 0, left = words.length, finished = false, colorIdx = 0, temp = null;
+  const pairs = [];
+
+  const svg = document.createElementNS(SVGNS, 'svg');
+  svg.classList.add('relie-lines');
+  svg.setAttribute('aria-hidden', 'true');
+  const board = h('div', { class: 'relie-board' }, svg);
+  for (let i = 0; i < Math.max(words.length, defs.length); i++) {
+    board.append(words[i] ? wordRow(words[i]) : h('div'), defs[i] ? defRow(defs[i]) : h('div'));
+  }
+  body.append(board);
+
+  function wordRow(w) {
+    w.dot = h('span', { class: 'dot' });
+    w.el = h('button', { class: 'relie-card relie-word' }, h('span', { class: 'relie-text' }, w.text), w.dot);
+    draggable(w.el, {
+      can: () => !w.done && !finished,
+      tap: () => select(w),
+      start: () => startDrag(w),
+      move: (x, y) => dragMove(w, x, y),
+      end: (x, y) => dragEnd(w, x, y),
+      cancel: clearTemp,
+    });
+    return h('div', { class: 'relie-row words' }, ear(w.text), w.el);
+  }
+
+  function defRow(d) {
+    d.dot = h('span', { class: 'dot' });
+    d.el = h('div', { class: 'relie-card relie-def', role: 'button', onclick: () => tapDef(d) },
+      d.dot, h('span', { class: 'relie-text' }, d.label));
+    return h('div', { class: 'relie-row defs' }, d.el, ear(d.label));
+  }
+
+  // Coordonnées dans le repère du plateau (le calque SVG le recouvre exactement).
+  const pt = (el) => {
+    const b = board.getBoundingClientRect(), r = el.getBoundingClientRect();
+    return [r.left + r.width / 2 - b.left, r.top + r.height / 2 - b.top];
+  };
+  const setLine = (l, [x1, y1], [x2, y2]) => {
+    l.setAttribute('x1', x1); l.setAttribute('y1', y1);
+    l.setAttribute('x2', x2); l.setAttribute('y2', y2);
+  };
+  const line = (a, b, color, cls) => {
+    const l = document.createElementNS(SVGNS, 'line');
+    l.style.stroke = color;
+    if (cls) l.classList.add(cls);
+    setLine(l, a, b);
+    svg.append(l);
+    return l;
+  };
+
+  // Les traits suivent la mise en page (rotation de l'iPad, police chargée…).
+  const redraw = () => pairs.forEach((p) => setLine(p.line, pt(p.w.dot), pt(p.d.dot)));
+  const ro = new ResizeObserver(() => { if (!board.isConnected) return ro.disconnect(); redraw(); });
+  ro.observe(board);
+  const onResize = () => { if (!board.isConnected) return window.removeEventListener('resize', onResize); redraw(); };
+  window.addEventListener('resize', onResize);
+
+  const openDefs = () => defs.filter((d) => !d.done);
+
+  function mark(w) {
+    words.forEach((x) => x.el.classList.remove('selected'));
+    defs.forEach((d) => d.el.classList.remove('hintglow'));
+    selected = w;
+    if (!w) return;
+    w.el.classList.add('selected');
+    if (w.misses >= 2) defs.find((d) => d.id === w.target).el.classList.add('hintglow');
+  }
+
+  function select(w) {
+    if (w.done || finished) return;
+    fb.replaceChildren();
+    mark(selected === w ? null : w);
+  }
+
+  function tapDef(d) {
+    if (d.done || finished) return;
+    if (!selected) { hint(fb, [P.pickWord]); return; }
+    tryPair(selected, d);
+  }
+
+  function startDrag(w) {
+    fb.replaceChildren();
+    mark(w);
+    temp = line(pt(w.dot), pt(w.dot), 'var(--primary)', 'temp');
+  }
+
+  function dragMove(w, x, y) {
+    if (!temp) return;
+    const b = board.getBoundingClientRect();
+    setLine(temp, pt(w.dot), [x - b.left, y - b.top]);
+    const t = nearest(openDefs().map((d) => d.el), x, y);
+    defs.forEach((d) => d.el.classList.toggle('over', d.el === t));
+  }
+
+  function clearTemp() {
+    if (temp) temp.remove();
+    temp = null;
+    defs.forEach((d) => d.el.classList.remove('over'));
+  }
+
+  function dragEnd(w, x, y) {
+    const t = nearest(openDefs().map((d) => d.el), x, y);
+    clearTemp();
+    if (!t) { mark(null); return; }
+    tryPair(w, defs.find((d) => d.el === t));
+  }
+
+  function tryPair(w, d) {
+    if (w.target === d.id) {
+      const color = PAIR_COLORS[colorIdx++ % PAIR_COLORS.length];
+      w.done = d.done = true;
+      mark(null);
+      for (const el of [w.el, d.el]) {
+        el.classList.add('paired');
+        el.style.borderColor = color;
+        el.style.background = color + '26';
+        el.style.setProperty('--pair', color);
+      }
+      w.el.setAttribute('aria-disabled', 'true');
+      pairs.push({ w, d, line: line(pt(w.dot), pt(d.dot), color, 'pair') });
+      fb.replaceChildren();
+      if (--left) { say(pick(P.okSmall)); return; }
+      finished = true;
+      const result = resultOf(errors);
+      finish(result, endSegments(result, item.explain || P.relieDone));
+      return;
+    }
+    errors++;
+    w.misses++;
+    const l = line(pt(w.dot), pt(d.dot), WRONG, 'wrong');
+    setTimeout(() => l.remove(), 900);
+    flash(d.el, 'miss');
+    mark(w); // le mot reste choisi : on peut toucher une autre définition
+    hint(fb, [w.misses >= 2 ? P.placerGlow : P.placerHere]);
+  }
+
+  say(item.q);
+}
+
+/* ---------- Phrase : on glisse chaque morceau dans la case 1, 2, 3… ----------
+   Ou on touche le morceau, puis la case. */
+function phrase(item, { root, done }) {
+  const { body, fb } = frame(root, item.q);
+  const blocks = sampleTokens(item);
+  const slots = item.targets.map((tg, i) => ({ ...tg, n: i + 1 }));
+  let selected = null, errors = 0, left = blocks.length, finished = false;
+  let ghost = null, g0 = null;
+
+  const slotRow = h('div', { class: `phrase-slots n${slots.length}` });
+  for (const s of slots) {
+    s.text = h('span', { class: 'slot-text' });
+    s.el = h('div', { class: 'slot', role: 'button', onclick: () => tapSlot(s) },
+      h('span', { class: 'num' }, String(s.n)), s.text);
+    slotRow.append(s.el);
+  }
+
+  const pool = h('div', { class: 'phrase-pool' });
+  for (const b of blocks) {
+    b.el = h('button', { class: 'token block' }, b.text);
+    b.cell = h('div', { class: 'pool-cell' }, b.el, ear(b.text));
+    draggable(b.el, {
+      can: () => !b.done && !finished,
+      tap: () => select(b),
+      start: (x, y) => lift(b, x, y),
+      move: (x, y) => moveGhost(x, y),
+      end: (x, y) => dropGhost(b, x, y),
+      cancel: () => { sendBack(b); mark(null); },
+    });
+    pool.append(b.cell);
+  }
+  body.append(slotRow, pool);
+
+  const openSlots = () => slots.filter((s) => !s.done);
+
+  function mark(b) {
+    blocks.forEach((x) => x.el.classList.remove('selected'));
+    slots.forEach((s) => s.el.classList.remove('hintglow'));
+    selected = b;
+    if (!b) return;
+    b.el.classList.add('selected');
+    if (b.misses >= 2) slots.find((s) => s.id === b.target).el.classList.add('hintglow');
+  }
+
+  function select(b) {
+    if (b.done || finished) return;
+    fb.replaceChildren();
+    mark(selected === b ? null : b);
+  }
+
+  function tapSlot(s) {
+    if (s.done || finished) return;
+    if (!selected) { hint(fb, [P.pickBlock]); return; }
+    place(selected, s);
+  }
+
+  // Bloc fantôme qui suit le doigt ; le vrai bloc reste à sa place, estompé.
+  function lift(b, x, y) {
+    fb.replaceChildren();
+    mark(b);
+    const r = b.el.getBoundingClientRect();
+    ghost = h('div', { class: 'ghost' }, b.text);
+    Object.assign(ghost.style, { left: `${r.left}px`, top: `${r.top}px`, width: `${r.width}px`, minHeight: `${r.height}px` });
+    document.body.append(ghost);
+    g0 = { r, x, y };
+    b.el.classList.add('lifted');
+  }
+
+  // Centre du fantôme : c'est lui qu'on dépose, pas le bout du doigt.
+  const ghostCenter = (x, y) => [g0.r.left + g0.r.width / 2 + (x - g0.x), g0.r.top + g0.r.height / 2 + (y - g0.y)];
+
+  function moveGhost(x, y) {
+    if (!ghost) return;
+    ghost.style.transform = `translate(${x - g0.x}px, ${y - g0.y}px) scale(1.05)`;
+    const t = nearest(openSlots().map((s) => s.el), ...ghostCenter(x, y));
+    slots.forEach((s) => s.el.classList.toggle('over', s.el === t));
+  }
+
+  function dropGhost(b, x, y) {
+    slots.forEach((s) => s.el.classList.remove('over'));
+    const t = ghost ? nearest(openSlots().map((s) => s.el), ...ghostCenter(x, y)) : null;
+    if (!t) { sendBack(b); mark(null); return; }
+    place(b, slots.find((s) => s.el === t));
+  }
+
+  // Retour animé du fantôme à la place du bloc.
+  function sendBack(b) {
+    slots.forEach((s) => s.el.classList.remove('over'));
+    const g = ghost;
+    ghost = null;
+    if (!g) { b.el.classList.remove('lifted'); return; }
+    g.classList.add('back');
+    g.style.transform = 'translate(0, 0)';
+    setTimeout(() => { g.remove(); b.el.classList.remove('lifted'); }, 320);
+  }
+
+  function place(b, s) {
+    if (b.target === s.id) {
+      if (ghost) { ghost.remove(); ghost = null; }
+      b.done = s.done = true;
+      mark(null);
+      b.el.classList.remove('lifted');
+      b.cell.classList.add('used'); // la place reste vide mais garde sa taille
+      s.text.textContent = b.text;
+      s.el.classList.add('good', 'filled');
+      fb.replaceChildren();
+      if (--left) { say(pick(P.okSmall)); return; }
+      finished = true;
+      // La phrase entière, d'un seul tenant, puis lue.
+      const full = item.targets.map((x) => item.tokens.find((k) => k.target === x.id).text).join(' ');
+      slotRow.replaceWith(h('div', { class: 'phrase-full' }, h('span', { class: 'phrase-text' }, full), ear(full)));
+      pool.remove();
+      // La phrase est déjà affichée au-dessus : le bandeau ne garde que le mot d'encouragement.
+      const result = resultOf(errors);
+      const segs = endSegments(result, full);
+      feedback(fb, result === 'fail' ? 'show' : 'ok', segs.filter((s) => s !== full).join(' '), () => done(result));
+      say(segs);
+      return;
+    }
+    errors++;
+    b.misses++;
+    sendBack(b);
+    flash(s.el, 'miss');
+    mark(b);
+    hint(fb, [b.misses >= 2 ? P.placerGlow : P.placerHere]);
   }
 
   say(item.q);

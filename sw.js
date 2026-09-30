@@ -4,7 +4,7 @@ const CACHE = 'revisions-v4';
 const SHELL = [
   './', 'index.html', 'style.css', 'manifest.json', 'phrases.json', 'icons/icon.svg', 'icons/icon-180.png',
   'js/app.js', 'js/util.js', 'js/store.js', 'js/speech.js', 'js/srs.js', 'js/lessons.js', 'js/phrases.js',
-  'js/activities.js', 'js/rewards.js', 'js/parent.js',
+  'js/activities.js', 'js/drag.js', 'js/rewards.js', 'js/parent.js',
   'lessons/index.json', 'lessons/build/histoire-moyen-age.json', 'lessons/assets/chateau.svg',
   'lessons/build/sciences-alimentation.json', 'lessons/assets/monde.svg',
   'lessons/build/sciences-lune.json', 'lessons/assets/lune.svg',
