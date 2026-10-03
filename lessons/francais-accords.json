@@ -1,0 +1,2443 @@
+{
+  "id": "francais-accords",
+  "subject": "Français",
+  "title": "Les accords",
+  "subtitle": "Les Quatre Saisons de Vivaldi",
+  "emoji": "🎻",
+  "color": "#c0703c",
+  "source": "Orthographe 5, « Les accords dans le groupe nominal » : fiche élève, guide du maître (dictée « Les Quatre Saisons »), feuille d'exercices.",
+  "summary": [
+    "Dans le groupe nominal, l'adjectif s'accorde avec le nom et le déterminant.",
+    "Il s'accorde en genre, masculin ou féminin, et en nombre, singulier ou pluriel.",
+    "Exemple : on entend les différents violons. Violons est masculin pluriel, donc différents prend un S.",
+    "Les mots en eau, eu et au prennent un X au pluriel : des châteaux, des jeux, des tuyaux. Mais on écrit des pneus, des landaus, et des yeux bleus.",
+    "Les sept mots à savoir écrire : musique, classique, instrument, violon, ensemble, différent, Europe.",
+    "La dictée. La musique classique nait en Europe au XVIIIe siècle.",
+    "Les instruments jouent ensemble des mélodies différentes.",
+    "Vivaldi compose quatre concertos, un pour chaque saison.",
+    "Ils sont joués par des instruments à cordes : des violons.",
+    "Antonio Vivaldi est un compositeur italien. Il est né à Venise en 1678.",
+    "Il avait les cheveux roux et il était prêtre : on l'appelait le prêtre roux.",
+    "À Venise, il apprenait la musique à des jeunes filles orphelines. Leur orchestre était célèbre dans toute l'Europe.",
+    "En 1725, il publie Les Quatre Saisons : quatre concertos pour violon, un pour chaque saison. Chacun est accompagné d'un poème.",
+    "La musique imite la nature : les oiseaux du printemps, l'orage de l'été, la fête de l'automne, le froid de l'hiver.",
+    "Après sa mort, on l'a oublié. Il est redevenu très célèbre au vingtième siècle."
+  ],
+  "music": [
+    {
+      "file": "printemps",
+      "label": "Le printemps"
+    },
+    {
+      "file": "ete",
+      "label": "L'été"
+    },
+    {
+      "file": "automne",
+      "label": "L'automne"
+    },
+    {
+      "file": "hiver",
+      "label": "L'hiver"
+    }
+  ],
+  "credits": "Musique : Les Quatre Saisons d'Antonio Vivaldi, par The Modena Chamber Orchestra (Musopen), enregistrements dans le domaine public, via Wikimedia Commons.",
+  "notions": [
+    {
+      "id": "musique",
+      "term": "musique",
+      "nom": "la musique",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🎵",
+      "def": "art de faire des sons agréables avec la voix ou des instruments",
+      "spell": "musi[que]",
+      "tip": "À la fin, on écrit Q, U, E, comme dans classique."
+    },
+    {
+      "id": "classique",
+      "term": "classique",
+      "nom": "classique",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🎼",
+      "def": "se dit de la musique savante, comme celle de Vivaldi ou de Mozart",
+      "spell": "cla[ss]i[que]",
+      "tip": "Deux S au milieu, pour entendre « sss ». Et Q, U, E à la fin."
+    },
+    {
+      "id": "instrument",
+      "term": "instrument",
+      "nom": "un instrument",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🎺",
+      "def": "objet qui sert à faire de la musique",
+      "spell": "instrumen[t]",
+      "tip": "Un T muet à la fin. On l'entend dans « instrumental »."
+    },
+    {
+      "id": "violon",
+      "term": "violon",
+      "nom": "le violon",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🎻",
+      "def": "instrument à quatre cordes que l'on frotte avec un archet",
+      "spell": "vio[l]on",
+      "tip": "Un seul L : vi-o-lon."
+    },
+    {
+      "id": "ensemble",
+      "term": "ensemble",
+      "nom": "ensemble",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🤝",
+      "def": "les uns avec les autres, en même temps",
+      "spell": "[en]s[em]ble",
+      "tip": "Devant B, on écrit M et pas N : en-sem-ble."
+    },
+    {
+      "id": "different",
+      "term": "différent",
+      "nom": "différent",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🔀",
+      "def": "qui n'est pas pareil",
+      "spell": "di[ff]éren[t]",
+      "tip": "Deux F. Et un T muet à la fin : on l'entend dans « différente »."
+    },
+    {
+      "id": "europe",
+      "term": "Europe",
+      "nom": "l'Europe",
+      "group": "ortho",
+      "noAuto": true,
+      "emoji": "🌍",
+      "def": "continent où se trouvent la France et l'Italie",
+      "spell": "[E]urope",
+      "tip": "Une majuscule, car c'est le nom d'un continent."
+    },
+    {
+      "id": "groupe-nominal",
+      "term": "groupe nominal",
+      "nom": "le groupe nominal",
+      "noAuto": true,
+      "emoji": "🧩",
+      "def": "groupe de mots avec un déterminant, un nom, et parfois des adjectifs : des violons anciens"
+    },
+    {
+      "id": "genre",
+      "term": "genre",
+      "nom": "le genre",
+      "noAuto": true,
+      "emoji": "👦",
+      "def": "masculin ou féminin : un violon, une mélodie"
+    },
+    {
+      "id": "nombre",
+      "term": "nombre",
+      "nom": "le nombre",
+      "noAuto": true,
+      "emoji": "🖐️",
+      "def": "singulier pour un seul, pluriel pour plusieurs : un violon, des violons"
+    },
+    {
+      "id": "accord-adjectif",
+      "term": "accord de l'adjectif",
+      "nom": "l'accord de l'adjectif",
+      "noAuto": true,
+      "emoji": "🔗",
+      "def": "l'adjectif prend le genre et le nombre du nom : des mélodies différentes",
+      "tip": "Pour accorder l'adjectif, je cherche d'abord le nom qui va avec."
+    },
+    {
+      "id": "pluriel-x",
+      "term": "pluriel en X",
+      "nom": "le pluriel en X",
+      "noAuto": true,
+      "emoji": "❌",
+      "def": "les mots en eau, eu et au prennent un X au pluriel : des châteaux, des jeux",
+      "tip": "Attention aux exceptions : des pneus, des landaus, des yeux bleus."
+    },
+    {
+      "id": "compositeur",
+      "term": "compositeur",
+      "nom": "un compositeur",
+      "group": "musique",
+      "emoji": "✍️",
+      "def": "personne qui invente et écrit de la musique",
+      "indice": "Vivaldi en est un : il a écrit Les Quatre Saisons sur du papier à musique."
+    },
+    {
+      "id": "concerto",
+      "term": "concerto",
+      "nom": "un concerto",
+      "group": "musique",
+      "emoji": "🎶",
+      "def": "morceau pour un instrument soliste accompagné d'un orchestre",
+      "indice": "Les Quatre Saisons en comptent quatre : un pour chaque saison."
+    },
+    {
+      "id": "orchestre",
+      "term": "orchestre",
+      "nom": "un orchestre",
+      "group": "musique",
+      "emoji": "👥",
+      "def": "groupe de musiciens qui jouent ensemble",
+      "indice": "Les musiciens sont assis en demi-cercle, et un chef leur fait signe avec une baguette."
+    },
+    {
+      "id": "soliste",
+      "term": "soliste",
+      "nom": "le soliste",
+      "group": "musique",
+      "emoji": "⭐",
+      "def": "musicien qui joue la partie la plus importante, devant les autres",
+      "indice": "Dans Les Quatre Saisons, c'est le violon que l'on entend par-dessus tous les autres."
+    },
+    {
+      "id": "melodie",
+      "term": "mélodie",
+      "nom": "la mélodie",
+      "group": "musique",
+      "emoji": "🎤",
+      "def": "air que l'on peut chanter ou siffler",
+      "indice": "Après le morceau, tu la fredonnes encore dans ta tête."
+    },
+    {
+      "id": "harmonie",
+      "term": "harmonie",
+      "nom": "l'harmonie",
+      "group": "musique",
+      "emoji": "🎹",
+      "def": "notes jouées en même temps pour accompagner la mélodie",
+      "indice": "On ne la chante pas : ce sont les notes du fond, qui créent une ambiance joyeuse ou triste."
+    },
+    {
+      "id": "cordes",
+      "term": "instrument à cordes",
+      "nom": "un instrument à cordes",
+      "group": "musique",
+      "emoji": "🎻",
+      "def": "instrument qui sonne quand on frotte ou pince ses cordes",
+      "indice": "Le violon, l'alto, le violoncelle et la contrebasse en font partie."
+    },
+    {
+      "id": "baroque",
+      "term": "musique baroque",
+      "nom": "la musique baroque",
+      "group": "musique",
+      "emoji": "🎺",
+      "def": "style de musique de l'époque de Vivaldi, il y a environ trois cents ans",
+      "indice": "C'est le style de Vivaldi et de Bach, avec beaucoup de violons et un clavecin."
+    },
+    {
+      "id": "mouvement",
+      "term": "mouvement",
+      "nom": "un mouvement",
+      "group": "musique",
+      "emoji": "⏩",
+      "def": "partie d'un concerto, rapide ou lente",
+      "indice": "Chaque concerto des Quatre Saisons en a trois : un rapide, un lent, puis encore un rapide."
+    },
+    {
+      "id": "vivaldi",
+      "term": "Antonio Vivaldi",
+      "nom": "Antonio Vivaldi",
+      "noAuto": true,
+      "emoji": "🎻",
+      "def": "compositeur italien, né à Venise en 1678, mort en 1741"
+    },
+    {
+      "id": "pretre-roux",
+      "term": "le prêtre roux",
+      "nom": "le prêtre roux",
+      "noAuto": true,
+      "emoji": "👨‍🦰",
+      "def": "surnom de Vivaldi : il était prêtre et avait les cheveux roux"
+    },
+    {
+      "id": "venise",
+      "term": "Venise",
+      "nom": "Venise",
+      "noAuto": true,
+      "emoji": "🛶",
+      "def": "ville d'Italie construite sur l'eau : ses rues sont des canaux"
+    },
+    {
+      "id": "quatre-saisons",
+      "term": "Les Quatre Saisons",
+      "nom": "Les Quatre Saisons",
+      "noAuto": true,
+      "emoji": "🍂",
+      "def": "quatre concertos pour violon de Vivaldi, publiés en 1725, un pour chaque saison",
+      "audio": "printemps"
+    },
+    {
+      "id": "temps-modernes",
+      "term": "Temps modernes",
+      "nom": "les Temps modernes",
+      "noAuto": true,
+      "emoji": "⏳",
+      "def": "période de l'histoire après le Moyen Âge, de 1492 à 1789 : l'époque de Vivaldi"
+    }
+  ],
+  "cards": [
+    {
+      "id": "acc-violon",
+      "name": "Le violon",
+      "emoji": "🎻",
+      "color": "#c0703c",
+      "notions": [
+        "violon",
+        "cordes",
+        "soliste"
+      ],
+      "image": "violon",
+      "desc": "Quatre cordes et un archet. C'est l'instrument de Vivaldi."
+    },
+    {
+      "id": "acc-classique",
+      "name": "La musique classique",
+      "emoji": "🎼",
+      "color": "#6c5ce7",
+      "notions": [
+        "musique",
+        "classique",
+        "orchestre"
+      ],
+      "image": "orchestre",
+      "desc": "Elle est née en Europe. Un orchestre joue des mélodies écrites par un compositeur."
+    },
+    {
+      "id": "acc-ensemble",
+      "name": "Tous ensemble",
+      "emoji": "🎶",
+      "color": "#2f9e6a",
+      "notions": [
+        "ensemble",
+        "different",
+        "instrument"
+      ],
+      "desc": "Des instruments différents jouent ensemble."
+    },
+    {
+      "id": "acc-europe",
+      "name": "L'Europe",
+      "emoji": "🌍",
+      "color": "#3c7fc0",
+      "notions": [
+        "europe",
+        "venise"
+      ],
+      "desc": "Le continent de la France et de l'Italie. Il prend une majuscule."
+    },
+    {
+      "id": "acc-accords",
+      "name": "Les accords",
+      "emoji": "🔗",
+      "color": "#d65b9a",
+      "notions": [
+        "groupe-nominal",
+        "genre",
+        "nombre",
+        "accord-adjectif"
+      ],
+      "desc": "L'adjectif prend le genre et le nombre du nom : des mélodies différentes."
+    },
+    {
+      "id": "acc-x",
+      "name": "Les pluriels en X",
+      "emoji": "❌",
+      "color": "#d6735b",
+      "notions": [
+        "pluriel-x"
+      ],
+      "desc": "Des châteaux, des jeux, des tuyaux. Mais des pneus et des landaus."
+    },
+    {
+      "id": "acc-printemps",
+      "name": "Le printemps",
+      "emoji": "🌸",
+      "color": "#7cc46a",
+      "notions": [
+        "quatre-saisons",
+        "melodie"
+      ],
+      "image": "printemps",
+      "desc": "Les oiseaux chantent : les violons les imitent."
+    },
+    {
+      "id": "acc-ete",
+      "name": "L'été",
+      "emoji": "⛈️",
+      "color": "#e0a92a",
+      "notions": [
+        "quatre-saisons",
+        "mouvement"
+      ],
+      "image": "ete",
+      "desc": "Il fait chaud, puis un violent orage éclate."
+    },
+    {
+      "id": "acc-automne",
+      "name": "L'automne",
+      "emoji": "🍂",
+      "color": "#c0602a",
+      "notions": [
+        "quatre-saisons",
+        "concerto"
+      ],
+      "image": "automne",
+      "desc": "Les paysans dansent pour fêter les vendanges."
+    },
+    {
+      "id": "acc-hiver",
+      "name": "L'hiver",
+      "emoji": "❄️",
+      "color": "#5b9ad6",
+      "notions": [
+        "quatre-saisons",
+        "harmonie"
+      ],
+      "image": "hiver",
+      "desc": "On grelotte, puis on se réchauffe au coin du feu."
+    },
+    {
+      "id": "acc-venise",
+      "name": "Venise",
+      "emoji": "🛶",
+      "color": "#2a9da0",
+      "notions": [
+        "venise",
+        "vivaldi"
+      ],
+      "image": "venise",
+      "desc": "La ville de Vivaldi, construite sur l'eau."
+    },
+    {
+      "id": "acc-pretre",
+      "name": "Le prêtre roux",
+      "emoji": "👨‍🦰",
+      "color": "#b5452a",
+      "notions": [
+        "pretre-roux",
+        "vivaldi",
+        "compositeur"
+      ],
+      "image": "vivaldi",
+      "desc": "Le surnom de Vivaldi, à cause de ses cheveux roux."
+    },
+    {
+      "id": "acc-baroque",
+      "name": "La musique baroque",
+      "emoji": "🎺",
+      "color": "#8e5bd6",
+      "notions": [
+        "baroque",
+        "temps-modernes"
+      ],
+      "desc": "Le style de Vivaldi, pendant les Temps modernes."
+    },
+    {
+      "id": "acc-legende",
+      "name": "Les Quatre Saisons",
+      "emoji": "🎻",
+      "color": "#f5b700",
+      "notions": "all",
+      "level": 3,
+      "legend": true,
+      "image": "quatre-saisons",
+      "desc": "Tu connais toute la leçon : les accords, les mots, et la musique de Vivaldi !"
+    }
+  ],
+  "items": [
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "musique"
+      ],
+      "word": "musique",
+      "say": "La musique classique nait en Europe."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "musique"
+      ],
+      "word": "musique",
+      "say": "La musique classique nait en Europe."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "musique"
+      ],
+      "word": "musique",
+      "say": "La musique classique nait en Europe."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "musique"
+      ],
+      "word": "musique",
+      "say": "La musique classique nait en Europe.",
+      "id": "francais-accords#ecrire-musique-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "musique"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "musique",
+        "musik",
+        "musiqe",
+        "mussique",
+        "musike",
+        "muzique"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : musique.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "musique"
+      ],
+      "q": "À la fin du mot « musique », quelles lettres font le son « k » ?",
+      "choices": [
+        "Q, U, E",
+        "K",
+        "C",
+        "K, E"
+      ],
+      "hint": "Pense au mot « classique » : il finit pareil.",
+      "explain": "Musique finit par Q, U, E.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "musique"
+      ],
+      "sentence": "Vivaldi compose de la",
+      "choices": [
+        "musique",
+        "musik",
+        "musiqe",
+        "mussique"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "classique"
+      ],
+      "word": "classique",
+      "say": "J'écoute de la musique classique."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "classique"
+      ],
+      "word": "classique",
+      "say": "J'écoute de la musique classique."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "classique"
+      ],
+      "word": "classique",
+      "say": "J'écoute de la musique classique."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "classique"
+      ],
+      "word": "classique",
+      "say": "J'écoute de la musique classique.",
+      "id": "francais-accords#ecrire-classique-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "classique"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "classique",
+        "clasique",
+        "classik",
+        "classiqe",
+        "clacique",
+        "classike"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : classique.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "classique"
+      ],
+      "q": "Dans « classique », comment s'écrit le son « sss » au milieu ?",
+      "choices": [
+        "Deux S",
+        "Un seul S",
+        "Un C",
+        "S, C"
+      ],
+      "hint": "Il est entre deux voyelles, le A et le I.",
+      "explain": "Entre deux voyelles, on double le S : classique.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "classique"
+      ],
+      "sentence": "J'aime la musique",
+      "choices": [
+        "classique",
+        "clasique",
+        "classik",
+        "classiqe"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "classique"
+      ],
+      "q": "Pourquoi écrit-on deux S dans « classique » ?",
+      "choices": [
+        "Pour entendre « sss » et pas « zzz »",
+        "Parce que le mot est long",
+        "Parce que c'est un pluriel",
+        "Pour faire joli"
+      ],
+      "hint": "Lis « clasique » avec un seul S : quel son entends-tu ?",
+      "explain": "Avec un seul S entre deux voyelles, on lirait « clazique »."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "instrument"
+      ],
+      "word": "instrument",
+      "say": "Le violon est un instrument."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "instrument"
+      ],
+      "word": "instrument",
+      "say": "Le violon est un instrument."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "instrument"
+      ],
+      "word": "instrument",
+      "say": "Le violon est un instrument."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "instrument"
+      ],
+      "word": "instrument",
+      "say": "Le violon est un instrument.",
+      "id": "francais-accords#ecrire-instrument-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "instrument"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "instrument",
+        "instrumen",
+        "instrumant",
+        "instremant",
+        "instrumend",
+        "intrument"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : instrument.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "instrument"
+      ],
+      "q": "Quelle lettre muette se cache à la fin de « instrument » ?",
+      "choices": [
+        "T",
+        "D",
+        "S",
+        "Aucune"
+      ],
+      "hint": "Pense au mot « instrumental ».",
+      "explain": "On entend le T dans « instrumental » : instrument finit par T.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "instrument"
+      ],
+      "sentence": "Le violon est un",
+      "choices": [
+        "instrument",
+        "instrumen",
+        "instrumant",
+        "instrumend"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "instrument"
+      ],
+      "q": "Comment savoir qu'il y a un T à la fin de « instrument » ?",
+      "choices": [
+        "On l'entend dans « instrumental »",
+        "Tous les mots finissent par T",
+        "On l'entend quand on dit « instrument »",
+        "C'est un pluriel"
+      ],
+      "hint": "Cherche un mot de la même famille.",
+      "explain": "Dans la famille du mot, on entend le T : instrumental."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "violon"
+      ],
+      "word": "violon",
+      "say": "Vivaldi joue du violon."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "violon"
+      ],
+      "word": "violon",
+      "say": "Vivaldi joue du violon."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "violon"
+      ],
+      "word": "violon",
+      "say": "Vivaldi joue du violon."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "violon"
+      ],
+      "word": "violon",
+      "say": "Vivaldi joue du violon.",
+      "id": "francais-accords#ecrire-violon-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "violon"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "violon",
+        "viollon",
+        "violont",
+        "vyolon",
+        "violom",
+        "violons"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : violon.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "violon"
+      ],
+      "q": "Dans « violon », combien de L ?",
+      "choices": [
+        "Un seul",
+        "Deux",
+        "Trois",
+        "Aucun"
+      ],
+      "hint": "Écoute bien : vi-o-lon.",
+      "explain": "Violon s'écrit avec un seul L.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "violon"
+      ],
+      "sentence": "Vivaldi joue du",
+      "choices": [
+        "violon",
+        "viollon",
+        "violont",
+        "vyolon"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "ensemble"
+      ],
+      "word": "ensemble",
+      "say": "Les instruments jouent ensemble."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "ensemble"
+      ],
+      "word": "ensemble",
+      "say": "Les instruments jouent ensemble."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "ensemble"
+      ],
+      "word": "ensemble",
+      "say": "Les instruments jouent ensemble."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "ensemble"
+      ],
+      "word": "ensemble",
+      "say": "Les instruments jouent ensemble.",
+      "id": "francais-accords#ecrire-ensemble-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "ensemble"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "ensemble",
+        "ansemble",
+        "ensenble",
+        "emsemble",
+        "ansamble",
+        "ensamble"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : ensemble.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "ensemble"
+      ],
+      "q": "Dans « ensemble », le son « an » devant le B s'écrit…",
+      "choices": [
+        "E, M",
+        "E, N",
+        "A, N",
+        "A, M"
+      ],
+      "hint": "Devant B et P, la lettre change.",
+      "explain": "Devant B, on écrit M : ensemble.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "ensemble"
+      ],
+      "sentence": "Les instruments jouent",
+      "choices": [
+        "ensemble",
+        "ansemble",
+        "ensenble",
+        "emsemble"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "ensemble"
+      ],
+      "q": "Pourquoi y a-t-il un M dans « ensemble » ?",
+      "choices": [
+        "Devant B, on écrit M et pas N",
+        "Parce que c'est un pluriel",
+        "On l'entend bien",
+        "C'est le début du mot"
+      ],
+      "hint": "Regarde la lettre qui vient juste après.",
+      "explain": "Devant B et P, on écrit M : ensemble, tempête."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "different"
+      ],
+      "word": "différent",
+      "say": "Chaque concerto est différent."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "different"
+      ],
+      "word": "différent",
+      "say": "Chaque concerto est différent."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "different"
+      ],
+      "word": "différent",
+      "say": "Chaque concerto est différent."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "different"
+      ],
+      "word": "différent",
+      "say": "Chaque concerto est différent.",
+      "id": "francais-accords#ecrire-different-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "different"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "différent",
+        "diférent",
+        "différant",
+        "differant",
+        "diffèrent",
+        "différen"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : différent.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "different"
+      ],
+      "q": "Dans « différent », combien de F ?",
+      "choices": [
+        "Deux",
+        "Un seul",
+        "Trois",
+        "Aucun"
+      ],
+      "hint": "C'est la même chose que dans « difficile ».",
+      "explain": "Différent s'écrit avec deux F.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "different"
+      ],
+      "sentence": "Chaque saison est",
+      "choices": [
+        "différente",
+        "diférente",
+        "différante",
+        "differente"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "different"
+      ],
+      "q": "Comment savoir qu'il y a un T à la fin de « différent » ?",
+      "choices": [
+        "On l'entend au féminin : différente",
+        "Tous les adjectifs finissent par T",
+        "On l'entend au masculin",
+        "C'est un verbe"
+      ],
+      "hint": "Mets le mot au féminin.",
+      "explain": "Au féminin, on entend le T : différente. Donc différent finit par T."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "europe"
+      ],
+      "word": "Europe",
+      "say": "L'Italie est en Europe."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "europe"
+      ],
+      "word": "Europe",
+      "say": "L'Italie est en Europe."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "europe"
+      ],
+      "word": "Europe",
+      "say": "L'Italie est en Europe."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3.5,
+      "notions": [
+        "europe"
+      ],
+      "word": "Europe",
+      "say": "L'Italie est en Europe.",
+      "id": "francais-accords#ecrire-europe-2"
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "europe"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "Europe",
+        "europe",
+        "Eurrope",
+        "Œurope",
+        "Europ",
+        "Eurôpe"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "explain": "On écrit : Europe.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "europe"
+      ],
+      "q": "Pourquoi « Europe » commence-t-il par une majuscule ?",
+      "choices": [
+        "C'est le nom d'un continent",
+        "C'est le début d'un livre",
+        "C'est un mot long",
+        "C'est un verbe"
+      ],
+      "hint": "La France, l'Italie et l'Europe prennent toutes une majuscule.",
+      "explain": "Les noms de pays et de continents prennent une majuscule.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "europe"
+      ],
+      "sentence": "La musique classique nait en",
+      "choices": [
+        "Europe",
+        "europe",
+        "Eurrope",
+        "Europ"
+      ],
+      "hint": "Regarde bien chaque lettre.",
+      "spell": true
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "violon"
+      ],
+      "q": "« Violon » prend un S quand il y en a plusieurs : des violons.",
+      "answer": true,
+      "explain": "Au pluriel, on ajoute un S : des violons."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "europe"
+      ],
+      "q": "On peut écrire « europe » avec une minuscule.",
+      "answer": false,
+      "explain": "Europe est le nom d'un continent : il prend toujours une majuscule."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "musique",
+        "classique",
+        "europe"
+      ],
+      "text": [
+        "La [musique|musik|musike] [classique|clasique|classik] nait en [Europe|europe|Eurrope] au XVIIIe siècle."
+      ]
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "instrument",
+        "ensemble",
+        "different",
+        "accord-adjectif"
+      ],
+      "text": [
+        "Les [instruments|instrument|instrumens] jouent [ensemble|ansemble|emsemble] des [mélodies|mélodie|mélodis] [différentes|différents|diférentes]."
+      ]
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "violon",
+        "instrument",
+        "nombre"
+      ],
+      "text": [
+        "Vivaldi compose [quatre|quatres|katre] [concertos|concerto|concertot], un pour chaque [saison|saisons|sézon].",
+        "Ils sont joués par des [instruments|instrumants|instrument] [à|a|as] cordes : des [violons|violon|viollons]."
+      ]
+    },
+    {
+      "type": "trous",
+      "diff": 3,
+      "notions": [
+        "musique",
+        "classique",
+        "europe",
+        "instrument",
+        "ensemble",
+        "different",
+        "violon"
+      ],
+      "q": "Toute la dictée ! Choisis le mot bien écrit.",
+      "text": [
+        "La [musique|musik|musike] [classique|clasique|classik] nait en [Europe|europe|Eurrope] au XVIIIe siècle.",
+        "Les [instruments|instrument|instrumens] jouent [ensemble|ansemble|emsemble] des [mélodies|mélodie|mélodis] [différentes|différents|diférentes].",
+        "Vivaldi compose [quatre|quatres|katre] [concertos|concerto|concertot], un pour chaque [saison|saisons|sézon].",
+        "Ils sont joués par des [instruments|instrumants|instrument] [à|a|as] cordes : des [violons|violon|viollons]."
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "musique",
+        "classique",
+        "europe"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "La musique classique",
+          "target": "1"
+        },
+        {
+          "text": "nait en Europe",
+          "target": "2"
+        },
+        {
+          "text": "au XVIIIe siècle.",
+          "target": "3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "instrument",
+        "ensemble",
+        "different"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Les instruments",
+          "target": "1"
+        },
+        {
+          "text": "jouent ensemble",
+          "target": "2"
+        },
+        {
+          "text": "des mélodies différentes.",
+          "target": "3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "concerto",
+        "vivaldi"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Vivaldi compose",
+          "target": "1"
+        },
+        {
+          "text": "quatre concertos,",
+          "target": "2"
+        },
+        {
+          "text": "un pour chaque saison.",
+          "target": "3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "violon",
+        "cordes"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Ils sont joués",
+          "target": "1"
+        },
+        {
+          "text": "par des instruments à cordes :",
+          "target": "2"
+        },
+        {
+          "text": "des violons.",
+          "target": "3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "tri",
+      "diff": 2,
+      "sample": 8,
+      "notions": [
+        "genre",
+        "nombre"
+      ],
+      "q": "Range chaque groupe nominal dans la bonne boîte.",
+      "explain": "Le déterminant et les marques E et S t'aident à trouver le genre et le nombre.",
+      "targets": [
+        {
+          "id": "ms",
+          "label": "Masculin singulier",
+          "emoji": "👦",
+          "color": "#5b7fd6"
+        },
+        {
+          "id": "fs",
+          "label": "Féminin singulier",
+          "emoji": "👧",
+          "color": "#d65b9a"
+        },
+        {
+          "id": "mp",
+          "label": "Masculin pluriel",
+          "emoji": "👦👦",
+          "color": "#3c5aa8"
+        },
+        {
+          "id": "fp",
+          "label": "Féminin pluriel",
+          "emoji": "👧👧",
+          "color": "#a83c74"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "un monstre violet",
+          "target": "ms"
+        },
+        {
+          "text": "le premier concerto",
+          "target": "ms"
+        },
+        {
+          "text": "un livre intéressant",
+          "target": "ms"
+        },
+        {
+          "text": "une créature violette",
+          "target": "fs"
+        },
+        {
+          "text": "la forte pluie",
+          "target": "fs"
+        },
+        {
+          "text": "cette reine puissante",
+          "target": "fs"
+        },
+        {
+          "text": "des lutins violets",
+          "target": "mp"
+        },
+        {
+          "text": "des petits insectes",
+          "target": "mp"
+        },
+        {
+          "text": "les oiseaux chanteurs",
+          "target": "mp"
+        },
+        {
+          "text": "des fées violettes",
+          "target": "fp"
+        },
+        {
+          "text": "des mélodies différentes",
+          "target": "fp"
+        },
+        {
+          "text": "les prairies fleuries",
+          "target": "fp"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "tri",
+      "diff": 2,
+      "notions": [
+        "nombre"
+      ],
+      "q": "Un seul ou plusieurs ? Range chaque groupe nominal.",
+      "explain": "Au pluriel, le nom et l'adjectif prennent souvent un S.",
+      "targets": [
+        {
+          "id": "s",
+          "label": "Singulier : un seul",
+          "emoji": "☝️",
+          "color": "#5b7fd6"
+        },
+        {
+          "id": "p",
+          "label": "Pluriel : plusieurs",
+          "emoji": "🖐️",
+          "color": "#d6935b"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "un petit cahier",
+          "target": "s"
+        },
+        {
+          "text": "ma bille dorée",
+          "target": "s"
+        },
+        {
+          "text": "cette robe légère",
+          "target": "s"
+        },
+        {
+          "text": "des petits cahiers",
+          "target": "p"
+        },
+        {
+          "text": "mes billes dorées",
+          "target": "p"
+        },
+        {
+          "text": "ces robes légères",
+          "target": "p"
+        }
+      ]
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "sentence": "Les instruments jouent des mélodies",
+      "choices": [
+        "différentes",
+        "différents",
+        "différente",
+        "différent"
+      ],
+      "hint": "Cherche le nom qui va avec. Est-il masculin ou féminin ? Singulier ou pluriel ?",
+      "explain": "Mélodies est féminin pluriel : différentes prend un E et un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "sentence": "Au printemps, on entend les oiseaux",
+      "choices": [
+        "chanteurs",
+        "chanteur",
+        "chanteuses",
+        "chanteuse"
+      ],
+      "hint": "Cherche le nom qui va avec. Est-il masculin ou féminin ? Singulier ou pluriel ?",
+      "explain": "Oiseaux est masculin pluriel : chanteurs prend un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "sentence": "Au printemps, on voit les prairies",
+      "choices": [
+        "fleuries",
+        "fleuris",
+        "fleurie",
+        "fleuri"
+      ],
+      "hint": "Cherche le nom qui va avec. Est-il masculin ou féminin ? Singulier ou pluriel ?",
+      "explain": "Prairies est féminin pluriel : fleuries prend un E et un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "sentence": "J'ai emporté des vêtements",
+      "choices": [
+        "chauds",
+        "chaud",
+        "chaudes",
+        "chaude"
+      ],
+      "hint": "Cherche le nom qui va avec. Est-il masculin ou féminin ? Singulier ou pluriel ?",
+      "explain": "Vêtements est masculin pluriel : chauds prend un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "sentence": "On a félicité les",
+      "choices": [
+        "meilleures étudiantes",
+        "meilleurs étudiantes",
+        "meilleures étudiante",
+        "meilleur étudiantes"
+      ],
+      "hint": "Étudiantes est féminin pluriel. L'adjectif aussi.",
+      "explain": "Étudiantes est féminin pluriel : meilleures prend un E et un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "accord-adjectif",
+        "nombre"
+      ],
+      "sentence": "L'orage fait peur aux",
+      "choices": [
+        "petits insectes",
+        "petit insectes",
+        "petits insecte",
+        "petites insectes"
+      ],
+      "hint": "Combien y a-t-il d'insectes ? Et insecte est masculin.",
+      "explain": "Insectes est masculin pluriel : petits prend un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "sentence": "En hiver, les chasseurs partent avec leurs chiens",
+      "choices": [
+        "fidèles",
+        "fidèle",
+        "fidèls",
+        "fidèlent"
+      ],
+      "hint": "Cherche le nom qui va avec. Est-il masculin ou féminin ? Singulier ou pluriel ?",
+      "explain": "Chiens est au pluriel : fidèles prend un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "nombre"
+      ],
+      "q": "Dans « quatre concertos », pourquoi n'y a-t-il pas de S à « quatre » ?",
+      "choices": [
+        "Quatre est un nombre : il ne prend pas de S",
+        "Concertos est au singulier",
+        "Quatre est un verbe",
+        "On a oublié le S"
+      ],
+      "hint": "Quatre, cinq, dix… ce sont des nombres.",
+      "explain": "Les nombres comme quatre ne prennent pas de S."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "nombre"
+      ],
+      "q": "Dans « des violons », pourquoi y a-t-il un S à « violons » ?",
+      "choices": [
+        "Il y a plusieurs violons",
+        "Violon est un mot masculin",
+        "Le violon est un instrument",
+        "Violon finit toujours par S"
+      ],
+      "hint": "Regarde le déterminant : des.",
+      "explain": "Des violons : il y en a plusieurs, c'est le pluriel."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "q": "Dans « des mélodies différentes », à quel nom se rapporte « différentes » ?",
+      "choices": [
+        "Mélodies",
+        "Instruments",
+        "Vivaldi",
+        "Musique"
+      ],
+      "hint": "Qu'est-ce qui est différent ?",
+      "explain": "Ce sont les mélodies qui sont différentes."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "q": "Dans « des mélodies différentes », pourquoi « différentes » finit-il par E, S ?",
+      "choices": [
+        "Mélodies est féminin pluriel",
+        "Différent est toujours au féminin",
+        "Il y a plusieurs instruments",
+        "C'est un verbe"
+      ],
+      "hint": "Quel est le genre et le nombre de mélodies ?",
+      "explain": "L'adjectif prend le genre et le nombre du nom : féminin pluriel."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "genre"
+      ],
+      "q": "Quel groupe nominal est au féminin ?",
+      "choices": [
+        "Une créature violette",
+        "Un monstre violet",
+        "Des lutins violets",
+        "Le premier violon"
+      ],
+      "hint": "Cherche le déterminant « une » ou « la ».",
+      "explain": "Une créature violette : c'est féminin."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "groupe-nominal"
+      ],
+      "q": "Lequel est un groupe nominal ?",
+      "choices": [
+        "Des violons anciens",
+        "Jouent ensemble",
+        "Très vite",
+        "Il compose"
+      ],
+      "hint": "Il faut un déterminant et un nom.",
+      "explain": "Des violons anciens : un déterminant, un nom et un adjectif."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "groupe-nominal"
+      ],
+      "q": "Dans « la forte pluie », quel mot est le nom ?",
+      "choices": [
+        "Pluie",
+        "La",
+        "Forte",
+        "Aucun"
+      ],
+      "hint": "Le nom désigne une chose. L'adjectif dit comment elle est.",
+      "explain": "La est le déterminant, forte l'adjectif, pluie le nom."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif"
+      ],
+      "q": "Dans le groupe nominal, l'adjectif s'accorde avec le nom.",
+      "answer": true,
+      "explain": "Oui : il prend le genre et le nombre du nom."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "accord-adjectif",
+        "genre"
+      ],
+      "q": "« Des fées violets » est bien accordé.",
+      "answer": false,
+      "explain": "Fées est féminin pluriel : on écrit des fées violettes."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "genre",
+        "nombre"
+      ],
+      "q": "Le genre, c'est singulier ou pluriel.",
+      "answer": false,
+      "explain": "Le genre, c'est masculin ou féminin. Singulier ou pluriel, c'est le nombre."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "nombre"
+      ],
+      "q": "« Un » et « des » aident à savoir si le nom est singulier ou pluriel.",
+      "answer": true,
+      "explain": "Un : un seul. Des : plusieurs."
+    },
+    {
+      "type": "placer",
+      "layout": "tri",
+      "diff": 2,
+      "sample": 8,
+      "notions": [
+        "pluriel-x"
+      ],
+      "q": "Au pluriel, ce mot prend-il un S ou un X ?",
+      "explain": "Eau, eu, au prennent un X. Sauf pneu, landau et bleu.",
+      "targets": [
+        {
+          "id": "s",
+          "label": "Il prend un S",
+          "emoji": "🐍",
+          "color": "#5b9ad6"
+        },
+        {
+          "id": "x",
+          "label": "Il prend un X",
+          "emoji": "❌",
+          "color": "#d6735b"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "un jumeau",
+          "target": "x"
+        },
+        {
+          "text": "un château",
+          "target": "x"
+        },
+        {
+          "text": "un oiseau",
+          "target": "x"
+        },
+        {
+          "text": "un essieu",
+          "target": "x"
+        },
+        {
+          "text": "un jeu",
+          "target": "x"
+        },
+        {
+          "text": "un tuyau",
+          "target": "x"
+        },
+        {
+          "text": "un pneu",
+          "target": "s"
+        },
+        {
+          "text": "un landau",
+          "target": "s"
+        },
+        {
+          "text": "bleu",
+          "target": "s"
+        },
+        {
+          "text": "un violon",
+          "target": "s"
+        },
+        {
+          "text": "une ville",
+          "target": "s"
+        },
+        {
+          "text": "un océan",
+          "target": "s"
+        }
+      ]
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "pluriel-x"
+      ],
+      "sentence": "Dans ce landau, il y a des",
+      "choices": [
+        "jumeaux",
+        "jumeaus",
+        "jumeau",
+        "jumaux"
+      ],
+      "hint": "Jumeau finit par eau.",
+      "explain": "Les mots en eau prennent un X : des jumeaux.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "pluriel-x"
+      ],
+      "sentence": "Le garagiste a vérifié les",
+      "choices": [
+        "essieux",
+        "essieus",
+        "essieu",
+        "essieuxs"
+      ],
+      "hint": "Essieu finit par eu.",
+      "explain": "Les mots en eu prennent un X : des essieux.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "pluriel-x"
+      ],
+      "sentence": "Il a changé ses vieux",
+      "choices": [
+        "pneus",
+        "pneux",
+        "pneu",
+        "pneue"
+      ],
+      "hint": "Attention : c'est une exception !",
+      "explain": "Pneu est une exception : des pneus, avec un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "pluriel-x",
+        "accord-adjectif"
+      ],
+      "sentence": "Que faites-vous derrière les",
+      "choices": [
+        "châteaux isolés",
+        "châteaus isolés",
+        "châteaux isolé",
+        "château isolés"
+      ],
+      "hint": "Château finit par eau. Et l'adjectif s'accorde.",
+      "explain": "Des châteaux, avec un X, et isolés, avec un S.",
+      "spell": true
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "pluriel-x"
+      ],
+      "sentence": "Dans le ciel volent des",
+      "choices": [
+        "oiseaux",
+        "oiseaus",
+        "oiseau",
+        "oisaux"
+      ],
+      "hint": "Oiseau finit par eau.",
+      "explain": "Les mots en eau prennent un X : des oiseaux.",
+      "spell": true
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "pluriel-x"
+      ],
+      "q": "Le pluriel de « bleu » s'écrit « bleux ».",
+      "answer": false,
+      "explain": "Bleu est une exception : des yeux bleus, avec un S."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "pluriel-x"
+      ],
+      "q": "Les mots qui finissent par « eau » prennent un X au pluriel.",
+      "answer": true,
+      "explain": "Un bateau, des bateaux."
+    },
+    {
+      "type": "placer",
+      "layout": "frise",
+      "diff": 2.5,
+      "notions": [
+        "vivaldi",
+        "quatre-saisons"
+      ],
+      "q": "Place chaque étiquette sur la frise du temps.",
+      "explain": "Vivaldi nait en 1678, publie Les Quatre Saisons en 1725 et meurt en 1741.",
+      "targets": [
+        {
+          "id": "a",
+          "date": "1678"
+        },
+        {
+          "id": "b",
+          "date": "1725"
+        },
+        {
+          "id": "c",
+          "date": "1741"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Naissance de Vivaldi à Venise",
+          "target": "a"
+        },
+        {
+          "text": "Les Quatre Saisons",
+          "target": "b"
+        },
+        {
+          "text": "Mort de Vivaldi",
+          "target": "c"
+        }
+      ]
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "vivaldi",
+        "venise"
+      ],
+      "q": "Dans quelle ville Vivaldi est-il né ?",
+      "choices": [
+        "Venise",
+        "Rome",
+        "Paris",
+        "Vienne"
+      ],
+      "hint": "Une ville d'Italie construite sur l'eau.",
+      "explain": "Vivaldi est né à Venise, en Italie."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "vivaldi"
+      ],
+      "q": "Dans quel pays Vivaldi est-il né ?",
+      "choices": [
+        "L'Italie",
+        "La France",
+        "L'Allemagne",
+        "L'Espagne"
+      ],
+      "hint": "Sa ville, Venise, est construite sur l'eau.",
+      "explain": "Vivaldi est italien : il est né à Venise."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "pretre-roux"
+      ],
+      "q": "Pourquoi appelait-on Vivaldi « le prêtre roux » ?",
+      "choices": [
+        "Il était prêtre et avait les cheveux roux",
+        "Il portait une robe rousse",
+        "Il jouait sur un violon roux",
+        "Il habitait une maison rousse"
+      ],
+      "hint": "Regarde ses cheveux sur un portrait.",
+      "explain": "Il était prêtre et il avait les cheveux roux."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "vivaldi",
+        "orchestre"
+      ],
+      "q": "À Venise, Vivaldi apprenait la musique à…",
+      "choices": [
+        "des jeunes filles orphelines",
+        "des chevaliers",
+        "des rois",
+        "des marins"
+      ],
+      "hint": "Elles vivaient sans leurs parents.",
+      "explain": "Les orphelines de la Pietà formaient un orchestre célèbre dans toute l'Europe."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "temps-modernes"
+      ],
+      "q": "À quelle période de l'histoire vivait Vivaldi ?",
+      "choices": [
+        "Les Temps modernes",
+        "Le Moyen Âge",
+        "La Préhistoire",
+        "L'Antiquité"
+      ],
+      "hint": "C'est après le Moyen Âge, avant la Révolution française.",
+      "explain": "Vivaldi a vécu pendant les Temps modernes."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "vivaldi",
+        "concerto"
+      ],
+      "q": "Vivaldi a écrit beaucoup de concertos. Combien environ ?",
+      "choices": [
+        "Plus de quatre cents",
+        "Quatre",
+        "Dix",
+        "Un seul"
+      ],
+      "hint": "Bien plus que les quatre saisons !",
+      "explain": "Il a écrit plus de quatre cents concertos."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "vivaldi"
+      ],
+      "q": "Après sa mort, Vivaldi a été oublié. Quand est-il redevenu célèbre ?",
+      "choices": [
+        "Au vingtième siècle",
+        "Au Moyen Âge",
+        "Le lendemain de sa mort",
+        "Jamais"
+      ],
+      "hint": "C'est le siècle de tes grands-parents.",
+      "explain": "On l'a redécouvert au vingtième siècle. Aujourd'hui, il est très célèbre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Combien de concertos y a-t-il dans Les Quatre Saisons ?",
+      "choices": [
+        "Quatre",
+        "Trois",
+        "Douze",
+        "Un seul"
+      ],
+      "hint": "Compte les saisons de l'année.",
+      "explain": "Un concerto pour chaque saison : quatre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "quatre-saisons",
+        "soliste"
+      ],
+      "q": "Quel instrument est le soliste des Quatre Saisons ?",
+      "choices": [
+        "Le violon",
+        "La trompette",
+        "Le piano",
+        "La flûte"
+      ],
+      "hint": "C'est un instrument à cordes, qu'on tient sous le menton.",
+      "explain": "Le violon soliste joue devant l'orchestre."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Pour aider à imaginer chaque saison, Vivaldi a écrit…",
+      "choices": [
+        "un poème",
+        "une chanson",
+        "un film",
+        "une bande dessinée"
+      ],
+      "hint": "Un texte avec des vers, que l'on lit.",
+      "explain": "Chaque concerto est accompagné d'un poème qui raconte la saison."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Dans Les Quatre Saisons, quelqu'un chante.",
+      "answer": false,
+      "explain": "C'est une œuvre instrumentale : seuls les instruments jouent."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "venise"
+      ],
+      "q": "À Venise, on se déplace souvent en bateau.",
+      "answer": true,
+      "explain": "Venise est construite sur l'eau : ses rues sont des canaux."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "venise"
+      ],
+      "q": "Qu'y a-t-il à la place des rues, à Venise ?",
+      "choices": [
+        "Des canaux",
+        "Des rails",
+        "Des tunnels",
+        "Des pistes de ski"
+      ],
+      "hint": "La ville est construite sur l'eau.",
+      "explain": "À Venise, les rues sont des canaux."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "melodie",
+        "harmonie"
+      ],
+      "q": "Quelle partie de la musique peux-tu chanter ou siffler ?",
+      "choices": [
+        "La mélodie",
+        "L'harmonie",
+        "Le silence",
+        "L'orchestre"
+      ],
+      "hint": "C'est l'air qui reste dans ta tête.",
+      "explain": "La mélodie, c'est l'air que l'on chante."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "baroque",
+        "temps-modernes"
+      ],
+      "q": "La musique de Vivaldi est de la musique…",
+      "choices": [
+        "baroque",
+        "rock",
+        "romaine",
+        "électronique"
+      ],
+      "hint": "C'est un style d'il y a environ trois cents ans.",
+      "explain": "Vivaldi compose de la musique baroque."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Écoute la musique. Quelle saison Vivaldi raconte-t-il ?",
+      "choices": [
+        "Le printemps",
+        "L'été",
+        "L'automne",
+        "L'hiver"
+      ],
+      "hint": "Écoute les petites notes aiguës, comme des oiseaux qui chantent.",
+      "explain": "C'est le printemps : le soleil revient et les oiseaux chantent.",
+      "audio": "printemps"
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Écoute la musique. Quelle saison Vivaldi raconte-t-il ?",
+      "choices": [
+        "L'été",
+        "Le printemps",
+        "L'automne",
+        "L'hiver"
+      ],
+      "hint": "Les notes vont très vite et très fort, comme un orage.",
+      "explain": "C'est l'été : un violent orage éclate.",
+      "audio": "ete"
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Écoute la musique. Quelle saison Vivaldi raconte-t-il ?",
+      "choices": [
+        "L'automne",
+        "Le printemps",
+        "L'été",
+        "L'hiver"
+      ],
+      "hint": "C'est une danse joyeuse : les paysans fêtent la fin des vendanges.",
+      "explain": "C'est l'automne : les paysans dansent pour fêter les vendanges.",
+      "audio": "automne"
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "quatre-saisons"
+      ],
+      "q": "Écoute la musique. Quelle saison Vivaldi raconte-t-il ?",
+      "choices": [
+        "L'hiver",
+        "Le printemps",
+        "L'été",
+        "L'automne"
+      ],
+      "hint": "Les petites notes répétées font penser à quelqu'un qui grelotte.",
+      "explain": "C'est l'hiver : on grelotte de froid.",
+      "audio": "hiver"
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "quatre-saisons",
+        "cordes"
+      ],
+      "q": "Écoute. Comment Vivaldi fait-il sentir le froid de l'hiver ?",
+      "choices": [
+        "Les violons répètent de petites notes, comme quelqu'un qui grelotte",
+        "Avec des cloches",
+        "Avec une voix qui chante",
+        "Avec un tambour"
+      ],
+      "hint": "Écoute les violons au début.",
+      "explain": "Les violons tremblent, comme nous quand il fait très froid.",
+      "audio": "hiver"
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "quatre-saisons",
+        "mouvement"
+      ],
+      "q": "Écoute. Ce mouvement est-il rapide ou lent ?",
+      "choices": [
+        "Rapide, comme un orage",
+        "Lent, comme une berceuse",
+        "Il n'y a pas de musique",
+        "Très lent, puis silence"
+      ],
+      "hint": "Écoute la vitesse des notes.",
+      "explain": "C'est le troisième mouvement de L'été : rapide comme un orage.",
+      "audio": "ete"
+    }
+  ],
+  "images": {
+    "violon": {
+      "prompt": "a single violin lying on a plain wooden table next to its long thin straight bow with white horsehair, four strings, f-shaped sound holes, nothing else",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 23
+    },
+    "orchestre": {
+      "prompt": "a small baroque chamber orchestra of violinists playing together in a candle-lit hall, seen from the audience",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 42
+    },
+    "instrument": {
+      "prompt": "several string instruments side by side: a small violin, a viola, a cello and a big double bass",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 42
+    },
+    "venise": {
+      "prompt": "Venice in the 18th century: a canal with gondolas, old colorful palaces with arched windows, a bridge",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "vivaldi": {
+      "prompt": "an 18th century musician with long curly red hair and a black coat, holding a violin under his chin and pulling the bow across the strings, Venice canal behind him",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "quatre-saisons": {
+      "prompt": "a tree shown in four parts: spring blossoms, summer sun, autumn red leaves, winter snow, with a violin in front",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "printemps": {
+      "prompt": "a spring meadow with blossoming trees, birds singing on branches, a little stream",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 42
+    },
+    "ete": {
+      "prompt": "a hot summer wheat field under a dark stormy sky with lightning, peasants running",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 42
+    },
+    "automne": {
+      "prompt": "autumn grape harvest: villagers dancing happily between vineyards with baskets of grapes, red and orange leaves",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 42
+    },
+    "hiver": {
+      "prompt": "a snowy winter village, a child shivering in the cold wind, warm light from a cottage window with a fireplace",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "musique": {
+      "prompt": "musical notes flying out of an open music book on a desk, a quill pen next to it",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 42
+    }
+  }
+}

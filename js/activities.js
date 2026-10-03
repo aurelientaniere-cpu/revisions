@@ -5,7 +5,7 @@
 // puis la réponse est montrée.
 
 import { h, shuffle, pick } from './util.js';
-import { say, stop } from './speech.js';
+import { say, stop, playMusic, musicPlayer } from './speech.js';
 import { P, fill } from './phrases.js';
 import { draggable, nearest, flash } from './drag.js';
 
@@ -18,8 +18,31 @@ function ear(text, cls = 'ear') {
   }, '🔊');
 }
 
+// Bouton ▶️ d'un extrait de musique (lessons/music/<nom>.m4a) : jamais lancé tout seul.
+export function musicButton(name, label = 'Écouter la musique') {
+  const btn = h('button', { class: 'music-btn' });
+  const playing = () => musicPlayer.src && !musicPlayer.paused && btn.dataset.on === '1';
+  const paint = () => { btn.textContent = playing() ? '⏸ Arrêter la musique' : `🎻 ${label}`; };
+  btn.addEventListener('click', async () => {
+    if (playing()) { stop(); return; }
+    document.querySelectorAll('.music-btn').forEach((b) => { b.dataset.on = ''; });
+    btn.dataset.on = '1';
+    await playMusic(name);
+    paint();
+  });
+  for (const e of ['play', 'pause', 'ended']) musicPlayer.addEventListener(e, paint);
+  paint();
+  return btn;
+}
+
+// Mot avec ses lettres pièges entre crochets (« en[s]e[m]ble ») : pièges surlignés.
+export function spellView(spell, cls = 'spell-word') {
+  return h('div', { class: cls }, String(spell).split(/(\[[^\]]*\])/).filter(Boolean).map((p) =>
+    p.startsWith('[') ? h('span', { class: 'trap' }, p.slice(1, -1)) : p));
+}
+
 // Zone commune : consigne lue + zone de réponse + bandeau de retour.
-function frame(root, text, thumb) {
+function frame(root, text, thumb, music) {
   const speech = text;
   const prompt = h('div', { class: 'prompt' },
     thumb ? h('img', { class: 'thumb', src: thumb, alt: '' }) : null,
@@ -27,7 +50,7 @@ function frame(root, text, thumb) {
     h('button', { class: 'icon speak', 'aria-label': 'Écouter', onclick: () => say(speech) }, '🔊'));
   const body = h('div', { class: 'col' });
   const fb = h('div');
-  root.append(prompt, body, fb);
+  root.append(...[prompt, music && musicButton(music), body, fb].filter(Boolean));
   return { body, fb };
 }
 
@@ -54,7 +77,7 @@ function hint(fb, segments) {
 }
 
 export function renderStep(item, ctx) {
-  ({ qcm, vf, schema, placer })[item.type](item, ctx);
+  ({ qcm, vf, schema, placer, trous, ecrire })[item.type](item, ctx);
 }
 
 /* ---------- QCM ---------- */
@@ -63,7 +86,7 @@ const thumbOf = (item, lesson) => (item.notions.length === 1 ? lesson.img(item.n
 
 function qcm(item, { root, lesson, done }) {
   const text = item.sentence ? `${P.completePrefix} ${item.sentence}…` : item.q;
-  const { body, fb } = frame(root, text, thumbOf(item, lesson));
+  const { body, fb } = frame(root, text, item.audio ? null : thumbOf(item, lesson), item.audio);
   const finish = finisher(fb, done);
   const choices = shuffle([
     { t: item.choices[0], ok: true },
@@ -73,12 +96,13 @@ function qcm(item, { root, lesson, done }) {
   let errors = 0, over = false;
 
   const rows = choices.map((c) => {
-    const btn = h('button', { class: 'choice' }, c.t);
+    // Orthographe (`spell`) : pas de 🔊, une faute se lirait comme le bon mot.
+    const btn = h('button', { class: item.spell ? 'choice spell' : 'choice' }, c.t);
     btn.addEventListener('click', () => answer(c, btn));
     c.btn = btn;
-    return h('div', { class: 'choice-row' }, btn, ear(c.t, 'icon ear-btn'));
+    return item.spell ? btn : h('div', { class: 'choice-row' }, btn, ear(c.t, 'icon ear-btn'));
   });
-  body.append(h('div', { class: 'choices' }, rows));
+  body.append(h('div', { class: item.spell ? 'choices spell-grid' : 'choices' }, rows));
 
   function answer(c, btn) {
     if (over || btn.disabled) return;
@@ -229,7 +253,7 @@ function triFrise(item, { root, done }, layout) {
 
   const targetEls = {};
   const targets = item.targets;
-  const cols = targets.length === 2 ? 'cols-2' : 'cols-3';
+  const cols = targets.length === 2 || (targets.length === 4 && layout === 'tri') ? 'cols-2' : 'cols-3';
   const targetBox = h('div', { class: `targets ${cols} ${layout}` });
   targets.forEach((tg) => {
     const placed = h('div', { class: 'placed' });
@@ -561,4 +585,192 @@ function phrase(item, { root, done }) {
   }
 
   say(item.q);
+}
+
+/* ---------- Dictée à trous ---------- */
+// Chaque phrase de `text` a des trous « [bon|faux|faux] » (le bon en premier). On touche un trou,
+// puis la bonne orthographe. Les choix n'ont pas de 🔊 : une faute se lirait comme le bon mot.
+const BLANK = /\[([^\]]+)\]/g;
+export const trousSentence = (line) => line.replace(BLANK, (m, opts) => opts.split('|')[0]);
+
+function trous(item, { root, done }) {
+  const text = item.q || P.trousPrompt;
+  const { body, fb } = frame(root, text);
+  const sentences = item.text.map(trousSentence);
+  const blanks = [];
+  let active = null, errors = 0, revealed = 0;
+
+  const lines = item.text.map((line, i) => {
+    const row = h('div', { class: 'trous-line' });
+    const words = h('div', { class: 'trous-text' });
+    for (const part of line.split(/(\[[^\]]+\])/).filter(Boolean)) {
+      if (!part.startsWith('[')) { words.append(part); continue; }
+      const opts = part.slice(1, -1).split('|');
+      const b = { good: opts[0], opts, misses: 0, done: false, row };
+      b.el = h('button', { class: 'blank', onclick: () => open(b) }, '?');
+      blanks.push(b);
+      words.append(b.el);
+    }
+    row.append(words, ear(sentences[i]));
+    return row;
+  });
+  const picker = h('div', { class: 'trous-picker' });
+  body.append(h('div', { class: 'trous' }, lines));
+
+  function open(b) {
+    if (b.done) return;
+    if (active) active.el.classList.remove('selected');
+    active = b;
+    b.el.classList.add('selected');
+    fb.replaceChildren();
+    picker.replaceChildren(...shuffle(b.opts).map((o) => {
+      const btn = h('button', { class: 'choice spell' }, o);
+      btn.addEventListener('click', () => answer(b, o, btn));
+      return btn;
+    }));
+    b.row.after(picker);
+  }
+
+  function answer(b, o, btn) {
+    if (b.done || btn.disabled) return;
+    if (o === b.good) { fill(b, 'good'); say(pick(P.okSmall)); return next(); }
+    errors++;
+    b.misses++;
+    btn.disabled = true;
+    btn.classList.add('dim');
+    if (b.misses === 1 && b.opts.length > 2) { hint(fb, [pick(P.retry)]); return; }
+    revealed++;
+    fill(b, 'reveal');
+    next();
+  }
+
+  function fill(b, cls) {
+    b.done = true;
+    b.el.textContent = b.good;
+    b.el.classList.remove('selected');
+    b.el.classList.add(cls);
+    picker.remove();
+    active = null;
+  }
+
+  function next() {
+    const b = blanks.find((x) => !x.done);
+    if (b) { open(b); return; }
+    // Texte long : un trou révélé sur quatre est toléré (réussite partielle).
+    const result = revealed > Math.floor(blanks.length / 4) ? 'fail' : errors ? 'partial' : 'ok';
+    const msg = result === 'fail' ? P.placerFail : pick(P.bravo);
+    feedback(fb, result === 'fail' ? 'show' : 'ok', msg, () => done(result));
+    say([msg, ...sentences]);
+  }
+
+  say(text);
+  open(blanks[0]);
+}
+
+/* ---------- Écrire un mot au clavier ---------- */
+// Seule activité où l'on tape : réservée aux mots d'orthographe à apprendre.
+// mode « copie » : le mot est affiché ; « memo » : on le regarde, on le cache, on l'écrit ;
+// « dictee » : on l'entend seulement. Deux erreurs : le mot est montré et on le recopie.
+const noAccent = (s) => s.normalize('NFD').replace(/\p{M}/gu, '');
+const tidy = (s) => s.normalize('NFC').trim().replace(/\s+/g, ' ').replace(/’/g, "'");
+
+// Alignement lettre à lettre (distance d'édition) : lettres justes en vert, le reste en orange,
+// une lettre manquante = une case orange vide. La bonne lettre n'est jamais montrée.
+function diffView(typed, good) {
+  const a = [...typed], b = [...good];
+  const d = a.map(() => []);
+  d.push([]);
+  for (let i = 0; i <= a.length; i++) {
+    for (let j = 0; j <= b.length; j++) {
+      d[i][j] = !i ? j : !j ? i : Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+  }
+  const out = [];
+  let i = a.length, j = b.length;
+  while (i || j) {
+    if (i && j && d[i][j] === d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)) {
+      out.unshift({ c: a[i - 1], k: a[i - 1] === b[j - 1] ? 'ok' : 'bad' }); i--; j--;
+    } else if (i && d[i][j] === d[i - 1][j] + 1) {
+      out.unshift({ c: a[i - 1], k: 'bad' }); i--;
+    } else {
+      out.unshift({ c: '', k: 'gap' }); j--;
+    }
+  }
+  return h('div', { class: 'diff-word' }, out.map((o) => h('span', { class: o.k }, o.c || ' ')));
+}
+
+function ecrire(item, { root, lesson, done }) {
+  const notion = lesson.notionById[item.notions[0]] || {};
+  const word = item.word;
+  const mode = item.mode || 'dictee';
+  const shown = mode === 'dictee' ? P.writeHear : mode === 'memo' ? P.writeMemo : P.writeCopy;
+  let speech = mode === 'dictee' ? [P.writeWord, word, item.say] : [shown, word];
+  const label = h('div', { class: 'text' }, shown);
+  let errors = 0, copying = false, over = false;
+
+  const prompt = h('div', { class: 'prompt' },
+    mode === 'dictee' && lesson.img(notion.id) ? h('img', { class: 'thumb', src: lesson.img(notion.id), alt: '' }) : null,
+    label,
+    h('button', { class: 'icon speak', 'aria-label': 'Écouter', onclick: () => say(copying ? [P.writeCopyNow, word] : speech) }, '🔊'));
+  const model = h('div', { class: 'write-model' });
+  const input = h('input', {
+    class: 'write-input', type: 'text', lang: 'fr', autocomplete: 'off', autocorrect: 'off',
+    autocapitalize: 'off', spellcheck: 'false', enterkeyhint: 'done', 'aria-label': 'Écris le mot',
+  });
+  const ok = h('button', { class: 'primary big', onclick: () => check() }, 'Valider ✔');
+  const inputRow = h('div', { class: 'write-row' }, input, ok);
+  const diff = h('div', { class: 'write-diff' });
+  const fb = h('div');
+  input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); check(); } });
+  root.append(prompt, model, inputRow, diff, fb);
+  const fin = finisher(fb, done);
+
+  const showModel = () => model.replaceChildren(spellView(notion.spell || word));
+  if (mode !== 'dictee') showModel();
+  if (mode === 'memo') {
+    inputRow.hidden = true;
+    model.append(h('button', { class: 'big', onclick: () => {
+      model.replaceChildren(h('div', { class: 'spell-word hidden-word' }, '🙈'));
+      inputRow.hidden = false;
+      input.focus();
+      label.textContent = P.writeNow;
+      speech = [P.writeNow];
+      say(P.writeNow);
+    } }, '🙈 Je l’ai dans la tête'));
+  } else {
+    input.focus();
+  }
+
+  function check() {
+    if (over) return;
+    const v = tidy(input.value);
+    if (!v) { hint(fb, [P.writeEmpty]); input.focus(); return; }
+    if (v === word) {
+      over = true;
+      input.classList.add('good');
+      input.readOnly = true;
+      input.blur();
+      diff.replaceChildren();
+      model.replaceChildren(spellView(notion.spell || word));
+      fin(copying ? 'fail' : errors ? 'partial' : 'ok', copying ? [P.writeCopyOk, item.say] : [pick(P.bravo), item.say]);
+      return;
+    }
+    errors++;
+    diff.replaceChildren(diffView(v, word));
+    if (copying || errors === 1) {
+      const why = v.toLowerCase() === word.toLowerCase() ? P.writeCapital
+        : noAccent(v) === noAccent(word) ? P.writeAccent : P.writeAlmost;
+      hint(fb, [why, copying || why !== P.writeAlmost ? null : notion.tip]);
+      input.focus();
+      return;
+    }
+    // Deuxième erreur : on montre le mot, avec ses pièges, et on le recopie.
+    copying = true;
+    showModel();
+    input.value = '';
+    hint(fb, [P.writeCopyNow, word]);
+    input.focus();
+  }
+
+  say(speech);
 }

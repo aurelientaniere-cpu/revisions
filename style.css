@@ -129,8 +129,8 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .tokens { display: flex; flex-wrap: wrap; gap: 12px; min-height: 80px; }
 .token { font-size: 24px; padding: 12px 18px; min-height: 64px; }
 .targets { display: grid; gap: 16px; }
-.targets.cols-3 { grid-template-columns: repeat(3, 1fr); }
-.targets.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.targets.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.targets.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .target { min-height: 150px; background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); padding: 14px 16px; box-shadow: var(--shadow); cursor: pointer; display: flex; flex-direction: column; gap: 8px; align-items: stretch; text-align: left; font-size: 24px; }
 .target .tname { font-weight: 700; display: flex; align-items: center; gap: 14px; }
 .target .placed { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -255,3 +255,31 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .comp-card .comp-art img, .comp-card .comp-art svg { width: 100%; height: 100%; object-fit: cover; display: block; }
 .comp-card .comp-sub { font-size: 18px; font-weight: 400; opacity: .95; }
 .comp-card.locked { min-height: 280px; justify-content: center; }
+
+/* ---------- Orthographe : mots à écrire, dictée à trous, musique ---------- */
+.spell-word { font-size: 52px; font-weight: 700; letter-spacing: .08em; text-align: center; }
+.spell-word .trap { background: #ffc58a; border-radius: 8px; padding: 0 2px; }
+.hidden-word { opacity: .6; }
+.discover .spell-word { text-align: left; font-size: 44px; }
+.discover .tip { font-size: 24px; color: #8a5a00; background: var(--hint-soft); border-radius: 14px; padding: 8px 14px; }
+.choice.spell { font-size: 32px; text-align: center; letter-spacing: .05em; }
+.spell-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.write-model { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.write-row { display: flex; gap: 16px; align-items: stretch; }
+.write-row[hidden] { display: none; }
+.write-input { flex: 1; min-width: 0; font: inherit; font-size: 44px; letter-spacing: .08em; padding: 12px 20px; border: 3px solid var(--primary); border-radius: var(--radius); background: var(--card); color: var(--ink); text-align: center; }
+.write-input:focus { outline: 4px solid var(--primary-soft); }
+.write-diff { display: flex; justify-content: center; }
+.diff-word { display: flex; gap: 4px; font-size: 44px; font-weight: 700; letter-spacing: .04em; }
+.diff-word span { min-width: 30px; text-align: center; border-radius: 8px; padding: 0 3px; }
+.diff-word .ok { color: var(--good); }
+.diff-word .bad { color: #8a5a00; background: var(--hint-soft); outline: 3px solid var(--hint); }
+.diff-word .gap { outline: 3px dashed var(--hint); background: var(--hint-soft); }
+.trous { display: flex; flex-direction: column; gap: 14px; }
+.trous-line { display: flex; gap: 14px; align-items: center; background: var(--card); border: 3px solid var(--line); border-radius: var(--radius); padding: 14px 18px; }
+.trous-text { flex: 1; font-size: 28px; line-height: 2; }
+.blank { font-size: 28px; min-height: 52px; min-width: 120px; padding: 2px 14px; margin: 0 4px; border-style: dashed; border-color: var(--primary); box-shadow: none; vertical-align: middle; }
+.blank.good, .blank.reveal { border-style: solid; }
+.trous-picker { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 4px 8px 8px; }
+.music-btn { align-self: flex-start; font-size: 28px; min-height: 80px; padding: 14px 28px; background: #fff1d6; border-color: var(--hint); }
+.credits { font-size: 18px; }

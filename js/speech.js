@@ -34,6 +34,7 @@ export const hasClip = (text) => clips.has(clipKey(text));
 export function stop() {
   run++;
   audio.pause();
+  music.pause();
   if (synth) synth.cancel();
   if (pending) { pending(false); pending = null; }
 }
@@ -105,6 +106,25 @@ async function playClip(src, id) {
   });
 }
 
+/* ---------- Extraits de musique (lessons/music/<nom>.m4a) ---------- */
+// Lecteur à part, jamais lancé tout seul ; toute nouvelle lecture (ou stop) l'arrête.
+const music = new Audio();
+music.preload = 'auto';
+export const musicPlayer = music;
+
+export async function playMusic(name) {
+  stop();
+  const id = run;
+  let url;
+  try { url = await blobUrl(`lessons/music/${name}.m4a`); } catch { return; }
+  if (id !== run) return;
+  music.muted = false;
+  music.src = url;
+  music.currentTime = 0;
+  const p = music.play();
+  if (p) p.catch(() => {});
+}
+
 /* ---------- Repli : voix de l'iPad ---------- */
 function frenchVoice() {
   const vs = synth ? synth.getVoices().filter((v) => (v.lang || '').toLowerCase().startsWith('fr')) : [];
@@ -173,5 +193,11 @@ export function unlock() {
     // Si une vraie lecture a démarré entre-temps, on ne l'interrompt pas.
     const unmute = () => { if (audio.muted && audio.src === src) audio.pause(); audio.muted = false; };
     if (p) p.then(unmute, unmute); else unmute();
+    // Le lecteur de musique aussi : il démarre après un chargement, hors du geste.
+    music.muted = true;
+    music.src = `audio/${first}.m4a`;
+    const q = music.play();
+    const done = () => { if (music.muted) music.pause(); music.muted = false; };
+    if (q) q.then(done, done); else done();
   }
 }

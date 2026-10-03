@@ -8,6 +8,7 @@ Bibliothèque standard uniquement.
 """
 import json
 import pathlib
+import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -110,11 +111,18 @@ def item_key(it):
     """Empreinte stable d'un exercice (type + question + réponses) : l'app s'en sert
     pour retenir, d'une séance à l'autre, quels exercices ont déjà été posés."""
     parts = [it["type"], it.get("layout", ""), it.get("q", ""), it.get("sentence", ""), str(it.get("target", ""))]
-    parts += it.get("choices", [])
+    parts += it.get("choices", []) + it.get("text", [])
+    if it["type"] == "ecrire":
+        parts += [it["word"], it.get("mode", "dictee")]
     if "answer" in it:
         parts.append(str(it["answer"]))
     parts += [f"{k['text']}>{k['target']}" for k in it.get("tokens", [])]
     return fnv1a("|".join(parts))
+
+
+def trous_sentence(line):
+    """Phrase de dictée à trous, avec la bonne réponse de chaque trou « [bon|faux] »."""
+    return re.sub(r"\[([^\]]+)\]", lambda m: m.group(1).split("|")[0], line)
 
 
 def item_speech(it):
@@ -126,7 +134,13 @@ def item_speech(it):
             out.append(f"{it['sentence']} {it['choices'][0]}.")
         else:
             out.append(it["q"])
-        out += it["choices"]
+        # Orthographe : les fautes ne sont jamais lues (elles se liraient comme le bon mot).
+        out += it["choices"][:1] if it.get("spell") else it["choices"]
+    elif t == "trous":
+        out.append(it.get("q", ""))
+        out += [trous_sentence(x) for x in it["text"]]
+    elif t == "ecrire":
+        out += [it["word"], it.get("say", "")]
     elif t == "vf":
         out.append(f"{PHRASES['vfPrefix']} {it['q']}")
     elif t in ("schema", "placer"):
@@ -154,6 +168,15 @@ def build(src):
             sys.exit(f"{src} : groups.{g}.outsiders cite des notions inconnues {bad}")
 
     items = list(lesson.get("items", [])) + auto_items(lesson)
+    for i, it in enumerate(items):
+        if it["type"] == "trous":
+            bad = [x for x in it["text"] if not re.search(r"\[[^\]]*\|", x)]
+            if bad:
+                sys.exit(f"{src} : item {i} (trous) : phrase sans trou {bad}")
+        if it["type"] == "ecrire" and it.get("mode", "dictee") not in ("copie", "memo", "dictee"):
+            sys.exit(f"{src} : item {i} (ecrire) : mode inconnu")
+        if it.get("audio") and not (LESSONS / "music" / f"{it['audio']}.m4a").exists():
+            sys.exit(f"{src} : item {i} : extrait lessons/music/{it['audio']}.m4a introuvable")
     seen_ids = set()
     for i, it in enumerate(items):
         bad = [x for x in it["notions"] if x not in ids]
@@ -173,6 +196,8 @@ def build(src):
     for n in lesson["notions"]:
         speech.append(f"{cap(nom(n))} : {n['def']}.")
         speech.append(cap(n["term"]))
+        if n.get("tip"):
+            speech.append(n["tip"])
         if n.get("zone"):
             speech.append(PHRASES["zoneThis"].replace("{x}", nom(n)))
             speech.append(PHRASES["zoneHere"].replace("{x}", nom(n)))

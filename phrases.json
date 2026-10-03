@@ -1,11 +1,32 @@
 {
-  "bravo": ["Bravo !", "Super !", "Génial !", "Exactement !", "Tu as trouvé !", "Très bien !"],
-  "retry": ["Presque ! Essaie encore.", "Pas tout à fait. Réessaie !", "Bien essayé ! Encore une fois."],
-  "okSmall": ["Oui !", "Bien !", "Parfait !"],
+  "bravo": [
+    "Bravo !",
+    "Super !",
+    "Génial !",
+    "Exactement !",
+    "Tu as trouvé !",
+    "Très bien !"
+  ],
+  "retry": [
+    "Presque ! Essaie encore.",
+    "Pas tout à fait. Réessaie !",
+    "Bien essayé ! Encore une fois."
+  ],
+  "okSmall": [
+    "Oui !",
+    "Bien !",
+    "Parfait !"
+  ],
   "reveal": "La bonne réponse est :",
   "vfPrefix": "Vrai ou faux ?",
-  "vfOk": { "true": "C'est vrai.", "false": "C'est faux." },
-  "vfKo": { "true": "Eh non, c'est vrai.", "false": "Eh non, c'est faux." },
+  "vfOk": {
+    "true": "C'est vrai.",
+    "false": "C'est faux."
+  },
+  "vfKo": {
+    "true": "Eh non, c'est vrai.",
+    "false": "Eh non, c'est faux."
+  },
   "completePrefix": "Termine la phrase :",
   "zoneThis": "Ça, c'est {x}.",
   "zoneHere": "Regarde, voici {x}.",
@@ -33,5 +54,17 @@
   "adultJoins": "Il rejoint ta collection. Un nouvel œuf t’attend !",
   "newEgg": "Un nouvel œuf est arrivé ! Révise pour le faire éclore.",
   "companions": "Voici tous tes compagnons.",
-  "companionLocked": "Un compagnon à découvrir. Continue à réviser !"
+  "companionLocked": "Un compagnon à découvrir. Continue à réviser !",
+  "trousPrompt": "Complète la dictée : choisis le mot bien écrit.",
+  "writeWord": "Écris le mot :",
+  "writeHear": "Écoute, puis écris le mot.",
+  "writeCopy": "Recopie ce mot.",
+  "writeMemo": "Regarde bien ce mot. Quand il est dans ta tête, touche le bouton.",
+  "writeNow": "Maintenant, écris-le sans regarder.",
+  "writeEmpty": "Écris d'abord le mot.",
+  "writeAlmost": "Presque ! Les lettres en vert sont justes. Corrige ce qui est en orange.",
+  "writeCapital": "Presque ! Attention à la majuscule.",
+  "writeAccent": "Presque ! Attention aux accents. Sur l'iPad, appuie longtemps sur la lettre e pour trouver é.",
+  "writeCopyNow": "Voici le mot. Recopie-le :",
+  "writeCopyOk": "Bien recopié ! Tu le réécriras bientôt."
 }

@@ -4,7 +4,7 @@ import { say, sayAll, stop, unlock, loadAudio } from './speech.js';
 import { P, loadPhrases } from './phrases.js';
 import { loadLessons, loadCompanions } from './lessons.js';
 import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson, retryItem } from './srs.js';
-import { renderStep, schemaView } from './activities.js';
+import { renderStep, schemaView, spellView, musicButton } from './activities.js';
 import { starsForSession, addStars, recordDay, checkCards, setCompanions, current, stageName, companionArt, graduate, adultName, speciesOf, companionsView } from './rewards.js';
 import { parentGate } from './parent.js';
 
@@ -128,16 +128,18 @@ function start(L) {
       L.img(n.id) ? h('img', { class: 'discover-img', src: L.img(n.id), alt: '' }) : h('div', { class: 'big-emoji' }, n.emoji || '📘'),
       h('div', { style: { display: 'flex', flexDirection: 'column', gap: '8px' } },
         tag,
-        h('div', { class: 'term' }, cap(n.term)),
-        h('div', { class: 'def' }, cap(n.def) + '.')));
+        n.spell ? spellView(n.spell) : h('div', { class: 'term' }, cap(n.term)),
+        h('div', { class: 'def' }, cap(n.def) + '.'),
+        n.tip ? h('div', { class: 'tip' }, `💡 ${n.tip}`) : null));
     const text = `${cap(n.nom || n.term)} : ${n.def}.`;
     screen(bar(), card,
+      n.audio ? musicButton(n.audio) : null,
       n.zone && L.schema ? await schemaView(L, n.zone) : null,
       h('div', { class: 'row' },
-        h('button', { class: 'icon', onclick: () => say(text) }, '🔊'),
+        h('button', { class: 'icon', onclick: () => say([text, n.tip]) }, '🔊'),
         h('span', { class: 'spacer' }),
         h('button', { class: 'primary big', onclick: () => { markSeen(L, n.id); next(); } }, 'J’ai compris 👍')));
-    say([P.newWord, text]);
+    say([P.newWord, text, n.tip]);
   }
 
   function show(item) {
@@ -209,7 +211,9 @@ function listen(L) {
       h('button', { onclick: stop }, '⏸ Pause')),
     h('h1', {}, `${L.emoji} ${L.title}`),
     h('p', { class: 'muted' }, 'Touche un paragraphe pour l’écouter.'),
-    ...paras);
+    ...paras,
+    L.music ? h('div', { class: 'row' }, L.music.map((m) => musicButton(m.file, m.label))) : null,
+    L.credits ? h('p', { class: 'muted credits' }, L.credits) : null);
   play(0);
 }
 
