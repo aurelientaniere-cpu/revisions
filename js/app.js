@@ -52,15 +52,15 @@ function home() {
   const best = bestLesson(lessons);
   const tiles = lessons.map((L) => {
     const due = dueCount(L);
-    return h('div', { class: 'panel lesson-tile', style: { borderColor: L.color } },
+    return h('div', { class: 'panel lesson-tile', style: `--c: ${L.color}` },
       h('div', { class: 'row' },
         h('span', { class: 'emoji' }, L.emoji),
         h('div', {},
-          h('div', { class: 'subject', style: { color: L.color } }, L.subject),
+          h('div', { class: 'subject' }, L.subject),
           h('h3', {}, L.title))),
-      h('div', { class: 'meter' }, h('span', { style: { width: `${Math.round(lessonProgress(L) * 100)}%`, background: L.color } })),
+      h('div', { class: 'meter' }, h('span', { style: { width: `${Math.round(lessonProgress(L) * 100)}%` } })),
       h('div', { class: 'row' },
-        h('button', { class: 'primary', style: { background: L.color, borderColor: L.color }, onclick: () => start(L) }, due ? '▶ Réviser' : '▶ S’entraîner'),
+        h('button', { class: 'primary', onclick: () => start(L) }, due ? '▶ Réviser' : '▶ S’entraîner'),
         h('button', { onclick: () => listen(L) }, '🎧 Écouter')));
   });
 

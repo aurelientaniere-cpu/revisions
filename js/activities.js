@@ -717,20 +717,21 @@ function ecrire(item, { root, lesson, done }) {
     class: 'write-input', type: 'text', lang: 'fr', autocomplete: 'off', autocorrect: 'off',
     autocapitalize: 'off', spellcheck: 'false', enterkeyhint: 'done', 'aria-label': 'Écris le mot',
   });
-  const ok = h('button', { class: 'primary big', onclick: () => check() }, 'Valider ✔');
+  const ok = h('button', { class: 'primary write-ok', onclick: () => check() }, 'Valider ✔');
   const inputRow = h('div', { class: 'write-row' }, input, ok);
   const diff = h('div', { class: 'write-diff' });
   const fb = h('div');
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); check(); } });
-  root.append(prompt, model, inputRow, diff, fb);
+  // Lettres colorées au-dessus du champ : le clavier de l'iPad cache le bas de l'écran.
+  root.append(prompt, model, diff, inputRow, fb);
   const fin = finisher(fb, done);
 
-  const showModel = () => model.replaceChildren(spellView(notion.spell || word));
+  const showModel = () => model.replaceChildren(spellView(notion.spell || word, 'spell-word write-word'));
   if (mode !== 'dictee') showModel();
   if (mode === 'memo') {
     inputRow.hidden = true;
     model.append(h('button', { class: 'big', onclick: () => {
-      model.replaceChildren(h('div', { class: 'spell-word hidden-word' }, '🙈'));
+      model.replaceChildren(h('div', { class: 'spell-word write-word hidden-word' }, '🙈'));
       inputRow.hidden = false;
       input.focus();
       label.textContent = P.writeNow;
@@ -750,8 +751,9 @@ function ecrire(item, { root, lesson, done }) {
       input.classList.add('good');
       input.readOnly = true;
       input.blur();
-      diff.replaceChildren();
-      model.replaceChildren(spellView(notion.spell || word));
+      ok.hidden = true;
+      diff.replaceChildren(diffView(v, word)); // tout en vert
+      showModel();
       fin(copying ? 'fail' : errors ? 'partial' : 'ok', copying ? [P.writeCopyOk, item.say] : [pick(P.bravo), item.say]);
       return;
     }
