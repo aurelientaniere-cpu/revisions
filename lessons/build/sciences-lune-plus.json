@@ -1,0 +1,1505 @@
+{
+ "id": "sciences-lune-plus",
+ "subject": "Sciences",
+ "title": "La Lune : pour aller plus loin",
+ "subtitle": "Cratères, astronautes, éclipses",
+ "emoji": "🚀",
+ "color": "#5b4a9a",
+ "source": "Compléments du programme de CM1 sur la Lune, hors cahier : orbite, face cachée, surface, premiers pas, éclipses, marées.",
+ "summary": [
+  "La Lune tourne autour de la Terre en suivant toujours le même chemin : son orbite.",
+  "Depuis la Terre, on voit toujours la même face de la Lune. L'autre côté s'appelle la face cachée. On l'a découvert grâce à des sondes envoyées dans l'espace.",
+  "La Lune n'a pas d'atmosphère : pas d'air, pas de vent, pas de pluie. Sa surface est couverte de cratères, creusés par des météorites.",
+  "La Lune est environ quatre fois plus petite que la Terre. On y pèse six fois moins lourd : les astronautes y font de grands bonds.",
+  "En 1969, la mission Apollo 11 a emmené des astronautes sur la Lune. Neil Armstrong a été le premier homme à y marcher.",
+  "Quand la Lune passe devant le Soleil et le cache, c'est une éclipse de Soleil. Quand la Terre fait de l'ombre à la Lune, c'est une éclipse de Lune.",
+  "La Lune attire l'eau des océans : c'est la principale cause des marées."
+ ],
+ "notions": [
+  {
+   "id": "orbite",
+   "term": "orbite",
+   "nom": "l'orbite",
+   "def": "chemin que suit un astre quand il tourne autour d'un autre",
+   "emoji": "🔄",
+   "group": "mots",
+   "indice": "La Lune suit toujours ce même grand rond autour de la Terre, comme une voiture sur un circuit."
+  },
+  {
+   "id": "face-cachee",
+   "term": "face cachée",
+   "nom": "la face cachée",
+   "def": "côté de la Lune que l'on ne voit jamais depuis la Terre",
+   "emoji": "🌚",
+   "group": "mots",
+   "indice": "Pour la photographier, il a fallu envoyer une sonde passer derrière la Lune."
+  },
+  {
+   "id": "cratere",
+   "term": "cratère",
+   "nom": "un cratère",
+   "def": "grand trou rond creusé quand une météorite s'écrase",
+   "emoji": "🕳️",
+   "group": "mots",
+   "indice": "Avec des jumelles, on voit sur la Lune plein de trous ronds, comme des bols."
+  },
+  {
+   "id": "meteorite",
+   "term": "météorite",
+   "nom": "une météorite",
+   "def": "caillou venu de l'espace qui tombe sur un astre",
+   "emoji": "☄️",
+   "group": "mots",
+   "indice": "Elle arrive de l'espace à toute vitesse. Sur la Lune, rien ne la freine avant le choc."
+  },
+  {
+   "id": "atmosphere",
+   "term": "atmosphère",
+   "nom": "l'atmosphère",
+   "def": "couche d'air qui entoure une planète",
+   "emoji": "💨",
+   "group": "mots",
+   "indice": "La Terre en a une : c'est grâce à elle que l'on respire et que le ciel est bleu."
+  },
+  {
+   "id": "astronaute",
+   "term": "astronaute",
+   "nom": "un astronaute",
+   "def": "personne qui voyage dans l'espace",
+   "emoji": "👩‍🚀",
+   "group": "mots",
+   "indice": "Il porte une combinaison blanche et un casque, et il part dans une fusée."
+  },
+  {
+   "id": "eclipse",
+   "term": "éclipse",
+   "nom": "une éclipse",
+   "def": "moment où un astre cache la lumière d'un autre",
+   "emoji": "🌘",
+   "group": "mots",
+   "indice": "En plein jour, le ciel devient sombre pendant quelques minutes, puis tout redevient normal."
+  },
+  {
+   "id": "quatre-fois",
+   "term": "quatre fois plus petite",
+   "nom": "la Lune, quatre fois plus petite",
+   "def": "la Lune est environ quatre fois plus petite que la Terre",
+   "emoji": "⚖️",
+   "noAuto": true
+  },
+  {
+   "id": "pesanteur",
+   "term": "poids sur la Lune",
+   "nom": "le poids sur la Lune",
+   "def": "sur la Lune, on pèse six fois moins lourd que sur la Terre",
+   "emoji": "🪶",
+   "noAuto": true
+  },
+  {
+   "id": "premiers-pas",
+   "term": "premiers pas sur la Lune",
+   "nom": "les premiers pas sur la Lune",
+   "def": "en 1969, Neil Armstrong, de la mission Apollo 11, a été le premier homme à marcher sur la Lune",
+   "emoji": "👣",
+   "noAuto": true
+  },
+  {
+   "id": "marees",
+   "term": "marées",
+   "nom": "les marées",
+   "def": "la mer monte et descend, surtout parce que la Lune attire l'eau des océans",
+   "emoji": "🌊",
+   "noAuto": true
+  }
+ ],
+ "cards": [
+  {
+   "id": "lu-orbite",
+   "name": "Le chemin de la Lune",
+   "emoji": "🔄",
+   "color": "#3a7bd5",
+   "notions": [
+    "orbite"
+   ],
+   "desc": "La Lune suit toujours le même chemin autour de la Terre.",
+   "image": "orbite"
+  },
+  {
+   "id": "lu-face",
+   "name": "La face cachée",
+   "emoji": "🌚",
+   "color": "#4a4f6b",
+   "notions": [
+    "face-cachee"
+   ],
+   "desc": "Le côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "image": "face-cachee"
+  },
+  {
+   "id": "lu-crateres",
+   "name": "Les cratères",
+   "emoji": "🕳️",
+   "color": "#8a8a8a",
+   "notions": [
+    "cratere",
+    "meteorite"
+   ],
+   "desc": "Des trous ronds creusés par des cailloux venus de l'espace.",
+   "image": "cratere"
+  },
+  {
+   "id": "lu-sans-air",
+   "name": "Un monde sans air",
+   "emoji": "💨",
+   "color": "#5b6ea8",
+   "notions": [
+    "atmosphere",
+    "quatre-fois",
+    "pesanteur"
+   ],
+   "desc": "Pas d'air, pas de vent, et on y pèse six fois moins lourd.",
+   "image": "pesanteur"
+  },
+  {
+   "id": "lu-apollo",
+   "name": "Apollo 11",
+   "emoji": "🚀",
+   "color": "#d64545",
+   "notions": [
+    "premiers-pas",
+    "astronaute"
+   ],
+   "desc": "En 1969, Neil Armstrong marche sur la Lune.",
+   "image": "premiers-pas"
+  },
+  {
+   "id": "lu-eclipse",
+   "name": "L'éclipse",
+   "emoji": "🌘",
+   "color": "#7a4a9a",
+   "notions": [
+    "eclipse"
+   ],
+   "desc": "Quand un astre cache la lumière d'un autre.",
+   "image": "eclipse"
+  },
+  {
+   "id": "lu-marees",
+   "name": "Les marées",
+   "emoji": "🌊",
+   "color": "#2aa6a0",
+   "notions": [
+    "marees"
+   ],
+   "desc": "La Lune attire l'eau des océans.",
+   "image": "marees"
+  },
+  {
+   "id": "lp-legende",
+   "name": "Dragon de l'espace",
+   "emoji": "👑",
+   "color": "#b8860b",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Carte légendaire : tu sais tout sur la Lune, même pour aller plus loin !",
+   "image": "legende"
+  }
+ ],
+ "items": [
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "Comment a-t-on pu voir la face cachée de la Lune ?",
+   "choices": [
+    "Une sonde est passée derrière la Lune",
+    "Avec une longue-vue depuis la France",
+    "En attendant la pleine lune",
+    "En regardant la Lune dans un miroir"
+   ],
+   "hint": "Depuis la Terre, on ne la voit jamais.",
+   "explain": "Il a fallu envoyer une sonde dans l'espace, derrière la Lune.",
+   "id": "sciences-lune-plus#df498604"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "La face cachée de la Lune est toujours dans le noir.",
+   "answer": false,
+   "explain": "Le Soleil l'éclaire aussi. On ne la voit simplement jamais depuis la Terre.",
+   "id": "sciences-lune-plus#80cfc86e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "orbite"
+   ],
+   "q": "Une voiture fait toujours le tour du même circuit. Pour la Lune, comment s'appelle ce circuit autour de la Terre ?",
+   "choices": [
+    "L'orbite",
+    "La face cachée",
+    "Le cratère",
+    "L'éclipse"
+   ],
+   "hint": "C'est un chemin, toujours le même, dans l'espace.",
+   "explain": "L'orbite, c'est le chemin que suit la Lune autour de la Terre.",
+   "id": "sciences-lune-plus#5dd7ee21"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "Lequel de ces éléments n'existe PAS sur la Lune ?",
+   "choices": [
+    "Le vent",
+    "Les cratères",
+    "Les montagnes",
+    "La poussière",
+    "Les cailloux"
+   ],
+   "hint": "Pour qu'il existe, il faut de l'air.",
+   "explain": "La Lune n'a pas d'atmosphère : pas d'air, donc pas de vent.",
+   "id": "sciences-lune-plus#c8f485e0"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "Pourquoi les traces de pas des astronautes sont-elles toujours sur la Lune ?",
+   "choices": [
+    "Il n'y a ni vent ni pluie pour les effacer",
+    "Quelqu'un les repeint chaque année",
+    "Le sol est en ciment",
+    "Les astronautes y sont restés"
+   ],
+   "hint": "Sur une plage, qu'est-ce qui efface les traces de pas ?",
+   "explain": "Sans atmosphère, pas de vent ni de pluie : les traces restent.",
+   "id": "sciences-lune-plus#a9a5dc37"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "astronaute",
+    "atmosphere"
+   ],
+   "q": "Pourquoi un astronaute garde-t-il son casque sur la Lune ?",
+   "choices": [
+    "Il n'y a pas d'air pour respirer",
+    "Il fait trop de bruit",
+    "Il pleut tout le temps",
+    "Pour ne pas être reconnu"
+   ],
+   "hint": "Pense à ce que tu fais sans y penser, à chaque seconde.",
+   "explain": "La Lune n'a pas d'atmosphère : son casque lui apporte de l'air.",
+   "id": "sciences-lune-plus#71da518d"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cratere",
+    "meteorite"
+   ],
+   "q": "Qu'est-ce qui a creusé les cratères de la Lune ?",
+   "choices": [
+    "Des météorites",
+    "Des astronautes avec des pelles",
+    "La pluie",
+    "Des rivières"
+   ],
+   "hint": "Ce sont des cailloux venus de l'espace.",
+   "explain": "Des météorites se sont écrasées sur la Lune et ont creusé des cratères.",
+   "id": "sciences-lune-plus#c598c613"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "cratere",
+    "atmosphere"
+   ],
+   "q": "Les cratères de la Lune restent très longtemps. Pourquoi ?",
+   "choices": [
+    "Sans air ni eau, rien ne les use",
+    "Ils sont protégés par une barrière",
+    "Des astronautes les réparent",
+    "Ils sont tout neufs"
+   ],
+   "hint": "Sur Terre, le vent et la pluie usent les roches petit à petit.",
+   "explain": "Pas de vent, pas de pluie : les cratères ne s'effacent presque pas.",
+   "id": "sciences-lune-plus#7ab6547f"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "quatre-fois"
+   ],
+   "q": "La Lune est-elle plus grande ou plus petite que la Terre ?",
+   "choices": [
+    "Environ quatre fois plus petite",
+    "Deux fois plus grande",
+    "Exactement de la même taille",
+    "Cent fois plus grande"
+   ],
+   "hint": "Dans le ciel, elle paraît grande car elle est proche de nous.",
+   "explain": "La Lune est environ quatre fois plus petite que la Terre.",
+   "id": "sciences-lune-plus#d6663e49"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pesanteur"
+   ],
+   "q": "Pourquoi les astronautes font-ils de grands bonds sur la Lune ?",
+   "choices": [
+    "On y pèse six fois moins lourd",
+    "Leurs chaussures ont des ressorts",
+    "Il y a beaucoup de vent",
+    "Le sol est en caoutchouc"
+   ],
+   "hint": "La Lune est petite : elle attire moins les objets que la Terre.",
+   "explain": "Sur la Lune, on pèse six fois moins lourd que sur la Terre.",
+   "id": "sciences-lune-plus#0b82bbb5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "premiers-pas"
+   ],
+   "q": "Qui a été le premier homme à marcher sur la Lune ?",
+   "choices": [
+    "Neil Armstrong",
+    "Christophe Colomb",
+    "Charlemagne",
+    "Louis Pasteur"
+   ],
+   "hint": "C'était un astronaute américain de la mission Apollo 11.",
+   "explain": "Neil Armstrong a marché sur la Lune en 1969.",
+   "id": "sciences-lune-plus#5168c6b7"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "premiers-pas"
+   ],
+   "q": "En quelle année l'Homme a-t-il marché pour la première fois sur la Lune ?",
+   "choices": [
+    "1969",
+    "1492",
+    "1789",
+    "2020"
+   ],
+   "hint": "Tes grands-parents étaient peut-être déjà nés.",
+   "explain": "C'était en 1969, avec la mission Apollo 11.",
+   "id": "sciences-lune-plus#072f8140"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "premiers-pas",
+    "astronaute"
+   ],
+   "q": "Comment les astronautes d'Apollo 11 sont-ils allés sur la Lune ?",
+   "choices": [
+    "Dans une fusée",
+    "En avion",
+    "En montgolfière",
+    "En bateau"
+   ],
+   "hint": "Il faut quitter la Terre et traverser l'espace, où il n'y a pas d'air.",
+   "explain": "Une énorme fusée les a emmenés jusqu'à la Lune.",
+   "id": "sciences-lune-plus#401c0885"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "Que se passe-t-il pendant une éclipse de Soleil ?",
+   "choices": [
+    "La Lune passe devant le Soleil et le cache",
+    "Le Soleil s'éteint",
+    "La Terre passe devant la Lune",
+    "Les nuages cachent le Soleil"
+   ],
+   "hint": "Un astre se glisse entre nous et le Soleil.",
+   "explain": "Pendant une éclipse de Soleil, la Lune cache le Soleil.",
+   "id": "sciences-lune-plus#3fd552a9"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "Que se passe-t-il pendant une éclipse de Lune ?",
+   "choices": [
+    "La Terre fait de l'ombre à la Lune",
+    "La Lune passe devant le Soleil",
+    "La Lune tombe",
+    "Le Soleil passe devant la Lune"
+   ],
+   "hint": "Pense à notre planète, entre le Soleil et la Lune.",
+   "explain": "La Terre empêche la lumière du Soleil d'arriver sur la Lune.",
+   "id": "sciences-lune-plus#7428cecc"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "marees"
+   ],
+   "q": "Au bord de la mer, l'eau monte et descend chaque jour. Qui en est la principale cause ?",
+   "choices": [
+    "La Lune",
+    "Les bateaux",
+    "Les poissons",
+    "Le vent du soir"
+   ],
+   "hint": "Cet astre attire l'eau des océans.",
+   "explain": "La Lune attire l'eau des océans : c'est la principale cause des marées.",
+   "id": "sciences-lune-plus#382bdbb5"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "Sur la Lune, il y a de l'air pour respirer.",
+   "answer": false,
+   "explain": "La Lune n'a pas d'atmosphère.",
+   "id": "sciences-lune-plus#007c526a"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "premiers-pas"
+   ],
+   "q": "Neil Armstrong a été le premier homme à marcher sur la Lune.",
+   "answer": true,
+   "explain": "C'était en 1969, avec la mission Apollo 11.",
+   "id": "sciences-lune-plus#335b53a0"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "pesanteur"
+   ],
+   "q": "Sur la Lune, on pèse moins lourd que sur la Terre.",
+   "answer": true,
+   "explain": "On y pèse six fois moins lourd.",
+   "id": "sciences-lune-plus#28de0db0"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "notions": [
+    "cratere",
+    "meteorite"
+   ],
+   "q": "Les cratères de la Lune ont été creusés par des météorites.",
+   "answer": true,
+   "explain": "Ces cailloux venus de l'espace ont creusé des trous ronds.",
+   "id": "sciences-lune-plus#25fd918e"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "Pendant une éclipse de Soleil, la Lune cache le Soleil.",
+   "answer": true,
+   "explain": "La Lune passe devant le Soleil.",
+   "id": "sciences-lune-plus#ba53bf34"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 6,
+   "notions": [
+    "atmosphere",
+    "pesanteur",
+    "cratere"
+   ],
+   "q": "Où est-ce vrai : sur la Lune, ou sur la Terre ?",
+   "explain": "La Terre a de l'air et de l'eau. La Lune n'a pas d'atmosphère.",
+   "targets": [
+    {
+     "id": "l",
+     "label": "Sur la Lune",
+     "emoji": "🌕",
+     "color": "#6c7bd0"
+    },
+    {
+     "id": "t",
+     "label": "Sur la Terre",
+     "emoji": "🌍",
+     "color": "#3a7bd5"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "On peut respirer sans casque",
+     "target": "t"
+    },
+    {
+     "text": "Il pleut parfois",
+     "target": "t"
+    },
+    {
+     "text": "Il y a des océans",
+     "target": "t"
+    },
+    {
+     "text": "Des arbres poussent",
+     "target": "t"
+    },
+    {
+     "text": "Il n'y a pas d'air",
+     "target": "l"
+    },
+    {
+     "text": "Les traces de pas restent",
+     "target": "l"
+    },
+    {
+     "text": "On pèse six fois moins lourd",
+     "target": "l"
+    },
+    {
+     "text": "Il n'y a jamais de vent",
+     "target": "l"
+    }
+   ],
+   "id": "sciences-lune-plus#de0e526d"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 3,
+   "notions": [
+    "premiers-pas",
+    "quatre-fois",
+    "pesanteur"
+   ],
+   "q": "Relie chaque début de phrase à sa fin.",
+   "explain": "Armstrong en 1969, une Lune quatre fois plus petite, un poids six fois plus faible.",
+   "targets": [
+    {
+     "id": "a",
+     "label": "a marché sur la Lune en 1969"
+    },
+    {
+     "id": "b",
+     "label": "est environ quatre fois plus petite que la Terre"
+    },
+    {
+     "id": "c",
+     "label": "est six fois plus faible que sur la Terre"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Neil Armstrong",
+     "target": "a"
+    },
+    {
+     "text": "La Lune",
+     "target": "b"
+    },
+    {
+     "text": "Le poids sur la Lune",
+     "target": "c"
+    }
+   ],
+   "id": "sciences-lune-plus#d3e108d7"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 3,
+   "notions": [
+    "cratere",
+    "meteorite",
+    "atmosphere"
+   ],
+   "q": "Reconstruis la phrase mémo.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "La Lune n'a pas d'atmosphère.",
+     "target": "1"
+    },
+    {
+     "text": "Ses cratères sont creusés",
+     "target": "2"
+    },
+    {
+     "text": "par des météorites.",
+     "target": "3"
+    }
+   ],
+   "id": "sciences-lune-plus#ec5517f4"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "orbite"
+   ],
+   "q": "De quoi parle-t-on ? La Lune suit toujours ce même grand rond autour de la Terre, comme une voiture sur un circuit.",
+   "choices": [
+    "Orbite",
+    "Face cachée",
+    "Cratère",
+    "Météorite",
+    "Atmosphère",
+    "Astronaute",
+    "Éclipse"
+   ],
+   "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+   "id": "sciences-lune-plus#447729c6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "orbite"
+   ],
+   "q": "Que veut dire « orbite » ?",
+   "choices": [
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Couche d'air qui entoure une planète",
+    "Personne qui voyage dans l'espace",
+    "Moment où un astre cache la lumière d'un autre"
+   ],
+   "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+   "id": "sciences-lune-plus#13541995"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "orbite"
+   ],
+   "q": "« Orbite » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+   "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+   "id": "sciences-lune-plus#cf18a0ea"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "orbite"
+   ],
+   "q": "« Orbite » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "explain": "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+   "id": "sciences-lune-plus#3def0673"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "De quoi parle-t-on ? Pour la photographier, il a fallu envoyer une sonde passer derrière la Lune.",
+   "choices": [
+    "Face cachée",
+    "Orbite",
+    "Cratère",
+    "Météorite",
+    "Atmosphère",
+    "Astronaute",
+    "Éclipse"
+   ],
+   "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "id": "sciences-lune-plus#7bf8056e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "Que veut dire « face cachée » ?",
+   "choices": [
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Couche d'air qui entoure une planète",
+    "Personne qui voyage dans l'espace",
+    "Moment où un astre cache la lumière d'un autre"
+   ],
+   "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "id": "sciences-lune-plus#c6b75c19"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "« Face cachée » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "id": "sciences-lune-plus#1197fc98"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "face-cachee"
+   ],
+   "q": "« Face cachée » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+   "explain": "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+   "id": "sciences-lune-plus#48843533"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cratere"
+   ],
+   "q": "De quoi parle-t-on ? Avec des jumelles, on voit sur la Lune plein de trous ronds, comme des bols.",
+   "choices": [
+    "Cratère",
+    "Orbite",
+    "Face cachée",
+    "Météorite",
+    "Atmosphère",
+    "Astronaute",
+    "Éclipse"
+   ],
+   "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+   "id": "sciences-lune-plus#339cc0cc"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cratere"
+   ],
+   "q": "Que veut dire « cratère » ?",
+   "choices": [
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Couche d'air qui entoure une planète",
+    "Personne qui voyage dans l'espace",
+    "Moment où un astre cache la lumière d'un autre"
+   ],
+   "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+   "id": "sciences-lune-plus#fac2be26"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "cratere"
+   ],
+   "q": "« Cratère » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+   "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+   "id": "sciences-lune-plus#c89677f7"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "cratere"
+   ],
+   "q": "« Cratère » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+   "explain": "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+   "id": "sciences-lune-plus#21e0be7a"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "meteorite"
+   ],
+   "q": "De quoi parle-t-on ? Elle arrive de l'espace à toute vitesse. Sur la Lune, rien ne la freine avant le choc.",
+   "choices": [
+    "Météorite",
+    "Orbite",
+    "Face cachée",
+    "Cratère",
+    "Atmosphère",
+    "Astronaute",
+    "Éclipse"
+   ],
+   "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+   "id": "sciences-lune-plus#db8fe23c"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "meteorite"
+   ],
+   "q": "Que veut dire « météorite » ?",
+   "choices": [
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Couche d'air qui entoure une planète",
+    "Personne qui voyage dans l'espace",
+    "Moment où un astre cache la lumière d'un autre"
+   ],
+   "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+   "id": "sciences-lune-plus#efe7e4f0"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "meteorite"
+   ],
+   "q": "« Météorite » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+   "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+   "id": "sciences-lune-plus#1ec90df9"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "meteorite"
+   ],
+   "q": "« Météorite » veut dire : couche d'air qui entoure une planète.",
+   "explain": "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+   "id": "sciences-lune-plus#96e26cb2"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "De quoi parle-t-on ? La Terre en a une : c'est grâce à elle que l'on respire et que le ciel est bleu.",
+   "choices": [
+    "Atmosphère",
+    "Orbite",
+    "Face cachée",
+    "Cratère",
+    "Météorite",
+    "Astronaute",
+    "Éclipse"
+   ],
+   "explain": "L'atmosphère : couche d'air qui entoure une planète.",
+   "id": "sciences-lune-plus#e7c7a310"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "Que veut dire « atmosphère » ?",
+   "choices": [
+    "Couche d'air qui entoure une planète",
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Personne qui voyage dans l'espace",
+    "Moment où un astre cache la lumière d'un autre"
+   ],
+   "explain": "L'atmosphère : couche d'air qui entoure une planète.",
+   "id": "sciences-lune-plus#9424f350"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "« Atmosphère » veut dire : couche d'air qui entoure une planète.",
+   "explain": "L'atmosphère : couche d'air qui entoure une planète.",
+   "id": "sciences-lune-plus#fd77f967"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "atmosphere"
+   ],
+   "q": "« Atmosphère » veut dire : personne qui voyage dans l'espace.",
+   "explain": "L'atmosphère : couche d'air qui entoure une planète.",
+   "id": "sciences-lune-plus#5152c42e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "astronaute"
+   ],
+   "q": "De quoi parle-t-on ? Il porte une combinaison blanche et un casque, et il part dans une fusée.",
+   "choices": [
+    "Astronaute",
+    "Orbite",
+    "Face cachée",
+    "Cratère",
+    "Météorite",
+    "Atmosphère",
+    "Éclipse"
+   ],
+   "explain": "Un astronaute : personne qui voyage dans l'espace.",
+   "id": "sciences-lune-plus#7711e345"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "astronaute"
+   ],
+   "q": "Que veut dire « astronaute » ?",
+   "choices": [
+    "Personne qui voyage dans l'espace",
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Couche d'air qui entoure une planète",
+    "Moment où un astre cache la lumière d'un autre"
+   ],
+   "explain": "Un astronaute : personne qui voyage dans l'espace.",
+   "id": "sciences-lune-plus#82e0cd56"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "astronaute"
+   ],
+   "q": "« Astronaute » veut dire : personne qui voyage dans l'espace.",
+   "explain": "Un astronaute : personne qui voyage dans l'espace.",
+   "id": "sciences-lune-plus#41e07dc5"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "astronaute"
+   ],
+   "q": "« Astronaute » veut dire : moment où un astre cache la lumière d'un autre.",
+   "explain": "Un astronaute : personne qui voyage dans l'espace.",
+   "id": "sciences-lune-plus#05f8f908"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "De quoi parle-t-on ? En plein jour, le ciel devient sombre pendant quelques minutes, puis tout redevient normal.",
+   "choices": [
+    "Éclipse",
+    "Orbite",
+    "Face cachée",
+    "Cratère",
+    "Météorite",
+    "Atmosphère",
+    "Astronaute"
+   ],
+   "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
+   "id": "sciences-lune-plus#d2bb556f"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "Que veut dire « éclipse » ?",
+   "choices": [
+    "Moment où un astre cache la lumière d'un autre",
+    "Chemin que suit un astre quand il tourne autour d'un autre",
+    "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+    "Grand trou rond creusé quand une météorite s'écrase",
+    "Caillou venu de l'espace qui tombe sur un astre",
+    "Couche d'air qui entoure une planète",
+    "Personne qui voyage dans l'espace"
+   ],
+   "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
+   "id": "sciences-lune-plus#02708836"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "« Éclipse » veut dire : moment où un astre cache la lumière d'un autre.",
+   "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
+   "id": "sciences-lune-plus#89374159"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "eclipse"
+   ],
+   "q": "« Éclipse » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+   "explain": "Une éclipse : moment où un astre cache la lumière d'un autre.",
+   "id": "sciences-lune-plus#b435f3ba"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "orbite",
+    "face-cachee",
+    "cratere"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "orbite",
+     "label": "Chemin que suit un astre quand il tourne autour d'un autre"
+    },
+    {
+     "id": "face-cachee",
+     "label": "Côté de la Lune que l'on ne voit jamais depuis la Terre"
+    },
+    {
+     "id": "cratere",
+     "label": "Grand trou rond creusé quand une météorite s'écrase"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Orbite",
+     "target": "orbite"
+    },
+    {
+     "text": "Face cachée",
+     "target": "face-cachee"
+    },
+    {
+     "text": "Cratère",
+     "target": "cratere"
+    }
+   ],
+   "id": "sciences-lune-plus#2de25802"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "meteorite",
+    "atmosphere",
+    "astronaute"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "meteorite",
+     "label": "Caillou venu de l'espace qui tombe sur un astre"
+    },
+    {
+     "id": "atmosphere",
+     "label": "Couche d'air qui entoure une planète"
+    },
+    {
+     "id": "astronaute",
+     "label": "Personne qui voyage dans l'espace"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Météorite",
+     "target": "meteorite"
+    },
+    {
+     "text": "Atmosphère",
+     "target": "atmosphere"
+    },
+    {
+     "text": "Astronaute",
+     "target": "astronaute"
+    }
+   ],
+   "id": "sciences-lune-plus#2bd127be"
+  }
+ ],
+ "images": {
+  "orbite": {
+   "prompt": "the round grey Moon travelling along a big dotted circle around the planet Earth with blue oceans and green continents, small arrows along the circle, dark starry space",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 55
+  },
+  "face-cachee": {
+   "prompt": "a small space probe with solar panels flying behind the grey Moon, taking a photo of its cratered surface, the blue Earth far away",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "cratere": {
+   "prompt": "the grey surface of the Moon covered with many round craters of all sizes, like bowls in the dust, black sky above",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "meteorite": {
+   "prompt": "a small rock from space with a glowing trail falling toward the grey cratered surface of the Moon, black starry sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "atmosphere": {
+   "prompt": "the planet Earth seen from space surrounded by a thin glowing blue layer of air, white clouds, the grey Moon far away without any air",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "astronaute": {
+   "prompt": "a smiling astronaut in a white space suit and helmet waving, standing next to a small rocket, stars in the sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "eclipse": {
+   "prompt": "a solar eclipse seen from a green hill: the dark Moon covering the Sun with a bright glowing ring around it, a family watching with special glasses",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "quatre-fois": {
+   "prompt": "size comparison in space: a big round blue and green planet Earth on the left, and on the right, apart from it, a small round grey Moon whose width is only one quarter of the Earth's width, both smiling",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 44
+  },
+  "pesanteur": {
+   "prompt": "a happy astronaut in a white suit making a big high jump on the grey dusty Moon, the blue Earth in the black sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  },
+  "premiers-pas": {
+   "prompt": "an astronaut in a white space suit taking a first step on the grey dusty Moon next to a four-legged lunar lander, a footprint in the dust, the Earth in the black sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "marees": {
+   "prompt": "a beach seen twice side by side: on the left the sea is high near the rocks, on the right the sea is far away showing wet sand and shells, a full Moon in the sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "legende": {
+   "prompt": "a proud cute purple dragon wearing a white astronaut suit and helmet, floating in space next to a small red and white rocket, the grey cratered Moon behind, stars, cream belly, sparkles, smiling, centered",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  }
+ },
+ "speech": [
+  "1492",
+  "1789",
+  "1969",
+  "2020",
+  "Apollo 11",
+  "Armstrong en 1969, une Lune quatre fois plus petite, un poids six fois plus faible.",
+  "Astronaute",
+  "Atmosphère",
+  "Au bord de la mer, l'eau monte et descend chaque jour. Qui en est la principale cause ?",
+  "Avec une longue-vue depuis la France",
+  "C'est un chemin, toujours le même, dans l'espace.",
+  "C'était en 1969, avec la mission Apollo 11.",
+  "C'était un astronaute américain de la mission Apollo 11.",
+  "Caillou venu de l'espace qui tombe sur un astre",
+  "Carte légendaire : tu sais tout sur la Lune, même pour aller plus loin !",
+  "Ce sont des cailloux venus de l'espace.",
+  "Cent fois plus grande",
+  "Ces cailloux venus de l'espace ont creusé des trous ronds.",
+  "Cet astre attire l'eau des océans.",
+  "Charlemagne",
+  "Chemin que suit un astre quand il tourne autour d'un autre",
+  "Christophe Colomb",
+  "Comment a-t-on pu voir la face cachée de la Lune ?",
+  "Comment les astronautes d'Apollo 11 sont-ils allés sur la Lune ?",
+  "Couche d'air qui entoure une planète",
+  "Cratère",
+  "Côté de la Lune que l'on ne voit jamais depuis la Terre",
+  "Dans le ciel, elle paraît grande car elle est proche de nous.",
+  "Dans une fusée",
+  "De quoi parle-t-on ? Avec des jumelles, on voit sur la Lune plein de trous ronds, comme des bols.",
+  "De quoi parle-t-on ? Elle arrive de l'espace à toute vitesse. Sur la Lune, rien ne la freine avant le choc.",
+  "De quoi parle-t-on ? En plein jour, le ciel devient sombre pendant quelques minutes, puis tout redevient normal.",
+  "De quoi parle-t-on ? Il porte une combinaison blanche et un casque, et il part dans une fusée.",
+  "De quoi parle-t-on ? La Lune suit toujours ce même grand rond autour de la Terre, comme une voiture sur un circuit.",
+  "De quoi parle-t-on ? La Terre en a une : c'est grâce à elle que l'on respire et que le ciel est bleu.",
+  "De quoi parle-t-on ? Pour la photographier, il a fallu envoyer une sonde passer derrière la Lune.",
+  "Depuis la Terre, on ne la voit jamais.",
+  "Depuis la Terre, on voit toujours la même face de la Lune. L'autre côté s'appelle la face cachée. On l'a découvert grâce à des sondes envoyées dans l'espace.",
+  "Des arbres poussent",
+  "Des astronautes avec des pelles",
+  "Des astronautes les réparent",
+  "Des météorites",
+  "Des météorites se sont écrasées sur la Lune et ont creusé des cratères.",
+  "Des rivières",
+  "Des trous ronds creusés par des cailloux venus de l'espace.",
+  "Deux fois plus grande",
+  "Dragon de l'espace",
+  "En 1969, Neil Armstrong marche sur la Lune.",
+  "En 1969, la mission Apollo 11 a emmené des astronautes sur la Lune. Neil Armstrong a été le premier homme à y marcher.",
+  "En attendant la pleine lune",
+  "En avion",
+  "En bateau",
+  "En montgolfière",
+  "En quelle année l'Homme a-t-il marché pour la première fois sur la Lune ?",
+  "En regardant la Lune dans un miroir",
+  "Environ quatre fois plus petite",
+  "Exactement de la même taille",
+  "Face cachée",
+  "Grand trou rond creusé quand une météorite s'écrase",
+  "Il a fallu envoyer une sonde dans l'espace, derrière la Lune.",
+  "Il fait trop de bruit",
+  "Il faut quitter la Terre et traverser l'espace, où il n'y a pas d'air.",
+  "Il n'y a jamais de vent",
+  "Il n'y a ni vent ni pluie pour les effacer",
+  "Il n'y a pas d'air",
+  "Il n'y a pas d'air pour respirer",
+  "Il pleut parfois",
+  "Il pleut tout le temps",
+  "Il y a beaucoup de vent",
+  "Il y a des océans",
+  "Ils sont protégés par une barrière",
+  "Ils sont tout neufs",
+  "L'atmosphère : couche d'air qui entoure une planète.",
+  "L'orbite",
+  "L'orbite : chemin que suit un astre quand il tourne autour d'un autre.",
+  "L'orbite, c'est le chemin que suit la Lune autour de la Terre.",
+  "L'éclipse",
+  "La Lune",
+  "La Lune attire l'eau des océans : c'est la principale cause des marées.",
+  "La Lune attire l'eau des océans.",
+  "La Lune est environ quatre fois plus petite que la Terre.",
+  "La Lune est environ quatre fois plus petite que la Terre. On y pèse six fois moins lourd : les astronautes y font de grands bonds.",
+  "La Lune est petite : elle attire moins les objets que la Terre.",
+  "La Lune est-elle plus grande ou plus petite que la Terre ?",
+  "La Lune n'a pas d'atmosphère : pas d'air, donc pas de vent.",
+  "La Lune n'a pas d'atmosphère : pas d'air, pas de vent, pas de pluie. Sa surface est couverte de cratères, creusés par des météorites.",
+  "La Lune n'a pas d'atmosphère : son casque lui apporte de l'air.",
+  "La Lune n'a pas d'atmosphère.",
+  "La Lune n'a pas d'atmosphère. Ses cratères sont creusés par des météorites.",
+  "La Lune passe devant le Soleil",
+  "La Lune passe devant le Soleil et le cache",
+  "La Lune passe devant le Soleil.",
+  "La Lune suit toujours le même chemin autour de la Terre.",
+  "La Lune tombe",
+  "La Lune tourne autour de la Terre en suivant toujours le même chemin : son orbite.",
+  "La Lune, quatre fois plus petite : la Lune est environ quatre fois plus petite que la Terre.",
+  "La Terre a de l'air et de l'eau. La Lune n'a pas d'atmosphère.",
+  "La Terre empêche la lumière du Soleil d'arriver sur la Lune.",
+  "La Terre fait de l'ombre à la Lune",
+  "La Terre passe devant la Lune",
+  "La face cachée",
+  "La face cachée : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+  "La pluie",
+  "La poussière",
+  "Le Soleil l'éclaire aussi. On ne la voit simplement jamais depuis la Terre.",
+  "Le Soleil passe devant la Lune",
+  "Le Soleil s'éteint",
+  "Le chemin de la Lune",
+  "Le cratère",
+  "Le côté de la Lune que l'on ne voit jamais depuis la Terre.",
+  "Le poids sur la Lune",
+  "Le poids sur la Lune : sur la Lune, on pèse six fois moins lourd que sur la Terre.",
+  "Le sol est en caoutchouc",
+  "Le sol est en ciment",
+  "Le vent",
+  "Le vent du soir",
+  "Lequel de ces éléments n'existe PAS sur la Lune ?",
+  "Les astronautes y sont restés",
+  "Les bateaux",
+  "Les cailloux",
+  "Les cratères",
+  "Les cratères de la Lune restent très longtemps. Pourquoi ?",
+  "Les marées",
+  "Les marées : la mer monte et descend, surtout parce que la Lune attire l'eau des océans.",
+  "Les montagnes",
+  "Les nuages cachent le Soleil",
+  "Les poissons",
+  "Les premiers pas sur la Lune : en 1969, Neil Armstrong, de la mission Apollo 11, a été le premier homme à marcher sur la Lune.",
+  "Les traces de pas restent",
+  "Leurs chaussures ont des ressorts",
+  "Louis Pasteur",
+  "Marées",
+  "Moment où un astre cache la lumière d'un autre",
+  "Météorite",
+  "Neil Armstrong",
+  "Neil Armstrong a marché sur la Lune en 1969.",
+  "On peut respirer sans casque",
+  "On pèse six fois moins lourd",
+  "On y pèse six fois moins lourd",
+  "On y pèse six fois moins lourd.",
+  "Orbite",
+  "Où est-ce vrai : sur la Lune, ou sur la Terre ?",
+  "Pas d'air, pas de vent, et on y pèse six fois moins lourd.",
+  "Pas de vent, pas de pluie : les cratères ne s'effacent presque pas.",
+  "Pendant une éclipse de Soleil, la Lune cache le Soleil.",
+  "Pense à ce que tu fais sans y penser, à chaque seconde.",
+  "Pense à notre planète, entre le Soleil et la Lune.",
+  "Personne qui voyage dans l'espace",
+  "Poids sur la Lune",
+  "Pour ne pas être reconnu",
+  "Pour qu'il existe, il faut de l'air.",
+  "Pourquoi les astronautes font-ils de grands bonds sur la Lune ?",
+  "Pourquoi les traces de pas des astronautes sont-elles toujours sur la Lune ?",
+  "Pourquoi un astronaute garde-t-il son casque sur la Lune ?",
+  "Premiers pas sur la Lune",
+  "Qu'est-ce qui a creusé les cratères de la Lune ?",
+  "Quand la Lune passe devant le Soleil et le cache, c'est une éclipse de Soleil. Quand la Terre fait de l'ombre à la Lune, c'est une éclipse de Lune.",
+  "Quand un astre cache la lumière d'un autre.",
+  "Quatre fois plus petite",
+  "Que se passe-t-il pendant une éclipse de Lune ?",
+  "Que se passe-t-il pendant une éclipse de Soleil ?",
+  "Que veut dire « astronaute » ?",
+  "Que veut dire « atmosphère » ?",
+  "Que veut dire « cratère » ?",
+  "Que veut dire « face cachée » ?",
+  "Que veut dire « météorite » ?",
+  "Que veut dire « orbite » ?",
+  "Que veut dire « éclipse » ?",
+  "Quelqu'un les repeint chaque année",
+  "Qui a été le premier homme à marcher sur la Lune ?",
+  "Reconstruis la phrase mémo.",
+  "Relie chaque début de phrase à sa fin.",
+  "Relie chaque mot à sa définition.",
+  "Sans air ni eau, rien ne les use",
+  "Sans atmosphère, pas de vent ni de pluie : les traces restent.",
+  "Ses cratères sont creusés",
+  "Sur Terre, le vent et la pluie usent les roches petit à petit.",
+  "Sur la Lune",
+  "Sur la Lune, on pèse six fois moins lourd que sur la Terre.",
+  "Sur la Terre",
+  "Sur une plage, qu'est-ce qui efface les traces de pas ?",
+  "Tes grands-parents étaient peut-être déjà nés.",
+  "Un astre se glisse entre nous et le Soleil.",
+  "Un astronaute : personne qui voyage dans l'espace.",
+  "Un cratère : grand trou rond creusé quand une météorite s'écrase.",
+  "Un monde sans air",
+  "Une météorite : caillou venu de l'espace qui tombe sur un astre.",
+  "Une sonde est passée derrière la Lune",
+  "Une voiture fait toujours le tour du même circuit. Pour la Lune, comment s'appelle ce circuit autour de la Terre ?",
+  "Une éclipse : moment où un astre cache la lumière d'un autre.",
+  "Une énorme fusée les a emmenés jusqu'à la Lune.",
+  "Vrai ou faux ? La face cachée de la Lune est toujours dans le noir.",
+  "Vrai ou faux ? Les cratères de la Lune ont été creusés par des météorites.",
+  "Vrai ou faux ? Neil Armstrong a été le premier homme à marcher sur la Lune.",
+  "Vrai ou faux ? Pendant une éclipse de Soleil, la Lune cache le Soleil.",
+  "Vrai ou faux ? Sur la Lune, il y a de l'air pour respirer.",
+  "Vrai ou faux ? Sur la Lune, on pèse moins lourd que sur la Terre.",
+  "Vrai ou faux ? « Astronaute » veut dire : moment où un astre cache la lumière d'un autre.",
+  "Vrai ou faux ? « Astronaute » veut dire : personne qui voyage dans l'espace.",
+  "Vrai ou faux ? « Atmosphère » veut dire : couche d'air qui entoure une planète.",
+  "Vrai ou faux ? « Atmosphère » veut dire : personne qui voyage dans l'espace.",
+  "Vrai ou faux ? « Cratère » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+  "Vrai ou faux ? « Cratère » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+  "Vrai ou faux ? « Face cachée » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+  "Vrai ou faux ? « Face cachée » veut dire : grand trou rond creusé quand une météorite s'écrase.",
+  "Vrai ou faux ? « Météorite » veut dire : caillou venu de l'espace qui tombe sur un astre.",
+  "Vrai ou faux ? « Météorite » veut dire : couche d'air qui entoure une planète.",
+  "Vrai ou faux ? « Orbite » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+  "Vrai ou faux ? « Orbite » veut dire : côté de la Lune que l'on ne voit jamais depuis la Terre.",
+  "Vrai ou faux ? « Éclipse » veut dire : chemin que suit un astre quand il tourne autour d'un autre.",
+  "Vrai ou faux ? « Éclipse » veut dire : moment où un astre cache la lumière d'un autre.",
+  "a marché sur la Lune en 1969",
+  "est environ quatre fois plus petite que la Terre",
+  "est six fois plus faible que sur la Terre",
+  "par des météorites.",
+  "Éclipse"
+ ]
+}

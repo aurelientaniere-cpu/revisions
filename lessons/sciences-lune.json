@@ -5,52 +5,61 @@
   "subtitle": "Le satellite de la Terre",
   "emoji": "🌙",
   "color": "#4a5bb5",
-  "source": "Leçon CM1 « La Lune », sans fiche du cahier : notions du programme (satellite, lumière, phases, surface, premiers pas, éclipses).",
+  "source": "Cahier de sciences CM1 : « Chapitre 1 : les mouvements de la Lune » (texte à trous), questions de recherche (satellite naturel, diamètre, durées de rotation et de révolution) et tableau des phases de la Lune.",
   "schema": {
     "asset": "lessons/assets/lune.svg"
   },
   "summary": [
-    "La Lune est le satellite naturel de la Terre : elle tourne autour de la Terre.",
+    "La Lune est le satellite naturel de la Terre : cela veut dire qu'elle tourne autour de la Terre.",
+    "Un satellite naturel, c'est une boule de roche qui tourne autour d'une planète. La Lune est composée de roche.",
+    "La Lune est beaucoup plus petite que la Terre. Son diamètre mesure 3 474 kilomètres. Le diamètre, c'est la largeur d'une boule, d'un bord à l'autre.",
+    "La Lune fait une rotation : elle tourne sur elle-même. Elle fait aussi une révolution : elle tourne autour de la Terre.",
+    "La rotation et la révolution de la Lune durent le même temps : environ 27 jours.",
+    "Pendant qu'elle fait le tour de la Terre, la Lune fait aussi un tour sur elle-même. Elle nous présente donc toujours la même face.",
     "La Lune ne produit pas de lumière. Elle est éclairée par le Soleil, comme un ballon éclairé par une lampe.",
-    "Elle fait le tour de la Terre en environ un mois. En même temps, elle tourne sur elle-même, à la même vitesse. C'est pour cela que l'on voit toujours la même face. L'autre côté s'appelle la face cachée.",
-    "Vue de la Terre, la partie éclairée change de forme : ce sont les phases de la Lune. Nouvelle lune, premier croissant, premier quartier, pleine lune, dernier quartier, dernier croissant, puis tout recommence.",
-    "Il faut environ vingt-neuf jours et demi pour revoir la même phase : c'est la lunaison.",
-    "Chez nous, quand la Lune grandit, elle est éclairée à droite. Quand elle diminue, elle est éclairée à gauche.",
+    "Vue de la Terre, la partie éclairée change de forme : ce sont les phases de la Lune. Il y en a huit.",
+    "Nouvelle lune, premier croissant, premier quartier, lune gibbeuse qui grandit, pleine lune, lune gibbeuse qui diminue, dernier quartier, dernier croissant. Puis tout recommence.",
+    "Lune gibbeuse veut dire : presque pleine. Il y en a deux : l'une grandit, l'autre diminue.",
     "Pourquoi la forme change ? Le Soleil éclaire toujours une moitié de la Lune. Pendant qu'elle tourne autour de la Terre, on voit une partie plus ou moins grande de cette moitié éclairée. La Lune, elle, reste toujours ronde.",
-    "Une astuce : la Lune est menteuse. Quand elle dessine la lettre D, elle croît. Quand elle dessine la lettre C, elle décroît.",
-    "La Lune n'a pas d'atmosphère : pas d'air, pas de vent, pas de pluie. Sa surface est couverte de cratères, creusés par des météorites.",
-    "La Lune est environ quatre fois plus petite que la Terre. On y pèse six fois moins lourd : les astronautes y font de grands bonds.",
-    "En 1969, la mission Apollo 11 a emmené des astronautes sur la Lune. Neil Armstrong a été le premier homme à y marcher.",
-    "Quand la Lune passe devant le Soleil et le cache, c'est une éclipse de Soleil. Quand la Terre fait de l'ombre à la Lune, c'est une éclipse de Lune.",
-    "La Lune attire l'eau des océans : c'est la principale cause des marées."
+    "Chez nous, quand la Lune grandit, elle est éclairée à droite. Quand elle diminue, elle est éclairée à gauche.",
+    "Une astuce : la Lune est menteuse. Quand elle dessine la lettre D, elle croît. Quand elle dessine la lettre C, elle décroît."
   ],
   "notions": [
     {
       "id": "satellite",
       "term": "satellite naturel",
       "nom": "un satellite naturel",
-      "def": "astre qui tourne autour d'une planète",
+      "def": "boule de roche qui tourne autour d'une planète",
       "emoji": "🌍",
       "group": "mots",
       "indice": "La Lune en est un pour la Terre. La planète Jupiter, elle, en a des dizaines."
     },
     {
-      "id": "orbite",
-      "term": "orbite",
-      "nom": "l'orbite",
-      "def": "chemin que suit un astre quand il tourne autour d'un autre",
-      "emoji": "🔄",
+      "id": "roche",
+      "term": "roche",
+      "nom": "la roche",
+      "def": "matière dure et solide, comme la pierre",
+      "emoji": "🪨",
       "group": "mots",
-      "indice": "La Lune suit toujours ce même grand rond autour de la Terre, comme une voiture sur un circuit."
+      "indice": "Les montagnes et les falaises en sont faites. La Lune aussi en est composée."
+    },
+    {
+      "id": "rotation",
+      "term": "rotation",
+      "nom": "la rotation",
+      "def": "tour complet d'un astre sur lui-même",
+      "emoji": "🌀",
+      "group": "mots",
+      "indice": "Une toupie qui tourne sur place en fait une. La Terre en fait une chaque jour."
     },
     {
       "id": "revolution",
       "term": "révolution",
       "nom": "la révolution",
-      "def": "un tour complet d'un astre autour d'un autre",
+      "def": "tour complet d'un astre autour d'un autre",
       "emoji": "🌐",
       "group": "mots",
-      "indice": "La Lune met environ un mois pour la faire autour de la Terre, et la Terre un an autour du Soleil."
+      "indice": "Un coureur qui fait le tour d'une piste en fait une. La Lune en fait une autour de la Terre."
     },
     {
       "id": "phase",
@@ -62,67 +71,36 @@
       "indice": "Un soir, on voit un fin croissant. Une semaine plus tard, on voit un demi-disque."
     },
     {
-      "id": "lunaison",
-      "term": "lunaison",
-      "nom": "la lunaison",
-      "def": "temps entre deux nouvelles lunes, environ vingt-neuf jours et demi",
+      "id": "taille",
+      "term": "taille de la Lune",
+      "nom": "la taille de la Lune",
+      "def": "la Lune est beaucoup plus petite que la Terre : son diamètre mesure 3 474 kilomètres",
+      "emoji": "⚖️",
+      "noAuto": true
+    },
+    {
+      "id": "duree",
+      "term": "environ 27 jours",
+      "nom": "la durée de rotation et de révolution",
+      "def": "la Lune met environ 27 jours pour tourner sur elle-même, et autant pour faire le tour de la Terre",
       "emoji": "📅",
-      "group": "mots",
-      "indice": "C'est le temps qu'il faut attendre pour revoir exactement la même forme de Lune."
+      "noAuto": true
     },
     {
-      "id": "face-cachee",
-      "term": "face cachée",
-      "nom": "la face cachée",
-      "def": "côté de la Lune que l'on ne voit jamais depuis la Terre",
-      "emoji": "🌚",
-      "group": "mots",
-      "indice": "Pour la photographier, il a fallu envoyer une sonde passer derrière la Lune."
+      "id": "meme-face",
+      "term": "toujours la même face",
+      "nom": "toujours la même face",
+      "def": "la rotation et la révolution de la Lune durent le même temps : elle nous présente toujours le même côté",
+      "emoji": "🙂",
+      "noAuto": true
     },
     {
-      "id": "cratere",
-      "term": "cratère",
-      "nom": "un cratère",
-      "def": "grand trou rond creusé quand une météorite s'écrase",
-      "emoji": "🕳️",
-      "group": "mots",
-      "indice": "Avec des jumelles, on voit sur la Lune plein de trous ronds, comme des bols."
-    },
-    {
-      "id": "meteorite",
-      "term": "météorite",
-      "nom": "une météorite",
-      "def": "caillou venu de l'espace qui tombe sur un astre",
-      "emoji": "☄️",
-      "group": "mots",
-      "indice": "Elle arrive de l'espace à toute vitesse. Sur la Lune, rien ne la freine avant le choc."
-    },
-    {
-      "id": "atmosphere",
-      "term": "atmosphère",
-      "nom": "l'atmosphère",
-      "def": "couche d'air qui entoure une planète",
-      "emoji": "💨",
-      "group": "mots",
-      "indice": "La Terre en a une : c'est grâce à elle que l'on respire et que le ciel est bleu."
-    },
-    {
-      "id": "astronaute",
-      "term": "astronaute",
-      "nom": "un astronaute",
-      "def": "personne qui voyage dans l'espace",
-      "emoji": "👩‍🚀",
-      "group": "mots",
-      "indice": "Il porte une combinaison blanche et un casque, et il part dans une fusée."
-    },
-    {
-      "id": "eclipse",
-      "term": "éclipse",
-      "nom": "une éclipse",
-      "def": "moment où un astre cache la lumière d'un autre",
-      "emoji": "🌘",
-      "group": "mots",
-      "indice": "En plein jour, le ciel devient sombre pendant quelques minutes, puis tout redevient normal."
+      "id": "lumiere",
+      "term": "lumière de la Lune",
+      "nom": "la lumière de la Lune",
+      "def": "la Lune ne brille pas seule : elle renvoie la lumière du Soleil",
+      "emoji": "☀️",
+      "noAuto": true
     },
     {
       "id": "nouvelle-lune",
@@ -153,9 +131,9 @@
     },
     {
       "id": "gibbeuse-croissante",
-      "term": "Lune gibbeuse croissante",
-      "nom": "la Lune gibbeuse croissante",
-      "def": "Lune presque pleine, qui grandit encore",
+      "term": "lune gibbeuse qui grandit",
+      "nom": "la lune gibbeuse qui grandit",
+      "def": "Lune presque pleine, éclairée à droite, qui grandit encore",
       "emoji": "🌔",
       "noAuto": true,
       "zone": "gibbeuse-croissante"
@@ -171,9 +149,9 @@
     },
     {
       "id": "gibbeuse-decroissante",
-      "term": "Lune gibbeuse décroissante",
-      "nom": "la Lune gibbeuse décroissante",
-      "def": "Lune presque pleine, qui commence à diminuer",
+      "term": "lune gibbeuse qui diminue",
+      "nom": "la lune gibbeuse qui diminue",
+      "def": "Lune presque pleine, éclairée à gauche, qui commence à diminuer",
       "emoji": "🌖",
       "noAuto": true,
       "zone": "gibbeuse-decroissante"
@@ -211,54 +189,6 @@
       "def": "quand la Lune dessine la lettre D, elle croît ; quand elle dessine la lettre C, elle décroît : elle dit le contraire",
       "emoji": "🌛",
       "noAuto": true
-    },
-    {
-      "id": "lumiere",
-      "term": "lumière de la Lune",
-      "nom": "la lumière de la Lune",
-      "def": "la Lune ne brille pas seule : elle renvoie la lumière du Soleil",
-      "emoji": "☀️",
-      "noAuto": true
-    },
-    {
-      "id": "meme-face",
-      "term": "toujours la même face",
-      "nom": "toujours la même face",
-      "def": "la Lune tourne sur elle-même aussi vite qu'autour de la Terre : on voit toujours le même côté",
-      "emoji": "🙂",
-      "noAuto": true
-    },
-    {
-      "id": "taille",
-      "term": "taille de la Lune",
-      "nom": "la taille de la Lune",
-      "def": "la Lune est environ quatre fois plus petite que la Terre",
-      "emoji": "⚖️",
-      "noAuto": true
-    },
-    {
-      "id": "pesanteur",
-      "term": "poids sur la Lune",
-      "nom": "le poids sur la Lune",
-      "def": "sur la Lune, on pèse six fois moins lourd que sur la Terre",
-      "emoji": "🪶",
-      "noAuto": true
-    },
-    {
-      "id": "premiers-pas",
-      "term": "premiers pas sur la Lune",
-      "nom": "les premiers pas sur la Lune",
-      "def": "en 1969, Neil Armstrong, de la mission Apollo 11, a été le premier homme à marcher sur la Lune",
-      "emoji": "👣",
-      "noAuto": true
-    },
-    {
-      "id": "marees",
-      "term": "marées",
-      "nom": "les marées",
-      "def": "la mer monte et descend, surtout parce que la Lune attire l'eau des océans",
-      "emoji": "🌊",
-      "noAuto": true
     }
   ],
   "cards": [
@@ -267,9 +197,27 @@
       "name": "La compagne de la Terre",
       "emoji": "🌍",
       "color": "#3a7bd5",
-      "notions": ["satellite", "orbite", "revolution"],
-      "desc": "La Lune tourne autour de la Terre en environ un mois.",
+      "notions": ["satellite", "roche", "taille"],
+      "desc": "Une boule de roche, beaucoup plus petite que la Terre, qui tourne autour d'elle.",
       "image": "satellite"
+    },
+    {
+      "id": "lu-deux-tours",
+      "name": "Les deux tours",
+      "emoji": "🌀",
+      "color": "#2f8f9d",
+      "notions": ["rotation", "revolution", "duree"],
+      "desc": "Un tour sur elle-même, un tour de la Terre : environ 27 jours chacun.",
+      "image": "revolution"
+    },
+    {
+      "id": "lu-meme-face",
+      "name": "Toujours la même face",
+      "emoji": "🙂",
+      "color": "#4a4f6b",
+      "notions": ["meme-face"],
+      "desc": "La Lune nous présente toujours le même côté.",
+      "image": "meme-face"
     },
     {
       "id": "lu-lumiere",
@@ -295,16 +243,7 @@
       "emoji": "🌓",
       "color": "#6c7bd0",
       "notions": ["premier-quartier", "dernier-quartier", "phase"],
-      "desc": "Une moitié éclairée : à droite quand elle grandit, à gauche quand elle diminue.",
-      "image": "lunaison"
-    },
-    {
-      "id": "lu-menteuse",
-      "name": "La Lune menteuse",
-      "emoji": "🌛",
-      "color": "#5a67b8",
-      "notions": ["pourquoi-phases", "lune-menteuse"],
-      "desc": "Elle dessine un D quand elle croît, un C quand elle décroît."
+      "desc": "Une moitié éclairée : à droite quand elle grandit, à gauche quand elle diminue."
     },
     {
       "id": "lu-pleine",
@@ -316,58 +255,12 @@
       "image": "pleine-lune"
     },
     {
-      "id": "lu-face",
-      "name": "La face cachée",
-      "emoji": "🌚",
-      "color": "#4a4f6b",
-      "notions": ["face-cachee", "meme-face", "lunaison"],
-      "desc": "La Lune nous montre toujours le même côté.",
-      "image": "face-cachee"
-    },
-    {
-      "id": "lu-crateres",
-      "name": "Les cratères",
-      "emoji": "🕳️",
-      "color": "#8a8a8a",
-      "notions": ["cratere", "meteorite"],
-      "desc": "Des trous ronds creusés par des cailloux venus de l'espace.",
-      "image": "cratere"
-    },
-    {
-      "id": "lu-sans-air",
-      "name": "Un monde sans air",
-      "emoji": "💨",
-      "color": "#5b6ea8",
-      "notions": ["atmosphere", "taille", "pesanteur"],
-      "desc": "Pas d'air, pas de vent, et on y pèse six fois moins lourd.",
-      "image": "pesanteur"
-    },
-    {
-      "id": "lu-apollo",
-      "name": "Apollo 11",
-      "emoji": "🚀",
-      "color": "#d64545",
-      "notions": ["premiers-pas", "astronaute"],
-      "desc": "En 1969, Neil Armstrong marche sur la Lune.",
-      "image": "premiers-pas"
-    },
-    {
-      "id": "lu-eclipse",
-      "name": "L'éclipse",
-      "emoji": "🌘",
-      "color": "#7a4a9a",
-      "notions": ["eclipse"],
-      "desc": "Quand un astre cache la lumière d'un autre.",
-      "image": "eclipse"
-    },
-    {
-      "id": "lu-marees",
-      "name": "Les marées",
-      "emoji": "🌊",
-      "color": "#2aa6a0",
-      "notions": ["marees"],
-      "desc": "La Lune attire l'eau des océans.",
-      "image": "marees"
+      "id": "lu-menteuse",
+      "name": "La Lune menteuse",
+      "emoji": "🌛",
+      "color": "#5a67b8",
+      "notions": ["pourquoi-phases", "lune-menteuse"],
+      "desc": "Elle dessine un D quand elle croît, un C quand elle décroît."
     },
     {
       "id": "lu-legende",
@@ -382,6 +275,111 @@
     }
   ],
   "items": [
+    {
+      "type": "qcm", "diff": 2, "review": true, "notions": ["satellite"],
+      "q": "Qu'est-ce qu'un satellite naturel ?",
+      "choices": ["Une boule de roche qui tourne autour d'une planète", "Une étoile qui brille la nuit", "Une machine envoyée dans l'espace", "Une planète qui tourne autour du Soleil"],
+      "hint": "La Lune en est un pour la Terre.",
+      "explain": "Un satellite naturel est une boule de roche qui tourne autour d'une planète, comme la Lune."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["satellite"],
+      "q": "Autour de quoi la Lune tourne-t-elle ?",
+      "choices": ["Autour de la Terre", "Autour de Mars", "Autour d'une étoile filante", "Elle ne bouge jamais"],
+      "hint": "C'est notre planète.",
+      "explain": "La Lune est le satellite naturel de la Terre."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["taille"],
+      "q": "Quel est le diamètre de la Lune ?",
+      "choices": ["3 474 kilomètres", "12 742 kilomètres", "384 400 kilomètres", "100 kilomètres"],
+      "hint": "La Lune est beaucoup plus petite que la Terre, qui mesure environ 12 700 kilomètres. Mais la Lune reste très grande.",
+      "explain": "Le diamètre de la Lune mesure 3 474 kilomètres : beaucoup moins que la Terre."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["rotation", "duree"],
+      "q": "Combien de temps dure la rotation de la Lune ?",
+      "choices": ["Environ 27 jours", "Une journée", "Une heure", "Une année"],
+      "hint": "C'est plus long que trois semaines, mais bien moins qu'une année.",
+      "explain": "La Lune met environ 27 jours pour tourner sur elle-même."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["revolution", "duree"],
+      "q": "Combien de temps dure la révolution de la Lune ?",
+      "choices": ["Environ 27 jours", "Une journée", "Une heure", "Une année"],
+      "hint": "La rotation et la révolution de la Lune durent le même temps.",
+      "explain": "La Lune met environ 27 jours pour faire le tour de la Terre."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["duree", "meme-face"],
+      "q": "Qu'est-ce qui dure le plus longtemps : la rotation ou la révolution de la Lune ?",
+      "choices": ["Elles durent le même temps", "La rotation", "La révolution", "Aucune : la Lune ne bouge pas"],
+      "hint": "Pense au même nombre de jours pour les deux.",
+      "explain": "Les deux durent environ 27 jours."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["rotation"],
+      "q": "La Lune tourne sur elle-même. Comment s'appelle ce mouvement ?",
+      "choices": ["Une rotation", "Une révolution", "Une phase", "Une roche"],
+      "hint": "Pense à une toupie qui tourne sur place.",
+      "explain": "Tourner sur soi-même, c'est faire une rotation."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["revolution"],
+      "q": "La Lune tourne autour de la Terre. Comment s'appelle ce mouvement ?",
+      "choices": ["Une révolution", "Une rotation", "Une phase", "Une roche"],
+      "hint": "Pense au coureur qui fait le tour de la piste.",
+      "explain": "Tourner autour d'un autre astre, c'est faire une révolution."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["rotation", "revolution"],
+      "q": "Tu tournes sur toi-même en marchant autour d'une table. Que fais-tu ?",
+      "choices": ["Une rotation et une révolution", "Seulement une rotation", "Seulement une révolution", "Une phase"],
+      "hint": "Que fais-tu sur toi-même ? Et autour de la table ?",
+      "explain": "Sur toi-même, c'est la rotation. Autour de la table, c'est la révolution."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["roche"],
+      "q": "De quoi la Lune est-elle composée ?",
+      "choices": ["De roche", "De gaz, comme le Soleil", "De glace, comme un glaçon", "De lumière"],
+      "hint": "Si tu marchais dessus, tu sentirais un sol dur sous tes pieds.",
+      "explain": "La Lune est une boule de roche."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["taille"],
+      "q": "Compare la Lune et la Terre. Laquelle est la plus grande ?",
+      "choices": ["La Terre", "La Lune", "Elles ont la même taille", "On ne peut pas savoir"],
+      "hint": "Dans le ciel, la Lune paraît grande, car elle est proche de nous.",
+      "explain": "La Lune est beaucoup plus petite que la Terre."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["meme-face"],
+      "q": "Pourquoi voit-on toujours la même face de la Lune ?",
+      "choices": ["Sa rotation et sa révolution durent le même temps", "Elle ne tourne pas du tout", "L'autre côté est tout noir", "La Terre cache l'autre côté"],
+      "hint": "Pense à une danseuse qui fait le tour d'une chaise en la regardant toujours.",
+      "explain": "Un tour sur elle-même pendant un tour de la Terre : on voit toujours le même côté."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["meme-face"],
+      "q": "Une amie dit : si j'attends assez longtemps, je verrai l'autre côté de la Lune depuis mon jardin. A-t-elle raison ?",
+      "choices": ["Non : la Lune nous présente toujours la même face", "Oui, au bout d'une semaine", "Oui, à la pleine lune", "Oui, avec des jumelles"],
+      "hint": "Pense aux deux tours de la Lune, qui durent le même temps.",
+      "explain": "Depuis la Terre, on voit toujours la même face de la Lune."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["satellite", "roche"],
+      "q": "Lequel n'est PAS vrai pour la Lune ?",
+      "choices": ["Elle est une étoile", "Elle tourne autour de la Terre", "Elle est éclairée par le Soleil", "Elle est composée de roche"],
+      "hint": "Une étoile produit sa propre lumière.",
+      "explain": "La Lune n'est pas une étoile : c'est le satellite naturel de la Terre."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["rotation", "revolution"],
+      "q": "Lequel n'est PAS vrai pour la Lune ?",
+      "choices": ["Elle s'arrête de tourner le jour", "Elle tourne sur elle-même", "Elle tourne autour de la Terre", "Elle fait le tour de la Terre en environ 27 jours"],
+      "hint": "La Lune fait deux mouvements, sans jamais s'arrêter.",
+      "explain": "La Lune ne s'arrête jamais : elle tourne sur elle-même et autour de la Terre."
+    },
     {
       "type": "qcm", "diff": 2, "notions": ["pourquoi-phases"],
       "q": "Quelle partie de la Lune le Soleil éclaire-t-il ?",
@@ -464,46 +462,25 @@
       "explain": "Le miroir renvoie la lumière du Soleil, comme la Lune."
     },
     {
-      "type": "qcm", "diff": 2, "notions": ["satellite"],
-      "q": "Autour de quoi la Lune tourne-t-elle ?",
-      "choices": ["Autour de la Terre", "Autour de Mars", "Autour d'une étoile filante", "Elle ne bouge jamais"],
-      "hint": "C'est notre planète.",
-      "explain": "La Lune est le satellite naturel de la Terre."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["revolution"],
-      "q": "Combien de temps met la Lune pour faire le tour de la Terre ?",
-      "choices": ["Environ un mois", "Un jour", "Une heure", "Cent ans"],
-      "hint": "C'est plus long qu'une semaine, mais bien moins qu'une année.",
-      "explain": "La Lune fait le tour de la Terre en environ un mois."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["lunaison"],
-      "sentence": "Pour revoir la même phase de la Lune, il faut attendre environ",
-      "choices": ["vingt-neuf jours et demi", "deux jours", "une semaine", "une année", "dix ans"],
-      "hint": "C'est presque un mois.",
-      "explain": "C'est la lunaison : environ vingt-neuf jours et demi."
-    },
-    {
-      "type": "qcm", "diff": 3, "notions": ["meme-face", "face-cachee"],
-      "q": "Pourquoi voit-on toujours la même face de la Lune ?",
-      "choices": ["Elle tourne sur elle-même aussi vite qu'autour de la Terre", "Elle ne tourne pas du tout", "L'autre côté est tout noir", "La Terre la cache"],
-      "hint": "Pense à une danseuse qui fait le tour d'une chaise en la regardant toujours.",
-      "explain": "Un tour sur elle-même pour un tour de la Terre : on voit toujours le même côté."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["face-cachee"],
-      "q": "Comment a-t-on pu voir la face cachée de la Lune ?",
-      "choices": ["Une sonde est passée derrière la Lune", "Avec une longue-vue depuis la France", "En attendant la pleine lune", "En regardant la Lune dans un miroir"],
-      "hint": "Depuis la Terre, on ne la voit jamais.",
-      "explain": "Il a fallu envoyer une sonde dans l'espace, derrière la Lune."
-    },
-    {
       "type": "qcm", "diff": 2, "notions": ["phase", "lumiere"],
       "q": "Pourquoi la Lune semble-t-elle changer de forme ?",
       "choices": ["On voit une partie plus ou moins grande de sa face éclairée", "Elle se casse en morceaux", "Elle grossit puis rétrécit vraiment", "Les nuages la découpent"],
       "hint": "La Lune reste toujours une boule bien ronde.",
       "explain": "La Lune ne change pas : c'est la partie éclairée que l'on voit qui change."
+    },
+    {
+      "type": "qcm", "diff": 2, "notions": ["phase"],
+      "q": "Combien de phases de la Lune as-tu appris à nommer ?",
+      "choices": ["Huit", "Deux", "Quatre", "Cent"],
+      "hint": "Récite les phases dans ta tête, de la nouvelle lune au dernier croissant.",
+      "explain": "Il y a huit phases, puis tout recommence."
+    },
+    {
+      "type": "qcm", "diff": 3, "notions": ["phase"],
+      "q": "Lequel n'est PAS une phase de la Lune ?",
+      "choices": ["Le deuxième croissant", "Le premier croissant", "La lune gibbeuse", "Le dernier quartier"],
+      "hint": "Récite les huit phases dans ta tête, dans l'ordre.",
+      "explain": "Il y a un premier croissant et un dernier croissant, mais pas de deuxième croissant."
     },
     {
       "type": "qcm", "diff": 2, "notions": ["nouvelle-lune"],
@@ -541,9 +518,9 @@
       "explain": "Après la nouvelle lune, un fin croissant apparaît : le premier croissant."
     },
     {
-      "type": "qcm", "diff": 3, "notions": ["pleine-lune", "dernier-quartier"],
+      "type": "qcm", "diff": 3, "notions": ["pleine-lune", "gibbeuse-decroissante"],
       "q": "Après la pleine lune, que fait la partie éclairée ?",
-      "choices": ["Elle diminue", "Elle grandit encore", "Elle reste pleine un mois", "Elle devient rouge"],
+      "choices": ["Elle diminue", "Elle grandit encore", "Elle reste pleine pour toujours", "Elle devient rouge"],
       "hint": "Elle est déjà complète : elle ne peut pas être plus grande.",
       "explain": "Après la pleine lune, la Lune diminue jusqu'à la nouvelle lune."
     },
@@ -556,108 +533,17 @@
     },
     {
       "type": "qcm", "diff": 3, "notions": ["gibbeuse-croissante", "gibbeuse-decroissante"],
-      "q": "La Lune est presque pleine et elle grandit encore. Comment s'appelle cette phase ?",
-      "choices": ["La Lune gibbeuse croissante", "La Lune gibbeuse décroissante", "Le dernier croissant", "La nouvelle lune"],
-      "hint": "Croître veut dire grandir.",
-      "explain": "Presque pleine et elle grandit : c'est la Lune gibbeuse croissante."
+      "q": "La Lune est presque pleine. Comment s'appelle cette phase ?",
+      "choices": ["La lune gibbeuse", "Le premier quartier", "Le dernier croissant", "La nouvelle lune"],
+      "hint": "Un quartier, c'est une moitié. Ici, c'est bien plus qu'une moitié.",
+      "explain": "Presque pleine : c'est une lune gibbeuse."
     },
     {
-      "type": "qcm", "diff": 2, "notions": ["atmosphere"],
-      "q": "Lequel de ces éléments n'existe PAS sur la Lune ?",
-      "choices": ["Le vent", "Les cratères", "Les montagnes", "La poussière", "Les cailloux"],
-      "hint": "Pour qu'il existe, il faut de l'air.",
-      "explain": "La Lune n'a pas d'atmosphère : pas d'air, donc pas de vent."
-    },
-    {
-      "type": "qcm", "diff": 3, "notions": ["atmosphere"],
-      "q": "Pourquoi les traces de pas des astronautes sont-elles toujours sur la Lune ?",
-      "choices": ["Il n'y a ni vent ni pluie pour les effacer", "Quelqu'un les repeint chaque année", "Le sol est en ciment", "Les astronautes y sont restés"],
-      "hint": "Sur une plage, qu'est-ce qui efface les traces de pas ?",
-      "explain": "Sans atmosphère, pas de vent ni de pluie : les traces restent."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["astronaute", "atmosphere"],
-      "q": "Pourquoi un astronaute garde-t-il son casque sur la Lune ?",
-      "choices": ["Il n'y a pas d'air pour respirer", "Il fait trop de bruit", "Il pleut tout le temps", "Pour ne pas être reconnu"],
-      "hint": "Pense à ce que tu fais sans y penser, à chaque seconde.",
-      "explain": "La Lune n'a pas d'atmosphère : son casque lui apporte de l'air."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["cratere", "meteorite"],
-      "q": "Qu'est-ce qui a creusé les cratères de la Lune ?",
-      "choices": ["Des météorites", "Des astronautes avec des pelles", "La pluie", "Des rivières"],
-      "hint": "Ce sont des cailloux venus de l'espace.",
-      "explain": "Des météorites se sont écrasées sur la Lune et ont creusé des cratères."
-    },
-    {
-      "type": "qcm", "diff": 3, "notions": ["cratere", "atmosphere"],
-      "q": "Les cratères de la Lune restent très longtemps. Pourquoi ?",
-      "choices": ["Sans air ni eau, rien ne les use", "Ils sont protégés par une barrière", "Des astronautes les réparent", "Ils sont tout neufs"],
-      "hint": "Sur Terre, le vent et la pluie usent les roches petit à petit.",
-      "explain": "Pas de vent, pas de pluie : les cratères ne s'effacent presque pas."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["taille"],
-      "q": "La Lune est-elle plus grande ou plus petite que la Terre ?",
-      "choices": ["Environ quatre fois plus petite", "Deux fois plus grande", "Exactement de la même taille", "Cent fois plus grande"],
-      "hint": "Dans le ciel, elle paraît grande car elle est proche de nous.",
-      "explain": "La Lune est environ quatre fois plus petite que la Terre."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["pesanteur"],
-      "q": "Pourquoi les astronautes font-ils de grands bonds sur la Lune ?",
-      "choices": ["On y pèse six fois moins lourd", "Leurs chaussures ont des ressorts", "Il y a beaucoup de vent", "Le sol est en caoutchouc"],
-      "hint": "La Lune est petite : elle attire moins les objets que la Terre.",
-      "explain": "Sur la Lune, on pèse six fois moins lourd que sur la Terre."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["premiers-pas"],
-      "q": "Qui a été le premier homme à marcher sur la Lune ?",
-      "choices": ["Neil Armstrong", "Christophe Colomb", "Charlemagne", "Louis Pasteur"],
-      "hint": "C'était un astronaute américain de la mission Apollo 11.",
-      "explain": "Neil Armstrong a marché sur la Lune en 1969."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["premiers-pas"],
-      "q": "En quelle année l'Homme a-t-il marché pour la première fois sur la Lune ?",
-      "choices": ["1969", "1492", "1789", "2020"],
-      "hint": "Tes grands-parents étaient peut-être déjà nés.",
-      "explain": "C'était en 1969, avec la mission Apollo 11."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["premiers-pas", "astronaute"],
-      "q": "Comment les astronautes d'Apollo 11 sont-ils allés sur la Lune ?",
-      "choices": ["Dans une fusée", "En avion", "En montgolfière", "En bateau"],
-      "hint": "Il faut quitter la Terre et traverser l'espace, où il n'y a pas d'air.",
-      "explain": "Une énorme fusée les a emmenés jusqu'à la Lune."
-    },
-    {
-      "type": "qcm", "diff": 3, "notions": ["eclipse"],
-      "q": "Que se passe-t-il pendant une éclipse de Soleil ?",
-      "choices": ["La Lune passe devant le Soleil et le cache", "Le Soleil s'éteint", "La Terre passe devant la Lune", "Les nuages cachent le Soleil"],
-      "hint": "Un astre se glisse entre nous et le Soleil.",
-      "explain": "Pendant une éclipse de Soleil, la Lune cache le Soleil."
-    },
-    {
-      "type": "qcm", "diff": 3, "notions": ["eclipse"],
-      "q": "Que se passe-t-il pendant une éclipse de Lune ?",
-      "choices": ["La Terre fait de l'ombre à la Lune", "La Lune passe devant le Soleil", "La Lune tombe", "Le Soleil passe devant la Lune"],
-      "hint": "Pense à notre planète, entre le Soleil et la Lune.",
-      "explain": "La Terre empêche la lumière du Soleil d'arriver sur la Lune."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["marees"],
-      "q": "Au bord de la mer, l'eau monte et descend chaque jour. Qui en est la principale cause ?",
-      "choices": ["La Lune", "Les bateaux", "Les poissons", "Le vent du soir"],
-      "hint": "Cet astre attire l'eau des océans.",
-      "explain": "La Lune attire l'eau des océans : c'est la principale cause des marées."
-    },
-    {
-      "type": "qcm", "diff": 2, "notions": ["satellite", "lumiere"],
-      "q": "Lequel n'est PAS vrai pour la Lune ?",
-      "choices": ["Elle est une étoile", "Elle tourne autour de la Terre", "Elle est éclairée par le Soleil", "Elle a des cratères"],
-      "hint": "Une étoile produit sa propre lumière.",
-      "explain": "La Lune n'est pas une étoile : c'est le satellite naturel de la Terre."
+      "type": "qcm", "diff": 3, "notions": ["gibbeuse-croissante"],
+      "q": "Une lune gibbeuse est éclairée à droite. Que fait-elle ?",
+      "choices": ["Elle grandit : bientôt la pleine lune", "Elle diminue : bientôt le dernier quartier", "Elle reste pareille", "Elle disparaît demain"],
+      "hint": "Chez nous, la Lune qui grandit est éclairée à droite.",
+      "explain": "Éclairée à droite : c'est la lune gibbeuse qui grandit, juste avant la pleine lune."
     },
     {
       "type": "vf", "diff": 1, "notions": ["lumiere"],
@@ -672,16 +558,46 @@
       "explain": "C'est le satellite naturel de la Terre."
     },
     {
-      "type": "vf", "diff": 1, "notions": ["atmosphere"],
-      "q": "Sur la Lune, il y a de l'air pour respirer.",
+      "type": "vf", "diff": 1, "notions": ["roche"],
+      "q": "La Lune est composée de roche.",
+      "answer": true,
+      "explain": "La Lune est une boule de roche."
+    },
+    {
+      "type": "vf", "diff": 1, "notions": ["taille"],
+      "q": "La Lune est plus grande que la Terre.",
       "answer": false,
-      "explain": "La Lune n'a pas d'atmosphère."
+      "explain": "Elle est beaucoup plus petite que la Terre."
+    },
+    {
+      "type": "vf", "diff": 2, "notions": ["taille"],
+      "q": "Le diamètre de la Lune mesure 3 474 kilomètres.",
+      "answer": true,
+      "explain": "C'est sa largeur, d'un bord à l'autre."
+    },
+    {
+      "type": "vf", "diff": 2, "notions": ["rotation", "duree"],
+      "q": "La rotation de la Lune dure environ 27 jours.",
+      "answer": true,
+      "explain": "Elle met environ 27 jours pour tourner sur elle-même."
+    },
+    {
+      "type": "vf", "diff": 2, "notions": ["revolution", "duree"],
+      "q": "La Lune fait le tour de la Terre en une seule journée.",
+      "answer": false,
+      "explain": "Sa révolution dure environ 27 jours."
+    },
+    {
+      "type": "vf", "diff": 2, "review": true, "notions": ["rotation", "revolution"],
+      "q": "La rotation, c'est quand la Lune tourne autour de la Terre.",
+      "answer": false,
+      "explain": "Ça, c'est la révolution. La rotation, c'est tourner sur elle-même."
     },
     {
       "type": "vf", "diff": 1, "notions": ["meme-face"],
       "q": "Depuis la Terre, on voit toujours la même face de la Lune.",
       "answer": true,
-      "explain": "L'autre côté s'appelle la face cachée."
+      "explain": "Sa rotation et sa révolution durent le même temps."
     },
     {
       "type": "vf", "diff": 1, "notions": ["nouvelle-lune"],
@@ -690,40 +606,10 @@
       "explain": "À la nouvelle lune, on ne voit pas la Lune."
     },
     {
-      "type": "vf", "diff": 1, "notions": ["premiers-pas"],
-      "q": "Neil Armstrong a été le premier homme à marcher sur la Lune.",
-      "answer": true,
-      "explain": "C'était en 1969, avec la mission Apollo 11."
-    },
-    {
-      "type": "vf", "diff": 1, "notions": ["taille"],
-      "q": "La Lune est plus grande que la Terre.",
-      "answer": false,
-      "explain": "Elle est environ quatre fois plus petite."
-    },
-    {
-      "type": "vf", "diff": 1, "notions": ["pesanteur"],
-      "q": "Sur la Lune, on pèse moins lourd que sur la Terre.",
-      "answer": true,
-      "explain": "On y pèse six fois moins lourd."
-    },
-    {
       "type": "vf", "diff": 1, "notions": ["phase"],
       "q": "La Lune change vraiment de forme chaque soir.",
       "answer": false,
       "explain": "Elle reste ronde : c'est la partie éclairée que l'on voit qui change."
-    },
-    {
-      "type": "vf", "diff": 2, "notions": ["lunaison"],
-      "q": "Une lunaison dure environ une semaine.",
-      "answer": false,
-      "explain": "Elle dure environ vingt-neuf jours et demi."
-    },
-    {
-      "type": "vf", "diff": 1, "notions": ["cratere", "meteorite"],
-      "q": "Les cratères de la Lune ont été creusés par des météorites.",
-      "answer": true,
-      "explain": "Ces cailloux venus de l'espace ont creusé des trous ronds."
     },
     {
       "type": "schema", "diff": 2, "notions": ["pleine-lune"], "target": "pleine-lune",
@@ -758,12 +644,12 @@
     {
       "type": "schema", "diff": 3, "notions": ["gibbeuse-croissante"], "target": "gibbeuse-croissante",
       "q": "Touche la Lune presque pleine qui grandit encore.",
-      "explain": "C'est la Lune gibbeuse croissante, juste avant la pleine lune."
+      "explain": "C'est la lune gibbeuse qui grandit, juste avant la pleine lune."
     },
     {
       "type": "schema", "diff": 3, "notions": ["gibbeuse-decroissante"], "target": "gibbeuse-decroissante",
       "q": "Touche la Lune presque pleine qui commence à diminuer.",
-      "explain": "C'est la Lune gibbeuse décroissante, juste après la pleine lune."
+      "explain": "C'est la lune gibbeuse qui diminue, juste après la pleine lune."
     },
     {
       "type": "schema", "diff": 3, "notions": ["nouvelle-lune", "lumiere"], "target": "nouvelle-lune",
@@ -800,7 +686,25 @@
     },
     {
       "type": "placer", "layout": "frise", "diff": 3,
-      "notions": ["pleine-lune", "dernier-quartier", "dernier-croissant", "nouvelle-lune", "lunaison"],
+      "notions": ["premier-quartier", "gibbeuse-croissante", "pleine-lune", "gibbeuse-decroissante"],
+      "q": "Range ces phases dans l'ordre.",
+      "explain": "Premier quartier, lune gibbeuse qui grandit, pleine lune, puis lune gibbeuse qui diminue.",
+      "targets": [
+        {"id": "a", "date": "1er"},
+        {"id": "b", "date": "2e"},
+        {"id": "c", "date": "3e"},
+        {"id": "d", "date": "4e"}
+      ],
+      "tokens": [
+        {"text": "Premier quartier", "target": "a"},
+        {"text": "Lune gibbeuse qui grandit", "target": "b"},
+        {"text": "Pleine lune", "target": "c"},
+        {"text": "Lune gibbeuse qui diminue", "target": "d"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "frise", "diff": 3,
+      "notions": ["pleine-lune", "dernier-quartier", "dernier-croissant", "nouvelle-lune"],
       "q": "Range les phases dans l'ordre, quand la Lune diminue.",
       "explain": "Pleine lune, dernier quartier, dernier croissant, puis nouvelle lune.",
       "targets": [
@@ -828,30 +732,10 @@
       "tokens": [
         {"text": "Premier croissant", "target": "g"},
         {"text": "Premier quartier", "target": "g"},
-        {"text": "Lune gibbeuse croissante", "target": "g"},
+        {"text": "Éclairée à droite", "target": "g"},
         {"text": "Dernier quartier", "target": "d"},
         {"text": "Dernier croissant", "target": "d"},
-        {"text": "Lune gibbeuse décroissante", "target": "d"}
-      ]
-    },
-    {
-      "type": "placer", "layout": "tri", "diff": 2, "sample": 6,
-      "notions": ["atmosphere", "pesanteur", "cratere"],
-      "q": "Où est-ce vrai : sur la Lune, ou sur la Terre ?",
-      "explain": "La Terre a de l'air et de l'eau. La Lune n'a pas d'atmosphère.",
-      "targets": [
-        {"id": "l", "label": "Sur la Lune", "emoji": "🌕", "color": "#6c7bd0"},
-        {"id": "t", "label": "Sur la Terre", "emoji": "🌍", "color": "#3a7bd5"}
-      ],
-      "tokens": [
-        {"text": "On peut respirer sans casque", "target": "t"},
-        {"text": "Il pleut parfois", "target": "t"},
-        {"text": "Il y a des océans", "target": "t"},
-        {"text": "Des arbres poussent", "target": "t"},
-        {"text": "Il n'y a pas d'air", "target": "l"},
-        {"text": "Les traces de pas restent", "target": "l"},
-        {"text": "On pèse six fois moins lourd", "target": "l"},
-        {"text": "Il n'y a jamais de vent", "target": "l"}
+        {"text": "Éclairée à gauche", "target": "d"}
       ]
     },
     {
@@ -874,18 +758,139 @@
     },
     {
       "type": "placer", "layout": "relie", "diff": 3,
-      "notions": ["premiers-pas", "taille", "pesanteur"],
-      "q": "Relie chaque début de phrase à sa fin.",
-      "explain": "Armstrong en 1969, une Lune quatre fois plus petite, un poids six fois plus faible.",
+      "notions": ["premier-croissant", "gibbeuse-croissante", "gibbeuse-decroissante", "dernier-croissant"],
+      "q": "Relie chaque phase à ce que l'on voit dans le ciel.",
+      "explain": "Le premier croissant et la lune gibbeuse qui grandit sont éclairés à droite. Les deux autres, à gauche.",
       "targets": [
-        {"id": "a", "label": "a marché sur la Lune en 1969"},
-        {"id": "b", "label": "est environ quatre fois plus petite que la Terre"},
-        {"id": "c", "label": "est six fois plus faible que sur la Terre"}
+        {"id": "c1", "label": "Un fin croissant, éclairé à droite"},
+        {"id": "g1", "label": "Presque pleine, éclairée à droite"},
+        {"id": "g2", "label": "Presque pleine, éclairée à gauche"},
+        {"id": "c2", "label": "Un fin croissant, éclairé à gauche"}
       ],
       "tokens": [
-        {"text": "Neil Armstrong", "target": "a"},
-        {"text": "La Lune", "target": "b"},
-        {"text": "Le poids sur la Lune", "target": "c"}
+        {"text": "Le premier croissant", "target": "c1"},
+        {"text": "La lune gibbeuse qui grandit", "target": "g1"},
+        {"text": "La lune gibbeuse qui diminue", "target": "g2"},
+        {"text": "Le dernier croissant", "target": "c2"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "relie", "diff": 2, "review": true,
+      "notions": ["rotation", "revolution", "satellite", "roche"],
+      "q": "Relie chaque mot à ce qu'il veut dire.",
+      "explain": "Rotation : sur elle-même. Révolution : autour de la Terre.",
+      "targets": [
+        {"id": "rot", "label": "Tourner sur elle-même"},
+        {"id": "rev", "label": "Tourner autour de la Terre"},
+        {"id": "sat", "label": "Boule de roche qui tourne autour d'une planète"},
+        {"id": "roc", "label": "Matière dure dont la Lune est faite"}
+      ],
+      "tokens": [
+        {"text": "La rotation", "target": "rot"},
+        {"text": "La révolution", "target": "rev"},
+        {"text": "Un satellite naturel", "target": "sat"},
+        {"text": "La roche", "target": "roc"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "relie", "diff": 3,
+      "notions": ["satellite", "taille", "rotation", "revolution"],
+      "q": "Relie chaque début de phrase à sa fin.",
+      "explain": "C'est le texte du cahier sur les mouvements de la Lune.",
+      "targets": [
+        {"id": "a", "label": "le satellite naturel de la Terre."},
+        {"id": "b", "label": "que la Terre."},
+        {"id": "c", "label": "elle tourne sur elle-même."},
+        {"id": "d", "label": "elle tourne autour de la Terre."}
+      ],
+      "tokens": [
+        {"text": "La Lune est", "target": "a"},
+        {"text": "Elle est beaucoup plus petite", "target": "b"},
+        {"text": "Elle fait une rotation :", "target": "c"},
+        {"text": "Elle fait une révolution :", "target": "d"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "relie", "diff": 3,
+      "notions": ["taille", "duree"],
+      "q": "Relie chaque nombre à ce qu'il mesure.",
+      "explain": "Environ 27 jours pour un tour, 3 474 kilomètres pour la Lune, environ 12 700 pour la Terre.",
+      "targets": [
+        {"id": "j", "label": "Un tour de la Lune sur elle-même"},
+        {"id": "l", "label": "Le diamètre de la Lune"},
+        {"id": "t", "label": "Le diamètre de la Terre"}
+      ],
+      "tokens": [
+        {"text": "Environ 27 jours", "target": "j"},
+        {"text": "3 474 kilomètres", "target": "l"},
+        {"text": "Environ 12 700 kilomètres", "target": "t"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "phrase", "diff": 2,
+      "notions": ["satellite"],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}],
+      "tokens": [
+        {"text": "La Lune est", "target": "1"},
+        {"text": "le satellite naturel", "target": "2"},
+        {"text": "de la Terre.", "target": "3"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "phrase", "diff": 2,
+      "notions": ["roche", "taille"],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}],
+      "tokens": [
+        {"text": "La Lune est composée de roche.", "target": "1"},
+        {"text": "Elle est beaucoup plus petite", "target": "2"},
+        {"text": "que la Terre.", "target": "3"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "phrase", "diff": 2,
+      "notions": ["rotation"],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}],
+      "tokens": [
+        {"text": "La Lune fait une rotation :", "target": "1"},
+        {"text": "elle tourne", "target": "2"},
+        {"text": "sur elle-même.", "target": "3"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "phrase", "diff": 2,
+      "notions": ["revolution"],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}],
+      "tokens": [
+        {"text": "La Lune fait une révolution :", "target": "1"},
+        {"text": "elle tourne", "target": "2"},
+        {"text": "autour de la Terre.", "target": "3"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "phrase", "diff": 3,
+      "notions": ["duree"],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}],
+      "tokens": [
+        {"text": "La rotation et la révolution", "target": "1"},
+        {"text": "durent", "target": "2"},
+        {"text": "environ 27 jours.", "target": "3"}
+      ]
+    },
+    {
+      "type": "placer", "layout": "phrase", "diff": 3,
+      "notions": ["meme-face"],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}, {"id": "4"}],
+      "tokens": [
+        {"text": "En tournant autour de la Terre,", "target": "1"},
+        {"text": "la Lune tourne aussi sur elle-même :", "target": "2"},
+        {"text": "elle nous présente", "target": "3"},
+        {"text": "toujours la même face.", "target": "4"}
       ]
     },
     {
@@ -899,18 +904,6 @@
         {"text": "elle est éclairée", "target": "3"},
         {"text": "par le Soleil.", "target": "4"}
       ]
-    },
-    {
-      "type": "placer", "layout": "phrase", "diff": 3,
-      "notions": ["revolution", "meme-face"],
-      "q": "Reconstruis la phrase mémo.",
-      "targets": [{"id": "1"}, {"id": "2"}, {"id": "3"}, {"id": "4"}],
-      "tokens": [
-        {"text": "La Lune fait le tour de la Terre", "target": "1"},
-        {"text": "en environ un mois", "target": "2"},
-        {"text": "et nous montre", "target": "3"},
-        {"text": "toujours la même face.", "target": "4"}
-      ]
     }
   ],
   "images": {
@@ -918,9 +911,13 @@
       "prompt": "the blue and green planet Earth in space with the round grey Moon beside it, a dotted circular path around the Earth showing the Moon's orbit, dark starry sky",
       "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
-    "orbite": {
-      "prompt": "the round grey Moon travelling along a big dotted circle around the planet Earth with blue oceans and green continents, small arrows along the circle, dark starry space",
-      "w": 768, "h": 768, "out_w": 600, "seed": 55
+    "roche": {
+      "prompt": "a curious child kneeling in the mountains, holding a big grey rock in both hands and looking at it, rocky cliffs and grey stones around, a pale round Moon in the evening sky",
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
+    },
+    "rotation": {
+      "prompt": "a colorful wooden spinning top turning on the spot on a wooden floor, curved motion lines around it showing it spins on itself, a child kneeling and watching it, cozy room",
+      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "revolution": {
       "prompt": "a child in pajamas running one full circle around a big round tree in a garden at night, a dotted circle path drawn on the grass around the tree, a big round full Moon in the starry sky",
@@ -930,33 +927,9 @@
       "prompt": "a curious child in a garden at dusk looking into a small telescope pointed up at the dark blue sky, a notebook on the grass, stars appearing",
       "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
-    "lunaison": {
+    "duree": {
       "prompt": "a cozy bedroom at night, a child and a parent sitting at the window looking at a dark starry sky, a big wooden hourglass on the windowsill",
       "w": 768, "h": 768, "out_w": 600, "seed": 55
-    },
-    "face-cachee": {
-      "prompt": "a small space probe with solar panels flying behind the grey Moon, taking a photo of its cratered surface, the blue Earth far away",
-      "w": 768, "h": 768, "out_w": 600, "seed": 22
-    },
-    "cratere": {
-      "prompt": "the grey surface of the Moon covered with many round craters of all sizes, like bowls in the dust, black sky above",
-      "w": 768, "h": 768, "out_w": 600, "seed": 11
-    },
-    "meteorite": {
-      "prompt": "a small rock from space with a glowing trail falling toward the grey cratered surface of the Moon, black starry sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 11
-    },
-    "atmosphere": {
-      "prompt": "the planet Earth seen from space surrounded by a thin glowing blue layer of air, white clouds, the grey Moon far away without any air",
-      "w": 768, "h": 768, "out_w": 600, "seed": 11
-    },
-    "astronaute": {
-      "prompt": "a smiling astronaut in a white space suit and helmet waving, standing next to a small rocket, stars in the sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 11
-    },
-    "eclipse": {
-      "prompt": "a solar eclipse seen from a green hill: the dark Moon covering the Sun with a bright glowing ring around it, a family watching with special glasses",
-      "w": 768, "h": 768, "out_w": 600, "seed": 11
     },
     "lumiere": {
       "prompt": "a dark room where a child shines a flashlight on a white ball hanging on a string, one side of the ball lit and the other side dark",
@@ -969,18 +942,6 @@
     "taille": {
       "prompt": "size comparison in space: a big round blue and green planet Earth on the left, and on the right, apart from it, a small round grey Moon whose width is only one quarter of the Earth's width, both smiling",
       "w": 768, "h": 768, "out_w": 600, "seed": 44
-    },
-    "pesanteur": {
-      "prompt": "a happy astronaut in a white suit making a big high jump on the grey dusty Moon, the blue Earth in the black sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 33
-    },
-    "premiers-pas": {
-      "prompt": "an astronaut in a white space suit taking a first step on the grey dusty Moon next to a four-legged lunar lander, a footprint in the dust, the Earth in the black sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 22
-    },
-    "marees": {
-      "prompt": "a beach seen twice side by side: on the left the sea is high near the rocks, on the right the sea is far away showing wet sand and shells, a full Moon in the sky",
-      "w": 768, "h": 768, "out_w": 600, "seed": 22
     },
     "pleine-lune": {
       "prompt": "a big round bright full Moon above a quiet village at night, roofs and trees lit by moonlight, stars",
