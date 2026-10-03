@@ -1,13 +1,13 @@
 // Hors-ligne : on essaie le réseau (pour avoir les nouvelles leçons), sinon on sert la copie en cache.
 // À l'installation, on met aussi en cache tous les enregistrements audio listés dans audio/manifest.json.
-const CACHE = 'revisions-v8';
+const CACHE = 'revisions-v9';
 const SHELL = [
   './', 'index.html', 'style.css', 'manifest.json', 'phrases.json', 'icons/icon.svg', 'icons/icon-180.png',
   'js/app.js', 'js/util.js', 'js/store.js', 'js/speech.js', 'js/srs.js', 'js/lessons.js', 'js/phrases.js',
   'js/activities.js', 'js/drag.js', 'js/rewards.js', 'js/parent.js',
   'lessons/index.json', 'lessons/companions.json', 'lessons/build/histoire-moyen-age.json', 'lessons/assets/chateau.svg',
   'lessons/build/sciences-alimentation.json', 'lessons/assets/monde.svg',
-  'lessons/build/sciences-lune.json', 'lessons/assets/lune.svg',
+  'lessons/build/sciences-lune.json', 'lessons/assets/lune.svg', 'lessons/build/sciences-lune-plus.json',
 ];
 
 async function precache() {
