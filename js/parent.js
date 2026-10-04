@@ -50,8 +50,16 @@ function parent(lessons, back) {
     const rows = [...L.notions]
       .map((n) => ({ n, s: ns(L, n.id) }))
       .sort((x, y) => (x.s.seen === y.s.seen ? x.s.level - y.s.level || y.s.ko - x.s.ko : x.s.seen ? -1 : 1));
+    // Date d'évaluation : la leçon remonte en haut de l'accueil dans les 14 jours qui précèdent.
+    const date = h('input', { type: 'date', value: state.evals[L.id] || '', onchange: (e) => {
+      if (e.target.value) state.evals[L.id] = e.target.value; else delete state.evals[L.id];
+      save();
+    } });
     return h('div', { class: 'panel' },
       h('h3', {}, `${L.emoji} ${L.title} — ${Math.round(lessonProgress(L) * 100)} %`),
+      h('div', { class: 'row', style: { margin: '10px 0' } },
+        h('label', {}, '📅 Évaluation le', date),
+        h('button', { onclick: () => { date.value = ''; delete state.evals[L.id]; save(); } }, 'Effacer')),
       h('table', {},
         h('tr', {}, h('th', {}, 'Notion'), h('th', {}, 'Maîtrise'), h('th', {}, 'Réussites'), h('th', {}, 'Erreurs')),
         rows.map(({ n, s }) => h('tr', {},
@@ -69,7 +77,7 @@ function parent(lessons, back) {
       h('label', {}, 'Police', fontSel),
       h('label', {}, 'Vitesse de la voix', rate),
       h('label', {}, 'Durée d’une séance', lenSel),
-      h('p', { class: 'muted' }, 'Voix : Piper (open source, enregistrée à l’avance). Illustrations : générées localement avec FLUX.1 [schnell].')),
+      h('p', { class: 'muted' }, 'Voix : enregistrée à l’avance sur le Mac (Audrey, et Daniel pour l’anglais). Illustrations : générées localement avec FLUX.1 [schnell]. Une leçon avec une date d’évaluation remonte en haut de l’accueil dans les 14 jours qui précèdent.')),
     ...lessonBlocks,
     h('div', { class: 'panel', style: { display: 'flex', flexDirection: 'column', gap: '12px' } },
       h('h3', {}, 'Sauvegarde'),

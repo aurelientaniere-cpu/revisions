@@ -11,6 +11,7 @@ const DEFAULTS = () => ({
   notions: {},          // "lecon/notion" -> { level, seen, due, ok, ko }
   items: {},            // "lecon#empreinte" -> { d: jour, s: n° de séance de la leçon, n: posé, ok: réussi }
   cards: [],            // ids des cartes débloquées
+  evals: {},            // id de leçon -> date d'évaluation « AAAA-MM-JJ » (espace parent)
   stats: { sessions: 0, seconds: 0, lastDay: '', days: 0 },
 });
 

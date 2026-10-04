@@ -96,6 +96,31 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .lesson-tile .meter { background: color-mix(in srgb, var(--c) 14%, white); }
 .lesson-tile .meter > span { background: color-mix(in srgb, var(--c) 55%, white); }
 .lesson-tile button.primary { background: color-mix(in srgb, var(--c) 32%, white); color: color-mix(in srgb, var(--c) 45%, #000); }
+/* En haut de l'accueil : une seule ligne (3 tuiles sur iPad, 2 si l'écran est étroit) */
+.top-lessons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.top-lessons > :nth-child(n+4) { display: none; }
+@media (max-width: 760px) { .top-lessons { grid-template-columns: repeat(2, minmax(0, 1fr)); } .top-lessons > :nth-child(3) { display: none; } }
+.lesson-tile.mini { padding: 16px; gap: 10px; }
+.lesson-tile.mini .emoji { font-size: 38px; }
+.lesson-tile.mini .subject { font-size: 16px; }
+.lesson-tile.mini h3 { font-size: 21px; }
+.lesson-tile.mini .meter { height: 14px; }
+.lesson-tile.mini .row { gap: 10px; flex-wrap: nowrap; }
+.lesson-tile.mini button.primary { flex: 1; min-width: 0; white-space: nowrap; padding-left: 10px; padding-right: 10px; font-size: 21px; }
+.lesson-tile.mini button.icon { flex: none; }
+.eval-badge { align-self: flex-start; font-size: 18px; font-weight: 700; padding: 4px 12px; border-radius: 12px; background: var(--hint-soft); color: var(--hint-ink); }
+.eval-badge::first-letter { text-transform: uppercase; }
+/* Matières */
+.categories { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+@media (min-width: 1000px) { .categories { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .categories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.category-tile { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-align: left; font: inherit; color: inherit; cursor: pointer; border-color: color-mix(in srgb, var(--c) 30%, white); background: color-mix(in srgb, var(--c) 8%, var(--card)); }
+.category-tile .emoji { font-size: 56px; line-height: 1; }
+.category-tile .name { font-size: 26px; overflow-wrap: anywhere; font-weight: 700; color: color-mix(in srgb, var(--c) 70%, #000); }
+.category-tile .meter { width: 100%; height: 14px; background: color-mix(in srgb, var(--c) 14%, white); }
+.category-tile .meter > span { background: color-mix(in srgb, var(--c) 55%, white); }
+.category-tile.empty { opacity: .55; box-shadow: none; }
+.due-dot { position: absolute; top: 16px; right: 16px; width: 18px; height: 18px; border-radius: 50%; background: var(--hint); }
 .parent-gear { position: fixed; top: max(8px, env(safe-area-inset-top)); right: 8px; opacity: .35; font-size: 22px; min-height: 48px; min-width: 48px; box-shadow: none; border: none; background: transparent; }
 
 /* ---------- Séance ---------- */
@@ -238,6 +263,7 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .parent td, .parent th { padding: 6px 8px; border-bottom: 1px solid var(--line); text-align: left; }
 .parent textarea { width: 100%; min-height: 100px; font: 16px monospace; border-radius: 12px; border: 2px solid var(--line); padding: 8px; -webkit-user-select: text; user-select: text; }
 .parent label { display: flex; align-items: center; gap: 12px; font-size: 22px; }
+.parent input[type=date] { font: inherit; font-size: 20px; min-height: 48px; padding: 4px 8px; border-radius: 12px; border: 2px solid var(--line); }
 .parent select, .parent input[type=range] { font: inherit; font-size: 20px; min-height: 48px; }
 .lvl { display: inline-block; width: 120px; height: 12px; background: var(--line); border-radius: 6px; overflow: hidden; vertical-align: middle; }
 .lvl span { display: block; height: 100%; background: var(--good); }

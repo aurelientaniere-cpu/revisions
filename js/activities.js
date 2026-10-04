@@ -306,11 +306,13 @@ function triFrise(item, { root, done }, layout) {
 }
 
 /* ---------- Relier : mots à gauche, définitions à droite ----------
-   On trace un trait du doigt depuis un mot jusqu'à sa définition,
-   ou on touche le mot puis la définition. Rien ne bouge à l'écran. */
+   On trace un trait du doigt d'un mot à sa définition (ou de la définition au mot),
+   ou on touche le mot puis la définition. Rien ne bouge à l'écran.
+   Dès que le trait touche la bonne carte, la paire est faite (pas besoin de viser le point ni de lâcher). */
 const PAIR_COLORS = ['#1f8fbf', '#d6457a', '#2f9e6a', '#9a6b2f', '#138a8a', '#b0413e']; // ni violet (sélection) ni orange (erreur)
 const WRONG = '#e89a1c';
 const SVGNS = 'http://www.w3.org/2000/svg';
+const TOUCH = 12; // px autour d'une carte : le trait la « touche »
 
 function relie(item, { root, done }) {
   const { body, fb } = frame(root, item.q);
@@ -319,6 +321,17 @@ function relie(item, { root, done }) {
   const defs = shuffle(item.targets.filter((tg) => words.some((w) => w.target === tg.id))).map((tg) => ({ ...tg }));
   let selected = null, errors = 0, left = words.length, finished = false, colorIdx = 0, temp = null;
   const pairs = [];
+
+  const isWord = (x) => words.includes(x);
+  // Le trait part d'un mot ou d'une définition, vers une carte de l'autre colonne.
+  const dragOpts = (src, tap) => ({
+    can: () => !src.done && !finished,
+    tap,
+    start: () => startDrag(src),
+    move: (x, y) => dragMove(src, x, y),
+    end: (x, y) => dragEnd(src, x, y),
+    cancel: () => { clearTemp(); mark(null); },
+  });
 
   const svg = document.createElementNS(SVGNS, 'svg');
   svg.classList.add('relie-lines');
@@ -332,21 +345,15 @@ function relie(item, { root, done }) {
   function wordRow(w) {
     w.dot = h('span', { class: 'dot' });
     w.el = h('button', { class: 'relie-card relie-word' }, h('span', { class: 'relie-text' }, w.text), w.dot);
-    draggable(w.el, {
-      can: () => !w.done && !finished,
-      tap: () => select(w),
-      start: () => startDrag(w),
-      move: (x, y) => dragMove(w, x, y),
-      end: (x, y) => dragEnd(w, x, y),
-      cancel: clearTemp,
-    });
+    draggable(w.el, dragOpts(w, () => select(w)));
     return h('div', { class: 'relie-row words' }, ear(w.text), w.el);
   }
 
   function defRow(d) {
     d.dot = h('span', { class: 'dot' });
-    d.el = h('div', { class: 'relie-card relie-def', role: 'button', onclick: () => tapDef(d) },
+    d.el = h('div', { class: 'relie-card relie-def', role: 'button' },
       d.dot, h('span', { class: 'relie-text' }, d.label));
+    draggable(d.el, dragOpts(d, () => tapDef(d)));
     return h('div', { class: 'relie-row defs' }, d.el, ear(d.label));
   }
 
@@ -375,10 +382,13 @@ function relie(item, { root, done }) {
   const onResize = () => { if (!board.isConnected) return window.removeEventListener('resize', onResize); redraw(); };
   window.addEventListener('resize', onResize);
 
-  const openDefs = () => defs.filter((d) => !d.done);
+  // Cartes encore libres de l'autre colonne.
+  const opposite = (src) => (isWord(src) ? defs : words).filter((x) => !x.done);
+  const goodFor = (src) => (isWord(src) ? defs.find((d) => d.id === src.target) : words.find((w) => w.target === src.id));
+  const pairOf = (src, o) => (isWord(src) ? [src, o] : [o, src]);
 
   function mark(w) {
-    words.forEach((x) => x.el.classList.remove('selected'));
+    [...words, ...defs].forEach((x) => x.el.classList.remove('selected'));
     defs.forEach((d) => d.el.classList.remove('hintglow'));
     selected = w;
     if (!w) return;
@@ -398,31 +408,41 @@ function relie(item, { root, done }) {
     tryPair(selected, d);
   }
 
-  function startDrag(w) {
+  function startDrag(src) {
     fb.replaceChildren();
-    mark(w);
-    temp = line(pt(w.dot), pt(w.dot), 'var(--primary)', 'temp');
+    mark(isWord(src) ? src : null);
+    src.el.classList.add('selected');
+    temp = line(pt(src.dot), pt(src.dot), 'var(--primary)', 'temp');
   }
 
-  function dragMove(w, x, y) {
-    if (!temp) return;
+  function dragMove(src, x, y) {
+    if (!temp || src.done) return;
     const b = board.getBoundingClientRect();
-    setLine(temp, pt(w.dot), [x - b.left, y - b.top]);
-    const t = nearest(openDefs().map((d) => d.el), x, y);
-    defs.forEach((d) => d.el.classList.toggle('over', d.el === t));
+    setLine(temp, pt(src.dot), [x - b.left, y - b.top]);
+    const others = opposite(src);
+    const t = nearest(others.map((o) => o.el), x, y);
+    others.forEach((o) => o.el.classList.toggle('over', o.el === t));
+    // Le trait touche la bonne carte : la paire est faite tout de suite.
+    const good = goodFor(src);
+    if (good && !good.done && nearest([good.el], x, y, TOUCH)) {
+      clearTemp();
+      tryPair(...pairOf(src, good));
+    }
   }
 
   function clearTemp() {
     if (temp) temp.remove();
     temp = null;
-    defs.forEach((d) => d.el.classList.remove('over'));
+    [...words, ...defs].forEach((x) => x.el.classList.remove('over'));
   }
 
-  function dragEnd(w, x, y) {
-    const t = nearest(openDefs().map((d) => d.el), x, y);
+  function dragEnd(src, x, y) {
+    if (src.done) return;
+    const others = opposite(src);
+    const t = nearest(others.map((o) => o.el), x, y);
     clearTemp();
     if (!t) { mark(null); return; }
-    tryPair(w, defs.find((d) => d.el === t));
+    tryPair(...pairOf(src, others.find((o) => o.el === t)));
   }
 
   function tryPair(w, d) {

@@ -7,6 +7,7 @@ Modèle complet : `histoire-moyen-age.json`.
 | Champ | Rôle |
 |---|---|
 | `id` | identifiant unique, jamais modifié ensuite (la progression y est rattachée) |
+| `category` | matière de l'accueil : `histoire`, `geographie`, `orthographe`, `sciences` ou `anglais` (liste `CATEGORIES` dans `js/app.js`) |
 | `subject`, `title`, `emoji`, `color` | affichage de la tuile |
 | `summary` | paragraphes courts lus dans « 🎧 Écouter » (reprendre le résumé à mémoriser de la fiche) |
 | `schema.asset` | optionnel : SVG dont les éléments touchables portent `data-zone="…"` et `class="zone"` |
@@ -32,7 +33,7 @@ Tous ont `type`, `diff` (2 normal → 3 difficile ; une notion neuve démarre à
 - `placer` + `layout` :
   - `tri` : `targets` = paniers `{id,label,emoji,color}`, `tokens` = `{text,target}` ; `sample` = nombre d'étiquettes tirées.
   - `frise` : `targets` = `{id,date}` dans l'ordre chronologique.
-  - `relie` : `targets` = définitions (ou effets, repas…) `{id,label}`, `tokens` = mots `{text,target}` (un mot par cible, 3 à 4 paires). Les mots s'affichent à gauche, les définitions à droite (mélangées) ; on trace un trait du doigt de l'un à l'autre, ou on touche le mot puis la définition. `explain` optionnel (sinon « Chaque mot est relié à sa définition. »). Généré automatiquement par `build.py` pour les notions groupées.
+  - `relie` : `targets` = définitions (ou effets, repas…) `{id,label}`, `tokens` = mots `{text,target}` (un mot par cible, 3 à 4 paires). Les mots s'affichent à gauche, les définitions à droite (mélangées) ; on trace un trait du doigt de l'un à l'autre (dans les deux sens ; la paire est faite dès que le trait touche la bonne carte), ou on touche le mot puis la définition. `explain` optionnel (sinon « Chaque mot est relié à sa définition. »). Généré automatiquement par `build.py` pour les notions groupées.
   - `ordre` (remettre dans l'ordre : jours, mois…) : `targets` = cases dans l'ordre `{id, label?}` (jusqu'à 12, en grille ; `label` = étiquette sous le numéro, avec 🔊, ex. le jour en français), `tokens` = `{text, target, fixed?}` (`fixed: true` = déjà posée, pour donner un repère). On glisse chaque étiquette dans sa case, ou on la touche puis on touche la case ; à la fin la suite est lue d'un trait. `explain` optionnel. Modèle : `anglais-jours-mois.json`.
   - `phrase` : `targets` = cases `{id:"1"}`…, `tokens` = morceaux de phrase dans l'ordre (2 à 4 morceaux courts, qui tiennent sur 2 lignes dans une case). On glisse chaque morceau dans sa case numérotée, ou on touche le morceau puis la case ; à la fin la phrase entière est affichée et lue.
 

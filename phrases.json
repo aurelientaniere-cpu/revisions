@@ -39,6 +39,14 @@
   "pickBlock": "Choisis d'abord un morceau de phrase.",
   "pickTag": "Choisis d'abord une étiquette.",
   "ordreDone": "Tout est dans l'ordre.",
+  "noLesson": "Pas encore de leçon ici. Bientôt !",
+  "categories": {
+    "histoire": "Histoire",
+    "geographie": "Géographie",
+    "orthographe": "Orthographe",
+    "sciences": "Sciences",
+    "anglais": "Anglais"
+  },
   "newWord": "Nouveau mot.",
   "endStars": "Regarde toutes les étoiles que tu as gagnées !",
   "endGrew": "Waouh ! Ton compagnon a grandi !",

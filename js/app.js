@@ -49,20 +49,13 @@ function home() {
   gear.addEventListener('pointerdown', startPress);
   ['pointerup', 'pointerleave', 'pointercancel'].forEach((e) => gear.addEventListener(e, endPress));
 
-  const best = bestLesson(lessons);
-  const tiles = lessons.map((L) => {
-    const due = dueCount(L);
-    return h('div', { class: 'panel lesson-tile', style: `--c: ${L.color}` },
-      h('div', { class: 'row' },
-        h('span', { class: 'emoji' }, L.emoji),
-        h('div', {},
-          h('div', { class: 'subject' }, L.subject),
-          h('h3', {}, L.title))),
-      h('div', { class: 'meter' }, h('span', { style: { width: `${Math.round(lessonProgress(L) * 100)}%` } })),
-      h('div', { class: 'row' },
-        h('button', { class: 'primary', onclick: () => start(L) }, due ? '▶ Réviser' : '▶ S’entraîner'),
-        h('button', { onclick: () => listen(L) }, '🎧 Écouter')));
-  });
+  // En haut : les leçons avec une évaluation bientôt (sinon celles à réviser), sur une seule ligne.
+  const evals = upcoming();
+  const soon = evals.find((e) => e.days <= 7);
+  const best = soon ? soon.L : bestLesson(lessons);
+  const toRevise = [...lessons].filter((L) => dueCount(L))
+    .sort((a, b) => dueCount(b) - dueCount(a) || lessonProgress(a) - lessonProgress(b));
+  const top = evals.length ? evals.map((e) => e.L) : toRevise;
 
   screen(
     gear,
@@ -82,10 +75,88 @@ function home() {
         h('div', { class: 'row' },
           best ? h('button', { class: 'primary big', onclick: () => start(best) }, '▶ C’est parti !') : null,
           h('button', { class: 'big', onclick: album }, '🃏 Mon album')))),
-    h('h2', {}, 'Mes leçons'),
-    h('div', { class: 'lessons' }, tiles),
+    top.length ? h('h2', {}, evals.length ? '📅 Bientôt une évaluation' : '⭐ À réviser') : null,
+    top.length ? h('div', { class: 'top-lessons' }, top.slice(0, 3).map((L) => lessonTile(L, true))) : null,
+    h('h2', {}, 'Mes matières'),
+    h('div', { class: 'categories' }, CATEGORIES.map(categoryTile)),
   );
   if (newEgg) say(P.newEgg);
+}
+
+/* ---------- Matières et leçons ---------- */
+const CATEGORIES = [
+  { id: 'histoire', name: 'Histoire', emoji: '🏰', color: '#8a6bc7' },
+  { id: 'geographie', name: 'Géographie', emoji: '🗺️', color: '#3a9a8a' },
+  { id: 'orthographe', name: 'Orthographe', emoji: '✏️', color: '#c0703c' },
+  { id: 'sciences', name: 'Sciences', emoji: '🔬', color: '#4f8fd0' },
+  { id: 'anglais', name: 'Anglais', emoji: '🇬🇧', color: '#3a6fb5' },
+];
+const lessonsOf = (cat) => lessons.filter((L) => L.category === cat.id);
+
+// Date d'évaluation saisie dans l'espace parent (state.evals) : nombre de jours d'ici là.
+const DAY = 864e5;
+function daysUntil(iso) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const now = new Date();
+  return Math.round((new Date(y, m - 1, d) - new Date(now.getFullYear(), now.getMonth(), now.getDate())) / DAY);
+}
+const EVAL_WINDOW = 14; // « dans les prochains jours »
+function upcoming() {
+  return lessons.map((L) => ({ L, iso: state.evals[L.id] }))
+    .filter((e) => e.iso)
+    .map((e) => ({ ...e, days: daysUntil(e.iso) }))
+    .filter((e) => e.days >= 0 && e.days <= EVAL_WINDOW)
+    .sort((a, b) => a.days - b.days);
+}
+function evalLabel(L) {
+  const iso = state.evals[L.id];
+  const days = iso ? daysUntil(iso) : -1;
+  if (days < 0) return null;
+  if (days === 0) return 'Évaluation aujourd’hui';
+  if (days === 1) return 'Évaluation demain';
+  const [y, m, d] = iso.split('-').map(Number);
+  // Dans la semaine, le jour suffit (« mercredi ») ; au-delà, on ajoute la date (« mercredi 14 »).
+  return `Évaluation ${new Date(y, m - 1, d).toLocaleDateString('fr-FR', days <= 6 ? { weekday: 'long' } : { weekday: 'long', day: 'numeric' })}`;
+}
+
+function lessonTile(L, mini = false) {
+  const due = dueCount(L);
+  const ev = evalLabel(L);
+  return h('div', { class: `panel lesson-tile${mini ? ' mini' : ''}`, style: `--c: ${L.color}` },
+    h('div', { class: 'row' },
+      h('span', { class: 'emoji' }, L.emoji),
+      h('div', {},
+        h('div', { class: 'subject' }, L.subject),
+        h('h3', {}, L.title))),
+    ev ? h('div', { class: 'eval-badge' }, `📅 ${ev}`) : null,
+    h('div', { class: 'meter' }, h('span', { style: { width: `${Math.round(lessonProgress(L) * 100)}%` } })),
+    h('div', { class: 'row' },
+      h('button', { class: 'primary', onclick: () => start(L) }, due ? '▶ Réviser' : '▶ S’entraîner'),
+      mini ? h('button', { class: 'icon', 'aria-label': 'Écouter', onclick: () => listen(L) }, '🎧')
+        : h('button', { onclick: () => listen(L) }, '🎧 Écouter')));
+}
+
+function categoryTile(cat) {
+  const list = lessonsOf(cat);
+  const due = list.some((L) => dueCount(L));
+  const pct = list.length ? Math.round(list.reduce((a, L) => a + lessonProgress(L), 0) / list.length * 100) : 0;
+  return h('button', {
+    class: `panel category-tile${list.length ? '' : ' empty'}`, style: `--c: ${cat.color}`,
+    onclick: () => (list.length ? category(cat) : say([P.categories[cat.id], P.noLesson])),
+  },
+  h('span', { class: 'emoji' }, cat.emoji),
+  h('span', { class: 'name' }, cat.name),
+  h('span', { class: 'muted' }, !list.length ? 'Bientôt' : list.length > 1 ? `${list.length} leçons` : '1 leçon'),
+  list.length ? h('span', { class: 'meter' }, h('span', { style: { width: `${pct}%` } })) : null,
+  due ? h('span', { class: 'due-dot', 'aria-label': 'À réviser' }) : null);
+}
+
+function category(cat) {
+  screen(
+    h('div', { class: 'row' }, backBtn()),
+    h('h1', {}, `${cat.emoji} ${cat.name}`),
+    h('div', { class: 'lessons' }, lessonsOf(cat).map((L) => lessonTile(L))));
+  say(P.categories[cat.id]);
 }
 
 function rename() {
