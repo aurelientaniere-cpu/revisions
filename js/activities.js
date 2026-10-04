@@ -232,7 +232,7 @@ const endSegments = (result, end) => (result === 'fail' ? [end, P.placerFail] : 
 function placer(item, ctx) {
   const layout = item.layout || 'tri';
   if (layout === 'relie') return relie(item, ctx);
-  if (layout === 'phrase') return phrase(item, ctx);
+  if (layout === 'phrase' || layout === 'ordre') return phrase(item, ctx);
   triFrise(item, ctx, layout);
 }
 
@@ -458,19 +458,29 @@ function relie(item, { root, done }) {
 }
 
 /* ---------- Phrase : on glisse chaque morceau dans la case 1, 2, 3… ----------
-   Ou on touche le morceau, puis la case. */
+   Ou on touche le morceau, puis la case.
+   Variante « ordre » (remettre dans l'ordre : jours, mois…) : jusqu'à 12 cases en grille, une étiquette
+   facultative sous chaque numéro (`label`), des étiquettes déjà posées (`fixed`) ; à la fin, la suite est lue. */
 function phrase(item, { root, done }) {
   const { body, fb } = frame(root, item.q);
-  const blocks = sampleTokens(item);
+  const ordre = item.layout === 'ordre';
+  const blocks = sampleTokens({ ...item, tokens: item.tokens.filter((t) => !t.fixed) });
   const slots = item.targets.map((tg, i) => ({ ...tg, n: i + 1 }));
   let selected = null, errors = 0, left = blocks.length, finished = false;
   let ghost = null, g0 = null;
 
-  const slotRow = h('div', { class: `phrase-slots n${slots.length}` });
+  const slotRow = h('div', { class: ordre ? `ordre-slots n${slots.length}` : `phrase-slots n${slots.length}` });
   for (const s of slots) {
     s.text = h('span', { class: 'slot-text' });
     s.el = h('div', { class: 'slot', role: 'button', onclick: () => tapSlot(s) },
-      h('span', { class: 'num' }, String(s.n)), s.text);
+      h('span', { class: 'num' }, String(s.n)),
+      s.label ? h('span', { class: 'slot-label' }, s.label, ear(s.label)) : null, s.text);
+    const given = item.tokens.find((t) => t.fixed && t.target === s.id);
+    if (given) {
+      s.done = true;
+      s.text.textContent = given.text;
+      s.el.classList.add('filled', 'given');
+    }
     slotRow.append(s.el);
   }
 
@@ -509,7 +519,7 @@ function phrase(item, { root, done }) {
 
   function tapSlot(s) {
     if (s.done || finished) return;
-    if (!selected) { hint(fb, [P.pickBlock]); return; }
+    if (!selected) { hint(fb, [ordre ? P.pickTag : P.pickBlock]); return; }
     place(selected, s);
   }
 
@@ -565,6 +575,16 @@ function phrase(item, { root, done }) {
       fb.replaceChildren();
       if (--left) { say(pick(P.okSmall)); return; }
       finished = true;
+      if (ordre) {
+        // La suite reste affichée dans les cases ; on la lit après l'encouragement.
+        const seq = `${item.targets.map((x) => item.tokens.find((k) => k.target === x.id).text).join(', ')}.`;
+        pool.remove();
+        const result = errors <= Math.max(2, Math.floor(blocks.length / 4)) ? (errors ? 'partial' : 'ok') : 'fail';
+        const segs = endSegments(result, item.explain || P.ordreDone);
+        feedback(fb, result === 'fail' ? 'show' : 'ok', segs.join(' '), () => done(result));
+        say([...segs, seq]);
+        return;
+      }
       // La phrase entière, d'un seul tenant, puis lue.
       const full = item.targets.map((x) => item.tokens.find((k) => k.target === x.id).text).join(' ');
       slotRow.replaceWith(h('div', { class: 'phrase-full' }, h('span', { class: 'phrase-text' }, full), ear(full)));

@@ -131,6 +131,16 @@ APPLE = CONF.get("apple", {})
 SIG = f"apple:{APPLE.get('voice')}:{APPLE.get('rate')}|" if ENGINE == "apple" else ""
 APPLE_LEX = {k: v for k, v in PRON.get("mots_apple", {}).items() if not k.startswith("_")}
 
+# Mots anglais (champ « english » des leçons) : lus par la voix anglaise de tools/voice.json (« english »).
+# Dans le texte prononcé, chaque suite de mots anglais est entourée de ⟦ ⟧, et la signature de la voix anglaise
+# est mise devant : changer de voix anglaise ne refait que les clips qui contiennent de l'anglais.
+EN = CONF.get("english", {})
+EN_SIG = f"en:{EN.get('voice')}:{EN.get('rate')}|"
+EN_WORDS = sorted({w for f in (ROOT / "lessons" / "build").glob("*.json")
+                   for w in json.loads(f.read_text(encoding="utf-8")).get("english", [])}, key=len, reverse=True)
+EN_WORD = r"(?<![\w'’-])(?:" + "|".join(re.escape(w) for w in EN_WORDS) + r")(?![\w'’-])"
+EN_RUN = re.compile(EN_WORD + r"(?:[\s,.;:!?-]+" + EN_WORD + ")*") if EN_WORDS else None
+
 
 def to_speech(text):
     """Texte réellement donné à la voix : règles de js/speech.js, sans emoji, puis
@@ -139,18 +149,49 @@ def to_speech(text):
     if ENGINE == "apple":
         for k, v in APPLE_LEX.items():
             t = re.sub(B + re.escape(k) + E, v, t)
+        if EN_RUN and EN_RUN.search(t):
+            t = EN_SIG + EN_RUN.sub(lambda m: f"⟦{m.group(0)}⟧", t)
         return t
     return apply_lexicon(block_liaisons(t))
 
 
 def synth_apple(spoken, out_m4a):
     """Voix système du Mac (commande say), puis même format que Piper : AAC 64 kb/s mono."""
+    if spoken.startswith(EN_SIG):
+        return synth_mixed(spoken[len(EN_SIG):], out_m4a)
     with tempfile.TemporaryDirectory() as d:
         txt, aiff = pathlib.Path(d) / "t.txt", pathlib.Path(d) / "t.aiff"
         txt.write_text(spoken, encoding="utf-8")
         subprocess.run(["say", "-v", APPLE["voice"], "-r", str(APPLE["rate"]), "-f", str(txt), "-o", str(aiff)],
                        check=True, capture_output=True)
         subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "64000", "-c", "1", str(aiff), str(out_m4a)],
+                       check=True, capture_output=True)
+
+
+def synth_mixed(spoken, out_m4a):
+    """Phrase avec de l'anglais : chaque morceau est dit par sa voix, puis les morceaux sont mis bout à bout."""
+    rate, pause = 22050, 0.12
+    frames = []
+    with tempfile.TemporaryDirectory() as d:
+        for i, part in enumerate(re.split(r"(⟦[^⟧]*⟧)", spoken)):
+            english = part.startswith("⟦")
+            text = part.strip("⟦⟧ ")
+            if not re.search(r"\w", text):
+                continue
+            voice = EN if english else APPLE
+            txt, wav = pathlib.Path(d) / f"{i}.txt", pathlib.Path(d) / f"{i}.wav"
+            txt.write_text(text, encoding="utf-8")
+            subprocess.run(["say", "-v", voice["voice"], "-r", str(voice["rate"]), "-f", str(txt), "-o", str(wav),
+                            "--file-format=WAVE", f"--data-format=LEI16@{rate}"], check=True, capture_output=True)
+            with wave.open(str(wav), "rb") as w:
+                frames.append(w.readframes(w.getnframes()))
+        out = pathlib.Path(d) / "all.wav"
+        with wave.open(str(out), "wb") as w:
+            w.setnchannels(1)
+            w.setsampwidth(2)
+            w.setframerate(rate)
+            w.writeframes((b"\0\0" * int(rate * pause)).join(frames))
+        subprocess.run(["afconvert", "-f", "m4af", "-d", "aac", "-b", "64000", "-c", "1", str(out), str(out_m4a)],
                        check=True, capture_output=True)
 
 

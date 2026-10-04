@@ -33,6 +33,7 @@ Tous ont `type`, `diff` (2 normal → 3 difficile ; une notion neuve démarre à
   - `tri` : `targets` = paniers `{id,label,emoji,color}`, `tokens` = `{text,target}` ; `sample` = nombre d'étiquettes tirées.
   - `frise` : `targets` = `{id,date}` dans l'ordre chronologique.
   - `relie` : `targets` = définitions (ou effets, repas…) `{id,label}`, `tokens` = mots `{text,target}` (un mot par cible, 3 à 4 paires). Les mots s'affichent à gauche, les définitions à droite (mélangées) ; on trace un trait du doigt de l'un à l'autre, ou on touche le mot puis la définition. `explain` optionnel (sinon « Chaque mot est relié à sa définition. »). Généré automatiquement par `build.py` pour les notions groupées.
+  - `ordre` (remettre dans l'ordre : jours, mois…) : `targets` = cases dans l'ordre `{id, label?}` (jusqu'à 12, en grille ; `label` = étiquette sous le numéro, avec 🔊, ex. le jour en français), `tokens` = `{text, target, fixed?}` (`fixed: true` = déjà posée, pour donner un repère). On glisse chaque étiquette dans sa case, ou on la touche puis on touche la case ; à la fin la suite est lue d'un trait. `explain` optionnel. Modèle : `anglais-jours-mois.json`.
   - `phrase` : `targets` = cases `{id:"1"}`…, `tokens` = morceaux de phrase dans l'ordre (2 à 4 morceaux courts, qui tiennent sur 2 lignes dans une case). On glisse chaque morceau dans sa case numérotée, ou on touche le morceau puis la case ; à la fin la phrase entière est affichée et lue.
 
 ## Orthographe (leçons de dictée)
@@ -40,6 +41,9 @@ Tous ont `type`, `diff` (2 normal → 3 difficile ; une notion neuve démarre à
 - `qcm` + `spell: true` : choix d'orthographes (bonne en premier). Pas de 🔊 sur les choix et les fautes ne sont jamais enregistrées (une faute se lit comme le bon mot).
 - `trous` (dictée à trous) : `text` = une phrase par élément, chaque trou `[bon|faux|faux]` (bon en premier) ; `q` optionnel. On touche le trou puis la bonne orthographe ; seules les phrases correctes sont lues.
 - `ecrire` (**seule activité où l'on tape**, réservée aux mots à apprendre) : `word`, `say` (phrase d'exemple), `mode` = `copie` (mot affiché), `memo` (regarder, cacher, écrire) ou `dictee` (entendu seulement). Lettres justes en vert, erreurs en orange ; deux erreurs → on recopie le mot. Prévoir copie (diff 1.5), memo (2), dictée (3).
+
+## Langues étrangères
+- Champ de leçon `english` : la liste des mots anglais (« Monday », « day »…). `tools/voice.py` les fait dire par la voix anglaise de `tools/voice.json` (`english`), même au milieu d'une phrase française (« Que veut dire « Thursday » ? »). Respecter la casse écrite dans la liste.
 
 ## Musique
 - Extraits dans `lessons/music/<nom>.m4a` (enregistrements libres de droits, crédits dans `lessons/music/CREDITS.md`, ajoutés à `SHELL` dans `sw.js`). Couper 30 à 50 s : `ffmpeg -ss 0 -t 40 -i src.ogg -af "afade=t=out:st=36:d=4,loudnorm=I=-18" -ac 1 -c:a aac -b:a 64k nom.m4a`.

@@ -151,6 +151,9 @@ def item_speech(it):
         if it.get("layout") == "phrase":
             order = {g["id"]: i for i, g in enumerate(it["targets"])}
             out.append(" ".join(k["text"] for k in sorted(it["tokens"], key=lambda k: order[k["target"]])))
+        if it.get("layout") == "ordre":
+            order = {g["id"]: i for i, g in enumerate(it["targets"])}
+            out.append(", ".join(k["text"] for k in sorted(it["tokens"], key=lambda k: order[k["target"]])) + ".")
     out += [it.get("hint", ""), it.get("explain", "")]
     return out
 

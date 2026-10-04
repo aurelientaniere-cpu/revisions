@@ -187,6 +187,16 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .block.lifted { opacity: .3; }
 .drag-ghost { position: fixed; z-index: 20; pointer-events: none; display: flex; align-items: center; padding: 12px 18px; font-size: 24px; background: var(--primary-soft); border: 3px solid var(--primary); border-radius: var(--radius); box-shadow: 0 10px 24px rgba(43, 42, 51, .25); }
 .drag-ghost.back { transition: transform .3s ease-in; }
+/* ordre : jusqu'à 12 cases numérotées en grille (4 par ligne : les mois comme un calendrier) */
+.ordre-slots { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; }
+.ordre-slots.n12 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (min-width: 900px) { .ordre-slots.n7 { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.ordre-slots .slot { min-height: 84px; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; padding: 8px 12px; position: relative; font-weight: 700; }
+.ordre-slots .slot .num { position: absolute; top: 8px; right: 8px; width: 32px; height: 32px; font-size: 18px; }
+.ordre-slots .slot-text { min-height: 1.3em; padding-right: 30px; overflow-wrap: anywhere; }
+.slot-label { display: flex; align-items: center; gap: 6px; font-size: 18px; font-weight: 400; color: var(--muted); padding-right: 34px; }
+.slot-label .ear { min-width: 44px; min-height: 44px; font-size: 18px; padding: 0; }
+.slot.given { background: var(--primary-soft); border-color: var(--primary); }
 .phrase-full { display: flex; align-items: center; gap: 18px; padding: 18px 22px; border: 3px solid var(--good); background: var(--good-soft); border-radius: var(--radius); font-size: 28px; font-weight: 700; }
 .phrase-full .phrase-text { flex: 1; }
 

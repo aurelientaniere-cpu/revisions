@@ -1,0 +1,3334 @@
+{
+  "id": "anglais-jours-mois",
+  "subject": "Anglais",
+  "title": "Les jours et les mois",
+  "subtitle": "Days and months",
+  "emoji": "🗓️",
+  "color": "#3a6fb5",
+  "source": "Leçon d'anglais : les jours de la semaine et les mois de l'année, et leur ordre.",
+  "english": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+    "day",
+    "Days and months"
+  ],
+  "summary": [
+    "Les jours de la semaine, dans l'ordre.",
+    "Monday, lundi. Tuesday, mardi. Wednesday, mercredi.",
+    "Thursday, jeudi. Friday, vendredi.",
+    "Saturday, samedi. Sunday, dimanche. C'est le week-end.",
+    "En anglais, tous les jours finissent par day, et ils prennent une majuscule.",
+    "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+    "Les mois de l'année, dans l'ordre.",
+    "January, janvier. February, février. March, mars.",
+    "April, avril. May, mai. June, juin.",
+    "July, juillet. August, août. September, septembre.",
+    "October, octobre. November, novembre. December, décembre.",
+    "Les mois aussi prennent une majuscule en anglais.",
+    "January, February, March, April, May, June, July, August, September, October, November, December."
+  ],
+  "notions": [
+    {
+      "id": "jours-debut",
+      "term": "Monday, Tuesday",
+      "nom": "Monday, Tuesday",
+      "def": "lundi, mardi",
+      "group": "jours",
+      "noAuto": true,
+      "emoji": "🌙",
+      "tip": "Mon, comme Moon, la Lune. Lundi aussi, c'est le jour de la Lune."
+    },
+    {
+      "id": "jours-milieu",
+      "term": "Wednesday, Thursday, Friday",
+      "nom": "Wednesday, Thursday, Friday",
+      "def": "mercredi, jeudi, vendredi",
+      "group": "jours",
+      "noAuto": true,
+      "emoji": "🎒",
+      "tip": "Dans Wednesday, on n'entend pas le D."
+    },
+    {
+      "id": "week-end",
+      "term": "Saturday, Sunday",
+      "nom": "Saturday, Sunday",
+      "def": "samedi, dimanche : le week-end",
+      "group": "jours",
+      "noAuto": true,
+      "emoji": "☀️",
+      "tip": "Sun veut dire soleil. Sunday, c'est le jour du soleil."
+    },
+    {
+      "id": "mois-1",
+      "term": "January, February, March",
+      "nom": "January, February, March",
+      "def": "janvier, février, mars",
+      "group": "mois",
+      "noAuto": true,
+      "emoji": "❄️",
+      "tip": "En anglais, les mois prennent toujours une majuscule."
+    },
+    {
+      "id": "mois-2",
+      "term": "April, May, June",
+      "nom": "April, May, June",
+      "def": "avril, mai, juin",
+      "group": "mois",
+      "noAuto": true,
+      "emoji": "🌷",
+      "tip": "May, le mois de mai, n'a que trois lettres."
+    },
+    {
+      "id": "mois-3",
+      "term": "July, August, September",
+      "nom": "July, August, September",
+      "def": "juillet, août, septembre",
+      "group": "mois",
+      "noAuto": true,
+      "emoji": "🏖️",
+      "tip": "Attention : June, c'est juin, et July, c'est juillet."
+    },
+    {
+      "id": "mois-4",
+      "term": "October, November, December",
+      "nom": "October, November, December",
+      "def": "octobre, novembre, décembre",
+      "group": "mois",
+      "noAuto": true,
+      "emoji": "🍂",
+      "tip": "Ils ressemblent beaucoup aux mots français."
+    }
+  ],
+  "cards": [
+    {
+      "id": "an-lune",
+      "name": "Le jour de la Lune",
+      "emoji": "🌙",
+      "color": "#5b6fc7",
+      "notions": [
+        "jours-debut"
+      ],
+      "image": "jours-debut",
+      "desc": "Monday, comme Moon. Lundi, comme Lune. La semaine commence !"
+    },
+    {
+      "id": "an-ecole",
+      "name": "Le milieu de la semaine",
+      "emoji": "🎒",
+      "color": "#2f8f9d",
+      "notions": [
+        "jours-milieu"
+      ],
+      "image": "jours-milieu",
+      "desc": "Wednesday, Thursday, Friday : et bientôt le week-end."
+    },
+    {
+      "id": "an-weekend",
+      "name": "Le week-end",
+      "emoji": "☀️",
+      "color": "#e0a030",
+      "notions": [
+        "week-end"
+      ],
+      "image": "week-end",
+      "desc": "Saturday et Sunday, le jour du soleil."
+    },
+    {
+      "id": "an-hiver",
+      "name": "L'hiver",
+      "emoji": "❄️",
+      "color": "#5aa0d0",
+      "notions": [
+        "mois-1"
+      ],
+      "image": "mois-1",
+      "desc": "January, February, March : la neige, puis le printemps qui arrive."
+    },
+    {
+      "id": "an-printemps",
+      "name": "Le printemps",
+      "emoji": "🌷",
+      "color": "#d6457a",
+      "notions": [
+        "mois-2"
+      ],
+      "image": "mois-2",
+      "desc": "April, May, June : les fleurs s'ouvrent."
+    },
+    {
+      "id": "an-ete",
+      "name": "L'été",
+      "emoji": "🏖️",
+      "color": "#e8a23a",
+      "notions": [
+        "mois-3"
+      ],
+      "image": "mois-3",
+      "desc": "July, August : les vacances. September : la rentrée."
+    },
+    {
+      "id": "an-automne",
+      "name": "L'automne",
+      "emoji": "🍂",
+      "color": "#b0602e",
+      "notions": [
+        "mois-4"
+      ],
+      "image": "mois-4",
+      "desc": "October, November, December : les feuilles tombent, puis la fête de fin d'année."
+    },
+    {
+      "id": "an-semaine",
+      "name": "La semaine complète",
+      "emoji": "🗓️",
+      "color": "#6c5ce7",
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "level": 3,
+      "desc": "Les sept jours, dans l'ordre, de Monday à Sunday."
+    },
+    {
+      "id": "an-annee",
+      "name": "L'année complète",
+      "emoji": "🎆",
+      "color": "#2f9e6a",
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "level": 3,
+      "desc": "Les douze mois, dans l'ordre, de January à December."
+    },
+    {
+      "id": "an-calendrier",
+      "name": "Maître du calendrier",
+      "emoji": "🏆",
+      "color": "#c9a227",
+      "notions": "all",
+      "level": 3,
+      "legend": true,
+      "desc": "Tous les jours et tous les mois en anglais, et toujours dans l'ordre !"
+    }
+  ],
+  "items": [
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut"
+      ],
+      "q": "Comment dit-on « lundi » en anglais ?",
+      "choices": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "Il commence comme Moon, la Lune.",
+      "explain": "Lundi se dit Monday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut"
+      ],
+      "q": "Que veut dire « Monday » ?",
+      "choices": [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi",
+        "Dimanche"
+      ],
+      "hint": "C'est le premier jour de la semaine.",
+      "explain": "Monday veut dire lundi."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut"
+      ],
+      "q": "Quel jour vient après Monday ?",
+      "choices": [
+        "Tuesday",
+        "Sunday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Monday, il y a Tuesday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "jours-debut",
+        "week-end"
+      ],
+      "q": "Quel jour vient avant Monday ?",
+      "choices": [
+        "Sunday",
+        "Tuesday",
+        "Saturday",
+        "Wednesday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Monday, il y a Sunday, le dernier jour de la semaine."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut"
+      ],
+      "q": "Comment dit-on « mardi » en anglais ?",
+      "choices": [
+        "Tuesday",
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "C'est le jour qui suit Monday.",
+      "explain": "Mardi se dit Tuesday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut"
+      ],
+      "q": "Que veut dire « Tuesday » ?",
+      "choices": [
+        "Mardi",
+        "Lundi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi",
+        "Dimanche"
+      ],
+      "hint": "C'est le deuxième jour de la semaine.",
+      "explain": "Tuesday veut dire mardi."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu"
+      ],
+      "q": "Quel jour vient après Tuesday ?",
+      "choices": [
+        "Wednesday",
+        "Monday",
+        "Thursday",
+        "Friday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Tuesday, il y a Wednesday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "jours-debut"
+      ],
+      "q": "Quel jour vient avant Tuesday ?",
+      "choices": [
+        "Monday",
+        "Wednesday",
+        "Sunday",
+        "Thursday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Tuesday, il y a Monday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Comment dit-on « mercredi » en anglais ?",
+      "choices": [
+        "Wednesday",
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "C'est le mot le plus long, avec un D qu'on n'entend pas.",
+      "explain": "Mercredi se dit Wednesday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Que veut dire « Wednesday » ?",
+      "choices": [
+        "Mercredi",
+        "Lundi",
+        "Mardi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi",
+        "Dimanche"
+      ],
+      "hint": "C'est le troisième jour de la semaine.",
+      "explain": "Wednesday veut dire mercredi."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Quel jour vient après Wednesday ?",
+      "choices": [
+        "Thursday",
+        "Tuesday",
+        "Friday",
+        "Saturday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Wednesday, il y a Thursday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "jours-milieu",
+        "jours-debut"
+      ],
+      "q": "Quel jour vient avant Wednesday ?",
+      "choices": [
+        "Tuesday",
+        "Thursday",
+        "Monday",
+        "Friday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Wednesday, il y a Tuesday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Comment dit-on « jeudi » en anglais ?",
+      "choices": [
+        "Thursday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "C'est le jour juste avant Friday.",
+      "explain": "Jeudi se dit Thursday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Que veut dire « Thursday » ?",
+      "choices": [
+        "Jeudi",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Vendredi",
+        "Samedi",
+        "Dimanche"
+      ],
+      "hint": "C'est le quatrième jour de la semaine.",
+      "explain": "Thursday veut dire jeudi."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Quel jour vient après Thursday ?",
+      "choices": [
+        "Friday",
+        "Wednesday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Thursday, il y a Friday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Quel jour vient avant Thursday ?",
+      "choices": [
+        "Wednesday",
+        "Friday",
+        "Tuesday",
+        "Saturday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Thursday, il y a Wednesday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Comment dit-on « vendredi » en anglais ?",
+      "choices": [
+        "Friday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "C'est le jour juste avant le week-end.",
+      "explain": "Vendredi se dit Friday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Que veut dire « Friday » ?",
+      "choices": [
+        "Vendredi",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Samedi",
+        "Dimanche"
+      ],
+      "hint": "C'est le cinquième jour de la semaine.",
+      "explain": "Friday veut dire vendredi."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Quel jour vient après Friday ?",
+      "choices": [
+        "Saturday",
+        "Thursday",
+        "Sunday",
+        "Monday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Friday, il y a Saturday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "jours-milieu"
+      ],
+      "q": "Quel jour vient avant Friday ?",
+      "choices": [
+        "Thursday",
+        "Saturday",
+        "Wednesday",
+        "Sunday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Friday, il y a Thursday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "week-end"
+      ],
+      "q": "Comment dit-on « samedi » en anglais ?",
+      "choices": [
+        "Saturday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Sunday"
+      ],
+      "hint": "Il commence comme Saturne, la planète.",
+      "explain": "Samedi se dit Saturday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "week-end"
+      ],
+      "q": "Que veut dire « Saturday » ?",
+      "choices": [
+        "Samedi",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Dimanche"
+      ],
+      "hint": "C'est le sixième jour de la semaine.",
+      "explain": "Saturday veut dire samedi."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "week-end"
+      ],
+      "q": "Quel jour vient après Saturday ?",
+      "choices": [
+        "Sunday",
+        "Friday",
+        "Monday",
+        "Tuesday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Saturday, il y a Sunday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "week-end",
+        "jours-milieu"
+      ],
+      "q": "Quel jour vient avant Saturday ?",
+      "choices": [
+        "Friday",
+        "Sunday",
+        "Thursday",
+        "Monday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Saturday, il y a Friday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "week-end"
+      ],
+      "q": "Comment dit-on « dimanche » en anglais ?",
+      "choices": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "hint": "Il commence comme Sun, le soleil.",
+      "explain": "Dimanche se dit Sunday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "week-end"
+      ],
+      "q": "Que veut dire « Sunday » ?",
+      "choices": [
+        "Dimanche",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi"
+      ],
+      "hint": "C'est le septième jour de la semaine.",
+      "explain": "Sunday veut dire dimanche."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "week-end",
+        "jours-debut"
+      ],
+      "q": "Quel jour vient après Sunday ?",
+      "choices": [
+        "Monday",
+        "Saturday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Après Sunday, une nouvelle semaine commence : Monday."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "week-end"
+      ],
+      "q": "Quel jour vient avant Sunday ?",
+      "choices": [
+        "Saturday",
+        "Monday",
+        "Friday",
+        "Tuesday"
+      ],
+      "hint": "Récite les jours dans l'ordre, à partir de Monday.",
+      "explain": "Avant Sunday, il y a Saturday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu"
+      ],
+      "q": "Quel jour manque ? Monday, …, Wednesday, Thursday",
+      "choices": [
+        "Tuesday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "Monday, Tuesday, Wednesday, Thursday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu"
+      ],
+      "q": "Quel jour manque ? Tuesday, Wednesday, …, Friday",
+      "choices": [
+        "Thursday",
+        "Monday",
+        "Saturday",
+        "Sunday"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "Tuesday, Wednesday, Thursday, Friday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Quel jour manque ? Wednesday, …, Friday, Saturday",
+      "choices": [
+        "Thursday",
+        "Monday",
+        "Tuesday",
+        "Sunday"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "Wednesday, Thursday, Friday, Saturday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Quel jour manque ? Thursday, Friday, …, Sunday",
+      "choices": [
+        "Saturday",
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "Thursday, Friday, Saturday, Sunday."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Comment dit-on « janvier » en anglais ?",
+      "choices": [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "C'est le premier mois de l'année.",
+      "explain": "Janvier se dit January."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Que veut dire « January » ?",
+      "choices": [
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le premier mois de l'année.",
+      "explain": "January veut dire janvier."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Quel mois vient après January ?",
+      "choices": [
+        "February",
+        "December",
+        "March",
+        "April"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après January, il y a February."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-1",
+        "mois-4"
+      ],
+      "q": "Quel mois vient avant January ?",
+      "choices": [
+        "December",
+        "February",
+        "November",
+        "March"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant January, il y a December, le dernier mois de l'année."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Comment dit-on « février » en anglais ?",
+      "choices": [
+        "February",
+        "January",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "C'est le mois qui vient juste après January.",
+      "explain": "Février se dit February."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Que veut dire « February » ?",
+      "choices": [
+        "Février",
+        "Janvier",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le deuxième mois de l'année.",
+      "explain": "February veut dire février."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Quel mois vient après February ?",
+      "choices": [
+        "March",
+        "January",
+        "April",
+        "May"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après February, il y a March."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Quel mois vient avant February ?",
+      "choices": [
+        "January",
+        "March",
+        "December",
+        "April"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant February, il y a January."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Comment dit-on « mars » en anglais ?",
+      "choices": [
+        "March",
+        "January",
+        "February",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "C'est le mois qui vient juste avant April.",
+      "explain": "Mars se dit March."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Que veut dire « March » ?",
+      "choices": [
+        "Mars",
+        "Janvier",
+        "Février",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le troisième mois de l'année.",
+      "explain": "March veut dire mars."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1",
+        "mois-2"
+      ],
+      "q": "Quel mois vient après March ?",
+      "choices": [
+        "April",
+        "February",
+        "May",
+        "June"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après March, il y a April."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-1"
+      ],
+      "q": "Quel mois vient avant March ?",
+      "choices": [
+        "February",
+        "April",
+        "January",
+        "May"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant March, il y a February."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Comment dit-on « avril » en anglais ?",
+      "choices": [
+        "April",
+        "January",
+        "February",
+        "March",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "Il ressemble beaucoup au mot français.",
+      "explain": "Avril se dit April."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Que veut dire « April » ?",
+      "choices": [
+        "Avril",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le quatrième mois de l'année.",
+      "explain": "April veut dire avril."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Quel mois vient après April ?",
+      "choices": [
+        "May",
+        "March",
+        "June",
+        "July"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après April, il y a May."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-2",
+        "mois-1"
+      ],
+      "q": "Quel mois vient avant April ?",
+      "choices": [
+        "March",
+        "May",
+        "February",
+        "June"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant April, il y a March."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Comment dit-on « mai » en anglais ?",
+      "choices": [
+        "May",
+        "January",
+        "February",
+        "March",
+        "April",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "Il n'a que trois lettres.",
+      "explain": "Mai se dit May."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Que veut dire « May » ?",
+      "choices": [
+        "Mai",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le cinquième mois de l'année.",
+      "explain": "May veut dire mai."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Quel mois vient après May ?",
+      "choices": [
+        "June",
+        "April",
+        "July",
+        "August"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après May, il y a June."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Quel mois vient avant May ?",
+      "choices": [
+        "April",
+        "June",
+        "March",
+        "July"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant May, il y a April."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Comment dit-on « juin » en anglais ?",
+      "choices": [
+        "June",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "C'est le mois juste avant July.",
+      "explain": "Juin se dit June."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Que veut dire « June » ?",
+      "choices": [
+        "Juin",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le sixième mois de l'année.",
+      "explain": "June veut dire juin."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2",
+        "mois-3"
+      ],
+      "q": "Quel mois vient après June ?",
+      "choices": [
+        "July",
+        "May",
+        "August",
+        "September"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après June, il y a July."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-2"
+      ],
+      "q": "Quel mois vient avant June ?",
+      "choices": [
+        "May",
+        "July",
+        "April",
+        "August"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant June, il y a May."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Comment dit-on « juillet » en anglais ?",
+      "choices": [
+        "July",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "C'est le mois juste après June.",
+      "explain": "Juillet se dit July."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Que veut dire « July » ?",
+      "choices": [
+        "Juillet",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le septième mois de l'année.",
+      "explain": "July veut dire juillet."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Quel mois vient après July ?",
+      "choices": [
+        "August",
+        "June",
+        "September",
+        "October"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après July, il y a August."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-3",
+        "mois-2"
+      ],
+      "q": "Quel mois vient avant July ?",
+      "choices": [
+        "June",
+        "August",
+        "May",
+        "September"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant July, il y a June."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Comment dit-on « août » en anglais ?",
+      "choices": [
+        "August",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "C'est le mois juste avant September.",
+      "explain": "Août se dit August."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Que veut dire « August » ?",
+      "choices": [
+        "Août",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Septembre",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le huitième mois de l'année.",
+      "explain": "August veut dire août."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Quel mois vient après August ?",
+      "choices": [
+        "September",
+        "July",
+        "October",
+        "November"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après August, il y a September."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Quel mois vient avant August ?",
+      "choices": [
+        "July",
+        "September",
+        "June",
+        "October"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant August, il y a July."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Comment dit-on « septembre » en anglais ?",
+      "choices": [
+        "September",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "October",
+        "November",
+        "December"
+      ],
+      "hint": "Il ressemble beaucoup au mot français.",
+      "explain": "Septembre se dit September."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Que veut dire « September » ?",
+      "choices": [
+        "Septembre",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Octobre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le neuvième mois de l'année.",
+      "explain": "September veut dire septembre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Quel mois vient après September ?",
+      "choices": [
+        "October",
+        "August",
+        "November",
+        "December"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après September, il y a October."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-3"
+      ],
+      "q": "Quel mois vient avant September ?",
+      "choices": [
+        "August",
+        "October",
+        "July",
+        "November"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant September, il y a August."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Comment dit-on « octobre » en anglais ?",
+      "choices": [
+        "October",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "November",
+        "December"
+      ],
+      "hint": "Il ressemble beaucoup au mot français.",
+      "explain": "Octobre se dit October."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Que veut dire « October » ?",
+      "choices": [
+        "Octobre",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Novembre",
+        "Décembre"
+      ],
+      "hint": "C'est le dixième mois de l'année.",
+      "explain": "October veut dire octobre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Quel mois vient après October ?",
+      "choices": [
+        "November",
+        "September",
+        "December",
+        "January"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après October, il y a November."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-4",
+        "mois-3"
+      ],
+      "q": "Quel mois vient avant October ?",
+      "choices": [
+        "September",
+        "November",
+        "August",
+        "December"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant October, il y a September."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Comment dit-on « novembre » en anglais ?",
+      "choices": [
+        "November",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "December"
+      ],
+      "hint": "Il ressemble beaucoup au mot français.",
+      "explain": "Novembre se dit November."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Que veut dire « November » ?",
+      "choices": [
+        "Novembre",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Décembre"
+      ],
+      "hint": "C'est le onzième mois de l'année.",
+      "explain": "November veut dire novembre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Quel mois vient après November ?",
+      "choices": [
+        "December",
+        "October",
+        "January",
+        "February"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après November, il y a December."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Quel mois vient avant November ?",
+      "choices": [
+        "October",
+        "December",
+        "September",
+        "January"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant November, il y a October."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Comment dit-on « décembre » en anglais ?",
+      "choices": [
+        "December",
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November"
+      ],
+      "hint": "C'est le dernier mois de l'année.",
+      "explain": "Décembre se dit December."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Que veut dire « December » ?",
+      "choices": [
+        "Décembre",
+        "Janvier",
+        "Février",
+        "Mars",
+        "Avril",
+        "Mai",
+        "Juin",
+        "Juillet",
+        "Août",
+        "Septembre",
+        "Octobre",
+        "Novembre"
+      ],
+      "hint": "C'est le douzième mois de l'année.",
+      "explain": "December veut dire décembre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-4",
+        "mois-1"
+      ],
+      "q": "Quel mois vient après December ?",
+      "choices": [
+        "January",
+        "November",
+        "February",
+        "March"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Après December, une nouvelle année commence : January."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "mois-4"
+      ],
+      "q": "Quel mois vient avant December ?",
+      "choices": [
+        "November",
+        "January",
+        "October",
+        "February"
+      ],
+      "hint": "Récite les mois dans l'ordre, à partir de January.",
+      "explain": "Avant December, il y a November."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1",
+        "mois-2"
+      ],
+      "q": "Quel mois manque ? January, …, March, April",
+      "choices": [
+        "February",
+        "May",
+        "June",
+        "July"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "January, February, March, April."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-1",
+        "mois-2"
+      ],
+      "q": "Quel mois manque ? March, April, …, June",
+      "choices": [
+        "May",
+        "January",
+        "February",
+        "July"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "March, April, May, June."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-2",
+        "mois-3"
+      ],
+      "q": "Quel mois manque ? May, …, July, August",
+      "choices": [
+        "June",
+        "January",
+        "February",
+        "March"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "May, June, July, August."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Quel mois manque ? July, August, …, October",
+      "choices": [
+        "September",
+        "January",
+        "February",
+        "March"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "July, August, September, October."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Quel mois manque ? September, …, November, December",
+      "choices": [
+        "October",
+        "January",
+        "February",
+        "March"
+      ],
+      "hint": "Récite la suite dans ta tête, en touchant chaque mot.",
+      "explain": "September, October, November, December."
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu"
+      ],
+      "q": "Relie chaque jour anglais au jour français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t0",
+          "label": "Lundi"
+        },
+        {
+          "id": "t1",
+          "label": "Mardi"
+        },
+        {
+          "id": "t2",
+          "label": "Mercredi"
+        },
+        {
+          "id": "t3",
+          "label": "Jeudi"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Monday",
+          "target": "t0"
+        },
+        {
+          "text": "Tuesday",
+          "target": "t1"
+        },
+        {
+          "text": "Wednesday",
+          "target": "t2"
+        },
+        {
+          "text": "Thursday",
+          "target": "t3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Relie chaque jour anglais au jour français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t3",
+          "label": "Jeudi"
+        },
+        {
+          "id": "t4",
+          "label": "Vendredi"
+        },
+        {
+          "id": "t5",
+          "label": "Samedi"
+        },
+        {
+          "id": "t6",
+          "label": "Dimanche"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Thursday",
+          "target": "t3"
+        },
+        {
+          "text": "Friday",
+          "target": "t4"
+        },
+        {
+          "text": "Saturday",
+          "target": "t5"
+        },
+        {
+          "text": "Sunday",
+          "target": "t6"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Relie chaque jour anglais au jour français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t0",
+          "label": "Lundi"
+        },
+        {
+          "id": "t2",
+          "label": "Mercredi"
+        },
+        {
+          "id": "t4",
+          "label": "Vendredi"
+        },
+        {
+          "id": "t6",
+          "label": "Dimanche"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Monday",
+          "target": "t0"
+        },
+        {
+          "text": "Wednesday",
+          "target": "t2"
+        },
+        {
+          "text": "Friday",
+          "target": "t4"
+        },
+        {
+          "text": "Sunday",
+          "target": "t6"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 3,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Relie chaque jour anglais au jour français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t1",
+          "label": "Mardi"
+        },
+        {
+          "id": "t3",
+          "label": "Jeudi"
+        },
+        {
+          "id": "t2",
+          "label": "Mercredi"
+        },
+        {
+          "id": "t5",
+          "label": "Samedi"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Tuesday",
+          "target": "t1"
+        },
+        {
+          "text": "Thursday",
+          "target": "t3"
+        },
+        {
+          "text": "Wednesday",
+          "target": "t2"
+        },
+        {
+          "text": "Saturday",
+          "target": "t5"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "mois-1",
+        "mois-2"
+      ],
+      "q": "Relie chaque mois anglais au mois français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t0",
+          "label": "Janvier"
+        },
+        {
+          "id": "t1",
+          "label": "Février"
+        },
+        {
+          "id": "t2",
+          "label": "Mars"
+        },
+        {
+          "id": "t3",
+          "label": "Avril"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "January",
+          "target": "t0"
+        },
+        {
+          "text": "February",
+          "target": "t1"
+        },
+        {
+          "text": "March",
+          "target": "t2"
+        },
+        {
+          "text": "April",
+          "target": "t3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "mois-2",
+        "mois-3"
+      ],
+      "q": "Relie chaque mois anglais au mois français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t4",
+          "label": "Mai"
+        },
+        {
+          "id": "t5",
+          "label": "Juin"
+        },
+        {
+          "id": "t6",
+          "label": "Juillet"
+        },
+        {
+          "id": "t7",
+          "label": "Août"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "May",
+          "target": "t4"
+        },
+        {
+          "text": "June",
+          "target": "t5"
+        },
+        {
+          "text": "July",
+          "target": "t6"
+        },
+        {
+          "text": "August",
+          "target": "t7"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Relie chaque mois anglais au mois français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t8",
+          "label": "Septembre"
+        },
+        {
+          "id": "t9",
+          "label": "Octobre"
+        },
+        {
+          "id": "t10",
+          "label": "Novembre"
+        },
+        {
+          "id": "t11",
+          "label": "Décembre"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "September",
+          "target": "t8"
+        },
+        {
+          "text": "October",
+          "target": "t9"
+        },
+        {
+          "text": "November",
+          "target": "t10"
+        },
+        {
+          "text": "December",
+          "target": "t11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 3,
+      "notions": [
+        "mois-2",
+        "mois-3",
+        "mois-1"
+      ],
+      "q": "Relie chaque mois anglais au mois français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t5",
+          "label": "Juin"
+        },
+        {
+          "id": "t6",
+          "label": "Juillet"
+        },
+        {
+          "id": "t0",
+          "label": "Janvier"
+        },
+        {
+          "id": "t7",
+          "label": "Août"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "June",
+          "target": "t5"
+        },
+        {
+          "text": "July",
+          "target": "t6"
+        },
+        {
+          "text": "January",
+          "target": "t0"
+        },
+        {
+          "text": "August",
+          "target": "t7"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 3,
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Relie chaque mois anglais au mois français.",
+      "explain": "Chaque mot anglais est relié au mot français.",
+      "targets": [
+        {
+          "id": "t2",
+          "label": "Mars"
+        },
+        {
+          "id": "t4",
+          "label": "Mai"
+        },
+        {
+          "id": "t8",
+          "label": "Septembre"
+        },
+        {
+          "id": "t11",
+          "label": "Décembre"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "March",
+          "target": "t2"
+        },
+        {
+          "text": "May",
+          "target": "t4"
+        },
+        {
+          "text": "September",
+          "target": "t8"
+        },
+        {
+          "text": "December",
+          "target": "t11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 1.5,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Remets les jours de la semaine dans l'ordre, en français.",
+      "explain": "Voici la semaine dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "lundi",
+          "target": "c0",
+          "fixed": true
+        },
+        {
+          "text": "mardi",
+          "target": "c1"
+        },
+        {
+          "text": "mercredi",
+          "target": "c2"
+        },
+        {
+          "text": "jeudi",
+          "target": "c3"
+        },
+        {
+          "text": "vendredi",
+          "target": "c4"
+        },
+        {
+          "text": "samedi",
+          "target": "c5"
+        },
+        {
+          "text": "dimanche",
+          "target": "c6"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Range chaque jour anglais sous le jour français.",
+      "explain": "Voici la semaine dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0",
+          "label": "Lundi"
+        },
+        {
+          "id": "c1",
+          "label": "Mardi"
+        },
+        {
+          "id": "c2",
+          "label": "Mercredi"
+        },
+        {
+          "id": "c3",
+          "label": "Jeudi"
+        },
+        {
+          "id": "c4",
+          "label": "Vendredi"
+        },
+        {
+          "id": "c5",
+          "label": "Samedi"
+        },
+        {
+          "id": "c6",
+          "label": "Dimanche"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Monday",
+          "target": "c0"
+        },
+        {
+          "text": "Tuesday",
+          "target": "c1"
+        },
+        {
+          "text": "Wednesday",
+          "target": "c2"
+        },
+        {
+          "text": "Thursday",
+          "target": "c3"
+        },
+        {
+          "text": "Friday",
+          "target": "c4"
+        },
+        {
+          "text": "Saturday",
+          "target": "c5"
+        },
+        {
+          "text": "Sunday",
+          "target": "c6"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Remets les jours anglais dans l'ordre. Monday est déjà placé.",
+      "explain": "Voici la semaine dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Monday",
+          "target": "c0",
+          "fixed": true
+        },
+        {
+          "text": "Tuesday",
+          "target": "c1"
+        },
+        {
+          "text": "Wednesday",
+          "target": "c2"
+        },
+        {
+          "text": "Thursday",
+          "target": "c3"
+        },
+        {
+          "text": "Friday",
+          "target": "c4"
+        },
+        {
+          "text": "Saturday",
+          "target": "c5"
+        },
+        {
+          "text": "Sunday",
+          "target": "c6"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 3,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "q": "Remets les jours anglais dans l'ordre. La semaine commence le lundi.",
+      "explain": "Voici la semaine dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Monday",
+          "target": "c0"
+        },
+        {
+          "text": "Tuesday",
+          "target": "c1"
+        },
+        {
+          "text": "Wednesday",
+          "target": "c2"
+        },
+        {
+          "text": "Thursday",
+          "target": "c3"
+        },
+        {
+          "text": "Friday",
+          "target": "c4"
+        },
+        {
+          "text": "Saturday",
+          "target": "c5"
+        },
+        {
+          "text": "Sunday",
+          "target": "c6"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2,
+      "notions": [
+        "mois-1",
+        "mois-2"
+      ],
+      "q": "Remets ces mois anglais dans l'ordre.",
+      "explain": "Voici le début de l'année.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "January",
+          "target": "c0"
+        },
+        {
+          "text": "February",
+          "target": "c1"
+        },
+        {
+          "text": "March",
+          "target": "c2"
+        },
+        {
+          "text": "April",
+          "target": "c3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2,
+      "notions": [
+        "mois-2",
+        "mois-3"
+      ],
+      "q": "Remets ces mois anglais dans l'ordre.",
+      "explain": "Voici le milieu de l'année.",
+      "targets": [
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        },
+        {
+          "id": "c7"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "May",
+          "target": "c4"
+        },
+        {
+          "text": "June",
+          "target": "c5"
+        },
+        {
+          "text": "July",
+          "target": "c6"
+        },
+        {
+          "text": "August",
+          "target": "c7"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2,
+      "notions": [
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Remets ces mois anglais dans l'ordre.",
+      "explain": "Voici la fin de l'année.",
+      "targets": [
+        {
+          "id": "c8"
+        },
+        {
+          "id": "c9"
+        },
+        {
+          "id": "c10"
+        },
+        {
+          "id": "c11"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "September",
+          "target": "c8"
+        },
+        {
+          "text": "October",
+          "target": "c9"
+        },
+        {
+          "text": "November",
+          "target": "c10"
+        },
+        {
+          "text": "December",
+          "target": "c11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2.5,
+      "notions": [
+        "mois-1",
+        "mois-2"
+      ],
+      "q": "Remets les six premiers mois dans l'ordre. January est déjà placé.",
+      "explain": "Voici la première moitié de l'année.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "January",
+          "target": "c0",
+          "fixed": true
+        },
+        {
+          "text": "February",
+          "target": "c1"
+        },
+        {
+          "text": "March",
+          "target": "c2"
+        },
+        {
+          "text": "April",
+          "target": "c3"
+        },
+        {
+          "text": "May",
+          "target": "c4"
+        },
+        {
+          "text": "June",
+          "target": "c5"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2.5,
+      "notions": [
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Remets les six derniers mois dans l'ordre. July est déjà placé.",
+      "explain": "Voici la deuxième moitié de l'année.",
+      "targets": [
+        {
+          "id": "c6"
+        },
+        {
+          "id": "c7"
+        },
+        {
+          "id": "c8"
+        },
+        {
+          "id": "c9"
+        },
+        {
+          "id": "c10"
+        },
+        {
+          "id": "c11"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "July",
+          "target": "c6",
+          "fixed": true
+        },
+        {
+          "text": "August",
+          "target": "c7"
+        },
+        {
+          "text": "September",
+          "target": "c8"
+        },
+        {
+          "text": "October",
+          "target": "c9"
+        },
+        {
+          "text": "November",
+          "target": "c10"
+        },
+        {
+          "text": "December",
+          "target": "c11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 1.5,
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Remets les mois de l'année dans l'ordre, en français.",
+      "explain": "Voici les mois dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        },
+        {
+          "id": "c7"
+        },
+        {
+          "id": "c8"
+        },
+        {
+          "id": "c9"
+        },
+        {
+          "id": "c10"
+        },
+        {
+          "id": "c11"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "janvier",
+          "target": "c0",
+          "fixed": true
+        },
+        {
+          "text": "février",
+          "target": "c1"
+        },
+        {
+          "text": "mars",
+          "target": "c2"
+        },
+        {
+          "text": "avril",
+          "target": "c3"
+        },
+        {
+          "text": "mai",
+          "target": "c4"
+        },
+        {
+          "text": "juin",
+          "target": "c5"
+        },
+        {
+          "text": "juillet",
+          "target": "c6"
+        },
+        {
+          "text": "août",
+          "target": "c7"
+        },
+        {
+          "text": "septembre",
+          "target": "c8"
+        },
+        {
+          "text": "octobre",
+          "target": "c9"
+        },
+        {
+          "text": "novembre",
+          "target": "c10"
+        },
+        {
+          "text": "décembre",
+          "target": "c11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 2.5,
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Range chaque mois anglais sous le mois français.",
+      "explain": "Voici les mois dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0",
+          "label": "Janvier"
+        },
+        {
+          "id": "c1",
+          "label": "Février"
+        },
+        {
+          "id": "c2",
+          "label": "Mars"
+        },
+        {
+          "id": "c3",
+          "label": "Avril"
+        },
+        {
+          "id": "c4",
+          "label": "Mai"
+        },
+        {
+          "id": "c5",
+          "label": "Juin"
+        },
+        {
+          "id": "c6",
+          "label": "Juillet"
+        },
+        {
+          "id": "c7",
+          "label": "Août"
+        },
+        {
+          "id": "c8",
+          "label": "Septembre"
+        },
+        {
+          "id": "c9",
+          "label": "Octobre"
+        },
+        {
+          "id": "c10",
+          "label": "Novembre"
+        },
+        {
+          "id": "c11",
+          "label": "Décembre"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "January",
+          "target": "c0"
+        },
+        {
+          "text": "February",
+          "target": "c1"
+        },
+        {
+          "text": "March",
+          "target": "c2"
+        },
+        {
+          "text": "April",
+          "target": "c3"
+        },
+        {
+          "text": "May",
+          "target": "c4"
+        },
+        {
+          "text": "June",
+          "target": "c5"
+        },
+        {
+          "text": "July",
+          "target": "c6"
+        },
+        {
+          "text": "August",
+          "target": "c7"
+        },
+        {
+          "text": "September",
+          "target": "c8"
+        },
+        {
+          "text": "October",
+          "target": "c9"
+        },
+        {
+          "text": "November",
+          "target": "c10"
+        },
+        {
+          "text": "December",
+          "target": "c11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 3,
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Remets les mois anglais dans l'ordre. January est déjà placé.",
+      "explain": "Voici les mois dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        },
+        {
+          "id": "c7"
+        },
+        {
+          "id": "c8"
+        },
+        {
+          "id": "c9"
+        },
+        {
+          "id": "c10"
+        },
+        {
+          "id": "c11"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "January",
+          "target": "c0",
+          "fixed": true
+        },
+        {
+          "text": "February",
+          "target": "c1"
+        },
+        {
+          "text": "March",
+          "target": "c2"
+        },
+        {
+          "text": "April",
+          "target": "c3"
+        },
+        {
+          "text": "May",
+          "target": "c4"
+        },
+        {
+          "text": "June",
+          "target": "c5"
+        },
+        {
+          "text": "July",
+          "target": "c6"
+        },
+        {
+          "text": "August",
+          "target": "c7"
+        },
+        {
+          "text": "September",
+          "target": "c8"
+        },
+        {
+          "text": "October",
+          "target": "c9"
+        },
+        {
+          "text": "November",
+          "target": "c10"
+        },
+        {
+          "text": "December",
+          "target": "c11"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "ordre",
+      "diff": 3,
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "q": "Remets les douze mois anglais dans l'ordre. L'année commence en janvier.",
+      "explain": "Voici les mois dans l'ordre.",
+      "targets": [
+        {
+          "id": "c0"
+        },
+        {
+          "id": "c1"
+        },
+        {
+          "id": "c2"
+        },
+        {
+          "id": "c3"
+        },
+        {
+          "id": "c4"
+        },
+        {
+          "id": "c5"
+        },
+        {
+          "id": "c6"
+        },
+        {
+          "id": "c7"
+        },
+        {
+          "id": "c8"
+        },
+        {
+          "id": "c9"
+        },
+        {
+          "id": "c10"
+        },
+        {
+          "id": "c11"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "January",
+          "target": "c0"
+        },
+        {
+          "text": "February",
+          "target": "c1"
+        },
+        {
+          "text": "March",
+          "target": "c2"
+        },
+        {
+          "text": "April",
+          "target": "c3"
+        },
+        {
+          "text": "May",
+          "target": "c4"
+        },
+        {
+          "text": "June",
+          "target": "c5"
+        },
+        {
+          "text": "July",
+          "target": "c6"
+        },
+        {
+          "text": "August",
+          "target": "c7"
+        },
+        {
+          "text": "September",
+          "target": "c8"
+        },
+        {
+          "text": "October",
+          "target": "c9"
+        },
+        {
+          "text": "November",
+          "target": "c10"
+        },
+        {
+          "text": "December",
+          "target": "c11"
+        }
+      ]
+    },
+    {
+      "type": "vf",
+      "diff": 1.5,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "answer": true,
+      "q": "En anglais, les jours prennent une majuscule.",
+      "explain": "On écrit Monday, avec un grand M."
+    },
+    {
+      "type": "vf",
+      "diff": 1.5,
+      "notions": [
+        "jours-debut",
+        "jours-milieu",
+        "week-end"
+      ],
+      "answer": true,
+      "q": "En anglais, tous les jours finissent par day.",
+      "explain": "Monday, Tuesday, Wednesday : ils finissent tous par day."
+    },
+    {
+      "type": "vf",
+      "diff": 1.5,
+      "notions": [
+        "mois-1",
+        "mois-2",
+        "mois-3",
+        "mois-4"
+      ],
+      "answer": true,
+      "q": "En anglais, les mois prennent une majuscule.",
+      "explain": "On écrit January, avec un grand J."
+    },
+    {
+      "type": "vf",
+      "diff": 3,
+      "notions": [
+        "jours-debut",
+        "jours-milieu"
+      ],
+      "answer": false,
+      "q": "Thursday veut dire mardi.",
+      "explain": "Thursday veut dire jeudi. Mardi se dit Tuesday."
+    },
+    {
+      "type": "vf",
+      "diff": 3,
+      "notions": [
+        "mois-2",
+        "mois-3"
+      ],
+      "answer": false,
+      "q": "June veut dire juillet.",
+      "explain": "June veut dire juin. Juillet se dit July."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "week-end"
+      ],
+      "answer": true,
+      "q": "Saturday et Sunday, c'est le week-end.",
+      "explain": "Saturday, samedi, et Sunday, dimanche : c'est le week-end."
+    }
+  ],
+  "images": {
+    "jours-debut": {
+      "prompt": "a sleepy child waking up in bed on a Monday morning, a big pale crescent moon smiling in the window, an alarm clock, a cat stretching",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "jours-milieu": {
+      "prompt": "a happy child walking along a leafy path with a colourful school backpack, a small dog trotting beside, little houses in the background",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 3
+    },
+    "week-end": {
+      "prompt": "a family picnic in a sunny park on the weekend, a big smiling sun, children flying a kite, a dog chasing a ball",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "mois-1": {
+      "prompt": "two children building a snowman with a carrot nose, a black hat and a scarf in a snowy garden in winter, bare trees, woolly hats, snowflakes falling",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 21
+    },
+    "mois-2": {
+      "prompt": "a spring garden full of tulips and blossoming trees, a child watering flowers, butterflies and a little bird",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "mois-3": {
+      "prompt": "children playing on a sunny beach in summer, sandcastle, beach umbrella, gentle waves, seashells",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "mois-4": {
+      "prompt": "two children kicking up piles of orange autumn leaves in a park, pumpkins on the ground, a squirrel holding an acorn, cosy scarves",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 7
+    }
+  }
+}
