@@ -7,7 +7,7 @@ Modèle complet : `histoire-moyen-age.json`.
 | Champ | Rôle |
 |---|---|
 | `id` | identifiant unique, jamais modifié ensuite (la progression y est rattachée) |
-| `category` | matière de l'accueil : `histoire`, `geographie`, `orthographe`, `sciences` ou `anglais` (liste `CATEGORIES` dans `js/app.js`) |
+| `category` | matière de l'accueil : `histoire`, `geographie`, `orthographe`, `maths`, `sciences` ou `anglais` (liste `CATEGORIES` dans `js/app.js`) |
 | `subject`, `title`, `emoji`, `color` | affichage de la tuile |
 | `summary` | paragraphes courts lus dans « 🎧 Écouter » (reprendre le résumé à mémoriser de la fiche) |
 | `schema.asset` | optionnel : SVG dont les éléments touchables portent `data-zone="…"` et `class="zone"` |
@@ -42,6 +42,18 @@ Tous ont `type`, `diff` (2 normal → 3 difficile ; une notion neuve démarre à
 - `qcm` + `spell: true` : choix d'orthographes (bonne en premier). Pas de 🔊 sur les choix et les fautes ne sont jamais enregistrées (une faute se lit comme le bon mot).
 - `trous` (dictée à trous) : `text` = une phrase par élément, chaque trou `[bon|faux|faux]` (bon en premier) ; `q` optionnel. On touche le trou puis la bonne orthographe ; seules les phrases correctes sont lues.
 - `ecrire` (**seule activité où l'on tape**, réservée aux mots à apprendre) : `word`, `say` (phrase d'exemple), `mode` = `copie` (mot affiché), `memo` (regarder, cacher, écrire) ou `dictee` (entendu seulement). Lettres justes en vert, erreurs en orange ; deux erreurs → on recopie le mot. Prévoir copie (diff 1.5), memo (2), dictée (3).
+
+## Maths (calcul)
+Modèles : `maths-faire-10.json`, `maths-table-addition.json`. Les exercices ne s'écrivent pas à la main : le champ `maths` donne des recettes que `tools/maths.py` transforme en exercices (tout le texte lu y est fixé, donc enregistré). Principes (dyscalculie) : boulier de 2 × 10 boules par paquets de 5, chaque nombre a la couleur de ses boules, 4 réponses à toucher, pas de chrono ; le boulier est affiché tant que la notion est au niveau 0 ou 1, ensuite seulement en indice après une erreur.
+- Champs de leçon : `ordered: true` (les notions arrivent dans l'ordre : chaque astuce s'appuie sur la précédente), `newPerSession` (nouveautés par séance, 1 ou 2), `perNew` (calculs par notion, pour remplir la séance).
+- Notion : `noAuto: true`, et `example` = `{ expr, beads?, say }` montré sur la carte « Nouvelle astuce » (`expr` : liste de morceaux, `"8|a"` = 8 de la couleur des premières boules, `|b` les suivantes, `"?"` = case à trouver ; `beads` = boules colorées, ex. `[8, 5]`).
+- Recettes (`{ "gen": …, "notion": …, "diff"?, "hint"? }` ; sans `hint`, l'astuce est choisie selon le calcul) :
+  - `somme` `pairs: [[8, 5], …]` → « Combien font 8 plus 5 ? » ; `ligne-faits` `row: 3` → les calculs de la ligne (3 + k ou k + 3).
+  - `manque` `pairs: [[8, 10]]` → 8 + ? = 10 ; `dizaine` `numbers: [17]` → 17 = 10 + ? ; `echange` `pairs` → 8 + 2 = 2 + ? ; `decomp` `pairs` → 8 + 5 = 8 + 2 + ? (passer par 10).
+  - `arbre` `trees: [[6, 3, null]]` → l'arbre de la fiche (10 en haut, `null` = case vide).
+  - `dix` `terms: [[1, 1, 7, 3]]` → toucher les deux nombres qui font 10, puis 10 + ? = ? (au moins une paire qui fait 10).
+  - `boulier` `show: [13]` (« Montre 13 ») et/ou `sums: [[8, 5]]` (« Fais 8 plus 5 ») : boulier à manipuler, on touche les boules.
+  - `ligne` `row: 3, variants?, holes?` → une ligne de la table avec des cases vides ; `grille` `variants?, holes?` → la table 1 à 9 entière.
 
 ## Langues étrangères
 - Champ de leçon `english` : la liste des mots anglais (« Monday », « day »…). `tools/voice.py` les fait dire par la voix anglaise de `tools/voice.json` (`english`), même au milieu d'une phrase française (« Que veut dire « Thursday » ? »). Respecter la casse écrite dans la liste.

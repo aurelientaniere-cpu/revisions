@@ -45,7 +45,8 @@
     "geographie": "Géographie",
     "orthographe": "Orthographe",
     "sciences": "Sciences",
-    "anglais": "Anglais"
+    "anglais": "Anglais",
+    "maths": "Maths"
   },
   "newWord": "Nouveau mot.",
   "endStars": "Regarde toutes les étoiles que tu as gagnées !",
@@ -76,5 +77,13 @@
   "writeCapital": "Presque ! Attention à la majuscule.",
   "writeAccent": "Presque ! Attention aux accents. Sur l'iPad, appuie longtemps sur la lettre e pour trouver é.",
   "writeCopyNow": "Voici le mot. Recopie-le :",
-  "writeCopyOk": "Bien recopié ! Tu le réécriras bientôt."
+  "writeCopyOk": "Bien recopié ! Tu le réécriras bientôt.",
+  "newTip": "Nouvelle astuce.",
+  "boulierTooMany": "Il y a trop de boules. Touche une boule à gauche pour la renvoyer.",
+  "boulierTooFew": "Il manque des boules. Compte bien.",
+  "boulierRow": "Remplis d'abord toute la première ligne : ça fait 10.",
+  "boulierShow": "Regarde, voici le bon nombre de boules.",
+  "amisNot10": "Ces deux nombres ne font pas 10. Essaie encore.",
+  "amisRest": "Ajoute maintenant les nombres qui restent.",
+  "tableDone": "Tout est complété."
 }

@@ -1,0 +1,2654 @@
+{
+ "id": "maths-faire-10",
+ "category": "maths",
+ "subject": "Maths",
+ "title": "Faire 10",
+ "subtitle": "Les amis de 10, puis jusqu'à 20",
+ "emoji": "🔟",
+ "color": "#d65d8a",
+ "ordered": true,
+ "newPerSession": 1,
+ "perNew": 5,
+ "source": "Fiche : je cherche le nombre qu'il manque pour faire 10 ; j'entoure les deux nombres dont la somme est égale à 10, puis je calcule.",
+ "summary": [
+  "Les amis de 10, ce sont deux nombres qui font 10 ensemble.",
+  "1 et 9. 2 et 8. 3 et 7. 4 et 6. 5 et 5.",
+  "Sur le boulier, une ligne pleine, c'est 10.",
+  "Après 10, on remplit la deuxième ligne : 10 plus 7 égale 17. Dans dix-sept, on entend dix et sept.",
+  "Dans un long calcul, je cherche d'abord deux amis de 10. 3 plus 2 plus 7 plus 4 : 3 et 7 font 10, puis 10 plus 6 égale 16.",
+  "Pour 8 plus 5, je complète d'abord jusqu'à 10 : 8 plus 2 égale 10. Il reste 3 : 10 plus 3 égale 13."
+ ],
+ "notions": [
+  {
+   "id": "amis-10",
+   "term": "les amis de 10",
+   "nom": "les amis de 10",
+   "def": "deux nombres qui font 10 ensemble",
+   "emoji": "🤝",
+   "noAuto": true,
+   "tip": "1 et 9, 2 et 8, 3 et 7, 4 et 6, 5 et 5.",
+   "example": {
+    "expr": [
+     "7|a",
+     "+",
+     "3|b",
+     "=",
+     "10"
+    ],
+    "beads": [
+     7,
+     3
+    ],
+    "say": "7 plus 3 égale 10."
+   }
+  },
+  {
+   "id": "dix-plus",
+   "term": "10 plus un nombre",
+   "nom": "10 plus un nombre",
+   "def": "une ligne pleine, puis les boules de la deuxième ligne",
+   "emoji": "🔢",
+   "noAuto": true,
+   "tip": "Dans dix-sept, on entend dix et sept.",
+   "example": {
+    "expr": [
+     "10|a",
+     "+",
+     "7|b",
+     "=",
+     "17"
+    ],
+    "beads": [
+     10,
+     7
+    ],
+    "say": "10 plus 7 égale 17."
+   }
+  },
+  {
+   "id": "chercher-10",
+   "term": "chercher les amis de 10",
+   "nom": "chercher les amis de 10",
+   "def": "dans un long calcul, je trouve d'abord deux nombres qui font 10",
+   "emoji": "🔍",
+   "noAuto": true,
+   "tip": "Ensuite, j'ajoute ce qui reste à 10 : c'est facile !",
+   "example": {
+    "expr": [
+     "3|a",
+     "+",
+     "2",
+     "+",
+     "7|a",
+     "+",
+     "4",
+     "=",
+     "10|a",
+     "+",
+     "6",
+     "=",
+     "16"
+    ],
+    "say": "3 plus 7 égale 10. 10 plus 6 égale 16."
+   }
+  },
+  {
+   "id": "passer-10",
+   "term": "passer par 10",
+   "nom": "passer par 10",
+   "def": "je complète jusqu'à 10, puis j'ajoute ce qui reste",
+   "emoji": "🌉",
+   "noAuto": true,
+   "tip": "8 plus 5 : 8 plus 2 égale 10, il reste 3, ça fait 13.",
+   "example": {
+    "expr": [
+     "8|a",
+     "+",
+     "5|b",
+     "=",
+     "8|a",
+     "+",
+     "2|b",
+     "+",
+     "3|b",
+     "=",
+     "13"
+    ],
+    "beads": [
+     8,
+     5
+    ],
+    "say": "8 plus 2 égale 10. 10 plus 3 égale 13."
+   }
+  }
+ ],
+ "maths": [
+  {
+   "gen": "manque",
+   "notion": "amis-10",
+   "diff": 2.5,
+   "pairs": [
+    [
+     1,
+     10
+    ],
+    [
+     2,
+     10
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     4,
+     10
+    ],
+    [
+     5,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     7,
+     10
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     9,
+     10
+    ]
+   ],
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?"
+  },
+  {
+   "gen": "arbre",
+   "notion": "amis-10",
+   "trees": [
+    [
+     6,
+     3,
+     null
+    ],
+    [
+     null,
+     7,
+     1
+    ],
+    [
+     2,
+     null,
+     5
+    ],
+    [
+     4,
+     null,
+     3
+    ],
+    [
+     1,
+     5,
+     null
+    ],
+    [
+     null,
+     2,
+     2
+    ],
+    [
+     5,
+     1,
+     null
+    ],
+    [
+     3,
+     null,
+     6
+    ]
+   ],
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10."
+  },
+  {
+   "gen": "somme",
+   "notion": "dix-plus",
+   "diff": 2,
+   "pairs": [
+    [
+     10,
+     2
+    ],
+    [
+     10,
+     5
+    ],
+    [
+     10,
+     7
+    ],
+    [
+     10,
+     9
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     3,
+     10
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     8,
+     10
+    ]
+   ],
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne."
+  },
+  {
+   "gen": "dizaine",
+   "notion": "dix-plus",
+   "numbers": [
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept."
+  },
+  {
+   "gen": "boulier",
+   "notion": "dix-plus",
+   "show": [
+    12,
+    15,
+    18,
+    13
+   ]
+  },
+  {
+   "gen": "dix",
+   "notion": "chercher-10",
+   "terms": [
+    [
+     1,
+     1,
+     7,
+     3
+    ],
+    [
+     2,
+     6,
+     3,
+     4
+    ],
+    [
+     4,
+     5,
+     9,
+     1
+    ],
+    [
+     7,
+     5,
+     5,
+     2
+    ],
+    [
+     8,
+     6,
+     2,
+     1
+    ],
+    [
+     3,
+     7,
+     6,
+     3
+    ],
+    [
+     3,
+     2,
+     7,
+     4
+    ],
+    [
+     6,
+     2,
+     4,
+     1
+    ],
+    [
+     5,
+     3,
+     1,
+     9
+    ],
+    [
+     2,
+     4,
+     8,
+     3
+    ]
+   ]
+  },
+  {
+   "gen": "decomp",
+   "notion": "passer-10",
+   "pairs": [
+    [
+     8,
+     5
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     8,
+     3
+    ],
+    [
+     9,
+     6
+    ],
+    [
+     7,
+     4
+    ],
+    [
+     6,
+     5
+    ],
+    [
+     8,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     9,
+     3
+    ]
+   ]
+  },
+  {
+   "gen": "somme",
+   "notion": "passer-10",
+   "diff": 2.5,
+   "pairs": [
+    [
+     8,
+     4
+    ],
+    [
+     9,
+     5
+    ],
+    [
+     7,
+     5
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     8,
+     7
+    ],
+    [
+     9,
+     2
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     3,
+     9
+    ]
+   ],
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+  },
+  {
+   "gen": "boulier",
+   "notion": "passer-10",
+   "sums": [
+    [
+     8,
+     5
+    ],
+    [
+     9,
+     4
+    ],
+    [
+     7,
+     6
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "f10-amis",
+   "name": "Les amis de 10",
+   "emoji": "🤝",
+   "color": "#d65d8a",
+   "notions": [
+    "amis-10"
+   ],
+   "desc": "1 et 9, 2 et 8, 3 et 7, 4 et 6, 5 et 5 : toujours ensemble !"
+  },
+  {
+   "id": "f10-ligne",
+   "name": "La ligne pleine",
+   "emoji": "🧮",
+   "color": "#4f8fd0",
+   "notions": [
+    "dix-plus"
+   ],
+   "desc": "Une ligne de boulier pleine, c'est 10."
+  },
+  {
+   "id": "f10-loupe",
+   "name": "La loupe",
+   "emoji": "🔍",
+   "color": "#3a9a8a",
+   "notions": [
+    "chercher-10"
+   ],
+   "desc": "Elle repère tout de suite les amis de 10."
+  },
+  {
+   "id": "f10-pont",
+   "name": "Le pont du 10",
+   "emoji": "🌉",
+   "color": "#8a6bc7",
+   "notions": [
+    "passer-10"
+   ],
+   "desc": "Pour aller de l'autre côté de 10, on s'arrête d'abord sur 10."
+  },
+  {
+   "id": "f10-legende",
+   "name": "Le grand 10",
+   "emoji": "🏆",
+   "color": "#f5b700",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Tu sais faire 10 dans tous les sens !"
+  }
+ ],
+ "items": [
+  {
+   "id": "maths-faire-10#amis-10/1+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "1 plus combien égale 10 ?",
+   "explain": "1 plus 9 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    1
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/2+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "2 plus combien égale 10 ?",
+   "explain": "2 plus 8 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    2
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/3+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "3 plus combien égale 10 ?",
+   "explain": "3 plus 7 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    3
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/4+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "4 plus combien égale 10 ?",
+   "explain": "4 plus 6 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    4
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/5+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "5 plus combien égale 10 ?",
+   "explain": "5 plus 5 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/6+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "6 plus combien égale 10 ?",
+   "explain": "6 plus 4 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    6
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/7+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "7 plus combien égale 10 ?",
+   "explain": "7 plus 3 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    7
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/8+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "8 plus combien égale 10 ?",
+   "explain": "8 plus 2 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    8
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/9+?=10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "9 plus combien égale 10 ?",
+   "explain": "9 plus 1 égale 10.",
+   "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+   "beads": [
+    9
+   ]
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-6+3+1-2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "3|b",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "6 plus 3 plus 1 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    6,
+    3
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-2+7+1-0",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "?",
+    "+",
+    "7|a",
+    "+",
+    "1|b",
+    "=",
+    "10"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "2 plus 7 plus 1 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    7,
+    1
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-2+3+5-1",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "?",
+    "+",
+    "5|b",
+    "=",
+    "10"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "2 plus 3 plus 5 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    2,
+    5
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-4+3+3-1",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "?",
+    "+",
+    "3|b",
+    "=",
+    "10"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "4 plus 3 plus 3 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    4,
+    3
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-1+5+4-2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "5|b",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "1 plus 5 plus 4 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    1,
+    5
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-6+2+2-0",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "?",
+    "+",
+    "2|a",
+    "+",
+    "2|b",
+    "=",
+    "10"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "6 plus 2 plus 2 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    2,
+    2
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-5+1+4-2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "1|b",
+    "+",
+    "?",
+    "=",
+    "10"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "5 plus 1 plus 4 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    5,
+    1
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#amis-10/arbre-3+1+6-1",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "amis-10"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "?",
+    "+",
+    "6|b",
+    "=",
+    "10"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "Quel nombre manque pour faire 10 ?",
+   "explain": "3 plus 1 plus 6 égale 10.",
+   "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+   "beads": [
+    3,
+    6
+   ],
+   "tree": {
+    "top": "10"
+   }
+  },
+  {
+   "id": "maths-faire-10#dix-plus/10+2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "10|a",
+    "+",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 10 plus 2 ?",
+   "explain": "10 plus 2 égale 12.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    10,
+    2
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/10+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "10|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 10 plus 5 ?",
+   "explain": "10 plus 5 égale 15.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    10,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/10+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "10|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "17",
+   "choices": [
+    "17",
+    "18",
+    "16",
+    "7"
+   ],
+   "say": "Combien font 10 plus 7 ?",
+   "explain": "10 plus 7 égale 17.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    10,
+    7
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/10+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "10|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "19",
+   "choices": [
+    "19",
+    "20",
+    "18",
+    "9"
+   ],
+   "say": "Combien font 10 plus 9 ?",
+   "explain": "10 plus 9 égale 19.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    10,
+    9
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/10+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "10|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 10 plus 4 ?",
+   "explain": "10 plus 4 égale 14.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    10,
+    4
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/3+10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 3 plus 10 ?",
+   "explain": "3 plus 10 égale 13.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    3,
+    10
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/6+10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "17",
+    "15",
+    "6"
+   ],
+   "say": "Combien font 6 plus 10 ?",
+   "explain": "6 plus 10 égale 16.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    6,
+    10
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/8+10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "18",
+   "choices": [
+    "18",
+    "19",
+    "17",
+    "8"
+   ],
+   "say": "Combien font 8 plus 10 ?",
+   "explain": "8 plus 10 égale 18.",
+   "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+   "beads": [
+    8,
+    10
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/12=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "12",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "12, c'est 10 plus combien ?",
+   "explain": "12, c'est 10 plus 2.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    2
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/14=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "14",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "14, c'est 10 plus combien ?",
+   "explain": "14, c'est 10 plus 4.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    4
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/15=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "15",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "15, c'est 10 plus combien ?",
+   "explain": "15, c'est 10 plus 5.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/16=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "16",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "16, c'est 10 plus combien ?",
+   "explain": "16, c'est 10 plus 6.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    6
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/17=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "17",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "17, c'est 10 plus combien ?",
+   "explain": "17, c'est 10 plus 7.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    7
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/18=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "18",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "18, c'est 10 plus combien ?",
+   "explain": "18, c'est 10 plus 8.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    8
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/19=10+?",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "dix-plus"
+   ],
+   "expr": [
+    "19",
+    "=",
+    "10|a",
+    "+",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "19, c'est 10 plus combien ?",
+   "explain": "19, c'est 10 plus 9.",
+   "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept.",
+   "beads": [
+    10,
+    9
+   ]
+  },
+  {
+   "id": "maths-faire-10#dix-plus/boulier-12",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "target": 12,
+   "q": "Montre 12 sur le boulier.",
+   "explain": "12, c'est 10 plus 2."
+  },
+  {
+   "id": "maths-faire-10#dix-plus/boulier-15",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "target": 15,
+   "q": "Montre 15 sur le boulier.",
+   "explain": "15, c'est 10 plus 5."
+  },
+  {
+   "id": "maths-faire-10#dix-plus/boulier-18",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "target": 18,
+   "q": "Montre 18 sur le boulier.",
+   "explain": "18, c'est 10 plus 8."
+  },
+  {
+   "id": "maths-faire-10#dix-plus/boulier-13",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "dix-plus"
+   ],
+   "target": 13,
+   "q": "Montre 13 sur le boulier.",
+   "explain": "13, c'est 10 plus 3."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-1+1+7+3",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    1,
+    1,
+    7,
+    3
+   ],
+   "rest": "2",
+   "total": "12",
+   "restChoices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "totalChoices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "1 plus 1 égale 2.",
+   "say": "Combien font 10 plus 2 ?",
+   "explain": "7 plus 3 égale 10. 10 plus 2 égale 12."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-2+6+3+4",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    2,
+    6,
+    3,
+    4
+   ],
+   "rest": "5",
+   "total": "15",
+   "restChoices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "totalChoices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "2 plus 3 égale 5.",
+   "say": "Combien font 10 plus 5 ?",
+   "explain": "6 plus 4 égale 10. 10 plus 5 égale 15."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-4+5+9+1",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    4,
+    5,
+    9,
+    1
+   ],
+   "rest": "9",
+   "total": "19",
+   "restChoices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "totalChoices": [
+    "19",
+    "20",
+    "18",
+    "9"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "4 plus 5 égale 9.",
+   "say": "Combien font 10 plus 9 ?",
+   "explain": "9 plus 1 égale 10. 10 plus 9 égale 19."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-7+5+5+2",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    7,
+    5,
+    5,
+    2
+   ],
+   "rest": "9",
+   "total": "19",
+   "restChoices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "totalChoices": [
+    "19",
+    "20",
+    "18",
+    "9"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "7 plus 2 égale 9.",
+   "say": "Combien font 10 plus 9 ?",
+   "explain": "5 plus 5 égale 10. 10 plus 9 égale 19."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-8+6+2+1",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    8,
+    6,
+    2,
+    1
+   ],
+   "rest": "7",
+   "total": "17",
+   "restChoices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "totalChoices": [
+    "17",
+    "18",
+    "16",
+    "7"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "6 plus 1 égale 7.",
+   "say": "Combien font 10 plus 7 ?",
+   "explain": "8 plus 2 égale 10. 10 plus 7 égale 17."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-3+7+6+3",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    3,
+    7,
+    6,
+    3
+   ],
+   "rest": "9",
+   "total": "19",
+   "restChoices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "totalChoices": [
+    "19",
+    "20",
+    "18",
+    "9"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "6 plus 3 égale 9.",
+   "say": "Combien font 10 plus 9 ?",
+   "explain": "3 plus 7 égale 10. 10 plus 9 égale 19."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-3+2+7+4",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    3,
+    2,
+    7,
+    4
+   ],
+   "rest": "6",
+   "total": "16",
+   "restChoices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "totalChoices": [
+    "16",
+    "17",
+    "15",
+    "6"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "2 plus 4 égale 6.",
+   "say": "Combien font 10 plus 6 ?",
+   "explain": "3 plus 7 égale 10. 10 plus 6 égale 16."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-6+2+4+1",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    6,
+    2,
+    4,
+    1
+   ],
+   "rest": "3",
+   "total": "13",
+   "restChoices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "totalChoices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "2 plus 1 égale 3.",
+   "say": "Combien font 10 plus 3 ?",
+   "explain": "6 plus 4 égale 10. 10 plus 3 égale 13."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-5+3+1+9",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    5,
+    3,
+    1,
+    9
+   ],
+   "rest": "8",
+   "total": "18",
+   "restChoices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "totalChoices": [
+    "18",
+    "19",
+    "17",
+    "8"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "5 plus 3 égale 8.",
+   "say": "Combien font 10 plus 8 ?",
+   "explain": "1 plus 9 égale 10. 10 plus 8 égale 18."
+  },
+  {
+   "id": "maths-faire-10#chercher-10/dix-2+4+8+3",
+   "type": "amis10",
+   "diff": 2.5,
+   "notions": [
+    "chercher-10"
+   ],
+   "terms": [
+    2,
+    4,
+    8,
+    3
+   ],
+   "rest": "7",
+   "total": "17",
+   "restChoices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "totalChoices": [
+    "17",
+    "18",
+    "16",
+    "7"
+   ],
+   "q": "Touche les deux nombres qui font 10.",
+   "restSay": "4 plus 3 égale 7.",
+   "say": "Combien font 10 plus 7 ?",
+   "explain": "2 plus 8 égale 10. 10 plus 7 égale 17."
+  },
+  {
+   "id": "maths-faire-10#passer-10/8+5-decomp0",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "5|b",
+    "=",
+    "8|a",
+    "+",
+    "2|b",
+    "+",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "8 plus 5, c'est 8 plus 2 plus combien ?",
+   "explain": "8 plus 2 égale 10. 10 plus 3 égale 13.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    8,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/9+4-decomp1",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "4|b",
+    "=",
+    "9|a",
+    "+",
+    "?",
+    "+",
+    "3|b"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "9 plus 4, c'est 9 plus combien plus 3 ?",
+   "explain": "9 plus 1 égale 10. 10 plus 3 égale 13.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    9,
+    4
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/7+5-decomp0",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "5|b",
+    "=",
+    "7|a",
+    "+",
+    "3|b",
+    "+",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "7 plus 5, c'est 7 plus 3 plus combien ?",
+   "explain": "7 plus 3 égale 10. 10 plus 2 égale 12.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/8+3-decomp1",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "3|b",
+    "=",
+    "8|a",
+    "+",
+    "?",
+    "+",
+    "1|b"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "8 plus 3, c'est 8 plus combien plus 1 ?",
+   "explain": "8 plus 2 égale 10. 10 plus 1 égale 11.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    8,
+    3
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/9+6-decomp0",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "6|b",
+    "=",
+    "9|a",
+    "+",
+    "1|b",
+    "+",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "9 plus 6, c'est 9 plus 1 plus combien ?",
+   "explain": "9 plus 1 égale 10. 10 plus 5 égale 15.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    9,
+    6
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/7+4-decomp1",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "4|b",
+    "=",
+    "7|a",
+    "+",
+    "?",
+    "+",
+    "1|b"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "7 plus 4, c'est 7 plus combien plus 1 ?",
+   "explain": "7 plus 3 égale 10. 10 plus 1 égale 11.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    7,
+    4
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/6+5-decomp0",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "5|b",
+    "=",
+    "6|a",
+    "+",
+    "4|b",
+    "+",
+    "?"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "6 plus 5, c'est 6 plus 4 plus combien ?",
+   "explain": "6 plus 4 égale 10. 10 plus 1 égale 11.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/8+6-decomp1",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "6|b",
+    "=",
+    "8|a",
+    "+",
+    "?",
+    "+",
+    "4|b"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "8 plus 6, c'est 8 plus combien plus 4 ?",
+   "explain": "8 plus 2 égale 10. 10 plus 4 égale 14.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    8,
+    6
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/7+6-decomp0",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "6|b",
+    "=",
+    "7|a",
+    "+",
+    "3|b",
+    "+",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "7 plus 6, c'est 7 plus 3 plus combien ?",
+   "explain": "7 plus 3 égale 10. 10 plus 3 égale 13.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/9+3-decomp1",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "3|b",
+    "=",
+    "9|a",
+    "+",
+    "?",
+    "+",
+    "2|b"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "9 plus 3, c'est 9 plus combien plus 2 ?",
+   "explain": "9 plus 1 égale 10. 10 plus 2 égale 12.",
+   "hint": "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+   "beads": [
+    9,
+    3
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/8+4",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 8 plus 4 ?",
+   "explain": "8 plus 4 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    4
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/9+5",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 9 plus 5 ?",
+   "explain": "9 plus 5 égale 14.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    9,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/7+5",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 7 plus 5 ?",
+   "explain": "7 plus 5 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/6+6",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 6 plus 6 ?",
+   "explain": "6 plus 6 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    6,
+    6
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/8+7",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 8 plus 7 ?",
+   "explain": "8 plus 7 égale 15.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    7
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/9+2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 9 plus 2 ?",
+   "explain": "9 plus 2 égale 11.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    9,
+    2
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/5+7",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 5 plus 7 ?",
+   "explain": "5 plus 7 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/4+8",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 4 plus 8 ?",
+   "explain": "4 plus 8 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    4,
+    8
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/3+9",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "passer-10"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 3 plus 9 ?",
+   "explain": "3 plus 9 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "maths-faire-10#passer-10/boulier-8+5",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "passer-10"
+   ],
+   "target": 13,
+   "parts": [
+    8,
+    5
+   ],
+   "q": "Fais 8 plus 5 sur le boulier.",
+   "explain": "8 plus 5 égale 13."
+  },
+  {
+   "id": "maths-faire-10#passer-10/boulier-9+4",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "passer-10"
+   ],
+   "target": 13,
+   "parts": [
+    9,
+    4
+   ],
+   "q": "Fais 9 plus 4 sur le boulier.",
+   "explain": "9 plus 4 égale 13."
+  },
+  {
+   "id": "maths-faire-10#passer-10/boulier-7+6",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "passer-10"
+   ],
+   "target": 13,
+   "parts": [
+    7,
+    6
+   ],
+   "q": "Fais 7 plus 6 sur le boulier.",
+   "explain": "7 plus 6 égale 13."
+  }
+ ],
+ "speech": [
+  "0",
+  "1",
+  "1 et 9, 2 et 8, 3 et 7, 4 et 6, 5 et 5 : toujours ensemble !",
+  "1 et 9, 2 et 8, 3 et 7, 4 et 6, 5 et 5.",
+  "1 et 9. 2 et 8. 3 et 7. 4 et 6. 5 et 5.",
+  "1 plus 1 égale 2.",
+  "1 plus 5 plus 4 égale 10.",
+  "1 plus 9 égale 10.",
+  "1 plus 9 égale 10. 10 plus 8 égale 18.",
+  "1 plus combien égale 10 ?",
+  "10",
+  "10 plus 2 égale 12.",
+  "10 plus 4 égale 14.",
+  "10 plus 5 égale 15.",
+  "10 plus 7 égale 17.",
+  "10 plus 9 égale 19.",
+  "10 plus un nombre",
+  "10 plus un nombre : une ligne pleine, puis les boules de la deuxième ligne.",
+  "11",
+  "12",
+  "12, c'est 10 plus 2.",
+  "12, c'est 10 plus combien ?",
+  "13",
+  "13, c'est 10 plus 3.",
+  "14",
+  "14, c'est 10 plus 4.",
+  "14, c'est 10 plus combien ?",
+  "15",
+  "15, c'est 10 plus 5.",
+  "15, c'est 10 plus combien ?",
+  "16",
+  "16, c'est 10 plus 6.",
+  "16, c'est 10 plus combien ?",
+  "17",
+  "17, c'est 10 plus 7.",
+  "17, c'est 10 plus combien ?",
+  "18",
+  "18, c'est 10 plus 8.",
+  "18, c'est 10 plus combien ?",
+  "19",
+  "19, c'est 10 plus 9.",
+  "19, c'est 10 plus combien ?",
+  "2",
+  "2 plus 1 égale 3.",
+  "2 plus 3 plus 5 égale 10.",
+  "2 plus 3 égale 5.",
+  "2 plus 4 égale 6.",
+  "2 plus 7 plus 1 égale 10.",
+  "2 plus 8 égale 10.",
+  "2 plus 8 égale 10. 10 plus 7 égale 17.",
+  "2 plus combien égale 10 ?",
+  "20",
+  "3",
+  "3 plus 1 plus 6 égale 10.",
+  "3 plus 10 égale 13.",
+  "3 plus 7 égale 10.",
+  "3 plus 7 égale 10. 10 plus 6 égale 16.",
+  "3 plus 7 égale 10. 10 plus 9 égale 19.",
+  "3 plus 9 égale 12.",
+  "3 plus combien égale 10 ?",
+  "4",
+  "4 plus 3 plus 3 égale 10.",
+  "4 plus 3 égale 7.",
+  "4 plus 5 égale 9.",
+  "4 plus 6 égale 10.",
+  "4 plus 8 égale 12.",
+  "4 plus combien égale 10 ?",
+  "5",
+  "5 plus 1 plus 4 égale 10.",
+  "5 plus 3 égale 8.",
+  "5 plus 5 égale 10.",
+  "5 plus 5 égale 10. 10 plus 9 égale 19.",
+  "5 plus 7 égale 12.",
+  "5 plus combien égale 10 ?",
+  "6",
+  "6 plus 1 égale 7.",
+  "6 plus 10 égale 16.",
+  "6 plus 2 plus 2 égale 10.",
+  "6 plus 3 plus 1 égale 10.",
+  "6 plus 3 égale 9.",
+  "6 plus 4 égale 10.",
+  "6 plus 4 égale 10. 10 plus 1 égale 11.",
+  "6 plus 4 égale 10. 10 plus 3 égale 13.",
+  "6 plus 4 égale 10. 10 plus 5 égale 15.",
+  "6 plus 5, c'est 6 plus 4 plus combien ?",
+  "6 plus 6 égale 12.",
+  "6 plus combien égale 10 ?",
+  "7",
+  "7 plus 2 égale 9.",
+  "7 plus 3 égale 10.",
+  "7 plus 3 égale 10. 10 plus 1 égale 11.",
+  "7 plus 3 égale 10. 10 plus 2 égale 12.",
+  "7 plus 3 égale 10. 10 plus 3 égale 13.",
+  "7 plus 4, c'est 7 plus combien plus 1 ?",
+  "7 plus 5 égale 12.",
+  "7 plus 5, c'est 7 plus 3 plus combien ?",
+  "7 plus 6 égale 13.",
+  "7 plus 6, c'est 7 plus 3 plus combien ?",
+  "7 plus combien égale 10 ?",
+  "8",
+  "8 plus 10 égale 18.",
+  "8 plus 2 égale 10.",
+  "8 plus 2 égale 10. 10 plus 1 égale 11.",
+  "8 plus 2 égale 10. 10 plus 3 égale 13.",
+  "8 plus 2 égale 10. 10 plus 4 égale 14.",
+  "8 plus 2 égale 10. 10 plus 7 égale 17.",
+  "8 plus 3, c'est 8 plus combien plus 1 ?",
+  "8 plus 4 égale 12.",
+  "8 plus 5 : 8 plus 2 égale 10, il reste 3, ça fait 13.",
+  "8 plus 5 égale 13.",
+  "8 plus 5, c'est 8 plus 2 plus combien ?",
+  "8 plus 6, c'est 8 plus combien plus 4 ?",
+  "8 plus 7 égale 15.",
+  "8 plus combien égale 10 ?",
+  "9",
+  "9 plus 1 égale 10.",
+  "9 plus 1 égale 10. 10 plus 2 égale 12.",
+  "9 plus 1 égale 10. 10 plus 3 égale 13.",
+  "9 plus 1 égale 10. 10 plus 5 égale 15.",
+  "9 plus 1 égale 10. 10 plus 9 égale 19.",
+  "9 plus 2 égale 11.",
+  "9 plus 3, c'est 9 plus combien plus 2 ?",
+  "9 plus 4 égale 13.",
+  "9 plus 4, c'est 9 plus combien plus 3 ?",
+  "9 plus 5 égale 14.",
+  "9 plus 6, c'est 9 plus 1 plus combien ?",
+  "9 plus combien égale 10 ?",
+  "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10.",
+  "Après 10, on remplit la deuxième ligne : 10 plus 7 égale 17. Dans dix-sept, on entend dix et sept.",
+  "Chercher les amis de 10",
+  "Chercher les amis de 10 : dans un long calcul, je trouve d'abord deux nombres qui font 10.",
+  "Combien faut-il ajouter pour arriver à 10 ? Regarde le boulier.",
+  "Combien font 10 plus 2 ?",
+  "Combien font 10 plus 3 ?",
+  "Combien font 10 plus 4 ?",
+  "Combien font 10 plus 5 ?",
+  "Combien font 10 plus 6 ?",
+  "Combien font 10 plus 7 ?",
+  "Combien font 10 plus 8 ?",
+  "Combien font 10 plus 9 ?",
+  "Combien font 3 plus 10 ?",
+  "Combien font 3 plus 9 ?",
+  "Combien font 4 plus 8 ?",
+  "Combien font 5 plus 7 ?",
+  "Combien font 6 plus 10 ?",
+  "Combien font 6 plus 6 ?",
+  "Combien font 7 plus 5 ?",
+  "Combien font 8 plus 10 ?",
+  "Combien font 8 plus 4 ?",
+  "Combien font 8 plus 7 ?",
+  "Combien font 9 plus 2 ?",
+  "Combien font 9 plus 5 ?",
+  "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+  "Dans dix-sept, on entend dix et sept.",
+  "Dans un long calcul, je cherche d'abord deux amis de 10. 3 plus 2 plus 7 plus 4 : 3 et 7 font 10, puis 10 plus 6 égale 16.",
+  "Elle repère tout de suite les amis de 10.",
+  "Ensuite, j'ajoute ce qui reste à 10 : c'est facile !",
+  "Fais 7 plus 6 sur le boulier.",
+  "Fais 8 plus 5 sur le boulier.",
+  "Fais 9 plus 4 sur le boulier.",
+  "La ligne pleine",
+  "La loupe",
+  "Le grand 10",
+  "Le pont du 10",
+  "Les amis de 10",
+  "Les amis de 10 : deux nombres qui font 10 ensemble.",
+  "Les amis de 10, ce sont deux nombres qui font 10 ensemble.",
+  "Montre 12 sur le boulier.",
+  "Montre 13 sur le boulier.",
+  "Montre 15 sur le boulier.",
+  "Montre 18 sur le boulier.",
+  "Passer par 10",
+  "Passer par 10 : je complète jusqu'à 10, puis j'ajoute ce qui reste.",
+  "Pour 8 plus 5, je complète d'abord jusqu'à 10 : 8 plus 2 égale 10. Il reste 3 : 10 plus 3 égale 13.",
+  "Pour aller de l'autre côté de 10, on s'arrête d'abord sur 10.",
+  "Quel nombre manque pour faire 10 ?",
+  "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?",
+  "Sur le boulier, une ligne pleine, c'est 10.",
+  "Touche les deux nombres qui font 10.",
+  "Tu sais faire 10 dans tous les sens !",
+  "Une ligne de boulier pleine, c'est 10.",
+  "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne.",
+  "Écoute bien le nombre : dans dix-sept, on entend dix et sept."
+ ]
+}

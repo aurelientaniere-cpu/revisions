@@ -5,6 +5,9 @@
     "sciences-lune.json",
     "sciences-lune-plus.json",
     "francais-accords.json",
-    "anglais-jours-mois.json"
+    "anglais-jours-mois.json",
+    "maths-premieres-additions.json",
+    "maths-faire-10.json",
+    "maths-table-addition.json"
   ]
 }

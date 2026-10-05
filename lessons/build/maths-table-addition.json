@@ -1,0 +1,6218 @@
+{
+ "id": "maths-table-addition",
+ "category": "maths",
+ "subject": "Maths",
+ "title": "La table d'addition",
+ "subtitle": "Ligne après ligne, avec des astuces",
+ "emoji": "➕",
+ "color": "#d65d8a",
+ "ordered": true,
+ "newPerSession": 2,
+ "perNew": 4,
+ "source": "Table d'addition de 1 à 9, apprise ligne après ligne grâce à des astuces, puis en entier.",
+ "summary": [
+  "La table d'addition, on l'apprend ligne après ligne, avec une astuce pour chaque ligne.",
+  "Ajouter 1, c'est dire le nombre juste après. Ajouter 2, c'est avancer de deux bonds.",
+  "On peut changer l'ordre : 2 plus 8, c'est pareil que 8 plus 2. Je pars du plus grand.",
+  "Les doubles : 3 plus 3, 4 plus 4… deux fois le même nombre.",
+  "Presque un double : 6 plus 7, c'est 6 plus 6, plus 1.",
+  "Pour ajouter 9, j'ajoute 10, puis j'enlève 1.",
+  "Pour les autres, je passe par 10 : je complète jusqu'à 10, puis j'ajoute ce qui reste.",
+  "Grâce à l'échange, la moitié de la table est déjà connue !"
+ ],
+ "notions": [
+  {
+   "id": "plus1",
+   "term": "ajouter 1",
+   "nom": "ajouter 1",
+   "def": "c'est dire le nombre juste après",
+   "emoji": "1️⃣",
+   "noAuto": true,
+   "tip": "Après 7, il y a 8 : 7 plus 1 égale 8.",
+   "example": {
+    "expr": [
+     "7|a",
+     "+",
+     "1|b",
+     "=",
+     "8"
+    ],
+    "beads": [
+     7,
+     1
+    ],
+    "say": "7 plus 1 égale 8."
+   }
+  },
+  {
+   "id": "plus2",
+   "term": "ajouter 2",
+   "nom": "ajouter 2",
+   "def": "c'est avancer de deux bonds",
+   "emoji": "🐇",
+   "noAuto": true,
+   "tip": "6, puis 7, 8 : 6 plus 2 égale 8.",
+   "example": {
+    "expr": [
+     "6|a",
+     "+",
+     "2|b",
+     "=",
+     "8"
+    ],
+    "beads": [
+     6,
+     2
+    ],
+    "say": "6 plus 2 égale 8."
+   }
+  },
+  {
+   "id": "echange",
+   "term": "changer l'ordre",
+   "nom": "changer l'ordre",
+   "def": "2 plus 8, c'est pareil que 8 plus 2",
+   "emoji": "🔄",
+   "noAuto": true,
+   "tip": "Je pars toujours du plus grand nombre : c'est plus facile.",
+   "example": {
+    "expr": [
+     "2|a",
+     "+",
+     "8|b",
+     "=",
+     "8|b",
+     "+",
+     "2|a"
+    ],
+    "beads": [
+     2,
+     8
+    ],
+    "say": "2 plus 8, c'est pareil que 8 plus 2."
+   }
+  },
+  {
+   "id": "doubles",
+   "term": "les doubles",
+   "nom": "les doubles",
+   "def": "deux fois le même nombre",
+   "emoji": "👯",
+   "noAuto": true,
+   "tip": "Les doubles se retiennent comme une chanson : 6 plus 6, 12. 7 plus 7, 14.",
+   "example": {
+    "expr": [
+     "6|a",
+     "+",
+     "6|b",
+     "=",
+     "12"
+    ],
+    "beads": [
+     6,
+     6
+    ],
+    "say": "6 plus 6 égale 12."
+   }
+  },
+  {
+   "id": "presque-doubles",
+   "term": "presque un double",
+   "nom": "presque un double",
+   "def": "le double du plus petit, plus 1",
+   "emoji": "🪞",
+   "noAuto": true,
+   "tip": "6 plus 7 : 6 plus 6 égale 12, et encore 1, ça fait 13.",
+   "example": {
+    "expr": [
+     "6|a",
+     "+",
+     "7|b",
+     "=",
+     "6|a",
+     "+",
+     "6|b",
+     "+",
+     "1|b",
+     "=",
+     "13"
+    ],
+    "beads": [
+     6,
+     7
+    ],
+    "say": "6 plus 6 égale 12, et 1 de plus, 13."
+   }
+  },
+  {
+   "id": "plus9",
+   "term": "ajouter 9",
+   "nom": "ajouter 9",
+   "def": "j'ajoute 10, puis j'enlève 1",
+   "emoji": "9️⃣",
+   "noAuto": true,
+   "tip": "9 plus 5 : 10 plus 5 égale 15, moins 1, ça fait 14.",
+   "example": {
+    "expr": [
+     "9|a",
+     "+",
+     "5|b",
+     "=",
+     "14"
+    ],
+    "beads": [
+     9,
+     5
+    ],
+    "say": "9 plus 5 égale 14."
+   }
+  },
+  {
+   "id": "plus5",
+   "term": "ajouter 5",
+   "nom": "ajouter 5",
+   "def": "un paquet de 5 boules, comme une main",
+   "emoji": "🖐️",
+   "noAuto": true,
+   "tip": "5 plus 3 : une main, et encore 3 doigts. Ça fait 8.",
+   "example": {
+    "expr": [
+     "5|a",
+     "+",
+     "3|b",
+     "=",
+     "8"
+    ],
+    "beads": [
+     5,
+     3
+    ],
+    "say": "5 plus 3 égale 8."
+   }
+  },
+  {
+   "id": "plus3",
+   "term": "la ligne du 3",
+   "nom": "la ligne du 3",
+   "def": "3 plus 1, 3 plus 2, jusqu'à 3 plus 9",
+   "emoji": "🍀",
+   "noAuto": true,
+   "tip": "3 plus 8, c'est comme 8 plus 3 : je pars du plus grand.",
+   "example": {
+    "expr": [
+     "3|a",
+     "+",
+     "8|b",
+     "=",
+     "11"
+    ],
+    "beads": [
+     3,
+     8
+    ],
+    "say": "3 plus 8 égale 11."
+   }
+  },
+  {
+   "id": "plus4",
+   "term": "la ligne du 4",
+   "nom": "la ligne du 4",
+   "def": "4 plus 1, 4 plus 2, jusqu'à 4 plus 9",
+   "emoji": "🐞",
+   "noAuto": true,
+   "tip": "4 plus 7 : 7 plus 3 égale 10, il reste 1. Ça fait 11.",
+   "example": {
+    "expr": [
+     "4|a",
+     "+",
+     "7|b",
+     "=",
+     "11"
+    ],
+    "beads": [
+     4,
+     7
+    ],
+    "say": "4 plus 7 égale 11."
+   }
+  },
+  {
+   "id": "plus6",
+   "term": "la ligne du 6",
+   "nom": "la ligne du 6",
+   "def": "6 plus 1, 6 plus 2, jusqu'à 6 plus 9",
+   "emoji": "🎲",
+   "noAuto": true,
+   "tip": "6 plus 8 : 8 plus 2 égale 10, il reste 4. Ça fait 14.",
+   "example": {
+    "expr": [
+     "6|a",
+     "+",
+     "8|b",
+     "=",
+     "14"
+    ],
+    "beads": [
+     6,
+     8
+    ],
+    "say": "6 plus 8 égale 14."
+   }
+  },
+  {
+   "id": "plus7",
+   "term": "la ligne du 7",
+   "nom": "la ligne du 7",
+   "def": "7 plus 1, 7 plus 2, jusqu'à 7 plus 9",
+   "emoji": "🌈",
+   "noAuto": true,
+   "tip": "7 plus 5 : 7 plus 3 égale 10, il reste 2. Ça fait 12.",
+   "example": {
+    "expr": [
+     "7|a",
+     "+",
+     "5|b",
+     "=",
+     "12"
+    ],
+    "beads": [
+     7,
+     5
+    ],
+    "say": "7 plus 5 égale 12."
+   }
+  },
+  {
+   "id": "plus8",
+   "term": "la ligne du 8",
+   "nom": "la ligne du 8",
+   "def": "8 plus 1, 8 plus 2, jusqu'à 8 plus 9",
+   "emoji": "🐙",
+   "noAuto": true,
+   "tip": "Bonne nouvelle : tu connais déjà presque toute cette ligne !",
+   "example": {
+    "expr": [
+     "8|a",
+     "+",
+     "4|b",
+     "=",
+     "12"
+    ],
+    "beads": [
+     8,
+     4
+    ],
+    "say": "8 plus 4 égale 12."
+   }
+  },
+  {
+   "id": "table-complete",
+   "term": "toute la table",
+   "nom": "toute la table",
+   "def": "toutes les lignes, mélangées",
+   "emoji": "🏁",
+   "noAuto": true,
+   "tip": "Pour chaque case, cherche la bonne astuce.",
+   "example": {
+    "expr": [
+     "9|a",
+     "+",
+     "7|b",
+     "=",
+     "16"
+    ],
+    "beads": [
+     9,
+     7
+    ],
+    "say": "9 plus 7 égale 16."
+   }
+  }
+ ],
+ "maths": [
+  {
+   "gen": "ligne-faits",
+   "notion": "plus1",
+   "row": 1,
+   "hint": "Ajouter 1, c'est dire le nombre juste après."
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus1",
+   "row": 1,
+   "variants": 2
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus2",
+   "row": 2,
+   "hint": "Ajouter 2, c'est avancer de deux bonds."
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus2",
+   "row": 2,
+   "variants": 2
+  },
+  {
+   "gen": "echange",
+   "notion": "echange",
+   "pairs": [
+    [
+     2,
+     8
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     4,
+     8
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     2,
+     7
+    ]
+   ],
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens."
+  },
+  {
+   "gen": "somme",
+   "notion": "echange",
+   "diff": 2.5,
+   "pairs": [
+    [
+     2,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     2,
+     6
+    ]
+   ],
+   "hint": "Pars du plus grand nombre, puis avance."
+  },
+  {
+   "gen": "somme",
+   "notion": "doubles",
+   "pairs": [
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     9,
+     9
+    ]
+   ],
+   "hint": "C'est un double : deux fois le même nombre."
+  },
+  {
+   "gen": "somme",
+   "notion": "presque-doubles",
+   "pairs": [
+    [
+     3,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     7,
+     6
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     9,
+     8
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     7
+    ]
+   ],
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus9",
+   "row": 9,
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus9",
+   "row": 9,
+   "variants": 2
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus5",
+   "row": 5
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus5",
+   "row": 5,
+   "variants": 2
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus3",
+   "row": 3
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus3",
+   "row": 3
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus4",
+   "row": 4
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus4",
+   "row": 4
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus6",
+   "row": 6
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus6",
+   "row": 6
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus7",
+   "row": 7
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus7",
+   "row": 7
+  },
+  {
+   "gen": "ligne-faits",
+   "notion": "plus8",
+   "row": 8
+  },
+  {
+   "gen": "ligne",
+   "notion": "plus8",
+   "row": 8
+  },
+  {
+   "gen": "grille",
+   "notion": "table-complete",
+   "variants": 8,
+   "holes": 7
+  }
+ ],
+ "cards": [
+  {
+   "id": "ta-un",
+   "name": "Le pas de fourmi",
+   "emoji": "🐜",
+   "color": "#7a9cc6",
+   "notions": [
+    "plus1"
+   ],
+   "desc": "Ajouter 1 : un tout petit pas, le nombre juste après."
+  },
+  {
+   "id": "ta-deux",
+   "name": "Le lapin",
+   "emoji": "🐇",
+   "color": "#a0b86a",
+   "notions": [
+    "plus2"
+   ],
+   "desc": "Ajouter 2 : deux bonds de lapin."
+  },
+  {
+   "id": "ta-echange",
+   "name": "Le miroir",
+   "emoji": "🔄",
+   "color": "#3a9a8a",
+   "notions": [
+    "echange"
+   ],
+   "desc": "2 plus 8 ou 8 plus 2 : même résultat !"
+  },
+  {
+   "id": "ta-doubles",
+   "name": "Les jumeaux",
+   "emoji": "👯",
+   "color": "#d65d8a",
+   "notions": [
+    "doubles",
+    "presque-doubles"
+   ],
+   "desc": "Les doubles, et leurs voisins les presque doubles."
+  },
+  {
+   "id": "ta-neuf",
+   "name": "Le magicien du 9",
+   "emoji": "🎩",
+   "color": "#8a6bc7",
+   "notions": [
+    "plus9"
+   ],
+   "desc": "Il ajoute 10 et il enlève 1 : abracadabra !"
+  },
+  {
+   "id": "ta-main",
+   "name": "La main",
+   "emoji": "🖐️",
+   "color": "#e0a030",
+   "notions": [
+    "plus5"
+   ],
+   "desc": "5, c'est une main entière."
+  },
+  {
+   "id": "ta-trefle",
+   "name": "Le trèfle",
+   "emoji": "🍀",
+   "color": "#4f9e78",
+   "notions": [
+    "plus3",
+    "plus4"
+   ],
+   "desc": "Les lignes du 3 et du 4 n'ont plus de secret."
+  },
+  {
+   "id": "ta-arc",
+   "name": "L'arc-en-ciel",
+   "emoji": "🌈",
+   "color": "#4f8fd0",
+   "notions": [
+    "plus6",
+    "plus7",
+    "plus8"
+   ],
+   "desc": "Les grandes lignes : 6, 7 et 8."
+  },
+  {
+   "id": "ta-legende",
+   "name": "La table d'or",
+   "emoji": "🏆",
+   "color": "#f5b700",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Toute la table d'addition est dans ta tête !"
+  }
+ ],
+ "items": [
+  {
+   "id": "maths-table-addition#plus1/2+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "Combien font 2 plus 1 ?",
+   "explain": "2 plus 1 égale 3.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/1+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "Combien font 1 plus 3 ?",
+   "explain": "1 plus 3 égale 4.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    1,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/4+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "Combien font 4 plus 1 ?",
+   "explain": "4 plus 1 égale 5.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    4,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/1+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "Combien font 1 plus 5 ?",
+   "explain": "1 plus 5 égale 6.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/6+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 6 plus 1 ?",
+   "explain": "6 plus 1 égale 7.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    6,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/1+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 1 plus 7 ?",
+   "explain": "1 plus 7 égale 8.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    1,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/8+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 8 plus 1 ?",
+   "explain": "8 plus 1 égale 9.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    8,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/1+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus1"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 1 plus 9 ?",
+   "explain": "1 plus 9 égale 10.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/ligne-1-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus1"
+   ],
+   "row": 1,
+   "q": "Complète la ligne du 1.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 2,
+     "answer": "3",
+     "choices": [
+      "3",
+      "4",
+      "2",
+      "5"
+     ],
+     "say": "1 plus 2 égale 3.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 1,
+     "b": 3,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "1 plus 3 égale 4.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 1,
+     "b": 4,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "1 plus 4 égale 5.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 1,
+     "b": 8,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "1 plus 8 égale 9.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus1/ligne-1-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus1"
+   ],
+   "row": 1,
+   "q": "Complète la ligne du 1.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 3,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "1 plus 3 égale 4.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 1,
+     "b": 5,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "1 plus 5 égale 6.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 1,
+     "b": 6,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "1 plus 6 égale 7.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 1,
+     "b": 9,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "1 plus 9 égale 10.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/2+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "Combien font 2 plus 1 ?",
+   "explain": "2 plus 1 égale 3.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/2+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "Combien font 2 plus 3 ?",
+   "explain": "2 plus 3 égale 5.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/4+2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "Combien font 4 plus 2 ?",
+   "explain": "4 plus 2 égale 6.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/2+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 2 plus 5 ?",
+   "explain": "2 plus 5 égale 7.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/6+2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 6 plus 2 ?",
+   "explain": "6 plus 2 égale 8.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    6,
+    2
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/2+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 2 plus 7 ?",
+   "explain": "2 plus 7 égale 9.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/8+2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 8 plus 2 ?",
+   "explain": "8 plus 2 égale 10.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    8,
+    2
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/2+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus2"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 2 plus 9 ?",
+   "explain": "2 plus 9 égale 11.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/ligne-2-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus2"
+   ],
+   "row": 2,
+   "q": "Complète la ligne du 2.",
+   "holes": [
+    {
+     "a": 2,
+     "b": 2,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "2 plus 2 égale 4.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 2,
+     "b": 4,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "2 plus 4 égale 6.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 2,
+     "b": 6,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "2 plus 6 égale 8.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 2,
+     "b": 7,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "2 plus 7 égale 9.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus2/ligne-2-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus2"
+   ],
+   "row": 2,
+   "q": "Complète la ligne du 2.",
+   "holes": [
+    {
+     "a": 2,
+     "b": 2,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "2 plus 2 égale 4.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "2 plus 5 égale 7.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 2,
+     "b": 6,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "2 plus 6 égale 8.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 2,
+     "b": 8,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "2 plus 8 égale 10.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/2+8=8+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "8|b",
+    "=",
+    "8|b",
+    "+",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "2 plus 8, c'est 8 plus combien ?",
+   "explain": "2 plus 8, c'est pareil que 8 plus 2. Les deux font 10.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    2,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/1+9=9+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "9|b",
+    "=",
+    "9|b",
+    "+",
+    "?"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "1 plus 9, c'est 9 plus combien ?",
+   "explain": "1 plus 9, c'est pareil que 9 plus 1. Les deux font 10.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    1,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/3+7=7+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "7|b",
+    "=",
+    "7|b",
+    "+",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "3 plus 7, c'est 7 plus combien ?",
+   "explain": "3 plus 7, c'est pareil que 7 plus 3. Les deux font 10.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    3,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/2+9=9+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "9|b",
+    "=",
+    "9|b",
+    "+",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "2 plus 9, c'est 9 plus combien ?",
+   "explain": "2 plus 9, c'est pareil que 9 plus 2. Les deux font 11.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    2,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/4+8=8+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "8|b",
+    "=",
+    "8|b",
+    "+",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "4 plus 8, c'est 8 plus combien ?",
+   "explain": "4 plus 8, c'est pareil que 8 plus 4. Les deux font 12.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    4,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/3+9=9+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "9|b",
+    "=",
+    "9|b",
+    "+",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "5"
+   ],
+   "say": "3 plus 9, c'est 9 plus combien ?",
+   "explain": "3 plus 9, c'est pareil que 9 plus 3. Les deux font 12.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/1+6=6+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "6|b",
+    "=",
+    "6|b",
+    "+",
+    "?"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "3"
+   ],
+   "say": "1 plus 6, c'est 6 plus combien ?",
+   "explain": "1 plus 6, c'est pareil que 6 plus 1. Les deux font 7.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    1,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/2+7=7+?",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "7|b",
+    "=",
+    "7|b",
+    "+",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "2 plus 7, c'est 7 plus combien ?",
+   "explain": "2 plus 7, c'est pareil que 7 plus 2. Les deux font 9.",
+   "hint": "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+   "beads": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/2+7",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 2 plus 7 ?",
+   "explain": "2 plus 7 égale 9.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/1+8",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 1 plus 8 ?",
+   "explain": "1 plus 8 égale 9.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    1,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/3+9",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 3 plus 9 ?",
+   "explain": "3 plus 9 égale 12.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#echange/2+6",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 2 plus 6 ?",
+   "explain": "2 plus 6 égale 8.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    2,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/1+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "1|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "say": "Combien font 1 plus 1 ?",
+   "explain": "1 plus 1 égale 2.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/2+2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "Combien font 2 plus 2 ?",
+   "explain": "2 plus 2 égale 4.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/3+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "Combien font 3 plus 3 ?",
+   "explain": "3 plus 3 égale 6.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    3,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/4+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 4 plus 4 ?",
+   "explain": "4 plus 4 égale 8.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    4,
+    4
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/5+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 5 plus 5 ?",
+   "explain": "5 plus 5 égale 10.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    5,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/6+6",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 6 plus 6 ?",
+   "explain": "6 plus 6 égale 12.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    6,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/7+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 7 plus 7 ?",
+   "explain": "7 plus 7 égale 14.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    7,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/8+8",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "17",
+    "15",
+    "6"
+   ],
+   "say": "Combien font 8 plus 8 ?",
+   "explain": "8 plus 8 égale 16.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    8,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#doubles/9+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "doubles"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "18",
+   "choices": [
+    "18",
+    "19",
+    "17",
+    "8"
+   ],
+   "say": "Combien font 9 plus 9 ?",
+   "explain": "9 plus 9 égale 18.",
+   "hint": "C'est un double : deux fois le même nombre.",
+   "beads": [
+    9,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/3+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 3 plus 4 ?",
+   "explain": "3 plus 4 égale 7.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    3,
+    4
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/5+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 5 plus 4 ?",
+   "explain": "5 plus 4 égale 9.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    5,
+    4
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/5+6",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 5 plus 6 ?",
+   "explain": "5 plus 6 égale 11.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    5,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/7+6",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 7 plus 6 ?",
+   "explain": "7 plus 6 égale 13.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    7,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/7+8",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 7 plus 8 ?",
+   "explain": "7 plus 8 égale 15.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    7,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/9+8",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "17",
+   "choices": [
+    "17",
+    "18",
+    "16",
+    "7"
+   ],
+   "say": "Combien font 9 plus 8 ?",
+   "explain": "9 plus 8 égale 17.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    9,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/4+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 4 plus 5 ?",
+   "explain": "4 plus 5 égale 9.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#presque-doubles/6+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "presque-doubles"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 6 plus 7 ?",
+   "explain": "6 plus 7 égale 13.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/9+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 9 plus 1 ?",
+   "explain": "9 plus 1 égale 10.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/2+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 2 plus 9 ?",
+   "explain": "2 plus 9 égale 11.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    2,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/9+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 9 plus 3 ?",
+   "explain": "9 plus 3 égale 12.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    9,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/4+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 4 plus 9 ?",
+   "explain": "4 plus 9 égale 13.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    4,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/9+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 9 plus 5 ?",
+   "explain": "9 plus 5 égale 14.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    9,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/6+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 6 plus 9 ?",
+   "explain": "6 plus 9 égale 15.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    6,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/9+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "9|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "17",
+    "15",
+    "6"
+   ],
+   "say": "Combien font 9 plus 7 ?",
+   "explain": "9 plus 7 égale 16.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    9,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/8+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus9"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "17",
+   "choices": [
+    "17",
+    "18",
+    "16",
+    "7"
+   ],
+   "say": "Combien font 8 plus 9 ?",
+   "explain": "8 plus 9 égale 17.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/ligne-9-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus9"
+   ],
+   "row": 9,
+   "q": "Complète la ligne du 9.",
+   "holes": [
+    {
+     "a": 9,
+     "b": 1,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "9 plus 1 égale 10.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 9,
+     "b": 4,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "9 plus 4 égale 13.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 9,
+     "b": 6,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "9 plus 6 égale 15.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 9,
+     "b": 8,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "9 plus 8 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus9/ligne-9-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus9"
+   ],
+   "row": 9,
+   "q": "Complète la ligne du 9.",
+   "holes": [
+    {
+     "a": 9,
+     "b": 1,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "9 plus 1 égale 10.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 9,
+     "b": 2,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "9 plus 2 égale 11.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 9,
+     "b": 4,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "9 plus 4 égale 13.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 9,
+     "b": 7,
+     "answer": "16",
+     "choices": [
+      "16",
+      "17",
+      "15",
+      "6"
+     ],
+     "say": "9 plus 7 égale 16.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/5+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "Combien font 5 plus 1 ?",
+   "explain": "5 plus 1 égale 6.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    5,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/2+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 2 plus 5 ?",
+   "explain": "2 plus 5 égale 7.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/5+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 5 plus 3 ?",
+   "explain": "5 plus 3 égale 8.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    5,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/4+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 4 plus 5 ?",
+   "explain": "4 plus 5 égale 9.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/6+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 6 plus 5 ?",
+   "explain": "6 plus 5 égale 11.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/5+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 5 plus 7 ?",
+   "explain": "5 plus 7 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    5,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/8+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 8 plus 5 ?",
+   "explain": "8 plus 5 égale 13.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/5+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus5"
+   ],
+   "expr": [
+    "5|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 5 plus 9 ?",
+   "explain": "5 plus 9 égale 14.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    5,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/ligne-5-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus5"
+   ],
+   "row": 5,
+   "q": "Complète la ligne du 5.",
+   "holes": [
+    {
+     "a": 5,
+     "b": 2,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "5 plus 2 égale 7.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 5,
+     "b": 3,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "5 plus 3 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 5,
+     "b": 6,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "5 plus 6 égale 11.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 5,
+     "b": 7,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "5 plus 7 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus5/ligne-5-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus5"
+   ],
+   "row": 5,
+   "q": "Complète la ligne du 5.",
+   "holes": [
+    {
+     "a": 5,
+     "b": 4,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "5 plus 4 égale 9.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 5,
+     "b": 7,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "5 plus 7 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 5,
+     "b": 8,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "5 plus 8 égale 13.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 5,
+     "b": 9,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "5 plus 9 égale 14.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/3+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "Combien font 3 plus 1 ?",
+   "explain": "3 plus 1 égale 4.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    3,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/2+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "Combien font 2 plus 3 ?",
+   "explain": "2 plus 3 égale 5.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/4+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 4 plus 3 ?",
+   "explain": "4 plus 3 égale 7.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    4,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/3+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 3 plus 5 ?",
+   "explain": "3 plus 5 égale 8.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/6+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 6 plus 3 ?",
+   "explain": "6 plus 3 égale 9.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    6,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/3+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 3 plus 7 ?",
+   "explain": "3 plus 7 égale 10.",
+   "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine.",
+   "beads": [
+    3,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/8+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 8 plus 3 ?",
+   "explain": "8 plus 3 égale 11.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/3+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus3"
+   ],
+   "expr": [
+    "3|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 3 plus 9 ?",
+   "explain": "3 plus 9 égale 12.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    3,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/ligne-3-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus3"
+   ],
+   "row": 3,
+   "q": "Complète la ligne du 3.",
+   "holes": [
+    {
+     "a": 3,
+     "b": 1,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "3 plus 1 égale 4.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 3,
+     "b": 2,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "3 plus 2 égale 5.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 5,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "3 plus 5 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 3,
+     "b": 6,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "3 plus 6 égale 9.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/ligne-3-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus3"
+   ],
+   "row": 3,
+   "q": "Complète la ligne du 3.",
+   "holes": [
+    {
+     "a": 3,
+     "b": 1,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "3 plus 1 égale 4.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 3,
+     "b": 2,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "3 plus 2 égale 5.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 3,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "3 plus 3 égale 6.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 3,
+     "b": 7,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "3 plus 7 égale 10.",
+     "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus3/ligne-3-2",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus3"
+   ],
+   "row": 3,
+   "q": "Complète la ligne du 3.",
+   "holes": [
+    {
+     "a": 3,
+     "b": 2,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "3 plus 2 égale 5.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 4,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "3 plus 4 égale 7.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 3,
+     "b": 6,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "3 plus 6 égale 9.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 3,
+     "b": 9,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "3 plus 9 égale 12.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/4+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "7"
+   ],
+   "say": "Combien font 4 plus 1 ?",
+   "explain": "4 plus 1 égale 5.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    4,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/2+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "Combien font 2 plus 4 ?",
+   "explain": "2 plus 4 égale 6.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    4
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/4+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 4 plus 3 ?",
+   "explain": "4 plus 3 égale 7.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    4,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/4+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 4 plus 5 ?",
+   "explain": "4 plus 5 égale 9.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/6+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 6 plus 4 ?",
+   "explain": "6 plus 4 égale 10.",
+   "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine.",
+   "beads": [
+    6,
+    4
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/4+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 4 plus 7 ?",
+   "explain": "4 plus 7 égale 11.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    4,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/8+4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 8 plus 4 ?",
+   "explain": "8 plus 4 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    4
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/4+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus4"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 4 plus 9 ?",
+   "explain": "4 plus 9 égale 13.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    4,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/ligne-4-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus4"
+   ],
+   "row": 4,
+   "q": "Complète la ligne du 4.",
+   "holes": [
+    {
+     "a": 4,
+     "b": 1,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "4 plus 1 égale 5.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 4,
+     "b": 2,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "4 plus 2 égale 6.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 4,
+     "b": 6,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "4 plus 6 égale 10.",
+     "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine."
+    },
+    {
+     "a": 4,
+     "b": 7,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "4 plus 7 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/ligne-4-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus4"
+   ],
+   "row": 4,
+   "q": "Complète la ligne du 4.",
+   "holes": [
+    {
+     "a": 4,
+     "b": 3,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "4 plus 3 égale 7.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 4,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "4 plus 4 égale 8.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 4,
+     "b": 5,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "4 plus 5 égale 9.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 4,
+     "b": 8,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "4 plus 8 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus4/ligne-4-2",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus4"
+   ],
+   "row": 4,
+   "q": "Complète la ligne du 4.",
+   "holes": [
+    {
+     "a": 4,
+     "b": 2,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "4 plus 2 égale 6.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 4,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "4 plus 4 égale 8.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 4,
+     "b": 6,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "4 plus 6 égale 10.",
+     "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine."
+    },
+    {
+     "a": 4,
+     "b": 7,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "4 plus 7 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/6+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "Combien font 6 plus 1 ?",
+   "explain": "6 plus 1 égale 7.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    6,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/2+6",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 2 plus 6 ?",
+   "explain": "2 plus 6 égale 8.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/6+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 6 plus 3 ?",
+   "explain": "6 plus 3 égale 9.",
+   "hint": "Pars du plus grand nombre, puis avance.",
+   "beads": [
+    6,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/4+6",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 4 plus 6 ?",
+   "explain": "4 plus 6 égale 10.",
+   "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine.",
+   "beads": [
+    4,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/6+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 6 plus 5 ?",
+   "explain": "6 plus 5 égale 11.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/6+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 6 plus 7 ?",
+   "explain": "6 plus 7 égale 13.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/8+6",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 8 plus 6 ?",
+   "explain": "8 plus 6 égale 14.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    6
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/6+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus6"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 6 plus 9 ?",
+   "explain": "6 plus 9 égale 15.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    6,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/ligne-6-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus6"
+   ],
+   "row": 6,
+   "q": "Complète la ligne du 6.",
+   "holes": [
+    {
+     "a": 6,
+     "b": 1,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "6 plus 1 égale 7.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 6,
+     "b": 2,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "6 plus 2 égale 8.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 6,
+     "b": 7,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "6 plus 7 égale 13.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 6,
+     "b": 8,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "6 plus 8 égale 14.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/ligne-6-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus6"
+   ],
+   "row": 6,
+   "q": "Complète la ligne du 6.",
+   "holes": [
+    {
+     "a": 6,
+     "b": 3,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "6 plus 3 égale 9.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 6,
+     "b": 6,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "6 plus 6 égale 12.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 6,
+     "b": 7,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "6 plus 7 égale 13.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 6,
+     "b": 8,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "6 plus 8 égale 14.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus6/ligne-6-2",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus6"
+   ],
+   "row": 6,
+   "q": "Complète la ligne du 6.",
+   "holes": [
+    {
+     "a": 6,
+     "b": 1,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "6 plus 1 égale 7.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 6,
+     "b": 3,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "6 plus 3 égale 9.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 6,
+     "b": 6,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "6 plus 6 égale 12.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 6,
+     "b": 7,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "6 plus 7 égale 13.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/7+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "Combien font 7 plus 1 ?",
+   "explain": "7 plus 1 égale 8.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/2+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 2 plus 7 ?",
+   "explain": "2 plus 7 égale 9.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/7+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 7 plus 3 ?",
+   "explain": "7 plus 3 égale 10.",
+   "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine.",
+   "beads": [
+    7,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/4+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 4 plus 7 ?",
+   "explain": "4 plus 7 égale 11.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    4,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/7+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 7 plus 5 ?",
+   "explain": "7 plus 5 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/6+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 6 plus 7 ?",
+   "explain": "6 plus 7 égale 13.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    6,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/8+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 8 plus 7 ?",
+   "explain": "8 plus 7 égale 15.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    8,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/7+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus7"
+   ],
+   "expr": [
+    "7|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "17",
+    "15",
+    "6"
+   ],
+   "say": "Combien font 7 plus 9 ?",
+   "explain": "7 plus 9 égale 16.",
+   "hint": "Pour ajouter 9, ajoute 10, puis enlève 1.",
+   "beads": [
+    7,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/ligne-7-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus7"
+   ],
+   "row": 7,
+   "q": "Complète la ligne du 7.",
+   "holes": [
+    {
+     "a": 7,
+     "b": 1,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "7 plus 1 égale 8.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 7,
+     "b": 4,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "7 plus 4 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 7,
+     "b": 5,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "7 plus 5 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 7,
+     "b": 9,
+     "answer": "16",
+     "choices": [
+      "16",
+      "17",
+      "15",
+      "6"
+     ],
+     "say": "7 plus 9 égale 16.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/ligne-7-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus7"
+   ],
+   "row": 7,
+   "q": "Complète la ligne du 7.",
+   "holes": [
+    {
+     "a": 7,
+     "b": 2,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "7 plus 2 égale 9.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 7,
+     "b": 6,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "7 plus 6 égale 13.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 7,
+     "b": 7,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "7 plus 7 égale 14.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 7,
+     "b": 8,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "7 plus 8 égale 15.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus7/ligne-7-2",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus7"
+   ],
+   "row": 7,
+   "q": "Complète la ligne du 7.",
+   "holes": [
+    {
+     "a": 7,
+     "b": 2,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "7 plus 2 égale 9.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 7,
+     "b": 3,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "7 plus 3 égale 10.",
+     "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine."
+    },
+    {
+     "a": 7,
+     "b": 5,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "7 plus 5 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 7,
+     "b": 8,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "7 plus 8 égale 15.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/8+1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "Combien font 8 plus 1 ?",
+   "explain": "8 plus 1 égale 9.",
+   "hint": "Ajouter 1, c'est dire le nombre juste après.",
+   "beads": [
+    8,
+    1
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/2+8",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "2|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "12"
+   ],
+   "say": "Combien font 2 plus 8 ?",
+   "explain": "2 plus 8 égale 10.",
+   "hint": "Ajouter 2, c'est avancer de deux bonds.",
+   "beads": [
+    2,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/8+3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "11",
+   "choices": [
+    "11",
+    "12",
+    "10",
+    "1"
+   ],
+   "say": "Combien font 8 plus 3 ?",
+   "explain": "8 plus 3 égale 11.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    3
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/4+8",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "4|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "13",
+    "11",
+    "2"
+   ],
+   "say": "Combien font 4 plus 8 ?",
+   "explain": "4 plus 8 égale 12.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    4,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/8+5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "13",
+   "choices": [
+    "13",
+    "14",
+    "12",
+    "3"
+   ],
+   "say": "Combien font 8 plus 5 ?",
+   "explain": "8 plus 5 égale 13.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    8,
+    5
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/6+8",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "6|a",
+    "+",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "15",
+    "13",
+    "4"
+   ],
+   "say": "Combien font 6 plus 8 ?",
+   "explain": "6 plus 8 égale 14.",
+   "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+   "beads": [
+    6,
+    8
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/8+7",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "16",
+    "14",
+    "5"
+   ],
+   "say": "Combien font 8 plus 7 ?",
+   "explain": "8 plus 7 égale 15.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    8,
+    7
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/8+9",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "plus8"
+   ],
+   "expr": [
+    "8|a",
+    "+",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "17",
+   "choices": [
+    "17",
+    "18",
+    "16",
+    "7"
+   ],
+   "say": "Combien font 8 plus 9 ?",
+   "explain": "8 plus 9 égale 17.",
+   "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+   "beads": [
+    8,
+    9
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/ligne-8-0",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus8"
+   ],
+   "row": 8,
+   "q": "Complète la ligne du 8.",
+   "holes": [
+    {
+     "a": 8,
+     "b": 2,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "8 plus 2 égale 10.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 8,
+     "b": 3,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "8 plus 3 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 8,
+     "b": 6,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "8 plus 6 égale 14.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 8,
+     "b": 7,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "8 plus 7 égale 15.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/ligne-8-1",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus8"
+   ],
+   "row": 8,
+   "q": "Complète la ligne du 8.",
+   "holes": [
+    {
+     "a": 8,
+     "b": 3,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "8 plus 3 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 8,
+     "b": 4,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "8 plus 4 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 8,
+     "b": 8,
+     "answer": "16",
+     "choices": [
+      "16",
+      "17",
+      "15",
+      "6"
+     ],
+     "say": "8 plus 8 égale 16.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 8,
+     "b": 9,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "8 plus 9 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#plus8/ligne-8-2",
+   "type": "table",
+   "layout": "ligne",
+   "diff": 2.5,
+   "notions": [
+    "plus8"
+   ],
+   "row": 8,
+   "q": "Complète la ligne du 8.",
+   "holes": [
+    {
+     "a": 8,
+     "b": 4,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "8 plus 4 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 8,
+     "b": 6,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "8 plus 6 égale 14.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 8,
+     "b": 7,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "8 plus 7 égale 15.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 8,
+     "b": 9,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "8 plus 9 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-0",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 5,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "1 plus 5 égale 6.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 2,
+     "b": 9,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "2 plus 9 égale 11.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 4,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "3 plus 4 égale 7.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 5,
+     "b": 3,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "5 plus 3 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 6,
+     "b": 7,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "6 plus 7 égale 13.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 7,
+     "b": 9,
+     "answer": "16",
+     "choices": [
+      "16",
+      "17",
+      "15",
+      "6"
+     ],
+     "say": "7 plus 9 égale 16.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 8,
+     "b": 3,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "8 plus 3 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-1",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 2,
+     "answer": "3",
+     "choices": [
+      "3",
+      "4",
+      "2",
+      "5"
+     ],
+     "say": "1 plus 2 égale 3.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 4,
+     "b": 6,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "4 plus 6 égale 10.",
+     "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine."
+    },
+    {
+     "a": 5,
+     "b": 6,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "5 plus 6 égale 11.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 6,
+     "b": 1,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "6 plus 1 égale 7.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 7,
+     "b": 2,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "7 plus 2 égale 9.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 8,
+     "b": 9,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "8 plus 9 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 9,
+     "b": 2,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "9 plus 2 égale 11.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-2",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "2 plus 5 égale 7.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 3,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "3 plus 3 égale 6.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 4,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "4 plus 4 égale 8.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 5,
+     "b": 3,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "5 plus 3 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 6,
+     "b": 1,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "6 plus 1 égale 7.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 7,
+     "b": 1,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "7 plus 1 égale 8.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 9,
+     "b": 6,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "9 plus 6 égale 15.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-3",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 2,
+     "b": 1,
+     "answer": "3",
+     "choices": [
+      "3",
+      "4",
+      "2",
+      "5"
+     ],
+     "say": "2 plus 1 égale 3.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 3,
+     "b": 2,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "3 plus 2 égale 5.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 4,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "4 plus 4 égale 8.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 5,
+     "b": 2,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "5 plus 2 égale 7.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 7,
+     "b": 3,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "7 plus 3 égale 10.",
+     "hint": "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine."
+    },
+    {
+     "a": 8,
+     "b": 9,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "8 plus 9 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 9,
+     "b": 2,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "9 plus 2 égale 11.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-4",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 3,
+     "answer": "4",
+     "choices": [
+      "4",
+      "5",
+      "3",
+      "6"
+     ],
+     "say": "1 plus 3 égale 4.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "2 plus 5 égale 7.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 5,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "3 plus 5 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 5,
+     "b": 3,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "5 plus 3 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 7,
+     "b": 9,
+     "answer": "16",
+     "choices": [
+      "16",
+      "17",
+      "15",
+      "6"
+     ],
+     "say": "7 plus 9 égale 16.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 8,
+     "b": 2,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "8 plus 2 égale 10.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 9,
+     "b": 1,
+     "answer": "10",
+     "choices": [
+      "10",
+      "11",
+      "9",
+      "12"
+     ],
+     "say": "9 plus 1 égale 10.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-5",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 1,
+     "answer": "2",
+     "choices": [
+      "2",
+      "3",
+      "1",
+      "4"
+     ],
+     "say": "1 plus 1 égale 2.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 2,
+     "b": 7,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "11"
+     ],
+     "say": "2 plus 7 égale 9.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 5,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "3 plus 5 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 4,
+     "b": 9,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "4 plus 9 égale 13.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 5,
+     "b": 3,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "5 plus 3 égale 8.",
+     "hint": "Pars du plus grand nombre, puis avance."
+    },
+    {
+     "a": 6,
+     "b": 2,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "10"
+     ],
+     "say": "6 plus 2 égale 8.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 8,
+     "b": 7,
+     "answer": "15",
+     "choices": [
+      "15",
+      "16",
+      "14",
+      "5"
+     ],
+     "say": "8 plus 7 égale 15.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-6",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 5,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "1 plus 5 égale 6.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 2,
+     "b": 4,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "8"
+     ],
+     "say": "2 plus 4 égale 6.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 9,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "3 plus 9 égale 12.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 4,
+     "b": 8,
+     "answer": "12",
+     "choices": [
+      "12",
+      "13",
+      "11",
+      "2"
+     ],
+     "say": "4 plus 8 égale 12.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 7,
+     "b": 7,
+     "answer": "14",
+     "choices": [
+      "14",
+      "15",
+      "13",
+      "4"
+     ],
+     "say": "7 plus 7 égale 14.",
+     "hint": "C'est un double : deux fois le même nombre."
+    },
+    {
+     "a": 8,
+     "b": 9,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "8 plus 9 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 9,
+     "b": 2,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "9 plus 2 égale 11.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    }
+   ]
+  },
+  {
+   "id": "maths-table-addition#table-complete/grille-7",
+   "type": "table",
+   "layout": "grille",
+   "diff": 3,
+   "notions": [
+    "table-complete"
+   ],
+   "q": "Complète la table d'addition.",
+   "holes": [
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "9"
+     ],
+     "say": "2 plus 5 égale 7.",
+     "hint": "Ajouter 2, c'est avancer de deux bonds."
+    },
+    {
+     "a": 3,
+     "b": 8,
+     "answer": "11",
+     "choices": [
+      "11",
+      "12",
+      "10",
+      "1"
+     ],
+     "say": "3 plus 8 égale 11.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 4,
+     "b": 1,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "7"
+     ],
+     "say": "4 plus 1 égale 5.",
+     "hint": "Ajouter 1, c'est dire le nombre juste après."
+    },
+    {
+     "a": 5,
+     "b": 8,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "5 plus 8 égale 13.",
+     "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste."
+    },
+    {
+     "a": 6,
+     "b": 7,
+     "answer": "13",
+     "choices": [
+      "13",
+      "14",
+      "12",
+      "3"
+     ],
+     "say": "6 plus 7 égale 13.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    },
+    {
+     "a": 7,
+     "b": 9,
+     "answer": "16",
+     "choices": [
+      "16",
+      "17",
+      "15",
+      "6"
+     ],
+     "say": "7 plus 9 égale 16.",
+     "hint": "Pour ajouter 9, ajoute 10, puis enlève 1."
+    },
+    {
+     "a": 8,
+     "b": 9,
+     "answer": "17",
+     "choices": [
+      "17",
+      "18",
+      "16",
+      "7"
+     ],
+     "say": "8 plus 9 égale 17.",
+     "hint": "C'est presque un double. Pense au double du plus petit, puis ajoute 1."
+    }
+   ]
+  }
+ ],
+ "speech": [
+  "0",
+  "1",
+  "1 plus 1 égale 2.",
+  "1 plus 2 égale 3.",
+  "1 plus 3 égale 4.",
+  "1 plus 4 égale 5.",
+  "1 plus 5 égale 6.",
+  "1 plus 6 égale 7.",
+  "1 plus 6, c'est 6 plus combien ?",
+  "1 plus 6, c'est pareil que 6 plus 1. Les deux font 7.",
+  "1 plus 7 égale 8.",
+  "1 plus 8 égale 9.",
+  "1 plus 9 égale 10.",
+  "1 plus 9, c'est 9 plus combien ?",
+  "1 plus 9, c'est pareil que 9 plus 1. Les deux font 10.",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "2",
+  "2 plus 1 égale 3.",
+  "2 plus 2 égale 4.",
+  "2 plus 3 égale 5.",
+  "2 plus 4 égale 6.",
+  "2 plus 5 égale 7.",
+  "2 plus 6 égale 8.",
+  "2 plus 7 égale 9.",
+  "2 plus 7, c'est 7 plus combien ?",
+  "2 plus 7, c'est pareil que 7 plus 2. Les deux font 9.",
+  "2 plus 8 ou 8 plus 2 : même résultat !",
+  "2 plus 8 égale 10.",
+  "2 plus 8, c'est 8 plus combien ?",
+  "2 plus 8, c'est pareil que 8 plus 2.",
+  "2 plus 8, c'est pareil que 8 plus 2. Les deux font 10.",
+  "2 plus 9 égale 11.",
+  "2 plus 9, c'est 9 plus combien ?",
+  "2 plus 9, c'est pareil que 9 plus 2. Les deux font 11.",
+  "20",
+  "3",
+  "3 plus 1 égale 4.",
+  "3 plus 2 égale 5.",
+  "3 plus 3 égale 6.",
+  "3 plus 4 égale 7.",
+  "3 plus 5 égale 8.",
+  "3 plus 6 égale 9.",
+  "3 plus 7 égale 10.",
+  "3 plus 7, c'est 7 plus combien ?",
+  "3 plus 7, c'est pareil que 7 plus 3. Les deux font 10.",
+  "3 plus 8 égale 11.",
+  "3 plus 8, c'est comme 8 plus 3 : je pars du plus grand.",
+  "3 plus 9 égale 12.",
+  "3 plus 9, c'est 9 plus combien ?",
+  "3 plus 9, c'est pareil que 9 plus 3. Les deux font 12.",
+  "4",
+  "4 plus 1 égale 5.",
+  "4 plus 2 égale 6.",
+  "4 plus 3 égale 7.",
+  "4 plus 4 égale 8.",
+  "4 plus 5 égale 9.",
+  "4 plus 6 égale 10.",
+  "4 plus 7 : 7 plus 3 égale 10, il reste 1. Ça fait 11.",
+  "4 plus 7 égale 11.",
+  "4 plus 8 égale 12.",
+  "4 plus 8, c'est 8 plus combien ?",
+  "4 plus 8, c'est pareil que 8 plus 4. Les deux font 12.",
+  "4 plus 9 égale 13.",
+  "5",
+  "5 plus 1 égale 6.",
+  "5 plus 2 égale 7.",
+  "5 plus 3 : une main, et encore 3 doigts. Ça fait 8.",
+  "5 plus 3 égale 8.",
+  "5 plus 4 égale 9.",
+  "5 plus 5 égale 10.",
+  "5 plus 6 égale 11.",
+  "5 plus 7 égale 12.",
+  "5 plus 8 égale 13.",
+  "5 plus 9 égale 14.",
+  "5, c'est une main entière.",
+  "6",
+  "6 plus 1 égale 7.",
+  "6 plus 2 égale 8.",
+  "6 plus 3 égale 9.",
+  "6 plus 4 égale 10.",
+  "6 plus 5 égale 11.",
+  "6 plus 6 égale 12, et 1 de plus, 13.",
+  "6 plus 6 égale 12.",
+  "6 plus 7 : 6 plus 6 égale 12, et encore 1, ça fait 13.",
+  "6 plus 7 égale 13.",
+  "6 plus 8 : 8 plus 2 égale 10, il reste 4. Ça fait 14.",
+  "6 plus 8 égale 14.",
+  "6 plus 9 égale 15.",
+  "6, puis 7, 8 : 6 plus 2 égale 8.",
+  "7",
+  "7 plus 1 égale 8.",
+  "7 plus 2 égale 9.",
+  "7 plus 3 égale 10.",
+  "7 plus 4 égale 11.",
+  "7 plus 5 : 7 plus 3 égale 10, il reste 2. Ça fait 12.",
+  "7 plus 5 égale 12.",
+  "7 plus 6 égale 13.",
+  "7 plus 7 égale 14.",
+  "7 plus 8 égale 15.",
+  "7 plus 9 égale 16.",
+  "8",
+  "8 plus 1 égale 9.",
+  "8 plus 2 égale 10.",
+  "8 plus 3 égale 11.",
+  "8 plus 4 égale 12.",
+  "8 plus 5 égale 13.",
+  "8 plus 6 égale 14.",
+  "8 plus 7 égale 15.",
+  "8 plus 8 égale 16.",
+  "8 plus 9 égale 17.",
+  "9",
+  "9 plus 1 égale 10.",
+  "9 plus 2 égale 11.",
+  "9 plus 3 égale 12.",
+  "9 plus 4 égale 13.",
+  "9 plus 5 : 10 plus 5 égale 15, moins 1, ça fait 14.",
+  "9 plus 5 égale 14.",
+  "9 plus 6 égale 15.",
+  "9 plus 7 égale 16.",
+  "9 plus 8 égale 17.",
+  "9 plus 9 égale 18.",
+  "Ajouter 1",
+  "Ajouter 1 : c'est dire le nombre juste après.",
+  "Ajouter 1 : un tout petit pas, le nombre juste après.",
+  "Ajouter 1, c'est dire le nombre juste après.",
+  "Ajouter 1, c'est dire le nombre juste après. Ajouter 2, c'est avancer de deux bonds.",
+  "Ajouter 2",
+  "Ajouter 2 : c'est avancer de deux bonds.",
+  "Ajouter 2 : deux bonds de lapin.",
+  "Ajouter 2, c'est avancer de deux bonds.",
+  "Ajouter 5",
+  "Ajouter 5 : un paquet de 5 boules, comme une main.",
+  "Ajouter 9",
+  "Ajouter 9 : j'ajoute 10, puis j'enlève 1.",
+  "Après 7, il y a 8 : 7 plus 1 égale 8.",
+  "Bonne nouvelle : tu connais déjà presque toute cette ligne !",
+  "C'est presque un double. Pense au double du plus petit, puis ajoute 1.",
+  "C'est un double : deux fois le même nombre.",
+  "Ce sont des amis de 10. Regarde le boulier : la ligne est pleine.",
+  "Changer l'ordre",
+  "Changer l'ordre : 2 plus 8, c'est pareil que 8 plus 2.",
+  "Combien font 1 plus 1 ?",
+  "Combien font 1 plus 3 ?",
+  "Combien font 1 plus 5 ?",
+  "Combien font 1 plus 7 ?",
+  "Combien font 1 plus 8 ?",
+  "Combien font 1 plus 9 ?",
+  "Combien font 2 plus 1 ?",
+  "Combien font 2 plus 2 ?",
+  "Combien font 2 plus 3 ?",
+  "Combien font 2 plus 4 ?",
+  "Combien font 2 plus 5 ?",
+  "Combien font 2 plus 6 ?",
+  "Combien font 2 plus 7 ?",
+  "Combien font 2 plus 8 ?",
+  "Combien font 2 plus 9 ?",
+  "Combien font 3 plus 1 ?",
+  "Combien font 3 plus 3 ?",
+  "Combien font 3 plus 4 ?",
+  "Combien font 3 plus 5 ?",
+  "Combien font 3 plus 7 ?",
+  "Combien font 3 plus 9 ?",
+  "Combien font 4 plus 1 ?",
+  "Combien font 4 plus 2 ?",
+  "Combien font 4 plus 3 ?",
+  "Combien font 4 plus 4 ?",
+  "Combien font 4 plus 5 ?",
+  "Combien font 4 plus 6 ?",
+  "Combien font 4 plus 7 ?",
+  "Combien font 4 plus 8 ?",
+  "Combien font 4 plus 9 ?",
+  "Combien font 5 plus 1 ?",
+  "Combien font 5 plus 3 ?",
+  "Combien font 5 plus 4 ?",
+  "Combien font 5 plus 5 ?",
+  "Combien font 5 plus 6 ?",
+  "Combien font 5 plus 7 ?",
+  "Combien font 5 plus 9 ?",
+  "Combien font 6 plus 1 ?",
+  "Combien font 6 plus 2 ?",
+  "Combien font 6 plus 3 ?",
+  "Combien font 6 plus 4 ?",
+  "Combien font 6 plus 5 ?",
+  "Combien font 6 plus 6 ?",
+  "Combien font 6 plus 7 ?",
+  "Combien font 6 plus 8 ?",
+  "Combien font 6 plus 9 ?",
+  "Combien font 7 plus 1 ?",
+  "Combien font 7 plus 3 ?",
+  "Combien font 7 plus 5 ?",
+  "Combien font 7 plus 6 ?",
+  "Combien font 7 plus 7 ?",
+  "Combien font 7 plus 8 ?",
+  "Combien font 7 plus 9 ?",
+  "Combien font 8 plus 1 ?",
+  "Combien font 8 plus 2 ?",
+  "Combien font 8 plus 3 ?",
+  "Combien font 8 plus 4 ?",
+  "Combien font 8 plus 5 ?",
+  "Combien font 8 plus 6 ?",
+  "Combien font 8 plus 7 ?",
+  "Combien font 8 plus 8 ?",
+  "Combien font 8 plus 9 ?",
+  "Combien font 9 plus 1 ?",
+  "Combien font 9 plus 3 ?",
+  "Combien font 9 plus 5 ?",
+  "Combien font 9 plus 7 ?",
+  "Combien font 9 plus 8 ?",
+  "Combien font 9 plus 9 ?",
+  "Complète d'abord jusqu'à 10, puis ajoute ce qui reste.",
+  "Complète la ligne du 1.",
+  "Complète la ligne du 2.",
+  "Complète la ligne du 3.",
+  "Complète la ligne du 4.",
+  "Complète la ligne du 5.",
+  "Complète la ligne du 6.",
+  "Complète la ligne du 7.",
+  "Complète la ligne du 8.",
+  "Complète la ligne du 9.",
+  "Complète la table d'addition.",
+  "Grâce à l'échange, la moitié de la table est déjà connue !",
+  "Il ajoute 10 et il enlève 1 : abracadabra !",
+  "Je pars toujours du plus grand nombre : c'est plus facile.",
+  "L'arc-en-ciel",
+  "La ligne du 3",
+  "La ligne du 3 : 3 plus 1, 3 plus 2, jusqu'à 3 plus 9.",
+  "La ligne du 4",
+  "La ligne du 4 : 4 plus 1, 4 plus 2, jusqu'à 4 plus 9.",
+  "La ligne du 6",
+  "La ligne du 6 : 6 plus 1, 6 plus 2, jusqu'à 6 plus 9.",
+  "La ligne du 7",
+  "La ligne du 7 : 7 plus 1, 7 plus 2, jusqu'à 7 plus 9.",
+  "La ligne du 8",
+  "La ligne du 8 : 8 plus 1, 8 plus 2, jusqu'à 8 plus 9.",
+  "La main",
+  "La table d'addition, on l'apprend ligne après ligne, avec une astuce pour chaque ligne.",
+  "La table d'or",
+  "Le lapin",
+  "Le magicien du 9",
+  "Le miroir",
+  "Le pas de fourmi",
+  "Le trèfle",
+  "Les doubles",
+  "Les doubles : 3 plus 3, 4 plus 4… deux fois le même nombre.",
+  "Les doubles : deux fois le même nombre.",
+  "Les doubles se retiennent comme une chanson : 6 plus 6, 12. 7 plus 7, 14.",
+  "Les doubles, et leurs voisins les presque doubles.",
+  "Les grandes lignes : 6, 7 et 8.",
+  "Les jumeaux",
+  "Les lignes du 3 et du 4 n'ont plus de secret.",
+  "On peut changer l'ordre : 2 plus 8, c'est pareil que 8 plus 2. Je pars du plus grand.",
+  "Pars du plus grand nombre, puis avance.",
+  "Pour ajouter 9, ajoute 10, puis enlève 1.",
+  "Pour ajouter 9, j'ajoute 10, puis j'enlève 1.",
+  "Pour chaque case, cherche la bonne astuce.",
+  "Pour les autres, je passe par 10 : je complète jusqu'à 10, puis j'ajoute ce qui reste.",
+  "Presque un double",
+  "Presque un double : 6 plus 7, c'est 6 plus 6, plus 1.",
+  "Presque un double : le double du plus petit, plus 1.",
+  "Regarde les deux nombres : ce sont les mêmes, dans l'autre sens.",
+  "Toute la table",
+  "Toute la table : toutes les lignes, mélangées.",
+  "Toute la table d'addition est dans ta tête !"
+ ]
+}

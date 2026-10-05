@@ -1,0 +1,86 @@
+{
+  "id": "maths-faire-10",
+  "category": "maths",
+  "subject": "Maths",
+  "title": "Faire 10",
+  "subtitle": "Les amis de 10, puis jusqu'à 20",
+  "emoji": "🔟",
+  "color": "#d65d8a",
+  "ordered": true,
+  "newPerSession": 1,
+  "perNew": 5,
+  "source": "Fiche : je cherche le nombre qu'il manque pour faire 10 ; j'entoure les deux nombres dont la somme est égale à 10, puis je calcule.",
+  "summary": [
+    "Les amis de 10, ce sont deux nombres qui font 10 ensemble.",
+    "1 et 9. 2 et 8. 3 et 7. 4 et 6. 5 et 5.",
+    "Sur le boulier, une ligne pleine, c'est 10.",
+    "Après 10, on remplit la deuxième ligne : 10 plus 7 égale 17. Dans dix-sept, on entend dix et sept.",
+    "Dans un long calcul, je cherche d'abord deux amis de 10. 3 plus 2 plus 7 plus 4 : 3 et 7 font 10, puis 10 plus 6 égale 16.",
+    "Pour 8 plus 5, je complète d'abord jusqu'à 10 : 8 plus 2 égale 10. Il reste 3 : 10 plus 3 égale 13."
+  ],
+  "notions": [
+    {
+      "id": "amis-10",
+      "term": "les amis de 10",
+      "nom": "les amis de 10",
+      "def": "deux nombres qui font 10 ensemble",
+      "emoji": "🤝",
+      "noAuto": true,
+      "tip": "1 et 9, 2 et 8, 3 et 7, 4 et 6, 5 et 5.",
+      "example": { "expr": ["7|a", "+", "3|b", "=", "10"], "beads": [7, 3], "say": "7 plus 3 égale 10." }
+    },
+    {
+      "id": "dix-plus",
+      "term": "10 plus un nombre",
+      "nom": "10 plus un nombre",
+      "def": "une ligne pleine, puis les boules de la deuxième ligne",
+      "emoji": "🔢",
+      "noAuto": true,
+      "tip": "Dans dix-sept, on entend dix et sept.",
+      "example": { "expr": ["10|a", "+", "7|b", "=", "17"], "beads": [10, 7], "say": "10 plus 7 égale 17." }
+    },
+    {
+      "id": "chercher-10",
+      "term": "chercher les amis de 10",
+      "nom": "chercher les amis de 10",
+      "def": "dans un long calcul, je trouve d'abord deux nombres qui font 10",
+      "emoji": "🔍",
+      "noAuto": true,
+      "tip": "Ensuite, j'ajoute ce qui reste à 10 : c'est facile !",
+      "example": { "expr": ["3|a", "+", "2", "+", "7|a", "+", "4", "=", "10|a", "+", "6", "=", "16"], "say": "3 plus 7 égale 10. 10 plus 6 égale 16." }
+    },
+    {
+      "id": "passer-10",
+      "term": "passer par 10",
+      "nom": "passer par 10",
+      "def": "je complète jusqu'à 10, puis j'ajoute ce qui reste",
+      "emoji": "🌉",
+      "noAuto": true,
+      "tip": "8 plus 5 : 8 plus 2 égale 10, il reste 3, ça fait 13.",
+      "example": { "expr": ["8|a", "+", "5|b", "=", "8|a", "+", "2|b", "+", "3|b", "=", "13"], "beads": [8, 5], "say": "8 plus 2 égale 10. 10 plus 3 égale 13." }
+    }
+  ],
+  "maths": [
+    { "gen": "manque", "notion": "amis-10", "diff": 2.5, "pairs": [[1, 10], [2, 10], [3, 10], [4, 10], [5, 10], [6, 10], [7, 10], [8, 10], [9, 10]],
+      "hint": "Regarde le boulier : combien de boules manque-t-il pour remplir la ligne ?" },
+    { "gen": "arbre", "notion": "amis-10", "trees": [[6, 3, null], [null, 7, 1], [2, null, 5], [4, null, 3], [1, 5, null], [null, 2, 2], [5, 1, null], [3, null, 6]],
+      "hint": "Ajoute d'abord les deux nombres, puis cherche combien il manque pour faire 10." },
+    { "gen": "somme", "notion": "dix-plus", "diff": 2, "pairs": [[10, 2], [10, 5], [10, 7], [10, 9], [10, 4], [3, 10], [6, 10], [8, 10]],
+      "hint": "Une ligne pleine, c'est 10. Compte les boules de la deuxième ligne." },
+    { "gen": "dizaine", "notion": "dix-plus", "numbers": [12, 14, 15, 16, 17, 18, 19],
+      "hint": "Écoute bien le nombre : dans dix-sept, on entend dix et sept." },
+    { "gen": "boulier", "notion": "dix-plus", "show": [12, 15, 18, 13] },
+    { "gen": "dix", "notion": "chercher-10", "terms": [[1, 1, 7, 3], [2, 6, 3, 4], [4, 5, 9, 1], [7, 5, 5, 2], [8, 6, 2, 1], [3, 7, 6, 3], [3, 2, 7, 4], [6, 2, 4, 1], [5, 3, 1, 9], [2, 4, 8, 3]] },
+    { "gen": "decomp", "notion": "passer-10", "pairs": [[8, 5], [9, 4], [7, 5], [8, 3], [9, 6], [7, 4], [6, 5], [8, 6], [7, 6], [9, 3]] },
+    { "gen": "somme", "notion": "passer-10", "diff": 2.5, "pairs": [[8, 4], [9, 5], [7, 5], [6, 6], [8, 7], [9, 2], [5, 7], [4, 8], [3, 9]],
+      "hint": "Complète d'abord jusqu'à 10, puis ajoute ce qui reste." },
+    { "gen": "boulier", "notion": "passer-10", "sums": [[8, 5], [9, 4], [7, 6]] }
+  ],
+  "cards": [
+    { "id": "f10-amis", "name": "Les amis de 10", "emoji": "🤝", "color": "#d65d8a", "notions": ["amis-10"], "desc": "1 et 9, 2 et 8, 3 et 7, 4 et 6, 5 et 5 : toujours ensemble !" },
+    { "id": "f10-ligne", "name": "La ligne pleine", "emoji": "🧮", "color": "#4f8fd0", "notions": ["dix-plus"], "desc": "Une ligne de boulier pleine, c'est 10." },
+    { "id": "f10-loupe", "name": "La loupe", "emoji": "🔍", "color": "#3a9a8a", "notions": ["chercher-10"], "desc": "Elle repère tout de suite les amis de 10." },
+    { "id": "f10-pont", "name": "Le pont du 10", "emoji": "🌉", "color": "#8a6bc7", "notions": ["passer-10"], "desc": "Pour aller de l'autre côté de 10, on s'arrête d'abord sur 10." },
+    { "id": "f10-legende", "name": "Le grand 10", "emoji": "🏆", "color": "#f5b700", "notions": "all", "level": 3, "legend": true, "desc": "Tu sais faire 10 dans tous les sens !" }
+  ]
+}

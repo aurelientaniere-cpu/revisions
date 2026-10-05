@@ -5,6 +5,7 @@ import { P, loadPhrases } from './phrases.js';
 import { loadLessons, loadCompanions } from './lessons.js';
 import { buildSession, grade, markSeen, ns, lessonProgress, dueCount, bestLesson, retryItem } from './srs.js';
 import { renderStep, schemaView, spellView, musicButton } from './activities.js';
+import { exprView, boulierView } from './maths.js';
 import { starsForSession, addStars, recordDay, checkCards, setCompanions, current, stageName, companionArt, graduate, adultName, speciesOf, companionsView } from './rewards.js';
 import { parentGate } from './parent.js';
 
@@ -88,6 +89,7 @@ const CATEGORIES = [
   { id: 'histoire', name: 'Histoire', emoji: '🏰', color: '#8a6bc7' },
   { id: 'geographie', name: 'Géographie', emoji: '🗺️', color: '#3a9a8a' },
   { id: 'orthographe', name: 'Orthographe', emoji: '✏️', color: '#c0703c' },
+  { id: 'maths', name: 'Maths', emoji: '🔢', color: '#d65d8a' },
   { id: 'sciences', name: 'Sciences', emoji: '🔬', color: '#4f8fd0' },
   { id: 'anglais', name: 'Anglais', emoji: '🇬🇧', color: '#3a6fb5' },
 ];
@@ -194,7 +196,9 @@ function start(L) {
   };
 
   async function discover(n) {
-    const tag = h('div', { class: 'discover-tag' }, '✨ Nouveau mot');
+    // Maths : une astuce de calcul, avec son exemple écrit et sur le boulier.
+    const ex = n.example;
+    const tag = h('div', { class: 'discover-tag' }, ex ? '✨ Nouvelle astuce' : '✨ Nouveau mot');
     const card = h('div', { class: 'panel discover' },
       L.img(n.id) ? h('img', { class: 'discover-img', src: L.img(n.id), alt: '' }) : h('div', { class: 'big-emoji' }, n.emoji || '📘'),
       h('div', { style: { display: 'flex', flexDirection: 'column', gap: '8px' } },
@@ -204,13 +208,15 @@ function start(L) {
         n.tip ? h('div', { class: 'tip' }, `💡 ${n.tip}`) : null));
     const text = `${cap(n.nom || n.term)} : ${n.def}.`;
     screen(bar(), card,
+      ex ? exprView(ex.expr) : null,
+      ex && ex.beads ? boulierView(ex.beads) : null,
       n.audio ? musicButton(n.audio) : null,
       n.zone && L.schema ? await schemaView(L, n.zone) : null,
       h('div', { class: 'row' },
-        h('button', { class: 'icon', onclick: () => say([text, n.tip]) }, '🔊'),
+        h('button', { class: 'icon', onclick: () => say([text, ex && ex.say, n.tip]) }, '🔊'),
         h('span', { class: 'spacer' }),
         h('button', { class: 'primary big', onclick: () => { markSeen(L, n.id); next(); } }, 'J’ai compris 👍')));
-    say([P.newWord, text, n.tip]);
+    say([ex ? P.newTip : P.newWord, text, ex && ex.say, n.tip]);
   }
 
   function show(item) {

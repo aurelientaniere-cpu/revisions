@@ -92,8 +92,11 @@ function nextRun(lesson) {
 
 // Nouveautés : une notion tirée parmi les 3 premières non vues (on suit à peu près
 // l'ordre de la fiche), complétée au hasard, de préférence par des mots du même groupe.
-function pickFresh(unseen) {
+// Leçon `ordered` (maths : chaque astuce s'appuie sur la précédente) : toujours dans l'ordre,
+// et `newPerSession` nouveautés au plus.
+function pickFresh(unseen, lesson) {
   if (!unseen.length) return [];
+  if (lesson.ordered) return unseen.slice(0, lesson.newPerSession || NEW_PER_SESSION);
   const anchor = unseen[Math.floor(Math.random() * Math.min(3, unseen.length))];
   const same = (x) => (anchor.group && x.group === anchor.group ? 1 : 0);
   const rest = shuffle(unseen.filter((x) => x !== anchor)).sort((a, b) => same(b) - same(a));
@@ -107,7 +110,7 @@ export function buildSession(lesson, n) {
   const seen = lesson.notions.filter((x) => st(x).seen);
   const due = seen.filter((x) => st(x).due <= now)
     .sort((a, b) => st(a).level - st(b).level || st(a).due - st(b).due);
-  const fresh = pickFresh(lesson.notions.filter((x) => !st(x).seen));
+  const fresh = pickFresh(lesson.notions.filter((x) => !st(x).seen), lesson);
   let review = [...due];
   if (review.length + fresh.length < n) {
     const rest = seen.filter((x) => !due.includes(x))
@@ -128,10 +131,20 @@ export function buildSession(lesson, n) {
   };
 
   const reviewQ = review.map(take).filter(Boolean);
-  // Deux questions par mot nouveau si la séance est courte (début de leçon).
-  const perNew = reviewQ.length + fresh.length < n ? 2 : 1;
+  // Deux questions par mot nouveau si la séance est courte (début de leçon) ;
+  // jusqu'à `perNew` (maths : un calcul s'automatise en le refaisant) pour remplir la séance.
+  const room = fresh.length ? Math.ceil((n - reviewQ.length) / fresh.length) : 0;
+  const perNew = Math.max(1, Math.min(lesson.perNew || 2, reviewQ.length + fresh.length < n ? room : 1));
   const freshQ = [];
   for (let r = 0; r < perNew; r++) for (const x of fresh) { const q = take(x); if (q) freshQ.push(q); }
+  // Maths (`perNew`) : séance trop courte ? d'autres calculs sur les notions déjà vues.
+  for (let r = 1; r < (lesson.perNew || 1); r++) {
+    for (const x of review) {
+      if (reviewQ.length + freshQ.length >= n) break;
+      const q = take(x);
+      if (q) reviewQ.push(q);
+    }
+  }
 
   // Les mots nouveaux sont découverts d'abord ; leurs questions arrivent au moins
   // deux questions plus tard, jamais juste après la carte.

@@ -8,10 +8,11 @@ import { h, shuffle, pick } from './util.js';
 import { say, stop, playMusic, musicPlayer } from './speech.js';
 import { P, fill } from './phrases.js';
 import { draggable, nearest, flash } from './drag.js';
+import { calcul, boulier, amis10, table } from './maths.js';
 
 const MAX_CHOICES = 4;
 
-function ear(text, cls = 'ear') {
+export function ear(text, cls = 'ear') {
   return h('button', {
     class: cls, 'aria-label': 'Écouter',
     onclick: (e) => { e.stopPropagation(); say(text); },
@@ -42,7 +43,7 @@ export function spellView(spell, cls = 'spell-word') {
 }
 
 // Zone commune : consigne lue + zone de réponse + bandeau de retour.
-function frame(root, text, thumb, music) {
+export function frame(root, text, thumb, music) {
   const speech = text;
   const prompt = h('div', { class: 'prompt' },
     thumb ? h('img', { class: 'thumb', src: thumb, alt: '' }) : null,
@@ -54,7 +55,7 @@ function frame(root, text, thumb, music) {
   return { body, fb };
 }
 
-function feedback(fb, kind, msg, next) {
+export function feedback(fb, kind, msg, next) {
   fb.replaceChildren(h('div', { class: `feedback ${kind}` },
     h('span', {}, kind === 'ok' ? '⭐' : kind === 'try' ? '💡' : '👉'),
     h('span', { class: 'msg' }, msg),
@@ -62,7 +63,7 @@ function feedback(fb, kind, msg, next) {
 }
 
 // segments : liste de phrases enregistrées, affichées bout à bout.
-function finisher(fb, done) {
+export function finisher(fb, done) {
   return (result, segments) => {
     const segs = segments.filter(Boolean);
     feedback(fb, result === 'fail' ? 'show' : 'ok', segs.join(' '), () => done(result));
@@ -70,14 +71,14 @@ function finisher(fb, done) {
   };
 }
 
-function hint(fb, segments) {
+export function hint(fb, segments) {
   const segs = segments.filter(Boolean);
   feedback(fb, 'try', segs.join(' '));
   say(segs);
 }
 
 export function renderStep(item, ctx) {
-  ({ qcm, vf, schema, placer, trous, ecrire })[item.type](item, ctx);
+  ({ qcm, vf, schema, placer, trous, ecrire, calcul, boulier, amis10, table })[item.type](item, ctx);
 }
 
 /* ---------- QCM ---------- */

@@ -112,7 +112,6 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .eval-badge::first-letter { text-transform: uppercase; }
 /* Matières */
 .categories { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-@media (min-width: 1000px) { .categories { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .categories { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .category-tile { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-align: left; font: inherit; color: inherit; cursor: pointer; border-color: color-mix(in srgb, var(--c) 30%, white); background: color-mix(in srgb, var(--c) 8%, var(--card)); }
 .category-tile .emoji { font-size: 56px; line-height: 1; }
@@ -340,3 +339,74 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .trous-picker { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 4px 8px 8px; }
 .music-btn { align-self: flex-start; font-size: 28px; min-height: 80px; padding: 14px 28px; background: var(--hint-soft); border-color: var(--hint); }
 .credits { font-size: 18px; }
+
+/* ---------- Maths : calculs, boulier, table d'addition ---------- */
+/* Chaque nombre a la couleur de ses boules (bleu, puis orange, puis vert) */
+.calc { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 14px; font-size: 64px; font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.calc .op { color: var(--muted); font-weight: 400; }
+.calc .ca { color: #2f6fb0; }
+.calc .cb { color: #c4612f; }
+.calc .cc { color: #2f7e58; }
+.calc .hole { min-width: 1.6em; padding: 0 12px; text-align: center; border: 4px dashed var(--primary); border-radius: 18px; color: var(--btn-ink); background: var(--primary-soft); }
+.calc .hole.good, .calc .hole.reveal { border-style: solid; }
+.calc .hole.active { animation: pulse 1.4s ease-in-out infinite; }
+.calc.inline { font-size: inherit; gap: 0; }
+.discover ~ .calc { font-size: 52px; }
+.num-choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.choice.num { text-align: center; font-size: 48px; font-weight: 700; min-height: 96px; font-variant-numeric: tabular-nums; }
+
+.boulier-wrap { display: flex; justify-content: center; }
+.boulier { width: 100%; max-width: 640px; height: auto; display: block; }
+.boulier .b-frame { fill: #f7efe0; stroke: #c9a77a; stroke-width: 6; }
+.boulier .b-rod { stroke: #b48b5a; stroke-width: 5; stroke-linecap: round; }
+.boulier .bead { stroke: rgba(60, 40, 20, .25); stroke-width: 2; transition: transform .25s ease-out, fill .25s; }
+.boulier-wrap.input .boulier { max-width: 860px; cursor: pointer; touch-action: manipulation; }
+
+/* Arbre de la fiche « faire 10 » */
+.tree { width: 100%; max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+.tree-top { font-size: 52px; font-weight: 700; padding: 4px 28px; border: 4px solid var(--ink); border-radius: 16px; background: var(--card); }
+.tree-lines { width: 100%; height: 60px; display: block; }
+.tree-lines line { stroke: var(--ink); stroke-width: 3; }
+.tree-row { width: 100%; display: grid; grid-template-columns: 1fr 40px 1fr 40px 1fr; align-items: center; justify-items: center; font-size: 52px; font-weight: 700; }
+.tree-row .op { color: var(--muted); font-weight: 400; text-align: center; }
+.tree-box { min-width: 96px; min-height: 96px; display: flex; align-items: center; justify-content: center; border: 4px solid var(--ink); border-radius: 16px; background: var(--card); }
+.tree-box .hole { border: none; background: transparent; padding: 0; }
+
+/* Les amis de 10 : on touche deux nombres, ils sont entourés */
+.amis-num { font-size: 64px; font-weight: 700; min-width: 104px; min-height: 104px; border-radius: 50%; padding: 0; border: 4px dashed #ddd3c2; box-shadow: none; background: var(--card); }
+.amis-num.selected, .amis-num.paired { border-style: solid; }
+.amis-num.selected { border-color: var(--primary); background: var(--primary-soft); }
+.amis-num.paired { border-color: #d6457a; background: #fbe3ec; color: #2f6fb0; }
+.amis-num.rest { color: #c4612f; }
+
+/* Table d'addition */
+.tline { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 10px; }
+@media (max-width: 760px) { .tline { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+.tline-cell { display: flex; flex-direction: column; align-items: stretch; gap: 6px; text-align: center; }
+.tline-op { font-size: 22px; font-weight: 700; color: var(--ink); white-space: nowrap; }
+.tcell { display: flex; align-items: center; justify-content: center; min-height: 64px; font-size: 32px; font-weight: 700; background: var(--card); border: 2px solid var(--line); border-radius: 14px; font-variant-numeric: tabular-nums; }
+.tcell.hole { padding: 0; min-height: 64px; font: inherit; font-size: 32px; font-weight: 700; border: 3px dashed var(--primary); box-shadow: none; background: var(--primary-soft); color: var(--btn-ink); }
+.tcell.hole.good, .tcell.hole.reveal { border-style: solid; }
+.tgrid { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 5px; }
+.tgrid .tcell { min-height: 54px; font-size: 26px; border-radius: 10px; }
+.tgrid .tcell.hole { min-height: 54px; font-size: 26px; border-radius: 10px; }
+.thead { display: flex; align-items: center; justify-content: center; min-height: 54px; font-size: 26px; font-weight: 700; color: var(--btn-ink); background: var(--btn); border-radius: 10px; }
+.thead.corner { background: transparent; color: var(--muted); }
+.tgrid .cross:not(.hole) { background: #fff3c9; border-color: #f2d27a; }
+.thead.cross { background: var(--star); color: var(--ink); }
+.tpick { display: flex; flex-direction: column; gap: 14px; }
+.tpick-op .calc, .tpick .calc { font-size: 48px; }
+@media (max-width: 760px) {
+  .calc { font-size: 48px; }
+  .tgrid .tcell, .tgrid .tcell.hole, .thead { min-height: 40px; font-size: 18px; }
+  .amis-num { font-size: 48px; min-width: 80px; min-height: 80px; }
+}
+.tcell.hole.selected { border-style: solid; border-color: var(--hint) !important; background: var(--hint-soft) !important; animation: pulse 1.4s ease-in-out infinite; }
+/* La table entière et les réponses côte à côte sur iPad en paysage : tout tient sans défiler */
+.tboard { display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 900px) {
+  .tboard.grille { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); align-items: start; gap: 24px; }
+  .tboard.grille .tpick .calc { font-size: 44px; }
+  .tboard.grille .num-choices { gap: 12px; }
+  .tboard.grille .choice.num { min-height: 80px; font-size: 40px; }
+}

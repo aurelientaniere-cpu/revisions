@@ -11,6 +11,9 @@ import pathlib
 import re
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import maths  # noqa: E402
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LESSONS = ROOT / "lessons"
 OUT = LESSONS / "build"
@@ -143,6 +146,8 @@ def item_speech(it):
         out += [it["word"], it.get("say", "")]
     elif t == "vf":
         out.append(f"{PHRASES['vfPrefix']} {it['q']}")
+    elif t in maths.GEN_TYPES:
+        out += maths.speech(it)
     elif t in ("schema", "placer"):
         out.append(it["q"])
     if t == "placer":
@@ -154,7 +159,8 @@ def item_speech(it):
         if it.get("layout") == "ordre":
             order = {g["id"]: i for i, g in enumerate(it["targets"])}
             out.append(", ".join(k["text"] for k in sorted(it["tokens"], key=lambda k: order[k["target"]])) + ".")
-    out += [it.get("hint", ""), it.get("explain", "")]
+    if t not in maths.GEN_TYPES:
+        out += [it.get("hint", ""), it.get("explain", "")]
     return out
 
 
@@ -170,7 +176,7 @@ def build(src):
         if bad:
             sys.exit(f"{src} : groups.{g}.outsiders cite des notions inconnues {bad}")
 
-    items = list(lesson.get("items", [])) + auto_items(lesson)
+    items = list(lesson.get("items", [])) + auto_items(lesson) + maths.items(lesson)
     for i, it in enumerate(items):
         if it["type"] == "trous":
             bad = [x for x in it["text"] if not re.search(r"\[[^\]]*\|", x)]
@@ -201,9 +207,13 @@ def build(src):
         speech.append(cap(n["term"]))
         if n.get("tip"):
             speech.append(n["tip"])
+        if n.get("example"):
+            speech.append(n["example"]["say"])
         if n.get("zone"):
             speech.append(PHRASES["zoneThis"].replace("{x}", nom(n)))
             speech.append(PHRASES["zoneHere"].replace("{x}", nom(n)))
+    if lesson.get("maths"):
+        speech += maths.NUMBERS
     for c in lesson.get("cards", []):
         speech += [c["name"], c["desc"]]
     for it in items:

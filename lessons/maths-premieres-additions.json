@@ -1,0 +1,65 @@
+{
+  "id": "maths-premieres-additions",
+  "category": "maths",
+  "subject": "Maths",
+  "title": "Les premières additions",
+  "subtitle": "Jusqu'à 10, avec le boulier",
+  "emoji": "🧮",
+  "color": "#d65d8a",
+  "ordered": true,
+  "newPerSession": 1,
+  "perNew": 4,
+  "source": "Premières additions (résultats jusqu'à 10), avec un boulier pour voir les quantités.",
+  "summary": [
+    "Ajouter, c'est mettre ensemble.",
+    "Sur le boulier, chaque ligne a 10 boules, rangées par paquets de 5.",
+    "Pour faire 2 plus 3, je pousse 2 boules, puis encore 3. Je compte : ça fait 5.",
+    "Pour aller plus vite, je pars du plus grand nombre, puis j'avance.",
+    "Ajouter 0, ça ne change rien : 7 plus 0 égale 7."
+  ],
+  "notions": [
+    {
+      "id": "ajouter",
+      "term": "ajouter",
+      "nom": "ajouter",
+      "def": "c'est mettre ensemble pour avoir plus",
+      "emoji": "🧮",
+      "noAuto": true,
+      "tip": "Sur le boulier, on pousse les boules les unes après les autres.",
+      "example": { "expr": ["2|a", "+", "3|b", "=", "5"], "beads": [2, 3], "say": "2 plus 3 égale 5." }
+    },
+    {
+      "id": "jusqu-a-10",
+      "term": "jusqu'à 10",
+      "nom": "les additions jusqu'à 10",
+      "def": "je pars du plus grand nombre, puis j'avance",
+      "emoji": "🖐️",
+      "noAuto": true,
+      "tip": "Sur le boulier, les boules vont par paquets de 5 : pas besoin de recompter.",
+      "example": { "expr": ["5|a", "+", "3|b", "=", "8"], "beads": [5, 3], "say": "5 plus 3 égale 8." }
+    },
+    {
+      "id": "plus-zero",
+      "term": "ajouter 0",
+      "nom": "ajouter 0",
+      "def": "ça ne change rien",
+      "emoji": "🥚",
+      "noAuto": true,
+      "tip": "0, c'est rien du tout : on ne pousse aucune boule.",
+      "example": { "expr": ["7|a", "+", "0|b", "=", "7"], "beads": [7, 0], "say": "7 plus 0 égale 7." }
+    }
+  ],
+  "maths": [
+    { "gen": "somme", "notion": "ajouter", "diff": 2, "pairs": [[1, 1], [2, 1], [2, 2], [3, 1], [1, 3], [2, 3], [4, 1]] },
+    { "gen": "boulier", "notion": "ajouter", "show": [3, 5], "sums": [[2, 2], [3, 2]] },
+    { "gen": "somme", "notion": "jusqu-a-10", "diff": 2, "pairs": [[5, 1], [4, 3], [6, 2], [5, 3], [4, 4], [3, 6], [7, 2], [5, 4], [5, 5], [2, 8]] },
+    { "gen": "boulier", "notion": "jusqu-a-10", "show": [7, 9], "sums": [[6, 3], [5, 5]] },
+    { "gen": "somme", "notion": "plus-zero", "diff": 2, "pairs": [[4, 0], [0, 6], [9, 0]] }
+  ],
+  "cards": [
+    { "id": "pa-boulier", "name": "Le boulier", "emoji": "🧮", "color": "#d65d8a", "notions": ["ajouter"], "desc": "Des boules à pousser pour voir les nombres." },
+    { "id": "pa-main", "name": "La main de 5", "emoji": "🖐️", "color": "#e0a030", "notions": ["jusqu-a-10"], "desc": "5 doigts, un paquet de 5 boules : on le voit sans compter." },
+    { "id": "pa-zero", "name": "Le zéro", "emoji": "🥚", "color": "#7a9cc6", "notions": ["plus-zero"], "desc": "Il ne change rien, mais il est bien rond." },
+    { "id": "pa-legende", "name": "La reine du boulier", "emoji": "👑", "color": "#f5b700", "notions": "all", "level": 3, "legend": true, "desc": "Toutes les premières additions sont dans ta tête !" }
+  ]
+}
