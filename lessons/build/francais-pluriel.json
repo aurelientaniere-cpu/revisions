@@ -1,0 +1,2991 @@
+{
+ "id": "francais-pluriel",
+ "category": "orthographe",
+ "subject": "Français",
+ "title": "Les marques du pluriel",
+ "subtitle": "La Trahison des images de Magritte",
+ "emoji": "🎨",
+ "color": "#4a6fb5",
+ "source": "Orthographe 6, « Les marques du pluriel » : guide du maître (dictée « La Trahison des images », exercices d'entrainement, dictées flash), histoire des arts.",
+ "summary": [
+  "Pour bien marquer le pluriel, je me demande d'abord : ce mot est-il un nom, un adjectif ou un verbe ?",
+  "Pour marquer le pluriel d'un nom, on ajoute un S : les artistes.",
+  "Pour marquer le pluriel d'un adjectif, on ajoute aussi un S : les artistes surréalistes.",
+  "Pour marquer le pluriel d'un verbe, on écrit N, T à la fin du verbe : les artistes surréalistes se rencontrent à Paris.",
+  "Le N, T ne s'entend pas : il rêve, ils rêvent. Il faut y penser !",
+  "Est ou et ? Si je peux dire « était », j'écris E, S, T. Sinon, j'écris E, T.",
+  "A ou à ? Si je peux dire « avait », j'écris A sans accent. Sinon, j'écris à, avec un accent.",
+  "Les huit mots à savoir écrire : la femme, le modèle, rencontrer, rêver, belge, forain, quand, plusieurs.",
+  "La dictée. René Magritte est belge.",
+  "Il a quatorze ans quand il rencontre Georgette, à la fête foraine.",
+  "Elle deviendra plusieurs années plus tard sa femme et son modèle.",
+  "Magritte rêve de devenir artiste.",
+  "La Trahison des images est un tableau de René Magritte. Il l'a peint à Paris, en 1929, avec de la peinture à l'huile sur une toile.",
+  "On y voit une pipe. En dessous, il est écrit : Ceci n'est pas une pipe.",
+  "Pourquoi ? Parce que c'est l'image d'une pipe, pas une vraie pipe. On ne peut pas la prendre dans sa main.",
+  "Magritte est un peintre surréaliste. Les surréalistes s'intéressent au rêve, au hasard, et à tout ce qui est caché ou étrange.",
+  "Ce tableau date de l'Époque contemporaine. Aujourd'hui, il est exposé dans un musée, aux États-Unis."
+ ],
+ "notions": [
+  {
+   "id": "femme",
+   "term": "femme",
+   "nom": "la femme",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "👩",
+   "def": "une dame, ou l'épouse de quelqu'un : sa femme",
+   "spell": "f[e][mm]e",
+   "tip": "On entend « a », mais on écrit E. Et deux M : f, e, m, m, e."
+  },
+  {
+   "id": "modele",
+   "term": "modèle",
+   "nom": "le modèle",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🖼️",
+   "def": "personne qui pose pour un peintre",
+   "spell": "mod[è]le",
+   "tip": "Un accent grave sur le E du milieu : mo, dè, le."
+  },
+  {
+   "id": "pluriel-nom",
+   "term": "pluriel du nom",
+   "nom": "le pluriel du nom",
+   "noAuto": true,
+   "emoji": "🐍",
+   "def": "pour marquer le pluriel d'un nom, on ajoute un S : les artistes",
+   "tip": "Un nom, c'est un mot devant lequel je peux dire « un » ou « une » : une étoile, des étoiles."
+  },
+  {
+   "id": "rencontrer",
+   "term": "rencontrer",
+   "nom": "rencontrer",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🤝",
+   "def": "se trouver avec quelqu'un, le voir pour la première fois",
+   "spell": "r[en]c[on]tr[er]",
+   "tip": "Ren avec E, N. Con avec O, N. Et E, R à la fin, comme rêver."
+  },
+  {
+   "id": "pluriel-verbe",
+   "term": "pluriel du verbe",
+   "nom": "le pluriel du verbe",
+   "noAuto": true,
+   "emoji": "🏃",
+   "def": "quand le sujet est au pluriel, on écrit N, T à la fin du verbe : ils se rencontrent",
+   "tip": "On ne l'entend pas ! Il rêve, ils rêvent : ça se dit pareil, mais ça ne s'écrit pas pareil."
+  },
+  {
+   "id": "rever",
+   "term": "rêver",
+   "nom": "rêver",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "💭",
+   "def": "voir des images dans sa tête quand on dort ; aussi souhaiter très fort quelque chose",
+   "spell": "r[ê]v[er]",
+   "tip": "Un accent circonflexe sur le E, comme un petit chapeau : le rêve, rêver."
+  },
+  {
+   "id": "belge",
+   "term": "belge",
+   "nom": "belge",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🇧🇪",
+   "def": "qui vient de Belgique",
+   "spell": "bel[ge]",
+   "tip": "G, E à la fin, comme dans la Belgique. Pas de majuscule dans « un artiste belge »."
+  },
+  {
+   "id": "pluriel-adjectif",
+   "term": "pluriel de l'adjectif",
+   "nom": "le pluriel de l'adjectif",
+   "noAuto": true,
+   "emoji": "🎨",
+   "def": "l'adjectif qui va avec un nom au pluriel prend un S : les artistes surréalistes",
+   "tip": "L'adjectif dit comment est le nom. Je cherche le nom qui va avec : s'il est au pluriel, l'adjectif aussi."
+  },
+  {
+   "id": "nature-mot",
+   "term": "nom, adjectif ou verbe",
+   "nom": "nom, adjectif ou verbe",
+   "noAuto": true,
+   "emoji": "🔍",
+   "def": "avant d'écrire la marque du pluriel, je cherche si le mot est un nom, un adjectif ou un verbe",
+   "tip": "Nom ou adjectif : un S. Verbe : N, T."
+  },
+  {
+   "id": "forain",
+   "term": "forain",
+   "nom": "forain",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🎠",
+   "def": "qui a rapport à la fête foraine, avec ses manèges et ses stands",
+   "spell": "for[ain]",
+   "tip": "A, I, N, comme dans le pain. Au féminin : la fête foraine."
+  },
+  {
+   "id": "quand",
+   "term": "quand",
+   "nom": "quand",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "⏰",
+   "def": "au moment où",
+   "spell": "[qu]an[d]",
+   "tip": "Q, U au début, et un D muet à la fin. C'est un mot qui ne change jamais."
+  },
+  {
+   "id": "plusieurs",
+   "term": "plusieurs",
+   "nom": "plusieurs",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🖐️",
+   "def": "plus d'un, un certain nombre",
+   "spell": "plusieur[s]",
+   "tip": "Toujours un S à la fin : plusieurs, c'est forcément plus d'un."
+  },
+  {
+   "id": "et-est",
+   "term": "est ou et",
+   "nom": "est ou et",
+   "noAuto": true,
+   "emoji": "⚖️",
+   "def": "est, avec un S et un T, c'est le verbe être ; et, c'est le petit mot qui relie : sa femme et son modèle",
+   "tip": "Si je peux dire « était », j'écris E, S, T."
+  },
+  {
+   "id": "a-accent",
+   "term": "a ou à",
+   "nom": "a ou à",
+   "noAuto": true,
+   "emoji": "🅰️",
+   "def": "a, sans accent, c'est le verbe avoir ; à, avec un accent, c'est le petit mot de lieu : à Paris",
+   "tip": "Si je peux dire « avait », j'écris A sans accent."
+  },
+  {
+   "id": "magritte",
+   "term": "René Magritte",
+   "nom": "René Magritte",
+   "noAuto": true,
+   "emoji": "🎩",
+   "def": "peintre surréaliste belge, né en 1898, mort en 1967"
+  },
+  {
+   "id": "trahison-images",
+   "term": "La Trahison des images",
+   "nom": "La Trahison des images",
+   "noAuto": true,
+   "emoji": "🖼️",
+   "def": "tableau de Magritte, peint à Paris en 1929 : une pipe, et en dessous « Ceci n'est pas une pipe »"
+  },
+  {
+   "id": "representation",
+   "term": "représentation",
+   "nom": "une représentation",
+   "group": "arts",
+   "emoji": "🍎",
+   "def": "image d'une chose : on la voit, mais ce n'est pas la chose elle-même",
+   "indice": "Une pomme peinte sur un tableau en est une : on ne peut pas la croquer."
+  },
+  {
+   "id": "surrealisme",
+   "term": "surréalisme",
+   "nom": "le surréalisme",
+   "group": "arts",
+   "emoji": "🌀",
+   "def": "mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange",
+   "indice": "Dans ces tableaux, des poissons volent dans le ciel et les objets ne sont pas là où on les attend."
+  },
+  {
+   "id": "trahison",
+   "term": "trahison",
+   "nom": "une trahison",
+   "group": "arts",
+   "emoji": "🤥",
+   "def": "tromperie : on promet quelque chose, puis on ne le fait pas",
+   "indice": "Ton ami avait promis de garder ton secret, mais il l'a raconté à toute la classe."
+  },
+  {
+   "id": "affiche",
+   "term": "affiche",
+   "nom": "une affiche",
+   "group": "arts",
+   "emoji": "📜",
+   "def": "grande feuille imprimée, collée au mur pour annoncer quelque chose",
+   "indice": "Magritte en dessinait pour gagner sa vie : on les collait dans les rues pour faire de la publicité."
+  },
+  {
+   "id": "epoque-contemporaine",
+   "term": "Époque contemporaine",
+   "nom": "l'Époque contemporaine",
+   "noAuto": true,
+   "emoji": "⏳",
+   "def": "période de l'histoire qui commence en 1789 et va jusqu'à aujourd'hui"
+  }
+ ],
+ "cards": [
+  {
+   "id": "plu-noms",
+   "name": "Les noms au pluriel",
+   "emoji": "🐍",
+   "color": "#5b9ad6",
+   "notions": [
+    "pluriel-nom",
+    "femme",
+    "modele"
+   ],
+   "desc": "Une femme, des femmes. Un modèle, des modèles : on ajoute un S."
+  },
+  {
+   "id": "plu-verbes",
+   "name": "Les verbes au pluriel",
+   "emoji": "🏃",
+   "color": "#d6735b",
+   "notions": [
+    "pluriel-verbe",
+    "rencontrer"
+   ],
+   "image": "rencontrer",
+   "desc": "Ils se rencontrent : N, T à la fin du verbe, même si on ne l'entend pas."
+  },
+  {
+   "id": "plu-adjectifs",
+   "name": "Les adjectifs au pluriel",
+   "emoji": "🎨",
+   "color": "#2f9e6a",
+   "notions": [
+    "pluriel-adjectif",
+    "belge"
+   ],
+   "desc": "Des artistes belges : l'adjectif prend un S, comme son nom."
+  },
+  {
+   "id": "plu-detective",
+   "name": "Le détective des mots",
+   "emoji": "🔍",
+   "color": "#8e5bd6",
+   "notions": [
+    "nature-mot",
+    "pluriel-nom",
+    "pluriel-adjectif",
+    "pluriel-verbe"
+   ],
+   "desc": "Nom, adjectif ou verbe ? Je cherche d'abord, puis j'accorde."
+  },
+  {
+   "id": "plu-fete",
+   "name": "La fête foraine",
+   "emoji": "🎠",
+   "color": "#e0a92a",
+   "notions": [
+    "forain",
+    "quand"
+   ],
+   "image": "forain",
+   "desc": "Magritte a quatorze ans quand il rencontre Georgette, à la fête foraine."
+  },
+  {
+   "id": "plu-reve",
+   "name": "Le rêve",
+   "emoji": "💭",
+   "color": "#6c5ce7",
+   "notions": [
+    "rever",
+    "surrealisme"
+   ],
+   "image": "rever",
+   "desc": "Les surréalistes rêvent : dans leurs tableaux, tout peut arriver."
+  },
+  {
+   "id": "plu-plusieurs",
+   "name": "Plusieurs années",
+   "emoji": "🖐️",
+   "color": "#c0703c",
+   "notions": [
+    "plusieurs",
+    "quand"
+   ],
+   "desc": "Plusieurs et quand ne changent jamais. Plusieurs garde toujours son S."
+  },
+  {
+   "id": "plu-homophones",
+   "name": "Et, est, a, à",
+   "emoji": "⚖️",
+   "color": "#d65b9a",
+   "notions": [
+    "et-est",
+    "a-accent"
+   ],
+   "desc": "Était ? J'écris est. Avait ? J'écris a."
+  },
+  {
+   "id": "plu-magritte",
+   "name": "René Magritte",
+   "emoji": "🎩",
+   "color": "#3c5aa8",
+   "notions": [
+    "magritte",
+    "belge",
+    "affiche"
+   ],
+   "image": "magritte",
+   "desc": "Un peintre belge. Pour gagner sa vie, il dessinait des affiches."
+  },
+  {
+   "id": "plu-pomme",
+   "name": "Ceci n'est pas une pomme",
+   "emoji": "🍎",
+   "color": "#c0392b",
+   "notions": [
+    "representation",
+    "trahison",
+    "trahison-images"
+   ],
+   "image": "representation",
+   "desc": "Une pomme peinte ne se croque pas : c'est une image, pas une vraie pomme."
+  },
+  {
+   "id": "plu-temps",
+   "name": "L'Époque contemporaine",
+   "emoji": "⏳",
+   "color": "#2a9da0",
+   "notions": [
+    "epoque-contemporaine",
+    "trahison-images"
+   ],
+   "desc": "Depuis 1789 jusqu'à aujourd'hui. Le tableau de Magritte date de 1929."
+  },
+  {
+   "id": "plu-legende",
+   "name": "La Trahison des images",
+   "emoji": "🖼️",
+   "color": "#f5b700",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "image": "surrealisme",
+   "desc": "Tu connais toute la leçon : les marques du pluriel, les mots, et le tableau de Magritte !"
+  }
+ ],
+ "items": [
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "femme"
+   ],
+   "word": "femme",
+   "say": "Georgette deviendra sa femme.",
+   "id": "francais-pluriel#7eb1be4f"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "femme"
+   ],
+   "word": "femme",
+   "say": "Georgette deviendra sa femme.",
+   "id": "francais-pluriel#0827b337"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "femme"
+   ],
+   "word": "femme",
+   "say": "Georgette deviendra sa femme.",
+   "id": "francais-pluriel#40b862e7"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "modele"
+   ],
+   "word": "modèle",
+   "say": "Elle deviendra sa femme et son modèle.",
+   "id": "francais-pluriel#f74118f1"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "modele"
+   ],
+   "word": "modèle",
+   "say": "Elle deviendra sa femme et son modèle.",
+   "id": "francais-pluriel#20c5f889"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "modele"
+   ],
+   "word": "modèle",
+   "say": "Elle deviendra sa femme et son modèle.",
+   "id": "francais-pluriel#dd3667f1"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "rencontrer"
+   ],
+   "word": "rencontrer",
+   "say": "J'aime rencontrer des artistes.",
+   "id": "francais-pluriel#3f861fe9"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "rencontrer"
+   ],
+   "word": "rencontrer",
+   "say": "J'aime rencontrer des artistes.",
+   "id": "francais-pluriel#b2aecf41"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "rencontrer"
+   ],
+   "word": "rencontrer",
+   "say": "J'aime rencontrer des artistes.",
+   "id": "francais-pluriel#e5a16fe9"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "rever"
+   ],
+   "word": "rêver",
+   "say": "Les surréalistes aiment rêver.",
+   "id": "francais-pluriel#ed4d232b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "rever"
+   ],
+   "word": "rêver",
+   "say": "Les surréalistes aiment rêver.",
+   "id": "francais-pluriel#908e4c2b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "rever"
+   ],
+   "word": "rêver",
+   "say": "Les surréalistes aiment rêver.",
+   "id": "francais-pluriel#b25e91eb"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "belge"
+   ],
+   "word": "belge",
+   "say": "René Magritte est belge.",
+   "id": "francais-pluriel#1133ba86"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "belge"
+   ],
+   "word": "belge",
+   "say": "René Magritte est belge.",
+   "id": "francais-pluriel#47c84a68"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "belge"
+   ],
+   "word": "belge",
+   "say": "René Magritte est belge.",
+   "id": "francais-pluriel#20d9ef1c"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "forain"
+   ],
+   "word": "forain",
+   "say": "Le manège forain tourne.",
+   "id": "francais-pluriel#f05f0b3e"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "forain"
+   ],
+   "word": "forain",
+   "say": "Le manège forain tourne.",
+   "id": "francais-pluriel#8f50f8a0"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "forain"
+   ],
+   "word": "forain",
+   "say": "Le manège forain tourne.",
+   "id": "francais-pluriel#a383fb14"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "quand"
+   ],
+   "word": "quand",
+   "say": "Il a quatorze ans quand il rencontre Georgette.",
+   "id": "francais-pluriel#01615022"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "quand"
+   ],
+   "word": "quand",
+   "say": "Il a quatorze ans quand il rencontre Georgette.",
+   "id": "francais-pluriel#d48a94dc"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "quand"
+   ],
+   "word": "quand",
+   "say": "Il a quatorze ans quand il rencontre Georgette.",
+   "id": "francais-pluriel#ca1e8fc0"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "plusieurs"
+   ],
+   "word": "plusieurs",
+   "say": "Plusieurs années plus tard.",
+   "id": "francais-pluriel#a6f8547b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "plusieurs"
+   ],
+   "word": "plusieurs",
+   "say": "Plusieurs années plus tard.",
+   "id": "francais-pluriel#115e18bb"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "plusieurs"
+   ],
+   "word": "plusieurs",
+   "say": "Plusieurs années plus tard.",
+   "id": "francais-pluriel#ad94e01b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 2.5,
+   "notions": [
+    "pluriel-nom",
+    "femme"
+   ],
+   "word": "femmes",
+   "say": "Les femmes regardent le tableau.",
+   "hint": "Il y a plusieurs femmes : c'est un nom au pluriel.",
+   "id": "francais-pluriel#a03717c6"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 2.5,
+   "notions": [
+    "pluriel-nom",
+    "modele"
+   ],
+   "word": "modèles",
+   "say": "Le peintre a plusieurs modèles.",
+   "hint": "Plusieurs modèles : c'est un nom au pluriel.",
+   "id": "francais-pluriel#041d0f78"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pluriel-verbe",
+    "rencontrer"
+   ],
+   "word": "rencontrent",
+   "say": "Les époux rencontrent des artistes.",
+   "hint": "C'est un verbe, et les époux sont deux : au pluriel.",
+   "id": "francais-pluriel#1131ebeb"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pluriel-verbe",
+    "rencontrer"
+   ],
+   "word": "rencontre",
+   "say": "Il rencontre Georgette.",
+   "hint": "Il est tout seul : le verbe est au singulier.",
+   "id": "francais-pluriel#96e32a81"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pluriel-verbe",
+    "rever"
+   ],
+   "word": "rêvent",
+   "say": "Les surréalistes rêvent beaucoup.",
+   "hint": "C'est un verbe, et les surréalistes sont plusieurs.",
+   "id": "francais-pluriel#03352851"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pluriel-verbe",
+    "rever"
+   ],
+   "word": "rêve",
+   "say": "Magritte rêve de devenir artiste.",
+   "hint": "Magritte est tout seul : le verbe est au singulier.",
+   "id": "francais-pluriel#402752cb"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pluriel-adjectif",
+    "belge"
+   ],
+   "word": "belges",
+   "say": "Ce sont des peintres belges.",
+   "hint": "C'est un adjectif, et il va avec peintres, au pluriel.",
+   "id": "francais-pluriel#39da4b0b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pluriel-adjectif",
+    "forain"
+   ],
+   "word": "foraines",
+   "say": "J'adore les fêtes foraines.",
+   "hint": "Il va avec fêtes : féminin pluriel. Il faut un E et un S.",
+   "id": "francais-pluriel#fa6fe034"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "femme"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "femme",
+    "fame",
+    "famme",
+    "fème",
+    "feme",
+    "phemme"
+   ],
+   "hint": "On entend « a », mais ce n'est pas un A.",
+   "explain": "On écrit : femme, avec un E et deux M.",
+   "id": "francais-pluriel#ed786415"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "modele"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "modèle",
+    "modéle",
+    "model",
+    "modelle",
+    "modèl",
+    "maudèle"
+   ],
+   "hint": "Regarde bien l'accent sur le E.",
+   "explain": "On écrit : modèle, avec un accent grave.",
+   "id": "francais-pluriel#75966478"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "rencontrer"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "rencontrer",
+    "rancontrer",
+    "renconter",
+    "rencontrè",
+    "ranconter",
+    "rencontrere"
+   ],
+   "hint": "Ren s'écrit avec un E.",
+   "explain": "On écrit : rencontrer.",
+   "id": "francais-pluriel#5e4085f7"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "rever"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "rêver",
+    "rèver",
+    "réver",
+    "raiver",
+    "rever",
+    "rêvver"
+   ],
+   "hint": "Le E porte un petit chapeau.",
+   "explain": "On écrit : rêver, avec un accent circonflexe.",
+   "id": "francais-pluriel#4385d4f4"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "belge"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "belge",
+    "belje",
+    "bèlge",
+    "belgue",
+    "belg",
+    "bellge"
+   ],
+   "hint": "Pense à la Belgique.",
+   "explain": "On écrit : belge, comme la Belgique.",
+   "id": "francais-pluriel#4f25479f"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "forain"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "forain",
+    "forin",
+    "forein",
+    "forrain",
+    "forint",
+    "phorain"
+   ],
+   "hint": "Ça finit comme le pain.",
+   "explain": "On écrit : forain, avec A, I, N.",
+   "id": "francais-pluriel#bd4c5886"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "quand"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "quand",
+    "kand",
+    "quan",
+    "qand",
+    "quend",
+    "quandt"
+   ],
+   "hint": "Il y a une lettre muette à la fin.",
+   "explain": "On écrit : quand, avec Q, U et un D à la fin.",
+   "id": "francais-pluriel#407f4858"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "plusieurs"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "plusieurs",
+    "plusieur",
+    "plusieures",
+    "pluzieurs",
+    "plussieurs",
+    "plusieurt"
+   ],
+   "hint": "Plusieurs, c'est plus d'un : pense à la lettre du pluriel.",
+   "explain": "On écrit : plusieurs, toujours avec un S.",
+   "id": "francais-pluriel#d1b0cc3b"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "belge",
+    "et-est"
+   ],
+   "text": [
+    "René Magritte [est|et|ai] [belge|belje|Belge]."
+   ],
+   "id": "francais-pluriel#aea2c14b"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "quand",
+    "forain",
+    "a-accent",
+    "pluriel-verbe"
+   ],
+   "text": [
+    "Il [a|à|as] quatorze ans [quand|quant|kan] il [rencontre|rencontrent|rancontre] Georgette, [à|a|as] la fête [foraine|forène|foraines]."
+   ],
+   "id": "francais-pluriel#2c72da24"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "plusieurs",
+    "femme",
+    "modele",
+    "et-est"
+   ],
+   "text": [
+    "Elle deviendra [plusieurs|plusieur|plusieures] [années|année|anées] plus tard sa [femme|fame|famme] [et|est|é] son [modèle|modéle|modèles]."
+   ],
+   "id": "francais-pluriel#d40a1eb3"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "rever",
+    "pluriel-verbe"
+   ],
+   "text": [
+    "Magritte [rêve|rêvent|rève] de devenir [artiste|artistes|artist]."
+   ],
+   "id": "francais-pluriel#f3948265"
+  },
+  {
+   "type": "trous",
+   "diff": 3,
+   "notions": [
+    "femme",
+    "modele",
+    "rencontrer",
+    "rever",
+    "belge",
+    "forain",
+    "quand",
+    "plusieurs"
+   ],
+   "q": "Toute la dictée ! Choisis le mot bien écrit.",
+   "text": [
+    "René Magritte [est|et|ai] [belge|belje|Belge].",
+    "Il [a|à|as] quatorze ans [quand|quant|kan] il [rencontre|rencontrent|rancontre] Georgette, [à|a|as] la fête [foraine|forène|foraines].",
+    "Elle deviendra [plusieurs|plusieur|plusieures] [années|année|anées] plus tard sa [femme|fame|famme] [et|est|é] son [modèle|modéle|modèles].",
+    "Magritte [rêve|rêvent|rève] de devenir [artiste|artistes|artist]."
+   ],
+   "id": "francais-pluriel#7d61c860"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "quand",
+    "forain"
+   ],
+   "q": "Remets la phrase de la dictée dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Il a quatorze ans",
+     "target": "1"
+    },
+    {
+     "text": "quand il rencontre Georgette,",
+     "target": "2"
+    },
+    {
+     "text": "à la fête foraine.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-pluriel#4130e616"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "plusieurs",
+    "femme",
+    "modele"
+   ],
+   "q": "Remets la phrase de la dictée dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Elle deviendra",
+     "target": "1"
+    },
+    {
+     "text": "plusieurs années plus tard",
+     "target": "2"
+    },
+    {
+     "text": "sa femme et son modèle.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-pluriel#c367f704"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "belge",
+    "rever"
+   ],
+   "q": "Remets les phrases de la dictée dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "René Magritte est belge.",
+     "target": "1"
+    },
+    {
+     "text": "Magritte rêve",
+     "target": "2"
+    },
+    {
+     "text": "de devenir artiste.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-pluriel#c6ea4457"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "q": "Remets la phrase de la leçon dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Les artistes surréalistes",
+     "target": "1"
+    },
+    {
+     "text": "se rencontrent",
+     "target": "2"
+    },
+    {
+     "text": "à Paris.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-pluriel#9937af26"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 9,
+   "notions": [
+    "nature-mot"
+   ],
+   "q": "Nom, adjectif ou verbe ? Range chaque mot.",
+   "explain": "Nom : je peux dire « un » devant. Verbe : je peux dire « ils » devant. Adjectif : il dit comment est le nom.",
+   "targets": [
+    {
+     "id": "n",
+     "label": "Nom",
+     "emoji": "🏷️",
+     "color": "#5b7fd6"
+    },
+    {
+     "id": "a",
+     "label": "Adjectif",
+     "emoji": "🎨",
+     "color": "#2f9e6a"
+    },
+    {
+     "id": "v",
+     "label": "Verbe",
+     "emoji": "🏃",
+     "color": "#d6735b"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "étoiles",
+     "target": "n"
+    },
+    {
+     "text": "hirondelles",
+     "target": "n"
+    },
+    {
+     "text": "chats",
+     "target": "n"
+    },
+    {
+     "text": "artistes",
+     "target": "n"
+    },
+    {
+     "text": "passants",
+     "target": "n"
+    },
+    {
+     "text": "lointaines",
+     "target": "a"
+    },
+    {
+     "text": "électriques",
+     "target": "a"
+    },
+    {
+     "text": "grosses",
+     "target": "a"
+    },
+    {
+     "text": "étroites",
+     "target": "a"
+    },
+    {
+     "text": "belges",
+     "target": "a"
+    },
+    {
+     "text": "brillent",
+     "target": "v"
+    },
+    {
+     "text": "jouent",
+     "target": "v"
+    },
+    {
+     "text": "déménagent",
+     "target": "v"
+    },
+    {
+     "text": "marchent",
+     "target": "v"
+    },
+    {
+     "text": "rencontrent",
+     "target": "v"
+    }
+   ],
+   "id": "francais-pluriel#1829c9bb"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2.5,
+   "sample": 8,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-adjectif",
+    "pluriel-verbe"
+   ],
+   "q": "Quelle marque du pluriel manque au dernier mot ? Range chaque groupe.",
+   "explain": "Nom ou adjectif : on ajoute un S. Verbe : on écrit N, T.",
+   "targets": [
+    {
+     "id": "s",
+     "label": "On ajoute un S",
+     "emoji": "🐍",
+     "color": "#5b9ad6"
+    },
+    {
+     "id": "nt",
+     "label": "On écrit N, T",
+     "emoji": "🏃",
+     "color": "#d6735b"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "les étoile…",
+     "target": "s"
+    },
+    {
+     "text": "des fils électrique…",
+     "target": "s"
+    },
+    {
+     "text": "des cahiers vert…",
+     "target": "s"
+    },
+    {
+     "text": "les rues étroite…",
+     "target": "s"
+    },
+    {
+     "text": "plusieurs année…",
+     "target": "s"
+    },
+    {
+     "text": "des artistes belge…",
+     "target": "s"
+    },
+    {
+     "text": "les chats joue…",
+     "target": "nt"
+    },
+    {
+     "text": "les voisins déménage…",
+     "target": "nt"
+    },
+    {
+     "text": "les passants marche…",
+     "target": "nt"
+    },
+    {
+     "text": "les étoiles brille…",
+     "target": "nt"
+    },
+    {
+     "text": "les époux rencontre…",
+     "target": "nt"
+    },
+    {
+     "text": "les peintres rêve…",
+     "target": "nt"
+    }
+   ],
+   "id": "francais-pluriel#1075db50"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe"
+   ],
+   "q": "S ou N, T ? Choisis le mot bien écrit.",
+   "text": [
+    "Les [rosiers|rosiernt|rosier] [fleurissent|fleurisses|fleurisse].",
+    "Elles [répondent|répondes|réponde] à toutes leurs [questions|questionnt|question]."
+   ],
+   "id": "francais-pluriel#ea6ecc18"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe"
+   ],
+   "q": "S ou N, T ? Choisis le mot bien écrit.",
+   "text": [
+    "Les [candidats|candidatnt|candidat] [débattent|débattes|débatte] à la télévision.",
+    "Les [ballons|ballonnt|ballon] des [enfants|enfantnt|enfant] [s'envolent|s'envoles|s'envole]."
+   ],
+   "id": "francais-pluriel#a9af3ea3"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "q": "S ou N, T ? Choisis le mot bien écrit.",
+   "text": [
+    "Les [joueurs|joueurnt|joueur] [marquent|marques|marque] des [points|pointnt|point] [décisifs|décisifnt|décisif]."
+   ],
+   "id": "francais-pluriel#4a2b769e"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "q": "Ajoute S ou N, T seulement si c'est nécessaire.",
+   "text": [
+    "Les [petits|petitnt|petit] [koalas|koalant|koala] [croquent|croques|croque] des [feuilles|feuillent|feuille] d'eucalyptus.",
+    "Ils [préfèrent|préfères|préfère] les [pièces|piècent|pièce] [comiques|comiquent|comique]."
+   ],
+   "id": "francais-pluriel#e7435cb7"
+  },
+  {
+   "type": "trous",
+   "diff": 3,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "q": "Ajoute S ou N, T seulement si c'est nécessaire.",
+   "text": [
+    "Finalement, elles [remportent|remportes|remporte] tous les [matchs|matchent|match] de la [saison|saisons|saisonnt].",
+    "Les [techniciens|technicient|technicien] [utilisent|utilises|utilise] des [ordinateurs|ordinateurnt|ordinateur] [perfectionnés|perfectionnént|perfectionné]."
+   ],
+   "id": "francais-pluriel#aded00ee"
+  },
+  {
+   "type": "trous",
+   "diff": 3,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "q": "Ajoute S ou N, T seulement si c'est nécessaire.",
+   "text": [
+    "Les [meilleurs|meilleurnt|meilleur] [joueurs|joueurnt|joueur] [marquent|marques|marque] des [buts|butnt|but].",
+    "Les [grosses|grossent|grosse] [vagues|vaguent|vague] [s'écrasent|s'écrases|s'écrase]."
+   ],
+   "id": "francais-pluriel#6a046133"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "q": "Choisis le mot bien écrit.",
+   "text": [
+    "Les [hirondelles|hirondellent|hirondelle] se [posent|poses|pose] sur les fils [électriques|électriquent|électrique].",
+    "Les [lointaines|lointainent|lointaine] [étoiles|étoilent|étoile] [brillent|brilles|brille]."
+   ],
+   "id": "francais-pluriel#d7c44334"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "et-est"
+   ],
+   "q": "Est ou et ? Si tu peux dire « était », c'est est.",
+   "text": [
+    "Magritte [est|et] un peintre [et|est] un artiste.",
+    "Ce qui [est|et] caché [et|est] étrange les intéresse."
+   ],
+   "id": "francais-pluriel#3138e253"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "a-accent"
+   ],
+   "q": "A ou à ? Si tu peux dire « avait », c'est a sans accent.",
+   "text": [
+    "Il [a|à] quatorze ans.",
+    "Il déménage [à|a] Bruxelles.",
+    "Les surréalistes s'intéressent [à|a] ce qui est caché."
+   ],
+   "id": "francais-pluriel#05133d06"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "et-est"
+   ],
+   "q": "Comment savoir s'il faut écrire « est », avec un S et un T ?",
+   "choices": [
+    "Je peux le remplacer par « était »",
+    "Je peux le remplacer par « et puis »",
+    "Il est toujours au début de la phrase",
+    "Il est toujours après un nom de pays"
+   ],
+   "hint": "Essaie de dire la phrase au passé.",
+   "explain": "René Magritte était belge : je peux dire était, donc j'écris est.",
+   "id": "francais-pluriel#4eb895ef"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "a-accent"
+   ],
+   "q": "Comment savoir s'il faut écrire « a » sans accent ?",
+   "choices": [
+    "Je peux le remplacer par « avait »",
+    "Il est toujours devant une ville",
+    "Il est toujours à la fin de la phrase",
+    "Je peux le remplacer par « dans »"
+   ],
+   "hint": "Essaie de dire la phrase au passé.",
+   "explain": "Il avait quatorze ans : je peux dire avait, donc j'écris a, sans accent.",
+   "id": "francais-pluriel#4243fc7d"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pluriel-verbe"
+   ],
+   "q": "Dans « les époux rencontrent des artistes », pourquoi « rencontrent » finit-il par N, T ?",
+   "choices": [
+    "C'est un verbe, et les époux sont plusieurs",
+    "C'est un nom au pluriel",
+    "C'est un adjectif",
+    "Il y a plusieurs artistes"
+   ],
+   "hint": "Qui rencontre ? Les époux. Combien sont-ils ?",
+   "explain": "Rencontrer est un verbe. Son sujet, les époux, est au pluriel : N, T.",
+   "id": "francais-pluriel#cf97c3b4"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "pluriel-verbe"
+   ],
+   "q": "Dans « il rencontre Georgette », pourquoi n'y a-t-il pas de N, T ?",
+   "choices": [
+    "Il est tout seul : le sujet est au singulier",
+    "Georgette est une fille",
+    "Rencontre est un nom",
+    "On l'a oublié"
+   ],
+   "hint": "Qui rencontre ? Combien sont-ils ?",
+   "explain": "Il, c'est une seule personne : le verbe reste au singulier.",
+   "id": "francais-pluriel#269c2afc"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pluriel-nom"
+   ],
+   "q": "Pourquoi y a-t-il un S à « artistes » dans « des artistes » ?",
+   "choices": [
+    "C'est un nom, et il y en a plusieurs",
+    "C'est un verbe au pluriel",
+    "Artiste finit toujours par un S",
+    "C'est un mot féminin"
+   ],
+   "hint": "Regarde le petit mot devant : des.",
+   "explain": "Artiste est un nom. Des artistes : plusieurs, donc un S.",
+   "id": "francais-pluriel#64d91ceb"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "nature-mot",
+    "pluriel-verbe"
+   ],
+   "q": "Dans « les lointaines étoiles brillent », quel mot est le verbe ?",
+   "choices": [
+    "brillent",
+    "étoiles",
+    "lointaines",
+    "les"
+   ],
+   "hint": "Le verbe dit ce que font les étoiles.",
+   "explain": "Les étoiles brillent : brillent est le verbe, il prend N, T.",
+   "id": "francais-pluriel#b5642f99"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "nature-mot",
+    "pluriel-adjectif"
+   ],
+   "q": "Dans « les lointaines étoiles brillent », quel mot est l'adjectif ?",
+   "choices": [
+    "lointaines",
+    "étoiles",
+    "brillent",
+    "les"
+   ],
+   "hint": "L'adjectif dit comment sont les étoiles.",
+   "explain": "Lointaines dit comment sont les étoiles : c'est un adjectif, il prend un S.",
+   "id": "francais-pluriel#9cb0effb"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "nature-mot"
+   ],
+   "q": "Lequel n'est PAS un nom ?",
+   "choices": [
+    "brillent",
+    "étoiles",
+    "artistes",
+    "hirondelles"
+   ],
+   "hint": "Devant un nom, je peux dire « une » ou « un ».",
+   "explain": "On ne peut pas dire « une brillent » : brillent est un verbe.",
+   "id": "francais-pluriel#2befa6ab"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "nature-mot"
+   ],
+   "q": "Lequel n'est PAS un verbe ?",
+   "choices": [
+    "étroites",
+    "marchent",
+    "jouent",
+    "déménagent"
+   ],
+   "hint": "Devant un verbe, je peux dire « ils ».",
+   "explain": "On ne peut pas dire « ils étroites » : étroites est un adjectif, comme dans les rues étroites.",
+   "id": "francais-pluriel#f22b15cc"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "nature-mot"
+   ],
+   "q": "Comment savoir si « jouent » est un verbe ?",
+   "choices": [
+    "Je peux dire « ils jouent »",
+    "Je peux dire « une jouent »",
+    "Il a un S à la fin",
+    "Il commence par un J"
+   ],
+   "hint": "Essaie de mettre « ils » ou « une » devant.",
+   "explain": "Ils jouent : on peut mettre ils devant, c'est un verbe.",
+   "id": "francais-pluriel#eded97ed"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-adjectif",
+    "pluriel-verbe"
+   ],
+   "q": "Quelle est la marque du pluriel d'un verbe ?",
+   "choices": [
+    "N, T à la fin",
+    "Un S à la fin",
+    "Un X à la fin",
+    "Un E à la fin"
+   ],
+   "hint": "Ils rencontrent, ils rêvent…",
+   "explain": "Le verbe au pluriel prend N, T : ils rêvent.",
+   "id": "francais-pluriel#2488df82"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "pluriel-adjectif"
+   ],
+   "sentence": "Ce sont des écrivains",
+   "choices": [
+    "étranges",
+    "étrange",
+    "étrangent",
+    "étranjes"
+   ],
+   "hint": "Étranges dit comment sont les écrivains. Ils sont plusieurs.",
+   "explain": "Écrivains est au pluriel : l'adjectif étranges prend un S.",
+   "id": "francais-pluriel#725e62d2"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "pluriel-adjectif"
+   ],
+   "sentence": "Il a travaillé des années",
+   "choices": [
+    "entières",
+    "entière",
+    "entièrent",
+    "entiers"
+   ],
+   "hint": "Années est féminin et pluriel.",
+   "explain": "Des années entières : féminin pluriel, un E et un S.",
+   "id": "francais-pluriel#f02a9587"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "pluriel-nom",
+    "plusieurs"
+   ],
+   "sentence": "Dans le jardin, il y a plusieurs",
+   "choices": [
+    "musiciens",
+    "musicien",
+    "musiciennt",
+    "musicienx"
+   ],
+   "hint": "Plusieurs, c'est plus d'un.",
+   "explain": "Plusieurs musiciens : le nom prend un S.",
+   "id": "francais-pluriel#47f91f4b"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2.5,
+   "notions": [
+    "pluriel-verbe"
+   ],
+   "sentence": "Les enfants des voisins",
+   "choices": [
+    "déménagent",
+    "déménages",
+    "déménage",
+    "déménagents"
+   ],
+   "hint": "C'est un verbe, et son sujet est au pluriel.",
+   "explain": "Les enfants déménagent : le verbe prend N, T.",
+   "id": "francais-pluriel#e963c3fa"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 3,
+   "notions": [
+    "pluriel-verbe",
+    "pluriel-adjectif"
+   ],
+   "sentence": "Dans le ciel, les étoiles",
+   "choices": [
+    "lointaines brillent",
+    "lointaines brilles",
+    "lointainent brillent",
+    "lointaine brille"
+   ],
+   "hint": "Lointaines est un adjectif, brillent est un verbe.",
+   "explain": "Adjectif : un S. Verbe : N, T. Les étoiles lointaines brillent.",
+   "id": "francais-pluriel#cac4d44d"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 3,
+   "notions": [
+    "pluriel-nom",
+    "pluriel-verbe"
+   ],
+   "sentence": "À Paris, les époux",
+   "choices": [
+    "rencontrent des artistes",
+    "rencontres des artistes",
+    "rencontrent des artistent",
+    "rencontre des artiste"
+   ],
+   "hint": "Rencontrer est un verbe, artistes est un nom.",
+   "explain": "Le verbe prend N, T, le nom prend un S.",
+   "id": "francais-pluriel#8e275de1"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "pluriel-verbe"
+   ],
+   "q": "Au pluriel, on entend le N, T à la fin du verbe.",
+   "answer": false,
+   "explain": "On ne l'entend pas : il rêve et ils rêvent se disent pareil.",
+   "id": "francais-pluriel#b0dcd1f5"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "pluriel-nom"
+   ],
+   "q": "Pour mettre un nom au pluriel, on ajoute le plus souvent un S.",
+   "answer": true,
+   "explain": "Un artiste, des artistes.",
+   "id": "francais-pluriel#b58d9f9c"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "pluriel-adjectif"
+   ],
+   "q": "Dans « les artistes surréalistes », l'adjectif prend un S.",
+   "answer": true,
+   "explain": "L'adjectif va avec artistes, au pluriel : il prend un S.",
+   "id": "francais-pluriel#f0eb187b"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "pluriel-verbe",
+    "nature-mot"
+   ],
+   "q": "On met N, T à la fin d'un nom au pluriel.",
+   "answer": false,
+   "explain": "N, T, c'est pour les verbes. Les noms prennent un S.",
+   "id": "francais-pluriel#38c3b8ff"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "plusieurs"
+   ],
+   "q": "« Plusieurs » s'écrit toujours avec un S à la fin.",
+   "answer": true,
+   "explain": "Plusieurs, c'est forcément plus d'un : toujours un S.",
+   "id": "francais-pluriel#02620722"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "quand"
+   ],
+   "q": "« Quand » s'écrit avec un T à la fin.",
+   "answer": false,
+   "explain": "Quand s'écrit avec un D à la fin : quand il rencontre Georgette.",
+   "id": "francais-pluriel#5b50cdac"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "belge"
+   ],
+   "q": "Dans « un artiste belge », belge prend une majuscule.",
+   "answer": false,
+   "explain": "Belge est ici un adjectif : pas de majuscule.",
+   "id": "francais-pluriel#0e6f0cd3"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "femme"
+   ],
+   "q": "« Femme » s'écrit avec un seul M.",
+   "answer": false,
+   "explain": "Femme prend deux M.",
+   "id": "francais-pluriel#6f63cda2"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "magritte",
+    "belge"
+   ],
+   "q": "De quel pays vient René Magritte ?",
+   "choices": [
+    "De Belgique",
+    "De France",
+    "D'Italie",
+    "D'Espagne"
+   ],
+   "hint": "Relis la première phrase de la dictée.",
+   "explain": "René Magritte est belge : il vient de Belgique.",
+   "id": "francais-pluriel#8049f63e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "magritte",
+    "forain"
+   ],
+   "q": "Où Magritte rencontre-t-il Georgette ?",
+   "choices": [
+    "À la fête foraine",
+    "À l'école",
+    "Au musée",
+    "À la plage"
+   ],
+   "hint": "Il y a des manèges.",
+   "explain": "Il la rencontre à la fête foraine, quand il a quatorze ans.",
+   "id": "francais-pluriel#29c9ec58"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "magritte",
+    "modele"
+   ],
+   "q": "Plus tard, que devient Georgette pour Magritte ?",
+   "choices": [
+    "Sa femme et son modèle",
+    "Sa sœur",
+    "Sa maitresse d'école",
+    "Sa voisine"
+   ],
+   "hint": "Relis la troisième phrase de la dictée.",
+   "explain": "Elle devient sa femme et son modèle : elle pose pour ses tableaux.",
+   "id": "francais-pluriel#bb90fa3a"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "magritte",
+    "affiche"
+   ],
+   "q": "Pour gagner sa vie, Magritte dessine…",
+   "choices": [
+    "des affiches et des publicités",
+    "des timbres",
+    "des bandes dessinées",
+    "des cartes de géographie"
+   ],
+   "hint": "On les colle sur les murs des rues.",
+   "explain": "Il dessine des affiches et des publicités.",
+   "id": "francais-pluriel#586d4a37"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "magritte"
+   ],
+   "q": "Où Magritte et Georgette s'installent-ils ensuite ?",
+   "choices": [
+    "En France, près de Paris",
+    "En Italie, à Venise",
+    "En Espagne",
+    "En Amérique"
+   ],
+   "hint": "C'est là qu'il a peint La Trahison des images.",
+   "explain": "Ils s'installent en France, près de Paris, et rencontrent les surréalistes.",
+   "id": "francais-pluriel#4e9797a5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "trahison-images"
+   ],
+   "q": "Qu'est-ce qui est écrit sous la pipe du tableau ?",
+   "choices": [
+    "Ceci n'est pas une pipe",
+    "Ceci est une pipe",
+    "Voici ma pipe",
+    "Une belle pipe"
+   ],
+   "hint": "C'est une phrase qui étonne.",
+   "explain": "Magritte a écrit : Ceci n'est pas une pipe.",
+   "id": "francais-pluriel#6b3c8429"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "trahison-images",
+    "representation"
+   ],
+   "q": "Pourquoi Magritte écrit-il « Ceci n'est pas une pipe » ?",
+   "choices": [
+    "C'est l'image d'une pipe, pas une vraie pipe",
+    "Il s'est trompé de mot",
+    "Il n'aime pas les pipes",
+    "C'est le nom de son chien"
+   ],
+   "hint": "Peux-tu prendre la pipe du tableau dans ta main ?",
+   "explain": "C'est une représentation : une image de pipe, pas une vraie pipe.",
+   "id": "francais-pluriel#faa396ed"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "representation"
+   ],
+   "q": "Une pomme peinte sur un tableau…",
+   "choices": [
+    "est une image : on ne peut pas la croquer",
+    "est une vraie pomme",
+    "pourrit au bout d'une semaine",
+    "tombe du tableau"
+   ],
+   "hint": "Est-ce qu'on peut la manger ?",
+   "explain": "C'est une représentation de pomme, pas une vraie pomme.",
+   "id": "francais-pluriel#2b815a50"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "trahison-images",
+    "trahison"
+   ],
+   "q": "Selon Magritte, les images nous trahissent. Pourquoi ?",
+   "choices": [
+    "Elles ressemblent aux choses, mais ce ne sont pas les choses",
+    "Elles sont mal peintes",
+    "Elles racontent des secrets",
+    "Elles disparaissent la nuit"
+   ],
+   "hint": "La pipe a l'air vraie… mais l'est-elle ?",
+   "explain": "L'image nous trompe : elle a l'air vraie, mais ce n'est qu'une image.",
+   "id": "francais-pluriel#02591da2"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "trahison-images"
+   ],
+   "q": "En quelle année Magritte a-t-il peint La Trahison des images ?",
+   "choices": [
+    "En 1929",
+    "En 1492",
+    "En 1789",
+    "En 2010"
+   ],
+   "hint": "Au vingtième siècle, il y a presque cent ans.",
+   "explain": "Il l'a peint en 1929, à Paris.",
+   "id": "francais-pluriel#66ea53a1"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "trahison-images"
+   ],
+   "q": "Dans quelle ville Magritte a-t-il peint ce tableau ?",
+   "choices": [
+    "Paris",
+    "Bruxelles",
+    "Rome",
+    "Londres"
+   ],
+   "hint": "La capitale de la France.",
+   "explain": "Il l'a peint à Paris, où il était venu rencontrer les surréalistes.",
+   "id": "francais-pluriel#1ecf3059"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "trahison-images"
+   ],
+   "q": "Comment Magritte a-t-il fait ce tableau ?",
+   "choices": [
+    "Avec de la peinture à l'huile, sur une toile",
+    "Avec un appareil photo",
+    "Avec de la pâte à modeler",
+    "Avec des crayons de couleur, sur une feuille"
+   ],
+   "hint": "C'est une peinture, sur un tissu tendu.",
+   "explain": "C'est une huile sur toile.",
+   "id": "francais-pluriel#9ada3eb4"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "trahison-images"
+   ],
+   "q": "Où peut-on voir ce tableau aujourd'hui ?",
+   "choices": [
+    "Dans un musée aux États-Unis",
+    "Au château de Versailles",
+    "Dans la maison de Georgette",
+    "Dans une église de Bruxelles"
+   ],
+   "hint": "Il a traversé l'océan.",
+   "explain": "Il est exposé dans un musée de Los Angeles, aux États-Unis.",
+   "id": "francais-pluriel#c67187d6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "surrealisme"
+   ],
+   "q": "Les surréalistes s'intéressent surtout…",
+   "choices": [
+    "au rêve et au hasard",
+    "aux nombres",
+    "aux batailles",
+    "au sport"
+   ],
+   "hint": "Ce qui se passe quand on dort…",
+   "explain": "Ils aiment le rêve, le hasard, et ce qui est caché ou étrange.",
+   "id": "francais-pluriel#69531cbd"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "surrealisme"
+   ],
+   "q": "Qui sont les surréalistes ?",
+   "choices": [
+    "Des peintres, des poètes, des écrivains et des musiciens",
+    "Des chevaliers",
+    "Des savants qui étudient les étoiles",
+    "Des sportifs"
+   ],
+   "hint": "Ce sont des artistes.",
+   "explain": "Les surréalistes sont des artistes : peintres, poètes, écrivains, musiciens.",
+   "id": "francais-pluriel#8c5bdbed"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "epoque-contemporaine",
+    "trahison-images"
+   ],
+   "q": "À quelle période de l'histoire Magritte a-t-il peint ce tableau ?",
+   "choices": [
+    "L'Époque contemporaine",
+    "Le Moyen Âge",
+    "Les Temps modernes",
+    "L'Antiquité"
+   ],
+   "hint": "C'est la période d'aujourd'hui.",
+   "explain": "1929, c'est l'Époque contemporaine, qui commence en 1789.",
+   "id": "francais-pluriel#a7440b4a"
+  },
+  {
+   "type": "placer",
+   "layout": "frise",
+   "diff": 2.5,
+   "notions": [
+    "magritte",
+    "trahison-images",
+    "epoque-contemporaine"
+   ],
+   "q": "Place chaque étiquette sur la frise du temps.",
+   "explain": "L'Époque contemporaine commence en 1789. Magritte nait en 1898, peint La Trahison des images en 1929 et meurt en 1967.",
+   "targets": [
+    {
+     "id": "a",
+     "date": "1789"
+    },
+    {
+     "id": "b",
+     "date": "1898"
+    },
+    {
+     "id": "c",
+     "date": "1929"
+    },
+    {
+     "id": "d",
+     "date": "1967"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Début de l'Époque contemporaine",
+     "target": "a"
+    },
+    {
+     "text": "Naissance de Magritte en Belgique",
+     "target": "b"
+    },
+    {
+     "text": "La Trahison des images",
+     "target": "c"
+    },
+    {
+     "text": "Mort de Magritte",
+     "target": "d"
+    }
+   ],
+   "id": "francais-pluriel#ce1d8f32"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "magritte"
+   ],
+   "q": "René Magritte est un peintre français.",
+   "answer": false,
+   "explain": "Magritte est belge. Il a vécu un temps en France, près de Paris.",
+   "id": "francais-pluriel#81dcbcb0"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "representation",
+    "trahison-images"
+   ],
+   "q": "On pourrait prendre dans sa main la pipe du tableau.",
+   "answer": false,
+   "explain": "C'est une image de pipe, pas une vraie pipe.",
+   "id": "francais-pluriel#efe9e8de"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "representation"
+   ],
+   "q": "De quoi parle-t-on ? Une pomme peinte sur un tableau en est une : on ne peut pas la croquer.",
+   "choices": [
+    "Représentation",
+    "Surréalisme",
+    "Trahison",
+    "Affiche"
+   ],
+   "explain": "Une représentation : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+   "id": "francais-pluriel#47c7f84d"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "representation"
+   ],
+   "q": "Que veut dire « représentation » ?",
+   "choices": [
+    "Image d'une chose : on la voit, mais ce n'est pas la chose elle-même",
+    "Mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange",
+    "Tromperie : on promet quelque chose, puis on ne le fait pas",
+    "Grande feuille imprimée, collée au mur pour annoncer quelque chose"
+   ],
+   "explain": "Une représentation : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+   "id": "francais-pluriel#b0a99b2e"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "representation"
+   ],
+   "q": "« Représentation » veut dire : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+   "explain": "Une représentation : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+   "id": "francais-pluriel#20ec9590"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "representation"
+   ],
+   "q": "« Représentation » veut dire : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+   "explain": "Une représentation : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+   "id": "francais-pluriel#9b4afca1"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "surrealisme"
+   ],
+   "q": "De quoi parle-t-on ? Dans ces tableaux, des poissons volent dans le ciel et les objets ne sont pas là où on les attend.",
+   "choices": [
+    "Surréalisme",
+    "Représentation",
+    "Trahison",
+    "Affiche"
+   ],
+   "explain": "Le surréalisme : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+   "id": "francais-pluriel#7360baad"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "surrealisme"
+   ],
+   "q": "Que veut dire « surréalisme » ?",
+   "choices": [
+    "Mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange",
+    "Image d'une chose : on la voit, mais ce n'est pas la chose elle-même",
+    "Tromperie : on promet quelque chose, puis on ne le fait pas",
+    "Grande feuille imprimée, collée au mur pour annoncer quelque chose"
+   ],
+   "explain": "Le surréalisme : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+   "id": "francais-pluriel#5e2632ff"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "surrealisme"
+   ],
+   "q": "« Surréalisme » veut dire : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+   "explain": "Le surréalisme : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+   "id": "francais-pluriel#79a4add1"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "surrealisme"
+   ],
+   "q": "« Surréalisme » veut dire : tromperie : on promet quelque chose, puis on ne le fait pas.",
+   "explain": "Le surréalisme : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+   "id": "francais-pluriel#d5617976"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "trahison"
+   ],
+   "q": "De quoi parle-t-on ? Ton ami avait promis de garder ton secret, mais il l'a raconté à toute la classe.",
+   "choices": [
+    "Trahison",
+    "Représentation",
+    "Surréalisme",
+    "Affiche"
+   ],
+   "explain": "Une trahison : tromperie : on promet quelque chose, puis on ne le fait pas.",
+   "id": "francais-pluriel#fc80bebc"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "trahison"
+   ],
+   "q": "Que veut dire « trahison » ?",
+   "choices": [
+    "Tromperie : on promet quelque chose, puis on ne le fait pas",
+    "Image d'une chose : on la voit, mais ce n'est pas la chose elle-même",
+    "Mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange",
+    "Grande feuille imprimée, collée au mur pour annoncer quelque chose"
+   ],
+   "explain": "Une trahison : tromperie : on promet quelque chose, puis on ne le fait pas.",
+   "id": "francais-pluriel#6de13f16"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "trahison"
+   ],
+   "q": "« Trahison » veut dire : tromperie : on promet quelque chose, puis on ne le fait pas.",
+   "explain": "Une trahison : tromperie : on promet quelque chose, puis on ne le fait pas.",
+   "id": "francais-pluriel#3b69e6d8"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "trahison"
+   ],
+   "q": "« Trahison » veut dire : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+   "explain": "Une trahison : tromperie : on promet quelque chose, puis on ne le fait pas.",
+   "id": "francais-pluriel#88fb94a5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "affiche"
+   ],
+   "q": "De quoi parle-t-on ? Magritte en dessinait pour gagner sa vie : on les collait dans les rues pour faire de la publicité.",
+   "choices": [
+    "Affiche",
+    "Représentation",
+    "Surréalisme",
+    "Trahison"
+   ],
+   "explain": "Une affiche : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+   "id": "francais-pluriel#ee4c8f77"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "affiche"
+   ],
+   "q": "Que veut dire « affiche » ?",
+   "choices": [
+    "Grande feuille imprimée, collée au mur pour annoncer quelque chose",
+    "Image d'une chose : on la voit, mais ce n'est pas la chose elle-même",
+    "Mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange",
+    "Tromperie : on promet quelque chose, puis on ne le fait pas"
+   ],
+   "explain": "Une affiche : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+   "id": "francais-pluriel#97793b9e"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "affiche"
+   ],
+   "q": "« Affiche » veut dire : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+   "explain": "Une affiche : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+   "id": "francais-pluriel#334fa6f8"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "affiche"
+   ],
+   "q": "« Affiche » veut dire : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+   "explain": "Une affiche : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+   "id": "francais-pluriel#a5cfab25"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "representation",
+    "surrealisme",
+    "trahison"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "representation",
+     "label": "Image d'une chose : on la voit, mais ce n'est pas la chose elle-même"
+    },
+    {
+     "id": "surrealisme",
+     "label": "Mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange"
+    },
+    {
+     "id": "trahison",
+     "label": "Tromperie : on promet quelque chose, puis on ne le fait pas"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Représentation",
+     "target": "representation"
+    },
+    {
+     "text": "Surréalisme",
+     "target": "surrealisme"
+    },
+    {
+     "text": "Trahison",
+     "target": "trahison"
+    }
+   ],
+   "id": "francais-pluriel#c7f9ddd4"
+  }
+ ],
+ "images": {
+  "femme": {
+   "prompt": "a young woman in a 1920s dress and short bob haircut, smiling, sitting by a window with a cup of tea",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "modele": {
+   "prompt": "a young woman in a 1920s dress sitting still on a chair and posing, in front of her a painter standing at an easel paints her portrait",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "rencontrer": {
+   "prompt": "a teenage boy and a teenage girl meeting for the first time in front of a wooden carousel at an old-fashioned village fair, early 1900s clothes",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "rever": {
+   "prompt": "a child asleep in bed, above the child a big dream cloud with fish swimming in the sky, a tiny house on a cloud and a staircase to the moon",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "belge": {
+   "prompt": "the Grand-Place square in Brussels with its golden old guild houses and tall gothic town hall tower, a few people walking",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "forain": {
+   "prompt": "an old-fashioned village fair at dusk: a wooden carousel with painted horses, colorful stalls, garlands of lights, families walking",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "plusieurs": {
+   "prompt": "several colorful hot air balloons floating together in a blue sky over green hills",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 42
+  },
+  "magritte": {
+   "prompt": "a calm painter in a dark suit and a round black bowler hat, standing at an easel in a small living room, painting a blue sky with white clouds on a canvas",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "representation": {
+   "prompt": "a wooden easel holding a canvas with one painted red apple on it, and one single real red apple lying on a small wooden table beside the easel",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  },
+  "surrealisme": {
+   "prompt": "a dreamlike landscape: fish swimming among clouds in the sky, a door standing alone in a field, a tree with keys instead of leaves, a staircase going up to the moon",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "affiche": {
+   "prompt": "a worker with a brush and a bucket of glue pasting a large colorful poster on a city wall, the poster shows only a big red hot air balloon in a blue sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  }
+ },
+ "speech": [
+  "1929, c'est l'Époque contemporaine, qui commence en 1789.",
+  "A ou à",
+  "A ou à : a, sans accent, c'est le verbe avoir ; à, avec un accent, c'est le petit mot de lieu : à Paris.",
+  "A ou à ? Si je peux dire « avait », j'écris A sans accent. Sinon, j'écris à, avec un accent.",
+  "A ou à ? Si tu peux dire « avait », c'est a sans accent.",
+  "A, I, N, comme dans le pain. Au féminin : la fête foraine.",
+  "Adjectif",
+  "Adjectif : un S. Verbe : N, T. Les étoiles lointaines brillent.",
+  "Affiche",
+  "Ajoute S ou N, T seulement si c'est nécessaire.",
+  "Années est féminin et pluriel.",
+  "Artiste est un nom. Des artistes : plusieurs, donc un S.",
+  "Artiste finit toujours par un S",
+  "Au château de Versailles",
+  "Au musée",
+  "Au vingtième siècle, il y a presque cent ans.",
+  "Avec de la peinture à l'huile, sur une toile",
+  "Avec de la pâte à modeler",
+  "Avec des crayons de couleur, sur une feuille",
+  "Avec un appareil photo",
+  "Belge",
+  "Belge : qui vient de Belgique.",
+  "Belge est ici un adjectif : pas de majuscule.",
+  "Bruxelles",
+  "C'est l'image d'une pipe, pas une vraie pipe",
+  "C'est la période d'aujourd'hui.",
+  "C'est le nom de son chien",
+  "C'est là qu'il a peint La Trahison des images.",
+  "C'est un adjectif",
+  "C'est un adjectif, et il va avec peintres, au pluriel.",
+  "C'est un mot féminin",
+  "C'est un nom au pluriel",
+  "C'est un nom, et il y en a plusieurs",
+  "C'est un verbe au pluriel",
+  "C'est un verbe, et les surréalistes sont plusieurs.",
+  "C'est un verbe, et les époux sont deux : au pluriel.",
+  "C'est un verbe, et les époux sont plusieurs",
+  "C'est un verbe, et son sujet est au pluriel.",
+  "C'est une huile sur toile.",
+  "C'est une image de pipe, pas une vraie pipe.",
+  "C'est une peinture, sur un tissu tendu.",
+  "C'est une phrase qui étonne.",
+  "C'est une représentation : une image de pipe, pas une vraie pipe.",
+  "C'est une représentation de pomme, pas une vraie pomme.",
+  "Ce qui est caché et étrange les intéresse.",
+  "Ce qui se passe quand on dort…",
+  "Ce sont des artistes.",
+  "Ce sont des peintres belges.",
+  "Ce sont des écrivains étranges.",
+  "Ce tableau date de l'Époque contemporaine. Aujourd'hui, il est exposé dans un musée, aux États-Unis.",
+  "Ceci est une pipe",
+  "Ceci n'est pas une pipe",
+  "Ceci n'est pas une pomme",
+  "Choisis le mot bien écrit.",
+  "Comment Magritte a-t-il fait ce tableau ?",
+  "Comment savoir s'il faut écrire « a » sans accent ?",
+  "Comment savoir s'il faut écrire « est », avec un S et un T ?",
+  "Comment savoir si « jouent » est un verbe ?",
+  "D'Espagne",
+  "D'Italie",
+  "Dans la maison de Georgette",
+  "Dans le ciel, les étoiles lointaines brillent.",
+  "Dans le jardin, il y a plusieurs musiciens.",
+  "Dans quelle ville Magritte a-t-il peint ce tableau ?",
+  "Dans un musée aux États-Unis",
+  "Dans une église de Bruxelles",
+  "Dans « il rencontre Georgette », pourquoi n'y a-t-il pas de N, T ?",
+  "Dans « les lointaines étoiles brillent », quel mot est l'adjectif ?",
+  "Dans « les lointaines étoiles brillent », quel mot est le verbe ?",
+  "Dans « les époux rencontrent des artistes », pourquoi « rencontrent » finit-il par N, T ?",
+  "De Belgique",
+  "De France",
+  "De quel pays vient René Magritte ?",
+  "De quoi parle-t-on ? Dans ces tableaux, des poissons volent dans le ciel et les objets ne sont pas là où on les attend.",
+  "De quoi parle-t-on ? Magritte en dessinait pour gagner sa vie : on les collait dans les rues pour faire de la publicité.",
+  "De quoi parle-t-on ? Ton ami avait promis de garder ton secret, mais il l'a raconté à toute la classe.",
+  "De quoi parle-t-on ? Une pomme peinte sur un tableau en est une : on ne peut pas la croquer.",
+  "Depuis 1789 jusqu'à aujourd'hui. Le tableau de Magritte date de 1929.",
+  "Des années entières : féminin pluriel, un E et un S.",
+  "Des artistes belges : l'adjectif prend un S, comme son nom.",
+  "Des chevaliers",
+  "Des peintres, des poètes, des écrivains et des musiciens",
+  "Des savants qui étudient les étoiles",
+  "Des sportifs",
+  "Devant un nom, je peux dire « une » ou « un ».",
+  "Devant un verbe, je peux dire « ils ».",
+  "Début de l'Époque contemporaine",
+  "Elle deviendra",
+  "Elle deviendra plusieurs années plus tard sa femme et son modèle.",
+  "Elle deviendra sa femme et son modèle.",
+  "Elle devient sa femme et son modèle : elle pose pour ses tableaux.",
+  "Elles disparaissent la nuit",
+  "Elles racontent des secrets",
+  "Elles ressemblent aux choses, mais ce ne sont pas les choses",
+  "Elles répondent à toutes leurs questions.",
+  "Elles sont mal peintes",
+  "En 1492",
+  "En 1789",
+  "En 1929",
+  "En 2010",
+  "En Amérique",
+  "En Espagne",
+  "En France, près de Paris",
+  "En Italie, à Venise",
+  "En quelle année Magritte a-t-il peint La Trahison des images ?",
+  "Essaie de dire la phrase au passé.",
+  "Essaie de mettre « ils » ou « une » devant.",
+  "Est ou et",
+  "Est ou et : est, avec un S et un T, c'est le verbe être ; et, c'est le petit mot qui relie : sa femme et son modèle.",
+  "Est ou et ? Si je peux dire « était », j'écris E, S, T. Sinon, j'écris E, T.",
+  "Est ou et ? Si tu peux dire « était », c'est est.",
+  "Est-ce qu'on peut la manger ?",
+  "Et, est, a, à",
+  "Femme",
+  "Femme prend deux M.",
+  "Finalement, elles remportent tous les matchs de la saison.",
+  "Forain",
+  "Forain : qui a rapport à la fête foraine, avec ses manèges et ses stands.",
+  "G, E à la fin, comme dans la Belgique. Pas de majuscule dans « un artiste belge ».",
+  "Georgette deviendra sa femme.",
+  "Georgette est une fille",
+  "Grande feuille imprimée, collée au mur pour annoncer quelque chose",
+  "Il a quatorze ans",
+  "Il a quatorze ans quand il rencontre Georgette, à la fête foraine.",
+  "Il a quatorze ans quand il rencontre Georgette.",
+  "Il a quatorze ans.",
+  "Il a travaillé des années entières.",
+  "Il a traversé l'océan.",
+  "Il a un S à la fin",
+  "Il avait quatorze ans : je peux dire avait, donc j'écris a, sans accent.",
+  "Il commence par un J",
+  "Il dessine des affiches et des publicités.",
+  "Il déménage à Bruxelles.",
+  "Il est exposé dans un musée de Los Angeles, aux États-Unis.",
+  "Il est toujours après un nom de pays",
+  "Il est toujours au début de la phrase",
+  "Il est toujours devant une ville",
+  "Il est toujours à la fin de la phrase",
+  "Il est tout seul : le sujet est au singulier",
+  "Il est tout seul : le verbe est au singulier.",
+  "Il l'a peint en 1929, à Paris.",
+  "Il l'a peint à Paris, où il était venu rencontrer les surréalistes.",
+  "Il la rencontre à la fête foraine, quand il a quatorze ans.",
+  "Il n'aime pas les pipes",
+  "Il rencontre Georgette.",
+  "Il s'est trompé de mot",
+  "Il va avec fêtes : féminin pluriel. Il faut un E et un S.",
+  "Il y a des manèges.",
+  "Il y a plusieurs artistes",
+  "Il y a plusieurs femmes : c'est un nom au pluriel.",
+  "Il y a une lettre muette à la fin.",
+  "Il, c'est une seule personne : le verbe reste au singulier.",
+  "Ils aiment le rêve, le hasard, et ce qui est caché ou étrange.",
+  "Ils jouent : on peut mettre ils devant, c'est un verbe.",
+  "Ils préfèrent les pièces comiques.",
+  "Ils rencontrent, ils rêvent…",
+  "Ils s'installent en France, près de Paris, et rencontrent les surréalistes.",
+  "Ils se rencontrent : N, T à la fin du verbe, même si on ne l'entend pas.",
+  "Image d'une chose : on la voit, mais ce n'est pas la chose elle-même",
+  "J'adore les fêtes foraines.",
+  "J'aime rencontrer des artistes.",
+  "Je peux dire « ils jouent »",
+  "Je peux dire « une jouent »",
+  "Je peux le remplacer par « avait »",
+  "Je peux le remplacer par « dans »",
+  "Je peux le remplacer par « et puis »",
+  "Je peux le remplacer par « était »",
+  "L'Antiquité",
+  "L'adjectif dit comment est le nom. Je cherche le nom qui va avec : s'il est au pluriel, l'adjectif aussi.",
+  "L'adjectif dit comment sont les étoiles.",
+  "L'adjectif va avec artistes, au pluriel : il prend un S.",
+  "L'image nous trompe : elle a l'air vraie, mais ce n'est qu'une image.",
+  "L'Époque contemporaine",
+  "L'Époque contemporaine : période de l'histoire qui commence en 1789 et va jusqu'à aujourd'hui.",
+  "L'Époque contemporaine commence en 1789. Magritte nait en 1898, peint La Trahison des images en 1929 et meurt en 1967.",
+  "La Trahison des images",
+  "La Trahison des images : tableau de Magritte, peint à Paris en 1929 : une pipe, et en dessous « Ceci n'est pas une pipe ».",
+  "La Trahison des images est un tableau de René Magritte. Il l'a peint à Paris, en 1929, avec de la peinture à l'huile sur une toile.",
+  "La capitale de la France.",
+  "La dictée. René Magritte est belge.",
+  "La femme : une dame, ou l'épouse de quelqu'un : sa femme.",
+  "La fête foraine",
+  "La pipe a l'air vraie… mais l'est-elle ?",
+  "Le E porte un petit chapeau.",
+  "Le Moyen Âge",
+  "Le N, T ne s'entend pas : il rêve, ils rêvent. Il faut y penser !",
+  "Le détective des mots",
+  "Le manège forain tourne.",
+  "Le modèle : personne qui pose pour un peintre.",
+  "Le peintre a plusieurs modèles.",
+  "Le pluriel de l'adjectif : l'adjectif qui va avec un nom au pluriel prend un S : les artistes surréalistes.",
+  "Le pluriel du nom : pour marquer le pluriel d'un nom, on ajoute un S : les artistes.",
+  "Le pluriel du verbe : quand le sujet est au pluriel, on écrit N, T à la fin du verbe : ils se rencontrent.",
+  "Le rêve",
+  "Le surréalisme : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+  "Le verbe au pluriel prend N, T : ils rêvent.",
+  "Le verbe dit ce que font les étoiles.",
+  "Le verbe prend N, T, le nom prend un S.",
+  "Lequel n'est PAS un nom ?",
+  "Lequel n'est PAS un verbe ?",
+  "Les Temps modernes",
+  "Les adjectifs au pluriel",
+  "Les artistes surréalistes",
+  "Les artistes surréalistes se rencontrent à Paris.",
+  "Les ballons des enfants s'envolent.",
+  "Les candidats débattent à la télévision.",
+  "Les enfants des voisins déménagent.",
+  "Les enfants déménagent : le verbe prend N, T.",
+  "Les femmes regardent le tableau.",
+  "Les grosses vagues s'écrasent.",
+  "Les hirondelles se posent sur les fils électriques.",
+  "Les huit mots à savoir écrire : la femme, le modèle, rencontrer, rêver, belge, forain, quand, plusieurs.",
+  "Les joueurs marquent des points décisifs.",
+  "Les lointaines étoiles brillent.",
+  "Les meilleurs joueurs marquent des buts.",
+  "Les noms au pluriel",
+  "Les petits koalas croquent des feuilles d'eucalyptus.",
+  "Les rosiers fleurissent.",
+  "Les surréalistes aiment rêver.",
+  "Les surréalistes rêvent : dans leurs tableaux, tout peut arriver.",
+  "Les surréalistes rêvent beaucoup.",
+  "Les surréalistes s'intéressent surtout…",
+  "Les surréalistes s'intéressent à ce qui est caché.",
+  "Les surréalistes sont des artistes : peintres, poètes, écrivains, musiciens.",
+  "Les techniciens utilisent des ordinateurs perfectionnés.",
+  "Les verbes au pluriel",
+  "Les époux rencontrent des artistes.",
+  "Les étoiles brillent : brillent est le verbe, il prend N, T.",
+  "Lointaines dit comment sont les étoiles : c'est un adjectif, il prend un S.",
+  "Lointaines est un adjectif, brillent est un verbe.",
+  "Londres",
+  "Magritte a quatorze ans quand il rencontre Georgette, à la fête foraine.",
+  "Magritte a écrit : Ceci n'est pas une pipe.",
+  "Magritte est belge. Il a vécu un temps en France, près de Paris.",
+  "Magritte est tout seul : le verbe est au singulier.",
+  "Magritte est un peintre et un artiste.",
+  "Magritte est un peintre surréaliste. Les surréalistes s'intéressent au rêve, au hasard, et à tout ce qui est caché ou étrange.",
+  "Magritte rêve",
+  "Magritte rêve de devenir artiste.",
+  "Modèle",
+  "Mort de Magritte",
+  "Mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange",
+  "N, T à la fin",
+  "N, T, c'est pour les verbes. Les noms prennent un S.",
+  "Naissance de Magritte en Belgique",
+  "Nom",
+  "Nom : je peux dire « un » devant. Verbe : je peux dire « ils » devant. Adjectif : il dit comment est le nom.",
+  "Nom ou adjectif : on ajoute un S. Verbe : on écrit N, T.",
+  "Nom ou adjectif : un S. Verbe : N, T.",
+  "Nom, adjectif ou verbe",
+  "Nom, adjectif ou verbe : avant d'écrire la marque du pluriel, je cherche si le mot est un nom, un adjectif ou un verbe.",
+  "Nom, adjectif ou verbe ? Je cherche d'abord, puis j'accorde.",
+  "Nom, adjectif ou verbe ? Range chaque mot.",
+  "On ajoute un S",
+  "On entend « a », mais ce n'est pas un A.",
+  "On entend « a », mais on écrit E. Et deux M : f, e, m, m, e.",
+  "On l'a oublié",
+  "On les colle sur les murs des rues.",
+  "On ne l'entend pas ! Il rêve, ils rêvent : ça se dit pareil, mais ça ne s'écrit pas pareil.",
+  "On ne l'entend pas : il rêve et ils rêvent se disent pareil.",
+  "On ne peut pas dire « ils étroites » : étroites est un adjectif, comme dans les rues étroites.",
+  "On ne peut pas dire « une brillent » : brillent est un verbe.",
+  "On y voit une pipe. En dessous, il est écrit : Ceci n'est pas une pipe.",
+  "On écrit : belge, comme la Belgique.",
+  "On écrit : femme, avec un E et deux M.",
+  "On écrit : forain, avec A, I, N.",
+  "On écrit : modèle, avec un accent grave.",
+  "On écrit : plusieurs, toujours avec un S.",
+  "On écrit : quand, avec Q, U et un D à la fin.",
+  "On écrit : rencontrer.",
+  "On écrit : rêver, avec un accent circonflexe.",
+  "On écrit N, T",
+  "Où Magritte et Georgette s'installent-ils ensuite ?",
+  "Où Magritte rencontre-t-il Georgette ?",
+  "Où peut-on voir ce tableau aujourd'hui ?",
+  "Paris",
+  "Pense à la Belgique.",
+  "Peux-tu prendre la pipe du tableau dans ta main ?",
+  "Place chaque étiquette sur la frise du temps.",
+  "Pluriel de l'adjectif",
+  "Pluriel du nom",
+  "Pluriel du verbe",
+  "Plus tard, que devient Georgette pour Magritte ?",
+  "Plusieurs",
+  "Plusieurs : plus d'un, un certain nombre.",
+  "Plusieurs années",
+  "Plusieurs années plus tard.",
+  "Plusieurs et quand ne changent jamais. Plusieurs garde toujours son S.",
+  "Plusieurs modèles : c'est un nom au pluriel.",
+  "Plusieurs musiciens : le nom prend un S.",
+  "Plusieurs, c'est forcément plus d'un : toujours un S.",
+  "Plusieurs, c'est plus d'un : pense à la lettre du pluriel.",
+  "Plusieurs, c'est plus d'un.",
+  "Pour bien marquer le pluriel, je me demande d'abord : ce mot est-il un nom, un adjectif ou un verbe ?",
+  "Pour gagner sa vie, Magritte dessine…",
+  "Pour marquer le pluriel d'un adjectif, on ajoute aussi un S : les artistes surréalistes.",
+  "Pour marquer le pluriel d'un nom, on ajoute un S : les artistes.",
+  "Pour marquer le pluriel d'un verbe, on écrit N, T à la fin du verbe : les artistes surréalistes se rencontrent à Paris.",
+  "Pourquoi ? Parce que c'est l'image d'une pipe, pas une vraie pipe. On ne peut pas la prendre dans sa main.",
+  "Pourquoi Magritte écrit-il « Ceci n'est pas une pipe » ?",
+  "Pourquoi y a-t-il un S à « artistes » dans « des artistes » ?",
+  "Q, U au début, et un D muet à la fin. C'est un mot qui ne change jamais.",
+  "Qu'est-ce qui est écrit sous la pipe du tableau ?",
+  "Quand",
+  "Quand : au moment où.",
+  "Quand s'écrit avec un D à la fin : quand il rencontre Georgette.",
+  "Que veut dire « affiche » ?",
+  "Que veut dire « représentation » ?",
+  "Que veut dire « surréalisme » ?",
+  "Que veut dire « trahison » ?",
+  "Quel mot est bien écrit ?",
+  "Quelle est la marque du pluriel d'un verbe ?",
+  "Quelle marque du pluriel manque au dernier mot ? Range chaque groupe.",
+  "Qui rencontre ? Combien sont-ils ?",
+  "Qui rencontre ? Les époux. Combien sont-ils ?",
+  "Qui sont les surréalistes ?",
+  "Regarde bien l'accent sur le E.",
+  "Regarde le petit mot devant : des.",
+  "Relie chaque mot à sa définition.",
+  "Relis la première phrase de la dictée.",
+  "Relis la troisième phrase de la dictée.",
+  "Remets la phrase de la dictée dans l'ordre.",
+  "Remets la phrase de la leçon dans l'ordre.",
+  "Remets les phrases de la dictée dans l'ordre.",
+  "Ren avec E, N. Con avec O, N. Et E, R à la fin, comme rêver.",
+  "Ren s'écrit avec un E.",
+  "Rencontre est un nom",
+  "Rencontrer",
+  "Rencontrer : se trouver avec quelqu'un, le voir pour la première fois.",
+  "Rencontrer est un verbe, artistes est un nom.",
+  "Rencontrer est un verbe. Son sujet, les époux, est au pluriel : N, T.",
+  "René Magritte",
+  "René Magritte : peintre surréaliste belge, né en 1898, mort en 1967.",
+  "René Magritte est belge : il vient de Belgique.",
+  "René Magritte est belge.",
+  "René Magritte est belge. Magritte rêve de devenir artiste.",
+  "René Magritte était belge : je peux dire était, donc j'écris est.",
+  "Représentation",
+  "Rome",
+  "Rêver",
+  "Rêver : voir des images dans sa tête quand on dort ; aussi souhaiter très fort quelque chose.",
+  "S ou N, T ? Choisis le mot bien écrit.",
+  "Sa femme et son modèle",
+  "Sa maitresse d'école",
+  "Sa sœur",
+  "Sa voisine",
+  "Selon Magritte, les images nous trahissent. Pourquoi ?",
+  "Si je peux dire « avait », j'écris A sans accent.",
+  "Si je peux dire « était », j'écris E, S, T.",
+  "Surréalisme",
+  "Termine la phrase : Ce sont des écrivains…",
+  "Termine la phrase : Dans le ciel, les étoiles…",
+  "Termine la phrase : Dans le jardin, il y a plusieurs…",
+  "Termine la phrase : Il a travaillé des années…",
+  "Termine la phrase : Les enfants des voisins…",
+  "Termine la phrase : À Paris, les époux…",
+  "Toujours un S à la fin : plusieurs, c'est forcément plus d'un.",
+  "Toute la dictée ! Choisis le mot bien écrit.",
+  "Trahison",
+  "Tromperie : on promet quelque chose, puis on ne le fait pas",
+  "Tu connais toute la leçon : les marques du pluriel, les mots, et le tableau de Magritte !",
+  "Un E à la fin",
+  "Un S à la fin",
+  "Un X à la fin",
+  "Un accent circonflexe sur le E, comme un petit chapeau : le rêve, rêver.",
+  "Un accent grave sur le E du milieu : mo, dè, le.",
+  "Un artiste, des artistes.",
+  "Un nom, c'est un mot devant lequel je peux dire « un » ou « une » : une étoile, des étoiles.",
+  "Un peintre belge. Pour gagner sa vie, il dessinait des affiches.",
+  "Une affiche : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+  "Une belle pipe",
+  "Une femme, des femmes. Un modèle, des modèles : on ajoute un S.",
+  "Une pomme peinte ne se croque pas : c'est une image, pas une vraie pomme.",
+  "Une pomme peinte sur un tableau…",
+  "Une représentation : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+  "Une trahison : tromperie : on promet quelque chose, puis on ne le fait pas.",
+  "Verbe",
+  "Voici ma pipe",
+  "Vrai ou faux ? Au pluriel, on entend le N, T à la fin du verbe.",
+  "Vrai ou faux ? Dans « les artistes surréalistes », l'adjectif prend un S.",
+  "Vrai ou faux ? Dans « un artiste belge », belge prend une majuscule.",
+  "Vrai ou faux ? On met N, T à la fin d'un nom au pluriel.",
+  "Vrai ou faux ? On pourrait prendre dans sa main la pipe du tableau.",
+  "Vrai ou faux ? Pour mettre un nom au pluriel, on ajoute le plus souvent un S.",
+  "Vrai ou faux ? René Magritte est un peintre français.",
+  "Vrai ou faux ? « Affiche » veut dire : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+  "Vrai ou faux ? « Affiche » veut dire : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+  "Vrai ou faux ? « Femme » s'écrit avec un seul M.",
+  "Vrai ou faux ? « Plusieurs » s'écrit toujours avec un S à la fin.",
+  "Vrai ou faux ? « Quand » s'écrit avec un T à la fin.",
+  "Vrai ou faux ? « Représentation » veut dire : image d'une chose : on la voit, mais ce n'est pas la chose elle-même.",
+  "Vrai ou faux ? « Représentation » veut dire : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+  "Vrai ou faux ? « Surréalisme » veut dire : mouvement d'artistes qui s'intéressent au rêve, au hasard et à ce qui est étrange.",
+  "Vrai ou faux ? « Surréalisme » veut dire : tromperie : on promet quelque chose, puis on ne le fait pas.",
+  "Vrai ou faux ? « Trahison » veut dire : grande feuille imprimée, collée au mur pour annoncer quelque chose.",
+  "Vrai ou faux ? « Trahison » veut dire : tromperie : on promet quelque chose, puis on ne le fait pas.",
+  "artistes",
+  "au rêve et au hasard",
+  "au sport",
+  "aux batailles",
+  "aux nombres",
+  "belge",
+  "belges",
+  "brillent",
+  "chats",
+  "de devenir artiste.",
+  "des affiches et des publicités",
+  "des artistes belge…",
+  "des bandes dessinées",
+  "des cahiers vert…",
+  "des cartes de géographie",
+  "des fils électrique…",
+  "des timbres",
+  "déménagent",
+  "entières",
+  "est une image : on ne peut pas la croquer",
+  "est une vraie pomme",
+  "femme",
+  "femmes",
+  "forain",
+  "foraines",
+  "grosses",
+  "hirondelles",
+  "jouent",
+  "les",
+  "les chats joue…",
+  "les passants marche…",
+  "les peintres rêve…",
+  "les rues étroite…",
+  "les voisins déménage…",
+  "les époux rencontre…",
+  "les étoiles brille…",
+  "les étoile…",
+  "lointaines",
+  "lointaines brillent",
+  "marchent",
+  "modèle",
+  "modèles",
+  "musiciens",
+  "passants",
+  "plusieurs",
+  "plusieurs années plus tard",
+  "plusieurs année…",
+  "pourrit au bout d'une semaine",
+  "quand",
+  "quand il rencontre Georgette,",
+  "rencontre",
+  "rencontrent",
+  "rencontrent des artistes",
+  "rencontrer",
+  "rêve",
+  "rêvent",
+  "rêver",
+  "sa femme et son modèle.",
+  "se rencontrent",
+  "tombe du tableau",
+  "À Paris, les époux rencontrent des artistes.",
+  "À l'école",
+  "À la fête foraine",
+  "À la plage",
+  "À quelle période de l'histoire Magritte a-t-il peint ce tableau ?",
+  "Ça finit comme le pain.",
+  "Écrivains est au pluriel : l'adjectif étranges prend un S.",
+  "Époque contemporaine",
+  "Était ? J'écris est. Avait ? J'écris a.",
+  "Étranges dit comment sont les écrivains. Ils sont plusieurs.",
+  "à Paris.",
+  "à la fête foraine.",
+  "électriques",
+  "étoiles",
+  "étranges",
+  "étroites"
+ ]
+}

@@ -1,6 +1,6 @@
 // Hors-ligne : on essaie le réseau (pour avoir les nouvelles leçons), sinon on sert la copie en cache.
 // À l'installation, on met aussi en cache tous les enregistrements audio listés dans audio/manifest.json.
-const CACHE = 'revisions-v14';
+const CACHE = 'revisions-v15';
 const SHELL = [
   './', 'index.html', 'style.css', 'manifest.json', 'phrases.json', 'icons/icon.svg', 'icons/icon-180.png',
   'js/app.js', 'js/util.js', 'js/store.js', 'js/speech.js', 'js/srs.js', 'js/lessons.js', 'js/phrases.js',
@@ -8,7 +8,7 @@ const SHELL = [
   'lessons/index.json', 'lessons/companions.json', 'lessons/build/histoire-moyen-age.json', 'lessons/assets/chateau.svg',
   'lessons/build/sciences-alimentation.json', 'lessons/assets/monde.svg',
   'lessons/build/sciences-lune.json', 'lessons/assets/lune.svg', 'lessons/build/sciences-lune-plus.json',
-  'lessons/build/francais-accords.json', 'lessons/build/anglais-jours-mois.json',
+  'lessons/build/francais-accords.json', 'lessons/build/francais-pluriel.json', 'lessons/build/anglais-jours-mois.json',
   'lessons/build/maths-premieres-additions.json', 'lessons/build/maths-faire-10.json', 'lessons/build/maths-table-addition.json',
   'lessons/music/printemps.m4a', 'lessons/music/ete.m4a', 'lessons/music/automne.m4a', 'lessons/music/hiver.m4a',
 ];

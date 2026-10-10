@@ -767,7 +767,9 @@ function ecrire(item, { root, lesson, done }) {
   root.append(prompt, model, diff, inputRow, fb);
   const fin = finisher(fb, done);
 
-  const showModel = () => model.replaceChildren(spellView(notion.spell || word, 'spell-word write-word'));
+  // Les pièges de la notion ne valent que pour le mot lui-même (pas pour « rencontrent »).
+  const spell = notion.spell && notion.spell.replace(/[[\]]/g, '') === word ? notion.spell : word;
+  const showModel = () => model.replaceChildren(spellView(spell, 'spell-word write-word'));
   if (mode !== 'dictee') showModel();
   if (mode === 'memo') {
     inputRow.hidden = true;
@@ -803,7 +805,7 @@ function ecrire(item, { root, lesson, done }) {
     if (copying || errors === 1) {
       const why = v.toLowerCase() === word.toLowerCase() ? P.writeCapital
         : noAccent(v) === noAccent(word) ? P.writeAccent : P.writeAlmost;
-      hint(fb, [why, copying || why !== P.writeAlmost ? null : notion.tip]);
+      hint(fb, [why, copying || why !== P.writeAlmost ? null : item.hint || notion.tip]);
       input.focus();
       return;
     }
