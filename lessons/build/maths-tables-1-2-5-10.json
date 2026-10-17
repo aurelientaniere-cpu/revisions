@@ -1,0 +1,5163 @@
+{
+ "id": "maths-tables-1-2-5-10",
+ "category": "maths",
+ "subject": "Maths",
+ "title": "Les tables de 1, 2, 5 et 10",
+ "subtitle": "Soigneuse au zoo de Pairi Daiza",
+ "emoji": "🐼",
+ "color": "#4f9e78",
+ "ordered": true,
+ "newPerSession": 1,
+ "perNew": 4,
+ "source": "Premières tables de multiplication (1, 2, 5 et 10), avec le boulier, dans le décor d'un zoo.",
+ "summary": [
+  "Aujourd'hui, tu es soigneuse au zoo de Pairi Daiza. Les animaux ont faim !",
+  "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+  "3 pandas mangent 2 bambous chacun : 3 fois 2, c'est 2 plus 2 plus 2. Ça fait 6.",
+  "Sur le boulier, 3 fois 2, ce sont 3 lignes de 2 boules.",
+  "Fois 10 : des lignes pleines. 4 fois 10, c'est 4 avec un zéro au bout : 40.",
+  "Fois 5 : une main par ligne. Deux mains font 10. On compte 5, 10, 15, 20.",
+  "Fois 2, c'est un double. 6 fois 2, c'est 6 plus 6 : 12.",
+  "Fois 1, le nombre ne change pas.",
+  "On peut changer l'ordre : 5 fois 3, c'est pareil que 3 fois 5."
+ ],
+ "notions": [
+  {
+   "id": "fois",
+   "term": "multiplier",
+   "nom": "multiplier",
+   "def": "c'est ajouter plusieurs fois le même nombre",
+   "emoji": "🐼",
+   "noAuto": true,
+   "tip": "3 pandas, 2 bambous chacun : 2 plus 2 plus 2. Ça fait 6.",
+   "example": {
+    "expr": [
+     "3|a",
+     "×",
+     "2|b",
+     "=",
+     "6"
+    ],
+    "groups": [
+     3,
+     2
+    ],
+    "say": "3 fois 2 égale 6."
+   }
+  },
+  {
+   "id": "fois10",
+   "term": "la table de 10",
+   "nom": "la table de 10",
+   "def": "des lignes pleines : le nombre, puis un zéro",
+   "emoji": "🐧",
+   "noAuto": true,
+   "tip": "4 seaux de 10 poissons : 4 lignes pleines. 4, et un zéro au bout : 40.",
+   "example": {
+    "expr": [
+     "4|a",
+     "×",
+     "10|b",
+     "=",
+     "40"
+    ],
+    "groups": [
+     4,
+     10
+    ],
+    "say": "4 fois 10 égale 40."
+   }
+  },
+  {
+   "id": "fois5",
+   "term": "la table de 5",
+   "nom": "la table de 5",
+   "def": "une main par ligne, et deux mains font 10",
+   "emoji": "🐘",
+   "noAuto": true,
+   "tip": "On compte de 5 en 5 : 5, 10, 15, 20. Ça finit toujours par 0 ou par 5.",
+   "example": {
+    "expr": [
+     "4|a",
+     "×",
+     "5|b",
+     "=",
+     "20"
+    ],
+    "groups": [
+     4,
+     5
+    ],
+    "say": "4 fois 5 égale 20."
+   }
+  },
+  {
+   "id": "fois2",
+   "term": "la table de 2",
+   "nom": "la table de 2",
+   "def": "c'est un double",
+   "emoji": "🐨",
+   "noAuto": true,
+   "tip": "Sur le boulier, 6 lignes de 2, ce sont 2 colonnes de 6 : 6 plus 6, ça fait 12.",
+   "example": {
+    "expr": [
+     "6|a",
+     "×",
+     "2|b",
+     "=",
+     "12"
+    ],
+    "groups": [
+     6,
+     2
+    ],
+    "say": "6 fois 2 égale 12."
+   }
+  },
+  {
+   "id": "fois1",
+   "term": "la table de 1",
+   "nom": "la table de 1",
+   "def": "le nombre ne change pas",
+   "emoji": "🦁",
+   "noAuto": true,
+   "tip": "7 lions, 1 morceau de viande chacun : ça fait 7 morceaux.",
+   "example": {
+    "expr": [
+     "7|a",
+     "×",
+     "1|b",
+     "=",
+     "7"
+    ],
+    "groups": [
+     7,
+     1
+    ],
+    "say": "7 fois 1 égale 7."
+   }
+  },
+  {
+   "id": "echange",
+   "term": "changer l'ordre",
+   "nom": "changer l'ordre",
+   "def": "5 fois 3, c'est pareil que 3 fois 5",
+   "emoji": "🦩",
+   "noAuto": true,
+   "tip": "Je choisis l'ordre qui m'arrange : je connais la table de 5 !",
+   "example": {
+    "expr": [
+     "5|a",
+     "×",
+     "3|b",
+     "=",
+     "3|b",
+     "×",
+     "5|a"
+    ],
+    "groups": [
+     3,
+     5
+    ],
+    "say": "5 fois 3, c'est pareil que 3 fois 5. Les deux font 15."
+   }
+  },
+  {
+   "id": "quatre-tables",
+   "term": "les quatre tables",
+   "nom": "les quatre tables",
+   "def": "les tables de 1, 2, 5 et 10, mélangées",
+   "emoji": "🗺️",
+   "noAuto": true,
+   "tip": "Pour chaque calcul, cherche la bonne astuce.",
+   "example": {
+    "expr": [
+     "7|a",
+     "×",
+     "5|b",
+     "=",
+     "35"
+    ],
+    "groups": [
+     7,
+     5
+    ],
+    "say": "7 fois 5 égale 35."
+   }
+  }
+ ],
+ "maths": [
+  {
+   "gen": "zoo",
+   "notion": "fois",
+   "stories": [
+    {
+     "k": 3,
+     "n": 2,
+     "animal": "🐼",
+     "thing": "🎋",
+     "say": "Il y a 3 pandas. Chaque panda mange 2 bambous. Combien de bambous en tout ?"
+    },
+    {
+     "k": 2,
+     "n": 3,
+     "animal": "🐼",
+     "thing": "🎋",
+     "say": "Il y a 2 pandas. Chaque panda mange 3 bambous. Combien de bambous en tout ?"
+    },
+    {
+     "k": 4,
+     "n": 2,
+     "animal": "🐒",
+     "thing": "🍌",
+     "say": "Il y a 4 singes. Chaque singe reçoit 2 bananes. Combien de bananes en tout ?"
+    },
+    {
+     "k": 2,
+     "n": 4,
+     "animal": "🦜",
+     "thing": "🍇",
+     "say": "Il y a 2 perroquets. Chaque perroquet mange 4 raisins. Combien de raisins en tout ?"
+    },
+    {
+     "k": 3,
+     "n": 3,
+     "animal": "🐢",
+     "thing": "🥬",
+     "say": "Il y a 3 tortues. Chacune mange 3 feuilles de salade. Combien de feuilles en tout ?"
+    }
+   ],
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre."
+  },
+  {
+   "gen": "boulier-fois",
+   "notion": "fois",
+   "groups": [
+    [
+     2,
+     3
+    ],
+    [
+     3,
+     2
+    ]
+   ]
+  },
+  {
+   "gen": "produit",
+   "notion": "fois",
+   "pairs": [
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     3
+    ]
+   ],
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier."
+  },
+  {
+   "gen": "zoo",
+   "notion": "fois10",
+   "stories": [
+    {
+     "k": 2,
+     "n": 10,
+     "animal": "🪣",
+     "thing": "🐟",
+     "say": "Tu as 2 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+    },
+    {
+     "k": 3,
+     "n": 10,
+     "animal": "🪣",
+     "thing": "🐟",
+     "say": "Tu as 3 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+    },
+    {
+     "k": 5,
+     "n": 10,
+     "animal": "🪣",
+     "thing": "🐟",
+     "say": "Tu as 5 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+    }
+   ]
+  },
+  {
+   "gen": "ligne-fois",
+   "notion": "fois10",
+   "row": 10
+  },
+  {
+   "gen": "suite",
+   "notion": "fois10",
+   "row": 10,
+   "variants": 2
+  },
+  {
+   "gen": "boulier-fois",
+   "notion": "fois10",
+   "groups": [
+    [
+     3,
+     10
+    ]
+   ]
+  },
+  {
+   "gen": "zoo",
+   "notion": "fois5",
+   "stories": [
+    {
+     "k": 2,
+     "n": 5,
+     "animal": "🐘",
+     "thing": "🍎",
+     "say": "Il y a 2 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?"
+    },
+    {
+     "k": 3,
+     "n": 5,
+     "animal": "🐘",
+     "thing": "🍎",
+     "say": "Il y a 3 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?"
+    },
+    {
+     "k": 4,
+     "n": 5,
+     "animal": "🦒",
+     "thing": "🍃",
+     "say": "Il y a 4 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?"
+    },
+    {
+     "k": 6,
+     "n": 5,
+     "animal": "🦒",
+     "thing": "🍃",
+     "say": "Il y a 6 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?"
+    }
+   ]
+  },
+  {
+   "gen": "ligne-fois",
+   "notion": "fois5",
+   "row": 5
+  },
+  {
+   "gen": "suite",
+   "notion": "fois5",
+   "row": 5,
+   "variants": 2
+  },
+  {
+   "gen": "boulier-fois",
+   "notion": "fois5",
+   "groups": [
+    [
+     2,
+     5
+    ],
+    [
+     4,
+     5
+    ]
+   ]
+  },
+  {
+   "gen": "zoo",
+   "notion": "fois2",
+   "stories": [
+    {
+     "k": 4,
+     "n": 2,
+     "animal": "🐨",
+     "thing": "🌿",
+     "say": "Il y a 4 koalas. Chacun a 2 branches. Combien de branches en tout ?"
+    },
+    {
+     "k": 5,
+     "n": 2,
+     "animal": "🐨",
+     "thing": "🌿",
+     "say": "Il y a 5 koalas. Chacun a 2 branches. Combien de branches en tout ?"
+    },
+    {
+     "k": 7,
+     "n": 2,
+     "animal": "🦘",
+     "thing": "🥕",
+     "say": "Il y a 7 kangourous. Chacun mange 2 carottes. Combien de carottes en tout ?"
+    }
+   ]
+  },
+  {
+   "gen": "ligne-fois",
+   "notion": "fois2",
+   "row": 2
+  },
+  {
+   "gen": "suite",
+   "notion": "fois2",
+   "row": 2,
+   "variants": 2
+  },
+  {
+   "gen": "boulier-fois",
+   "notion": "fois2",
+   "groups": [
+    [
+     4,
+     2
+    ]
+   ]
+  },
+  {
+   "gen": "zoo",
+   "notion": "fois1",
+   "stories": [
+    {
+     "k": 4,
+     "n": 1,
+     "animal": "🦁",
+     "thing": "🍖",
+     "say": "Il y a 4 lions. Chaque lion reçoit 1 morceau de viande. Combien de morceaux en tout ?"
+    },
+    {
+     "k": 6,
+     "n": 1,
+     "animal": "🐻",
+     "thing": "🍯",
+     "say": "Il y a 6 ours. Chaque ours reçoit 1 pot de miel. Combien de pots en tout ?"
+    }
+   ]
+  },
+  {
+   "gen": "ligne-fois",
+   "notion": "fois1",
+   "row": 1
+  },
+  {
+   "gen": "suite",
+   "notion": "fois1",
+   "row": 1,
+   "variants": 1
+  },
+  {
+   "gen": "zoo",
+   "notion": "echange",
+   "stories": [
+    {
+     "k": 5,
+     "n": 3,
+     "animal": "🦩",
+     "thing": "🦐",
+     "say": "Il y a 5 flamants roses. Chaque flamant mange 3 crevettes. Combien de crevettes en tout ?"
+    },
+    {
+     "k": 5,
+     "n": 4,
+     "animal": "🦦",
+     "thing": "🐟",
+     "say": "Il y a 5 loutres. Chaque loutre attrape 4 poissons. Combien de poissons en tout ?"
+    },
+    {
+     "k": 2,
+     "n": 8,
+     "animal": "🦭",
+     "thing": "🐟",
+     "say": "Il y a 2 otaries. Chaque otarie mange 8 poissons. Combien de poissons en tout ?"
+    }
+   ]
+  },
+  {
+   "gen": "produit",
+   "notion": "echange",
+   "diff": 2.5,
+   "pairs": [
+    [
+     5,
+     3
+    ],
+    [
+     10,
+     4
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     10,
+     3
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     10,
+     7
+    ]
+   ]
+  },
+  {
+   "gen": "grille-fois",
+   "notion": "quatre-tables",
+   "variants": 8,
+   "holes": 7
+  },
+  {
+   "gen": "facteur",
+   "notion": "quatre-tables",
+   "pairs": [
+    [
+     5,
+     30
+    ],
+    [
+     10,
+     60
+    ],
+    [
+     2,
+     14
+    ],
+    [
+     5,
+     45
+    ],
+    [
+     10,
+     80
+    ],
+    [
+     2,
+     18
+    ],
+    [
+     5,
+     20
+    ],
+    [
+     1,
+     7
+    ]
+   ]
+  },
+  {
+   "gen": "produit",
+   "notion": "quatre-tables",
+   "diff": 2.5,
+   "pairs": [
+    [
+     7,
+     5
+    ],
+    [
+     8,
+     2
+    ],
+    [
+     6,
+     10
+    ],
+    [
+     9,
+     5
+    ],
+    [
+     4,
+     2
+    ],
+    [
+     8,
+     10
+    ],
+    [
+     9,
+     1
+    ],
+    [
+     7,
+     2
+    ]
+   ]
+  }
+ ],
+ "cards": [
+  {
+   "id": "tm-panda",
+   "name": "Le panda",
+   "emoji": "🐼",
+   "color": "#4f9e78",
+   "notions": [
+    "fois"
+   ],
+   "desc": "Il range ses bambous par paquets."
+  },
+  {
+   "id": "tm-manchot",
+   "name": "Le manchot",
+   "emoji": "🐧",
+   "color": "#4f8fd0",
+   "notions": [
+    "fois10"
+   ],
+   "desc": "10 poissons par seau : des lignes pleines !"
+  },
+  {
+   "id": "tm-elephant",
+   "name": "L'éléphant",
+   "emoji": "🐘",
+   "color": "#8a8fa0",
+   "notions": [
+    "fois5"
+   ],
+   "desc": "5 pommes chacun : une main entière."
+  },
+  {
+   "id": "tm-koala",
+   "name": "Le koala",
+   "emoji": "🐨",
+   "color": "#a0b86a",
+   "notions": [
+    "fois2"
+   ],
+   "desc": "2 branches chacun : c'est un double."
+  },
+  {
+   "id": "tm-lion",
+   "name": "Le lion",
+   "emoji": "🦁",
+   "color": "#e0a030",
+   "notions": [
+    "fois1"
+   ],
+   "desc": "1 morceau chacun : le nombre ne change pas."
+  },
+  {
+   "id": "tm-flamant",
+   "name": "Le flamant rose",
+   "emoji": "🦩",
+   "color": "#d65d8a",
+   "notions": [
+    "echange"
+   ],
+   "desc": "Sur une patte ou sur l'autre, le résultat est le même."
+  },
+  {
+   "id": "tm-seau",
+   "name": "Le seau du soigneur",
+   "emoji": "🪣",
+   "color": "#7a9cc6",
+   "notions": [
+    "fois10",
+    "fois5"
+   ],
+   "desc": "Les tables de 10 et de 5, toujours à portée de main."
+  },
+  {
+   "id": "tm-tournee",
+   "name": "La tournée du zoo",
+   "emoji": "🗺️",
+   "color": "#3a9a8a",
+   "notions": [
+    "quatre-tables"
+   ],
+   "desc": "Tous les animaux ont mangé : les quatre tables mélangées."
+  },
+  {
+   "id": "tm-legende",
+   "name": "Soigneuse en chef",
+   "emoji": "🏅",
+   "color": "#f5b700",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Les tables de 1, 2, 5 et 10 sont dans ta tête !"
+  }
+ ],
+ "images": {
+  "fois": {
+   "prompt": "a young girl zookeeper in a khaki uniform feeding bamboo to three giant pandas in a green garden with a small red pagoda, each panda holds two bamboo stalks",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "fois10": {
+   "prompt": "a young girl zookeeper in a khaki uniform carrying buckets full of fish to a group of happy penguins on rocks near a blue pool",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "fois5": {
+   "prompt": "a young girl zookeeper in a khaki uniform giving apples to two friendly asian elephants under big trees",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "fois2": {
+   "prompt": "a young girl zookeeper in a khaki uniform giving eucalyptus branches to cute koalas sitting in a tree",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "fois1": {
+   "prompt": "a young girl zookeeper in a khaki uniform giving a piece of meat to a calm lion lying on a rock, savanna enclosure",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "echange": {
+   "prompt": "a young girl zookeeper in a khaki uniform watching pink flamingos standing on one leg in a pond",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "quatre-tables": {
+   "prompt": "a young girl zookeeper in a khaki uniform walking on a path in a lush zoo with pandas, penguins, elephants, koalas and flamingos around, sunny day",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  }
+ },
+ "items": [
+  {
+   "id": "maths-tables-1-2-5-10#fois/zoo-3x2-🐼",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "8",
+    "4",
+    "16"
+   ],
+   "say": "Il y a 3 pandas. Chaque panda mange 2 bambous. Combien de bambous en tout ?",
+   "explain": "3 fois 2 égale 6.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+   "groups": [
+    3,
+    2
+   ],
+   "scene": {
+    "k": 3,
+    "n": 2,
+    "animal": "🐼",
+    "thing": "🎋"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/zoo-2x3-🐼",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "9",
+    "3",
+    "16"
+   ],
+   "say": "Il y a 2 pandas. Chaque panda mange 3 bambous. Combien de bambous en tout ?",
+   "explain": "2 fois 3 égale 6.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+   "groups": [
+    3,
+    2
+   ],
+   "scene": {
+    "k": 2,
+    "n": 3,
+    "animal": "🐼",
+    "thing": "🎋"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/zoo-4x2-🐒",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "10",
+    "6",
+    "18"
+   ],
+   "say": "Il y a 4 singes. Chaque singe reçoit 2 bananes. Combien de bananes en tout ?",
+   "explain": "4 fois 2 égale 8.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+   "groups": [
+    4,
+    2
+   ],
+   "scene": {
+    "k": 4,
+    "n": 2,
+    "animal": "🐒",
+    "thing": "🍌"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/zoo-2x4-🦜",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "12",
+    "4",
+    "18"
+   ],
+   "say": "Il y a 2 perroquets. Chaque perroquet mange 4 raisins. Combien de raisins en tout ?",
+   "explain": "2 fois 4 égale 8.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+   "groups": [
+    4,
+    2
+   ],
+   "scene": {
+    "k": 2,
+    "n": 4,
+    "animal": "🦜",
+    "thing": "🍇"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/zoo-3x3-🐢",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "12",
+    "6",
+    "19"
+   ],
+   "say": "Il y a 3 tortues. Chacune mange 3 feuilles de salade. Combien de feuilles en tout ?",
+   "explain": "3 fois 3 égale 9.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+   "groups": [
+    3,
+    3
+   ],
+   "scene": {
+    "k": 3,
+    "n": 3,
+    "animal": "🐢",
+    "thing": "🥬"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/boulier-2x3",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "target": 6,
+   "groups": [
+    2,
+    3
+   ],
+   "q": "Fais 2 fois 3 sur le boulier : 2 lignes de 3 boules.",
+   "explain": "2 fois 3 égale 6."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/boulier-3x2",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "target": 6,
+   "groups": [
+    3,
+    2
+   ],
+   "q": "Fais 3 fois 2 sur le boulier : 3 lignes de 2 boules.",
+   "explain": "3 fois 2 égale 6."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/2x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "6",
+    "2",
+    "14"
+   ],
+   "say": "Combien font 2 fois 2 ?",
+   "explain": "2 fois 2 égale 4.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier.",
+   "groups": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/3x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "8",
+    "4",
+    "16"
+   ],
+   "say": "Combien font 3 fois 2 ?",
+   "explain": "3 fois 2 égale 6.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier.",
+   "groups": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/2x4",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "12",
+    "4",
+    "18"
+   ],
+   "say": "Combien font 2 fois 4 ?",
+   "explain": "2 fois 4 égale 8.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier.",
+   "groups": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois/3x3",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "12",
+    "6",
+    "19"
+   ],
+   "say": "Combien font 3 fois 3 ?",
+   "explain": "3 fois 3 égale 9.",
+   "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier.",
+   "groups": [
+    3,
+    3
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/zoo-2x10-🪣",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "20",
+   "choices": [
+    "20",
+    "30",
+    "10",
+    "21"
+   ],
+   "say": "Tu as 2 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?",
+   "explain": "2 fois 10 égale 20.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    2,
+    10
+   ],
+   "scene": {
+    "k": 2,
+    "n": 10,
+    "animal": "🪣",
+    "thing": "🐟"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/zoo-3x10-🪣",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "30",
+   "choices": [
+    "30",
+    "40",
+    "20",
+    "31"
+   ],
+   "say": "Tu as 3 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?",
+   "explain": "3 fois 10 égale 30.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    3,
+    10
+   ],
+   "scene": {
+    "k": 3,
+    "n": 10,
+    "animal": "🪣",
+    "thing": "🐟"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/zoo-5x10-🪣",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "50",
+   "choices": [
+    "50",
+    "60",
+    "40",
+    "51"
+   ],
+   "say": "Tu as 5 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?",
+   "explain": "5 fois 10 égale 50.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    5,
+    10
+   ],
+   "scene": {
+    "k": 5,
+    "n": 10,
+    "animal": "🪣",
+    "thing": "🐟"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/1x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "1|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "20",
+    "0",
+    "11"
+   ],
+   "say": "Combien font 1 fois 10 ?",
+   "explain": "1 fois 10 égale 10.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    1,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/2x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "20",
+   "choices": [
+    "20",
+    "30",
+    "10",
+    "21"
+   ],
+   "say": "Combien font 2 fois 10 ?",
+   "explain": "2 fois 10 égale 20.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    2,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/3x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "30",
+   "choices": [
+    "30",
+    "40",
+    "20",
+    "31"
+   ],
+   "say": "Combien font 3 fois 10 ?",
+   "explain": "3 fois 10 égale 30.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    3,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/4x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "40",
+   "choices": [
+    "40",
+    "50",
+    "30",
+    "41"
+   ],
+   "say": "Combien font 4 fois 10 ?",
+   "explain": "4 fois 10 égale 40.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    4,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/5x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "50",
+   "choices": [
+    "50",
+    "60",
+    "40",
+    "51"
+   ],
+   "say": "Combien font 5 fois 10 ?",
+   "explain": "5 fois 10 égale 50.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    5,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/6x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "60",
+   "choices": [
+    "60",
+    "70",
+    "50",
+    "61"
+   ],
+   "say": "Combien font 6 fois 10 ?",
+   "explain": "6 fois 10 égale 60.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    6,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/7x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "70",
+   "choices": [
+    "70",
+    "80",
+    "60",
+    "71"
+   ],
+   "say": "Combien font 7 fois 10 ?",
+   "explain": "7 fois 10 égale 70.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    7,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/8x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "8|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "80",
+   "choices": [
+    "80",
+    "90",
+    "70",
+    "81"
+   ],
+   "say": "Combien font 8 fois 10 ?",
+   "explain": "8 fois 10 égale 80.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    8,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/9x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "9|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "90",
+   "choices": [
+    "90",
+    "100",
+    "80",
+    "91"
+   ],
+   "say": "Combien font 9 fois 10 ?",
+   "explain": "9 fois 10 égale 90.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    9,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/10x10",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "100",
+   "choices": [
+    "100",
+    "90",
+    "99",
+    "80"
+   ],
+   "say": "Combien font 10 fois 10 ?",
+   "explain": "10 fois 10 égale 100.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    10,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/suite-10-0",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois10"
+   ],
+   "row": 10,
+   "q": "Complète la table de 10.",
+   "holes": [
+    {
+     "a": 4,
+     "b": 10,
+     "answer": "40",
+     "choices": [
+      "40",
+      "50",
+      "30",
+      "41"
+     ],
+     "say": "4 fois 10 égale 40.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 6,
+     "b": 10,
+     "answer": "60",
+     "choices": [
+      "60",
+      "70",
+      "50",
+      "61"
+     ],
+     "say": "6 fois 10 égale 60.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 8,
+     "b": 10,
+     "answer": "80",
+     "choices": [
+      "80",
+      "90",
+      "70",
+      "81"
+     ],
+     "say": "8 fois 10 égale 80.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 9,
+     "b": 10,
+     "answer": "90",
+     "choices": [
+      "90",
+      "100",
+      "80",
+      "91"
+     ],
+     "say": "9 fois 10 égale 90.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/suite-10-1",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois10"
+   ],
+   "row": 10,
+   "q": "Complète la table de 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 10,
+     "answer": "10",
+     "choices": [
+      "10",
+      "20",
+      "0",
+      "11"
+     ],
+     "say": "1 fois 10 égale 10.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 2,
+     "b": 10,
+     "answer": "20",
+     "choices": [
+      "20",
+      "30",
+      "10",
+      "21"
+     ],
+     "say": "2 fois 10 égale 20.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 5,
+     "b": 10,
+     "answer": "50",
+     "choices": [
+      "50",
+      "60",
+      "40",
+      "51"
+     ],
+     "say": "5 fois 10 égale 50.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 6,
+     "b": 10,
+     "answer": "60",
+     "choices": [
+      "60",
+      "70",
+      "50",
+      "61"
+     ],
+     "say": "6 fois 10 égale 60.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois10/boulier-3x10",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "fois10"
+   ],
+   "target": 30,
+   "groups": [
+    3,
+    10
+   ],
+   "q": "Fais 3 fois 10 sur le boulier : 3 lignes de 10 boules.",
+   "explain": "3 fois 10 égale 30."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/zoo-2x5-🐘",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "15",
+    "5",
+    "20"
+   ],
+   "say": "Il y a 2 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?",
+   "explain": "2 fois 5 égale 10.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    2,
+    5
+   ],
+   "scene": {
+    "k": 2,
+    "n": 5,
+    "animal": "🐘",
+    "thing": "🍎"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/zoo-3x5-🐘",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "20",
+    "10",
+    "25"
+   ],
+   "say": "Il y a 3 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?",
+   "explain": "3 fois 5 égale 15.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    3,
+    5
+   ],
+   "scene": {
+    "k": 3,
+    "n": 5,
+    "animal": "🐘",
+    "thing": "🍎"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/zoo-4x5-🦒",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "20",
+   "choices": [
+    "20",
+    "25",
+    "15",
+    "30"
+   ],
+   "say": "Il y a 4 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?",
+   "explain": "4 fois 5 égale 20.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    4,
+    5
+   ],
+   "scene": {
+    "k": 4,
+    "n": 5,
+    "animal": "🦒",
+    "thing": "🍃"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/zoo-6x5-🦒",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "30",
+   "choices": [
+    "30",
+    "35",
+    "25",
+    "40"
+   ],
+   "say": "Il y a 6 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?",
+   "explain": "6 fois 5 égale 30.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    6,
+    5
+   ],
+   "scene": {
+    "k": 6,
+    "n": 5,
+    "animal": "🦒",
+    "thing": "🍃"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/1x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "1|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "10",
+    "0",
+    "15"
+   ],
+   "say": "Combien font 1 fois 5 ?",
+   "explain": "1 fois 5 égale 5.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    1,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/2x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "15",
+    "5",
+    "20"
+   ],
+   "say": "Combien font 2 fois 5 ?",
+   "explain": "2 fois 5 égale 10.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    2,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/3x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "20",
+    "10",
+    "25"
+   ],
+   "say": "Combien font 3 fois 5 ?",
+   "explain": "3 fois 5 égale 15.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/4x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "20",
+   "choices": [
+    "20",
+    "25",
+    "15",
+    "30"
+   ],
+   "say": "Combien font 4 fois 5 ?",
+   "explain": "4 fois 5 égale 20.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    4,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/5x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "25",
+   "choices": [
+    "25",
+    "30",
+    "20",
+    "35"
+   ],
+   "say": "Combien font 5 fois 5 ?",
+   "explain": "5 fois 5 égale 25.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    5,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/6x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "30",
+   "choices": [
+    "30",
+    "35",
+    "25",
+    "40"
+   ],
+   "say": "Combien font 6 fois 5 ?",
+   "explain": "6 fois 5 égale 30.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/7x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "35",
+   "choices": [
+    "35",
+    "40",
+    "30",
+    "45"
+   ],
+   "say": "Combien font 7 fois 5 ?",
+   "explain": "7 fois 5 égale 35.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/8x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "8|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "40",
+   "choices": [
+    "40",
+    "45",
+    "35",
+    "50"
+   ],
+   "say": "Combien font 8 fois 5 ?",
+   "explain": "8 fois 5 égale 40.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    8,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/9x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "9|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "45",
+   "choices": [
+    "45",
+    "50",
+    "40",
+    "55"
+   ],
+   "say": "Combien font 9 fois 5 ?",
+   "explain": "9 fois 5 égale 45.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    9,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/10x5",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "50",
+   "choices": [
+    "50",
+    "55",
+    "45",
+    "60"
+   ],
+   "say": "Combien font 10 fois 5 ?",
+   "explain": "10 fois 5 égale 50.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    10,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/suite-5-0",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois5"
+   ],
+   "row": 5,
+   "q": "Complète la table de 5.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 5,
+     "answer": "5",
+     "choices": [
+      "5",
+      "10",
+      "0",
+      "15"
+     ],
+     "say": "1 fois 5 égale 5.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 5,
+     "answer": "25",
+     "choices": [
+      "25",
+      "30",
+      "20",
+      "35"
+     ],
+     "say": "5 fois 5 égale 25.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 6,
+     "b": 5,
+     "answer": "30",
+     "choices": [
+      "30",
+      "35",
+      "25",
+      "40"
+     ],
+     "say": "6 fois 5 égale 30.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 5,
+     "answer": "50",
+     "choices": [
+      "50",
+      "55",
+      "45",
+      "60"
+     ],
+     "say": "10 fois 5 égale 50.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/suite-5-1",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois5"
+   ],
+   "row": 5,
+   "q": "Complète la table de 5.",
+   "holes": [
+    {
+     "a": 6,
+     "b": 5,
+     "answer": "30",
+     "choices": [
+      "30",
+      "35",
+      "25",
+      "40"
+     ],
+     "say": "6 fois 5 égale 30.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 8,
+     "b": 5,
+     "answer": "40",
+     "choices": [
+      "40",
+      "45",
+      "35",
+      "50"
+     ],
+     "say": "8 fois 5 égale 40.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 9,
+     "b": 5,
+     "answer": "45",
+     "choices": [
+      "45",
+      "50",
+      "40",
+      "55"
+     ],
+     "say": "9 fois 5 égale 45.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 5,
+     "answer": "50",
+     "choices": [
+      "50",
+      "55",
+      "45",
+      "60"
+     ],
+     "say": "10 fois 5 égale 50.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/boulier-2x5",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "target": 10,
+   "groups": [
+    2,
+    5
+   ],
+   "q": "Fais 2 fois 5 sur le boulier : 2 lignes de 5 boules.",
+   "explain": "2 fois 5 égale 10."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois5/boulier-4x5",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "fois5"
+   ],
+   "target": 20,
+   "groups": [
+    4,
+    5
+   ],
+   "q": "Fais 4 fois 5 sur le boulier : 4 lignes de 5 boules.",
+   "explain": "4 fois 5 égale 20."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/zoo-4x2-🐨",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "10",
+    "6",
+    "18"
+   ],
+   "say": "Il y a 4 koalas. Chacun a 2 branches. Combien de branches en tout ?",
+   "explain": "4 fois 2 égale 8.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    4,
+    2
+   ],
+   "scene": {
+    "k": 4,
+    "n": 2,
+    "animal": "🐨",
+    "thing": "🌿"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/zoo-5x2-🐨",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "12",
+    "8",
+    "20"
+   ],
+   "say": "Il y a 5 koalas. Chacun a 2 branches. Combien de branches en tout ?",
+   "explain": "5 fois 2 égale 10.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    5,
+    2
+   ],
+   "scene": {
+    "k": 5,
+    "n": 2,
+    "animal": "🐨",
+    "thing": "🌿"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/zoo-7x2-🦘",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "16",
+    "12",
+    "24"
+   ],
+   "say": "Il y a 7 kangourous. Chacun mange 2 carottes. Combien de carottes en tout ?",
+   "explain": "7 fois 2 égale 14.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    7,
+    2
+   ],
+   "scene": {
+    "k": 7,
+    "n": 2,
+    "animal": "🦘",
+    "thing": "🥕"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/1x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "1|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "4",
+    "0",
+    "12"
+   ],
+   "say": "Combien font 1 fois 2 ?",
+   "explain": "1 fois 2 égale 2.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    1,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/2x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "6",
+    "2",
+    "14"
+   ],
+   "say": "Combien font 2 fois 2 ?",
+   "explain": "2 fois 2 égale 4.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    2,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/3x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "8",
+    "4",
+    "16"
+   ],
+   "say": "Combien font 3 fois 2 ?",
+   "explain": "3 fois 2 égale 6.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    3,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/4x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "10",
+    "6",
+    "18"
+   ],
+   "say": "Combien font 4 fois 2 ?",
+   "explain": "4 fois 2 égale 8.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/5x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "12",
+    "8",
+    "20"
+   ],
+   "say": "Combien font 5 fois 2 ?",
+   "explain": "5 fois 2 égale 10.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    5,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/6x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "12",
+   "choices": [
+    "12",
+    "14",
+    "10",
+    "22"
+   ],
+   "say": "Combien font 6 fois 2 ?",
+   "explain": "6 fois 2 égale 12.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    6,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/7x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "16",
+    "12",
+    "24"
+   ],
+   "say": "Combien font 7 fois 2 ?",
+   "explain": "7 fois 2 égale 14.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    7,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/8x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "8|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "18",
+    "14",
+    "26"
+   ],
+   "say": "Combien font 8 fois 2 ?",
+   "explain": "8 fois 2 égale 16.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    8,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/9x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "9|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "18",
+   "choices": [
+    "18",
+    "20",
+    "16",
+    "28"
+   ],
+   "say": "Combien font 9 fois 2 ?",
+   "explain": "9 fois 2 égale 18.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    9,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/10x2",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "20",
+   "choices": [
+    "20",
+    "22",
+    "18",
+    "30"
+   ],
+   "say": "Combien font 10 fois 2 ?",
+   "explain": "10 fois 2 égale 20.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    10,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/suite-2-0",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois2"
+   ],
+   "row": 2,
+   "q": "Complète la table de 2.",
+   "holes": [
+    {
+     "a": 3,
+     "b": 2,
+     "answer": "6",
+     "choices": [
+      "6",
+      "8",
+      "4",
+      "16"
+     ],
+     "say": "3 fois 2 égale 6.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 6,
+     "b": 2,
+     "answer": "12",
+     "choices": [
+      "12",
+      "14",
+      "10",
+      "22"
+     ],
+     "say": "6 fois 2 égale 12.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 8,
+     "b": 2,
+     "answer": "16",
+     "choices": [
+      "16",
+      "18",
+      "14",
+      "26"
+     ],
+     "say": "8 fois 2 égale 16.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 9,
+     "b": 2,
+     "answer": "18",
+     "choices": [
+      "18",
+      "20",
+      "16",
+      "28"
+     ],
+     "say": "9 fois 2 égale 18.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/suite-2-1",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois2"
+   ],
+   "row": 2,
+   "q": "Complète la table de 2.",
+   "holes": [
+    {
+     "a": 3,
+     "b": 2,
+     "answer": "6",
+     "choices": [
+      "6",
+      "8",
+      "4",
+      "16"
+     ],
+     "say": "3 fois 2 égale 6.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 4,
+     "b": 2,
+     "answer": "8",
+     "choices": [
+      "8",
+      "10",
+      "6",
+      "18"
+     ],
+     "say": "4 fois 2 égale 8.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 7,
+     "b": 2,
+     "answer": "14",
+     "choices": [
+      "14",
+      "16",
+      "12",
+      "24"
+     ],
+     "say": "7 fois 2 égale 14.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 9,
+     "b": 2,
+     "answer": "18",
+     "choices": [
+      "18",
+      "20",
+      "16",
+      "28"
+     ],
+     "say": "9 fois 2 égale 18.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois2/boulier-4x2",
+   "type": "boulier",
+   "diff": 2,
+   "notions": [
+    "fois2"
+   ],
+   "target": 8,
+   "groups": [
+    4,
+    2
+   ],
+   "q": "Fais 4 fois 2 sur le boulier : 4 lignes de 2 boules.",
+   "explain": "4 fois 2 égale 8."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/zoo-4x1-🦁",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "14"
+   ],
+   "say": "Il y a 4 lions. Chaque lion reçoit 1 morceau de viande. Combien de morceaux en tout ?",
+   "explain": "4 fois 1 égale 4.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    4,
+    1
+   ],
+   "scene": {
+    "k": 4,
+    "n": 1,
+    "animal": "🦁",
+    "thing": "🍖"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/zoo-6x1-🐻",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "16"
+   ],
+   "say": "Il y a 6 ours. Chaque ours reçoit 1 pot de miel. Combien de pots en tout ?",
+   "explain": "6 fois 1 égale 6.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    6,
+    1
+   ],
+   "scene": {
+    "k": 6,
+    "n": 1,
+    "animal": "🐻",
+    "thing": "🍯"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/1x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "1|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "1",
+   "choices": [
+    "1",
+    "2",
+    "0",
+    "11"
+   ],
+   "say": "Combien font 1 fois 1 ?",
+   "explain": "1 fois 1 égale 1.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    1,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/2x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "2",
+   "choices": [
+    "2",
+    "3",
+    "1",
+    "12"
+   ],
+   "say": "Combien font 2 fois 1 ?",
+   "explain": "2 fois 1 égale 2.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    2,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/3x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "3|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "3",
+   "choices": [
+    "3",
+    "4",
+    "2",
+    "13"
+   ],
+   "say": "Combien font 3 fois 1 ?",
+   "explain": "3 fois 1 égale 3.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    3,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/4x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "14"
+   ],
+   "say": "Combien font 4 fois 1 ?",
+   "explain": "4 fois 1 égale 4.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    4,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/5x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "5",
+   "choices": [
+    "5",
+    "6",
+    "4",
+    "15"
+   ],
+   "say": "Combien font 5 fois 1 ?",
+   "explain": "5 fois 1 égale 5.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    5,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/6x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "16"
+   ],
+   "say": "Combien font 6 fois 1 ?",
+   "explain": "6 fois 1 égale 6.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    6,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/7x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "17"
+   ],
+   "say": "Combien font 7 fois 1 ?",
+   "explain": "7 fois 1 égale 7.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    7,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/8x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "8|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "18"
+   ],
+   "say": "Combien font 8 fois 1 ?",
+   "explain": "8 fois 1 égale 8.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    8,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/9x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "9|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "19"
+   ],
+   "say": "Combien font 9 fois 1 ?",
+   "explain": "9 fois 1 égale 9.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/10x1",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "fois1"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "10",
+   "choices": [
+    "10",
+    "11",
+    "9",
+    "20"
+   ],
+   "say": "Combien font 10 fois 1 ?",
+   "explain": "10 fois 1 égale 10.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    10,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#fois1/suite-1-0",
+   "type": "table",
+   "layout": "ligne",
+   "op": "×",
+   "cols": 10,
+   "diff": 2.5,
+   "notions": [
+    "fois1"
+   ],
+   "row": 1,
+   "q": "Complète la table de 1.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 1,
+     "answer": "1",
+     "choices": [
+      "1",
+      "2",
+      "0",
+      "11"
+     ],
+     "say": "1 fois 1 égale 1.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 5,
+     "b": 1,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "15"
+     ],
+     "say": "5 fois 1 égale 5.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 6,
+     "b": 1,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "16"
+     ],
+     "say": "6 fois 1 égale 6.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 9,
+     "b": 1,
+     "answer": "9",
+     "choices": [
+      "9",
+      "10",
+      "8",
+      "19"
+     ],
+     "say": "9 fois 1 égale 9.",
+     "hint": "Fois 1, le nombre ne change pas."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/zoo-5x3-🦩",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "18",
+    "12",
+    "25"
+   ],
+   "say": "Il y a 5 flamants roses. Chaque flamant mange 3 crevettes. Combien de crevettes en tout ?",
+   "explain": "5 fois 3 égale 15.",
+   "hint": "Change l'ordre : c'est pareil que 3 fois 5.",
+   "groups": [
+    3,
+    5
+   ],
+   "scene": {
+    "k": 5,
+    "n": 3,
+    "animal": "🦩",
+    "thing": "🦐"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/zoo-5x4-🦦",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "20",
+   "choices": [
+    "20",
+    "24",
+    "16",
+    "30"
+   ],
+   "say": "Il y a 5 loutres. Chaque loutre attrape 4 poissons. Combien de poissons en tout ?",
+   "explain": "5 fois 4 égale 20.",
+   "hint": "Change l'ordre : c'est pareil que 4 fois 5.",
+   "groups": [
+    4,
+    5
+   ],
+   "scene": {
+    "k": 5,
+    "n": 4,
+    "animal": "🦦",
+    "thing": "🐟"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/zoo-2x8-🦭",
+   "type": "calcul",
+   "diff": 2,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "24",
+    "8",
+    "26"
+   ],
+   "say": "Il y a 2 otaries. Chaque otarie mange 8 poissons. Combien de poissons en tout ?",
+   "explain": "2 fois 8 égale 16.",
+   "hint": "Change l'ordre : c'est pareil que 8 fois 2.",
+   "groups": [
+    8,
+    2
+   ],
+   "scene": {
+    "k": 2,
+    "n": 8,
+    "animal": "🦭",
+    "thing": "🐟"
+   }
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/5x3",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "15",
+   "choices": [
+    "15",
+    "18",
+    "12",
+    "25"
+   ],
+   "say": "Combien font 5 fois 3 ?",
+   "explain": "5 fois 3 égale 15.",
+   "hint": "Change l'ordre : c'est pareil que 3 fois 5.",
+   "groups": [
+    3,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/10x4",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "4|b",
+    "=",
+    "?"
+   ],
+   "answer": "40",
+   "choices": [
+    "40",
+    "44",
+    "36",
+    "50"
+   ],
+   "say": "Combien font 10 fois 4 ?",
+   "explain": "10 fois 4 égale 40.",
+   "hint": "Change l'ordre : c'est pareil que 4 fois 10.",
+   "groups": [
+    4,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/2x7",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "21",
+    "7",
+    "24"
+   ],
+   "say": "Combien font 2 fois 7 ?",
+   "explain": "2 fois 7 égale 14.",
+   "hint": "Change l'ordre : c'est pareil que 7 fois 2.",
+   "groups": [
+    7,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/5x6",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "6|b",
+    "=",
+    "?"
+   ],
+   "answer": "30",
+   "choices": [
+    "30",
+    "36",
+    "24",
+    "40"
+   ],
+   "say": "Combien font 5 fois 6 ?",
+   "explain": "5 fois 6 égale 30.",
+   "hint": "Change l'ordre : c'est pareil que 6 fois 5.",
+   "groups": [
+    6,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/10x3",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "3|b",
+    "=",
+    "?"
+   ],
+   "answer": "30",
+   "choices": [
+    "30",
+    "33",
+    "27",
+    "40"
+   ],
+   "say": "Combien font 10 fois 3 ?",
+   "explain": "10 fois 3 égale 30.",
+   "hint": "Change l'ordre : c'est pareil que 3 fois 10.",
+   "groups": [
+    3,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/2x9",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "2|a",
+    "×",
+    "9|b",
+    "=",
+    "?"
+   ],
+   "answer": "18",
+   "choices": [
+    "18",
+    "27",
+    "9",
+    "28"
+   ],
+   "say": "Combien font 2 fois 9 ?",
+   "explain": "2 fois 9 égale 18.",
+   "hint": "Change l'ordre : c'est pareil que 9 fois 2.",
+   "groups": [
+    9,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/5x8",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "5|a",
+    "×",
+    "8|b",
+    "=",
+    "?"
+   ],
+   "answer": "40",
+   "choices": [
+    "40",
+    "48",
+    "32",
+    "50"
+   ],
+   "say": "Combien font 5 fois 8 ?",
+   "explain": "5 fois 8 égale 40.",
+   "hint": "Change l'ordre : c'est pareil que 8 fois 5.",
+   "groups": [
+    8,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#echange/10x7",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "echange"
+   ],
+   "expr": [
+    "10|a",
+    "×",
+    "7|b",
+    "=",
+    "?"
+   ],
+   "answer": "70",
+   "choices": [
+    "70",
+    "77",
+    "63",
+    "80"
+   ],
+   "say": "Combien font 10 fois 7 ?",
+   "explain": "10 fois 7 égale 70.",
+   "hint": "Change l'ordre : c'est pareil que 7 fois 10.",
+   "groups": [
+    7,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-0",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 8,
+     "answer": "8",
+     "choices": [
+      "8",
+      "9",
+      "7",
+      "18"
+     ],
+     "say": "1 fois 8 égale 8.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 2,
+     "answer": "4",
+     "choices": [
+      "4",
+      "6",
+      "2",
+      "14"
+     ],
+     "say": "2 fois 2 égale 4.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 2,
+     "b": 7,
+     "answer": "14",
+     "choices": [
+      "14",
+      "16",
+      "12",
+      "24"
+     ],
+     "say": "2 fois 7 égale 14.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 2,
+     "answer": "10",
+     "choices": [
+      "10",
+      "15",
+      "5",
+      "20"
+     ],
+     "say": "5 fois 2 égale 10.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 8,
+     "answer": "40",
+     "choices": [
+      "40",
+      "45",
+      "35",
+      "50"
+     ],
+     "say": "5 fois 8 égale 40.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 2,
+     "answer": "20",
+     "choices": [
+      "20",
+      "30",
+      "10",
+      "21"
+     ],
+     "say": "10 fois 2 égale 20.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 8,
+     "answer": "80",
+     "choices": [
+      "80",
+      "90",
+      "70",
+      "81"
+     ],
+     "say": "10 fois 8 égale 80.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-1",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 7,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "17"
+     ],
+     "say": "1 fois 7 égale 7.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 2,
+     "answer": "4",
+     "choices": [
+      "4",
+      "6",
+      "2",
+      "14"
+     ],
+     "say": "2 fois 2 égale 4.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 2,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "10",
+      "6",
+      "18"
+     ],
+     "say": "2 fois 4 égale 8.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 10,
+     "b": 3,
+     "answer": "30",
+     "choices": [
+      "30",
+      "40",
+      "20",
+      "31"
+     ],
+     "say": "10 fois 3 égale 30.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 6,
+     "answer": "60",
+     "choices": [
+      "60",
+      "70",
+      "50",
+      "61"
+     ],
+     "say": "10 fois 6 égale 60.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 7,
+     "answer": "70",
+     "choices": [
+      "70",
+      "80",
+      "60",
+      "71"
+     ],
+     "say": "10 fois 7 égale 70.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 8,
+     "answer": "80",
+     "choices": [
+      "80",
+      "90",
+      "70",
+      "81"
+     ],
+     "say": "10 fois 8 égale 80.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-2",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 3,
+     "answer": "3",
+     "choices": [
+      "3",
+      "4",
+      "2",
+      "13"
+     ],
+     "say": "1 fois 3 égale 3.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "10",
+      "6",
+      "18"
+     ],
+     "say": "2 fois 4 égale 8.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "10",
+     "choices": [
+      "10",
+      "12",
+      "8",
+      "20"
+     ],
+     "say": "2 fois 5 égale 10.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 2,
+     "b": 8,
+     "answer": "16",
+     "choices": [
+      "16",
+      "18",
+      "14",
+      "26"
+     ],
+     "say": "2 fois 8 égale 16.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 3,
+     "answer": "15",
+     "choices": [
+      "15",
+      "20",
+      "10",
+      "25"
+     ],
+     "say": "5 fois 3 égale 15.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 9,
+     "answer": "45",
+     "choices": [
+      "45",
+      "50",
+      "40",
+      "55"
+     ],
+     "say": "5 fois 9 égale 45.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 5,
+     "answer": "50",
+     "choices": [
+      "50",
+      "60",
+      "40",
+      "51"
+     ],
+     "say": "10 fois 5 égale 50.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-3",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 1,
+     "answer": "1",
+     "choices": [
+      "1",
+      "2",
+      "0",
+      "11"
+     ],
+     "say": "1 fois 1 égale 1.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 1,
+     "b": 2,
+     "answer": "2",
+     "choices": [
+      "2",
+      "3",
+      "1",
+      "12"
+     ],
+     "say": "1 fois 2 égale 2.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 1,
+     "b": 7,
+     "answer": "7",
+     "choices": [
+      "7",
+      "8",
+      "6",
+      "17"
+     ],
+     "say": "1 fois 7 égale 7.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 1,
+     "answer": "2",
+     "choices": [
+      "2",
+      "4",
+      "0",
+      "12"
+     ],
+     "say": "2 fois 1 égale 2.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 2,
+     "answer": "10",
+     "choices": [
+      "10",
+      "15",
+      "5",
+      "20"
+     ],
+     "say": "5 fois 2 égale 10.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 6,
+     "answer": "30",
+     "choices": [
+      "30",
+      "35",
+      "25",
+      "40"
+     ],
+     "say": "5 fois 6 égale 30.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 9,
+     "answer": "90",
+     "choices": [
+      "90",
+      "100",
+      "80",
+      "91"
+     ],
+     "say": "10 fois 9 égale 90.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-4",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 1,
+     "answer": "1",
+     "choices": [
+      "1",
+      "2",
+      "0",
+      "11"
+     ],
+     "say": "1 fois 1 égale 1.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 7,
+     "answer": "14",
+     "choices": [
+      "14",
+      "16",
+      "12",
+      "24"
+     ],
+     "say": "2 fois 7 égale 14.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 1,
+     "answer": "5",
+     "choices": [
+      "5",
+      "10",
+      "0",
+      "15"
+     ],
+     "say": "5 fois 1 égale 5.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 2,
+     "answer": "10",
+     "choices": [
+      "10",
+      "15",
+      "5",
+      "20"
+     ],
+     "say": "5 fois 2 égale 10.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 7,
+     "answer": "35",
+     "choices": [
+      "35",
+      "40",
+      "30",
+      "45"
+     ],
+     "say": "5 fois 7 égale 35.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 8,
+     "answer": "40",
+     "choices": [
+      "40",
+      "45",
+      "35",
+      "50"
+     ],
+     "say": "5 fois 8 égale 40.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 7,
+     "answer": "70",
+     "choices": [
+      "70",
+      "80",
+      "60",
+      "71"
+     ],
+     "say": "10 fois 7 égale 70.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-5",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 2,
+     "answer": "2",
+     "choices": [
+      "2",
+      "3",
+      "1",
+      "12"
+     ],
+     "say": "1 fois 2 égale 2.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 1,
+     "b": 6,
+     "answer": "6",
+     "choices": [
+      "6",
+      "7",
+      "5",
+      "16"
+     ],
+     "say": "1 fois 6 égale 6.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 3,
+     "answer": "6",
+     "choices": [
+      "6",
+      "8",
+      "4",
+      "16"
+     ],
+     "say": "2 fois 3 égale 6.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 4,
+     "answer": "20",
+     "choices": [
+      "20",
+      "25",
+      "15",
+      "30"
+     ],
+     "say": "5 fois 4 égale 20.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 8,
+     "answer": "40",
+     "choices": [
+      "40",
+      "45",
+      "35",
+      "50"
+     ],
+     "say": "5 fois 8 égale 40.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 10,
+     "answer": "50",
+     "choices": [
+      "50",
+      "55",
+      "45",
+      "60"
+     ],
+     "say": "5 fois 10 égale 50.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 8,
+     "answer": "80",
+     "choices": [
+      "80",
+      "90",
+      "70",
+      "81"
+     ],
+     "say": "10 fois 8 égale 80.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-6",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 1,
+     "b": 5,
+     "answer": "5",
+     "choices": [
+      "5",
+      "6",
+      "4",
+      "15"
+     ],
+     "say": "1 fois 5 égale 5.",
+     "hint": "Fois 1, le nombre ne change pas."
+    },
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "10",
+     "choices": [
+      "10",
+      "12",
+      "8",
+      "20"
+     ],
+     "say": "2 fois 5 égale 10.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 1,
+     "answer": "5",
+     "choices": [
+      "5",
+      "10",
+      "0",
+      "15"
+     ],
+     "say": "5 fois 1 égale 5.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 5,
+     "answer": "25",
+     "choices": [
+      "25",
+      "30",
+      "20",
+      "35"
+     ],
+     "say": "5 fois 5 égale 25.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 5,
+     "b": 8,
+     "answer": "40",
+     "choices": [
+      "40",
+      "45",
+      "35",
+      "50"
+     ],
+     "say": "5 fois 8 égale 40.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 3,
+     "answer": "30",
+     "choices": [
+      "30",
+      "40",
+      "20",
+      "31"
+     ],
+     "say": "10 fois 3 égale 30.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 7,
+     "answer": "70",
+     "choices": [
+      "70",
+      "80",
+      "60",
+      "71"
+     ],
+     "say": "10 fois 7 égale 70.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/grille-fois-7",
+   "type": "table",
+   "layout": "grille",
+   "op": "×",
+   "cols": 10,
+   "rows": [
+    1,
+    2,
+    5,
+    10
+   ],
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "q": "Complète les tables de 1, 2, 5 et 10.",
+   "holes": [
+    {
+     "a": 2,
+     "b": 4,
+     "answer": "8",
+     "choices": [
+      "8",
+      "10",
+      "6",
+      "18"
+     ],
+     "say": "2 fois 4 égale 8.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 2,
+     "b": 5,
+     "answer": "10",
+     "choices": [
+      "10",
+      "12",
+      "8",
+      "20"
+     ],
+     "say": "2 fois 5 égale 10.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 2,
+     "b": 7,
+     "answer": "14",
+     "choices": [
+      "14",
+      "16",
+      "12",
+      "24"
+     ],
+     "say": "2 fois 7 égale 14.",
+     "hint": "Fois 2, c'est un double : le nombre plus lui-même."
+    },
+    {
+     "a": 5,
+     "b": 10,
+     "answer": "50",
+     "choices": [
+      "50",
+      "55",
+      "45",
+      "60"
+     ],
+     "say": "5 fois 10 égale 50.",
+     "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    },
+    {
+     "a": 10,
+     "b": 1,
+     "answer": "10",
+     "choices": [
+      "10",
+      "20",
+      "0",
+      "11"
+     ],
+     "say": "10 fois 1 égale 10.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 4,
+     "answer": "40",
+     "choices": [
+      "40",
+      "50",
+      "30",
+      "41"
+     ],
+     "say": "10 fois 4 égale 40.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    },
+    {
+     "a": 10,
+     "b": 9,
+     "answer": "90",
+     "choices": [
+      "90",
+      "100",
+      "80",
+      "91"
+     ],
+     "say": "10 fois 9 égale 90.",
+     "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    }
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x5=30",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "5|b",
+    "=",
+    "30"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "30, c'est combien de fois 5 ?",
+   "explain": "6 fois 5 égale 30.",
+   "hint": "Compte de 5 en 5 jusqu'à 30."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x10=60",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "10|b",
+    "=",
+    "60"
+   ],
+   "answer": "6",
+   "choices": [
+    "6",
+    "7",
+    "5",
+    "8"
+   ],
+   "say": "60, c'est combien de fois 10 ?",
+   "explain": "6 fois 10 égale 60.",
+   "hint": "Compte de 10 en 10 jusqu'à 60."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x2=14",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "2|b",
+    "=",
+    "14"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "14, c'est combien de fois 2 ?",
+   "explain": "7 fois 2 égale 14.",
+   "hint": "Compte de 2 en 2 jusqu'à 14."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x5=45",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "5|b",
+    "=",
+    "45"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "45, c'est combien de fois 5 ?",
+   "explain": "9 fois 5 égale 45.",
+   "hint": "Compte de 5 en 5 jusqu'à 45."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x10=80",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "10|b",
+    "=",
+    "80"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "9",
+    "7",
+    "10"
+   ],
+   "say": "80, c'est combien de fois 10 ?",
+   "explain": "8 fois 10 égale 80.",
+   "hint": "Compte de 10 en 10 jusqu'à 80."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x2=18",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "2|b",
+    "=",
+    "18"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "11"
+   ],
+   "say": "18, c'est combien de fois 2 ?",
+   "explain": "9 fois 2 égale 18.",
+   "hint": "Compte de 2 en 2 jusqu'à 18."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x5=20",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "5|b",
+    "=",
+    "20"
+   ],
+   "answer": "4",
+   "choices": [
+    "4",
+    "5",
+    "3",
+    "6"
+   ],
+   "say": "20, c'est combien de fois 5 ?",
+   "explain": "4 fois 5 égale 20.",
+   "hint": "Compte de 5 en 5 jusqu'à 20."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/?x1=7",
+   "type": "calcul",
+   "diff": 3,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "?",
+    "×",
+    "1|b",
+    "=",
+    "7"
+   ],
+   "answer": "7",
+   "choices": [
+    "7",
+    "8",
+    "6",
+    "9"
+   ],
+   "say": "7, c'est combien de fois 1 ?",
+   "explain": "7 fois 1 égale 7.",
+   "hint": "Compte de 1 en 1 jusqu'à 7."
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/7x5",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "35",
+   "choices": [
+    "35",
+    "40",
+    "30",
+    "45"
+   ],
+   "say": "Combien font 7 fois 5 ?",
+   "explain": "7 fois 5 égale 35.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    7,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/8x2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "8|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "16",
+   "choices": [
+    "16",
+    "18",
+    "14",
+    "26"
+   ],
+   "say": "Combien font 8 fois 2 ?",
+   "explain": "8 fois 2 égale 16.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    8,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/6x10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "6|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "60",
+   "choices": [
+    "60",
+    "70",
+    "50",
+    "61"
+   ],
+   "say": "Combien font 6 fois 10 ?",
+   "explain": "6 fois 10 égale 60.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    6,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/9x5",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "9|a",
+    "×",
+    "5|b",
+    "=",
+    "?"
+   ],
+   "answer": "45",
+   "choices": [
+    "45",
+    "50",
+    "40",
+    "55"
+   ],
+   "say": "Combien font 9 fois 5 ?",
+   "explain": "9 fois 5 égale 45.",
+   "hint": "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+   "groups": [
+    9,
+    5
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/4x2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "4|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "8",
+   "choices": [
+    "8",
+    "10",
+    "6",
+    "18"
+   ],
+   "say": "Combien font 4 fois 2 ?",
+   "explain": "4 fois 2 égale 8.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    4,
+    2
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/8x10",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "8|a",
+    "×",
+    "10|b",
+    "=",
+    "?"
+   ],
+   "answer": "80",
+   "choices": [
+    "80",
+    "90",
+    "70",
+    "81"
+   ],
+   "say": "Combien font 8 fois 10 ?",
+   "explain": "8 fois 10 égale 80.",
+   "hint": "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+   "groups": [
+    8,
+    10
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/9x1",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "9|a",
+    "×",
+    "1|b",
+    "=",
+    "?"
+   ],
+   "answer": "9",
+   "choices": [
+    "9",
+    "10",
+    "8",
+    "19"
+   ],
+   "say": "Combien font 9 fois 1 ?",
+   "explain": "9 fois 1 égale 9.",
+   "hint": "Fois 1, le nombre ne change pas.",
+   "groups": [
+    9,
+    1
+   ]
+  },
+  {
+   "id": "maths-tables-1-2-5-10#quatre-tables/7x2",
+   "type": "calcul",
+   "diff": 2.5,
+   "notions": [
+    "quatre-tables"
+   ],
+   "expr": [
+    "7|a",
+    "×",
+    "2|b",
+    "=",
+    "?"
+   ],
+   "answer": "14",
+   "choices": [
+    "14",
+    "16",
+    "12",
+    "24"
+   ],
+   "say": "Combien font 7 fois 2 ?",
+   "explain": "7 fois 2 égale 14.",
+   "hint": "Fois 2, c'est un double : le nombre plus lui-même.",
+   "groups": [
+    7,
+    2
+   ]
+  }
+ ],
+ "speech": [
+  "0",
+  "1",
+  "1 fois 1 égale 1.",
+  "1 fois 10 égale 10.",
+  "1 fois 2 égale 2.",
+  "1 fois 3 égale 3.",
+  "1 fois 5 égale 5.",
+  "1 fois 6 égale 6.",
+  "1 fois 7 égale 7.",
+  "1 fois 8 égale 8.",
+  "1 morceau chacun : le nombre ne change pas.",
+  "10",
+  "10 fois 1 égale 10.",
+  "10 fois 10 égale 100.",
+  "10 fois 2 égale 20.",
+  "10 fois 3 égale 30.",
+  "10 fois 4 égale 40.",
+  "10 fois 5 égale 50.",
+  "10 fois 6 égale 60.",
+  "10 fois 7 égale 70.",
+  "10 fois 8 égale 80.",
+  "10 fois 9 égale 90.",
+  "10 poissons par seau : des lignes pleines !",
+  "100",
+  "11",
+  "12",
+  "13",
+  "14",
+  "14, c'est combien de fois 2 ?",
+  "15",
+  "16",
+  "17",
+  "18",
+  "18, c'est combien de fois 2 ?",
+  "19",
+  "2",
+  "2 branches chacun : c'est un double.",
+  "2 fois 1 égale 2.",
+  "2 fois 10 égale 20.",
+  "2 fois 2 égale 4.",
+  "2 fois 3 égale 6.",
+  "2 fois 4 égale 8.",
+  "2 fois 5 égale 10.",
+  "2 fois 7 égale 14.",
+  "2 fois 8 égale 16.",
+  "2 fois 9 égale 18.",
+  "20",
+  "20, c'est combien de fois 5 ?",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "3",
+  "3 fois 1 égale 3.",
+  "3 fois 10 égale 30.",
+  "3 fois 2 égale 6.",
+  "3 fois 3 égale 9.",
+  "3 fois 5 égale 15.",
+  "3 pandas mangent 2 bambous chacun : 3 fois 2, c'est 2 plus 2 plus 2. Ça fait 6.",
+  "3 pandas, 2 bambous chacun : 2 plus 2 plus 2. Ça fait 6.",
+  "30",
+  "30, c'est combien de fois 5 ?",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "4",
+  "4 fois 1 égale 4.",
+  "4 fois 10 égale 40.",
+  "4 fois 2 égale 8.",
+  "4 fois 5 égale 20.",
+  "4 seaux de 10 poissons : 4 lignes pleines. 4, et un zéro au bout : 40.",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "45, c'est combien de fois 5 ?",
+  "46",
+  "47",
+  "48",
+  "49",
+  "5",
+  "5 fois 1 égale 5.",
+  "5 fois 10 égale 50.",
+  "5 fois 2 égale 10.",
+  "5 fois 3 égale 15.",
+  "5 fois 3, c'est pareil que 3 fois 5. Les deux font 15.",
+  "5 fois 4 égale 20.",
+  "5 fois 5 égale 25.",
+  "5 fois 6 égale 30.",
+  "5 fois 7 égale 35.",
+  "5 fois 8 égale 40.",
+  "5 fois 9 égale 45.",
+  "5 pommes chacun : une main entière.",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "6",
+  "6 fois 1 égale 6.",
+  "6 fois 10 égale 60.",
+  "6 fois 2 égale 12.",
+  "6 fois 5 égale 30.",
+  "60",
+  "60, c'est combien de fois 10 ?",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "7",
+  "7 fois 1 égale 7.",
+  "7 fois 10 égale 70.",
+  "7 fois 2 égale 14.",
+  "7 fois 5 égale 35.",
+  "7 lions, 1 morceau de viande chacun : ça fait 7 morceaux.",
+  "7, c'est combien de fois 1 ?",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "8",
+  "8 fois 1 égale 8.",
+  "8 fois 10 égale 80.",
+  "8 fois 2 égale 16.",
+  "8 fois 5 égale 40.",
+  "80",
+  "80, c'est combien de fois 10 ?",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "9",
+  "9 fois 1 égale 9.",
+  "9 fois 10 égale 90.",
+  "9 fois 2 égale 18.",
+  "9 fois 5 égale 45.",
+  "90",
+  "91",
+  "92",
+  "93",
+  "94",
+  "95",
+  "96",
+  "97",
+  "98",
+  "99",
+  "Aujourd'hui, tu es soigneuse au zoo de Pairi Daiza. Les animaux ont faim !",
+  "Change l'ordre : c'est pareil que 3 fois 10.",
+  "Change l'ordre : c'est pareil que 3 fois 5.",
+  "Change l'ordre : c'est pareil que 4 fois 10.",
+  "Change l'ordre : c'est pareil que 4 fois 5.",
+  "Change l'ordre : c'est pareil que 6 fois 5.",
+  "Change l'ordre : c'est pareil que 7 fois 10.",
+  "Change l'ordre : c'est pareil que 7 fois 2.",
+  "Change l'ordre : c'est pareil que 8 fois 2.",
+  "Change l'ordre : c'est pareil que 8 fois 5.",
+  "Change l'ordre : c'est pareil que 9 fois 2.",
+  "Changer l'ordre",
+  "Changer l'ordre : 5 fois 3, c'est pareil que 3 fois 5.",
+  "Combien font 1 fois 1 ?",
+  "Combien font 1 fois 10 ?",
+  "Combien font 1 fois 2 ?",
+  "Combien font 1 fois 5 ?",
+  "Combien font 10 fois 1 ?",
+  "Combien font 10 fois 10 ?",
+  "Combien font 10 fois 2 ?",
+  "Combien font 10 fois 3 ?",
+  "Combien font 10 fois 4 ?",
+  "Combien font 10 fois 5 ?",
+  "Combien font 10 fois 7 ?",
+  "Combien font 2 fois 1 ?",
+  "Combien font 2 fois 10 ?",
+  "Combien font 2 fois 2 ?",
+  "Combien font 2 fois 4 ?",
+  "Combien font 2 fois 5 ?",
+  "Combien font 2 fois 7 ?",
+  "Combien font 2 fois 9 ?",
+  "Combien font 3 fois 1 ?",
+  "Combien font 3 fois 10 ?",
+  "Combien font 3 fois 2 ?",
+  "Combien font 3 fois 3 ?",
+  "Combien font 3 fois 5 ?",
+  "Combien font 4 fois 1 ?",
+  "Combien font 4 fois 10 ?",
+  "Combien font 4 fois 2 ?",
+  "Combien font 4 fois 5 ?",
+  "Combien font 5 fois 1 ?",
+  "Combien font 5 fois 10 ?",
+  "Combien font 5 fois 2 ?",
+  "Combien font 5 fois 3 ?",
+  "Combien font 5 fois 5 ?",
+  "Combien font 5 fois 6 ?",
+  "Combien font 5 fois 8 ?",
+  "Combien font 6 fois 1 ?",
+  "Combien font 6 fois 10 ?",
+  "Combien font 6 fois 2 ?",
+  "Combien font 6 fois 5 ?",
+  "Combien font 7 fois 1 ?",
+  "Combien font 7 fois 10 ?",
+  "Combien font 7 fois 2 ?",
+  "Combien font 7 fois 5 ?",
+  "Combien font 8 fois 1 ?",
+  "Combien font 8 fois 10 ?",
+  "Combien font 8 fois 2 ?",
+  "Combien font 8 fois 5 ?",
+  "Combien font 9 fois 1 ?",
+  "Combien font 9 fois 10 ?",
+  "Combien font 9 fois 2 ?",
+  "Combien font 9 fois 5 ?",
+  "Complète la table de 1.",
+  "Complète la table de 10.",
+  "Complète la table de 2.",
+  "Complète la table de 5.",
+  "Complète les tables de 1, 2, 5 et 10.",
+  "Compte de 1 en 1 jusqu'à 7.",
+  "Compte de 10 en 10 jusqu'à 60.",
+  "Compte de 10 en 10 jusqu'à 80.",
+  "Compte de 2 en 2 jusqu'à 14.",
+  "Compte de 2 en 2 jusqu'à 18.",
+  "Compte de 5 en 5 jusqu'à 20.",
+  "Compte de 5 en 5 jusqu'à 30.",
+  "Compte de 5 en 5 jusqu'à 45.",
+  "Fais 2 fois 3 sur le boulier : 2 lignes de 3 boules.",
+  "Fais 2 fois 5 sur le boulier : 2 lignes de 5 boules.",
+  "Fais 3 fois 10 sur le boulier : 3 lignes de 10 boules.",
+  "Fais 3 fois 2 sur le boulier : 3 lignes de 2 boules.",
+  "Fais 4 fois 2 sur le boulier : 4 lignes de 2 boules.",
+  "Fais 4 fois 5 sur le boulier : 4 lignes de 5 boules.",
+  "Fois 1, le nombre ne change pas.",
+  "Fois 10 : des lignes pleines. 4 fois 10, c'est 4 avec un zéro au bout : 40.",
+  "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout.",
+  "Fois 2, c'est un double : le nombre plus lui-même.",
+  "Fois 2, c'est un double. 6 fois 2, c'est 6 plus 6 : 12.",
+  "Fois 5 : une main par ligne. Deux mains font 10. On compte 5, 10, 15, 20.",
+  "Fois 5 : une main par ligne. Deux mains, ça fait 10.",
+  "Il range ses bambous par paquets.",
+  "Il y a 2 otaries. Chaque otarie mange 8 poissons. Combien de poissons en tout ?",
+  "Il y a 2 pandas. Chaque panda mange 3 bambous. Combien de bambous en tout ?",
+  "Il y a 2 perroquets. Chaque perroquet mange 4 raisins. Combien de raisins en tout ?",
+  "Il y a 2 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?",
+  "Il y a 3 pandas. Chaque panda mange 2 bambous. Combien de bambous en tout ?",
+  "Il y a 3 tortues. Chacune mange 3 feuilles de salade. Combien de feuilles en tout ?",
+  "Il y a 3 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?",
+  "Il y a 4 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?",
+  "Il y a 4 koalas. Chacun a 2 branches. Combien de branches en tout ?",
+  "Il y a 4 lions. Chaque lion reçoit 1 morceau de viande. Combien de morceaux en tout ?",
+  "Il y a 4 singes. Chaque singe reçoit 2 bananes. Combien de bananes en tout ?",
+  "Il y a 5 flamants roses. Chaque flamant mange 3 crevettes. Combien de crevettes en tout ?",
+  "Il y a 5 koalas. Chacun a 2 branches. Combien de branches en tout ?",
+  "Il y a 5 loutres. Chaque loutre attrape 4 poissons. Combien de poissons en tout ?",
+  "Il y a 6 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?",
+  "Il y a 6 ours. Chaque ours reçoit 1 pot de miel. Combien de pots en tout ?",
+  "Il y a 7 kangourous. Chacun mange 2 carottes. Combien de carottes en tout ?",
+  "Je choisis l'ordre qui m'arrange : je connais la table de 5 !",
+  "L'éléphant",
+  "La table de 1",
+  "La table de 1 : le nombre ne change pas.",
+  "La table de 10",
+  "La table de 10 : des lignes pleines : le nombre, puis un zéro.",
+  "La table de 2",
+  "La table de 2 : c'est un double.",
+  "La table de 5",
+  "La table de 5 : une main par ligne, et deux mains font 10.",
+  "La tournée du zoo",
+  "Le flamant rose",
+  "Le koala",
+  "Le lion",
+  "Le manchot",
+  "Le panda",
+  "Le seau du soigneur",
+  "Les quatre tables",
+  "Les quatre tables : les tables de 1, 2, 5 et 10, mélangées.",
+  "Les tables de 1, 2, 5 et 10 sont dans ta tête !",
+  "Les tables de 10 et de 5, toujours à portée de main.",
+  "Multiplier",
+  "Multiplier : c'est ajouter plusieurs fois le même nombre.",
+  "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+  "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier.",
+  "On compte de 5 en 5 : 5, 10, 15, 20. Ça finit toujours par 0 ou par 5.",
+  "On peut changer l'ordre : 5 fois 3, c'est pareil que 3 fois 5.",
+  "Pour chaque calcul, cherche la bonne astuce.",
+  "Soigneuse en chef",
+  "Sur le boulier, 3 fois 2, ce sont 3 lignes de 2 boules.",
+  "Sur le boulier, 6 lignes de 2, ce sont 2 colonnes de 6 : 6 plus 6, ça fait 12.",
+  "Sur une patte ou sur l'autre, le résultat est le même.",
+  "Tous les animaux ont mangé : les quatre tables mélangées.",
+  "Tu as 2 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?",
+  "Tu as 3 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?",
+  "Tu as 5 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+ ]
+}

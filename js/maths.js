@@ -21,7 +21,7 @@ const svg = (tag, attrs = {}) => {
 export function exprView(expr, cls = 'calc') {
   return h('div', { class: cls }, expr.map((t) => {
     if (t === '?') return h('span', { class: 'hole' }, '?');
-    if (t === '+' || t === '=' || t === '−') return h('span', { class: 'op' }, t);
+    if (t === '+' || t === '=' || t === '−' || t === '×') return h('span', { class: 'op' }, t);
     const [n, c] = t.split('|');
     return h('span', { class: `n${c ? ` c${c}` : ''}` }, n);
   }));
@@ -45,7 +45,8 @@ function treeView(item) {
 // Un petit espace après la 5e boule : on voit 5 sans compter.
 const R = 21, STEP = 46, GAP5 = 14, SLIDE = 74, LEFT = 34, ROW = 60, TOP = 14;
 const WIDTH = LEFT * 2 + 9 * STEP + GAP5 + SLIDE;
-const COLORS = { a: '#4f8fd0', b: '#e8875b', c: '#4f9e78', a2: '#9cc3ea', off: '#efe8da' };
+const COLORS = { a: '#4f8fd0', b: '#e8875b', c: '#4f9e78', a2: '#9cc3ea', b2: '#f4b896', off: '#efe8da' };
+const ROWS_MAX = 10;
 const beadX = (i, counted) => LEFT + i * STEP + (i >= 5 ? GAP5 : 0) + (counted ? 0 : SLIDE);
 const rowY = (r) => TOP + r * ROW + ROW / 2;
 
@@ -86,20 +87,54 @@ export function boulierView(parts) {
   return h('div', { class: 'boulier-wrap' }, s);
 }
 
+// Multiplication : k fois n = k lignes de n boules (orange, comme n), une ligne sur deux plus claire
+// pour compter les lignes. À gauche, le numéro de la ligne (bleu, comme k) ; à droite, le total
+// atteint au bout de chaque ligne (5, 10, 15… : la comptine de la table). Dans un exercice, le dernier
+// total est un « ? » : il reste le dernier bond à faire.
+const LABEL_L = 46, LABEL_R = 96;
+export function groupsView(k, n, hideLast = false) {
+  const s = frameSvg(k);
+  s.setAttribute('viewBox', `${-LABEL_L} 0 ${WIDTH + LABEL_L + LABEL_R} ${TOP * 2 + k * ROW}`);
+  s.classList.add('groups');
+  if (k > 4) s.classList.add('tall');
+  for (let r = 0; r < k; r++) {
+    for (let i = 0; i < 10; i++) place(bead(s), beadX(i, i < n), rowY(r), i < n ? (r % 2 ? COLORS.b2 : COLORS.b) : COLORS.off);
+    const label = (x, text, cls) => {
+      const t = svg('text', { x, y: rowY(r), class: cls, 'dominant-baseline': 'central', 'text-anchor': 'middle' });
+      t.textContent = text;
+      s.append(t);
+    };
+    label(-LABEL_L / 2, r + 1, 'g-row');
+    label(WIDTH + LABEL_R / 2, hideLast && r === k - 1 ? '?' : (r + 1) * n, 'g-total');
+  }
+  return h('div', { class: 'boulier-wrap' }, s);
+}
+
+// Scène du zoo : k enclos, chacun avec son animal et ses n objets (bambous, poissons…).
+function sceneView({ k, n, animal, thing }) {
+  return h('div', { class: 'scene' }, Array.from({ length: k }, () =>
+    h('div', { class: 'enclos' }, h('span', { class: 'enclos-animal' }, animal),
+      // Les objets par rangées de 5, comme les paquets du boulier.
+      h('span', { class: 'enclos-things', style: `--n: ${Math.min(n, 5)}` }, Array.from({ length: n }, () => h('span', {}, thing))))));
+}
+
 // Boulier à manipuler : toucher une boule de droite la pousse à gauche (avec celles d'avant),
 // toucher une boule de gauche la renvoie à droite (avec celles d'après). On peut viser large :
 // c'est la boule la plus proche du doigt, sur la tige la plus proche, qui bouge.
-function boulierInput() {
-  const s = frameSvg(2);
-  const counts = [0, 0];
-  const beads = [0, 1].map(() => Array.from({ length: 10 }, () => bead(s)));
+// rows : 2 tiges pour l'addition ; k tiges pour « k fois n » (boules orange, comme n).
+function boulierInput(rows = 2, groups = false) {
+  const s = frameSvg(rows);
+  if (groups) s.classList.add('groups');
+  const counts = Array(rows).fill(0);
+  const beads = counts.map(() => Array.from({ length: 10 }, () => bead(s)));
+  const on = (r, i) => (groups ? (r % 2 ? COLORS.b2 : COLORS.b) : i < 5 ? COLORS.a : COLORS.a2);
   const paint = () => beads.forEach((row, r) => row.forEach((c, i) =>
-    place(c, beadX(i, i < counts[r]), rowY(r), i < counts[r] ? (i < 5 ? COLORS.a : COLORS.a2) : COLORS.off)));
+    place(c, beadX(i, i < counts[r]), rowY(r), i < counts[r] ? on(r, i) : COLORS.off)));
   s.addEventListener('click', (e) => {
     const pt = s.createSVGPoint();
     pt.x = e.clientX; pt.y = e.clientY;
     const p = pt.matrixTransform(s.getScreenCTM().inverse());
-    const r = p.y < TOP + ROW ? 0 : 1;
+    const r = Math.max(0, Math.min(rows - 1, Math.floor((p.y - TOP) / ROW)));
     let best = 0, bd = Infinity;
     for (let i = 0; i < 10; i++) {
       const d = Math.abs(beadX(i, i < counts[r]) - p.x);
@@ -111,8 +146,10 @@ function boulierInput() {
   paint();
   return {
     el: h('div', { class: 'boulier-wrap input' }, s),
-    total: () => counts[0] + counts[1],
+    total: () => counts.reduce((a, b) => a + b, 0),
+    counts: () => counts.slice(),
     set: (n) => { counts[0] = Math.min(10, n); counts[1] = Math.max(0, n - 10); paint(); },
+    fill: (n) => { counts.fill(n); paint(); },
   };
 }
 
@@ -132,8 +169,16 @@ export function calcul(item, { root, level, done }) {
   const eq = item.tree ? treeView(item) : exprView(item.expr);
   const hole = eq.querySelector('.hole');
   const visual = h('div', { class: 'boulier-slot' });
-  const showBeads = () => { if (item.beads && !visual.firstChild) visual.append(boulierView(item.beads)); };
-  if (level <= 1) showBeads();
+  const scene = item.scene ? sceneView(item.scene) : null;
+  let side;  // multiplication : boulier à gauche, réponses à droite (tout tient sur l'iPad)
+  const showBeads = () => {
+    if (visual.firstChild) return;
+    if (item.groups) {
+      visual.append(groupsView(...item.groups, true));
+      side.classList.add('with-beads');
+      scene?.remove();  // le boulier montre les mêmes groupes que la scène
+    } else if (item.beads) visual.append(boulierView(item.beads));
+  };
   let errors = 0, over = false;
   const buttons = [];
   const grid = numChoices(item.choices, (t, btn) => {
@@ -156,7 +201,12 @@ export function calcul(item, { root, level, done }) {
     finish('fail', [P.reveal, item.answer, item.explain]);
   });
   buttons.push(...grid.querySelectorAll('button.num'));
-  body.append(eq, visual, grid);
+  if (item.groups) {
+    side = h('div', { class: 'calc-side' }, visual, grid);
+    body.append(...[scene, eq, side].filter(Boolean));
+  } else body.append(eq, visual, grid);
+  // Une histoire du zoo montre déjà les objets : le boulier n'y vient qu'en indice.
+  if (level <= 1 && !item.scene) showBeads();
   say(item.say);
 }
 
@@ -169,18 +219,21 @@ function fillHole(hole, t, cls) {
 export function boulier(item, { root, done }) {
   const { body, fb } = frame(root, item.q);
   const finish = finisher(fb, done);
-  const input = boulierInput();
+  const [k, n] = item.groups || [];
+  const input = item.groups ? boulierInput(k, true) : boulierInput();
   let errors = 0, over = false;
   const ok = h('button', { class: 'primary big', onclick: check }, '✓ C’est fait');
   body.append(
-    item.parts ? exprView([String(item.parts[0]), '+', String(item.parts[1])]) : h('div', { class: 'calc' }, h('span', { class: 'n' }, item.target)),
+    item.groups ? exprView([`${k}|a`, '×', `${n}|b`])
+      : item.parts ? exprView([String(item.parts[0]), '+', String(item.parts[1])]) : h('div', { class: 'calc' }, h('span', { class: 'n' }, item.target)),
     input.el,
     h('div', { class: 'row' }, h('span', { class: 'spacer' }), ok));
 
   function check() {
     if (over) return;
-    const n = input.total();
-    if (n === item.target) {
+    const total = input.total();
+    const right = item.groups ? input.counts().every((c) => c === n) : total === item.target;
+    if (right) {
       over = true;
       ok.remove();
       finish(errors ? 'partial' : 'ok', [pick(P.bravo), item.explain]);
@@ -188,12 +241,14 @@ export function boulier(item, { root, done }) {
     }
     errors++;
     if (errors < 2) {
-      hint(fb, [n > item.target ? P.boulierTooMany : P.boulierTooFew, item.target > 10 ? P.boulierRow : null]);
+      if (item.groups) hint(fb, [P.boulierGroupSame]);
+      else hint(fb, [total > item.target ? P.boulierTooMany : P.boulierTooFew, item.target > 10 ? P.boulierRow : null]);
       return;
     }
     over = true;
     ok.remove();
-    input.set(item.target);
+    if (item.groups) input.fill(n);
+    else input.set(item.target);
     finish('fail', [P.boulierShow, item.explain]);
   }
   say(item.q);
@@ -299,7 +354,11 @@ export function amis10(item, { root, done }) {
 // est choisie toute seule), puis le bon nombre parmi 4. La ligne et la colonne de la case sont surlignées.
 export function table(item, { root, done }) {
   const { body, fb } = frame(root, item.q);
-  const key = (a, b) => `${a}+${b}`;
+  const op = item.op || '+';
+  const calc = (a, b) => (op === '×' ? a * b : a + b);
+  const cols = Array.from({ length: item.cols || 9 }, (_, k) => k + 1);
+  const rows = item.rows || [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const key = (a, b) => `${a}${op}${b}`;
   const holes = item.holes.map((x) => ({ ...x, misses: 0, done: false }));
   const byKey = Object.fromEntries(holes.map((x) => [key(x.a, x.b), x]));
   const cells = {};
@@ -307,22 +366,26 @@ export function table(item, { root, done }) {
 
   const cellEl = (a, b) => {
     const hl = byKey[key(a, b)];
-    if (!hl) return h('div', { class: 'tcell' }, String(a + b));
+    if (!hl) return h('div', { class: 'tcell' }, String(calc(a, b)));
     hl.el = h('button', { class: 'tcell hole', onclick: () => open(hl) }, '?');
     return hl.el;
   };
 
   let board;
   if (item.layout === 'ligne') {
-    board = h('div', { class: 'tline' }, Array.from({ length: 9 }, (_, k) =>
-      h('div', { class: 'tline-cell' }, h('div', { class: 'tline-op' }, `${item.row} + ${k + 1}`), cellEl(item.row, k + 1))));
+    // Addition : 3 + 1 … 3 + 9 ; multiplication : 1 × 5 … 10 × 5 (k lignes de 5).
+    const pair = (k) => (op === '×' ? [k, item.row] : [item.row, k]);
+    board = h('div', { class: 'tline', style: `--cols: ${cols.length}` }, cols.map((k) => {
+      const [a, b] = pair(k);
+      return h('div', { class: 'tline-cell' }, h('div', { class: 'tline-op' }, `${a} ${op} ${b}`), cellEl(a, b));
+    }));
   } else {
-    board = h('div', { class: 'tgrid' });
-    board.append(h('div', { class: 'thead corner' }, '+'));
-    for (let b = 1; b <= 9; b++) board.append(cells[`c${b}`] = h('div', { class: 'thead' }, String(b)));
-    for (let a = 1; a <= 9; a++) {
+    board = h('div', { class: 'tgrid', style: `--cols: ${cols.length + 1}` });
+    board.append(h('div', { class: 'thead corner' }, op));
+    for (const b of cols) board.append(cells[`c${b}`] = h('div', { class: 'thead' }, String(b)));
+    for (const a of rows) {
       board.append(cells[`r${a}`] = h('div', { class: 'thead' }, String(a)));
-      for (let b = 1; b <= 9; b++) {
+      for (const b of cols) {
         const el = cellEl(a, b);
         el.dataset.a = a;
         el.dataset.b = b;
@@ -352,7 +415,7 @@ export function table(item, { root, done }) {
     cross(hl);
     fb.replaceChildren();
     pickBox.replaceChildren(
-      h('div', { class: 'tpick-op' }, exprView([`${hl.a}|a`, '+', `${hl.b}|b`, '=', '?'])),
+      h('div', { class: 'tpick-op' }, exprView([`${hl.a}|a`, op, `${hl.b}|b`, '=', '?'])),
       numChoices(hl.choices, (t, btn) => answer(hl, t, btn)));
   }
 

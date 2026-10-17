@@ -285,6 +285,7 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 /* illustrations */
 .thumb { width: 120px; height: 120px; object-fit: cover; border-radius: 18px; flex: none; }
 .discover-img { width: 260px; max-width: 40vw; border-radius: 22px; }
+.discover.with-example .discover-img { width: 190px; }  /* maths : l'exemple et le boulier doivent tenir dessous */
 .companion img { width: 100%; height: auto; display: block; mix-blend-mode: multiply; border-radius: 24px; }
 .pcard .art-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 12px; }
 .pcard { justify-content: flex-start; }
@@ -361,6 +362,32 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .boulier .b-rod { stroke: #b48b5a; stroke-width: 5; stroke-linecap: round; }
 .boulier .bead { stroke: rgba(60, 40, 20, .25); stroke-width: 2; transition: transform .25s ease-out, fill .25s; }
 .boulier-wrap.input .boulier { max-width: 860px; cursor: pointer; touch-action: manipulation; }
+/* Multiplication : k lignes de n boules, numéro de ligne à gauche, total à droite */
+.boulier.groups { max-width: 720px; max-height: 46vh; }
+.boulier.groups.tall { max-height: 40vh; }
+.boulier-wrap.input .boulier.groups { max-height: 44vh; }
+.example-row { display: flex; flex-direction: column; gap: 16px; }
+.example-row .calc { font-size: 52px; }
+.example-row .boulier.groups { max-height: 26vh; }
+@media (min-width: 900px) {
+  .example-row { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 24px; }
+}
+.calc-side { display: flex; flex-direction: column; gap: 16px; }
+.calc-side .boulier.groups, .calc-side .boulier.groups.tall { max-height: 30vh; }  /* iPad en portrait */
+@media (min-width: 900px) {
+  .calc-side.with-beads { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); align-items: center; gap: 24px; }
+  .calc-side.with-beads .boulier.groups { max-height: 50vh; }
+  .calc-side.with-beads .boulier.groups.tall { max-height: 40vh; }
+  .calc-side.with-beads .num-choices { gap: 12px; }
+  .calc-side.with-beads .choice.num { min-height: 80px; font-size: 40px; }
+}
+.boulier .g-row { font-size: 30px; font-weight: 700; fill: #2f6fb0; }
+.boulier .g-total { font-size: 34px; font-weight: 700; fill: var(--ink); }
+/* Scène du zoo : un enclos par groupe */
+.scene { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.enclos { display: flex; align-items: center; gap: 8px; padding: 8px 14px; background: #eef5e4; border: 3px solid #a8c98a; border-radius: 20px; }
+.enclos-animal { font-size: 44px; }
+.enclos-things { display: grid; grid-template-columns: repeat(var(--n), auto); gap: 2px 4px; font-size: 26px; line-height: 1.2; }
 
 /* Arbre de la fiche « faire 10 » */
 .tree { width: 100%; max-width: 520px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
@@ -380,14 +407,14 @@ button.icon { min-height: 56px; min-width: 56px; padding: 8px; font-size: 26px; 
 .amis-num.rest { color: #c4612f; }
 
 /* Table d'addition */
-.tline { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 10px; }
+.tline { display: grid; grid-template-columns: repeat(var(--cols, 9), minmax(0, 1fr)); gap: 10px; }
 @media (max-width: 760px) { .tline { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 .tline-cell { display: flex; flex-direction: column; align-items: stretch; gap: 6px; text-align: center; }
 .tline-op { font-size: 22px; font-weight: 700; color: var(--ink); white-space: nowrap; }
 .tcell { display: flex; align-items: center; justify-content: center; min-height: 64px; font-size: 32px; font-weight: 700; background: var(--card); border: 2px solid var(--line); border-radius: 14px; font-variant-numeric: tabular-nums; }
 .tcell.hole { padding: 0; min-height: 64px; font: inherit; font-size: 32px; font-weight: 700; border: 3px dashed var(--primary); box-shadow: none; background: var(--primary-soft); color: var(--btn-ink); }
 .tcell.hole.good, .tcell.hole.reveal { border-style: solid; }
-.tgrid { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 5px; }
+.tgrid { display: grid; grid-template-columns: repeat(var(--cols, 10), minmax(0, 1fr)); gap: 5px; }
 .tgrid .tcell { min-height: 54px; font-size: 26px; border-radius: 10px; }
 .tgrid .tcell.hole { min-height: 54px; font-size: 26px; border-radius: 10px; }
 .thead { display: flex; align-items: center; justify-content: center; min-height: 54px; font-size: 26px; font-weight: 700; color: var(--btn-ink); background: var(--btn); border-radius: 10px; }

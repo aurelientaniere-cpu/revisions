@@ -83,6 +83,7 @@
   "boulierTooFew": "Il manque des boules. Compte bien.",
   "boulierRow": "Remplis d'abord toute la première ligne : ça fait 10.",
   "boulierShow": "Regarde, voici le bon nombre de boules.",
+  "boulierGroupSame": "Regarde chaque ligne : elles doivent toutes avoir le même nombre de boules.",
   "amisNot10": "Ces deux nombres ne font pas 10. Essaie encore.",
   "amisRest": "Ajoute maintenant les nombres qui restent.",
   "tableDone": "Tout est complété."

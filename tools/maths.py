@@ -219,11 +219,141 @@ def gen_grille(lid, nid, spec):
     return out
 
 
+# ---------- Multiplication (tables de 1, 2, 5 et 10) ----------
+# « 3 fois 5 » = 3 groupes de 5 = 3 lignes de 5 boules ; la ligne contient toujours le nombre de la table.
+TABLES = (1, 2, 5, 10)
+
+
+def fact_mult(k, n):
+    return f"{k} fois {n} égale {k * n}."
+
+
+def strategy_mult(k, n):
+    """Astuce pour k fois n (k lignes de n boules), sans donner le résultat."""
+    if n not in TABLES and k in TABLES:
+        return f"Change l'ordre : c'est pareil que {n} fois {k}."
+    if n == 10:
+        return "Fois 10 : des lignes pleines. Le nombre, avec un zéro au bout."
+    if n == 5:
+        return "Fois 5 : une main par ligne. Deux mains, ça fait 10."
+    if n == 2:
+        return "Fois 2, c'est un double : le nombre plus lui-même."
+    if n == 1:
+        return "Fois 1, le nombre ne change pas."
+    return "Compte les lignes de boules, une par une."
+
+
+def choices_mult(ans, n):
+    """La bonne réponse d'abord, puis les voisins dans la table (une ligne de plus, de moins…)."""
+    cands = [ans + n, ans - n, ans + 10, ans - 10, ans + 1, ans - 1, ans + 2 * n, ans - 2 * n, ans + 2]
+    out = [ans]
+    for c in cands:
+        if 0 <= c <= 100 and c not in out:
+            out.append(c)
+    return [str(x) for x in out[:4]]
+
+
+def produit(lid, nid, key, spec, k, n, say=None, scene=None):
+    it = calcul(lid, nid, key, spec.get("diff", 2), [f"{k}|a", "×", f"{n}|b", "=", "?"], k * n,
+                say or f"Combien font {k} fois {n} ?", fact_mult(k, n), spec.get("hint") or strategy_mult(k, n))
+    it["choices"] = choices_mult(k * n, n)
+    # Boulier : la version facile (« 10 fois 7 » se montre en 7 lignes de 10, comme le dit l'indice).
+    it["groups"] = [n, k] if n not in TABLES and k in TABLES else [k, n]
+    if scene:
+        it["scene"] = scene
+    return it
+
+
+def gen_produit(lid, nid, spec):
+    return [produit(lid, nid, f"{k}x{n}", spec, k, n) for k, n in spec["pairs"]]
+
+
+def gen_ligne_fois(lid, nid, spec):
+    """La table de n : 1 fois n … 10 fois n (ou seulement les multiplicateurs de « ks »)."""
+    n = spec["row"]
+    return [produit(lid, nid, f"{k}x{n}", spec, k, n) for k in spec.get("ks", range(1, 11))]
+
+
+def gen_zoo(lid, nid, spec):
+    """Petite histoire du zoo : k enclos de n objets (emoji), phrase écrite en entier dans la leçon."""
+    out = []
+    for st in spec["stories"]:
+        k, n = st["k"], st["n"]
+        scene = {"k": k, "n": n, "animal": st["animal"], "thing": st["thing"]}
+        out.append(produit(lid, nid, f"zoo-{k}x{n}-{st['animal']}", {**spec, "diff": spec.get("diff", 2)},
+                           k, n, say=st["say"], scene=scene))
+    return out
+
+
+def gen_facteur(lid, nid, spec):
+    """? fois n = total : combien de lignes de n pour faire total ?"""
+    out = []
+    for n, total in spec["pairs"]:
+        k = total // n
+        out.append(calcul(lid, nid, f"?x{n}={total}", spec.get("diff", 3), ["?", "×", f"{n}|b", "=", str(total)], k,
+                          f"{total}, c'est combien de fois {n} ?", fact_mult(k, n),
+                          spec.get("hint") or f"Compte de {n} en {n} jusqu'à {total}."))
+    return out
+
+
+def gen_boulier_fois(lid, nid, spec):
+    out = []
+    for k, n in spec["groups"]:
+        out.append({
+            "id": f"{lid}#{nid}/boulier-{k}x{n}", "type": "boulier", "diff": spec.get("diff", 2), "notions": [nid],
+            "target": k * n, "groups": [k, n],
+            "q": f"Fais {k} fois {n} sur le boulier : {k} lignes de {n} boules.",
+            "explain": fact_mult(k, n),
+        })
+    return out
+
+
+def holes_mult(k, n):
+    return {"a": k, "b": n, "answer": str(k * n), "choices": choices_mult(k * n, n),
+            "say": fact_mult(k, n), "hint": strategy_mult(k, n)}
+
+
+def gen_suite(lid, nid, spec):
+    """La table de n en ligne (1 fois n … 10 fois n) avec des cases vides : la comptine de n en n."""
+    n = spec["row"]
+    out = []
+    for v in range(spec.get("variants", 3)):
+        rnd = random.Random(f"{lid}/{nid}/suite/{v}")
+        ks = sorted(rnd.sample(range(1, 11), spec.get("holes", 4)))
+        out.append({
+            "id": f"{lid}#{nid}/suite-{n}-{v}", "type": "table", "layout": "ligne", "op": "×", "cols": 10,
+            "diff": spec.get("diff", 2.5), "notions": [nid], "row": n, "q": f"Complète la table de {n}.",
+            "holes": [holes_mult(k, n) for k in ks],
+        })
+    return out
+
+
+def gen_grille_fois(lid, nid, spec):
+    """Plusieurs tables l'une sous l'autre (une ligne par table, colonnes 1 à 10), avec des cases vides."""
+    rows = spec.get("rows", list(TABLES))
+    names = ", ".join(map(str, rows[:-1])) + f" et {rows[-1]}"
+    out = []
+    for v in range(spec.get("variants", 6)):
+        rnd = random.Random(f"{lid}/{nid}/grille-fois/{v}")
+        cells = rnd.sample([(n, k) for n in rows for k in range(1, 11)], spec.get("holes", 7))
+        cells.sort()
+        out.append({
+            "id": f"{lid}#{nid}/grille-fois-{v}", "type": "table", "layout": "grille", "op": "×", "cols": 10,
+            "rows": rows, "diff": spec.get("diff", 3), "notions": [nid], "q": f"Complète les tables de {names}.",
+            # Case (ligne n, colonne k) : écrite et lue « n fois k ».
+            "holes": [{**holes_mult(k, n), "a": n, "b": k, "say": fact_mult(n, k)} for n, k in cells],
+        })
+    return out
+
+
 GENS = {
     "somme": gen_somme, "ligne-faits": gen_ligne_faits, "manque": gen_manque, "dizaine": gen_dizaine,
     "arbre": gen_arbre, "echange": gen_echange, "decomp": gen_decomp, "boulier": gen_boulier,
     "dix": gen_dix, "ligne": gen_ligne, "grille": gen_grille,
+    "produit": gen_produit, "ligne-fois": gen_ligne_fois, "zoo": gen_zoo, "facteur": gen_facteur,
+    "boulier-fois": gen_boulier_fois, "suite": gen_suite, "grille-fois": gen_grille_fois,
 }
+MULT = {"produit", "ligne-fois", "zoo", "facteur", "boulier-fois", "suite", "grille-fois"}
 
 
 def items(lesson):
@@ -249,5 +379,9 @@ def speech(it):
     return []
 
 
-NUMBERS = [str(i) for i in range(21)]  # le 🔊 de chaque réponse
+def numbers(lesson):
+    """Le 🔊 de chaque réponse : 0 à 20 (addition), 0 à 100 avec les tables de multiplication."""
+    top = 100 if any(spec["gen"] in MULT for spec in lesson.get("maths", [])) else 20
+    return [str(i) for i in range(top + 1)]
+
 GEN_TYPES = ("calcul", "boulier", "amis10", "table")

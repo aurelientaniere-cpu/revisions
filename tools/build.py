@@ -213,7 +213,7 @@ def build(src):
             speech.append(PHRASES["zoneThis"].replace("{x}", nom(n)))
             speech.append(PHRASES["zoneHere"].replace("{x}", nom(n)))
     if lesson.get("maths"):
-        speech += maths.NUMBERS
+        speech += maths.numbers(lesson)
     for c in lesson.get("cards", []):
         speech += [c["name"], c["desc"]]
     for it in items:

@@ -54,6 +54,11 @@ Modèles : `maths-faire-10.json`, `maths-table-addition.json`. Les exercices ne 
   - `dix` `terms: [[1, 1, 7, 3]]` → toucher les deux nombres qui font 10, puis 10 + ? = ? (au moins une paire qui fait 10).
   - `boulier` `show: [13]` (« Montre 13 ») et/ou `sums: [[8, 5]]` (« Fais 8 plus 5 ») : boulier à manipuler, on touche les boules.
   - `ligne` `row: 3, variants?, holes?` → une ligne de la table avec des cases vides ; `grille` `variants?, holes?` → la table 1 à 9 entière.
+- Multiplication (modèle : `maths-tables-1-2-5-10.json`) : « 3 fois 5 » = 3 lignes de 5 boules (`groups: [3, 5]`, boulier de 1 à 10 tiges, numéro de ligne à gauche, total cumulé à droite). Exemple de notion : `{ expr: ["3|a", "×", "5|b", "=", "15"], groups: [3, 5], say }`. Réponses de 0 à 100.
+  - `produit` `pairs: [[3, 5]]` → « Combien font 3 fois 5 ? » ; `ligne-fois` `row: 5, ks?` → 1 fois 5 … 10 fois 5.
+  - `zoo` `stories: [{ k, n, animal, thing, say }]` → petite histoire (phrase écrite en entier) avec une scène de k enclos (emoji `animal`) de n objets (`thing`) ; le boulier n'y vient qu'en indice.
+  - `facteur` `pairs: [[5, 30]]` → ? × 5 = 30 ; `boulier-fois` `groups: [[3, 5]]` → « Fais 3 fois 5 sur le boulier » (chaque tige doit avoir 5 boules).
+  - `suite` `row: 5, variants?, holes?` → la table de 5 en ligne à compléter ; `grille-fois` `rows?: [1, 2, 5, 10], variants?, holes?` → plusieurs tables, une par ligne.
 
 ## Langues étrangères
 - Champ de leçon `english` : la liste des mots anglais (« Monday », « day »…). `tools/voice.py` les fait dire par la voix anglaise de `tools/voice.json` (`english`), même au milieu d'une phrase française (« Que veut dire « Thursday » ? »). Respecter la casse écrite dans la liste.

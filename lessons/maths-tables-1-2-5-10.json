@@ -1,0 +1,749 @@
+{
+  "id": "maths-tables-1-2-5-10",
+  "category": "maths",
+  "subject": "Maths",
+  "title": "Les tables de 1, 2, 5 et 10",
+  "subtitle": "Soigneuse au zoo de Pairi Daiza",
+  "emoji": "🐼",
+  "color": "#4f9e78",
+  "ordered": true,
+  "newPerSession": 1,
+  "perNew": 4,
+  "source": "Premières tables de multiplication (1, 2, 5 et 10), avec le boulier, dans le décor d'un zoo.",
+  "summary": [
+    "Aujourd'hui, tu es soigneuse au zoo de Pairi Daiza. Les animaux ont faim !",
+    "Multiplier, c'est ajouter plusieurs fois le même nombre.",
+    "3 pandas mangent 2 bambous chacun : 3 fois 2, c'est 2 plus 2 plus 2. Ça fait 6.",
+    "Sur le boulier, 3 fois 2, ce sont 3 lignes de 2 boules.",
+    "Fois 10 : des lignes pleines. 4 fois 10, c'est 4 avec un zéro au bout : 40.",
+    "Fois 5 : une main par ligne. Deux mains font 10. On compte 5, 10, 15, 20.",
+    "Fois 2, c'est un double. 6 fois 2, c'est 6 plus 6 : 12.",
+    "Fois 1, le nombre ne change pas.",
+    "On peut changer l'ordre : 5 fois 3, c'est pareil que 3 fois 5."
+  ],
+  "notions": [
+    {
+      "id": "fois",
+      "term": "multiplier",
+      "nom": "multiplier",
+      "def": "c'est ajouter plusieurs fois le même nombre",
+      "emoji": "🐼",
+      "noAuto": true,
+      "tip": "3 pandas, 2 bambous chacun : 2 plus 2 plus 2. Ça fait 6.",
+      "example": {
+        "expr": [
+          "3|a",
+          "×",
+          "2|b",
+          "=",
+          "6"
+        ],
+        "groups": [
+          3,
+          2
+        ],
+        "say": "3 fois 2 égale 6."
+      }
+    },
+    {
+      "id": "fois10",
+      "term": "la table de 10",
+      "nom": "la table de 10",
+      "def": "des lignes pleines : le nombre, puis un zéro",
+      "emoji": "🐧",
+      "noAuto": true,
+      "tip": "4 seaux de 10 poissons : 4 lignes pleines. 4, et un zéro au bout : 40.",
+      "example": {
+        "expr": [
+          "4|a",
+          "×",
+          "10|b",
+          "=",
+          "40"
+        ],
+        "groups": [
+          4,
+          10
+        ],
+        "say": "4 fois 10 égale 40."
+      }
+    },
+    {
+      "id": "fois5",
+      "term": "la table de 5",
+      "nom": "la table de 5",
+      "def": "une main par ligne, et deux mains font 10",
+      "emoji": "🐘",
+      "noAuto": true,
+      "tip": "On compte de 5 en 5 : 5, 10, 15, 20. Ça finit toujours par 0 ou par 5.",
+      "example": {
+        "expr": [
+          "4|a",
+          "×",
+          "5|b",
+          "=",
+          "20"
+        ],
+        "groups": [
+          4,
+          5
+        ],
+        "say": "4 fois 5 égale 20."
+      }
+    },
+    {
+      "id": "fois2",
+      "term": "la table de 2",
+      "nom": "la table de 2",
+      "def": "c'est un double",
+      "emoji": "🐨",
+      "noAuto": true,
+      "tip": "Sur le boulier, 6 lignes de 2, ce sont 2 colonnes de 6 : 6 plus 6, ça fait 12.",
+      "example": {
+        "expr": [
+          "6|a",
+          "×",
+          "2|b",
+          "=",
+          "12"
+        ],
+        "groups": [
+          6,
+          2
+        ],
+        "say": "6 fois 2 égale 12."
+      }
+    },
+    {
+      "id": "fois1",
+      "term": "la table de 1",
+      "nom": "la table de 1",
+      "def": "le nombre ne change pas",
+      "emoji": "🦁",
+      "noAuto": true,
+      "tip": "7 lions, 1 morceau de viande chacun : ça fait 7 morceaux.",
+      "example": {
+        "expr": [
+          "7|a",
+          "×",
+          "1|b",
+          "=",
+          "7"
+        ],
+        "groups": [
+          7,
+          1
+        ],
+        "say": "7 fois 1 égale 7."
+      }
+    },
+    {
+      "id": "echange",
+      "term": "changer l'ordre",
+      "nom": "changer l'ordre",
+      "def": "5 fois 3, c'est pareil que 3 fois 5",
+      "emoji": "🦩",
+      "noAuto": true,
+      "tip": "Je choisis l'ordre qui m'arrange : je connais la table de 5 !",
+      "example": {
+        "expr": [
+          "5|a",
+          "×",
+          "3|b",
+          "=",
+          "3|b",
+          "×",
+          "5|a"
+        ],
+        "groups": [
+          3,
+          5
+        ],
+        "say": "5 fois 3, c'est pareil que 3 fois 5. Les deux font 15."
+      }
+    },
+    {
+      "id": "quatre-tables",
+      "term": "les quatre tables",
+      "nom": "les quatre tables",
+      "def": "les tables de 1, 2, 5 et 10, mélangées",
+      "emoji": "🗺️",
+      "noAuto": true,
+      "tip": "Pour chaque calcul, cherche la bonne astuce.",
+      "example": {
+        "expr": [
+          "7|a",
+          "×",
+          "5|b",
+          "=",
+          "35"
+        ],
+        "groups": [
+          7,
+          5
+        ],
+        "say": "7 fois 5 égale 35."
+      }
+    }
+  ],
+  "maths": [
+    {
+      "gen": "zoo",
+      "notion": "fois",
+      "stories": [
+        {
+          "k": 3,
+          "n": 2,
+          "animal": "🐼",
+          "thing": "🎋",
+          "say": "Il y a 3 pandas. Chaque panda mange 2 bambous. Combien de bambous en tout ?"
+        },
+        {
+          "k": 2,
+          "n": 3,
+          "animal": "🐼",
+          "thing": "🎋",
+          "say": "Il y a 2 pandas. Chaque panda mange 3 bambous. Combien de bambous en tout ?"
+        },
+        {
+          "k": 4,
+          "n": 2,
+          "animal": "🐒",
+          "thing": "🍌",
+          "say": "Il y a 4 singes. Chaque singe reçoit 2 bananes. Combien de bananes en tout ?"
+        },
+        {
+          "k": 2,
+          "n": 4,
+          "animal": "🦜",
+          "thing": "🍇",
+          "say": "Il y a 2 perroquets. Chaque perroquet mange 4 raisins. Combien de raisins en tout ?"
+        },
+        {
+          "k": 3,
+          "n": 3,
+          "animal": "🐢",
+          "thing": "🥬",
+          "say": "Il y a 3 tortues. Chacune mange 3 feuilles de salade. Combien de feuilles en tout ?"
+        }
+      ],
+      "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre."
+    },
+    {
+      "gen": "boulier-fois",
+      "notion": "fois",
+      "groups": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "gen": "produit",
+      "notion": "fois",
+      "pairs": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "hint": "Multiplier, c'est ajouter plusieurs fois le même nombre. Regarde le boulier."
+    },
+    {
+      "gen": "zoo",
+      "notion": "fois10",
+      "stories": [
+        {
+          "k": 2,
+          "n": 10,
+          "animal": "🪣",
+          "thing": "🐟",
+          "say": "Tu as 2 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+        },
+        {
+          "k": 3,
+          "n": 10,
+          "animal": "🪣",
+          "thing": "🐟",
+          "say": "Tu as 3 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+        },
+        {
+          "k": 5,
+          "n": 10,
+          "animal": "🪣",
+          "thing": "🐟",
+          "say": "Tu as 5 seaux de 10 poissons pour les manchots. Combien de poissons en tout ?"
+        }
+      ]
+    },
+    {
+      "gen": "ligne-fois",
+      "notion": "fois10",
+      "row": 10
+    },
+    {
+      "gen": "suite",
+      "notion": "fois10",
+      "row": 10,
+      "variants": 2
+    },
+    {
+      "gen": "boulier-fois",
+      "notion": "fois10",
+      "groups": [
+        [
+          3,
+          10
+        ]
+      ]
+    },
+    {
+      "gen": "zoo",
+      "notion": "fois5",
+      "stories": [
+        {
+          "k": 2,
+          "n": 5,
+          "animal": "🐘",
+          "thing": "🍎",
+          "say": "Il y a 2 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?"
+        },
+        {
+          "k": 3,
+          "n": 5,
+          "animal": "🐘",
+          "thing": "🍎",
+          "say": "Il y a 3 éléphants. Chaque éléphant mange 5 pommes. Combien de pommes en tout ?"
+        },
+        {
+          "k": 4,
+          "n": 5,
+          "animal": "🦒",
+          "thing": "🍃",
+          "say": "Il y a 4 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?"
+        },
+        {
+          "k": 6,
+          "n": 5,
+          "animal": "🦒",
+          "thing": "🍃",
+          "say": "Il y a 6 girafes. Chaque girafe mange 5 feuilles. Combien de feuilles en tout ?"
+        }
+      ]
+    },
+    {
+      "gen": "ligne-fois",
+      "notion": "fois5",
+      "row": 5
+    },
+    {
+      "gen": "suite",
+      "notion": "fois5",
+      "row": 5,
+      "variants": 2
+    },
+    {
+      "gen": "boulier-fois",
+      "notion": "fois5",
+      "groups": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "gen": "zoo",
+      "notion": "fois2",
+      "stories": [
+        {
+          "k": 4,
+          "n": 2,
+          "animal": "🐨",
+          "thing": "🌿",
+          "say": "Il y a 4 koalas. Chacun a 2 branches. Combien de branches en tout ?"
+        },
+        {
+          "k": 5,
+          "n": 2,
+          "animal": "🐨",
+          "thing": "🌿",
+          "say": "Il y a 5 koalas. Chacun a 2 branches. Combien de branches en tout ?"
+        },
+        {
+          "k": 7,
+          "n": 2,
+          "animal": "🦘",
+          "thing": "🥕",
+          "say": "Il y a 7 kangourous. Chacun mange 2 carottes. Combien de carottes en tout ?"
+        }
+      ]
+    },
+    {
+      "gen": "ligne-fois",
+      "notion": "fois2",
+      "row": 2
+    },
+    {
+      "gen": "suite",
+      "notion": "fois2",
+      "row": 2,
+      "variants": 2
+    },
+    {
+      "gen": "boulier-fois",
+      "notion": "fois2",
+      "groups": [
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    {
+      "gen": "zoo",
+      "notion": "fois1",
+      "stories": [
+        {
+          "k": 4,
+          "n": 1,
+          "animal": "🦁",
+          "thing": "🍖",
+          "say": "Il y a 4 lions. Chaque lion reçoit 1 morceau de viande. Combien de morceaux en tout ?"
+        },
+        {
+          "k": 6,
+          "n": 1,
+          "animal": "🐻",
+          "thing": "🍯",
+          "say": "Il y a 6 ours. Chaque ours reçoit 1 pot de miel. Combien de pots en tout ?"
+        }
+      ]
+    },
+    {
+      "gen": "ligne-fois",
+      "notion": "fois1",
+      "row": 1
+    },
+    {
+      "gen": "suite",
+      "notion": "fois1",
+      "row": 1,
+      "variants": 1
+    },
+    {
+      "gen": "zoo",
+      "notion": "echange",
+      "stories": [
+        {
+          "k": 5,
+          "n": 3,
+          "animal": "🦩",
+          "thing": "🦐",
+          "say": "Il y a 5 flamants roses. Chaque flamant mange 3 crevettes. Combien de crevettes en tout ?"
+        },
+        {
+          "k": 5,
+          "n": 4,
+          "animal": "🦦",
+          "thing": "🐟",
+          "say": "Il y a 5 loutres. Chaque loutre attrape 4 poissons. Combien de poissons en tout ?"
+        },
+        {
+          "k": 2,
+          "n": 8,
+          "animal": "🦭",
+          "thing": "🐟",
+          "say": "Il y a 2 otaries. Chaque otarie mange 8 poissons. Combien de poissons en tout ?"
+        }
+      ]
+    },
+    {
+      "gen": "produit",
+      "notion": "echange",
+      "diff": 2.5,
+      "pairs": [
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          10,
+          7
+        ]
+      ]
+    },
+    {
+      "gen": "grille-fois",
+      "notion": "quatre-tables",
+      "variants": 8,
+      "holes": 7
+    },
+    {
+      "gen": "facteur",
+      "notion": "quatre-tables",
+      "pairs": [
+        [
+          5,
+          30
+        ],
+        [
+          10,
+          60
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          5,
+          45
+        ],
+        [
+          10,
+          80
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          1,
+          7
+        ]
+      ]
+    },
+    {
+      "gen": "produit",
+      "notion": "quatre-tables",
+      "diff": 2.5,
+      "pairs": [
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          7,
+          2
+        ]
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "tm-panda",
+      "name": "Le panda",
+      "emoji": "🐼",
+      "color": "#4f9e78",
+      "notions": [
+        "fois"
+      ],
+      "desc": "Il range ses bambous par paquets."
+    },
+    {
+      "id": "tm-manchot",
+      "name": "Le manchot",
+      "emoji": "🐧",
+      "color": "#4f8fd0",
+      "notions": [
+        "fois10"
+      ],
+      "desc": "10 poissons par seau : des lignes pleines !"
+    },
+    {
+      "id": "tm-elephant",
+      "name": "L'éléphant",
+      "emoji": "🐘",
+      "color": "#8a8fa0",
+      "notions": [
+        "fois5"
+      ],
+      "desc": "5 pommes chacun : une main entière."
+    },
+    {
+      "id": "tm-koala",
+      "name": "Le koala",
+      "emoji": "🐨",
+      "color": "#a0b86a",
+      "notions": [
+        "fois2"
+      ],
+      "desc": "2 branches chacun : c'est un double."
+    },
+    {
+      "id": "tm-lion",
+      "name": "Le lion",
+      "emoji": "🦁",
+      "color": "#e0a030",
+      "notions": [
+        "fois1"
+      ],
+      "desc": "1 morceau chacun : le nombre ne change pas."
+    },
+    {
+      "id": "tm-flamant",
+      "name": "Le flamant rose",
+      "emoji": "🦩",
+      "color": "#d65d8a",
+      "notions": [
+        "echange"
+      ],
+      "desc": "Sur une patte ou sur l'autre, le résultat est le même."
+    },
+    {
+      "id": "tm-seau",
+      "name": "Le seau du soigneur",
+      "emoji": "🪣",
+      "color": "#7a9cc6",
+      "notions": [
+        "fois10",
+        "fois5"
+      ],
+      "desc": "Les tables de 10 et de 5, toujours à portée de main."
+    },
+    {
+      "id": "tm-tournee",
+      "name": "La tournée du zoo",
+      "emoji": "🗺️",
+      "color": "#3a9a8a",
+      "notions": [
+        "quatre-tables"
+      ],
+      "desc": "Tous les animaux ont mangé : les quatre tables mélangées."
+    },
+    {
+      "id": "tm-legende",
+      "name": "Soigneuse en chef",
+      "emoji": "🏅",
+      "color": "#f5b700",
+      "notions": "all",
+      "level": 3,
+      "legend": true,
+      "desc": "Les tables de 1, 2, 5 et 10 sont dans ta tête !"
+    }
+  ],
+  "images": {
+    "fois": {
+      "prompt": "a young girl zookeeper in a khaki uniform feeding bamboo to three giant pandas in a green garden with a small red pagoda, each panda holds two bamboo stalks",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "fois10": {
+      "prompt": "a young girl zookeeper in a khaki uniform carrying buckets full of fish to a group of happy penguins on rocks near a blue pool",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "fois5": {
+      "prompt": "a young girl zookeeper in a khaki uniform giving apples to two friendly asian elephants under big trees",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "fois2": {
+      "prompt": "a young girl zookeeper in a khaki uniform giving eucalyptus branches to cute koalas sitting in a tree",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "fois1": {
+      "prompt": "a young girl zookeeper in a khaki uniform giving a piece of meat to a calm lion lying on a rock, savanna enclosure",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "echange": {
+      "prompt": "a young girl zookeeper in a khaki uniform watching pink flamingos standing on one leg in a pond",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "quatre-tables": {
+      "prompt": "a young girl zookeeper in a khaki uniform walking on a path in a lush zoo with pandas, penguins, elephants, koalas and flamingos around, sunny day",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    }
+  }
+}
