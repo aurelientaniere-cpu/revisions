@@ -9,6 +9,7 @@ Modèle complet : `histoire-moyen-age.json`.
 | `id` | identifiant unique, jamais modifié ensuite (la progression y est rattachée) |
 | `category` | matière de l'accueil : `histoire`, `geographie`, `orthographe`, `maths`, `sciences` ou `anglais` (liste `CATEGORIES` dans `js/app.js`) |
 | `subject`, `title`, `emoji`, `color` | affichage de la tuile |
+| `due` | date d'évaluation « AAAA-MM-JJ » (obligatoire, la demander au parent si elle n'est pas donnée) : la leçon monte dans « Bientôt une évaluation » dans les 14 jours qui précèdent, puis n'est plus proposée à réviser le lendemain. L'espace parent peut la remplacer sur l'iPad (`state.evals`) |
 | `summary` | paragraphes courts lus dans « 🎧 Écouter » (reprendre le résumé à mémoriser de la fiche) |
 | `schema.asset` | optionnel : SVG dont les éléments touchables portent `data-zone="…"` et `class="zone"` ; `schema.on` = fin de la consigne « Touche … » (« sur le dessin » ; par défaut « sur le château ») |
 | `notions` | les notions à maîtriser (ordre = ordre d'apparition) |

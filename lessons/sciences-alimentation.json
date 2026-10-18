@@ -6,6 +6,7 @@
   "subtitle": "D'où viennent nos aliments ?",
   "emoji": "🍽️",
   "color": "#3fa34d",
+  "due": "2026-10-16",
   "source": "Fiches CM1 « Se nourrir dans le monde » : 1. Des pratiques alimentaires variées ; 2. D'où viennent nos aliments ?",
   "schema": {
     "asset": "lessons/assets/monde.svg"

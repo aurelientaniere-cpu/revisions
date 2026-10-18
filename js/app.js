@@ -51,10 +51,12 @@ function home() {
   ['pointerup', 'pointerleave', 'pointercancel'].forEach((e) => gear.addEventListener(e, endPress));
 
   // En haut : les leçons avec une évaluation bientôt (sinon celles à réviser), sur une seule ligne.
+  // Une leçon dont l'évaluation est passée n'est plus proposée (elle reste dans sa matière).
   const evals = upcoming();
   const soon = evals.find((e) => e.days <= 7);
-  const best = soon ? soon.L : bestLesson(lessons);
-  const toRevise = [...lessons].filter((L) => dueCount(L))
+  const active = lessons.filter((L) => !isPast(L));
+  const best = soon ? soon.L : bestLesson(active.length ? active : lessons);
+  const toRevise = active.filter((L) => dueCount(L))
     .sort((a, b) => dueCount(b) - dueCount(a) || lessonProgress(a) - lessonProgress(b));
   const top = evals.length ? evals.map((e) => e.L) : toRevise;
 
@@ -95,8 +97,11 @@ const CATEGORIES = [
 ];
 const lessonsOf = (cat) => lessons.filter((L) => L.category === cat.id);
 
-// Date d'évaluation saisie dans l'espace parent (state.evals) : nombre de jours d'ici là.
+// Date d'évaluation : celle de l'espace parent (state.evals, sur l'iPad), sinon celle de la leçon (`due`).
 const DAY = 864e5;
+const evalDate = (L) => state.evals[L.id] || L.due || null;
+const isPast = (L) => { const iso = evalDate(L); return !!iso && daysUntil(iso) < 0; };
+const toDo = (L) => (isPast(L) ? 0 : dueCount(L));
 function daysUntil(iso) {
   const [y, m, d] = iso.split('-').map(Number);
   const now = new Date();
@@ -104,14 +109,14 @@ function daysUntil(iso) {
 }
 const EVAL_WINDOW = 14; // « dans les prochains jours »
 function upcoming() {
-  return lessons.map((L) => ({ L, iso: state.evals[L.id] }))
+  return lessons.map((L) => ({ L, iso: evalDate(L) }))
     .filter((e) => e.iso)
     .map((e) => ({ ...e, days: daysUntil(e.iso) }))
     .filter((e) => e.days >= 0 && e.days <= EVAL_WINDOW)
     .sort((a, b) => a.days - b.days);
 }
 function evalLabel(L) {
-  const iso = state.evals[L.id];
+  const iso = evalDate(L);
   const days = iso ? daysUntil(iso) : -1;
   if (days < 0) return null;
   if (days === 0) return 'Évaluation aujourd’hui';
@@ -122,7 +127,7 @@ function evalLabel(L) {
 }
 
 function lessonTile(L, mini = false) {
-  const due = dueCount(L);
+  const due = toDo(L);
   const ev = evalLabel(L);
   return h('div', { class: `panel lesson-tile${mini ? ' mini' : ''}`, style: `--c: ${L.color}` },
     h('div', { class: 'row' },
@@ -140,7 +145,7 @@ function lessonTile(L, mini = false) {
 
 function categoryTile(cat) {
   const list = lessonsOf(cat);
-  const due = list.some((L) => dueCount(L));
+  const due = list.some((L) => toDo(L));
   const pct = list.length ? Math.round(list.reduce((a, L) => a + lessonProgress(L), 0) / list.length * 100) : 0;
   return h('button', {
     class: `panel category-tile${list.length ? '' : ' empty'}`, style: `--c: ${cat.color}`,

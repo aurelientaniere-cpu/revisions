@@ -50,8 +50,9 @@ function parent(lessons, back) {
     const rows = [...L.notions]
       .map((n) => ({ n, s: ns(L, n.id) }))
       .sort((x, y) => (x.s.seen === y.s.seen ? x.s.level - y.s.level || y.s.ko - x.s.ko : x.s.seen ? -1 : 1));
-    // Date d'évaluation : la leçon remonte en haut de l'accueil dans les 14 jours qui précèdent.
-    const date = h('input', { type: 'date', value: state.evals[L.id] || '', onchange: (e) => {
+    // Date d'évaluation : la leçon remonte en haut de l'accueil dans les 14 jours qui précèdent,
+    // et n'est plus proposée à réviser une fois passée. Remplace la date de la leçon (`due`) ; « Effacer » y revient.
+    const date = h('input', { type: 'date', value: state.evals[L.id] || L.due || '', onchange: (e) => {
       if (e.target.value) state.evals[L.id] = e.target.value; else delete state.evals[L.id];
       save();
     } });
@@ -59,7 +60,7 @@ function parent(lessons, back) {
       h('h3', {}, `${L.emoji} ${L.title} — ${Math.round(lessonProgress(L) * 100)} %`),
       h('div', { class: 'row', style: { margin: '10px 0' } },
         h('label', {}, '📅 Évaluation le', date),
-        h('button', { onclick: () => { date.value = ''; delete state.evals[L.id]; save(); } }, 'Effacer')),
+        h('button', { onclick: () => { date.value = L.due || ''; delete state.evals[L.id]; save(); } }, 'Effacer')),
       h('table', {},
         h('tr', {}, h('th', {}, 'Notion'), h('th', {}, 'Maîtrise'), h('th', {}, 'Réussites'), h('th', {}, 'Erreurs')),
         rows.map(({ n, s }) => h('tr', {},
