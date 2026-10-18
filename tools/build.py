@@ -57,7 +57,7 @@ def auto_items(lesson):
             if n.get("zone") and lesson.get("schema"):
                 items.append({
                     "type": "schema", "diff": 2, "notions": [n["id"]], "target": n["zone"],
-                    "q": f"Touche {nom(n)} sur le château.",
+                    "q": f"Touche {nom(n)} {lesson['schema'].get('on', 'sur le château')}.",
                     "explain": explain,
                 })
             # Vrai / faux sur la définition : la vraie, puis celle d'un autre mot du groupe.

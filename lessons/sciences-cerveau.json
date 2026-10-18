@@ -1,0 +1,769 @@
+{
+  "id": "sciences-cerveau",
+  "category": "sciences",
+  "subject": "Sciences",
+  "title": "Le cerveau",
+  "subtitle": "Le chef d'orchestre du corps",
+  "emoji": "🧠",
+  "color": "#d0607a",
+  "source": "Fiches CM1 « Le cerveau, séance 1 : le chef d'orchestre du corps » (protection du cerveau, chemin de l'information) et « Le cerveau, une centrale aux multiples fonctions » (lobes, fonctions, aires cérébrales).",
+  "schema": {
+    "asset": "lessons/assets/cerveau.svg",
+    "on": "sur le dessin"
+  },
+  "summary": [
+    "Le cerveau est le chef d'orchestre du corps. C'est un organe mou : il nous permet de penser, de sentir, de bouger et de nous souvenir.",
+    "Il est très bien protégé dans la tête, pour qu'il ne se blesse pas.",
+    "Le crâne est un os dur et solide qui protège le cerveau. Sous le crâne, les méninges sont de fines membranes qui entourent et protègent le cerveau.",
+    "Le cerveau a quatre lobes : le lobe frontal, derrière le front ; le lobe pariétal, en haut ; le lobe temporal, sur le côté, près des tempes ; le lobe occipital, à l'arrière.",
+    "Sous l'arrière du cerveau, il y a le cervelet, qui nous aide à garder l'équilibre. Le tronc cérébral relie le cerveau à la moelle épinière, dans le dos.",
+    "Le cerveau contrôle notre corps. Exemple : une règle tombe. L'œil voit la règle tomber. L'information part au cerveau par les nerfs.",
+    "Le cerveau décide de serrer la main. L'ordre repart vers les muscles de la main par les nerfs. Les muscles se contractent : la main attrape la règle.",
+    "Le cerveau reçoit les informations des yeux et des oreilles : il nous permet de voir et d'entendre.",
+    "Il envoie des ordres aux muscles pour nos mouvements volontaires. Il nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+    "Il garde les informations nouvelles, plus ou moins longtemps : c'est la mémoire. Il fabrique nos émotions : joie, peur, colère, tristesse.",
+    "Même pendant le sommeil, il reste actif : il produit les rêves.",
+    "Le cerveau est formé de plusieurs aires cérébrales. Chacune est spécialisée, et toutes travaillent ensemble en permanence."
+  ],
+  "notions": [
+    {
+      "id": "crane",
+      "term": "crâne",
+      "nom": "le crâne",
+      "def": "os dur et solide qui protège le cerveau",
+      "emoji": "🪖",
+      "group": "cerveau",
+      "zone": "crane",
+      "indice": "Quand tu te cognes la tête contre une porte, c'est lui qui prend le choc."
+    },
+    {
+      "id": "meninges",
+      "term": "méninges",
+      "nom": "les méninges",
+      "def": "fines membranes qui entourent et protègent le cerveau",
+      "emoji": "🎀",
+      "group": "cerveau",
+      "zone": "meninges",
+      "indice": "Sous l'os de la tête, elles enveloppent le cerveau comme un emballage très fin."
+    },
+    {
+      "id": "cerveau",
+      "term": "cerveau",
+      "nom": "le cerveau",
+      "def": "organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+      "emoji": "🧠",
+      "group": "cerveau",
+      "indice": "Il est caché dans ta tête et il commande tout ton corps, comme un chef d'orchestre."
+    },
+    {
+      "id": "lobe-frontal",
+      "term": "lobe frontal",
+      "nom": "le lobe frontal",
+      "def": "partie avant du cerveau",
+      "emoji": "🔴",
+      "group": "cerveau",
+      "zone": "lobe-frontal",
+      "indice": "Pose ta main sur ton front : il est juste derrière."
+    },
+    {
+      "id": "lobe-parietal",
+      "term": "lobe pariétal",
+      "nom": "le lobe pariétal",
+      "def": "partie du haut du cerveau",
+      "emoji": "🟢",
+      "group": "cerveau",
+      "zone": "lobe-parietal",
+      "indice": "Quand tu mets un chapeau, il est juste en dessous."
+    },
+    {
+      "id": "lobe-temporal",
+      "term": "lobe temporal",
+      "nom": "le lobe temporal",
+      "def": "partie du cerveau sur le côté, près des tempes",
+      "emoji": "🟡",
+      "group": "cerveau",
+      "zone": "lobe-temporal",
+      "indice": "Il y en a un de chaque côté de la tête, au-dessus des oreilles."
+    },
+    {
+      "id": "lobe-occipital",
+      "term": "lobe occipital",
+      "nom": "le lobe occipital",
+      "def": "partie arrière du cerveau",
+      "emoji": "🔵",
+      "group": "cerveau",
+      "zone": "lobe-occipital",
+      "indice": "C'est le lobe le plus loin de tes yeux, quand tu poses la tête sur l'oreiller."
+    },
+    {
+      "id": "cervelet",
+      "term": "cervelet",
+      "nom": "le cervelet",
+      "def": "petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+      "emoji": "🟣",
+      "group": "cerveau",
+      "zone": "cervelet",
+      "indice": "Quand tu roules à vélo sans tomber, il t'aide à tenir debout."
+    },
+    {
+      "id": "tronc",
+      "term": "tronc cérébral",
+      "nom": "le tronc cérébral",
+      "def": "partie qui relie le cerveau à la moelle épinière",
+      "emoji": "🟠",
+      "group": "cerveau",
+      "zone": "tronc",
+      "indice": "Il part du dessous du cerveau et descend vers le cou."
+    },
+    {
+      "id": "nerfs",
+      "term": "nerfs",
+      "nom": "les nerfs",
+      "def": "fils qui transportent les informations vers le cerveau, et les ordres vers les muscles",
+      "emoji": "⚡",
+      "noAuto": true
+    },
+    {
+      "id": "muscles",
+      "term": "muscles",
+      "nom": "les muscles",
+      "def": "ils se contractent pour faire bouger le corps, quand le cerveau leur envoie un ordre",
+      "emoji": "💪",
+      "noAuto": true
+    },
+    {
+      "id": "recevoir",
+      "term": "voir et entendre",
+      "nom": "voir et entendre",
+      "def": "le cerveau reçoit les informations des yeux et des oreilles, et les comprend",
+      "emoji": "👀",
+      "noAuto": true
+    },
+    {
+      "id": "bouger",
+      "term": "bouger",
+      "nom": "bouger",
+      "def": "le cerveau envoie des ordres aux muscles pour nos mouvements volontaires",
+      "emoji": "🏃",
+      "noAuto": true
+    },
+    {
+      "id": "langage",
+      "term": "parler",
+      "nom": "parler",
+      "def": "le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire",
+      "emoji": "💬",
+      "noAuto": true
+    },
+    {
+      "id": "memoire",
+      "term": "la mémoire",
+      "nom": "la mémoire",
+      "def": "le cerveau enregistre les informations nouvelles et les garde plus ou moins longtemps",
+      "emoji": "📚",
+      "noAuto": true
+    },
+    {
+      "id": "emotions",
+      "term": "les émotions",
+      "nom": "les émotions",
+      "def": "le cerveau fabrique nos émotions : joie, peur, colère, tristesse",
+      "emoji": "😊",
+      "noAuto": true
+    },
+    {
+      "id": "reves",
+      "term": "les rêves",
+      "nom": "les rêves",
+      "def": "même pendant le sommeil, le cerveau reste actif : il produit des images, des sons, des histoires",
+      "emoji": "🌙",
+      "noAuto": true
+    },
+    {
+      "id": "aires",
+      "term": "aires cérébrales",
+      "nom": "les aires cérébrales",
+      "def": "parties du cerveau, chacune spécialisée, qui travaillent toutes ensemble en permanence",
+      "emoji": "🧩",
+      "noAuto": true
+    }
+  ],
+  "items": [
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "recevoir"
+      ],
+      "q": "La sonnerie de l'école retentit. Qui comprend que c'est la récréation ?",
+      "choices": [
+        "Le cerveau",
+        "Les oreilles",
+        "Les jambes",
+        "Le crâne",
+        "Les muscles"
+      ],
+      "hint": "Les oreilles reçoivent le son. Mais qui le comprend ?",
+      "explain": "Les oreilles reçoivent le son, puis le cerveau le comprend et le reconnaît."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "recevoir",
+        "nerfs"
+      ],
+      "q": "Ce sont les yeux qui comprennent ce que l'on voit.",
+      "answer": false,
+      "explain": "Les yeux reçoivent l'image, les nerfs la portent au cerveau, et c'est le cerveau qui la comprend."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "bouger",
+        "muscles"
+      ],
+      "q": "Tu décides de lever la main en classe. Que fait ton cerveau ?",
+      "choices": [
+        "Il envoie un ordre aux muscles du bras",
+        "Il reçoit un son des oreilles",
+        "Il fabrique un rêve",
+        "Il protège le crâne"
+      ],
+      "hint": "Pour bouger, il faut que les muscles reçoivent un message.",
+      "explain": "Le cerveau envoie un ordre aux muscles par les nerfs : c'est un mouvement volontaire."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "muscles",
+        "bouger"
+      ],
+      "q": "Les muscles décident tout seuls de bouger.",
+      "answer": false,
+      "explain": "Les muscles se contractent quand le cerveau leur envoie un ordre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "langage"
+      ],
+      "q": "Tu racontes ta journée à un ami. Quel travail fait ton cerveau ?",
+      "choices": [
+        "Il trouve les mots pour parler",
+        "Il garde l'équilibre",
+        "Il produit un rêve",
+        "Il protège la tête"
+      ],
+      "hint": "Pour raconter, il faut des mots.",
+      "explain": "Le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "langage"
+      ],
+      "q": "Quand tu écris une phrase, c'est ton cerveau qui trouve les mots.",
+      "answer": true,
+      "explain": "Le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "memoire"
+      ],
+      "q": "Tu te rappelles ton anniversaire de l'an dernier. Que fait ton cerveau ?",
+      "choices": [
+        "Il retrouve un souvenir",
+        "Il envoie un ordre aux jambes",
+        "Il reçoit un son",
+        "Il se repose"
+      ],
+      "hint": "C'est une chose qui s'est passée il y a longtemps.",
+      "explain": "Le cerveau garde les informations, plus ou moins longtemps : c'est la mémoire."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "memoire"
+      ],
+      "q": "Le cerveau peut garder une information très longtemps.",
+      "answer": true,
+      "explain": "Le cerveau enregistre les informations et les garde plus ou moins longtemps."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "emotions"
+      ],
+      "q": "Tu as perdu ton doudou. Quelle émotion ton cerveau fabrique-t-il ?",
+      "choices": [
+        "La tristesse",
+        "La joie",
+        "Le sommeil",
+        "L'équilibre"
+      ],
+      "hint": "C'est une émotion qui donne envie de pleurer.",
+      "explain": "Le cerveau fabrique nos émotions à partir de ce que nous vivons : ici, la tristesse."
+    },
+    {
+      "type": "qcm",
+      "diff": 3,
+      "notions": [
+        "emotions"
+      ],
+      "q": "Lequel n'est PAS une émotion ?",
+      "choices": [
+        "Le sommeil",
+        "La joie",
+        "La peur",
+        "La colère",
+        "La tristesse"
+      ],
+      "hint": "Les émotions, ce sont des choses que l'on ressent quand il se passe quelque chose.",
+      "explain": "Joie, peur, colère et tristesse sont des émotions. Le sommeil n'en est pas une."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "reves"
+      ],
+      "q": "Cette nuit, tu as rêvé d'un dragon. Que faisait ton cerveau ?",
+      "choices": [
+        "Il restait actif et produisait des images",
+        "Il était arrêté",
+        "Il dormait sans rien faire",
+        "Il envoyait des ordres aux jambes pour courir"
+      ],
+      "hint": "Un rêve, ce sont des images et des histoires dans la tête.",
+      "explain": "Même pendant le sommeil, le cerveau reste actif : il produit les rêves."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "reves"
+      ],
+      "q": "Quand on dort, le cerveau s'arrête complètement.",
+      "answer": false,
+      "explain": "Même pendant le sommeil, le cerveau reste actif : il produit les rêves."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "crane",
+        "cerveau"
+      ],
+      "q": "Pourquoi le cerveau est-il dans le crâne ?",
+      "choices": [
+        "Pour qu'il ne se blesse pas",
+        "Pour qu'il voie mieux",
+        "Pour qu'il reste au chaud",
+        "Pour qu'il soit plus léger"
+      ],
+      "hint": "Le crâne est un os dur et solide.",
+      "explain": "Le cerveau est mou : le crâne et les méninges le protègent pour qu'il ne se blesse pas."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "aires"
+      ],
+      "sentence": "Le cerveau est formé de plusieurs…",
+      "choices": [
+        "aires cérébrales",
+        "os",
+        "méninges",
+        "muscles"
+      ],
+      "hint": "Chacune est spécialisée dans certaines fonctions.",
+      "explain": "Le cerveau est formé de plusieurs aires cérébrales, qui travaillent toutes ensemble."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "aires"
+      ],
+      "q": "Les aires du cerveau travaillent chacune à leur tour, jamais en même temps.",
+      "answer": false,
+      "explain": "Toutes les aires cérébrales travaillent ensemble en permanence."
+    },
+    {
+      "type": "placer",
+      "layout": "frise",
+      "diff": 2,
+      "notions": [
+        "nerfs",
+        "muscles",
+        "recevoir",
+        "bouger"
+      ],
+      "q": "Une règle tombe. Range les étapes dans l'ordre.",
+      "explain": "L'œil voit, les nerfs portent l'information, le cerveau décide, les nerfs portent l'ordre, les muscles attrapent la règle.",
+      "targets": [
+        {
+          "id": "a",
+          "date": "1"
+        },
+        {
+          "id": "b",
+          "date": "2"
+        },
+        {
+          "id": "c",
+          "date": "3"
+        },
+        {
+          "id": "d",
+          "date": "4"
+        },
+        {
+          "id": "e",
+          "date": "5"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "L'œil voit la règle tomber",
+          "target": "a"
+        },
+        {
+          "text": "Les nerfs portent l'information",
+          "target": "b"
+        },
+        {
+          "text": "Le cerveau décide",
+          "target": "c"
+        },
+        {
+          "text": "Les nerfs portent l'ordre",
+          "target": "d"
+        },
+        {
+          "text": "La main attrape la règle",
+          "target": "e"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "tri",
+      "diff": 2,
+      "sample": 6,
+      "notions": [
+        "recevoir",
+        "bouger"
+      ],
+      "q": "Le cerveau reçoit une information, ou il envoie un ordre ?",
+      "explain": "Les yeux et les oreilles envoient des informations au cerveau. Le cerveau envoie des ordres aux muscles.",
+      "targets": [
+        {
+          "id": "r",
+          "label": "Il reçoit une information",
+          "emoji": "👂",
+          "color": "#3a7bd5"
+        },
+        {
+          "id": "e",
+          "label": "Il envoie un ordre",
+          "emoji": "💪",
+          "color": "#e07a2e"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Tu vois un éclair",
+          "target": "r"
+        },
+        {
+          "text": "Tu entends ton prénom",
+          "target": "r"
+        },
+        {
+          "text": "Tu vois le feu passer au vert",
+          "target": "r"
+        },
+        {
+          "text": "Tu cours vers le but",
+          "target": "e"
+        },
+        {
+          "text": "Tu lèves le bras",
+          "target": "e"
+        },
+        {
+          "text": "Tu sautes à la corde",
+          "target": "e"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "relie",
+      "diff": 2,
+      "notions": [
+        "recevoir",
+        "muscles",
+        "bouger"
+      ],
+      "q": "Relie chaque partie du corps à ce qu'elle permet.",
+      "targets": [
+        {
+          "id": "y",
+          "label": "Voir"
+        },
+        {
+          "id": "o",
+          "label": "Entendre"
+        },
+        {
+          "id": "m",
+          "label": "Bouger"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Les yeux",
+          "target": "y"
+        },
+        {
+          "text": "Les oreilles",
+          "target": "o"
+        },
+        {
+          "text": "Les muscles",
+          "target": "m"
+        }
+      ],
+      "explain": "Les yeux et les oreilles envoient des informations au cerveau ; les muscles reçoivent ses ordres."
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "cerveau"
+      ],
+      "q": "Reconstruis la phrase mémo.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Le cerveau est",
+          "target": "1"
+        },
+        {
+          "text": "le chef d'orchestre",
+          "target": "2"
+        },
+        {
+          "text": "du corps.",
+          "target": "3"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "ce-abri",
+      "name": "Bien à l'abri",
+      "emoji": "🛡️",
+      "color": "#b9a678",
+      "notions": [
+        "crane",
+        "meninges"
+      ],
+      "desc": "Un os dur et de fines membranes protègent le cerveau.",
+      "image": "crane"
+    },
+    {
+      "id": "ce-front",
+      "name": "Le front et le sommet",
+      "emoji": "🎩",
+      "color": "#d0607a",
+      "notions": [
+        "lobe-frontal",
+        "lobe-parietal"
+      ],
+      "desc": "Le lobe frontal à l'avant, le lobe pariétal en haut.",
+      "image": "lobe-frontal"
+    },
+    {
+      "id": "ce-cote",
+      "name": "Les tempes et la nuque",
+      "emoji": "🧭",
+      "color": "#3a7bd5",
+      "notions": [
+        "lobe-temporal",
+        "lobe-occipital"
+      ],
+      "desc": "Le lobe temporal sur le côté, le lobe occipital à l'arrière.",
+      "image": "lobe-temporal"
+    },
+    {
+      "id": "ce-equilibre",
+      "name": "L'équilibriste",
+      "emoji": "🤸",
+      "color": "#7d5aa6",
+      "notions": [
+        "cervelet",
+        "tronc"
+      ],
+      "desc": "Le cervelet garde l'équilibre, le tronc cérébral relie le cerveau à la moelle épinière.",
+      "image": "cervelet"
+    },
+    {
+      "id": "ce-messagers",
+      "name": "Les messagers",
+      "emoji": "⚡",
+      "color": "#e0a020",
+      "notions": [
+        "nerfs",
+        "muscles",
+        "bouger"
+      ],
+      "desc": "Les nerfs portent les ordres du cerveau jusqu'aux muscles.",
+      "image": "nerfs"
+    },
+    {
+      "id": "ce-sens",
+      "name": "Yeux, oreilles et mots",
+      "emoji": "👀",
+      "color": "#2f8f9d",
+      "notions": [
+        "recevoir",
+        "langage"
+      ],
+      "desc": "Le cerveau comprend ce qu'on voit et entend, et trouve les mots.",
+      "image": "recevoir"
+    },
+    {
+      "id": "ce-souvenirs",
+      "name": "La boîte à souvenirs",
+      "emoji": "📦",
+      "color": "#e07a2e",
+      "notions": [
+        "memoire",
+        "emotions"
+      ],
+      "desc": "Le cerveau garde les souvenirs et fabrique les émotions.",
+      "image": "memoire"
+    },
+    {
+      "id": "ce-nuit",
+      "name": "Le cinéma de la nuit",
+      "emoji": "🌙",
+      "color": "#4a5bb5",
+      "notions": [
+        "reves",
+        "aires",
+        "cerveau"
+      ],
+      "desc": "Même la nuit, toutes les aires du cerveau travaillent ensemble.",
+      "image": "reves"
+    },
+    {
+      "id": "ce-legende",
+      "name": "Dragon chef d'orchestre",
+      "emoji": "👑",
+      "color": "#b8860b",
+      "notions": "all",
+      "level": 3,
+      "legend": true,
+      "desc": "Carte légendaire : tu connais toute la leçon sur le cerveau !",
+      "image": "legende"
+    }
+  ],
+  "images": {
+    "cerveau": {
+      "prompt": "a cheerful child conductor with a baton leading a small orchestra of friendly cartoon musicians, music notes floating in the air, warm concert hall",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 44
+    },
+    "crane": {
+      "prompt": "a smiling child wearing a bicycle helmet, gently tapping the top of the helmet with one hand, a bicycle in a sunny park behind",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "lobe-frontal": {
+      "prompt": "a thoughtful child with one hand placed on their forehead, eyes looking up as if thinking hard, a school desk with a notebook in front",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "lobe-temporal": {
+      "prompt": "a child gently pressing both fingertips on the sides of their head above the ears, eyes closed, calm smile, sitting on a cushion in a cozy room",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "cervelet": {
+      "prompt": "a happy child riding a bicycle on a path in a park, keeping balance with arms on the handlebars, trees and flowers around",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "nerfs": {
+      "prompt": "a child catching a falling wooden ruler in mid-air with one hand at a school desk, quick motion lines around the ruler, surprised happy face",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 33
+    },
+    "recevoir": {
+      "prompt": "a child in a garden looking at a colorful butterfly on a flower while listening to a bird singing on a branch, one hand cupped behind the ear",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 33
+    },
+    "memoire": {
+      "prompt": "a child sitting on a sofa looking at an open photo album with pictures of a birthday cake and a beach, a warm lamp, nostalgic smile",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "reves": {
+      "prompt": "a child sleeping peacefully in bed at night, a big dream bubble above the head showing a friendly little dragon flying among stars",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "legende": {
+      "prompt": "a proud cute purple dragon holding a conductor baton, standing on a small stage, music notes and sparkles around, cream belly, smiling, centered, plain warm pink background",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    }
+  }
+}

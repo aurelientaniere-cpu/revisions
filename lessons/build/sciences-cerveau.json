@@ -1,0 +1,1840 @@
+{
+ "id": "sciences-cerveau",
+ "category": "sciences",
+ "subject": "Sciences",
+ "title": "Le cerveau",
+ "subtitle": "Le chef d'orchestre du corps",
+ "emoji": "🧠",
+ "color": "#d0607a",
+ "source": "Fiches CM1 « Le cerveau, séance 1 : le chef d'orchestre du corps » (protection du cerveau, chemin de l'information) et « Le cerveau, une centrale aux multiples fonctions » (lobes, fonctions, aires cérébrales).",
+ "schema": {
+  "asset": "lessons/assets/cerveau.svg",
+  "on": "sur le dessin"
+ },
+ "summary": [
+  "Le cerveau est le chef d'orchestre du corps. C'est un organe mou : il nous permet de penser, de sentir, de bouger et de nous souvenir.",
+  "Il est très bien protégé dans la tête, pour qu'il ne se blesse pas.",
+  "Le crâne est un os dur et solide qui protège le cerveau. Sous le crâne, les méninges sont de fines membranes qui entourent et protègent le cerveau.",
+  "Le cerveau a quatre lobes : le lobe frontal, derrière le front ; le lobe pariétal, en haut ; le lobe temporal, sur le côté, près des tempes ; le lobe occipital, à l'arrière.",
+  "Sous l'arrière du cerveau, il y a le cervelet, qui nous aide à garder l'équilibre. Le tronc cérébral relie le cerveau à la moelle épinière, dans le dos.",
+  "Le cerveau contrôle notre corps. Exemple : une règle tombe. L'œil voit la règle tomber. L'information part au cerveau par les nerfs.",
+  "Le cerveau décide de serrer la main. L'ordre repart vers les muscles de la main par les nerfs. Les muscles se contractent : la main attrape la règle.",
+  "Le cerveau reçoit les informations des yeux et des oreilles : il nous permet de voir et d'entendre.",
+  "Il envoie des ordres aux muscles pour nos mouvements volontaires. Il nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+  "Il garde les informations nouvelles, plus ou moins longtemps : c'est la mémoire. Il fabrique nos émotions : joie, peur, colère, tristesse.",
+  "Même pendant le sommeil, il reste actif : il produit les rêves.",
+  "Le cerveau est formé de plusieurs aires cérébrales. Chacune est spécialisée, et toutes travaillent ensemble en permanence."
+ ],
+ "notions": [
+  {
+   "id": "crane",
+   "term": "crâne",
+   "nom": "le crâne",
+   "def": "os dur et solide qui protège le cerveau",
+   "emoji": "🪖",
+   "group": "cerveau",
+   "zone": "crane",
+   "indice": "Quand tu te cognes la tête contre une porte, c'est lui qui prend le choc."
+  },
+  {
+   "id": "meninges",
+   "term": "méninges",
+   "nom": "les méninges",
+   "def": "fines membranes qui entourent et protègent le cerveau",
+   "emoji": "🎀",
+   "group": "cerveau",
+   "zone": "meninges",
+   "indice": "Sous l'os de la tête, elles enveloppent le cerveau comme un emballage très fin."
+  },
+  {
+   "id": "cerveau",
+   "term": "cerveau",
+   "nom": "le cerveau",
+   "def": "organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+   "emoji": "🧠",
+   "group": "cerveau",
+   "indice": "Il est caché dans ta tête et il commande tout ton corps, comme un chef d'orchestre."
+  },
+  {
+   "id": "lobe-frontal",
+   "term": "lobe frontal",
+   "nom": "le lobe frontal",
+   "def": "partie avant du cerveau",
+   "emoji": "🔴",
+   "group": "cerveau",
+   "zone": "lobe-frontal",
+   "indice": "Pose ta main sur ton front : il est juste derrière."
+  },
+  {
+   "id": "lobe-parietal",
+   "term": "lobe pariétal",
+   "nom": "le lobe pariétal",
+   "def": "partie du haut du cerveau",
+   "emoji": "🟢",
+   "group": "cerveau",
+   "zone": "lobe-parietal",
+   "indice": "Quand tu mets un chapeau, il est juste en dessous."
+  },
+  {
+   "id": "lobe-temporal",
+   "term": "lobe temporal",
+   "nom": "le lobe temporal",
+   "def": "partie du cerveau sur le côté, près des tempes",
+   "emoji": "🟡",
+   "group": "cerveau",
+   "zone": "lobe-temporal",
+   "indice": "Il y en a un de chaque côté de la tête, au-dessus des oreilles."
+  },
+  {
+   "id": "lobe-occipital",
+   "term": "lobe occipital",
+   "nom": "le lobe occipital",
+   "def": "partie arrière du cerveau",
+   "emoji": "🔵",
+   "group": "cerveau",
+   "zone": "lobe-occipital",
+   "indice": "C'est le lobe le plus loin de tes yeux, quand tu poses la tête sur l'oreiller."
+  },
+  {
+   "id": "cervelet",
+   "term": "cervelet",
+   "nom": "le cervelet",
+   "def": "petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+   "emoji": "🟣",
+   "group": "cerveau",
+   "zone": "cervelet",
+   "indice": "Quand tu roules à vélo sans tomber, il t'aide à tenir debout."
+  },
+  {
+   "id": "tronc",
+   "term": "tronc cérébral",
+   "nom": "le tronc cérébral",
+   "def": "partie qui relie le cerveau à la moelle épinière",
+   "emoji": "🟠",
+   "group": "cerveau",
+   "zone": "tronc",
+   "indice": "Il part du dessous du cerveau et descend vers le cou."
+  },
+  {
+   "id": "nerfs",
+   "term": "nerfs",
+   "nom": "les nerfs",
+   "def": "fils qui transportent les informations vers le cerveau, et les ordres vers les muscles",
+   "emoji": "⚡",
+   "noAuto": true
+  },
+  {
+   "id": "muscles",
+   "term": "muscles",
+   "nom": "les muscles",
+   "def": "ils se contractent pour faire bouger le corps, quand le cerveau leur envoie un ordre",
+   "emoji": "💪",
+   "noAuto": true
+  },
+  {
+   "id": "recevoir",
+   "term": "voir et entendre",
+   "nom": "voir et entendre",
+   "def": "le cerveau reçoit les informations des yeux et des oreilles, et les comprend",
+   "emoji": "👀",
+   "noAuto": true
+  },
+  {
+   "id": "bouger",
+   "term": "bouger",
+   "nom": "bouger",
+   "def": "le cerveau envoie des ordres aux muscles pour nos mouvements volontaires",
+   "emoji": "🏃",
+   "noAuto": true
+  },
+  {
+   "id": "langage",
+   "term": "parler",
+   "nom": "parler",
+   "def": "le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire",
+   "emoji": "💬",
+   "noAuto": true
+  },
+  {
+   "id": "memoire",
+   "term": "la mémoire",
+   "nom": "la mémoire",
+   "def": "le cerveau enregistre les informations nouvelles et les garde plus ou moins longtemps",
+   "emoji": "📚",
+   "noAuto": true
+  },
+  {
+   "id": "emotions",
+   "term": "les émotions",
+   "nom": "les émotions",
+   "def": "le cerveau fabrique nos émotions : joie, peur, colère, tristesse",
+   "emoji": "😊",
+   "noAuto": true
+  },
+  {
+   "id": "reves",
+   "term": "les rêves",
+   "nom": "les rêves",
+   "def": "même pendant le sommeil, le cerveau reste actif : il produit des images, des sons, des histoires",
+   "emoji": "🌙",
+   "noAuto": true
+  },
+  {
+   "id": "aires",
+   "term": "aires cérébrales",
+   "nom": "les aires cérébrales",
+   "def": "parties du cerveau, chacune spécialisée, qui travaillent toutes ensemble en permanence",
+   "emoji": "🧩",
+   "noAuto": true
+  }
+ ],
+ "items": [
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "recevoir"
+   ],
+   "q": "La sonnerie de l'école retentit. Qui comprend que c'est la récréation ?",
+   "choices": [
+    "Le cerveau",
+    "Les oreilles",
+    "Les jambes",
+    "Le crâne",
+    "Les muscles"
+   ],
+   "hint": "Les oreilles reçoivent le son. Mais qui le comprend ?",
+   "explain": "Les oreilles reçoivent le son, puis le cerveau le comprend et le reconnaît.",
+   "id": "sciences-cerveau#abc41e1f"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "recevoir",
+    "nerfs"
+   ],
+   "q": "Ce sont les yeux qui comprennent ce que l'on voit.",
+   "answer": false,
+   "explain": "Les yeux reçoivent l'image, les nerfs la portent au cerveau, et c'est le cerveau qui la comprend.",
+   "id": "sciences-cerveau#96a59a84"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "bouger",
+    "muscles"
+   ],
+   "q": "Tu décides de lever la main en classe. Que fait ton cerveau ?",
+   "choices": [
+    "Il envoie un ordre aux muscles du bras",
+    "Il reçoit un son des oreilles",
+    "Il fabrique un rêve",
+    "Il protège le crâne"
+   ],
+   "hint": "Pour bouger, il faut que les muscles reçoivent un message.",
+   "explain": "Le cerveau envoie un ordre aux muscles par les nerfs : c'est un mouvement volontaire.",
+   "id": "sciences-cerveau#2ce6b82b"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "muscles",
+    "bouger"
+   ],
+   "q": "Les muscles décident tout seuls de bouger.",
+   "answer": false,
+   "explain": "Les muscles se contractent quand le cerveau leur envoie un ordre.",
+   "id": "sciences-cerveau#5e73e756"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "langage"
+   ],
+   "q": "Tu racontes ta journée à un ami. Quel travail fait ton cerveau ?",
+   "choices": [
+    "Il trouve les mots pour parler",
+    "Il garde l'équilibre",
+    "Il produit un rêve",
+    "Il protège la tête"
+   ],
+   "hint": "Pour raconter, il faut des mots.",
+   "explain": "Le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+   "id": "sciences-cerveau#a75743ba"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "langage"
+   ],
+   "q": "Quand tu écris une phrase, c'est ton cerveau qui trouve les mots.",
+   "answer": true,
+   "explain": "Le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+   "id": "sciences-cerveau#e0781a8c"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "memoire"
+   ],
+   "q": "Tu te rappelles ton anniversaire de l'an dernier. Que fait ton cerveau ?",
+   "choices": [
+    "Il retrouve un souvenir",
+    "Il envoie un ordre aux jambes",
+    "Il reçoit un son",
+    "Il se repose"
+   ],
+   "hint": "C'est une chose qui s'est passée il y a longtemps.",
+   "explain": "Le cerveau garde les informations, plus ou moins longtemps : c'est la mémoire.",
+   "id": "sciences-cerveau#97f4b471"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "memoire"
+   ],
+   "q": "Le cerveau peut garder une information très longtemps.",
+   "answer": true,
+   "explain": "Le cerveau enregistre les informations et les garde plus ou moins longtemps.",
+   "id": "sciences-cerveau#f6b00209"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "emotions"
+   ],
+   "q": "Tu as perdu ton doudou. Quelle émotion ton cerveau fabrique-t-il ?",
+   "choices": [
+    "La tristesse",
+    "La joie",
+    "Le sommeil",
+    "L'équilibre"
+   ],
+   "hint": "C'est une émotion qui donne envie de pleurer.",
+   "explain": "Le cerveau fabrique nos émotions à partir de ce que nous vivons : ici, la tristesse.",
+   "id": "sciences-cerveau#b4a5c363"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "emotions"
+   ],
+   "q": "Lequel n'est PAS une émotion ?",
+   "choices": [
+    "Le sommeil",
+    "La joie",
+    "La peur",
+    "La colère",
+    "La tristesse"
+   ],
+   "hint": "Les émotions, ce sont des choses que l'on ressent quand il se passe quelque chose.",
+   "explain": "Joie, peur, colère et tristesse sont des émotions. Le sommeil n'en est pas une.",
+   "id": "sciences-cerveau#c7bb25a6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "reves"
+   ],
+   "q": "Cette nuit, tu as rêvé d'un dragon. Que faisait ton cerveau ?",
+   "choices": [
+    "Il restait actif et produisait des images",
+    "Il était arrêté",
+    "Il dormait sans rien faire",
+    "Il envoyait des ordres aux jambes pour courir"
+   ],
+   "hint": "Un rêve, ce sont des images et des histoires dans la tête.",
+   "explain": "Même pendant le sommeil, le cerveau reste actif : il produit les rêves.",
+   "id": "sciences-cerveau#3fffb38f"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "reves"
+   ],
+   "q": "Quand on dort, le cerveau s'arrête complètement.",
+   "answer": false,
+   "explain": "Même pendant le sommeil, le cerveau reste actif : il produit les rêves.",
+   "id": "sciences-cerveau#0e4ac1f9"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "crane",
+    "cerveau"
+   ],
+   "q": "Pourquoi le cerveau est-il dans le crâne ?",
+   "choices": [
+    "Pour qu'il ne se blesse pas",
+    "Pour qu'il voie mieux",
+    "Pour qu'il reste au chaud",
+    "Pour qu'il soit plus léger"
+   ],
+   "hint": "Le crâne est un os dur et solide.",
+   "explain": "Le cerveau est mou : le crâne et les méninges le protègent pour qu'il ne se blesse pas.",
+   "id": "sciences-cerveau#b3192de8"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "aires"
+   ],
+   "sentence": "Le cerveau est formé de plusieurs…",
+   "choices": [
+    "aires cérébrales",
+    "os",
+    "méninges",
+    "muscles"
+   ],
+   "hint": "Chacune est spécialisée dans certaines fonctions.",
+   "explain": "Le cerveau est formé de plusieurs aires cérébrales, qui travaillent toutes ensemble.",
+   "id": "sciences-cerveau#1ddee1fe"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "aires"
+   ],
+   "q": "Les aires du cerveau travaillent chacune à leur tour, jamais en même temps.",
+   "answer": false,
+   "explain": "Toutes les aires cérébrales travaillent ensemble en permanence.",
+   "id": "sciences-cerveau#da67faa7"
+  },
+  {
+   "type": "placer",
+   "layout": "frise",
+   "diff": 2,
+   "notions": [
+    "nerfs",
+    "muscles",
+    "recevoir",
+    "bouger"
+   ],
+   "q": "Une règle tombe. Range les étapes dans l'ordre.",
+   "explain": "L'œil voit, les nerfs portent l'information, le cerveau décide, les nerfs portent l'ordre, les muscles attrapent la règle.",
+   "targets": [
+    {
+     "id": "a",
+     "date": "1"
+    },
+    {
+     "id": "b",
+     "date": "2"
+    },
+    {
+     "id": "c",
+     "date": "3"
+    },
+    {
+     "id": "d",
+     "date": "4"
+    },
+    {
+     "id": "e",
+     "date": "5"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "L'œil voit la règle tomber",
+     "target": "a"
+    },
+    {
+     "text": "Les nerfs portent l'information",
+     "target": "b"
+    },
+    {
+     "text": "Le cerveau décide",
+     "target": "c"
+    },
+    {
+     "text": "Les nerfs portent l'ordre",
+     "target": "d"
+    },
+    {
+     "text": "La main attrape la règle",
+     "target": "e"
+    }
+   ],
+   "id": "sciences-cerveau#a3eadf40"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 6,
+   "notions": [
+    "recevoir",
+    "bouger"
+   ],
+   "q": "Le cerveau reçoit une information, ou il envoie un ordre ?",
+   "explain": "Les yeux et les oreilles envoient des informations au cerveau. Le cerveau envoie des ordres aux muscles.",
+   "targets": [
+    {
+     "id": "r",
+     "label": "Il reçoit une information",
+     "emoji": "👂",
+     "color": "#3a7bd5"
+    },
+    {
+     "id": "e",
+     "label": "Il envoie un ordre",
+     "emoji": "💪",
+     "color": "#e07a2e"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Tu vois un éclair",
+     "target": "r"
+    },
+    {
+     "text": "Tu entends ton prénom",
+     "target": "r"
+    },
+    {
+     "text": "Tu vois le feu passer au vert",
+     "target": "r"
+    },
+    {
+     "text": "Tu cours vers le but",
+     "target": "e"
+    },
+    {
+     "text": "Tu lèves le bras",
+     "target": "e"
+    },
+    {
+     "text": "Tu sautes à la corde",
+     "target": "e"
+    }
+   ],
+   "id": "sciences-cerveau#10334f10"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "notions": [
+    "recevoir",
+    "muscles",
+    "bouger"
+   ],
+   "q": "Relie chaque partie du corps à ce qu'elle permet.",
+   "targets": [
+    {
+     "id": "y",
+     "label": "Voir"
+    },
+    {
+     "id": "o",
+     "label": "Entendre"
+    },
+    {
+     "id": "m",
+     "label": "Bouger"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Les yeux",
+     "target": "y"
+    },
+    {
+     "text": "Les oreilles",
+     "target": "o"
+    },
+    {
+     "text": "Les muscles",
+     "target": "m"
+    }
+   ],
+   "explain": "Les yeux et les oreilles envoient des informations au cerveau ; les muscles reçoivent ses ordres.",
+   "id": "sciences-cerveau#f2178efe"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "cerveau"
+   ],
+   "q": "Reconstruis la phrase mémo.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Le cerveau est",
+     "target": "1"
+    },
+    {
+     "text": "le chef d'orchestre",
+     "target": "2"
+    },
+    {
+     "text": "du corps.",
+     "target": "3"
+    }
+   ],
+   "id": "sciences-cerveau#1fd4232e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "crane"
+   ],
+   "q": "De quoi parle-t-on ? Quand tu te cognes la tête contre une porte, c'est lui qui prend le choc.",
+   "choices": [
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Le crâne : os dur et solide qui protège le cerveau.",
+   "id": "sciences-cerveau#70e81c59"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "crane"
+   ],
+   "q": "Que veut dire « crâne » ?",
+   "choices": [
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le crâne : os dur et solide qui protège le cerveau.",
+   "id": "sciences-cerveau#4cdd99d6"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "crane"
+   ],
+   "target": "crane",
+   "q": "Touche le crâne sur le dessin.",
+   "explain": "Le crâne : os dur et solide qui protège le cerveau.",
+   "id": "sciences-cerveau#aca0665e"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "crane"
+   ],
+   "q": "« Crâne » veut dire : os dur et solide qui protège le cerveau.",
+   "explain": "Le crâne : os dur et solide qui protège le cerveau.",
+   "id": "sciences-cerveau#3e136de1"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "crane"
+   ],
+   "q": "« Crâne » veut dire : fines membranes qui entourent et protègent le cerveau.",
+   "explain": "Le crâne : os dur et solide qui protège le cerveau.",
+   "id": "sciences-cerveau#a2d51b8e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "meninges"
+   ],
+   "q": "De quoi parle-t-on ? Sous l'os de la tête, elles enveloppent le cerveau comme un emballage très fin.",
+   "choices": [
+    "Méninges",
+    "Crâne",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Les méninges : fines membranes qui entourent et protègent le cerveau.",
+   "id": "sciences-cerveau#fcb3f476"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "meninges"
+   ],
+   "q": "Que veut dire « méninges » ?",
+   "choices": [
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Os dur et solide qui protège le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Les méninges : fines membranes qui entourent et protègent le cerveau.",
+   "id": "sciences-cerveau#ed5b640a"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "meninges"
+   ],
+   "target": "meninges",
+   "q": "Touche les méninges sur le dessin.",
+   "explain": "Les méninges : fines membranes qui entourent et protègent le cerveau.",
+   "id": "sciences-cerveau#39210bd6"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "meninges"
+   ],
+   "q": "« Méninges » veut dire : fines membranes qui entourent et protègent le cerveau.",
+   "explain": "Les méninges : fines membranes qui entourent et protègent le cerveau.",
+   "id": "sciences-cerveau#9a9eab97"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "meninges"
+   ],
+   "q": "« Méninges » veut dire : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+   "explain": "Les méninges : fines membranes qui entourent et protègent le cerveau.",
+   "id": "sciences-cerveau#bd653752"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cerveau"
+   ],
+   "q": "De quoi parle-t-on ? Il est caché dans ta tête et il commande tout ton corps, comme un chef d'orchestre.",
+   "choices": [
+    "Cerveau",
+    "Crâne",
+    "Méninges",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Le cerveau : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+   "id": "sciences-cerveau#1902197c"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cerveau"
+   ],
+   "q": "Que veut dire « cerveau » ?",
+   "choices": [
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le cerveau : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+   "id": "sciences-cerveau#99c2c9ae"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "cerveau"
+   ],
+   "q": "« Cerveau » veut dire : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+   "explain": "Le cerveau : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+   "id": "sciences-cerveau#a7569a57"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "cerveau"
+   ],
+   "q": "« Cerveau » veut dire : partie avant du cerveau.",
+   "explain": "Le cerveau : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+   "id": "sciences-cerveau#3709681e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "lobe-frontal"
+   ],
+   "q": "De quoi parle-t-on ? Pose ta main sur ton front : il est juste derrière.",
+   "choices": [
+    "Lobe frontal",
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Le lobe frontal : partie avant du cerveau.",
+   "id": "sciences-cerveau#8e53c0a8"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "lobe-frontal"
+   ],
+   "q": "Que veut dire « lobe frontal » ?",
+   "choices": [
+    "Partie avant du cerveau",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le lobe frontal : partie avant du cerveau.",
+   "id": "sciences-cerveau#feaa33c1"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "lobe-frontal"
+   ],
+   "target": "lobe-frontal",
+   "q": "Touche le lobe frontal sur le dessin.",
+   "explain": "Le lobe frontal : partie avant du cerveau.",
+   "id": "sciences-cerveau#53e6fb43"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "lobe-frontal"
+   ],
+   "q": "« Lobe frontal » veut dire : partie avant du cerveau.",
+   "explain": "Le lobe frontal : partie avant du cerveau.",
+   "id": "sciences-cerveau#0584c74e"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "lobe-frontal"
+   ],
+   "q": "« Lobe frontal » veut dire : partie du haut du cerveau.",
+   "explain": "Le lobe frontal : partie avant du cerveau.",
+   "id": "sciences-cerveau#2ac70436"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "lobe-parietal"
+   ],
+   "q": "De quoi parle-t-on ? Quand tu mets un chapeau, il est juste en dessous.",
+   "choices": [
+    "Lobe pariétal",
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Le lobe pariétal : partie du haut du cerveau.",
+   "id": "sciences-cerveau#d7974eaf"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "lobe-parietal"
+   ],
+   "q": "Que veut dire « lobe pariétal » ?",
+   "choices": [
+    "Partie du haut du cerveau",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le lobe pariétal : partie du haut du cerveau.",
+   "id": "sciences-cerveau#33e70c04"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "lobe-parietal"
+   ],
+   "target": "lobe-parietal",
+   "q": "Touche le lobe pariétal sur le dessin.",
+   "explain": "Le lobe pariétal : partie du haut du cerveau.",
+   "id": "sciences-cerveau#b12d95fc"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "lobe-parietal"
+   ],
+   "q": "« Lobe pariétal » veut dire : partie du haut du cerveau.",
+   "explain": "Le lobe pariétal : partie du haut du cerveau.",
+   "id": "sciences-cerveau#9e874c70"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "lobe-parietal"
+   ],
+   "q": "« Lobe pariétal » veut dire : partie du cerveau sur le côté, près des tempes.",
+   "explain": "Le lobe pariétal : partie du haut du cerveau.",
+   "id": "sciences-cerveau#a12ef5ab"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "lobe-temporal"
+   ],
+   "q": "De quoi parle-t-on ? Il y en a un de chaque côté de la tête, au-dessus des oreilles.",
+   "choices": [
+    "Lobe temporal",
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe occipital",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Le lobe temporal : partie du cerveau sur le côté, près des tempes.",
+   "id": "sciences-cerveau#e09e28d1"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "lobe-temporal"
+   ],
+   "q": "Que veut dire « lobe temporal » ?",
+   "choices": [
+    "Partie du cerveau sur le côté, près des tempes",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le lobe temporal : partie du cerveau sur le côté, près des tempes.",
+   "id": "sciences-cerveau#c74d6aa5"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "lobe-temporal"
+   ],
+   "target": "lobe-temporal",
+   "q": "Touche le lobe temporal sur le dessin.",
+   "explain": "Le lobe temporal : partie du cerveau sur le côté, près des tempes.",
+   "id": "sciences-cerveau#fc9f9b9f"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "lobe-temporal"
+   ],
+   "q": "« Lobe temporal » veut dire : partie du cerveau sur le côté, près des tempes.",
+   "explain": "Le lobe temporal : partie du cerveau sur le côté, près des tempes.",
+   "id": "sciences-cerveau#d6ee286f"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "lobe-temporal"
+   ],
+   "q": "« Lobe temporal » veut dire : partie arrière du cerveau.",
+   "explain": "Le lobe temporal : partie du cerveau sur le côté, près des tempes.",
+   "id": "sciences-cerveau#0f7a6a6d"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "lobe-occipital"
+   ],
+   "q": "De quoi parle-t-on ? C'est le lobe le plus loin de tes yeux, quand tu poses la tête sur l'oreiller.",
+   "choices": [
+    "Lobe occipital",
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Cervelet",
+    "Tronc cérébral"
+   ],
+   "explain": "Le lobe occipital : partie arrière du cerveau.",
+   "id": "sciences-cerveau#cdc66d85"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "lobe-occipital"
+   ],
+   "q": "Que veut dire « lobe occipital » ?",
+   "choices": [
+    "Partie arrière du cerveau",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le lobe occipital : partie arrière du cerveau.",
+   "id": "sciences-cerveau#0d89661d"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "lobe-occipital"
+   ],
+   "target": "lobe-occipital",
+   "q": "Touche le lobe occipital sur le dessin.",
+   "explain": "Le lobe occipital : partie arrière du cerveau.",
+   "id": "sciences-cerveau#9427a143"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "lobe-occipital"
+   ],
+   "q": "« Lobe occipital » veut dire : partie arrière du cerveau.",
+   "explain": "Le lobe occipital : partie arrière du cerveau.",
+   "id": "sciences-cerveau#9879dbfe"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "lobe-occipital"
+   ],
+   "q": "« Lobe occipital » veut dire : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "explain": "Le lobe occipital : partie arrière du cerveau.",
+   "id": "sciences-cerveau#db81d87f"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "cervelet"
+   ],
+   "q": "De quoi parle-t-on ? Quand tu roules à vélo sans tomber, il t'aide à tenir debout.",
+   "choices": [
+    "Cervelet",
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Tronc cérébral"
+   ],
+   "explain": "Le cervelet : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "id": "sciences-cerveau#83fb7b14"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "cervelet"
+   ],
+   "q": "Que veut dire « cervelet » ?",
+   "choices": [
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Partie qui relie le cerveau à la moelle épinière"
+   ],
+   "explain": "Le cervelet : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "id": "sciences-cerveau#13c28789"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "cervelet"
+   ],
+   "target": "cervelet",
+   "q": "Touche le cervelet sur le dessin.",
+   "explain": "Le cervelet : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "id": "sciences-cerveau#8e9f55b6"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "cervelet"
+   ],
+   "q": "« Cervelet » veut dire : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "explain": "Le cervelet : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "id": "sciences-cerveau#594a512a"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "cervelet"
+   ],
+   "q": "« Cervelet » veut dire : partie qui relie le cerveau à la moelle épinière.",
+   "explain": "Le cervelet : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+   "id": "sciences-cerveau#f3238813"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "tronc"
+   ],
+   "q": "De quoi parle-t-on ? Il part du dessous du cerveau et descend vers le cou.",
+   "choices": [
+    "Tronc cérébral",
+    "Crâne",
+    "Méninges",
+    "Cerveau",
+    "Lobe frontal",
+    "Lobe pariétal",
+    "Lobe temporal",
+    "Lobe occipital",
+    "Cervelet"
+   ],
+   "explain": "Le tronc cérébral : partie qui relie le cerveau à la moelle épinière.",
+   "id": "sciences-cerveau#57cee9c1"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "tronc"
+   ],
+   "q": "Que veut dire « tronc cérébral » ?",
+   "choices": [
+    "Partie qui relie le cerveau à la moelle épinière",
+    "Os dur et solide qui protège le cerveau",
+    "Fines membranes qui entourent et protègent le cerveau",
+    "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+    "Partie avant du cerveau",
+    "Partie du haut du cerveau",
+    "Partie du cerveau sur le côté, près des tempes",
+    "Partie arrière du cerveau",
+    "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre"
+   ],
+   "explain": "Le tronc cérébral : partie qui relie le cerveau à la moelle épinière.",
+   "id": "sciences-cerveau#a5260259"
+  },
+  {
+   "type": "schema",
+   "diff": 2,
+   "notions": [
+    "tronc"
+   ],
+   "target": "tronc",
+   "q": "Touche le tronc cérébral sur le dessin.",
+   "explain": "Le tronc cérébral : partie qui relie le cerveau à la moelle épinière.",
+   "id": "sciences-cerveau#f4df37ce"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "tronc"
+   ],
+   "q": "« Tronc cérébral » veut dire : partie qui relie le cerveau à la moelle épinière.",
+   "explain": "Le tronc cérébral : partie qui relie le cerveau à la moelle épinière.",
+   "id": "sciences-cerveau#ab27151c"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "tronc"
+   ],
+   "q": "« Tronc cérébral » veut dire : os dur et solide qui protège le cerveau.",
+   "explain": "Le tronc cérébral : partie qui relie le cerveau à la moelle épinière.",
+   "id": "sciences-cerveau#507a677f"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "crane",
+    "meninges",
+    "cerveau"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "crane",
+     "label": "Os dur et solide qui protège le cerveau"
+    },
+    {
+     "id": "meninges",
+     "label": "Fines membranes qui entourent et protègent le cerveau"
+    },
+    {
+     "id": "cerveau",
+     "label": "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Crâne",
+     "target": "crane"
+    },
+    {
+     "text": "Méninges",
+     "target": "meninges"
+    },
+    {
+     "text": "Cerveau",
+     "target": "cerveau"
+    }
+   ],
+   "id": "sciences-cerveau#aaa17f55"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "lobe-frontal",
+    "lobe-parietal",
+    "lobe-temporal"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "lobe-frontal",
+     "label": "Partie avant du cerveau"
+    },
+    {
+     "id": "lobe-parietal",
+     "label": "Partie du haut du cerveau"
+    },
+    {
+     "id": "lobe-temporal",
+     "label": "Partie du cerveau sur le côté, près des tempes"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Lobe frontal",
+     "target": "lobe-frontal"
+    },
+    {
+     "text": "Lobe pariétal",
+     "target": "lobe-parietal"
+    },
+    {
+     "text": "Lobe temporal",
+     "target": "lobe-temporal"
+    }
+   ],
+   "id": "sciences-cerveau#2260b098"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "lobe-occipital",
+    "cervelet",
+    "tronc"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "lobe-occipital",
+     "label": "Partie arrière du cerveau"
+    },
+    {
+     "id": "cervelet",
+     "label": "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre"
+    },
+    {
+     "id": "tronc",
+     "label": "Partie qui relie le cerveau à la moelle épinière"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Lobe occipital",
+     "target": "lobe-occipital"
+    },
+    {
+     "text": "Cervelet",
+     "target": "cervelet"
+    },
+    {
+     "text": "Tronc cérébral",
+     "target": "tronc"
+    }
+   ],
+   "id": "sciences-cerveau#2d16f021"
+  }
+ ],
+ "cards": [
+  {
+   "id": "ce-abri",
+   "name": "Bien à l'abri",
+   "emoji": "🛡️",
+   "color": "#b9a678",
+   "notions": [
+    "crane",
+    "meninges"
+   ],
+   "desc": "Un os dur et de fines membranes protègent le cerveau.",
+   "image": "crane"
+  },
+  {
+   "id": "ce-front",
+   "name": "Le front et le sommet",
+   "emoji": "🎩",
+   "color": "#d0607a",
+   "notions": [
+    "lobe-frontal",
+    "lobe-parietal"
+   ],
+   "desc": "Le lobe frontal à l'avant, le lobe pariétal en haut.",
+   "image": "lobe-frontal"
+  },
+  {
+   "id": "ce-cote",
+   "name": "Les tempes et la nuque",
+   "emoji": "🧭",
+   "color": "#3a7bd5",
+   "notions": [
+    "lobe-temporal",
+    "lobe-occipital"
+   ],
+   "desc": "Le lobe temporal sur le côté, le lobe occipital à l'arrière.",
+   "image": "lobe-temporal"
+  },
+  {
+   "id": "ce-equilibre",
+   "name": "L'équilibriste",
+   "emoji": "🤸",
+   "color": "#7d5aa6",
+   "notions": [
+    "cervelet",
+    "tronc"
+   ],
+   "desc": "Le cervelet garde l'équilibre, le tronc cérébral relie le cerveau à la moelle épinière.",
+   "image": "cervelet"
+  },
+  {
+   "id": "ce-messagers",
+   "name": "Les messagers",
+   "emoji": "⚡",
+   "color": "#e0a020",
+   "notions": [
+    "nerfs",
+    "muscles",
+    "bouger"
+   ],
+   "desc": "Les nerfs portent les ordres du cerveau jusqu'aux muscles.",
+   "image": "nerfs"
+  },
+  {
+   "id": "ce-sens",
+   "name": "Yeux, oreilles et mots",
+   "emoji": "👀",
+   "color": "#2f8f9d",
+   "notions": [
+    "recevoir",
+    "langage"
+   ],
+   "desc": "Le cerveau comprend ce qu'on voit et entend, et trouve les mots.",
+   "image": "recevoir"
+  },
+  {
+   "id": "ce-souvenirs",
+   "name": "La boîte à souvenirs",
+   "emoji": "📦",
+   "color": "#e07a2e",
+   "notions": [
+    "memoire",
+    "emotions"
+   ],
+   "desc": "Le cerveau garde les souvenirs et fabrique les émotions.",
+   "image": "memoire"
+  },
+  {
+   "id": "ce-nuit",
+   "name": "Le cinéma de la nuit",
+   "emoji": "🌙",
+   "color": "#4a5bb5",
+   "notions": [
+    "reves",
+    "aires",
+    "cerveau"
+   ],
+   "desc": "Même la nuit, toutes les aires du cerveau travaillent ensemble.",
+   "image": "reves"
+  },
+  {
+   "id": "ce-legende",
+   "name": "Dragon chef d'orchestre",
+   "emoji": "👑",
+   "color": "#b8860b",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "desc": "Carte légendaire : tu connais toute la leçon sur le cerveau !",
+   "image": "legende"
+  }
+ ],
+ "images": {
+  "cerveau": {
+   "prompt": "a cheerful child conductor with a baton leading a small orchestra of friendly cartoon musicians, music notes floating in the air, warm concert hall",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 44
+  },
+  "crane": {
+   "prompt": "a smiling child wearing a bicycle helmet, gently tapping the top of the helmet with one hand, a bicycle in a sunny park behind",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "lobe-frontal": {
+   "prompt": "a thoughtful child with one hand placed on their forehead, eyes looking up as if thinking hard, a school desk with a notebook in front",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "lobe-temporal": {
+   "prompt": "a child gently pressing both fingertips on the sides of their head above the ears, eyes closed, calm smile, sitting on a cushion in a cozy room",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "cervelet": {
+   "prompt": "a happy child riding a bicycle on a path in a park, keeping balance with arms on the handlebars, trees and flowers around",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "nerfs": {
+   "prompt": "a child catching a falling wooden ruler in mid-air with one hand at a school desk, quick motion lines around the ruler, surprised happy face",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  },
+  "recevoir": {
+   "prompt": "a child in a garden looking at a colorful butterfly on a flower while listening to a bird singing on a branch, one hand cupped behind the ear",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  },
+  "memoire": {
+   "prompt": "a child sitting on a sofa looking at an open photo album with pictures of a birthday cake and a beach, a warm lamp, nostalgic smile",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "reves": {
+   "prompt": "a child sleeping peacefully in bed at night, a big dream bubble above the head showing a friendly little dragon flying among stars",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "legende": {
+   "prompt": "a proud cute purple dragon holding a conductor baton, standing on a small stage, music notes and sparkles around, cream belly, smiling, centered, plain warm pink background",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  }
+ },
+ "speech": [
+  "Aires cérébrales",
+  "Bien à l'abri",
+  "Bouger",
+  "Bouger : le cerveau envoie des ordres aux muscles pour nos mouvements volontaires.",
+  "C'est une chose qui s'est passée il y a longtemps.",
+  "C'est une émotion qui donne envie de pleurer.",
+  "Carte légendaire : tu connais toute la leçon sur le cerveau !",
+  "Cerveau",
+  "Cervelet",
+  "Cette nuit, tu as rêvé d'un dragon. Que faisait ton cerveau ?",
+  "Chacune est spécialisée dans certaines fonctions.",
+  "Crâne",
+  "De quoi parle-t-on ? C'est le lobe le plus loin de tes yeux, quand tu poses la tête sur l'oreiller.",
+  "De quoi parle-t-on ? Il est caché dans ta tête et il commande tout ton corps, comme un chef d'orchestre.",
+  "De quoi parle-t-on ? Il part du dessous du cerveau et descend vers le cou.",
+  "De quoi parle-t-on ? Il y en a un de chaque côté de la tête, au-dessus des oreilles.",
+  "De quoi parle-t-on ? Pose ta main sur ton front : il est juste derrière.",
+  "De quoi parle-t-on ? Quand tu mets un chapeau, il est juste en dessous.",
+  "De quoi parle-t-on ? Quand tu roules à vélo sans tomber, il t'aide à tenir debout.",
+  "De quoi parle-t-on ? Quand tu te cognes la tête contre une porte, c'est lui qui prend le choc.",
+  "De quoi parle-t-on ? Sous l'os de la tête, elles enveloppent le cerveau comme un emballage très fin.",
+  "Dragon chef d'orchestre",
+  "Entendre",
+  "Fines membranes qui entourent et protègent le cerveau",
+  "Il dormait sans rien faire",
+  "Il envoie des ordres aux muscles pour nos mouvements volontaires. Il nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+  "Il envoie un ordre",
+  "Il envoie un ordre aux jambes",
+  "Il envoie un ordre aux muscles du bras",
+  "Il envoyait des ordres aux jambes pour courir",
+  "Il est très bien protégé dans la tête, pour qu'il ne se blesse pas.",
+  "Il fabrique un rêve",
+  "Il garde l'équilibre",
+  "Il garde les informations nouvelles, plus ou moins longtemps : c'est la mémoire. Il fabrique nos émotions : joie, peur, colère, tristesse.",
+  "Il produit un rêve",
+  "Il protège la tête",
+  "Il protège le crâne",
+  "Il restait actif et produisait des images",
+  "Il retrouve un souvenir",
+  "Il reçoit un son",
+  "Il reçoit un son des oreilles",
+  "Il reçoit une information",
+  "Il se repose",
+  "Il trouve les mots pour parler",
+  "Il était arrêté",
+  "Joie, peur, colère et tristesse sont des émotions. Le sommeil n'en est pas une.",
+  "L'équilibre",
+  "L'équilibriste",
+  "L'œil voit la règle tomber",
+  "L'œil voit, les nerfs portent l'information, le cerveau décide, les nerfs portent l'ordre, les muscles attrapent la règle.",
+  "La boîte à souvenirs",
+  "La colère",
+  "La joie",
+  "La main attrape la règle",
+  "La mémoire",
+  "La mémoire : le cerveau enregistre les informations nouvelles et les garde plus ou moins longtemps.",
+  "La peur",
+  "La sonnerie de l'école retentit. Qui comprend que c'est la récréation ?",
+  "La tristesse",
+  "Le cerveau",
+  "Le cerveau : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+  "Le cerveau a quatre lobes : le lobe frontal, derrière le front ; le lobe pariétal, en haut ; le lobe temporal, sur le côté, près des tempes ; le lobe occipital, à l'arrière.",
+  "Le cerveau comprend ce qu'on voit et entend, et trouve les mots.",
+  "Le cerveau contrôle notre corps. Exemple : une règle tombe. L'œil voit la règle tomber. L'information part au cerveau par les nerfs.",
+  "Le cerveau décide",
+  "Le cerveau décide de serrer la main. L'ordre repart vers les muscles de la main par les nerfs. Les muscles se contractent : la main attrape la règle.",
+  "Le cerveau enregistre les informations et les garde plus ou moins longtemps.",
+  "Le cerveau envoie un ordre aux muscles par les nerfs : c'est un mouvement volontaire.",
+  "Le cerveau est",
+  "Le cerveau est formé de plusieurs aires cérébrales, qui travaillent toutes ensemble.",
+  "Le cerveau est formé de plusieurs aires cérébrales. Chacune est spécialisée, et toutes travaillent ensemble en permanence.",
+  "Le cerveau est formé de plusieurs… aires cérébrales.",
+  "Le cerveau est le chef d'orchestre du corps.",
+  "Le cerveau est le chef d'orchestre du corps. C'est un organe mou : il nous permet de penser, de sentir, de bouger et de nous souvenir.",
+  "Le cerveau est mou : le crâne et les méninges le protègent pour qu'il ne se blesse pas.",
+  "Le cerveau fabrique nos émotions à partir de ce que nous vivons : ici, la tristesse.",
+  "Le cerveau garde les informations, plus ou moins longtemps : c'est la mémoire.",
+  "Le cerveau garde les souvenirs et fabrique les émotions.",
+  "Le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+  "Le cerveau reçoit les informations des yeux et des oreilles : il nous permet de voir et d'entendre.",
+  "Le cerveau reçoit une information, ou il envoie un ordre ?",
+  "Le cervelet : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+  "Le cervelet garde l'équilibre, le tronc cérébral relie le cerveau à la moelle épinière.",
+  "Le cinéma de la nuit",
+  "Le crâne",
+  "Le crâne : os dur et solide qui protège le cerveau.",
+  "Le crâne est un os dur et solide qui protège le cerveau. Sous le crâne, les méninges sont de fines membranes qui entourent et protègent le cerveau.",
+  "Le crâne est un os dur et solide.",
+  "Le front et le sommet",
+  "Le lobe frontal : partie avant du cerveau.",
+  "Le lobe frontal à l'avant, le lobe pariétal en haut.",
+  "Le lobe occipital : partie arrière du cerveau.",
+  "Le lobe pariétal : partie du haut du cerveau.",
+  "Le lobe temporal : partie du cerveau sur le côté, près des tempes.",
+  "Le lobe temporal sur le côté, le lobe occipital à l'arrière.",
+  "Le sommeil",
+  "Le tronc cérébral : partie qui relie le cerveau à la moelle épinière.",
+  "Lequel n'est PAS une émotion ?",
+  "Les aires cérébrales : parties du cerveau, chacune spécialisée, qui travaillent toutes ensemble en permanence.",
+  "Les jambes",
+  "Les messagers",
+  "Les muscles",
+  "Les muscles : ils se contractent pour faire bouger le corps, quand le cerveau leur envoie un ordre.",
+  "Les muscles se contractent quand le cerveau leur envoie un ordre.",
+  "Les méninges : fines membranes qui entourent et protègent le cerveau.",
+  "Les nerfs : fils qui transportent les informations vers le cerveau, et les ordres vers les muscles.",
+  "Les nerfs portent l'information",
+  "Les nerfs portent l'ordre",
+  "Les nerfs portent les ordres du cerveau jusqu'aux muscles.",
+  "Les oreilles",
+  "Les oreilles reçoivent le son, puis le cerveau le comprend et le reconnaît.",
+  "Les oreilles reçoivent le son. Mais qui le comprend ?",
+  "Les rêves",
+  "Les rêves : même pendant le sommeil, le cerveau reste actif : il produit des images, des sons, des histoires.",
+  "Les tempes et la nuque",
+  "Les yeux",
+  "Les yeux et les oreilles envoient des informations au cerveau ; les muscles reçoivent ses ordres.",
+  "Les yeux et les oreilles envoient des informations au cerveau. Le cerveau envoie des ordres aux muscles.",
+  "Les yeux reçoivent l'image, les nerfs la portent au cerveau, et c'est le cerveau qui la comprend.",
+  "Les émotions",
+  "Les émotions : le cerveau fabrique nos émotions : joie, peur, colère, tristesse.",
+  "Les émotions, ce sont des choses que l'on ressent quand il se passe quelque chose.",
+  "Lobe frontal",
+  "Lobe occipital",
+  "Lobe pariétal",
+  "Lobe temporal",
+  "Muscles",
+  "Méninges",
+  "Même la nuit, toutes les aires du cerveau travaillent ensemble.",
+  "Même pendant le sommeil, il reste actif : il produit les rêves.",
+  "Même pendant le sommeil, le cerveau reste actif : il produit les rêves.",
+  "Nerfs",
+  "Organe mou qui permet de penser, de sentir, de bouger et de se souvenir",
+  "Os dur et solide qui protège le cerveau",
+  "Parler",
+  "Parler : le cerveau nous permet de trouver les mots, de parler, de comprendre et d'écrire.",
+  "Partie arrière du cerveau",
+  "Partie avant du cerveau",
+  "Partie du cerveau sur le côté, près des tempes",
+  "Partie du haut du cerveau",
+  "Partie qui relie le cerveau à la moelle épinière",
+  "Petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre",
+  "Pour bouger, il faut que les muscles reçoivent un message.",
+  "Pour qu'il ne se blesse pas",
+  "Pour qu'il reste au chaud",
+  "Pour qu'il soit plus léger",
+  "Pour qu'il voie mieux",
+  "Pour raconter, il faut des mots.",
+  "Pourquoi le cerveau est-il dans le crâne ?",
+  "Que veut dire « cerveau » ?",
+  "Que veut dire « cervelet » ?",
+  "Que veut dire « crâne » ?",
+  "Que veut dire « lobe frontal » ?",
+  "Que veut dire « lobe occipital » ?",
+  "Que veut dire « lobe pariétal » ?",
+  "Que veut dire « lobe temporal » ?",
+  "Que veut dire « méninges » ?",
+  "Que veut dire « tronc cérébral » ?",
+  "Reconstruis la phrase mémo.",
+  "Regarde, voici le cervelet.",
+  "Regarde, voici le crâne.",
+  "Regarde, voici le lobe frontal.",
+  "Regarde, voici le lobe occipital.",
+  "Regarde, voici le lobe pariétal.",
+  "Regarde, voici le lobe temporal.",
+  "Regarde, voici le tronc cérébral.",
+  "Regarde, voici les méninges.",
+  "Relie chaque mot à sa définition.",
+  "Relie chaque partie du corps à ce qu'elle permet.",
+  "Sous l'arrière du cerveau, il y a le cervelet, qui nous aide à garder l'équilibre. Le tronc cérébral relie le cerveau à la moelle épinière, dans le dos.",
+  "Termine la phrase : Le cerveau est formé de plusieurs……",
+  "Touche le cervelet sur le dessin.",
+  "Touche le crâne sur le dessin.",
+  "Touche le lobe frontal sur le dessin.",
+  "Touche le lobe occipital sur le dessin.",
+  "Touche le lobe pariétal sur le dessin.",
+  "Touche le lobe temporal sur le dessin.",
+  "Touche le tronc cérébral sur le dessin.",
+  "Touche les méninges sur le dessin.",
+  "Toutes les aires cérébrales travaillent ensemble en permanence.",
+  "Tronc cérébral",
+  "Tu as perdu ton doudou. Quelle émotion ton cerveau fabrique-t-il ?",
+  "Tu cours vers le but",
+  "Tu décides de lever la main en classe. Que fait ton cerveau ?",
+  "Tu entends ton prénom",
+  "Tu lèves le bras",
+  "Tu racontes ta journée à un ami. Quel travail fait ton cerveau ?",
+  "Tu sautes à la corde",
+  "Tu te rappelles ton anniversaire de l'an dernier. Que fait ton cerveau ?",
+  "Tu vois le feu passer au vert",
+  "Tu vois un éclair",
+  "Un os dur et de fines membranes protègent le cerveau.",
+  "Un rêve, ce sont des images et des histoires dans la tête.",
+  "Une règle tombe. Range les étapes dans l'ordre.",
+  "Voir",
+  "Voir et entendre",
+  "Voir et entendre : le cerveau reçoit les informations des yeux et des oreilles, et les comprend.",
+  "Vrai ou faux ? Ce sont les yeux qui comprennent ce que l'on voit.",
+  "Vrai ou faux ? Le cerveau peut garder une information très longtemps.",
+  "Vrai ou faux ? Les aires du cerveau travaillent chacune à leur tour, jamais en même temps.",
+  "Vrai ou faux ? Les muscles décident tout seuls de bouger.",
+  "Vrai ou faux ? Quand on dort, le cerveau s'arrête complètement.",
+  "Vrai ou faux ? Quand tu écris une phrase, c'est ton cerveau qui trouve les mots.",
+  "Vrai ou faux ? « Cerveau » veut dire : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+  "Vrai ou faux ? « Cerveau » veut dire : partie avant du cerveau.",
+  "Vrai ou faux ? « Cervelet » veut dire : partie qui relie le cerveau à la moelle épinière.",
+  "Vrai ou faux ? « Cervelet » veut dire : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+  "Vrai ou faux ? « Crâne » veut dire : fines membranes qui entourent et protègent le cerveau.",
+  "Vrai ou faux ? « Crâne » veut dire : os dur et solide qui protège le cerveau.",
+  "Vrai ou faux ? « Lobe frontal » veut dire : partie avant du cerveau.",
+  "Vrai ou faux ? « Lobe frontal » veut dire : partie du haut du cerveau.",
+  "Vrai ou faux ? « Lobe occipital » veut dire : partie arrière du cerveau.",
+  "Vrai ou faux ? « Lobe occipital » veut dire : petite partie sous l'arrière du cerveau, qui aide à garder l'équilibre.",
+  "Vrai ou faux ? « Lobe pariétal » veut dire : partie du cerveau sur le côté, près des tempes.",
+  "Vrai ou faux ? « Lobe pariétal » veut dire : partie du haut du cerveau.",
+  "Vrai ou faux ? « Lobe temporal » veut dire : partie arrière du cerveau.",
+  "Vrai ou faux ? « Lobe temporal » veut dire : partie du cerveau sur le côté, près des tempes.",
+  "Vrai ou faux ? « Méninges » veut dire : fines membranes qui entourent et protègent le cerveau.",
+  "Vrai ou faux ? « Méninges » veut dire : organe mou qui permet de penser, de sentir, de bouger et de se souvenir.",
+  "Vrai ou faux ? « Tronc cérébral » veut dire : os dur et solide qui protège le cerveau.",
+  "Vrai ou faux ? « Tronc cérébral » veut dire : partie qui relie le cerveau à la moelle épinière.",
+  "Yeux, oreilles et mots",
+  "aires cérébrales",
+  "du corps.",
+  "le chef d'orchestre",
+  "muscles",
+  "méninges",
+  "os",
+  "Ça, c'est le cervelet.",
+  "Ça, c'est le crâne.",
+  "Ça, c'est le lobe frontal.",
+  "Ça, c'est le lobe occipital.",
+  "Ça, c'est le lobe pariétal.",
+  "Ça, c'est le lobe temporal.",
+  "Ça, c'est le tronc cérébral.",
+  "Ça, c'est les méninges."
+ ]
+}

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-label="Le cerveau dans la tête">
+<defs>
+  <!-- Contour du cerveau (hors cervelet) : les lobes et leurs zones y sont découpés. -->
+  <clipPath id="cv-cerveau">
+    <path d="M300,380 C255,300 275,165 380,118 C470,72 610,58 722,78 C842,100 942,170 965,268 C985,350 952,410 900,422 C858,428 818,412 782,406 C742,402 722,420 702,450 C680,482 620,492 560,472 C520,457 495,430 480,407 C440,401 380,411 340,406 C316,401 305,392 300,380 Z"/>
+  </clipPath>
+  <!-- Crâne et méninges sont des anneaux (traits épais) : le surlignage de l'app ne doit pas remplir l'intérieur. -->
+  <style>
+    .schema-wrap .zone > .ring, .schema-wrap.show-zones [data-zone] > .ring { fill: none !important; }
+    .schema-wrap .zone.flash > .ring { animation: cv-flash .6s ease-in-out 2; }
+    @keyframes cv-flash { 50% { stroke: rgba(108, 92, 231, .35); } }
+    .schema-wrap .zone.hl > .ring { fill: none; stroke: rgba(255, 159, 28, .7); }
+    .schema-wrap .zone > .ring.w120, .schema-wrap.show-zones [data-zone] > .ring.w120 { stroke-width: 120; }
+    .schema-wrap .zone > .ring.w44, .schema-wrap.show-zones [data-zone] > .ring.w44 { stroke-width: 44; }
+  </style>
+  <!-- Extérieur de l'enveloppe : le crâne ne se surligne pas par-dessus le cerveau. -->
+  <clipPath id="cv-dehors">
+    <path clip-rule="evenodd" d="M-500,-500 H1700 V1500 H-500 Z M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z"/>
+  </clipPath>
+</defs>
+<rect width="1200" height="860" rx="24" fill="#f4f7fb"/>
+<g transform="translate(60,90) scale(0.88)">
+  <!-- Tête de profil, le visage regarde à gauche -->
+  <path d="M175,170 C260,10 520,-45 690,-38 C900,-30 1075,120 1088,330 C1095,450 1070,520 1035,560 C980,620 880,660 845,700 C838,760 836,820 836,880 L455,880 C455,820 440,775 420,750 C340,700 260,680 215,668 C185,660 180,630 195,612 C170,600 160,585 170,566 C150,556 152,540 168,528 C140,520 112,505 118,490 C128,470 160,440 172,410 C180,370 165,300 175,170 Z" fill="#fde3cf" stroke="#d9a98a" stroke-width="5"/>
+  <ellipse cx="258" cy="470" rx="13" ry="16" fill="#3b3b4f"/>
+  <path d="M225,440 C245,428 270,428 290,440" fill="none" stroke="#8a6a55" stroke-width="5" stroke-linecap="round"/>
+  <path d="M175,600 C190,606 205,606 215,600" fill="none" stroke="#c46a6a" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Crâne (os) puis méninges, tout autour du cerveau et du cervelet -->
+  <path d="M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z" fill="none" stroke="#b9a678" stroke-width="118" stroke-linejoin="round"/>
+  <path id="cv-enveloppe" d="M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z" fill="#f6dfe4" stroke="#ece0bf" stroke-width="110" stroke-linejoin="round"/>
+  <path d="M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z" fill="none" stroke="#c9b98f" stroke-width="3" stroke-dasharray="10 9" transform="translate(0,0)" opacity="0.7"/>
+  <path d="M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z" fill="#f6dfe4" stroke="#e07a95" stroke-width="22" stroke-linejoin="round"/>
+
+  <!-- Tronc cérébral (descend vers le cou) -->
+  <path d="M698,440 C706,520 714,600 716,760 L792,760 C790,600 792,520 796,440 Z" fill="#f2b880" stroke="#b97a45" stroke-width="4"/>
+  <path d="M735,470 C738,560 742,650 744,750" fill="none" stroke="#b97a45" stroke-width="3" opacity="0.5"/>
+
+  <!-- Cervelet (sous l'arrière du cerveau) -->
+  <ellipse cx="850" cy="458" rx="108" ry="64" fill="#c9a7e6" stroke="#7d5aa6" stroke-width="4"/>
+  <g fill="none" stroke="#7d5aa6" stroke-width="3" opacity="0.6">
+    <path d="M752,440 C800,425 900,425 950,440"/>
+    <path d="M748,462 C800,447 905,447 956,462"/>
+    <path d="M755,484 C805,470 900,470 948,484"/>
+    <path d="M772,504 C815,494 890,494 930,504"/>
+  </g>
+
+  <!-- Les quatre lobes du cerveau -->
+  <g clip-path="url(#cv-cerveau)">
+    <polygon points="200,0 625,0 600,200 562,330 478,422 200,520" fill="#f4a6a6"/>
+    <polygon points="625,0 862,0 876,250 790,325 700,315 562,330 600,200" fill="#a8d5a2"/>
+    <polygon points="862,0 1100,0 1100,520 890,430 790,325 876,250" fill="#a7c7f2"/>
+    <polygon points="478,422 562,330 700,315 790,325 890,430 800,520 600,540 450,520" fill="#f6d38b"/>
+    <!-- Plis du cerveau -->
+    <g fill="none" stroke="#5b4a4a" stroke-width="4" stroke-linecap="round" opacity="0.28">
+      <path d="M330,300 C360,260 340,220 380,190 C410,170 400,140 440,130"/>
+      <path d="M360,370 C400,340 380,300 430,280 C470,265 450,220 500,200 C530,190 520,150 560,130"/>
+      <path d="M450,360 C480,330 520,330 520,290 C520,250 560,250 570,210"/>
+      <path d="M660,110 C650,150 690,170 670,210 C655,240 690,270 670,300"/>
+      <path d="M740,110 C760,150 730,190 770,220 C800,240 780,280 820,300"/>
+      <path d="M900,170 C880,210 920,240 900,280 C885,310 920,340 910,380"/>
+      <path d="M560,420 C600,390 650,420 690,380 C720,355 760,380 800,360"/>
+      <path d="M520,445 C570,440 610,460 650,445"/>
+    </g>
+    <!-- Limites des lobes -->
+    <g fill="none" stroke="#5b4a4a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
+      <path d="M625,40 L600,200 L562,330"/>
+      <path d="M478,422 L562,330 L700,315 L790,325 L890,430"/>
+      <path d="M862,90 L876,250 L790,325"/>
+    </g>
+  </g>
+  <path d="M300,380 C255,300 275,165 380,118 C470,72 610,58 722,78 C842,100 942,170 965,268 C985,350 952,410 900,422 C858,428 818,412 782,406 C742,402 722,420 702,450 C680,482 620,492 560,472 C520,457 495,430 480,407 C440,401 380,411 340,406 C316,401 305,392 300,380 Z" fill="none" stroke="#5b4a4a" stroke-width="5" opacity="0.7"/>
+
+  <!-- Zones à toucher, invisibles (?zones=1 pour les voir). Ordre = du fond vers le devant. -->
+  <g fill="transparent" stroke="transparent">
+    <g data-zone="crane" class="zone" clip-path="url(#cv-dehors)"><path class="ring w120" d="M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z" fill="none" stroke-width="120" stroke-linejoin="round"/></g>
+    <g data-zone="meninges" class="zone"><path class="ring w44" d="M282,392 C232,300 252,148 368,98 C468,48 618,38 730,58 C862,80 972,160 992,268 C1008,360 995,455 955,505 C905,545 820,545 788,522 L712,505 C690,505 640,512 562,494 C512,480 482,452 470,428 C430,423 370,432 330,425 C302,418 288,405 282,392 Z" fill="none" stroke-width="44" stroke-linejoin="round"/></g>
+    <g data-zone="tronc" class="zone"><path d="M690,440 C698,520 706,600 708,770 L800,770 C798,600 800,520 804,440 Z"/></g>
+    <g data-zone="cervelet" class="zone"><ellipse cx="850" cy="458" rx="114" ry="70"/></g>
+    <g clip-path="url(#cv-cerveau)">
+      <g data-zone="lobe-frontal" class="zone"><polygon points="200,0 625,0 600,200 562,330 478,422 200,520"/></g>
+      <g data-zone="lobe-parietal" class="zone"><polygon points="625,0 862,0 876,250 790,325 700,315 562,330 600,200"/></g>
+      <g data-zone="lobe-occipital" class="zone"><polygon points="862,0 1100,0 1100,520 890,430 790,325 876,250"/></g>
+      <g data-zone="lobe-temporal" class="zone"><polygon points="478,422 562,330 700,315 790,325 890,430 800,520 600,540 450,520"/></g>
+    </g>
+  </g>
+</g>
+</svg>

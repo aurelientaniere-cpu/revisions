@@ -10,7 +10,7 @@ Modèle complet : `histoire-moyen-age.json`.
 | `category` | matière de l'accueil : `histoire`, `geographie`, `orthographe`, `maths`, `sciences` ou `anglais` (liste `CATEGORIES` dans `js/app.js`) |
 | `subject`, `title`, `emoji`, `color` | affichage de la tuile |
 | `summary` | paragraphes courts lus dans « 🎧 Écouter » (reprendre le résumé à mémoriser de la fiche) |
-| `schema.asset` | optionnel : SVG dont les éléments touchables portent `data-zone="…"` et `class="zone"` |
+| `schema.asset` | optionnel : SVG dont les éléments touchables portent `data-zone="…"` et `class="zone"` ; `schema.on` = fin de la consigne « Touche … » (« sur le dessin » ; par défaut « sur le château ») |
 | `notions` | les notions à maîtriser (ordre = ordre d'apparition) |
 | `cards` | cartes à collectionner |
 | `items` | exercices écrits à la main |
