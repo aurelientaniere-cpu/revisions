@@ -6,6 +6,7 @@
   "subtitle": "Le satellite de la Terre",
   "emoji": "🌙",
   "color": "#4a5bb5",
+  "due": "2026-10-16",
   "source": "Cahier de sciences CM1 : « Chapitre 1 : les mouvements de la Lune » (texte à trous), questions de recherche (satellite naturel, diamètre, durées de rotation et de révolution) et tableau des phases de la Lune.",
   "schema": {
     "asset": "lessons/assets/lune.svg"

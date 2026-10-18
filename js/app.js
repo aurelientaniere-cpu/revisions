@@ -58,7 +58,11 @@ function home() {
   const best = soon ? soon.L : bestLesson(active.length ? active : lessons);
   const toRevise = active.filter((L) => dueCount(L))
     .sort((a, b) => dueCount(b) - dueCount(a) || lessonProgress(a) - lessonProgress(b));
-  const top = evals.length ? evals.map((e) => e.L) : toRevise;
+  // Les maths n'ont pas d'évaluation : une tuile maths (celle qui en a le plus besoin) reste toujours dans la ligne.
+  const maths = lessons.filter((L) => L.category === 'maths');
+  const mathsTile = maths.length ? bestLesson(maths) : null;
+  const others = (evals.length ? evals.map((e) => e.L) : toRevise).filter((L) => L !== mathsTile && L.category !== 'maths');
+  const top = [...others.slice(0, mathsTile ? 2 : 3), mathsTile].filter(Boolean);
 
   screen(
     gear,
@@ -78,8 +82,8 @@ function home() {
         h('div', { class: 'row' },
           best ? h('button', { class: 'primary big', onclick: () => start(best) }, '▶ C’est parti !') : null,
           h('button', { class: 'big', onclick: album }, '🃏 Mon album')))),
-    top.length ? h('h2', {}, evals.length ? '📅 Bientôt une évaluation' : '⭐ À réviser') : null,
-    top.length ? h('div', { class: 'top-lessons' }, top.slice(0, 3).map((L) => lessonTile(L, true))) : null,
+    top.length ? h('h2', {}, evals.length && !mathsTile ? '📅 Bientôt une évaluation' : '⭐ À réviser') : null,
+    top.length ? h('div', { class: 'top-lessons' }, top.map((L) => lessonTile(L, true))) : null,
     h('h2', {}, 'Mes matières'),
     h('div', { class: 'categories' }, CATEGORIES.map(categoryTile)),
   );
