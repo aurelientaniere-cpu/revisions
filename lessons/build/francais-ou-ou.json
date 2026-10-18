@@ -1,0 +1,2896 @@
+{
+ "id": "francais-ou-ou",
+ "category": "orthographe",
+ "subject": "Français",
+ "title": "Écrire ou ou où",
+ "subtitle": "Persée et Méduse",
+ "emoji": "🐍",
+ "color": "#2f8f8a",
+ "source": "Orthographe 7, « Écrire ou ou où » : guide du maître (dictée « Persée et Méduse », exercices d'entrainement, dictées flash), histoire des arts.",
+ "summary": [
+  "Ou, sans accent, marque un choix entre deux choses. Je peux le remplacer par « ou bien » : le héros va-t-il échouer ou réussir ?",
+  "Où, avec un accent grave, indique le plus souvent un lieu : où va-t-il ? Parfois, il indique un moment : au moment où l'avion atterrit.",
+  "L'astuce : j'essaie de dire « ou bien ». Si ça marche, j'écris ou sans accent. Si ça ne marche pas, j'écris où avec un accent.",
+  "Cet été, où iras-tu passer tes vacances, en Espagne ou en Italie ? Je ne peux pas dire « cet été, ou bien iras-tu » : c'est où, avec un accent. Je peux dire « en Espagne ou bien en Italie » : c'est ou, sans accent.",
+  "Les huit mots à savoir écrire : une tête, la mère, une créature, les cheveux, la pierre, regarder, monstrueuse, aussitôt.",
+  "La dictée. Persée doit apporter la tête de Méduse au roi Polydectès ou celui-ci épousera sa mère.",
+  "Méduse est une créature monstrueuse dont les cheveux sont des serpents vivants.",
+  "Il ne faut pas la regarder ou on est aussitôt changé en pierre.",
+  "L'histoire. Le roi Polydectès veut épouser Danaé, la mère de Persée. Pour éloigner Persée, il lui demande la tête de Méduse, une Gorgone.",
+  "Les dieux aident Persée. Athéna lui offre un bouclier qui brille comme un miroir. Hermès lui donne des sandales ailées. Il a aussi un casque pour devenir invisible.",
+  "Sur le chemin, Persée voit des statues : ce sont des animaux et des hommes pétrifiés par le regard de Méduse.",
+  "Persée ne regarde pas Méduse en face : il regarde son reflet dans le bouclier. Il réussit à la vaincre, et le cheval ailé Pégase s'envole.",
+  "C'est un mythe de la Grèce antique, écrit il y a très longtemps, pendant l'Antiquité. La statue de Persée, à Florence, a été faite bien plus tard, au seizième siècle."
+ ],
+ "notions": [
+  {
+   "id": "ou-choix",
+   "term": "ou",
+   "nom": "ou, sans accent",
+   "noAuto": true,
+   "emoji": "🔀",
+   "def": "marque un choix entre deux choses : je peux dire « ou bien »",
+   "tip": "Le héros va-t-il échouer ou réussir ? Échouer ou bien réussir : ça marche !"
+  },
+  {
+   "id": "tete",
+   "term": "tête",
+   "nom": "une tête",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🙂",
+   "def": "le haut du corps, avec les yeux, le nez et la bouche",
+   "spell": "t[ê]te",
+   "tip": "Un accent circonflexe sur le E, comme un petit chapeau sur la tête."
+  },
+  {
+   "id": "ou-lieu",
+   "term": "où",
+   "nom": "où, avec un accent",
+   "noAuto": true,
+   "emoji": "📍",
+   "def": "indique un lieu, et parfois un moment : je ne peux pas dire « ou bien »",
+   "tip": "Où va-t-il ? Les montagnes où habite Méduse. Au moment où il arrive."
+  },
+  {
+   "id": "mere",
+   "term": "mère",
+   "nom": "la mère",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "👩‍👦",
+   "def": "la maman",
+   "spell": "m[è]re",
+   "tip": "Un accent grave sur le E, comme dans père et frère."
+  },
+  {
+   "id": "creature",
+   "term": "créature",
+   "nom": "une créature",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🐉",
+   "def": "un être vivant, souvent étrange ou imaginaire",
+   "spell": "cr[é]at[ure]",
+   "tip": "Cré, avec un accent aigu. Et U, R, E à la fin, comme nature."
+  },
+  {
+   "id": "ou-astuce",
+   "term": "l'astuce du ou bien",
+   "nom": "l'astuce du ou bien",
+   "noAuto": true,
+   "emoji": "💡",
+   "def": "j'essaie de dire « ou bien » à la place : si ça marche, j'écris ou sans accent ; sinon, j'écris où avec un accent",
+   "tip": "En Espagne ou bien en Italie : ça marche, donc ou sans accent."
+  },
+  {
+   "id": "cheveux",
+   "term": "cheveux",
+   "nom": "les cheveux",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "💇",
+   "def": "les poils qui poussent sur la tête",
+   "spell": "chev[eux]",
+   "tip": "Un cheveu, des cheveux : au pluriel, on ajoute un X, pas un S."
+  },
+  {
+   "id": "pierre",
+   "term": "pierre",
+   "nom": "la pierre",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "🪨",
+   "def": "matière très dure, comme les rochers",
+   "spell": "pi[err]e",
+   "tip": "Deux R, et un E à la fin : p, i, e, r, r, e."
+  },
+  {
+   "id": "regarder",
+   "term": "regarder",
+   "nom": "regarder",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "👀",
+   "def": "poser les yeux sur quelque chose",
+   "spell": "regar[d][er]",
+   "tip": "Le D de « un regard », puis E, R à la fin. Après « il ne faut pas », le verbe finit par E, R."
+  },
+  {
+   "id": "et-est",
+   "term": "est ou et",
+   "nom": "est ou et",
+   "noAuto": true,
+   "emoji": "⚖️",
+   "def": "est, avec un S et un T, c'est le verbe être ; et, c'est le petit mot qui relie : des conseils et des objets",
+   "tip": "Si je peux dire « était », j'écris E, S, T : Méduse était une créature."
+  },
+  {
+   "id": "monstrueuse",
+   "term": "monstrueuse",
+   "nom": "monstrueuse",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "👹",
+   "def": "qui ressemble à un monstre, qui fait peur",
+   "spell": "mon[s]tru[euse]",
+   "tip": "Un S caché : mon, s, tru. Au féminin, ça finit par E, U, S, E, comme heureuse."
+  },
+  {
+   "id": "aussitot",
+   "term": "aussitôt",
+   "nom": "aussitôt",
+   "group": "ortho",
+   "noAuto": true,
+   "emoji": "⚡",
+   "def": "tout de suite, au même moment",
+   "spell": "au[ss]it[ô]t",
+   "tip": "Deux S, un chapeau sur le O, et un T muet à la fin."
+  },
+  {
+   "id": "persee",
+   "term": "Persée",
+   "nom": "Persée",
+   "group": "mythe",
+   "emoji": "🦸",
+   "def": "héros grec qui part combattre la Gorgone Méduse",
+   "indice": "Avec un bouclier, des sandales ailées et un casque magique, il part pour sauver sa mère."
+  },
+  {
+   "id": "meduse",
+   "term": "Méduse",
+   "nom": "Méduse",
+   "group": "mythe",
+   "emoji": "🐍",
+   "def": "une Gorgone : celui qui croise son regard est changé en pierre",
+   "indice": "Ses cheveux sifflent et se tortillent : ce sont des serpents !"
+  },
+  {
+   "id": "polydectes",
+   "term": "Polydectès",
+   "nom": "le roi Polydectès",
+   "group": "mythe",
+   "emoji": "👑",
+   "def": "roi qui envoie Persée chercher la tête de Méduse",
+   "indice": "Il veut épouser Danaé, alors il éloigne son fils très loin."
+  },
+  {
+   "id": "athena",
+   "term": "Athéna",
+   "nom": "la déesse Athéna",
+   "group": "mythe",
+   "emoji": "🦉",
+   "def": "déesse qui aide Persée et lui offre un bouclier",
+   "indice": "Elle donne au héros un objet qui brille comme un miroir."
+  },
+  {
+   "id": "hermes",
+   "term": "Hermès",
+   "nom": "le dieu Hermès",
+   "group": "mythe",
+   "emoji": "🪽",
+   "def": "dieu messager, qui donne à Persée des sandales ailées",
+   "indice": "Grâce à son cadeau, Persée peut voler jusqu'au pays des Gorgones."
+  },
+  {
+   "id": "pegase",
+   "term": "Pégase",
+   "nom": "Pégase",
+   "group": "mythe",
+   "emoji": "🐴",
+   "def": "le cheval ailé de la mythologie grecque",
+   "indice": "À la fin de l'histoire, il s'envole d'un battement d'ailes."
+  },
+  {
+   "id": "petrifie",
+   "term": "pétrifié",
+   "nom": "pétrifié",
+   "group": "mythe",
+   "emoji": "😨",
+   "def": "changé en pierre ; aussi : paralysé par la peur",
+   "indice": "Devant le gros chien qui aboie, Léo ne peut plus bouger du tout."
+  },
+  {
+   "id": "bouclier",
+   "term": "bouclier",
+   "nom": "un bouclier",
+   "group": "mythe",
+   "emoji": "🛡️",
+   "def": "plaque solide qu'on tient au bras pour se protéger des coups",
+   "indice": "Persée regarde dedans comme dans un miroir, pour ne pas voir Méduse en face."
+  },
+  {
+   "id": "antiquite",
+   "term": "Antiquité",
+   "nom": "l'Antiquité",
+   "noAuto": true,
+   "emoji": "🏛️",
+   "def": "période très ancienne de l'histoire, celle des Grecs et des Romains"
+  }
+ ],
+ "cards": [
+  {
+   "id": "pm-tete",
+   "name": "Les cheveux de Méduse",
+   "emoji": "🐍",
+   "color": "#2f9e6a",
+   "notions": [
+    "tete",
+    "cheveux",
+    "meduse"
+   ],
+   "image": "cheveux",
+   "desc": "Une tête, des cheveux… mais ce sont des serpents !"
+  },
+  {
+   "id": "pm-mere",
+   "name": "La mère de Persée",
+   "emoji": "👩‍👦",
+   "color": "#d65d8a",
+   "notions": [
+    "mere",
+    "polydectes"
+   ],
+   "image": "mere",
+   "desc": "Persée protège sa mère, Danaé, du roi Polydectès."
+  },
+  {
+   "id": "pm-creature",
+   "name": "Une créature monstrueuse",
+   "emoji": "🐉",
+   "color": "#6c5ce7",
+   "notions": [
+    "creature",
+    "monstrueuse"
+   ],
+   "image": "meduse",
+   "desc": "Méduse est une Gorgone : une créature monstrueuse."
+  },
+  {
+   "id": "pm-pierre",
+   "name": "Le jardin de pierre",
+   "emoji": "🪨",
+   "color": "#8a8a8a",
+   "notions": [
+    "pierre",
+    "petrifie",
+    "aussitot"
+   ],
+   "image": "pierre",
+   "desc": "Un regard, et aussitôt : changé en pierre !"
+  },
+  {
+   "id": "pm-miroir",
+   "name": "Regarder sans regarder",
+   "emoji": "🛡️",
+   "color": "#c0703c",
+   "notions": [
+    "regarder",
+    "bouclier",
+    "athena"
+   ],
+   "image": "regarder",
+   "desc": "Persée regarde Méduse dans son bouclier, comme dans un miroir."
+  },
+  {
+   "id": "pm-choix",
+   "name": "Ou bien ?",
+   "emoji": "🔀",
+   "color": "#5b7fd6",
+   "notions": [
+    "ou-choix",
+    "ou-astuce"
+   ],
+   "desc": "Le melon ou bien la pastèque ? Si je peux dire ou bien : ou, sans accent."
+  },
+  {
+   "id": "pm-lieu",
+   "name": "Où, le lieu",
+   "emoji": "📍",
+   "color": "#d6735b",
+   "notions": [
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "desc": "Où vas-tu ? Les montagnes où habite Méduse : où, avec un accent."
+  },
+  {
+   "id": "pm-dieux",
+   "name": "Les cadeaux des dieux",
+   "emoji": "🪽",
+   "color": "#e0a92a",
+   "notions": [
+    "hermes",
+    "athena",
+    "persee"
+   ],
+   "image": "hermes",
+   "desc": "Des sandales ailées, un bouclier, un casque : les dieux aident Persée."
+  },
+  {
+   "id": "pm-pegase",
+   "name": "Pégase",
+   "emoji": "🐴",
+   "color": "#3fa3c4",
+   "notions": [
+    "pegase",
+    "persee"
+   ],
+   "image": "pegase",
+   "desc": "Le cheval ailé s'envole à la fin de l'histoire."
+  },
+  {
+   "id": "pm-est",
+   "name": "Est ou et",
+   "emoji": "⚖️",
+   "color": "#8e5bd6",
+   "notions": [
+    "et-est"
+   ],
+   "desc": "Méduse était une créature ? Alors j'écris est."
+  },
+  {
+   "id": "pm-legende",
+   "name": "Persée et Méduse",
+   "emoji": "🏛️",
+   "color": "#f5b700",
+   "notions": "all",
+   "level": 3,
+   "legend": true,
+   "image": "persee",
+   "desc": "Tu connais toute la leçon : ou et où, les mots, et le mythe de Persée !"
+  }
+ ],
+ "items": [
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "tete"
+   ],
+   "word": "tête",
+   "say": "Persée doit apporter la tête de Méduse.",
+   "id": "francais-ou-ou#7acb3bd7"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "tete"
+   ],
+   "word": "tête",
+   "say": "Persée doit apporter la tête de Méduse.",
+   "id": "francais-ou-ou#78f4965f"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "tete"
+   ],
+   "word": "tête",
+   "say": "Persée doit apporter la tête de Méduse.",
+   "id": "francais-ou-ou#5d66716f"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "mere"
+   ],
+   "word": "mère",
+   "say": "Persée veut protéger sa mère.",
+   "id": "francais-ou-ou#c3da22ac"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "mere"
+   ],
+   "word": "mère",
+   "say": "Persée veut protéger sa mère.",
+   "id": "francais-ou-ou#0c316216"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "mere"
+   ],
+   "word": "mère",
+   "say": "Persée veut protéger sa mère.",
+   "id": "francais-ou-ou#7c1559fa"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "creature"
+   ],
+   "word": "créature",
+   "say": "Méduse est une créature.",
+   "id": "francais-ou-ou#d7a7829f"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "creature"
+   ],
+   "word": "créature",
+   "say": "Méduse est une créature.",
+   "id": "francais-ou-ou#651b1ac7"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "creature"
+   ],
+   "word": "créature",
+   "say": "Méduse est une créature.",
+   "id": "francais-ou-ou#10560a97"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "cheveux"
+   ],
+   "word": "cheveux",
+   "say": "Ses cheveux sont des serpents.",
+   "id": "francais-ou-ou#869fe52b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "cheveux"
+   ],
+   "word": "cheveux",
+   "say": "Ses cheveux sont des serpents.",
+   "id": "francais-ou-ou#9931c22b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "cheveux"
+   ],
+   "word": "cheveux",
+   "say": "Ses cheveux sont des serpents.",
+   "id": "francais-ou-ou#0fa5f7eb"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "pierre"
+   ],
+   "word": "pierre",
+   "say": "On est changé en pierre.",
+   "id": "francais-ou-ou#99a401d6"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "pierre"
+   ],
+   "word": "pierre",
+   "say": "On est changé en pierre.",
+   "id": "francais-ou-ou#a277b4f8"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "pierre"
+   ],
+   "word": "pierre",
+   "say": "On est changé en pierre.",
+   "id": "francais-ou-ou#2535c64c"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "regarder"
+   ],
+   "word": "regarder",
+   "say": "Il ne faut pas la regarder.",
+   "id": "francais-ou-ou#3296a457"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "regarder"
+   ],
+   "word": "regarder",
+   "say": "Il ne faut pas la regarder.",
+   "id": "francais-ou-ou#f6dedbdf"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "regarder"
+   ],
+   "word": "regarder",
+   "say": "Il ne faut pas la regarder.",
+   "id": "francais-ou-ou#329bf2ef"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "monstrueuse"
+   ],
+   "word": "monstrueuse",
+   "say": "Une créature monstrueuse.",
+   "id": "francais-ou-ou#9fc698b7"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "monstrueuse"
+   ],
+   "word": "monstrueuse",
+   "say": "Une créature monstrueuse.",
+   "id": "francais-ou-ou#9ccbbabf"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "monstrueuse"
+   ],
+   "word": "monstrueuse",
+   "say": "Une créature monstrueuse.",
+   "id": "francais-ou-ou#dedeb2cf"
+  },
+  {
+   "type": "ecrire",
+   "mode": "copie",
+   "diff": 1.5,
+   "notions": [
+    "aussitot"
+   ],
+   "word": "aussitôt",
+   "say": "On est aussitôt changé en pierre.",
+   "id": "francais-ou-ou#d8077af7"
+  },
+  {
+   "type": "ecrire",
+   "mode": "memo",
+   "diff": 2,
+   "notions": [
+    "aussitot"
+   ],
+   "word": "aussitôt",
+   "say": "On est aussitôt changé en pierre.",
+   "id": "francais-ou-ou#eb6699ff"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "aussitot"
+   ],
+   "word": "aussitôt",
+   "say": "On est aussitôt changé en pierre.",
+   "id": "francais-ou-ou#f010f50f"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 2.5,
+   "notions": [
+    "tete"
+   ],
+   "word": "têtes",
+   "say": "Les statues ont des têtes de pierre.",
+   "hint": "Plusieurs têtes : c'est un nom au pluriel.",
+   "id": "francais-ou-ou#7519d1de"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 2.5,
+   "notions": [
+    "creature"
+   ],
+   "word": "créatures",
+   "say": "Les Gorgones sont des créatures.",
+   "hint": "Les Gorgones sont plusieurs : un S au nom.",
+   "id": "francais-ou-ou#4588ed36"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 2.5,
+   "notions": [
+    "pierre"
+   ],
+   "word": "pierres",
+   "say": "Persée ramasse des pierres.",
+   "hint": "Des pierres : c'est un nom au pluriel.",
+   "id": "francais-ou-ou#bbbc3b3b"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "cheveux"
+   ],
+   "word": "cheveu",
+   "say": "Un cheveu tombe sur son épaule.",
+   "hint": "Un seul cheveu : pas de X.",
+   "id": "francais-ou-ou#76f7ffc1"
+  },
+  {
+   "type": "ecrire",
+   "mode": "dictee",
+   "diff": 3,
+   "notions": [
+    "monstrueuse"
+   ],
+   "word": "monstrueux",
+   "say": "Un serpent monstrueux.",
+   "hint": "Serpent est masculin : pas de E, et un X à la fin.",
+   "id": "francais-ou-ou#51c64c71"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "tete"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "tête",
+    "tète",
+    "tete",
+    "têtte",
+    "taite",
+    "têt"
+   ],
+   "hint": "Le E porte un petit chapeau.",
+   "explain": "On écrit : tête, avec un accent circonflexe.",
+   "id": "francais-ou-ou#3930ea12"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "mere"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "mère",
+    "mére",
+    "mèr",
+    "merre",
+    "mèrre",
+    "mêre"
+   ],
+   "hint": "Comme dans père et frère.",
+   "explain": "On écrit : mère, avec un accent grave.",
+   "id": "francais-ou-ou#ffc4eea6"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "creature"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "créature",
+    "créatur",
+    "créture",
+    "kréature",
+    "créatture",
+    "créaturre"
+   ],
+   "hint": "Ça finit comme nature.",
+   "explain": "On écrit : créature.",
+   "id": "francais-ou-ou#8c695376"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "cheveux"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "cheveux",
+    "cheveus",
+    "chevex",
+    "chveux",
+    "cheuveux",
+    "cheveuxs"
+   ],
+   "hint": "Au pluriel, ce mot ne prend pas de S.",
+   "explain": "On écrit : cheveux, avec un X.",
+   "id": "francais-ou-ou#b384d04d"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "pierre"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "pierre",
+    "pière",
+    "pierr",
+    "piere",
+    "pyerre",
+    "pierrre"
+   ],
+   "hint": "Compte bien les R.",
+   "explain": "On écrit : pierre, avec deux R.",
+   "id": "francais-ou-ou#9cb61bdf"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "regarder"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "regarder",
+    "reguarder",
+    "regardr",
+    "rgarder",
+    "regardere",
+    "regarrder"
+   ],
+   "hint": "Pense à un regard, puis à la fin des verbes comme chanter.",
+   "explain": "On écrit : regarder.",
+   "id": "francais-ou-ou#a0832d06"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "monstrueuse"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "monstrueuse",
+    "monstreuse",
+    "monstrueuze",
+    "montrueuse",
+    "monstruese",
+    "monstrueusse"
+   ],
+   "hint": "Il y a un S caché après mon.",
+   "explain": "On écrit : monstrueuse.",
+   "id": "francais-ou-ou#af466649"
+  },
+  {
+   "type": "qcm",
+   "spell": true,
+   "diff": 2,
+   "notions": [
+    "aussitot"
+   ],
+   "q": "Quel mot est bien écrit ?",
+   "choices": [
+    "aussitôt",
+    "aussitot",
+    "ausitôt",
+    "aussitô",
+    "ossitôt",
+    "aussitôtt"
+   ],
+   "hint": "Deux S, et un chapeau sur le O.",
+   "explain": "On écrit : aussitôt.",
+   "id": "francais-ou-ou#91619e70"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "tete",
+    "mere",
+    "ou-choix"
+   ],
+   "text": [
+    "Persée [doit|dois|doi] [apporter|apporté|aporter] la [tête|tète|tete] de Méduse au roi Polydectès [ou|où] celui-ci épousera sa [mère|mére|mer]."
+   ],
+   "id": "francais-ou-ou#2a36c0ac"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "creature",
+    "monstrueuse",
+    "cheveux",
+    "et-est"
+   ],
+   "text": [
+    "Méduse [est|et|ai] une [créature|créatur|créture] [monstrueuse|monstrueux|monstreuse] dont les [cheveux|cheveus|cheveu] sont des serpents [vivants|vivant|vivent]."
+   ],
+   "id": "francais-ou-ou#cb42a257"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "regarder",
+    "aussitot",
+    "pierre",
+    "ou-choix",
+    "et-est"
+   ],
+   "text": [
+    "Il ne faut pas la [regarder|regardé|regardez] [ou|où] on [est|et|ai] [aussitôt|aussitot|ausitôt] changé en [pierre|pière|pierres]."
+   ],
+   "id": "francais-ou-ou#b680b402"
+  },
+  {
+   "type": "trous",
+   "diff": 3,
+   "notions": [
+    "tete",
+    "mere",
+    "creature",
+    "cheveux",
+    "pierre",
+    "regarder",
+    "monstrueuse",
+    "aussitot"
+   ],
+   "q": "Toute la dictée ! Choisis le mot bien écrit.",
+   "text": [
+    "Persée [doit|dois|doi] [apporter|apporté|aporter] la [tête|tète|tete] de Méduse au roi Polydectès [ou|où] celui-ci épousera sa [mère|mére|mer].",
+    "Méduse [est|et|ai] une [créature|créatur|créture] [monstrueuse|monstrueux|monstreuse] dont les [cheveux|cheveus|cheveu] sont des serpents [vivants|vivant|vivent].",
+    "Il ne faut pas la [regarder|regardé|regardez] [ou|où] on [est|et|ai] [aussitôt|aussitot|ausitôt] changé en [pierre|pière|pierres]."
+   ],
+   "id": "francais-ou-ou#785578f0"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "creature",
+    "tete",
+    "monstrueuse"
+   ],
+   "q": "Choisis le mot bien écrit.",
+   "text": [
+    "Des serpents [terribles|terrible|térribles].",
+    "Une [créature|créatur|créture] pétrifiée.",
+    "Une [tête|tète|tete] [monstrueuse|monstrueux|monstreuse]."
+   ],
+   "id": "francais-ou-ou#8db3566b"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "tete",
+    "regarder",
+    "ou-choix"
+   ],
+   "text": [
+    "Persée doit couper la [tête|tète|tete] de Méduse sans la [regarder|regardé|regardez] [ou|où] il sera pétrifié."
+   ],
+   "id": "francais-ou-ou#a4bede47"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "ou-choix",
+    "ou-lieu"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "Préfères-tu le melon [ou|où] la pastèque ?",
+    "[Où|Ou] vas-tu ?",
+    "C'est le parc [où|ou] j'ai perdu mon manteau."
+   ],
+   "id": "francais-ou-ou#56147c1d"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "ou-choix",
+    "ou-lieu"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "J'aimerais un jeu vidéo [ou|où] des rollers.",
+    "Il fait froid, mets un pull [ou|où] un gilet.",
+    "La rue [où|ou] j'habite est en travaux."
+   ],
+   "id": "francais-ou-ou#1ae1d77d"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "ou-choix",
+    "ou-lieu"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "Ton frère [ou|où] ta sœur t'accompagnera à l'école.",
+    "[Où|Ou] est passé le chat ?",
+    "On prendra le métro [ou|où] le bus ?"
+   ],
+   "id": "francais-ou-ou#3bc5f87e"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "ou-choix",
+    "ou-lieu"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "C'est la maison [où|ou] je suis née.",
+    "Vaut-il mieux prendre des douches [ou|où] des bains ?",
+    "Sophie est dans sa chambre [ou|où] dans le jardin."
+   ],
+   "id": "francais-ou-ou#ed3d31e2"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "ou-choix",
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "[Où|Ou] préférez-vous aller ? À la plage [ou|où] à la montagne ?",
+    "Je ne sais pas si c'est un merle [ou|où] une pie."
+   ],
+   "id": "francais-ou-ou#ec338d67"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "ou-choix",
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "Dépêche-toi [ou|où] tu arriveras en retard.",
+    "C'est la région d'[où|ou] viennent les voisins.",
+    "Je l'appellerai ce soir [ou|où] demain."
+   ],
+   "id": "francais-ou-ou#efd59ab8"
+  },
+  {
+   "type": "trous",
+   "diff": 3,
+   "notions": [
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "À l'heure [où|ou] le soleil se couche, cet endroit est magnifique.",
+    "Au rythme [où|ou] tu vas, tu vas prendre du retard."
+   ],
+   "id": "francais-ou-ou#99da42e7"
+  },
+  {
+   "type": "trous",
+   "diff": 3,
+   "notions": [
+    "ou-choix",
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "Au moment [où|ou] ton avion a atterri, faisait-il jour [ou|où] nuit ?",
+    "Cet été, [où|ou] iras-tu, en Espagne [ou|où] en Italie ?"
+   ],
+   "id": "francais-ou-ou#c75130f6"
+  },
+  {
+   "type": "trous",
+   "diff": 2.5,
+   "notions": [
+    "ou-choix",
+    "ou-lieu",
+    "persee"
+   ],
+   "q": "Ou ou où ? Essaie de dire « ou bien ».",
+   "text": [
+    "Persée rejoint les montagnes [où|ou] habite Méduse.",
+    "Il regarde dans le bouclier [où|ou] il voit son reflet.",
+    "Le héros va-t-il échouer [ou|où] réussir ?"
+   ],
+   "id": "francais-ou-ou#b7506e19"
+  },
+  {
+   "type": "trous",
+   "diff": 2,
+   "notions": [
+    "et-est"
+   ],
+   "q": "Est ou et ? Si tu peux dire « était », c'est est.",
+   "text": [
+    "Méduse [est|et] une créature [et|est] ses cheveux sont des serpents.",
+    "Persée [est|et] courageux [et|est] rusé."
+   ],
+   "id": "francais-ou-ou#9fa4db4e"
+  },
+  {
+   "type": "placer",
+   "layout": "tri",
+   "diff": 2,
+   "sample": 8,
+   "notions": [
+    "ou-choix",
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Ou bien où ? Range chaque groupe de mots.",
+   "explain": "Si je peux dire « ou bien », j'écris ou sans accent. Sinon, c'est où, avec un accent : un lieu ou un moment.",
+   "targets": [
+    {
+     "id": "ou",
+     "label": "ou (ou bien)",
+     "emoji": "🔀",
+     "color": "#5b7fd6"
+    },
+    {
+     "id": "où",
+     "label": "où (lieu, moment)",
+     "emoji": "📍",
+     "color": "#d6735b"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "le melon … la pastèque",
+     "target": "ou"
+    },
+    {
+     "text": "un pull … un gilet",
+     "target": "ou"
+    },
+    {
+     "text": "ce soir … demain",
+     "target": "ou"
+    },
+    {
+     "text": "un merle … une pie",
+     "target": "ou"
+    },
+    {
+     "text": "échouer … réussir",
+     "target": "ou"
+    },
+    {
+     "text": "le métro … le bus",
+     "target": "ou"
+    },
+    {
+     "text": "jour … nuit",
+     "target": "ou"
+    },
+    {
+     "text": "en Espagne … en Italie",
+     "target": "ou"
+    },
+    {
+     "text": "… vas-tu ?",
+     "target": "où"
+    },
+    {
+     "text": "la rue … j'habite",
+     "target": "où"
+    },
+    {
+     "text": "le parc … j'ai joué",
+     "target": "où"
+    },
+    {
+     "text": "la maison … je suis née",
+     "target": "où"
+    },
+    {
+     "text": "au moment … il arrive",
+     "target": "où"
+    },
+    {
+     "text": "les montagnes … habite Méduse",
+     "target": "où"
+    },
+    {
+     "text": "… est passé le chat ?",
+     "target": "où"
+    },
+    {
+     "text": "la ville … il vit",
+     "target": "où"
+    }
+   ],
+   "id": "francais-ou-ou#76251523"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ou-astuce",
+    "ou-choix"
+   ],
+   "q": "Comment savoir s'il faut écrire « ou », sans accent ?",
+   "choices": [
+    "Je peux le remplacer par « ou bien »",
+    "Il parle d'un lieu",
+    "Il est toujours au début d'une question",
+    "Je peux le remplacer par « et »"
+   ],
+   "hint": "Essaie de dire un autre petit mot à sa place.",
+   "explain": "Le melon ou bien la pastèque : ça marche, donc ou sans accent.",
+   "id": "francais-ou-ou#49ce3fe8"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ou-choix"
+   ],
+   "q": "Par quoi puis-je remplacer « ou », sans accent ?",
+   "choices": [
+    "ou bien",
+    "là-bas",
+    "et puis",
+    "quand"
+   ],
+   "hint": "C'est un choix entre deux choses.",
+   "explain": "Un pull ou bien un gilet : on peut dire ou bien.",
+   "id": "francais-ou-ou#d5dc22e8"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Dans quelle phrase faut-il écrire « où », avec un accent ?",
+   "choices": [
+    "C'est la maison … je suis née.",
+    "Tu veux du melon … de la pastèque ?",
+    "Mets un pull … un gilet.",
+    "Je viendrai ce soir … demain."
+   ],
+   "hint": "Essaie « ou bien » dans chaque phrase : où est-ce que ça ne marche pas ?",
+   "explain": "La maison où je suis née : on parle d'un lieu, on ne peut pas dire ou bien.",
+   "id": "francais-ou-ou#13bb4fb5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ou-choix",
+    "ou-astuce"
+   ],
+   "q": "Dans quelle phrase faut-il écrire « ou », sans accent ?",
+   "choices": [
+    "Préfères-tu le chat … le chien ?",
+    "… vas-tu ?",
+    "La ville … j'habite est grande.",
+    "Le parc … j'ai joué."
+   ],
+   "hint": "Cherche la phrase où il y a un choix.",
+   "explain": "Le chat ou bien le chien : c'est un choix, donc ou sans accent.",
+   "id": "francais-ou-ou#92bbbdec"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "ou-lieu"
+   ],
+   "q": "« Où », avec un accent, indique le plus souvent…",
+   "choices": [
+    "un lieu",
+    "un choix",
+    "une couleur",
+    "un nombre"
+   ],
+   "hint": "Où vas-tu ? Où habite Méduse ?",
+   "explain": "Où indique le plus souvent un lieu : où vas-tu ?",
+   "id": "francais-ou-ou#b2ef0cb8"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "ou-lieu"
+   ],
+   "q": "Dans « au moment où ton avion a atterri », le mot « où » indique…",
+   "choices": [
+    "un moment",
+    "un choix",
+    "une personne",
+    "une couleur"
+   ],
+   "hint": "Regarde le mot juste avant : au moment…",
+   "explain": "Où peut aussi indiquer un moment, un temps.",
+   "id": "francais-ou-ou#d5b0886a"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "ou-choix",
+    "ou-astuce"
+   ],
+   "q": "Pourquoi écrit-on « ou » sans accent dans « Persée doit apporter la tête de Méduse ou celui-ci épousera sa mère » ?",
+   "choices": [
+    "Je peux dire « ou bien »",
+    "Ça parle d'un lieu",
+    "C'est une question",
+    "Il est après un nom de roi"
+   ],
+   "hint": "Essaie de dire la phrase avec « ou bien ».",
+   "explain": "Ou bien celui-ci épousera sa mère : ça marche, donc ou sans accent.",
+   "id": "francais-ou-ou#393abeca"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "ou-lieu",
+    "ou-astuce"
+   ],
+   "q": "Dans « les montagnes où habite Méduse », pourquoi « où » prend-il un accent ?",
+   "choices": [
+    "Il indique un lieu : je ne peux pas dire « ou bien »",
+    "C'est un choix entre deux montagnes",
+    "Méduse est un nom propre",
+    "Il est après un mot au pluriel"
+   ],
+   "hint": "Essaie : les montagnes ou bien habite Méduse… Ça marche ?",
+   "explain": "On ne peut pas dire ou bien : où indique le lieu où vit Méduse.",
+   "id": "francais-ou-ou#694a6de5"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "et-est"
+   ],
+   "q": "Comment savoir s'il faut écrire « est », avec un S et un T ?",
+   "choices": [
+    "Je peux le remplacer par « était »",
+    "Je peux le remplacer par « et puis »",
+    "Il est toujours au début de la phrase",
+    "Il est toujours après un nom propre"
+   ],
+   "hint": "Essaie de dire la phrase au passé.",
+   "explain": "Méduse était une créature : je peux dire était, donc j'écris est.",
+   "id": "francais-ou-ou#d829e77b"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "ou-lieu"
+   ],
+   "q": "Où, qui indique un lieu, porte un accent grave.",
+   "answer": true,
+   "explain": "Où vas-tu ? Le où du lieu a un accent grave.",
+   "id": "francais-ou-ou#1e383528"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "ou-astuce",
+    "ou-lieu"
+   ],
+   "q": "On peut remplacer où, le mot du lieu, par « ou bien ».",
+   "answer": false,
+   "explain": "Non : où vas-tu, on ne peut pas dire ou bien vas-tu.",
+   "id": "francais-ou-ou#803809df"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "ou-choix"
+   ],
+   "q": "Ou, sans accent, marque un choix entre deux choses.",
+   "answer": true,
+   "explain": "Le melon ou la pastèque : on choisit.",
+   "id": "francais-ou-ou#6354b3cc"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "ou-lieu"
+   ],
+   "q": "Dans « Où vas-tu ? », on écrit où avec un accent.",
+   "answer": true,
+   "explain": "On demande un lieu : où, avec un accent.",
+   "id": "francais-ou-ou#a4bc691b"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "cheveux"
+   ],
+   "q": "« Cheveux » s'écrit avec un S à la fin.",
+   "answer": false,
+   "explain": "Cheveux prend un X : des cheveux.",
+   "id": "francais-ou-ou#0970c068"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "pierre"
+   ],
+   "q": "« Pierre » s'écrit avec deux R.",
+   "answer": true,
+   "explain": "P, i, e, r, r, e.",
+   "id": "francais-ou-ou#2132cc5f"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "aussitot"
+   ],
+   "q": "« Aussitôt » a un accent circonflexe sur le O.",
+   "answer": true,
+   "explain": "Aussitôt : un petit chapeau sur le O.",
+   "id": "francais-ou-ou#6ee38b87"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "tete"
+   ],
+   "q": "« Tête » s'écrit avec un accent grave.",
+   "answer": false,
+   "explain": "Tête prend un accent circonflexe, comme un petit chapeau.",
+   "id": "francais-ou-ou#21b302f5"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "tete",
+    "mere",
+    "ou-choix"
+   ],
+   "q": "Remets la phrase de la dictée dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Persée doit apporter",
+     "target": "1"
+    },
+    {
+     "text": "la tête de Méduse au roi Polydectès",
+     "target": "2"
+    },
+    {
+     "text": "ou celui-ci épousera sa mère.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-ou-ou#394df978"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "creature",
+    "monstrueuse",
+    "cheveux"
+   ],
+   "q": "Remets la phrase de la dictée dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Méduse est",
+     "target": "1"
+    },
+    {
+     "text": "une créature monstrueuse",
+     "target": "2"
+    },
+    {
+     "text": "dont les cheveux sont des serpents vivants.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-ou-ou#1f5993cb"
+  },
+  {
+   "type": "placer",
+   "layout": "phrase",
+   "diff": 2,
+   "notions": [
+    "regarder",
+    "aussitot",
+    "pierre"
+   ],
+   "q": "Remets la phrase de la dictée dans l'ordre.",
+   "targets": [
+    {
+     "id": "1"
+    },
+    {
+     "id": "2"
+    },
+    {
+     "id": "3"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Il ne faut pas la regarder",
+     "target": "1"
+    },
+    {
+     "text": "ou on est aussitôt",
+     "target": "2"
+    },
+    {
+     "text": "changé en pierre.",
+     "target": "3"
+    }
+   ],
+   "id": "francais-ou-ou#a52388a6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "polydectes"
+   ],
+   "q": "Qui demande à Persée d'apporter la tête de Méduse ?",
+   "choices": [
+    "Le roi Polydectès",
+    "La déesse Athéna",
+    "Le dieu Hermès",
+    "Danaé, sa mère"
+   ],
+   "hint": "Relis la première phrase de la dictée.",
+   "explain": "C'est le roi Polydectès.",
+   "id": "francais-ou-ou#2f69edff"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "polydectes",
+    "mere"
+   ],
+   "q": "Pourquoi le roi veut-il éloigner Persée ?",
+   "choices": [
+    "Il veut épouser sa mère, Danaé",
+    "Il a peur de Méduse",
+    "Persée a volé sa couronne",
+    "Il veut lui offrir un cheval"
+   ],
+   "hint": "Relis la fin de la première phrase de la dictée.",
+   "explain": "Polydectès veut épouser Danaé, mais Persée protège sa mère.",
+   "id": "francais-ou-ou#18a5c83b"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "meduse",
+    "petrifie"
+   ],
+   "q": "Que se passe-t-il si on regarde Méduse ?",
+   "choices": [
+    "On est changé en pierre",
+    "On s'endort",
+    "On devient invisible",
+    "On se met à voler"
+   ],
+   "hint": "Relis la dernière phrase de la dictée.",
+   "explain": "On est aussitôt changé en pierre : on est pétrifié.",
+   "id": "francais-ou-ou#e5622f0e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "bouclier",
+    "regarder"
+   ],
+   "q": "Comment Persée fait-il pour ne pas regarder Méduse ?",
+   "choices": [
+    "Il regarde son reflet dans le bouclier",
+    "Il ferme les yeux et devine",
+    "Il met des lunettes",
+    "Il l'attaque la nuit"
+   ],
+   "hint": "Son bouclier brille comme un miroir.",
+   "explain": "Il regarde Méduse dans son bouclier, comme dans un miroir.",
+   "id": "francais-ou-ou#e82a7d23"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "hermes"
+   ],
+   "q": "Quel cadeau Hermès donne-t-il à Persée ?",
+   "choices": [
+    "Des sandales ailées",
+    "Un bouclier",
+    "Un cheval",
+    "Une couronne"
+   ],
+   "hint": "Grâce à ce cadeau, Persée peut voler.",
+   "explain": "Hermès lui donne des sandales ailées.",
+   "id": "francais-ou-ou#5076c5ca"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "athena",
+    "bouclier"
+   ],
+   "q": "Quel cadeau la déesse Athéna offre-t-elle à Persée ?",
+   "choices": [
+    "Un bouclier qui brille comme un miroir",
+    "Des sandales ailées",
+    "Un arc et des flèches",
+    "Une cape rouge"
+   ],
+   "hint": "Persée s'en sert pour voir Méduse sans la regarder.",
+   "explain": "Athéna lui offre un bouclier.",
+   "id": "francais-ou-ou#eab154cb"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "persee"
+   ],
+   "q": "Que porte Persée pour devenir invisible ?",
+   "choices": [
+    "Un casque",
+    "Une cape",
+    "Un masque",
+    "Une couronne"
+   ],
+   "hint": "Il le met sur sa tête.",
+   "explain": "Il se coiffe de son casque pour être invisible.",
+   "id": "francais-ou-ou#a1fe112b"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "pegase"
+   ],
+   "q": "Quel animal s'envole à la fin de l'histoire ?",
+   "choices": [
+    "Pégase, le cheval ailé",
+    "Un dragon",
+    "Un aigle géant",
+    "Une chouette"
+   ],
+   "hint": "C'est un cheval… pas comme les autres.",
+   "explain": "Pégase, le cheval ailé, s'envole.",
+   "id": "francais-ou-ou#b54513cb"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "petrifie",
+    "pierre"
+   ],
+   "q": "Que voit Persée sur le chemin des Gorgones ?",
+   "choices": [
+    "Des statues : des animaux et des hommes pétrifiés",
+    "Des arbres en or",
+    "Des châteaux forts",
+    "Des bateaux"
+   ],
+   "hint": "Ils ont croisé le regard de Méduse.",
+   "explain": "Ce sont des animaux et des hommes changés en pierre.",
+   "id": "francais-ou-ou#5c584741"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "persee"
+   ],
+   "q": "Qui est le personnage principal de l'histoire ?",
+   "choices": [
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Pégase"
+   ],
+   "hint": "C'est le héros.",
+   "explain": "Persée est le héros de l'histoire.",
+   "id": "francais-ou-ou#2abe0ee7"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "persee",
+    "antiquite"
+   ],
+   "q": "De quel pays vient ce mythe ?",
+   "choices": [
+    "La Grèce",
+    "L'Italie",
+    "L'Égypte",
+    "La France"
+   ],
+   "hint": "Pense aux dieux Athéna et Hermès.",
+   "explain": "C'est un mythe grec.",
+   "id": "francais-ou-ou#5f4e0273"
+  },
+  {
+   "type": "qcm",
+   "diff": 2.5,
+   "notions": [
+    "antiquite"
+   ],
+   "q": "À quelle période de l'histoire ce mythe a-t-il été écrit ?",
+   "choices": [
+    "L'Antiquité",
+    "Le Moyen Âge",
+    "Les Temps modernes",
+    "L'Époque contemporaine"
+   ],
+   "hint": "C'est la période des Grecs et des Romains.",
+   "explain": "Le mythe date de l'Antiquité, il y a presque trois mille ans.",
+   "id": "francais-ou-ou#608f177c"
+  },
+  {
+   "type": "qcm",
+   "diff": 3,
+   "notions": [
+    "persee",
+    "antiquite"
+   ],
+   "q": "La statue de Persée, à Florence, a été faite…",
+   "choices": [
+    "bien plus tard, au seizième siècle",
+    "en même temps que le mythe",
+    "l'année dernière",
+    "avant le mythe"
+   ],
+   "hint": "Le mythe est très, très ancien.",
+   "explain": "Le mythe date de l'Antiquité ; la statue, du seizième siècle.",
+   "id": "francais-ou-ou#ce98ac3f"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "persee",
+    "meduse"
+   ],
+   "q": "Persée regarde Méduse droit dans les yeux.",
+   "answer": false,
+   "explain": "Il ne la regarde pas en face : il regarde son reflet dans le bouclier.",
+   "id": "francais-ou-ou#ed68c444"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "hermes"
+   ],
+   "q": "Hermès prête à Persée des sandales ailées.",
+   "answer": true,
+   "explain": "Avec elles, Persée peut voler.",
+   "id": "francais-ou-ou#3750b06c"
+  },
+  {
+   "type": "vf",
+   "diff": 2.5,
+   "notions": [
+    "petrifie"
+   ],
+   "q": "Être pétrifié de peur, c'est ne plus pouvoir bouger.",
+   "answer": true,
+   "explain": "On est comme changé en pierre par la peur.",
+   "id": "francais-ou-ou#232c7ab3"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "persee"
+   ],
+   "q": "De quoi parle-t-on ? Avec un bouclier, des sandales ailées et un casque magique, il part pour sauver sa mère.",
+   "choices": [
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Athéna",
+    "Hermès",
+    "Pégase",
+    "Pétrifié",
+    "Bouclier"
+   ],
+   "explain": "Persée : héros grec qui part combattre la Gorgone Méduse.",
+   "id": "francais-ou-ou#4b90aef3"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "persee"
+   ],
+   "q": "Que veut dire « Persée » ?",
+   "choices": [
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Le cheval ailé de la mythologie grecque",
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "Persée : héros grec qui part combattre la Gorgone Méduse.",
+   "id": "francais-ou-ou#55be7b3d"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "persee"
+   ],
+   "q": "« Persée » veut dire : héros grec qui part combattre la Gorgone Méduse.",
+   "explain": "Persée : héros grec qui part combattre la Gorgone Méduse.",
+   "id": "francais-ou-ou#5c855126"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "persee"
+   ],
+   "q": "« Persée » veut dire : une Gorgone : celui qui croise son regard est changé en pierre.",
+   "explain": "Persée : héros grec qui part combattre la Gorgone Méduse.",
+   "id": "francais-ou-ou#f392dd8e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "meduse"
+   ],
+   "q": "De quoi parle-t-on ? Ses cheveux sifflent et se tortillent : ce sont des serpents !",
+   "choices": [
+    "Méduse",
+    "Persée",
+    "Polydectès",
+    "Athéna",
+    "Hermès",
+    "Pégase",
+    "Pétrifié",
+    "Bouclier"
+   ],
+   "explain": "Méduse : une Gorgone : celui qui croise son regard est changé en pierre.",
+   "id": "francais-ou-ou#47c991b2"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "meduse"
+   ],
+   "q": "Que veut dire « Méduse » ?",
+   "choices": [
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Le cheval ailé de la mythologie grecque",
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "Méduse : une Gorgone : celui qui croise son regard est changé en pierre.",
+   "id": "francais-ou-ou#874c35d4"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "meduse"
+   ],
+   "q": "« Méduse » veut dire : une Gorgone : celui qui croise son regard est changé en pierre.",
+   "explain": "Méduse : une Gorgone : celui qui croise son regard est changé en pierre.",
+   "id": "francais-ou-ou#ac654676"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "meduse"
+   ],
+   "q": "« Méduse » veut dire : roi qui envoie Persée chercher la tête de Méduse.",
+   "explain": "Méduse : une Gorgone : celui qui croise son regard est changé en pierre.",
+   "id": "francais-ou-ou#7fa9efe2"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "polydectes"
+   ],
+   "q": "De quoi parle-t-on ? Il veut épouser Danaé, alors il éloigne son fils très loin.",
+   "choices": [
+    "Polydectès",
+    "Persée",
+    "Méduse",
+    "Athéna",
+    "Hermès",
+    "Pégase",
+    "Pétrifié",
+    "Bouclier"
+   ],
+   "explain": "Le roi Polydectès : roi qui envoie Persée chercher la tête de Méduse.",
+   "id": "francais-ou-ou#4283291c"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "polydectes"
+   ],
+   "q": "Que veut dire « Polydectès » ?",
+   "choices": [
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Le cheval ailé de la mythologie grecque",
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "Le roi Polydectès : roi qui envoie Persée chercher la tête de Méduse.",
+   "id": "francais-ou-ou#73e113ca"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "polydectes"
+   ],
+   "q": "« Polydectès » veut dire : roi qui envoie Persée chercher la tête de Méduse.",
+   "explain": "Le roi Polydectès : roi qui envoie Persée chercher la tête de Méduse.",
+   "id": "francais-ou-ou#ee55b641"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "polydectes"
+   ],
+   "q": "« Polydectès » veut dire : déesse qui aide Persée et lui offre un bouclier.",
+   "explain": "Le roi Polydectès : roi qui envoie Persée chercher la tête de Méduse.",
+   "id": "francais-ou-ou#aaf2cea6"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "athena"
+   ],
+   "q": "De quoi parle-t-on ? Elle donne au héros un objet qui brille comme un miroir.",
+   "choices": [
+    "Athéna",
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Hermès",
+    "Pégase",
+    "Pétrifié",
+    "Bouclier"
+   ],
+   "explain": "La déesse Athéna : déesse qui aide Persée et lui offre un bouclier.",
+   "id": "francais-ou-ou#321184ad"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "athena"
+   ],
+   "q": "Que veut dire « Athéna » ?",
+   "choices": [
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Le cheval ailé de la mythologie grecque",
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "La déesse Athéna : déesse qui aide Persée et lui offre un bouclier.",
+   "id": "francais-ou-ou#6669ad8e"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "athena"
+   ],
+   "q": "« Athéna » veut dire : déesse qui aide Persée et lui offre un bouclier.",
+   "explain": "La déesse Athéna : déesse qui aide Persée et lui offre un bouclier.",
+   "id": "francais-ou-ou#957cd83f"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "athena"
+   ],
+   "q": "« Athéna » veut dire : dieu messager, qui donne à Persée des sandales ailées.",
+   "explain": "La déesse Athéna : déesse qui aide Persée et lui offre un bouclier.",
+   "id": "francais-ou-ou#c07436ee"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "hermes"
+   ],
+   "q": "De quoi parle-t-on ? Grâce à son cadeau, Persée peut voler jusqu'au pays des Gorgones.",
+   "choices": [
+    "Hermès",
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Athéna",
+    "Pégase",
+    "Pétrifié",
+    "Bouclier"
+   ],
+   "explain": "Le dieu Hermès : dieu messager, qui donne à Persée des sandales ailées.",
+   "id": "francais-ou-ou#4be481e0"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "hermes"
+   ],
+   "q": "Que veut dire « Hermès » ?",
+   "choices": [
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Le cheval ailé de la mythologie grecque",
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "Le dieu Hermès : dieu messager, qui donne à Persée des sandales ailées.",
+   "id": "francais-ou-ou#3fcb0590"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "hermes"
+   ],
+   "q": "« Hermès » veut dire : dieu messager, qui donne à Persée des sandales ailées.",
+   "explain": "Le dieu Hermès : dieu messager, qui donne à Persée des sandales ailées.",
+   "id": "francais-ou-ou#d982b39b"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "hermes"
+   ],
+   "q": "« Hermès » veut dire : le cheval ailé de la mythologie grecque.",
+   "explain": "Le dieu Hermès : dieu messager, qui donne à Persée des sandales ailées.",
+   "id": "francais-ou-ou#c5c5aaab"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "pegase"
+   ],
+   "q": "De quoi parle-t-on ? À la fin de l'histoire, il s'envole d'un battement d'ailes.",
+   "choices": [
+    "Pégase",
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Athéna",
+    "Hermès",
+    "Pétrifié",
+    "Bouclier"
+   ],
+   "explain": "Pégase : le cheval ailé de la mythologie grecque.",
+   "id": "francais-ou-ou#52f201ca"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "pegase"
+   ],
+   "q": "Que veut dire « Pégase » ?",
+   "choices": [
+    "Le cheval ailé de la mythologie grecque",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "Pégase : le cheval ailé de la mythologie grecque.",
+   "id": "francais-ou-ou#5a2e76b8"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "pegase"
+   ],
+   "q": "« Pégase » veut dire : le cheval ailé de la mythologie grecque.",
+   "explain": "Pégase : le cheval ailé de la mythologie grecque.",
+   "id": "francais-ou-ou#84fba38e"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "pegase"
+   ],
+   "q": "« Pégase » veut dire : changé en pierre ; aussi : paralysé par la peur.",
+   "explain": "Pégase : le cheval ailé de la mythologie grecque.",
+   "id": "francais-ou-ou#3c92cd7d"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "petrifie"
+   ],
+   "q": "De quoi parle-t-on ? Devant le gros chien qui aboie, Léo ne peut plus bouger du tout.",
+   "choices": [
+    "Pétrifié",
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Athéna",
+    "Hermès",
+    "Pégase",
+    "Bouclier"
+   ],
+   "explain": "Pétrifié : changé en pierre ; aussi : paralysé par la peur.",
+   "id": "francais-ou-ou#18b60c94"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "petrifie"
+   ],
+   "q": "Que veut dire « pétrifié » ?",
+   "choices": [
+    "Changé en pierre ; aussi : paralysé par la peur",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Le cheval ailé de la mythologie grecque",
+    "Plaque solide qu'on tient au bras pour se protéger des coups"
+   ],
+   "explain": "Pétrifié : changé en pierre ; aussi : paralysé par la peur.",
+   "id": "francais-ou-ou#90b76dac"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "petrifie"
+   ],
+   "q": "« Pétrifié » veut dire : changé en pierre ; aussi : paralysé par la peur.",
+   "explain": "Pétrifié : changé en pierre ; aussi : paralysé par la peur.",
+   "id": "francais-ou-ou#aac5e936"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "petrifie"
+   ],
+   "q": "« Pétrifié » veut dire : plaque solide qu'on tient au bras pour se protéger des coups.",
+   "explain": "Pétrifié : changé en pierre ; aussi : paralysé par la peur.",
+   "id": "francais-ou-ou#02fd8539"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
+    "bouclier"
+   ],
+   "q": "De quoi parle-t-on ? Persée regarde dedans comme dans un miroir, pour ne pas voir Méduse en face.",
+   "choices": [
+    "Bouclier",
+    "Persée",
+    "Méduse",
+    "Polydectès",
+    "Athéna",
+    "Hermès",
+    "Pégase",
+    "Pétrifié"
+   ],
+   "explain": "Un bouclier : plaque solide qu'on tient au bras pour se protéger des coups.",
+   "id": "francais-ou-ou#682c6f9e"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "bouclier"
+   ],
+   "q": "Que veut dire « bouclier » ?",
+   "choices": [
+    "Plaque solide qu'on tient au bras pour se protéger des coups",
+    "Héros grec qui part combattre la Gorgone Méduse",
+    "Une Gorgone : celui qui croise son regard est changé en pierre",
+    "Roi qui envoie Persée chercher la tête de Méduse",
+    "Déesse qui aide Persée et lui offre un bouclier",
+    "Dieu messager, qui donne à Persée des sandales ailées",
+    "Le cheval ailé de la mythologie grecque",
+    "Changé en pierre ; aussi : paralysé par la peur"
+   ],
+   "explain": "Un bouclier : plaque solide qu'on tient au bras pour se protéger des coups.",
+   "id": "francais-ou-ou#e475a8b9"
+  },
+  {
+   "type": "vf",
+   "diff": 1,
+   "review": true,
+   "answer": true,
+   "notions": [
+    "bouclier"
+   ],
+   "q": "« Bouclier » veut dire : plaque solide qu'on tient au bras pour se protéger des coups.",
+   "explain": "Un bouclier : plaque solide qu'on tient au bras pour se protéger des coups.",
+   "id": "francais-ou-ou#8839f99b"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "review": true,
+   "answer": false,
+   "notions": [
+    "bouclier"
+   ],
+   "q": "« Bouclier » veut dire : héros grec qui part combattre la Gorgone Méduse.",
+   "explain": "Un bouclier : plaque solide qu'on tient au bras pour se protéger des coups.",
+   "id": "francais-ou-ou#3a5fe2b1"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "persee",
+    "meduse",
+    "polydectes"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "persee",
+     "label": "Héros grec qui part combattre la Gorgone Méduse"
+    },
+    {
+     "id": "meduse",
+     "label": "Une Gorgone : celui qui croise son regard est changé en pierre"
+    },
+    {
+     "id": "polydectes",
+     "label": "Roi qui envoie Persée chercher la tête de Méduse"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Persée",
+     "target": "persee"
+    },
+    {
+     "text": "Méduse",
+     "target": "meduse"
+    },
+    {
+     "text": "Polydectès",
+     "target": "polydectes"
+    }
+   ],
+   "id": "francais-ou-ou#035cb172"
+  },
+  {
+   "type": "placer",
+   "layout": "relie",
+   "diff": 2,
+   "review": true,
+   "notions": [
+    "athena",
+    "hermes",
+    "pegase"
+   ],
+   "q": "Relie chaque mot à sa définition.",
+   "targets": [
+    {
+     "id": "athena",
+     "label": "Déesse qui aide Persée et lui offre un bouclier"
+    },
+    {
+     "id": "hermes",
+     "label": "Dieu messager, qui donne à Persée des sandales ailées"
+    },
+    {
+     "id": "pegase",
+     "label": "Le cheval ailé de la mythologie grecque"
+    }
+   ],
+   "tokens": [
+    {
+     "text": "Athéna",
+     "target": "athena"
+    },
+    {
+     "text": "Hermès",
+     "target": "hermes"
+    },
+    {
+     "text": "Pégase",
+     "target": "pegase"
+    }
+   ],
+   "id": "francais-ou-ou#0784043c"
+  }
+ ],
+ "images": {
+  "meduse": {
+   "prompt": "a cute friendly cartoon gorgon girl from greek myth with a smile, her hair made of small funny smiling green snakes, wearing a greek tunic, sitting on a rock near a cave, playful not scary",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "cheveux": {
+   "prompt": "close-up portrait of a cute cartoon gorgon girl laughing, her hair made of many small curly smiling green snakes wearing tiny bows, soft colors, playful not scary",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "mere": {
+   "prompt": "a gentle greek mother in a long tunic hugging her young son on a sunny beach by the sea, a small wooden boat behind them, ancient greece",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "pierre": {
+   "prompt": "a quiet garden among olive trees full of grey stone statues, all made of grey stone: a stone cat, a stone goat, a stone owl and a stone man with a surprised face, everything grey like rock, ancient greece, no living people",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "regarder": {
+   "prompt": "a young greek hero with a bronze helmet holding up a shiny round bronze shield, in the shield we see the reflection of a cute smiling girl whose hair is made of little green snakes, the hero turns his back to her",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  },
+  "hermes": {
+   "prompt": "a pair of brown leather ancient greek sandals, each heel has a small pair of white feathered bird wings, the sandals float above soft white clouds in a blue sky",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 11
+  },
+  "pegase": {
+   "prompt": "a beautiful white horse with large feathered wings flying in the sky over a calm sea and small rocky greek islands with white houses at sunrise, nothing else",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  },
+  "persee": {
+   "prompt": "a brave young greek hero boy with a bronze crested helmet, a red tunic and a round shiny bronze shield, standing on a hill above the sea, an ancient greek temple behind",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 44
+  },
+  "bouclier": {
+   "prompt": "a round shiny bronze greek shield polished like a mirror, reflecting a blue sky with clouds, lying on a wooden table",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "athena": {
+   "prompt": "a kind greek goddess with a helmet and a little owl on her shoulder, handing a shiny round shield to a young hero, temple columns behind",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 22
+  },
+  "creature": {
+   "prompt": "a cute imaginary forest creature, half lion and half bird with small wings and big round friendly eyes, sitting in a meadow of flowers",
+   "w": 768,
+   "h": 768,
+   "out_w": 600,
+   "seed": 33
+  }
+ },
+ "speech": [
+  "Antiquité",
+  "Athéna",
+  "Athéna lui offre un bouclier.",
+  "Au moment où ton avion a atterri, faisait-il jour ou nuit ?",
+  "Au pluriel, ce mot ne prend pas de S.",
+  "Au rythme où tu vas, tu vas prendre du retard.",
+  "Aussitôt",
+  "Aussitôt : tout de suite, au même moment.",
+  "Aussitôt : un petit chapeau sur le O.",
+  "Avec elles, Persée peut voler.",
+  "Bouclier",
+  "C'est la maison où je suis née.",
+  "C'est la maison … je suis née.",
+  "C'est la période des Grecs et des Romains.",
+  "C'est la région d'où viennent les voisins.",
+  "C'est le héros.",
+  "C'est le parc où j'ai perdu mon manteau.",
+  "C'est le roi Polydectès.",
+  "C'est un cheval… pas comme les autres.",
+  "C'est un choix entre deux choses.",
+  "C'est un choix entre deux montagnes",
+  "C'est un mythe de la Grèce antique, écrit il y a très longtemps, pendant l'Antiquité. La statue de Persée, à Florence, a été faite bien plus tard, au seizième siècle.",
+  "C'est un mythe grec.",
+  "C'est une question",
+  "Ce sont des animaux et des hommes changés en pierre.",
+  "Cet été, où iras-tu passer tes vacances, en Espagne ou en Italie ? Je ne peux pas dire « cet été, ou bien iras-tu » : c'est où, avec un accent. Je peux dire « en Espagne ou bien en Italie » : c'est ou, sans accent.",
+  "Cet été, où iras-tu, en Espagne ou en Italie ?",
+  "Changé en pierre ; aussi : paralysé par la peur",
+  "Cherche la phrase où il y a un choix.",
+  "Cheveux",
+  "Cheveux prend un X : des cheveux.",
+  "Choisis le mot bien écrit.",
+  "Comme dans père et frère.",
+  "Comment Persée fait-il pour ne pas regarder Méduse ?",
+  "Comment savoir s'il faut écrire « est », avec un S et un T ?",
+  "Comment savoir s'il faut écrire « ou », sans accent ?",
+  "Compte bien les R.",
+  "Cré, avec un accent aigu. Et U, R, E à la fin, comme nature.",
+  "Créature",
+  "Danaé, sa mère",
+  "Dans quelle phrase faut-il écrire « ou », sans accent ?",
+  "Dans quelle phrase faut-il écrire « où », avec un accent ?",
+  "Dans « au moment où ton avion a atterri », le mot « où » indique…",
+  "Dans « les montagnes où habite Méduse », pourquoi « où » prend-il un accent ?",
+  "De quel pays vient ce mythe ?",
+  "De quoi parle-t-on ? Avec un bouclier, des sandales ailées et un casque magique, il part pour sauver sa mère.",
+  "De quoi parle-t-on ? Devant le gros chien qui aboie, Léo ne peut plus bouger du tout.",
+  "De quoi parle-t-on ? Elle donne au héros un objet qui brille comme un miroir.",
+  "De quoi parle-t-on ? Grâce à son cadeau, Persée peut voler jusqu'au pays des Gorgones.",
+  "De quoi parle-t-on ? Il veut épouser Danaé, alors il éloigne son fils très loin.",
+  "De quoi parle-t-on ? Persée regarde dedans comme dans un miroir, pour ne pas voir Méduse en face.",
+  "De quoi parle-t-on ? Ses cheveux sifflent et se tortillent : ce sont des serpents !",
+  "De quoi parle-t-on ? À la fin de l'histoire, il s'envole d'un battement d'ailes.",
+  "Des arbres en or",
+  "Des bateaux",
+  "Des châteaux forts",
+  "Des pierres : c'est un nom au pluriel.",
+  "Des sandales ailées",
+  "Des sandales ailées, un bouclier, un casque : les dieux aident Persée.",
+  "Des serpents terribles.",
+  "Des statues : des animaux et des hommes pétrifiés",
+  "Deux R, et un E à la fin : p, i, e, r, r, e.",
+  "Deux S, et un chapeau sur le O.",
+  "Deux S, un chapeau sur le O, et un T muet à la fin.",
+  "Dieu messager, qui donne à Persée des sandales ailées",
+  "Déesse qui aide Persée et lui offre un bouclier",
+  "Dépêche-toi ou tu arriveras en retard.",
+  "En Espagne ou bien en Italie : ça marche, donc ou sans accent.",
+  "Essaie : les montagnes ou bien habite Méduse… Ça marche ?",
+  "Essaie de dire la phrase au passé.",
+  "Essaie de dire la phrase avec « ou bien ».",
+  "Essaie de dire un autre petit mot à sa place.",
+  "Essaie « ou bien » dans chaque phrase : où est-ce que ça ne marche pas ?",
+  "Est ou et",
+  "Est ou et : est, avec un S et un T, c'est le verbe être ; et, c'est le petit mot qui relie : des conseils et des objets.",
+  "Est ou et ? Si tu peux dire « était », c'est est.",
+  "Grâce à ce cadeau, Persée peut voler.",
+  "Hermès",
+  "Hermès lui donne des sandales ailées.",
+  "Héros grec qui part combattre la Gorgone Méduse",
+  "Il a peur de Méduse",
+  "Il est après un mot au pluriel",
+  "Il est après un nom de roi",
+  "Il est toujours après un nom propre",
+  "Il est toujours au début d'une question",
+  "Il est toujours au début de la phrase",
+  "Il fait froid, mets un pull ou un gilet.",
+  "Il ferme les yeux et devine",
+  "Il indique un lieu : je ne peux pas dire « ou bien »",
+  "Il l'attaque la nuit",
+  "Il le met sur sa tête.",
+  "Il met des lunettes",
+  "Il ne faut pas la regarder",
+  "Il ne faut pas la regarder ou on est aussitôt changé en pierre.",
+  "Il ne faut pas la regarder.",
+  "Il ne la regarde pas en face : il regarde son reflet dans le bouclier.",
+  "Il parle d'un lieu",
+  "Il regarde Méduse dans son bouclier, comme dans un miroir.",
+  "Il regarde dans le bouclier où il voit son reflet.",
+  "Il regarde son reflet dans le bouclier",
+  "Il se coiffe de son casque pour être invisible.",
+  "Il veut lui offrir un cheval",
+  "Il veut épouser sa mère, Danaé",
+  "Il y a un S caché après mon.",
+  "Ils ont croisé le regard de Méduse.",
+  "J'aimerais un jeu vidéo ou des rollers.",
+  "Je l'appellerai ce soir ou demain.",
+  "Je ne sais pas si c'est un merle ou une pie.",
+  "Je peux dire « ou bien »",
+  "Je peux le remplacer par « et puis »",
+  "Je peux le remplacer par « et »",
+  "Je peux le remplacer par « ou bien »",
+  "Je peux le remplacer par « était »",
+  "Je viendrai ce soir … demain.",
+  "L'Antiquité",
+  "L'Antiquité : période très ancienne de l'histoire, celle des Grecs et des Romains.",
+  "L'Italie",
+  "L'astuce : j'essaie de dire « ou bien ». Si ça marche, j'écris ou sans accent. Si ça ne marche pas, j'écris où avec un accent.",
+  "L'astuce du ou bien",
+  "L'astuce du ou bien : j'essaie de dire « ou bien » à la place : si ça marche, j'écris ou sans accent ; sinon, j'écris où avec un accent.",
+  "L'histoire. Le roi Polydectès veut épouser Danaé, la mère de Persée. Pour éloigner Persée, il lui demande la tête de Méduse, une Gorgone.",
+  "L'Égypte",
+  "L'Époque contemporaine",
+  "La France",
+  "La Grèce",
+  "La dictée. Persée doit apporter la tête de Méduse au roi Polydectès ou celui-ci épousera sa mère.",
+  "La déesse Athéna",
+  "La déesse Athéna : déesse qui aide Persée et lui offre un bouclier.",
+  "La maison où je suis née : on parle d'un lieu, on ne peut pas dire ou bien.",
+  "La mère : la maman.",
+  "La mère de Persée",
+  "La pierre : matière très dure, comme les rochers.",
+  "La rue où j'habite est en travaux.",
+  "La statue de Persée, à Florence, a été faite…",
+  "La ville … j'habite est grande.",
+  "Le D de « un regard », puis E, R à la fin. Après « il ne faut pas », le verbe finit par E, R.",
+  "Le E porte un petit chapeau.",
+  "Le Moyen Âge",
+  "Le chat ou bien le chien : c'est un choix, donc ou sans accent.",
+  "Le cheval ailé de la mythologie grecque",
+  "Le cheval ailé s'envole à la fin de l'histoire.",
+  "Le dieu Hermès",
+  "Le dieu Hermès : dieu messager, qui donne à Persée des sandales ailées.",
+  "Le héros va-t-il échouer ou réussir ?",
+  "Le héros va-t-il échouer ou réussir ? Échouer ou bien réussir : ça marche !",
+  "Le jardin de pierre",
+  "Le melon ou bien la pastèque : ça marche, donc ou sans accent.",
+  "Le melon ou bien la pastèque ? Si je peux dire ou bien : ou, sans accent.",
+  "Le melon ou la pastèque : on choisit.",
+  "Le mythe date de l'Antiquité ; la statue, du seizième siècle.",
+  "Le mythe date de l'Antiquité, il y a presque trois mille ans.",
+  "Le mythe est très, très ancien.",
+  "Le parc … j'ai joué.",
+  "Le roi Polydectès",
+  "Le roi Polydectès : roi qui envoie Persée chercher la tête de Méduse.",
+  "Les Gorgones sont des créatures.",
+  "Les Gorgones sont plusieurs : un S au nom.",
+  "Les Temps modernes",
+  "Les cadeaux des dieux",
+  "Les cheveux : les poils qui poussent sur la tête.",
+  "Les cheveux de Méduse",
+  "Les dieux aident Persée. Athéna lui offre un bouclier qui brille comme un miroir. Hermès lui donne des sandales ailées. Il a aussi un casque pour devenir invisible.",
+  "Les huit mots à savoir écrire : une tête, la mère, une créature, les cheveux, la pierre, regarder, monstrueuse, aussitôt.",
+  "Les statues ont des têtes de pierre.",
+  "Mets un pull … un gilet.",
+  "Monstrueuse",
+  "Monstrueuse : qui ressemble à un monstre, qui fait peur.",
+  "Mère",
+  "Méduse",
+  "Méduse : une Gorgone : celui qui croise son regard est changé en pierre.",
+  "Méduse est",
+  "Méduse est un nom propre",
+  "Méduse est une Gorgone : une créature monstrueuse.",
+  "Méduse est une créature et ses cheveux sont des serpents.",
+  "Méduse est une créature monstrueuse dont les cheveux sont des serpents vivants.",
+  "Méduse est une créature.",
+  "Méduse était une créature : je peux dire était, donc j'écris est.",
+  "Méduse était une créature ? Alors j'écris est.",
+  "Non : où vas-tu, on ne peut pas dire ou bien vas-tu.",
+  "On demande un lieu : où, avec un accent.",
+  "On devient invisible",
+  "On est aussitôt changé en pierre : on est pétrifié.",
+  "On est aussitôt changé en pierre.",
+  "On est changé en pierre",
+  "On est changé en pierre.",
+  "On est comme changé en pierre par la peur.",
+  "On ne peut pas dire ou bien : où indique le lieu où vit Méduse.",
+  "On prendra le métro ou le bus ?",
+  "On s'endort",
+  "On se met à voler",
+  "On écrit : aussitôt.",
+  "On écrit : cheveux, avec un X.",
+  "On écrit : créature.",
+  "On écrit : monstrueuse.",
+  "On écrit : mère, avec un accent grave.",
+  "On écrit : pierre, avec deux R.",
+  "On écrit : regarder.",
+  "On écrit : tête, avec un accent circonflexe.",
+  "Ou",
+  "Ou bien ?",
+  "Ou bien celui-ci épousera sa mère : ça marche, donc ou sans accent.",
+  "Ou bien où ? Range chaque groupe de mots.",
+  "Ou ou où ? Essaie de dire « ou bien ».",
+  "Ou, sans accent : marque un choix entre deux choses : je peux dire « ou bien ».",
+  "Ou, sans accent, marque un choix entre deux choses. Je peux le remplacer par « ou bien » : le héros va-t-il échouer ou réussir ?",
+  "Où",
+  "Où est passé le chat ?",
+  "Où indique le plus souvent un lieu : où vas-tu ?",
+  "Où peut aussi indiquer un moment, un temps.",
+  "Où préférez-vous aller ? À la plage ou à la montagne ?",
+  "Où va-t-il ? Les montagnes où habite Méduse. Au moment où il arrive.",
+  "Où vas-tu ?",
+  "Où vas-tu ? Le où du lieu a un accent grave.",
+  "Où vas-tu ? Les montagnes où habite Méduse : où, avec un accent.",
+  "Où vas-tu ? Où habite Méduse ?",
+  "Où, avec un accent : indique un lieu, et parfois un moment : je ne peux pas dire « ou bien ».",
+  "Où, avec un accent grave, indique le plus souvent un lieu : où va-t-il ? Parfois, il indique un moment : au moment où l'avion atterrit.",
+  "Où, le lieu",
+  "P, i, e, r, r, e.",
+  "Par quoi puis-je remplacer « ou », sans accent ?",
+  "Pense aux dieux Athéna et Hermès.",
+  "Pense à un regard, puis à la fin des verbes comme chanter.",
+  "Persée",
+  "Persée : héros grec qui part combattre la Gorgone Méduse.",
+  "Persée a volé sa couronne",
+  "Persée doit apporter",
+  "Persée doit apporter la tête de Méduse au roi Polydectès ou celui-ci épousera sa mère.",
+  "Persée doit apporter la tête de Méduse.",
+  "Persée doit couper la tête de Méduse sans la regarder ou il sera pétrifié.",
+  "Persée est courageux et rusé.",
+  "Persée est le héros de l'histoire.",
+  "Persée et Méduse",
+  "Persée ne regarde pas Méduse en face : il regarde son reflet dans le bouclier. Il réussit à la vaincre, et le cheval ailé Pégase s'envole.",
+  "Persée protège sa mère, Danaé, du roi Polydectès.",
+  "Persée ramasse des pierres.",
+  "Persée regarde Méduse dans son bouclier, comme dans un miroir.",
+  "Persée rejoint les montagnes où habite Méduse.",
+  "Persée s'en sert pour voir Méduse sans la regarder.",
+  "Persée veut protéger sa mère.",
+  "Pierre",
+  "Plaque solide qu'on tient au bras pour se protéger des coups",
+  "Plusieurs têtes : c'est un nom au pluriel.",
+  "Polydectès",
+  "Polydectès veut épouser Danaé, mais Persée protège sa mère.",
+  "Pourquoi le roi veut-il éloigner Persée ?",
+  "Pourquoi écrit-on « ou » sans accent dans « Persée doit apporter la tête de Méduse ou celui-ci épousera sa mère » ?",
+  "Préfères-tu le chat … le chien ?",
+  "Préfères-tu le melon ou la pastèque ?",
+  "Pégase",
+  "Pégase : le cheval ailé de la mythologie grecque.",
+  "Pégase, le cheval ailé",
+  "Pégase, le cheval ailé, s'envole.",
+  "Pétrifié",
+  "Pétrifié : changé en pierre ; aussi : paralysé par la peur.",
+  "Que porte Persée pour devenir invisible ?",
+  "Que se passe-t-il si on regarde Méduse ?",
+  "Que veut dire « Athéna » ?",
+  "Que veut dire « Hermès » ?",
+  "Que veut dire « Méduse » ?",
+  "Que veut dire « Persée » ?",
+  "Que veut dire « Polydectès » ?",
+  "Que veut dire « Pégase » ?",
+  "Que veut dire « bouclier » ?",
+  "Que veut dire « pétrifié » ?",
+  "Que voit Persée sur le chemin des Gorgones ?",
+  "Quel animal s'envole à la fin de l'histoire ?",
+  "Quel cadeau Hermès donne-t-il à Persée ?",
+  "Quel cadeau la déesse Athéna offre-t-elle à Persée ?",
+  "Quel mot est bien écrit ?",
+  "Qui demande à Persée d'apporter la tête de Méduse ?",
+  "Qui est le personnage principal de l'histoire ?",
+  "Regarde le mot juste avant : au moment…",
+  "Regarder",
+  "Regarder : poser les yeux sur quelque chose.",
+  "Regarder sans regarder",
+  "Relie chaque mot à sa définition.",
+  "Relis la dernière phrase de la dictée.",
+  "Relis la fin de la première phrase de la dictée.",
+  "Relis la première phrase de la dictée.",
+  "Remets la phrase de la dictée dans l'ordre.",
+  "Roi qui envoie Persée chercher la tête de Méduse",
+  "Serpent est masculin : pas de E, et un X à la fin.",
+  "Ses cheveux sont des serpents.",
+  "Si je peux dire « ou bien », j'écris ou sans accent. Sinon, c'est où, avec un accent : un lieu ou un moment.",
+  "Si je peux dire « était », j'écris E, S, T : Méduse était une créature.",
+  "Son bouclier brille comme un miroir.",
+  "Sophie est dans sa chambre ou dans le jardin.",
+  "Sur le chemin, Persée voit des statues : ce sont des animaux et des hommes pétrifiés par le regard de Méduse.",
+  "Ton frère ou ta sœur t'accompagnera à l'école.",
+  "Toute la dictée ! Choisis le mot bien écrit.",
+  "Tu connais toute la leçon : ou et où, les mots, et le mythe de Persée !",
+  "Tu veux du melon … de la pastèque ?",
+  "Tête",
+  "Tête prend un accent circonflexe, comme un petit chapeau.",
+  "Un S caché : mon, s, tru. Au féminin, ça finit par E, U, S, E, comme heureuse.",
+  "Un accent circonflexe sur le E, comme un petit chapeau sur la tête.",
+  "Un accent grave sur le E, comme dans père et frère.",
+  "Un aigle géant",
+  "Un arc et des flèches",
+  "Un bouclier",
+  "Un bouclier : plaque solide qu'on tient au bras pour se protéger des coups.",
+  "Un bouclier qui brille comme un miroir",
+  "Un casque",
+  "Un cheval",
+  "Un cheveu tombe sur son épaule.",
+  "Un cheveu, des cheveux : au pluriel, on ajoute un X, pas un S.",
+  "Un dragon",
+  "Un masque",
+  "Un pull ou bien un gilet : on peut dire ou bien.",
+  "Un regard, et aussitôt : changé en pierre !",
+  "Un serpent monstrueux.",
+  "Un seul cheveu : pas de X.",
+  "Une Gorgone : celui qui croise son regard est changé en pierre",
+  "Une cape",
+  "Une cape rouge",
+  "Une chouette",
+  "Une couronne",
+  "Une créature : un être vivant, souvent étrange ou imaginaire.",
+  "Une créature monstrueuse",
+  "Une créature monstrueuse.",
+  "Une créature pétrifiée.",
+  "Une tête : le haut du corps, avec les yeux, le nez et la bouche.",
+  "Une tête monstrueuse.",
+  "Une tête, des cheveux… mais ce sont des serpents !",
+  "Vaut-il mieux prendre des douches ou des bains ?",
+  "Vrai ou faux ? Dans « Où vas-tu ? », on écrit où avec un accent.",
+  "Vrai ou faux ? Hermès prête à Persée des sandales ailées.",
+  "Vrai ou faux ? On peut remplacer où, le mot du lieu, par « ou bien ».",
+  "Vrai ou faux ? Ou, sans accent, marque un choix entre deux choses.",
+  "Vrai ou faux ? Où, qui indique un lieu, porte un accent grave.",
+  "Vrai ou faux ? Persée regarde Méduse droit dans les yeux.",
+  "Vrai ou faux ? « Athéna » veut dire : dieu messager, qui donne à Persée des sandales ailées.",
+  "Vrai ou faux ? « Athéna » veut dire : déesse qui aide Persée et lui offre un bouclier.",
+  "Vrai ou faux ? « Aussitôt » a un accent circonflexe sur le O.",
+  "Vrai ou faux ? « Bouclier » veut dire : héros grec qui part combattre la Gorgone Méduse.",
+  "Vrai ou faux ? « Bouclier » veut dire : plaque solide qu'on tient au bras pour se protéger des coups.",
+  "Vrai ou faux ? « Cheveux » s'écrit avec un S à la fin.",
+  "Vrai ou faux ? « Hermès » veut dire : dieu messager, qui donne à Persée des sandales ailées.",
+  "Vrai ou faux ? « Hermès » veut dire : le cheval ailé de la mythologie grecque.",
+  "Vrai ou faux ? « Méduse » veut dire : roi qui envoie Persée chercher la tête de Méduse.",
+  "Vrai ou faux ? « Méduse » veut dire : une Gorgone : celui qui croise son regard est changé en pierre.",
+  "Vrai ou faux ? « Persée » veut dire : héros grec qui part combattre la Gorgone Méduse.",
+  "Vrai ou faux ? « Persée » veut dire : une Gorgone : celui qui croise son regard est changé en pierre.",
+  "Vrai ou faux ? « Pierre » s'écrit avec deux R.",
+  "Vrai ou faux ? « Polydectès » veut dire : déesse qui aide Persée et lui offre un bouclier.",
+  "Vrai ou faux ? « Polydectès » veut dire : roi qui envoie Persée chercher la tête de Méduse.",
+  "Vrai ou faux ? « Pégase » veut dire : changé en pierre ; aussi : paralysé par la peur.",
+  "Vrai ou faux ? « Pégase » veut dire : le cheval ailé de la mythologie grecque.",
+  "Vrai ou faux ? « Pétrifié » veut dire : changé en pierre ; aussi : paralysé par la peur.",
+  "Vrai ou faux ? « Pétrifié » veut dire : plaque solide qu'on tient au bras pour se protéger des coups.",
+  "Vrai ou faux ? « Tête » s'écrit avec un accent grave.",
+  "Vrai ou faux ? Être pétrifié de peur, c'est ne plus pouvoir bouger.",
+  "au moment … il arrive",
+  "aussitôt",
+  "avant le mythe",
+  "bien plus tard, au seizième siècle",
+  "ce soir … demain",
+  "changé en pierre.",
+  "cheveu",
+  "cheveux",
+  "créature",
+  "créatures",
+  "dont les cheveux sont des serpents vivants.",
+  "en Espagne … en Italie",
+  "en même temps que le mythe",
+  "et puis",
+  "jour … nuit",
+  "l'année dernière",
+  "la maison … je suis née",
+  "la rue … j'habite",
+  "la tête de Méduse au roi Polydectès",
+  "la ville … il vit",
+  "le melon … la pastèque",
+  "le métro … le bus",
+  "le parc … j'ai joué",
+  "les montagnes … habite Méduse",
+  "là-bas",
+  "monstrueuse",
+  "monstrueux",
+  "mère",
+  "ou (ou bien)",
+  "ou bien",
+  "ou celui-ci épousera sa mère.",
+  "ou on est aussitôt",
+  "où (lieu, moment)",
+  "pierre",
+  "pierres",
+  "quand",
+  "regarder",
+  "tête",
+  "têtes",
+  "un choix",
+  "un lieu",
+  "un merle … une pie",
+  "un moment",
+  "un nombre",
+  "un pull … un gilet",
+  "une couleur",
+  "une créature monstrueuse",
+  "une personne",
+  "« Où », avec un accent, indique le plus souvent…",
+  "À l'heure où le soleil se couche, cet endroit est magnifique.",
+  "À quelle période de l'histoire ce mythe a-t-il été écrit ?",
+  "Ça finit comme nature.",
+  "Ça parle d'un lieu",
+  "échouer … réussir",
+  "… est passé le chat ?",
+  "… vas-tu ?"
+ ]
+}
