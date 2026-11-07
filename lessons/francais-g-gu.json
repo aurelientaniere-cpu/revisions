@@ -1,0 +1,2006 @@
+{
+  "id": "francais-g-gu",
+  "category": "orthographe",
+  "subject": "Français",
+  "title": "Écrire g ou gu",
+  "subtitle": "La Naissance de Vénus",
+  "emoji": "🐚",
+  "color": "#3f8fb5",
+  "due": "2026-11-12",
+  "ordered": true,
+  "newPerSession": 3,
+  "source": "Orthographe 8, « Écrire g ou gu » : guide du maître (dictée « La Naissance de Vénus », dictées flash), fiche de mots, histoire des arts.",
+  "summary": [
+    "La lettre G fait le son gue devant les voyelles A, O, U : un gâteau, une gomme, à gauche, la figure.",
+    "Elle fait aussi le son gue devant une consonne : gris, grand.",
+    "Pour entendre le son gue devant E et I, j'écris G, U : guidé, la vague. Le U ne se prononce pas.",
+    "Les huit mots à savoir écrire : le tableau, la scène, la beauté, le coquillage, le vent, représenter, guidé, vers.",
+    "La dictée. Ce tableau représente une scène inspirée de la mythologie grecque : la naissance de Vénus, déesse de la beauté.",
+    "Vénus navigue sur un gigantesque coquillage.",
+    "Celui-ci est guidé vers le rivage par le vent et les vagues.",
+    "Est ou et ? Celui-ci est guidé : je peux dire était, j'écris E, S, T. Le vent et les vagues : et relie les deux mots.",
+    "Le tableau. La Naissance de Vénus a été peint par Sandro Botticelli, à Florence, en Italie, en 1484 et 1485.",
+    "Au milieu, Vénus arrive debout sur un coquillage. À gauche, Zéphir, le dieu du vent, souffle pour la pousser vers la terre. À droite, une déesse l'attend avec un manteau."
+  ],
+  "notions": [
+    {
+      "id": "regle-g",
+      "term": "g",
+      "nom": "la lettre g : le son gue",
+      "emoji": "🎂",
+      "def": "devant a, o, u ou une consonne, le G seul fait le son gue : gâteau, gomme, gris",
+      "noAuto": true,
+      "tip": "Pas besoin de U : à gauche, la figure, grand."
+    },
+    {
+      "id": "regle-gu",
+      "term": "gu",
+      "nom": "G, U : le son gue devant e et i",
+      "emoji": "🎸",
+      "def": "devant e et i, j'écris G, U pour entendre le son gue : guidé, la vague",
+      "noAuto": true,
+      "tip": "Sans le U, le G devant E ou I fait le son je, comme dans girafe."
+    },
+    {
+      "id": "tableau",
+      "term": "tableau",
+      "nom": "le tableau",
+      "emoji": "🖼️",
+      "def": "une peinture sur une toile ou sur du bois",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "tabl[eau]",
+      "tip": "Ça finit par E, A, U, comme bateau et gâteau."
+    },
+    {
+      "id": "representer",
+      "term": "représenter",
+      "nom": "représenter",
+      "emoji": "🎨",
+      "def": "montrer quelque chose par un dessin ou une peinture",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "repr[é]s[en]ter",
+      "tip": "Re, sans accent. Pré, avec un accent aigu. Puis sen, avec E, N. Et E, R à la fin."
+    },
+    {
+      "id": "scene",
+      "term": "scène",
+      "nom": "la scène",
+      "emoji": "🎭",
+      "def": "un moment d'une histoire, montré dans une image ou joué par des acteurs",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "[sc][è]ne",
+      "tip": "Un S et un C au début, comme dans science. Puis un accent grave sur le E."
+    },
+    {
+      "id": "guide",
+      "term": "guidé",
+      "nom": "guidé",
+      "emoji": "🧭",
+      "def": "conduit dans la bonne direction",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "[gu]id[é]",
+      "tip": "G, U devant le I, pour entendre le son gue. Et un accent aigu à la fin."
+    },
+    {
+      "id": "coquillage",
+      "term": "coquillage",
+      "nom": "le coquillage",
+      "emoji": "🐚",
+      "def": "la coquille dure d'un petit animal de la mer",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "co[qu]i[ll]age",
+      "tip": "Comme une coquille : Q, U, puis deux L."
+    },
+    {
+      "id": "vent",
+      "term": "vent",
+      "nom": "le vent",
+      "emoji": "🌬️",
+      "def": "l'air qui bouge dehors",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "v[en]t",
+      "tip": "E, N, puis un T muet à la fin. On l'entend dans venteux."
+    },
+    {
+      "id": "vers",
+      "term": "vers",
+      "nom": "vers",
+      "emoji": "➡️",
+      "def": "en direction de : je vais vers la mer",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "ver[s]",
+      "tip": "Un S muet à la fin. Ce n'est pas le ver de terre, ni la couleur verte."
+    },
+    {
+      "id": "beaute",
+      "term": "beauté",
+      "nom": "la beauté",
+      "emoji": "🌹",
+      "def": "ce qui est très beau, ce qu'on aime regarder",
+      "group": "ortho",
+      "noAuto": true,
+      "spell": "b[eau]t[é]",
+      "tip": "Beau, comme un beau tableau, puis T et É. Pas de E en plus à la fin."
+    },
+    {
+      "id": "et-est",
+      "term": "est ou et",
+      "nom": "est ou et",
+      "emoji": "⚖️",
+      "def": "est, avec un S et un T, c'est le verbe être ; et, c'est le petit mot qui relie : le vent et les vagues",
+      "noAuto": true,
+      "tip": "Si je peux dire « était », j'écris E, S, T : le coquillage était guidé."
+    },
+    {
+      "id": "naissance",
+      "term": "naissance",
+      "nom": "la naissance",
+      "emoji": "🐣",
+      "def": "le moment où on vient au monde",
+      "group": "oeuvre",
+      "indice": "Chaque année, on fête ce jour-là en soufflant des bougies.",
+      "spell": "nai[ss]an[c]e",
+      "tip": "Deux S au milieu, puis un C : naissance."
+    },
+    {
+      "id": "venus",
+      "term": "Vénus",
+      "nom": "Vénus",
+      "emoji": "🌺",
+      "def": "la déesse de la beauté chez les Romains, Aphrodite chez les Grecs",
+      "group": "oeuvre",
+      "indice": "Sur le tableau, elle arrive debout sur un coquillage."
+    },
+    {
+      "id": "rivage",
+      "term": "rivage",
+      "nom": "le rivage",
+      "emoji": "🏖️",
+      "def": "la terre au bord de l'eau",
+      "group": "oeuvre",
+      "indice": "Le coquillage s'en approche : c'est là que Vénus va poser le pied."
+    },
+    {
+      "id": "gigantesque",
+      "term": "gigantesque",
+      "nom": "gigantesque",
+      "emoji": "🦣",
+      "def": "beaucoup, beaucoup plus grand que d'habitude",
+      "group": "oeuvre",
+      "indice": "À côté de cette montagne, la maison a l'air minuscule !"
+    },
+    {
+      "id": "zephir",
+      "term": "Zéphir",
+      "nom": "Zéphir",
+      "emoji": "💨",
+      "def": "le dieu du vent",
+      "group": "oeuvre",
+      "indice": "Sur le tableau, il vole et il souffle très fort sur Vénus."
+    }
+  ],
+  "cards": [
+    {
+      "id": "gg-g",
+      "name": "G comme gâteau",
+      "emoji": "🎂",
+      "color": "#d6735b",
+      "notions": [
+        "regle-g"
+      ],
+      "image": "regle-g",
+      "desc": "Gâteau, gomme, gris : devant a, o, u ou une consonne, le G suffit."
+    },
+    {
+      "id": "gg-gu",
+      "name": "G, U comme guitare",
+      "emoji": "🎸",
+      "color": "#5b7fd6",
+      "notions": [
+        "regle-gu"
+      ],
+      "image": "regle-gu",
+      "desc": "Guitare, vague : devant e et i, j'écris G, U."
+    },
+    {
+      "id": "gg-tableau",
+      "name": "Le tableau",
+      "emoji": "🖼️",
+      "color": "#c0703c",
+      "notions": [
+        "tableau",
+        "scene"
+      ],
+      "image": "tableau",
+      "desc": "Un tableau montre une scène, comme une image d'histoire."
+    },
+    {
+      "id": "gg-peintre",
+      "name": "Le peintre",
+      "emoji": "🎨",
+      "color": "#8e5bd6",
+      "notions": [
+        "representer",
+        "tableau"
+      ],
+      "image": "peintre",
+      "desc": "Sandro Botticelli a peint La Naissance de Vénus à Florence."
+    },
+    {
+      "id": "gg-coquillage",
+      "name": "Le coquillage",
+      "emoji": "🐚",
+      "color": "#e08aa8",
+      "notions": [
+        "coquillage",
+        "gigantesque"
+      ],
+      "image": "coquillage",
+      "desc": "Un coquillage gigantesque : une souris y logerait toute sa famille !"
+    },
+    {
+      "id": "gg-vent",
+      "name": "Le souffle de Zéphir",
+      "emoji": "🌬️",
+      "color": "#3fa3c4",
+      "notions": [
+        "vent",
+        "zephir"
+      ],
+      "image": "zephir",
+      "desc": "Zéphir, le dieu du vent, souffle sur la mer."
+    },
+    {
+      "id": "gg-chemin",
+      "name": "Vers le rivage",
+      "emoji": "🧭",
+      "color": "#2f9e6a",
+      "notions": [
+        "vers",
+        "guide",
+        "rivage"
+      ],
+      "image": "rivage",
+      "desc": "Guidé par le vent et les vagues, le coquillage avance vers le rivage."
+    },
+    {
+      "id": "gg-beaute",
+      "name": "La beauté",
+      "emoji": "🌹",
+      "color": "#d65d8a",
+      "notions": [
+        "beaute",
+        "naissance"
+      ],
+      "image": "beaute",
+      "desc": "Une chose belle, qu'on aime regarder."
+    },
+    {
+      "id": "gg-est",
+      "name": "Est ou et",
+      "emoji": "⚖️",
+      "color": "#6c5ce7",
+      "notions": [
+        "et-est"
+      ],
+      "desc": "Si je peux dire était, j'écris est."
+    },
+    {
+      "id": "gg-legende",
+      "name": "La Naissance de Vénus",
+      "emoji": "🌺",
+      "color": "#f5b700",
+      "notions": "all",
+      "level": 3,
+      "legend": true,
+      "image": "venus",
+      "desc": "Tu connais toute la leçon : g et gu, les mots, et le tableau de Botticelli !"
+    }
+  ],
+  "items": [
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "tableau"
+      ],
+      "word": "tableau",
+      "say": "Ce tableau est très connu."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "word": "tableau",
+      "say": "Ce tableau est très connu."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "tableau"
+      ],
+      "word": "tableau",
+      "say": "Ce tableau est très connu."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "representer"
+      ],
+      "word": "représenter",
+      "say": "Le peintre veut représenter la mer."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "representer"
+      ],
+      "word": "représenter",
+      "say": "Le peintre veut représenter la mer."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "representer"
+      ],
+      "word": "représenter",
+      "say": "Le peintre veut représenter la mer."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "scene"
+      ],
+      "word": "scène",
+      "say": "Le tableau montre une scène de la mythologie."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "scene"
+      ],
+      "word": "scène",
+      "say": "Le tableau montre une scène de la mythologie."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "scene"
+      ],
+      "word": "scène",
+      "say": "Le tableau montre une scène de la mythologie."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "guide"
+      ],
+      "word": "guidé",
+      "say": "Le coquillage est guidé par le vent."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "guide"
+      ],
+      "word": "guidé",
+      "say": "Le coquillage est guidé par le vent."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "guide"
+      ],
+      "word": "guidé",
+      "say": "Le coquillage est guidé par le vent."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "coquillage"
+      ],
+      "word": "coquillage",
+      "say": "Vénus navigue sur un coquillage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "coquillage"
+      ],
+      "word": "coquillage",
+      "say": "Vénus navigue sur un coquillage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "coquillage"
+      ],
+      "word": "coquillage",
+      "say": "Vénus navigue sur un coquillage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "vent"
+      ],
+      "word": "vent",
+      "say": "Le vent pousse le coquillage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "vent"
+      ],
+      "word": "vent",
+      "say": "Le vent pousse le coquillage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "vent"
+      ],
+      "word": "vent",
+      "say": "Le vent pousse le coquillage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "vers"
+      ],
+      "word": "vers",
+      "say": "Vénus avance vers le rivage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "vers"
+      ],
+      "word": "vers",
+      "say": "Vénus avance vers le rivage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "vers"
+      ],
+      "word": "vers",
+      "say": "Vénus avance vers le rivage."
+    },
+    {
+      "type": "ecrire",
+      "mode": "copie",
+      "diff": 1.5,
+      "notions": [
+        "beaute"
+      ],
+      "word": "beauté",
+      "say": "Vénus est la déesse de la beauté."
+    },
+    {
+      "type": "ecrire",
+      "mode": "memo",
+      "diff": 2,
+      "notions": [
+        "beaute"
+      ],
+      "word": "beauté",
+      "say": "Vénus est la déesse de la beauté."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "beaute"
+      ],
+      "word": "beauté",
+      "say": "Vénus est la déesse de la beauté."
+    },
+    {
+      "type": "ecrire",
+      "mode": "dictee",
+      "diff": 3,
+      "notions": [
+        "representer"
+      ],
+      "word": "représente",
+      "say": "Ce tableau représente une scène."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "tableau",
+        "tablau",
+        "tablo",
+        "tableo",
+        "tabelau",
+        "tabeau"
+      ],
+      "hint": "Ça finit comme bateau.",
+      "explain": "On écrit : tableau, avec E, A, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "representer"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "représenter",
+        "réprésenter",
+        "représanter",
+        "reprézenter",
+        "representer",
+        "représentér"
+      ],
+      "hint": "Écoute bien : re, pré, sen, ter.",
+      "explain": "On écrit : représenter."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "scene"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "scène",
+        "sène",
+        "scéne",
+        "scèn",
+        "scènne",
+        "cène"
+      ],
+      "hint": "Comme dans science, il y a deux lettres au début.",
+      "explain": "On écrit : scène, avec S, C et un accent grave."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "guide"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "guidé",
+        "gidé",
+        "guidè",
+        "ghidé",
+        "guiddé",
+        "gidè"
+      ],
+      "hint": "Quelle lettre vient après le G, devant un I ?",
+      "explain": "On écrit : guidé, avec G, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "coquillage"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "coquillage",
+        "coquilage",
+        "cocillage",
+        "coqillage",
+        "coquillaje",
+        "kokillage"
+      ],
+      "hint": "Pense à une coquille.",
+      "explain": "On écrit : coquillage, avec Q, U et deux L."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "vent"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "vent",
+        "vant",
+        "ven",
+        "vens",
+        "ventt",
+        "vand"
+      ],
+      "hint": "On l'entend dans venteux.",
+      "explain": "On écrit : vent, avec E, N et un T muet."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2.5,
+      "notions": [
+        "vent"
+      ],
+      "q": "Le … souffle sur la mer. Quel mot faut-il ?",
+      "choices": [
+        "vent",
+        "vant",
+        "ven",
+        "vens",
+        "ventt",
+        "vend"
+      ],
+      "hint": "Une lettre muette à la fin, qu'on entend dans venteux.",
+      "explain": "On écrit : vent."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "vers"
+      ],
+      "q": "Vénus avance … le rivage. Quel mot faut-il ?",
+      "choices": [
+        "vers",
+        "ver",
+        "vert",
+        "verre"
+      ],
+      "hint": "Une lettre muette à la fin.",
+      "explain": "On écrit : vers, avec un S muet."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2.5,
+      "notions": [
+        "vers"
+      ],
+      "q": "Le bateau va … la plage. Quel mot faut-il ?",
+      "choices": [
+        "vers",
+        "vert",
+        "ver",
+        "verre"
+      ],
+      "hint": "Ici, ce n'est pas une couleur.",
+      "explain": "Vers indique la direction : vers la plage."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "beaute"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "beauté",
+        "beautée",
+        "bauté",
+        "beautai",
+        "bôté",
+        "beauter"
+      ],
+      "hint": "Beau, puis T et un accent.",
+      "explain": "On écrit : beauté, sans E en plus à la fin."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "naissance"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "naissance",
+        "naisance",
+        "nessance",
+        "naissanse",
+        "naissence",
+        "naîssance"
+      ],
+      "hint": "Deux S au milieu, et un C à la fin.",
+      "explain": "On écrit : naissance."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "guitare",
+        "gitare",
+        "ghitare",
+        "guitarre"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un I.",
+      "explain": "Guitare : devant le I, j'écris G, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "vague",
+        "vage",
+        "vaghe",
+        "vaguue"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un E.",
+      "explain": "Vague : devant le E, j'écris G, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "navigue",
+        "navige",
+        "navighe",
+        "naviguue"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un E.",
+      "explain": "Navigue : devant le E, j'écris G, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "guépard",
+        "gépard",
+        "ghépard",
+        "guéparre"
+      ],
+      "hint": "Le G est devant un É.",
+      "explain": "Guépard : devant le É, j'écris G, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "bague",
+        "bage",
+        "baghe",
+        "baguue"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un E.",
+      "explain": "Bague : devant le E, j'écris G, U."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "gâteau",
+        "guâteau",
+        "gâto",
+        "ghâteau"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un A.",
+      "explain": "Gâteau : devant le A, le G suffit."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "gomme",
+        "guomme",
+        "gome",
+        "ghomme"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un O.",
+      "explain": "Gomme : devant le O, le G suffit."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "gris",
+        "guris",
+        "ghris",
+        "gri"
+      ],
+      "hint": "Après le G, il y a une consonne.",
+      "explain": "Gris : devant le R, le G suffit."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "gorille",
+        "guorille",
+        "gorile",
+        "gorrille"
+      ],
+      "hint": "Quelle lettre suit le son gue ? Un O.",
+      "explain": "Gorille : devant le O, le G suffit."
+    },
+    {
+      "type": "qcm",
+      "spell": true,
+      "diff": 2.5,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Quel mot est bien écrit ?",
+      "choices": [
+        "figure",
+        "fighure",
+        "figuure",
+        "fiqure"
+      ],
+      "hint": "Attention : ici, le U est déjà la voyelle du mot.",
+      "explain": "Figure : devant le U, le G suffit."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Devant quelles lettres faut-il écrire G, U pour entendre le son gue ?",
+      "choices": [
+        "E et I",
+        "A et O",
+        "O et U",
+        "Toutes les consonnes"
+      ],
+      "hint": "Pense à guidé et à la vague.",
+      "explain": "Devant E et I, j'écris G, U : guidé, la vague."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Devant quelles lettres le G tout seul fait-il le son gue ?",
+      "choices": [
+        "A, O, U et les consonnes",
+        "E et I seulement",
+        "Seulement le E",
+        "Aucune lettre"
+      ],
+      "hint": "Pense à gâteau, gomme et gris.",
+      "explain": "Gâteau, gomme, figure, gris : le G suffit."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Sans U, le G devant un I fait le son…",
+      "choices": [
+        "je, comme dans girafe",
+        "gue, comme dans gomme",
+        "ke, comme dans kiwi",
+        "sse, comme dans cerise"
+      ],
+      "hint": "Pense à un grand animal au long cou.",
+      "explain": "G, I se lit comme dans girafe. Pour le son gue, il faut le U."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Pourquoi y a-t-il un U dans « guidé » ?",
+      "choices": [
+        "Pour entendre le son gue devant le I",
+        "Parce qu'on entend le son ou",
+        "Parce que le mot est au féminin",
+        "Pour faire joli"
+      ],
+      "hint": "Essaie de lire le mot sans le U.",
+      "explain": "Le U ne se prononce pas : il sert à faire le son gue devant le I."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "Pourquoi n'y a-t-il pas de U en plus dans « à gauche » ?",
+      "choices": [
+        "Devant le A, le G suffit",
+        "Parce que c'est un petit mot",
+        "Parce qu'on n'entend pas le G",
+        "Parce qu'il y a un accent"
+      ],
+      "hint": "Regarde la lettre juste après le G.",
+      "explain": "Devant A, O, U, le G fait déjà le son gue."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Dans « la vague », le U ne se prononce pas.",
+      "answer": true,
+      "explain": "Il sert seulement à faire le son gue."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "regle-g"
+      ],
+      "q": "On écrit G, U devant le A : c'est la règle.",
+      "answer": false,
+      "explain": "Devant le A, le G suffit : un gâteau, à gauche."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Dans « il navigue », on écrit G, U parce que le G est devant un E.",
+      "answer": true,
+      "explain": "Devant E et I, j'écris G, U."
+    },
+    {
+      "type": "placer",
+      "layout": "tri",
+      "diff": 2,
+      "sample": 8,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "q": "Range chaque mot. Regarde la lettre après le son gue.",
+      "explain": "Devant E et I, j'écris G, U. Devant les autres lettres, le G suffit.",
+      "targets": [
+        {
+          "id": "g",
+          "label": "g (devant a, o, u, consonne)",
+          "emoji": "🎂",
+          "color": "#d6735b"
+        },
+        {
+          "id": "gu",
+          "label": "gu (devant e, i)",
+          "emoji": "🎸",
+          "color": "#5b7fd6"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "gâteau",
+          "target": "g"
+        },
+        {
+          "text": "gomme",
+          "target": "g"
+        },
+        {
+          "text": "gris",
+          "target": "g"
+        },
+        {
+          "text": "gauche",
+          "target": "g"
+        },
+        {
+          "text": "figure",
+          "target": "g"
+        },
+        {
+          "text": "grand",
+          "target": "g"
+        },
+        {
+          "text": "gorille",
+          "target": "g"
+        },
+        {
+          "text": "dragon",
+          "target": "g"
+        },
+        {
+          "text": "légume",
+          "target": "g"
+        },
+        {
+          "text": "tigre",
+          "target": "g"
+        },
+        {
+          "text": "guidé",
+          "target": "gu"
+        },
+        {
+          "text": "vague",
+          "target": "gu"
+        },
+        {
+          "text": "guitare",
+          "target": "gu"
+        },
+        {
+          "text": "guépard",
+          "target": "gu"
+        },
+        {
+          "text": "navigue",
+          "target": "gu"
+        },
+        {
+          "text": "bague",
+          "target": "gu"
+        },
+        {
+          "text": "figue",
+          "target": "gu"
+        },
+        {
+          "text": "longue",
+          "target": "gu"
+        },
+        {
+          "text": "baguette",
+          "target": "gu"
+        },
+        {
+          "text": "anguille",
+          "target": "gu"
+        }
+      ]
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Le [garçon|guarçon|garson] joue de la [guitare|gitare|ghitare]."
+      ],
+      "q": "G ou G, U ? Regarde la lettre qui suit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Le [gorille|guorille|gorile] mange un [gâteau|guâteau|gâto]."
+      ],
+      "q": "G ou G, U ? Regarde la lettre qui suit."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Elle porte une [bague|bage|baghe] et une robe [longue|longe|longhe]."
+      ],
+      "q": "G ou G, U ? Regarde la lettre qui suit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Le [dragon|draguon|dragond] vole au-dessus de la [vague|vage|vaghe]."
+      ],
+      "q": "G ou G, U ? Regarde la lettre qui suit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Je [navigue|navige|navigu] sur un bateau [gris|guris|gri]."
+      ],
+      "q": "G ou G, U ? Regarde la lettre qui suit."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Sur ma [figure|fighure|figur], il y a une [goutte|guoutte|goute] d'eau."
+      ],
+      "q": "G ou G, U ? Regarde la lettre qui suit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "et-est"
+      ],
+      "text": [
+        "Vénus [est|et] une déesse [et|est] Zéphir [est|et] un dieu."
+      ],
+      "q": "Est ou et ? Si tu peux dire « était », c'est est."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "et-est",
+        "coquillage"
+      ],
+      "text": [
+        "Le coquillage [est|et] grand [et|est] il flotte sur la mer."
+      ],
+      "q": "Est ou et ? Si tu peux dire « était », c'est est."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "et-est",
+        "vent"
+      ],
+      "text": [
+        "Le vent [et|est] les vagues poussent le coquillage."
+      ],
+      "q": "Est ou et ? Si tu peux dire « était », c'est est."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "et-est"
+      ],
+      "q": "Comment savoir s'il faut écrire « est », avec un S et un T ?",
+      "choices": [
+        "Je peux le remplacer par « était »",
+        "Je peux le remplacer par « et puis »",
+        "Il est toujours au début de la phrase",
+        "Il est toujours après un nom"
+      ],
+      "hint": "Essaie de dire la phrase au passé.",
+      "explain": "Celui-ci était guidé : je peux dire était, donc j'écris est."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "et-est"
+      ],
+      "q": "Dans « le vent et les vagues », pourquoi écrit-on « et » ?",
+      "choices": [
+        "Il relie deux choses : je peux dire « et puis »",
+        "C'est le verbe être",
+        "Je peux dire « était »",
+        "C'est un nom"
+      ],
+      "hint": "Essaie de dire : le vent était les vagues. Ça marche ?",
+      "explain": "Le vent et puis les vagues : et relie les deux mots."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "representer"
+      ],
+      "text": [
+        "Ce tableau [représente|représentes|représenter] la mer."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "representer"
+      ],
+      "text": [
+        "Le peintre veut [représenter|représente|représenté] la mer."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "representer"
+      ],
+      "q": "Dans « Ce tableau représente une scène », quel est le verbe ?",
+      "choices": [
+        "représente",
+        "tableau",
+        "scène",
+        "une"
+      ],
+      "hint": "Quel mot dit ce que fait le tableau ?",
+      "explain": "Représente est le verbe de représenter."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "representer"
+      ],
+      "q": "Pourquoi écrit-on « représente », avec un E à la fin, dans la dictée ?",
+      "choices": [
+        "Il y a un seul tableau : je dis « il représente »",
+        "Parce que le tableau est au pluriel",
+        "Parce que c'est un nom",
+        "Parce que c'est au féminin"
+      ],
+      "hint": "Remplace « ce tableau » par un petit mot : il, ou ils ?",
+      "explain": "Ce tableau, c'est il : il représente."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "tableau",
+        "scene"
+      ],
+      "text": [
+        "Ce [tableau|tablau|tableo] montre une [scène|sène|scéne] de la mer."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "guide",
+        "vent"
+      ],
+      "text": [
+        "Le coquillage [est|et|ai] [guidé|gidé|ghidé] par le [vent|vant|ven]."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "vers",
+        "vent"
+      ],
+      "text": [
+        "Le [vent|vant|ven] souffle [vers|ver|vert] la plage."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "beaute",
+        "coquillage"
+      ],
+      "text": [
+        "La [beauté|beautée|bauté] d'un [coquillage|coquilage|cocillage]."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "naissance",
+        "venus"
+      ],
+      "text": [
+        "La [naissance|naisance|nessance] de Vénus est le sujet du tableau."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "guide"
+      ],
+      "q": "Dans la dictée, que veut dire « celui-ci » ?",
+      "choices": [
+        "Le coquillage",
+        "Le tableau",
+        "Le vent",
+        "Le rivage"
+      ],
+      "hint": "Regarde la phrase juste avant : sur quoi navigue Vénus ?",
+      "explain": "Vénus navigue sur un coquillage. Celui-ci, c'est le coquillage."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "guide",
+        "vent"
+      ],
+      "q": "Qu'est-ce qui guide le coquillage vers le rivage ?",
+      "choices": [
+        "Le vent et les vagues",
+        "Les poissons",
+        "Un bateau",
+        "Vénus elle-même"
+      ],
+      "hint": "Relis la dernière phrase de la dictée.",
+      "explain": "Il est guidé par le vent et les vagues."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "vers"
+      ],
+      "q": "Dans la dictée, « vers le rivage » veut dire…",
+      "choices": [
+        "en direction du rivage",
+        "sur le rivage",
+        "loin du rivage",
+        "sous le rivage"
+      ],
+      "hint": "Le coquillage n'est pas encore arrivé.",
+      "explain": "Il avance en direction du rivage."
+    },
+    {
+      "type": "qcm",
+      "diff": 2.5,
+      "notions": [
+        "regle-gu"
+      ],
+      "q": "Pourquoi écrit-on un S à « les vagues » ?",
+      "choices": [
+        "Il y en a plusieurs : « les » est au pluriel",
+        "Parce que c'est un verbe",
+        "Parce qu'on l'entend",
+        "Parce que vague est féminin"
+      ],
+      "hint": "Regarde le petit mot juste avant.",
+      "explain": "Les vagues : plusieurs vagues, donc un S."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "vent"
+      ],
+      "q": "« Vent » s'écrit avec un T muet à la fin.",
+      "answer": true,
+      "explain": "On l'entend dans venteux."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "vers"
+      ],
+      "q": "Dans « vers le rivage », « vers » s'écrit comme la couleur verte.",
+      "answer": false,
+      "explain": "Vers finit par un S muet."
+    },
+    {
+      "type": "vf",
+      "diff": 2.5,
+      "notions": [
+        "beaute"
+      ],
+      "q": "« Beauté » finit par un E muet, parce que c'est un mot féminin.",
+      "answer": false,
+      "explain": "La beauté s'écrit sans E en plus : B, E, A, U, T, É."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "scene"
+      ],
+      "q": "« Scène » commence par un S et un C.",
+      "answer": true,
+      "explain": "Comme dans science."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "q": "« Tableau » finit par E, A, U.",
+      "answer": true,
+      "explain": "Comme bateau et gâteau."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "coquillage"
+      ],
+      "q": "« Coquillage » s'écrit avec deux L.",
+      "answer": true,
+      "explain": "Comme une coquille."
+    },
+    {
+      "type": "vf",
+      "diff": 2.5,
+      "notions": [
+        "representer"
+      ],
+      "q": "Dans « représenter », le premier E n'a pas d'accent.",
+      "answer": true,
+      "explain": "Re, sans accent, puis pré, avec un accent aigu."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "guide"
+      ],
+      "q": "« Guidé » a un U qu'on ne prononce pas.",
+      "answer": true,
+      "explain": "Il sert à faire le son gue devant le I."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "tableau",
+        "representer",
+        "scene",
+        "beaute",
+        "naissance"
+      ],
+      "text": [
+        "Ce [tableau|tablau|tableo] [représente|représentes|représenter] une [scène|sène|scéne] inspirée de la mythologie grecque : la [naissance|naisance|nessance] de Vénus, déesse de la [beauté|beautée|bauté]."
+      ],
+      "q": "La dictée. Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "coquillage",
+        "regle-gu"
+      ],
+      "text": [
+        "Vénus [navigue|navige|navigues] sur un gigantesque [coquillage|coquilage|cocillage]."
+      ],
+      "q": "La dictée. Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "guide",
+        "vers",
+        "vent",
+        "et-est"
+      ],
+      "text": [
+        "Celui-ci [est|et|ai] [guidé|gidé|ghidé] [vers|ver|vert] le rivage par le [vent|vant|ven] [et|est|ai] les [vagues|vague|vages]."
+      ],
+      "q": "La dictée. Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 3,
+      "notions": [
+        "tableau",
+        "representer",
+        "scene",
+        "beaute",
+        "coquillage",
+        "guide",
+        "vers",
+        "vent"
+      ],
+      "text": [
+        "Ce [tableau|tablau|tableo] [représente|représentes|représenter] une [scène|sène|scéne] inspirée de la mythologie grecque : la [naissance|naisance|nessance] de Vénus, déesse de la [beauté|beautée|bauté].",
+        "Vénus [navigue|navige|navigues] sur un gigantesque [coquillage|coquilage|cocillage].",
+        "Celui-ci [est|et|ai] [guidé|gidé|ghidé] [vers|ver|vert] le rivage par le [vent|vant|ven] [et|est|ai] les [vagues|vague|vages]."
+      ],
+      "q": "Toute la dictée ! Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2.5,
+      "notions": [
+        "coquillage",
+        "regle-gu",
+        "naissance",
+        "guide",
+        "vent"
+      ],
+      "text": [
+        "À sa [naissance|naisance|nessance], Vénus [navigue|navige|navigues] sur un [coquillage|coquilage|cocillage] [guidé|gidé|ghidé] par le [vent|vant|ven] et les [vagues|vague|vages]."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "trous",
+      "diff": 2,
+      "notions": [
+        "coquillage",
+        "regle-g",
+        "regle-gu"
+      ],
+      "text": [
+        "Un [grand|gran|grant] [coquillage|coquilage|cocillage].",
+        "Des [vagues|vague|vages] gigantesques."
+      ],
+      "q": "Choisis le mot bien écrit."
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "tableau",
+        "representer",
+        "scene"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        },
+        {
+          "id": "4"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Ce tableau représente",
+          "target": "1"
+        },
+        {
+          "text": "une scène inspirée",
+          "target": "2"
+        },
+        {
+          "text": "de la mythologie grecque :",
+          "target": "3"
+        },
+        {
+          "text": "la naissance de Vénus, déesse de la beauté.",
+          "target": "4"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "coquillage",
+        "regle-gu"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Vénus navigue",
+          "target": "1"
+        },
+        {
+          "text": "sur un gigantesque",
+          "target": "2"
+        },
+        {
+          "text": "coquillage.",
+          "target": "3"
+        }
+      ]
+    },
+    {
+      "type": "placer",
+      "layout": "phrase",
+      "diff": 2,
+      "notions": [
+        "guide",
+        "vers",
+        "vent"
+      ],
+      "q": "Remets la phrase de la dictée dans l'ordre.",
+      "targets": [
+        {
+          "id": "1"
+        },
+        {
+          "id": "2"
+        },
+        {
+          "id": "3"
+        },
+        {
+          "id": "4"
+        }
+      ],
+      "tokens": [
+        {
+          "text": "Celui-ci est guidé",
+          "target": "1"
+        },
+        {
+          "text": "vers le rivage",
+          "target": "2"
+        },
+        {
+          "text": "par le vent",
+          "target": "3"
+        },
+        {
+          "text": "et les vagues.",
+          "target": "4"
+        }
+      ]
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "tableau",
+        "venus"
+      ],
+      "q": "Qui a peint La Naissance de Vénus ?",
+      "choices": [
+        "Sandro Botticelli",
+        "Léonard de Vinci",
+        "Michel-Ange",
+        "Raphaël"
+      ],
+      "hint": "Son prénom est Sandro.",
+      "explain": "Sandro Botticelli l'a peint."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "q": "Où ce tableau a-t-il été peint ?",
+      "choices": [
+        "À Florence, en Italie",
+        "À Paris, en France",
+        "À Athènes, en Grèce",
+        "À Londres, en Angleterre"
+      ],
+      "hint": "C'est la même ville que la statue de Persée.",
+      "explain": "Il a été peint à Florence, en Italie."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "coquillage",
+        "venus"
+      ],
+      "q": "Sur quoi Vénus arrive-t-elle ?",
+      "choices": [
+        "Un coquillage",
+        "Un bateau",
+        "Un nuage",
+        "Un cheval"
+      ],
+      "hint": "Relis la dictée : gigantesque…",
+      "explain": "Elle navigue sur un gigantesque coquillage."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "beaute",
+        "venus"
+      ],
+      "q": "Vénus est la déesse de quoi ?",
+      "choices": [
+        "De la beauté",
+        "De la mer",
+        "Du vent",
+        "De la guerre"
+      ],
+      "hint": "Relis la première phrase de la dictée.",
+      "explain": "Vénus est la déesse de la beauté."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "vent",
+        "zephir"
+      ],
+      "q": "Que fait Zéphir sur le tableau ?",
+      "choices": [
+        "Il souffle pour pousser Vénus",
+        "Il peint Vénus",
+        "Il nage dans la mer",
+        "Il dort sur le rivage"
+      ],
+      "hint": "C'est le dieu du vent.",
+      "explain": "Zéphir souffle et pousse Vénus vers la terre."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "scene"
+      ],
+      "q": "De quelle histoire vient la scène du tableau ?",
+      "choices": [
+        "De la mythologie grecque",
+        "De la vie d'un roi de France",
+        "D'un conte de Noël",
+        "D'un livre de sciences"
+      ],
+      "hint": "Pense aux dieux et aux déesses, comme pour Persée.",
+      "explain": "La scène est inspirée de la mythologie grecque."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "venus"
+      ],
+      "q": "Aphrodite est le nom grec de Vénus.",
+      "answer": true,
+      "explain": "Les Grecs disaient Aphrodite, les Romains Vénus."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "zephir",
+        "vent"
+      ],
+      "q": "Zéphir est le dieu de la mer.",
+      "answer": false,
+      "explain": "Zéphir est le dieu du vent."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "q": "La Naissance de Vénus est une sculpture.",
+      "answer": false,
+      "explain": "C'est une peinture : un tableau."
+    }
+  ],
+  "images": {
+    "regle-g": {
+      "prompt": "a birthday cake with candles on a wooden table, next to the cake a pink rectangular rubber eraser and a small grey cat, nothing else",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 21
+    },
+    "regle-gu": {
+      "prompt": "a wooden guitar leaning on a rock on a beach, a big blue wave behind it, a small cheetah cub sitting next to the guitar",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "tableau": {
+      "prompt": "a large golden wooden picture frame hanging on a museum wall, inside the frame a painted seascape with waves and a big pink seashell, a small wooden bench in front, an empty quiet room",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "representer": {
+      "prompt": "a wooden easel holding a canvas with a painted portrait of an orange cat, beside the easel the real orange cat sits on a wooden stool and looks at its portrait, paintbrushes and pots of paint on the floor, no people",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 41
+    },
+    "scene": {
+      "prompt": "a small theatre stage with open red curtains, on the stage a cute fox and a cute rabbit in costumes acting out a story under a painted moon",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "guide": {
+      "prompt": "a tall red and white lighthouse on a rock at dusk shining its light beam on the sea, a small white sailboat heading toward the lighthouse, a smiling dolphin swimming in front of the boat showing the way",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "coquillage": {
+      "prompt": "a big pink and cream scallop seashell on wet sand at the seaside, small waves behind, a tiny red crab looking at the shell",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "vent": {
+      "prompt": "a cute round cloud with puffed cheeks blowing hard, visible swirling gusts of air coming from its mouth, autumn leaves and a straw hat flying in the gust, trees bending in the wind over a green field",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "vers": {
+      "prompt": "a winding path across green hills leading to a small cottage on the horizon, a cute snail with a backpack walking along the path toward the cottage, seen from behind",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "beaute": {
+      "prompt": "a magnificent blooming rose garden with colorful butterflies in golden morning light, a small pond reflecting the flowers, everything gorgeous",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "naissance": {
+      "prompt": "a tiny cute fluffy yellow chick hatching from its egg in a straw nest, cracked eggshell around it, soft sunrise light",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "venus": {
+      "prompt": "a cute round smiling cartoon goddess with very long wavy red hair, wearing a long pale blue dress with long sleeves that covers her entire body down to her feet, standing on a huge pink scallop shell floating on a gentle blue sea, small pink flowers falling from the sky, fully clothed, modest",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "rivage": {
+      "prompt": "a quiet shoreline where golden sand meets the blue sea, gentle waves, small green trees on the shore, seen from the water, no people",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "gigantesque": {
+      "prompt": "a tiny cute mouse standing at the foot of an enormous gigantic seashell as tall as a house, on a beach, the mouse looks up in amazement",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    },
+    "zephir": {
+      "prompt": "a cute flying spirit with small white wings and a long blue robe, seen from the side, cheeks puffed, blowing a strong swirling gust of air out of its mouth, little pink flowers carried by the gust, above the blue sea, fully clothed",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 22
+    },
+    "peintre": {
+      "prompt": "a cute round friendly renaissance painter wearing a red cap and a long robe, working at a wooden easel in his workshop, through the window a view of an italian city with a big red dome, pots of colors on a table",
+      "w": 768,
+      "h": 768,
+      "out_w": 600,
+      "seed": 11
+    }
+  }
+}
