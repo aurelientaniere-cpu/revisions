@@ -20,6 +20,7 @@
     "Celui-ci est guidé vers le rivage par le vent et les vagues.",
     "Est ou et ? Celui-ci est guidé : je peux dire était, j'écris E, S, T. Le vent et les vagues : et relie les deux mots.",
     "Le tableau. La Naissance de Vénus a été peint par Sandro Botticelli, à Florence, en Italie, en 1484 et 1485.",
+    "Sur la frise de la fiche, il se place au Moyen Âge.",
     "Au milieu, Vénus arrive debout sur un coquillage. À gauche, Zéphir, le dieu du vent, souffle pour la pousser vers la terre. À droite, une déesse l'attend avec un manteau."
   ],
   "notions": [
@@ -1887,6 +1888,33 @@
       "q": "La Naissance de Vénus est une sculpture.",
       "answer": false,
       "explain": "C'est une peinture : un tableau."
+    },
+    {
+      "type": "qcm",
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "q": "Sur la frise de ta fiche, à quelle période se place ce tableau ?",
+      "choices": [
+        "Le Moyen Âge",
+        "L'Antiquité",
+        "La Préhistoire",
+        "L'Époque contemporaine",
+        "Les Temps modernes"
+      ],
+      "hint": "Regarde la case surlignée sur la frise de ta fiche.",
+      "explain": "Sur ta fiche, le tableau se place au Moyen Âge."
+    },
+    {
+      "type": "vf",
+      "diff": 2,
+      "notions": [
+        "tableau"
+      ],
+      "q": "Sur la frise de ta fiche, ce tableau se place au Moyen Âge.",
+      "answer": true,
+      "explain": "Oui : la case Moyen Âge est surlignée sur ta fiche."
     }
   ],
   "images": {

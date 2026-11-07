@@ -20,6 +20,7 @@
   "Celui-ci est guidé vers le rivage par le vent et les vagues.",
   "Est ou et ? Celui-ci est guidé : je peux dire était, j'écris E, S, T. Le vent et les vagues : et relie les deux mots.",
   "Le tableau. La Naissance de Vénus a été peint par Sandro Botticelli, à Florence, en Italie, en 1484 et 1485.",
+  "Sur la frise de la fiche, il se place au Moyen Âge.",
   "Au milieu, Vénus arrive debout sur un coquillage. À gauche, Zéphir, le dieu du vent, souffle pour la pousser vers la terre. À droite, une déesse l'attend avec un manteau."
  ],
  "notions": [
@@ -1997,6 +1998,35 @@
    "type": "qcm",
    "diff": 2,
    "notions": [
+    "tableau"
+   ],
+   "q": "Sur la frise de ta fiche, à quelle période se place ce tableau ?",
+   "choices": [
+    "Le Moyen Âge",
+    "L'Antiquité",
+    "La Préhistoire",
+    "L'Époque contemporaine",
+    "Les Temps modernes"
+   ],
+   "hint": "Regarde la case surlignée sur la frise de ta fiche.",
+   "explain": "Sur ta fiche, le tableau se place au Moyen Âge.",
+   "id": "francais-g-gu#4c0750d0"
+  },
+  {
+   "type": "vf",
+   "diff": 2,
+   "notions": [
+    "tableau"
+   ],
+   "q": "Sur la frise de ta fiche, ce tableau se place au Moyen Âge.",
+   "answer": true,
+   "explain": "Oui : la case Moyen Âge est surlignée sur ta fiche.",
+   "id": "francais-g-gu#92831d78"
+  },
+  {
+   "type": "qcm",
+   "diff": 2,
+   "notions": [
     "naissance"
    ],
    "q": "De quoi parle-t-on ? Chaque année, on fête ce jour-là en soufflant des bougies.",
@@ -2563,7 +2593,10 @@
   "Je peux dire « était »",
   "Je peux le remplacer par « et puis »",
   "Je peux le remplacer par « était »",
+  "L'Antiquité",
+  "L'Époque contemporaine",
   "La Naissance de Vénus",
+  "La Préhistoire",
   "La beauté",
   "La beauté : ce qui est très beau, ce qu'on aime regarder.",
   "La beauté d'un coquillage.",
@@ -2579,6 +2612,7 @@
   "La scène est inspirée de la mythologie grecque.",
   "La terre au bord de l'eau",
   "Le G est devant un É.",
+  "Le Moyen Âge",
   "Le U ne se prononce pas : il sert à faire le son gue devant le I.",
   "Le bateau va … la plage. Quel mot faut-il ?",
   "Le coquillage",
@@ -2609,6 +2643,7 @@
   "Le vent souffle vers la plage.",
   "Le … souffle sur la mer. Quel mot faut-il ?",
   "Les Grecs disaient Aphrodite, les Romains Vénus.",
+  "Les Temps modernes",
   "Les huit mots à savoir écrire : le tableau, la scène, la beauté, le coquillage, le vent, représenter, guidé, vers.",
   "Les poissons",
   "Les vagues : plusieurs vagues, donc un S.",
@@ -2628,6 +2663,7 @@
   "On écrit : vent, avec E, N et un T muet.",
   "On écrit : vent.",
   "On écrit : vers, avec un S muet.",
+  "Oui : la case Moyen Âge est surlignée sur ta fiche.",
   "Où ce tableau a-t-il été peint ?",
   "Parce qu'il y a un accent",
   "Parce qu'on entend le son ou",
@@ -2672,6 +2708,7 @@
   "Raphaël",
   "Re, sans accent, puis pré, avec un accent aigu.",
   "Re, sans accent. Pré, avec un accent aigu. Puis sen, avec E, N. Et E, R à la fin.",
+  "Regarde la case surlignée sur la frise de ta fiche.",
   "Regarde la lettre juste après le G.",
   "Regarde la phrase juste avant : sur quoi navigue Vénus ?",
   "Regarde le petit mot juste avant.",
@@ -2695,8 +2732,11 @@
   "Si je peux dire « était », j'écris E, S, T : le coquillage était guidé.",
   "Si je peux dire était, j'écris est.",
   "Son prénom est Sandro.",
+  "Sur la frise de la fiche, il se place au Moyen Âge.",
+  "Sur la frise de ta fiche, à quelle période se place ce tableau ?",
   "Sur ma figure, il y a une goutte d'eau.",
   "Sur quoi Vénus arrive-t-elle ?",
+  "Sur ta fiche, le tableau se place au Moyen Âge.",
   "Tableau",
   "Toute la dictée ! Choisis le mot bien écrit.",
   "Toutes les consonnes",
@@ -2727,6 +2767,7 @@
   "Vrai ou faux ? Dans « vers le rivage », « vers » s'écrit comme la couleur verte.",
   "Vrai ou faux ? La Naissance de Vénus est une sculpture.",
   "Vrai ou faux ? On écrit G, U devant le A : c'est la règle.",
+  "Vrai ou faux ? Sur la frise de ta fiche, ce tableau se place au Moyen Âge.",
   "Vrai ou faux ? Zéphir est le dieu de la mer.",
   "Vrai ou faux ? « Beauté » finit par un E muet, parce que c'est un mot féminin.",
   "Vrai ou faux ? « Coquillage » s'écrit avec deux L.",
